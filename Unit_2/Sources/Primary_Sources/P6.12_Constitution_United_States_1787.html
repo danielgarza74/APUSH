@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Constitution of the United States. Primary Source P6.12 for Unit 2: Building a Nation.">
+  <meta name="theme-color" content="#0B4438">
+  <title>Primary Source P6.12 | The Constitution of the United States</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_2/Sources/Primary_Sources/P6.12_Constitution_United_States_1787.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #0B4438;
+      --forest-mid: #14705D;
+      --coral: #F0654A;
+      --coral-light: #F7A98F;
+      --cream: #F6F1E7;
+      --paper: #FFFEFA;
+      --mint: #EEF7F4;
+      --sage: #C9DBD6;
+      --ink: #163D34;
+      --muted: #5E746E;
+      --shadow: 0 22px 55px rgba(4, 43, 35, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(240, 101, 74, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(11, 68, 56, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(4, 43, 35, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(20, 112, 93, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Primary source navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_2/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Primary Source Archive</a>
+      <div class="archive-meta">Unit 2 · Chapter 6 · P6.12</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="P6.12">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#EDF6F4; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Primary Source P6.12</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">The Constitution of the United States</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Federal Convention, Philadelphia · Signed September 17, 1787</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #EF6449; font-size:1px; line-height:1px;"> </td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F6A88E; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0B4438; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TOC FIT</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0B4438; font-size:13.5px; line-height:1.55;">Chapter 6 · Background document for the unit (not assigned to an essay prompt)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#0B4438; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WHY HERE</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#0B4438; font-size:13.5px; line-height:1.55;">The finished text of the Constitution is the reference point for nearly every debate in the unit: students can check the actual wording of clauses on representation and slavery, congressional powers, the presidency, the judiciary, amendment, and ratification against the arguments made about them.</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:17px; font-weight:700; border-bottom:2px solid #EF6449; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Historical Context</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Delegates from twelve states (Rhode Island sent none) met in Philadelphia from late May to September 1787, nominally to revise the Articles of Confederation. Working in closed session, they instead drafted a new frame of government. Thirty-nine delegates signed the finished document on September 17, 1787; several others who remained to the end, including George Mason and Edmund Randolph of Virginia and Elbridge Gerry of Massachusetts, refused.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Under Article VII the Constitution took effect once conventions in nine states ratified it, a threshold reached when New Hampshire ratified in June 1788. The text here is the National Archives transcription of the engrossed parchment copy, penned by Jacob Shallus, with its original spelling and punctuation. It does not include the amendments, beginning with the Bill of Rights, that were added later and that changed some of the provisions printed here.</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 26px 0;" class="editorial-note"><tr>
+  <td style="border-left:4px solid #EF6449; background-color:rgba(20,112,93,0.07); padding:12px 16px; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; line-height:1.6;">Editorial note: The National Archives transcription follows the engrossed parchment, preserving its spelling (e.g., “chuse,” “encreased,” “it’s”). Passages later changed by amendment are printed as originally adopted. The National Archives’ introductory note and web links are omitted; the list of signers is reproduced as it appears in the transcription.</td>
+</tr></table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:17px; font-weight:700; border-bottom:2px solid #EF6449; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Document Text</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Article. I.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 1.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">All legislative Powers herein granted shall be vested in a Congress of the United States, which shall consist of a Senate and House of Representatives.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 2.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The House of Representatives shall be composed of Members chosen every second Year by the People of the several States, and the Electors in each State shall have the Qualifications requisite for Electors of the most numerous Branch of the State Legislature.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">No Person shall be a Representative who shall not have attained to the Age of twenty five Years, and been seven Years a Citizen of the United States, and who shall not, when elected, be an Inhabitant of that State in which he shall be chosen.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Representatives and direct Taxes shall be apportioned among the several States which may be included within this Union, according to their respective Numbers, which shall be determined by adding to the whole Number of free Persons, including those bound to Service for a Term of Years, and excluding Indians not taxed, three fifths of all other Persons. The actual Enumeration shall be made within three Years after the first Meeting of the Congress of the United States, and within every subsequent Term of ten Years, in such Manner as they shall by Law direct. The Number of Representatives shall not exceed one for every thirty Thousand, but each State shall have at Least one Representative; and until such enumeration shall be made, the State of New Hampshire shall be entitled to chuse three, Massachusetts eight, Rhode-Island and Providence Plantations one, Connecticut five, New-York six, New Jersey four, Pennsylvania eight, Delaware one, Maryland six, Virginia ten, North Carolina five, South Carolina five, and Georgia three.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">When vacancies happen in the Representation from any State, the Executive Authority thereof shall issue Writs of Election to fill such Vacancies.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The House of Representatives shall chuse their Speaker and other Officers; and shall have the sole Power of Impeachment.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 3.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Senate of the United States shall be composed of two Senators from each State, chosen by the Legislature thereof, for six Years; and each Senator shall have one Vote.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Immediately after they shall be assembled in Consequence of the first Election, they shall be divided as equally as may be into three Classes. The Seats of the Senators of the first Class shall be vacated at the Expiration of the second Year, of the second Class at the Expiration of the fourth Year, and of the third Class at the Expiration of the sixth Year, so that one third may be chosen every second Year; and if Vacancies happen by Resignation, or otherwise, during the Recess of the Legislature of any State, the Executive thereof may make temporary Appointments until the next Meeting of the Legislature, which shall then fill such Vacancies.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">No Person shall be a Senator who shall not have attained to the Age of thirty Years, and been nine Years a Citizen of the United States, and who shall not, when elected, be an Inhabitant of that State for which he shall be chosen.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Vice President of the United States shall be President of the Senate, but shall have no Vote, unless they be equally divided.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Senate shall chuse their other Officers, and also a President pro tempore, in the Absence of the Vice President, or when he shall exercise the Office of President of the United States.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Senate shall have the sole Power to try all Impeachments. When sitting for that Purpose, they shall be on Oath or Affirmation. When the President of the United States is tried, the Chief Justice shall preside: And no Person shall be convicted without the Concurrence of two thirds of the Members present.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Judgment in Cases of Impeachment shall not extend further than to removal from Office, and disqualification to hold and enjoy any Office of honor, Trust or Profit under the United States: but the Party convicted shall nevertheless be liable and subject to Indictment, Trial, Judgment and Punishment, according to Law.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 4.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Times, Places and Manner of holding Elections for Senators and Representatives, shall be prescribed in each State by the Legislature thereof; but the Congress may at any time by Law make or alter such Regulations, except as to the Places of chusing Senators.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Congress shall assemble at least once in every Year, and such Meeting shall be on the first Monday in December, unless they shall by Law appoint a different Day.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 5.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Each House shall be the Judge of the Elections, Returns and Qualifications of its own Members, and a Majority of each shall constitute a Quorum to do Business; but a smaller Number may adjourn from day to day, and may be authorized to compel the Attendance of absent Members, in such Manner, and under such Penalties as each House may provide.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Each House may determine the Rules of its Proceedings, punish its Members for disorderly Behaviour, and, with the Concurrence of two thirds, expel a Member.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Each House shall keep a Journal of its Proceedings, and from time to time publish the same, excepting such Parts as may in their Judgment require Secrecy; and the Yeas and Nays of the Members of either House on any question shall, at the Desire of one fifth of those Present, be entered on the Journal.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Neither House, during the Session of Congress, shall, without the Consent of the other, adjourn for more than three days, nor to any other Place than that in which the two Houses shall be sitting.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 6.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Senators and Representatives shall receive a Compensation for their Services, to be ascertained by Law, and paid out of the Treasury of the United States. They shall in all Cases, except Treason, Felony and Breach of the Peace, be privileged from Arrest during their Attendance at the Session of their respective Houses, and in going to and returning from the same; and for any Speech or Debate in either House, they shall not be questioned in any other Place.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">No Senator or Representative shall, during the Time for which he was elected, be appointed to any civil Office under the Authority of the United States, which shall have been created, or the Emoluments whereof shall have been encreased during such time; and no Person holding any Office under the United States, shall be a Member of either House during his Continuance in Office.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 7.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">All Bills for raising Revenue shall originate in the House of Representatives; but the Senate may propose or concur with Amendments as on other Bills.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Every Bill which shall have passed the House of Representatives and the Senate, shall, before it become a Law, be presented to the President of the United States; If he approve he shall sign it, but if not he shall return it, with his Objections to that House in which it shall have originated, who shall enter the Objections at large on their Journal, and proceed to reconsider it. If after such Reconsideration two thirds of that House shall agree to pass the Bill, it shall be sent, together with the Objections, to the other House, by which it shall likewise be reconsidered, and if approved by two thirds of that House, it shall become a Law. But in all such Cases the Votes of both Houses shall be determined by yeas and Nays, and the Names of the Persons voting for and against the Bill shall be entered on the Journal of each House respectively. If any Bill shall not be returned by the President within ten Days (Sundays excepted) after it shall have been presented to him, the Same shall be a Law, in like Manner as if he had signed it, unless the Congress by their Adjournment prevent its Return, in which Case it shall not be a Law.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Every Order, Resolution, or Vote to which the Concurrence of the Senate and House of Representatives may be necessary (except on a question of Adjournment) shall be presented to the President of the United States; and before the Same shall take Effect, shall be approved by him, or being disapproved by him, shall be repassed by two thirds of the Senate and House of Representatives, according to the Rules and Limitations prescribed in the Case of a Bill.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 8.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Congress shall have Power To lay and collect Taxes, Duties, Imposts and Excises, to pay the Debts and provide for the common Defence and general Welfare of the United States; but all Duties, Imposts and Excises shall be uniform throughout the United States;</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To borrow Money on the credit of the United States;</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To regulate Commerce with foreign Nations, and among the several States, and with the Indian Tribes;</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To establish an uniform Rule of Naturalization, and uniform Laws on the subject of Bankruptcies throughout the United States;</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To coin Money, regulate the Value thereof, and of foreign Coin, and fix the Standard of Weights and Measures;</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To provide for the Punishment of counterfeiting the Securities and current Coin of the United States;</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To establish Post Offices and post Roads;</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To promote the Progress of Science and useful Arts, by securing for limited Times to Authors and Inventors the exclusive Right to their respective Writings and Discoveries;</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To constitute Tribunals inferior to the supreme Court;</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To define and punish Piracies and Felonies committed on the high Seas, and Offences against the Law of Nations;</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To declare War, grant Letters of Marque and Reprisal, and make Rules concerning Captures on Land and Water;</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To raise and support Armies, but no Appropriation of Money to that Use shall be for a longer Term than two Years;</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To provide and maintain a Navy;</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To make Rules for the Government and Regulation of the land and naval Forces;</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To provide for calling forth the Militia to execute the Laws of the Union, suppress Insurrections and repel Invasions;</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To provide for organizing, arming, and disciplining, the Militia, and for governing such Part of them as may be employed in the Service of the United States, reserving to the States respectively, the Appointment of the Officers, and the Authority of training the Militia according to the discipline prescribed by Congress;</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To exercise exclusive Legislation in all Cases whatsoever, over such District (not exceeding ten Miles square) as may, by Cession of particular States, and the Acceptance of Congress, become the Seat of the Government of the United States, and to exercise like Authority over all Places purchased by the Consent of the Legislature of the State in which the Same shall be, for the Erection of Forts, Magazines, Arsenals, dock-Yards, and other needful Buildings;—And</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To make all Laws which shall be necessary and proper for carrying into Execution the foregoing Powers, and all other Powers vested by this Constitution in the Government of the United States, or in any Department or Officer thereof.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 9.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Migration or Importation of such Persons as any of the States now existing shall think proper to admit, shall not be prohibited by the Congress prior to the Year one thousand eight hundred and eight, but a Tax or duty may be imposed on such Importation, not exceeding ten dollars for each Person.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Privilege of the Writ of Habeas Corpus shall not be suspended, unless when in Cases of Rebellion or Invasion the public Safety may require it.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">No Bill of Attainder or ex post facto Law shall be passed.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">No Capitation, or other direct, Tax shall be laid, unless in Proportion to the Census or enumeration herein before directed to be taken.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">No Tax or Duty shall be laid on Articles exported from any State.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">No Preference shall be given by any Regulation of Commerce or Revenue to the Ports of one State over those of another: nor shall Vessels bound to, or from, one State, be obliged to enter, clear, or pay Duties in another.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">No Money shall be drawn from the Treasury, but in Consequence of Appropriations made by Law; and a regular Statement and Account of the Receipts and Expenditures of all public Money shall be published from time to time.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">No Title of Nobility shall be granted by the United States: And no Person holding any Office of Profit or Trust under them, shall, without the Consent of the Congress, accept of any present, Emolument, Office, or Title, of any kind whatever, from any King, Prince, or foreign State.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 10.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">No State shall enter into any Treaty, Alliance, or Confederation; grant Letters of Marque and Reprisal; coin Money; emit Bills of Credit; make any Thing but gold and silver Coin a Tender in Payment of Debts; pass any Bill of Attainder, ex post facto Law, or Law impairing the Obligation of Contracts, or grant any Title of Nobility.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">No State shall, without the Consent of the Congress, lay any Imposts or Duties on Imports or Exports, except what may be absolutely necessary for executing it’s inspection Laws: and the net Produce of all Duties and Imposts, laid by any State on Imports or Exports, shall be for the Use of the Treasury of the United States; and all such Laws shall be subject to the Revision and Controul of the Congress.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">No State shall, without the Consent of Congress, lay any Duty of Tonnage, keep Troops, or Ships of War in time of Peace, enter into any Agreement or Compact with another State, or with a foreign Power, or engage in War, unless actually invaded, or in such imminent Danger as will not admit of delay.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Article. II.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 1.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The executive Power shall be vested in a President of the United States of America. He shall hold his Office during the Term of four Years, and, together with the Vice President, chosen for the same Term, be elected, as follows</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Each State shall appoint, in such Manner as the Legislature thereof may direct, a Number of Electors, equal to the whole Number of Senators and Representatives to which the State may be entitled in the Congress: but no Senator or Representative, or Person holding an Office of Trust or Profit under the United States, shall be appointed an Elector.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Electors shall meet in their respective States, and vote by Ballot for two Persons, of whom one at least shall not be an Inhabitant of the same State with themselves. And they shall make a List of all the Persons voted for, and of the Number of Votes for each; which List they shall sign and certify, and transmit sealed to the Seat of the Government of the United States, directed to the President of the Senate. The President of the Senate shall, in the Presence of the Senate and House of Representatives, open all the Certificates, and the Votes shall then be counted. The Person having the greatest Number of Votes shall be the President, if such Number be a Majority of the whole Number of Electors appointed; and if there be more than one who have such Majority, and have an equal Number of Votes, then the House of Representatives shall immediately chuse by Ballot one of them for President; and if no Person have a Majority, then from the five highest on the List the said House shall in like Manner chuse the President. But in chusing the President, the Votes shall be taken by States, the Representation from each State having one Vote; A quorum for this Purpose shall consist of a Member or Members from two thirds of the States, and a Majority of all the States shall be necessary to a Choice. In every Case, after the Choice of the President, the Person having the greatest Number of Votes of the Electors shall be the Vice President. But if there should remain two or more who have equal Votes, the Senate shall chuse from them by Ballot the Vice President.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Congress may determine the Time of chusing the Electors, and the Day on which they shall give their Votes; which Day shall be the same throughout the United States.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">No Person except a natural born Citizen, or a Citizen of the United States, at the time of the Adoption of this Constitution, shall be eligible to the Office of President; neither shall any Person be eligible to that Office who shall not have attained to the Age of thirty five Years, and been fourteen Years a Resident within the United States.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In Case of the Removal of the President from Office, or of his Death, Resignation, or Inability to discharge the Powers and Duties of the said Office, the Same shall devolve on the Vice President, and the Congress may by Law provide for the Case of Removal, Death, Resignation or Inability, both of the President and Vice President, declaring what Officer shall then act as President, and such Officer shall act accordingly, until the Disability be removed, or a President shall be elected.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The President shall, at stated Times, receive for his Services, a Compensation, which shall neither be encreased nor diminished during the Period for which he shall have been elected, and he shall not receive within that Period any other Emolument from the United States, or any of them.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Before he enter on the Execution of his Office, he shall take the following Oath or Affirmation:—“I do solemnly swear (or affirm) that I will faithfully execute the Office of President of the United States, and will to the best of my Ability, preserve, protect and defend the Constitution of the United States.”</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 2.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The President shall be Commander in Chief of the Army and Navy of the United States, and of the Militia of the several States, when called into the actual Service of the United States; he may require the Opinion, in writing, of the principal Officer in each of the executive Departments, upon any Subject relating to the Duties of their respective Offices, and he shall have Power to grant Reprieves and Pardons for Offences against the United States, except in Cases of Impeachment.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">He shall have Power, by and with the Advice and Consent of the Senate, to make Treaties, provided two thirds of the Senators present concur; and he shall nominate, and by and with the Advice and Consent of the Senate, shall appoint Ambassadors, other public Ministers and Consuls, Judges of the supreme Court, and all other Officers of the United States, whose Appointments are not herein otherwise provided for, and which shall be established by Law: but the Congress may by Law vest the Appointment of such inferior Officers, as they think proper, in the President alone, in the Courts of Law, or in the Heads of Departments.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The President shall have Power to fill up all Vacancies that may happen during the Recess of the Senate, by granting Commissions which shall expire at the End of their next Session.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 3.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">He shall from time to time give to the Congress Information of the State of the Union, and recommend to their Consideration such Measures as he shall judge necessary and expedient; he may, on extraordinary Occasions, convene both Houses, or either of them, and in Case of Disagreement between them, with Respect to the Time of Adjournment, he may adjourn them to such Time as he shall think proper; he shall receive Ambassadors and other public Ministers; he shall take Care that the Laws be faithfully executed, and shall Commission all the Officers of the United States.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 4.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The President, Vice President and all civil Officers of the United States, shall be removed from Office on Impeachment for, and Conviction of, Treason, Bribery, or other high Crimes and Misdemeanors.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Article. III.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 1.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The judicial Power of the United States, shall be vested in one supreme Court, and in such inferior Courts as the Congress may from time to time ordain and establish. The Judges, both of the supreme and inferior Courts, shall hold their Offices during good Behaviour, and shall, at stated Times, receive for their Services, a Compensation, which shall not be diminished during their Continuance in Office.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 2.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The judicial Power shall extend to all Cases, in Law and Equity, arising under this Constitution, the Laws of the United States, and Treaties made, or which shall be made, under their Authority;—to all Cases affecting Ambassadors, other public Ministers and Consuls;—to all Cases of admiralty and maritime Jurisdiction;—to Controversies to which the United States shall be a Party;—to Controversies between two or more States;— between a State and Citizens of another State,—between Citizens of different States,—between Citizens of the same State claiming Lands under Grants of different States, and between a State, or the Citizens thereof, and foreign States, Citizens or Subjects.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In all Cases affecting Ambassadors, other public Ministers and Consuls, and those in which a State shall be Party, the supreme Court shall have original Jurisdiction. In all the other Cases before mentioned, the supreme Court shall have appellate Jurisdiction, both as to Law and Fact, with such Exceptions, and under such Regulations as the Congress shall make.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Trial of all Crimes, except in Cases of Impeachment, shall be by Jury; and such Trial shall be held in the State where the said Crimes shall have been committed; but when not committed within any State, the Trial shall be at such Place or Places as the Congress may by Law have directed.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 3.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Treason against the United States, shall consist only in levying War against them, or in adhering to their Enemies, giving them Aid and Comfort. No Person shall be convicted of Treason unless on the Testimony of two Witnesses to the same overt Act, or on Confession in open Court.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Congress shall have Power to declare the Punishment of Treason, but no Attainder of Treason shall work Corruption of Blood, or Forfeiture except during the Life of the Person attainted.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Article. IV.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 1.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Full Faith and Credit shall be given in each State to the public Acts, Records, and judicial Proceedings of every other State. And the Congress may by general Laws prescribe the Manner in which such Acts, Records and Proceedings shall be proved, and the Effect thereof.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 2.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Citizens of each State shall be entitled to all Privileges and Immunities of Citizens in the several States.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">A Person charged in any State with Treason, Felony, or other Crime, who shall flee from Justice, and be found in another State, shall on Demand of the executive Authority of the State from which he fled, be delivered up, to be removed to the State having Jurisdiction of the Crime.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">No Person held to Service or Labour in one State, under the Laws thereof, escaping into another, shall, in Consequence of any Law or Regulation therein, be discharged from such Service or Labour, but shall be delivered up on Claim of the Party to whom such Service or Labour may be due.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 3.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">New States may be admitted by the Congress into this Union; but no new State shall be formed or erected within the Jurisdiction of any other State; nor any State be formed by the Junction of two or more States, or Parts of States, without the Consent of the Legislatures of the States concerned as well as of the Congress.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Congress shall have Power to dispose of and make all needful Rules and Regulations respecting the Territory or other Property belonging to the United States; and nothing in this Constitution shall be so construed as to Prejudice any Claims of the United States, or of any particular State.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Section. 4.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The United States shall guarantee to every State in this Union a Republican Form of Government, and shall protect each of them against Invasion; and on Application of the Legislature, or of the Executive (when the Legislature cannot be convened) against domestic Violence.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Article. V.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Congress, whenever two thirds of both Houses shall deem it necessary, shall propose Amendments to this Constitution, or, on the Application of the Legislatures of two thirds of the several States, shall call a Convention for proposing Amendments, which, in either Case, shall be valid to all Intents and Purposes, as Part of this Constitution, when ratified by the Legislatures of three fourths of the several States, or by Conventions in three fourths thereof, as the one or the other Mode of Ratification may be proposed by the Congress; Provided that no Amendment which may be made prior to the Year One thousand eight hundred and eight shall in any Manner affect the first and fourth Clauses in the Ninth Section of the first Article; and that no State, without its Consent, shall be deprived of its equal Suffrage in the Senate.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Article. VI.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">All Debts contracted and Engagements entered into, before the Adoption of this Constitution, shall be as valid against the United States under this Constitution, as under the Confederation.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">This Constitution, and the Laws of the United States which shall be made in Pursuance thereof; and all Treaties made, or which shall be made, under the Authority of the United States, shall be the supreme Law of the Land; and the Judges in every State shall be bound thereby, any Thing in the Constitution or Laws of any State to the Contrary notwithstanding.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Senators and Representatives before mentioned, and the Members of the several State Legislatures, and all executive and judicial Officers, both of the United States and of the several States, shall be bound by Oath or Affirmation, to support this Constitution; but no religious Test shall ever be required as a Qualification to any Office or public Trust under the United States.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Article. VII.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Ratification of the Conventions of nine States, shall be sufficient for the Establishment of this Constitution between the States so ratifying the Same.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Word, “the,” being interlined between the seventh and eighth Lines of the first Page, The Word “Thirty” being partly written on an Erazure in the fifteenth Line of the first Page, The Words “is tried” being interlined between the thirty second and thirty third Lines of the first Page and the Word “the” being interlined between the forty third and forty fourth Lines of the second Page.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Attest William Jackson Secretary</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">done in Convention by the Unanimous Consent of the States present the Seventeenth Day of September in the Year of our Lord one thousand seven hundred and Eighty seven and of the Independance of the United States of America the Twelfth In witness whereof We have hereunto subscribed our Names,</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">G°. Washington<br><i>Presidt and deputy from Virginia</i></p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Delaware</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Geo: Read<br>Gunning Bedford jun<br>John Dickinson<br>Richard Bassett<br>Jaco: Broom</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Maryland</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">James McHenry<br>Dan of St Thos. Jenifer<br>Danl. Carroll</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Virginia</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">John Blair<br>James Madison Jr.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">North Carolina</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Wm. Blount<br>Richd. Dobbs Spaight<br>Hu Williamson</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">South Carolina</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">J. Rutledge<br>Charles Cotesworth Pinckney<br>Charles Pinckney<br>Pierce Butler</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Georgia</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">William Few<br>Abr Baldwin</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">New Hampshire</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">John Langdon<br>Nicholas Gilman</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Massachusetts</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Nathaniel Gorham<br>Rufus King</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Connecticut</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Wm. Saml. Johnson<br>Roger Sherman</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">New York</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Alexander Hamilton</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">New Jersey</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Wil: Livingston<br>David Brearley<br>Wm. Paterson<br>Jona: Dayton</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Pennsylvania</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">B Franklin<br>Thomas Mifflin<br>Robt. Morris<br>Geo. Clymer<br>Thos. FitzSimons<br>Jared Ingersoll<br>James Wilson<br>Gouv Morris</p>
+<div style="height:8px;" class="section-spacer"></div>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:17px; font-weight:700; border-bottom:2px solid #EF6449; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 16px 0; padding-left:36px; text-indent:-36px;">US Constitution. “The Constitution of the United States: A Transcription.” September 17, 1787. National Archives. <a href="https://www.archives.gov/founding-docs/constitution-transcript" style="color:#14705D; text-decoration:underline; word-break:break-all;">https://www.archives.gov/founding-docs/constitution-transcript</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 16px 0; ">US Constitution, art. I, sec. 8, “The Constitution of the United States: A Transcription,” National Archives, <a href="https://www.archives.gov/founding-docs/constitution-transcript" style="color:#14705D; text-decoration:underline; word-break:break-all;">https://www.archives.gov/founding-docs/constitution-transcript</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 16px 0; ">US Const., art. I, sec. 8.</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #EF6449; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 2 · BUILDING A NATION | HISTORY B17A | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_2/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Return to the Primary Source Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>
