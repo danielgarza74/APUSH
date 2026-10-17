@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Kentucky Revival. Primary Source P12.1 for Unit 3: An Expanding Nation.">
+  <meta name="theme-color" content="#7A2E1F">
+  <title>Primary Source P12.1 | The Kentucky Revival</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Primary_Sources/P12.01_Kentucky_Revival_1807.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #7A2E1F;
+      --forest-mid: #A8412B;
+      --coral: #D9A15C;
+      --coral-light: #EAC896;
+      --cream: #FBF2E7;
+      --paper: #FFFDF9;
+      --mint: #F8ECDC;
+      --sage: #E6CFB3;
+      --ink: #3B1A12;
+      --muted: #7D5A4C;
+      --shadow: 0 22px 55px rgba(74, 26, 16, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A8412B;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(217, 161, 92, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(122, 46, 31, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(74, 26, 16, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(168, 65, 43, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Primary source navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Primary Source Archive</a>
+      <div class="archive-meta">Unit 3 · Chapter 12 · P12.1</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="P12.1">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#FBF2E7; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Primary Source P12.1</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1"><em>The Kentucky Revival</em></div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Richard McNemar · 1807 (Cincinnati; reprinted New York, 1846)</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #D9A15C; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#EAC896; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TOC FIT</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:13.5px; line-height:1.55;">Chapter 12 · Essay prompt 12.1 (The Second Great Awakening)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WHY HERE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:13.5px; line-height:1.55;">An eyewitness and participant describes the great western camp meetings of 1801: children and laypeople exhorting crowds, worship “without any regard to former rules of order,” and Calvinist ministers resisting what they could not control. Students can weigh how far the revival put religion into ordinary people’s hands, keeping in mind that the author later left his church to join the Shakers.</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TREATMENT</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:13.5px; line-height:1.55;">Public-domain text, selected excerpts (from OCR transcription)</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:17px; font-weight:700; border-bottom:2px solid #D9A15C; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Historical Context</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Between 1799 and 1801 a wave of revivals swept the Kentucky and Tennessee frontier, beginning in Logan County and reaching its height at Cane Ridge, Bourbon County, in August 1801, where a sacramental meeting led by Presbyterian, Methodist, and Baptist preachers drew a crowd estimated at ten to twenty thousand. Families camped for days in wagons and tents. Observers described crowds falling to the ground, weeping, shouting, and later “jerking” and dancing, and laymen, women, and children exhorting sinners. These gatherings became the model for the American camp meeting.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Richard McNemar (1770–1839) was a Presbyterian minister in Kentucky and Ohio who took part in the revival. With Barton W. Stone and others he broke from the Synod of Kentucky in 1803, rejected the Westminster Confession, and formed the Springfield Presbytery, which dissolved itself in 1804 in favor of a creedless “Christian” church. In 1805 Shaker missionaries arrived from New York, and McNemar and much of his congregation at Turtle Creek, Ohio, joined them. He wrote this history in 1807, as a Shaker, to present the revival as a preparation for Shakerism.</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 26px 0;" class="editorial-note"><tr>
+  <td style="border-left:4px solid #D9A15C; background-color:rgba(168, 65, 43,0.07); padding:12px 16px; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; line-height:1.6;"><strong>Editorial note.</strong> First printed at Cincinnati in 1807. This reader reproduces the text of the 1846 New York reprint (Edward O. Jenkins), from the Internet Archive scan and OCR of the University of Illinois copy; the plan’s New York Public Library record of the 1807 printing could not be read page by page. Obvious OCR errors were corrected, line-end hyphens rejoined, and stray spaces before punctuation removed; original spellings such as “Caneridge” are kept. Italics in the printed text are not reproduced. Omissions are marked [. . .]. CAUTION: McNemar wrote six years after these events and after joining the Shakers (United Society of Believers). His sharp criticism of Calvinist ministers and his reading of the revival as the start of a “greater work” reflect that later commitment; the crowd sizes and the count of those who “fell” are estimates passed on by participants.</td>
+</tr></table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:17px; font-weight:700; border-bottom:2px solid #D9A15C; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Document Text</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:14px; font-weight:700; margin:8px 0 10px 0;" class="document-subheading" role="heading" aria-level="3">Chapter II. Of the First Appearances of the Extraordinary Work, in Different Parts of Kentucky, in 1800 and 1801.</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The first extraordinary appearances of the power of God, in the late revival, began about the close of the last century, in Logan and Christian counties, on the waters of the Gasper and Red rivers. And in the spring of 1801 the same extraordinary work broke out in Madison county, upper part of Kentucky; of which I was an eyewitness; and can, therefore, with greater confidence testify what I have heard, seen and felt.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It first began in individuals, who had been under deep convictions of sin, and great trouble about their souls; and had fasted and prayed, and diligently searched the Scriptures; and had undergone distresses of mind inexpressibly sore, until they had obtained a comfortable hope of salvation. And from seeing and feeling the love of Christ, and his willingness to save all that would forsake their sins, and turn to God through him; and feeling how freely his love and goodness flowed to them; it kindled their love to other souls that were lost in their sins, and an ardent desire that they might come and partake of that spiritual light, life, and comfort, which appeared infinite in its nature, and free to all. And under such an overpowering weight of the divine goodness as tongue could not express, they were constrained to cry out, with tears and trembling, and testify a full and free salvation in Christ for all that would come; and to warn their fellow-creatures of the danger of continuing in sin, and entreating them in the most tender and affectionate manner, to turn from it, and seek the Lord, in sure and certain hope that he would be found. Under such exhortations the people began to be affected in a very strange manner. At first they were taken with an inward throbbing of heart; then with weeping and trembling; from that to crying out, in apparent agony of soul; falling down and swooning away, till every appearance of animal life was suspended, and the person appeared to be in a trance. From this state they would recover under different sensations, which will be more particularly noticed hereafter.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It is worthy of notice, that a work by which God intended to bring down the pride and loftiness of man, should begin in small children. By this it was manifest who was the farthest lost from God, and what course must be taken in order to return.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Their convictions of their lost state (from a sudden opening of that pure holiness, to which sin stands directly opposed) were quick as the lightning's flash, and came with such weight, that had they not, in some way or other, opened their case, they must have sunk into the horrors of despair. It was dire necessity which at first obliged them to expose themselves to public view as objects of pity; for everything of the kind was looked upon by the generality, even of professors, as wild enthusiasm, or the fruits of a disordered brain.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">There were, however, a few who understood the disorder, and were ready to fly to their relief, and proclaim liberty to the captives, and the opening of the prison to them that were bound.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">And here a new scene was opened. While some trembled like one in a fit of the ague, wept, or cried out, lamenting their distance from God, and exposedness to his wrath, others were employed in praying with them, encouraging them to believe on the Son of God, to venture upon his promise, give up their wicked, rebellious heart, just as it was, for God to take it away, and give them a heart of flesh; singing hymns, and giving thanks to God for the display of his power, without any regard to former rules of order. At this some were offended, and withdrew from the assembly, determined to oppose it as a work of the wicked one. But all their objections only tended to open the way for the true nature and spirit of the work to shine out, and encourage the subjects of it to set out with warmer zeal to promote it. Accordingly, a meeting was appointed a few evenings after, to which a crowd of awakened souls flocked, and spent the whole night in singing hymns, praying, and exhorting one another, &c. At this meeting one man was struck down, and lay for about an hour in the situation above mentioned. This put the matter beyond dispute, that the work was supernatural; and the outcry which it raised against sin, confirmed a number in the belief that it was from above.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">From small beginnings it gradually spread. The news of these strange operations flew abroad, and attracted many to come and see, who were convinced, not only from seeing and hearing, but feeling; and carried home the testimony that it was the living work of God. This stirred up others, and brought out still greater multitudes. And these strange exercises still increasing, and having no respect to any stated hours of worship, it was found expedient to encamp on the ground, and continue the meeting day and night. To these encampments the people flocked, in hundreds and thousands; on foot, on horseback, and in wagons and other carriages.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">At first appearance those meetings exhibited nothing to the spectator but a scene of confusion, that could scarce be put into human language. They were generally opened with a sermon, near the close of which there would be an unusual outcry; some bursting forth into loud ejaculations of prayer, or thanksgiving, for the truth; others breaking out in emphatical sentences of exhortation; others flying to their careless friends with tears of compassion, beseeching them to turn to the Lord; some struck with terror, and hastening through the crowd to make their escape, or pulling away their relations; others trembling, weeping, crying out for the Lord Jesus to have mercy upon them, fainting and swooning away, till every appearance of life was gone, and the extremities of the body assumed the coldness of a dead corpse; others surrounding them with melodious songs, or fervent prayers for their happy resurrection in the love of Christ; others collecting into circles around this variegated scene, contending with arguments for and against. And under such appearances the work would continue for several days and nights together.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The next general camp-meeting, was held at Concord, in the county of Bourbon, about the last of May, or beginning of June. The number of people was supposed to be about 4,000, who attended on this occasion. There were present seven Presbyterian ministers; four of whom were opposed to the work, and spoke against it until the fourth day about noon; the evidence then became so powerful, that they all professed to be convinced, that it was the work of God; and one of them addressed the assembly with tears, acknowledging, that notwithstanding they had long been praying to the Lord, to pour out his spirit, yet when it came, they did not know it; but wickedly opposed the answer of their own prayers. On this occasion, no sex or color, class or description, were exempted from the pervading influence of the Spirit; even from the age of eight months, to sixty years, there were evident subjects of this marvelous operation.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The meeting continued five days, and four nights; and after the people generally scattered from the ground, numbers convened in different places, and continued the exercise much longer. And even where they were not collected together, these wonderful operations continued among every class of people, and in every situation; in their houses and fields, and in their daily employments, falling down and crying out, under conviction, or singing and shouting with unspeakable joy, were so common, that the whole country round about, seemed to be leavened with the spirit of the work.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The next general meeting was at Pleasant Point, Kentucky; which equaled, if not surpassed, any that had been before. Here, the Christian minister, (so called,) the common professor, the professed deist, and debauchee, were forced to take one common lot among the wounded, and confess, with equal candor, that hitherto they had been total strangers to the religion of Jesus. From this meeting, the work was spread extensively through Bourbon, Fayette, and other neighboring counties; and was carried by a number of its subjects, to the south side of Kentucky, where it found a permanent residence in the hearts of many.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The next general meeting was at Caneridge, Bourbon county, seven miles from Paris. It began the 6th of August, and continued, day and night, about a week. The number of people collected on the ground, at once, was supposed to be about twenty thousand; but it was thought a much greater number were there in the course of the meeting. The encampment consisted of one hundred and thirty-five wheel-carriages, and tents proportioned to the people. This immense group included almost every character that could be named; but amidst them all, the subjects of this new and strange operation were distinguished, by their flaming zeal for the destruction of sin, and the deliverance of souls from its power. The various operations and exercises on that occasion were indescribable. The falling exercise was the most noted. James Crawford, one of the oldest ministers in the State, and one of the foremost in the work, informed me that he kept as accurate an account as he could of the number that fell on the occasion, and computed it to be about three thousand. The vast numbers who received light, on this occasion, and went forth in every direction to spread it, render it impossible to pursue any further the particular track of its progress. I shall only add that it was but a few weeks after this meeting, that the same work broke out in North Carolina, by the instrumentality of some who went from Caneridge to bear the testimony.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">I shall now take notice of the opposition, which was raised against the work, in this first stage of it; and show some of the causes from which it sprung.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The people among whom the revival began, were generally Calvinists; and although they had been long praying in words, for the out-pouring of the Spirit; and believed that God had “fore-ordained whatsoever comes to pass;” yet, when it came to pass that their prayer was answered, and the Spirit began to flow like many waters, from a cloud of witnesses; and souls were convicted of sin, and cried for mercy, and found hope and comfort in the news of a Saviour; they rose up and quarreled with the work, because it did not come to pass that the subjects of it were willing to adopt their soul-stupefying creed. Those who had labored and travailed, to gain some solid hope of salvation; and had ventured their souls upon the covenant of promise; and had felt the living seal of eternal love; could not, dare not preach, that salvation was restricted to a certain definite number; nor insinuate, that any being which God had made, was, by the Creator, laid under the dire necessity of being damned forever. The love of a Saviour constrained them to testify, that one had died for all. This truth so essential to the first ray of hope in the human breast, was like a dead fly in the ointment of the apothecary, to the Calvinist: hence all the trembling, weeping and groaning under sin, rejoicing in the hope of deliverance, and turning from the former practice of it, sent forth a disagreeable savor. Yet these exercises would no doubt have passed for a good work of God, had they appeared as seals to their doctrine of election, imperfection, and final perseverance. But everything appeared new, and to claim no relation to the old bed of sand upon which they had been building: and rather than quit the old foundation, they chose to reject, oppose and persecute the truth, although accompanied with all that evidence, which many of them were obliged to acknowledge was Divine.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:17px; font-weight:700; border-bottom:2px solid #D9A15C; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">McNemar, Richard. <em>The Kentucky Revival; or, A Short History of the Late Extraordinary Out-pouring of the Spirit of God, in the Western States of America</em>. Cincinnati, 1807. Reprint, New York: Edward O. Jenkins, 1846. Internet Archive (University of Illinois Urbana-Champaign copy). <a href="https://archive.org/details/kentuckyrevivalo00mcne" style="color:#A8412B; text-decoration:underline; word-break:break-all;">https://archive.org/details/kentuckyrevivalo00mcne</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation (example):</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">1. Richard McNemar, <em>The Kentucky Revival</em> (Cincinnati, 1807; repr., New York: Edward O. Jenkins, 1846), 26, Internet Archive, <a href="https://archive.org/details/kentuckyrevivalo00mcne" style="color:#A8412B; text-decoration:underline; word-break:break-all;">https://archive.org/details/kentuckyrevivalo00mcne</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">McNemar, <em>Kentucky Revival</em>, 26.</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #D9A15C; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 3 · AN EXPANDING NATION | HISTORY B17A | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Return to the Primary Source Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

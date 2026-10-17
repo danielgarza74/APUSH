@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Memorial to the Legislature of Massachusetts. Primary Source P12.38 for Unit 3: An Expanding Nation.">
+  <meta name="theme-color" content="#7A2E1F">
+  <title>Primary Source P12.38 | Memorial to the Legislature of Massachusetts</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Primary_Sources/P12.38_Memorial_Legislature_Massachusetts_1843.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #7A2E1F;
+      --forest-mid: #A8412B;
+      --coral: #D9A15C;
+      --coral-light: #EAC896;
+      --cream: #FBF2E7;
+      --paper: #FFFDF9;
+      --mint: #F8ECDC;
+      --sage: #E6CFB3;
+      --ink: #3B1A12;
+      --muted: #7D5A4C;
+      --shadow: 0 22px 55px rgba(74, 26, 16, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A8412B;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(217, 161, 92, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(122, 46, 31, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(74, 26, 16, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(168, 65, 43, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Primary source navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Primary Source Archive</a>
+      <div class="archive-meta">Unit 3 · Chapter 12 · P12.38</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="P12.38">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#FBF2E7; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Primary Source P12.38</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">Memorial to the Legislature of Massachusetts</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Dorothea L. Dix · January 1843 (Boston: Munroe & Francis)</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #D9A15C; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#EAC896; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TOC FIT</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:13.5px; line-height:1.55;">Chapter 12 · Essay prompt 12.2 (Why Reform?)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WHY HERE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:13.5px; line-height:1.55;">A reformer’s eyewitness report to state lawmakers on mentally ill people held in jails and poorhouses, written to win money for a state hospital. Students can weigh its humanitarian appeal against its call for new state institutions, and notice how a woman claimed a public voice in an age that barred her from voting.</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TREATMENT</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:13.5px; line-height:1.55;">Public-domain text, selected excerpts (from OCR transcription)</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:17px; font-weight:700; border-bottom:2px solid #D9A15C; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Historical Context</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Dorothea Lynde Dix (1802–1887) was a Boston schoolteacher and writer of children’s books who, after teaching a Sunday school class at the East Cambridge jail in 1841, began a two-year tour of the jails and almshouses of Massachusetts. Under state law, towns could lock up “lunatics” and “idiots” who were poor in jails, houses of correction, and poorhouses, often in outbuildings, cellars, or cages, while the State Lunatic Hospital at Worcester (opened 1833) was full and sent back patients judged incurable.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Dix presented this memorial in January 1843. Because women could not address the legislature, the reformer Samuel Gridley Howe introduced it, and it was printed as a pamphlet. After debate and some angry denials from towns she named, the legislature voted funds to enlarge the Worcester hospital. Dix went on to campaign in other states and in Congress, and helped found or expand more than thirty asylums, part of a wider reform movement that also built penitentiaries and schools for the blind and deaf.</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 26px 0;" class="editorial-note"><tr>
+  <td style="border-left:4px solid #D9A15C; background-color:rgba(168, 65, 43,0.07); padding:12px 16px; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; line-height:1.6;"><strong>Editorial note.</strong> This reader reproduces selected passages from the pamphlet printed by Munroe & Francis, Boston, in the reprint issued in August 1843 with a short added note by Dix (omitted here); the text is the compiler’s corrected transcription of the Internet Archive scan’s OCR text (U.S. National Library of Medicine copy). The selection gives Dix’s opening, the first two entries from her notebook (Springfield and Danvers), and her conclusion; the remaining notebook entries and the letters she quotes from sheriffs, wardens, and prison officials are omitted. The terms “idiot,” “lunatic,” and “maniac” were standard medical and legal language in 1843. CAUTION: Dix wrote to persuade lawmakers, chose the worst cases she found, and quotes keepers from memory; some towns disputed her descriptions.</td>
+</tr></table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:17px; font-weight:700; border-bottom:2px solid #D9A15C; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Document Text</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:14px; font-weight:700; margin:8px 0 10px 0;" class="document-subheading" role="heading" aria-level="3">To the Legislature of Massachusetts.</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">GENTLEMEN,</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">I respectfully ask to present this Memorial, believing that the cause, which actuates to and sanctions so unusual a movement, presents no equivocal claim to public consideration and sympathy. Surrendering to calm and deep convictions of duty my habitual views of what is womanly and becoming, I proceed briefly to explain what has conducted me before you unsolicited and unsustained, trusting, while I do so, that the memorialist will be speedily forgotten in the memorial.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">About two years since leisure afforded opportunity, and duty prompted me to visit several prisons and alms-houses in the vicinity of this metropolis. I found, near Boston, in the Jails and Asylums for the poor, a numerous class brought into unsuitable connexion with criminals and the general mass of Paupers. I refer to Idiots and Insane persons, dwelling in circumstances not only adverse to their own physical and moral improvement, but productive of extreme disadvantages to all other persons brought into association with them. I applied myself diligently to trace the causes of these evils, and sought to supply remedies. As one obstacle was surmounted, fresh difficulties appeared. Every new investigation has given depth to the conviction that it is only by decided, prompt, and vigorous legislation the evils to which I refer, and which I shall proceed more fully to illustrate, can be remedied. I shall be obliged to speak with great plainness, and to reveal many things revolting to the taste, and from which my woman’s nature shrinks with peculiar sensitiveness. But truth is the highest consideration. <em>I tell what I have seen</em>—painful and shocking as the details often are—that from them you may feel more deeply the imperative obligation which lies upon you to prevent the possibility of a repetition or continuance of such outrages upon humanity. If I inflict pain upon you, and move you to horror, it is to acquaint you with sufferings which you have the power to alleviate, and make you hasten to the relief of the victims of legalized barbarity.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">I come to present the strong claims of suffering humanity. I come to place before the Legislature of Massachusetts the condition of the miserable, the desolate, the outcast. I come as the advocate of helpless, forgotten, insane and idiotic men and women; of beings, sunk to a condition from which the most unconcerned would start with real horror; of beings wretched in our Prisons, and more wretched in our Alms-Houses. And I cannot suppose it needful to employ earnest persuasion, or stubborn argument, in order to arrest and fix attention upon a subject, only the more strongly pressing in its claims, because it is revolting and disgusting in its details. I must confine myself to few examples, but am ready to furnish other and more complete details, if required. If my pictures are displeasing, coarse, and severe, my subjects, it must be recollected, offer no tranquil, refined, or composing features. The condition of human beings, reduced to the extremest states of degradation and misery, cannot be exhibited in softened language, or adorn a polished page.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">I proceed, Gentlemen, briefly to call your attention to the present state of Insane Persons confined within this Commonwealth, in cages, closets, cellars, stalls, pens! Chained, naked, beaten with rods, and lashed into obedience!</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">As I state cold, severe facts, I feel obliged to refer to persons, and definitely to indicate localities. But it is upon my subject, not upon localities or individuals, I desire to fix attention; and I would speak as kindly as possible of all Wardens, Keepers, and other responsible officers, believing that most of these have erred not through hardness of heart and wilful cruelty, so much as want of skill and knowledge, and want of consideration. Familiarity with suffering, it is said, blunts the sensibilities, and where neglect once finds a footing other injuries are multiplied. This is not all, for it may justly and strongly be added that, from the deficiency of adequate means to meet the wants of these cases, it has been an absolute impossibility to do justice in this matter. Prisons are not constructed in view of being converted into County Hospitals, and Alms-Houses are not founded as receptacles for the Insane. And yet, in the face of justice and common sense, Wardens are by law compelled to receive, and the Masters of Alms-Houses not to refuse, Insane and Idiotic subjects in all stages of mental disease and privation.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It is the Commonwealth, not its integral parts, that is accountable for most of the abuses which have lately, and do still exist. I repeat it, it is defective legislation which perpetuates and multiplies these abuses.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In illustration of my subject, I offer the following extracts from my Note-Book and Journal:—</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Springfield. In the jail, one lunatic woman, furiously mad, a state pauper, improperly situated, both in regard to the prisoners, the keepers, and herself. It is a case of extreme self-forgetfulness and oblivion to all the decencies of life; to describe which, would be to repeat only the grossest scenes. She is much worse since leaving Worcester. In the almshouse of the same town is a woman apparently only needing judicious care, and some well-chosen employment, to make it unnecessary to confine her in solitude, in a dreary unfurnished room. Her appeals for employment and companionship are most touching, but the mistress replied, ‘she had no time to attend to her.’</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Danvers. November; visited the almshouse; a large building, much out of repair; understand a new one is in contemplation. Here are from fifty-six to sixty inmates; one idiotic; three insane; one of the latter in close confinement at all times.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Long before reaching the house, wild shouts, snatches of rude songs, imprecations, and obscene language, fell upon the ear, proceeding from the occupant of a low building, rather remote from the principal building to which my course was directed. Found the mistress, and was conducted to the place, which was called ‘the home’ of the forlorn maniac, a young woman, exhibiting a condition of neglect and misery blotting out the faintest idea of comfort, and outraging every sentiment of decency. She had been, I learnt, “a respectable person; industrious and worthy; disappointments and trials shook her mind, and finally laid prostrate reason and self-control; she became a maniac for life! She had been at Worcester Hospital for a considerable time, and had been returned as incurable.” The mistress told me she understood that, while there, she was “comfortable and decent.” Alas! what a change was here exhibited! She had passed from one degree of violence and degradation to another, in swift progress; there she stood, clinging to, or beating upon, the bars of her caged apartment, the contracted size of which afforded space only for increasing accumulations of filth, a foul spectacle; there she stood with naked arms and dishevelled hair; the unwashed frame invested with fragments of unclean garments, the air so extremely offensive, though ventilation was afforded on all sides save one, that it was not possible to remain beyond a few moments without retreating for recovery to the outward air. Irritation of body, produced by utter filth and exposure, incited her to the horrid process of tearing off her skin by inches; her face, neck, and person, were thus disfigured to hideousness; she held up a fragment just rent off; to my exclamation of horror, the mistress replied, “oh, we can’t help it; half the skin is off sometimes; we can do nothing with her; and it makes no difference what she eats, for she consumes her own filth as readily as the food which is brought her.”</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It is not few but many, it is not a part but the whole, who bear unqualified testimony to this evil. A voice strong and deep comes up from every almshouse and prison in Massachusetts where the insane are or have been, protesting against such evils as have been illustrated in the preceding pages.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Gentlemen, I commit to you this sacred cause. Your action upon this subject will affect the present and future condition of hundreds and of thousands.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In this legislation, as in all things, may you exercise that “wisdom which is the breath of the power of God.”</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Respectfully submitted,</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">D. L. DIX.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">85 Mt. Vernon Street, Boston.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">January, 1843.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:17px; font-weight:700; border-bottom:2px solid #D9A15C; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Dix, D. L. <em>Memorial. To the Legislature of Massachusetts</em>. Boston: Munroe & Francis, 1843. U.S. National Library of Medicine copy, Internet Archive. <a href="https://archive.org/details/101174442.nlm.nih.gov" style="color:#A8412B; text-decoration:underline; word-break:break-all;">https://archive.org/details/101174442.nlm.nih.gov</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation (example):</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">1. D. L. Dix, <em>Memorial. To the Legislature of Massachusetts</em> (Boston: Munroe & Francis, 1843), 32, <a href="https://archive.org/details/101174442.nlm.nih.gov" style="color:#A8412B; text-decoration:underline; word-break:break-all;">https://archive.org/details/101174442.nlm.nih.gov</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Dix, <em>Memorial</em>, 32.</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #D9A15C; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 3 · AN EXPANDING NATION | HISTORY B17A | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Return to the Primary Source Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>
