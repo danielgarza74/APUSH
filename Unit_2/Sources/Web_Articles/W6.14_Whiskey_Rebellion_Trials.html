@@ -1,8 +1,327 @@
-<table style="background:#eef7f4;max-width:820px;margin:0 auto;border-collapse:collapse;" role="presentation" width="100%"><tbody><tr><td style="padding:30px 36px 22px;">
-<div style="font-family:Arial,sans-serif;color:#f0654a;font-size:13px;font-weight:bold;letter-spacing:.04em;margin-bottom:8px;">WEB ARTICLE W6.14</div>
-<div style="font-family:Georgia,serif;color:#0b4438;font-size:30px;line-height:1.18;font-weight:bold;margin-bottom:8px;">Whiskey Rebellion Trials</div>
-<div style="font-family:Arial,sans-serif;color:#14705d;font-size:14px;font-weight:bold;line-height:1.5;margin-bottom:14px;">Patrick Grubbs</div>
-<table role="presentation" width="100%" style="border-collapse:collapse;background:#fce8e1;border:1px solid #f0654a;margin:0 0 24px;"><tbody>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Whiskey Rebellion Trials. Web Article W6.14 for Unit 2: Building a Nation.">
+  <meta name="theme-color" content="#0B4438">
+  <title>Web Article W6.14 | Whiskey Rebellion Trials</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+
+    :root {
+      --forest: #0B4438;
+      --forest-mid: #14705D;
+      --coral: #F0654A;
+      --coral-light: #F7A98F;
+      --cream: #F6F1E7;
+      --paper: #FFFEFA;
+      --mint: #EEF7F4;
+      --sage: #C9DBD6;
+      --ink: #163D34;
+      --muted: #5E746E;
+      --shadow: 0 22px 55px rgba(4, 43, 35, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(240, 101, 74, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(11, 68, 56, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(4, 43, 35, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2.1rem;
+      right: 1.5rem;
+      color: rgba(20, 112, 93, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-article {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse !important;
+      table-layout: fixed !important;
+    }
+    .article-content { padding: clamp(2.25rem, 7vw, 5rem) !important; }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+      text-transform: uppercase;
+    }
+    .article-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em !important;
+      overflow-wrap: anywhere;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: italic 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+    }
+    .source-meta {
+      width: 100% !important;
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage) !important;
+      border-left: 5px solid var(--coral) !important;
+      border-collapse: collapse !important;
+    }
+    .source-meta td:first-child {
+      width: 24% !important;
+      padding: .9rem 1rem .78rem 1.15rem !important;
+      background: transparent !important;
+      color: var(--coral) !important;
+      font: 800 .65rem/1.45 var(--ui) !important;
+      letter-spacing: .12em !important;
+      vertical-align: top;
+    }
+    .source-meta td:last-child {
+      padding: .9rem 1.2rem .78rem .65rem !important;
+      color: var(--ink) !important;
+      font: 600 .82rem/1.6 var(--ui) !important;
+      vertical-align: top;
+    }
+    .source-meta tr + tr td { border-top: 1px solid var(--sage) !important; }
+    .article-content h2 {
+      display: block !important;
+      width: fit-content;
+      margin: 3.4rem 0 1.45rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral) !important;
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em !important;
+    }
+    .article-content h3 {
+      max-width: 67ch;
+      margin: 2rem auto .75rem !important;
+      color: var(--forest) !important;
+      font: 700 clamp(1.15rem, 2vw, 1.35rem)/1.35 var(--heading) !important;
+    }
+    .article-content p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font-family: var(--body) !important;
+      font-size: clamp(1.08rem, 1.8vw, 1.22rem) !important;
+      line-height: 1.78 !important;
+    }
+    .article-content p[style*="italic"] {
+      padding: .8rem 1rem;
+      color: var(--forest-mid) !important;
+      border-left: 3px solid var(--coral-light);
+      background: var(--mint);
+    }
+    .article-content p > a[target="_blank"] {
+      display: inline-flex !important;
+      align-items: center;
+      gap: .55rem;
+      padding: .8rem 1rem !important;
+      color: white !important;
+      border: 1px solid var(--forest) !important;
+      background: var(--forest) !important;
+      font: 700 .76rem var(--ui) !important;
+      letter-spacing: .07em;
+      text-decoration: none !important;
+      text-transform: uppercase;
+      transition: color .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .article-content p > a[target="_blank"]::after { content: '↗'; color: var(--coral-light); }
+    .article-content p > a[target="_blank"]:hover {
+      color: var(--forest) !important;
+      border-color: var(--coral) !important;
+      background: var(--coral-light) !important;
+    }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.4rem auto .45rem !important;
+      color: var(--coral) !important;
+      font: 800 .67rem var(--ui) !important;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+    .citation-label + p { font-size: 1.02rem !important; line-height: 1.65 !important; }
+    .article-footer-cell { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .article-footer-cell > div {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: rgba(255,254,250,.75);
+      font: 700 .7rem var(--ui);
+      letter-spacing: .08em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); background: var(--paper); }
+    @media (max-width: 680px) {
+      body { font-size: 18px; }
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: 1rem; }
+      .document-shell::before { right: .4rem; font-size: 5rem; }
+      .article-content { padding: 2.2rem 1.15rem !important; }
+      .article-title { font-size: clamp(2rem, 11vw, 3.2rem) !important; }
+      .source-meta, .source-meta tbody, .source-meta tr, .source-meta td { display: block; width: 100% !important; }
+      .source-meta td:first-child { padding-bottom: .15rem !important; }
+      .source-meta td:last-child { padding: .1rem 1.15rem .8rem !important; }
+      .source-meta tr + tr td:first-child { border-top: 1px solid var(--sage) !important; }
+      .source-meta tr + tr td:last-child { border-top: 0 !important; }
+      .article-footer-cell { padding: 0 1.15rem 1.5rem !important; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+    @media print {
+      @page { margin: .6in; }
+      body { background: white; font-size: 10pt; }
+      body::before, .archive-bar, .document-actions { display: none !important; }
+      .document-shell { width: auto; margin: 0; overflow: visible; border: 0; border-top: 5px solid var(--coral); box-shadow: none; }
+      .document-shell::before { display: none; }
+      .article-content { padding: .35in 0 !important; }
+      .article-title { font-size: 25pt !important; }
+      .article-content p { max-width: none; font-size: 11pt !important; line-height: 1.55 !important; }
+      .source-meta, .article-content h2, .article-content h3, .article-content p { break-inside: avoid; }
+      .article-content p > a[target="_blank"] { color: var(--forest) !important; background: transparent !important; }
+      .article-footer-cell { padding: 0 !important; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#article-content">Skip to article</a>
+  <header class="archive-bar">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_2/Sources/Web_Articles/" aria-label="Return to the Unit 2 Web Article Archive"><span aria-hidden="true">←</span> Web Article Archive</a>
+      <span class="archive-meta">Chapter 6 · W6.14</span>
+    </div>
+    <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
+  </header>
+  <main id="article-content" class="document-shell" data-code="W6.14" aria-labelledby="article-title">
+<!-- preserved-article:start -->
+<table class="legacy-article" style="background:#eef7f4;max-width:820px;margin:0 auto;border-collapse:collapse;" role="presentation" width="100%"><tbody><tr><td class="article-content" style="padding:30px 36px 22px;">
+<p class="source-kicker" style="font-family:Arial,sans-serif;color:#f0654a;font-size:13px;font-weight:bold;letter-spacing:.04em;margin-bottom:8px;">WEB ARTICLE W6.14</p>
+<h1 class="article-title" id="article-title" style="font-family:Georgia,serif;color:#0b4438;font-size:30px;line-height:1.18;font-weight:bold;margin-bottom:8px;">Whiskey Rebellion Trials</h1>
+<p class="source-byline" style="font-family:Arial,sans-serif;color:#14705d;font-size:14px;font-weight:bold;line-height:1.5;margin-bottom:14px;">Patrick Grubbs</p>
+<table class="source-meta" role="table" width="100%" style="border-collapse:collapse;background:#fce8e1;border:1px solid #f0654a;margin:0 0 24px;"><tbody>
 <tr><td style="width:24%;background:#f8b09a;padding:9px 11px;font:700 12px Arial;color:#0b4438;border-bottom:1px solid #f0654a;">AUTHOR</td><td style="padding:9px 12px;font:13px/1.5 Arial;color:#163d34;border-bottom:1px solid #f0654a;">Patrick Grubbs (advanced PhD student, Lehigh Univ.; instructor, Northampton CC)</td></tr>
 <tr><td style="background:#f8b09a;padding:9px 11px;font:700 12px Arial;color:#0b4438;border-bottom:1px solid #f0654a;">WEBSITE</td><td style="padding:9px 12px;font:13px/1.5 Arial;color:#163d34;border-bottom:1px solid #f0654a;">Encyclopedia of Greater Philadelphia</td></tr>
 <tr><td style="background:#f8b09a;padding:9px 11px;font:700 12px Arial;color:#0b4438;border-bottom:1px solid #f0654a;">PUBLICATION</td><td style="padding:9px 12px;font:13px/1.5 Arial;color:#163d34;border-bottom:1px solid #f0654a;">2015 (mod. Apr. 23, 2022)</td></tr>
@@ -14,7 +333,27 @@
 <p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">The first two convictions of Americans for federal treason in United States history occurred in Philadelphia in the aftermath of the Whiskey Rebellion, an uprising against the federal excise tax on whiskey that took place primarily in western Pennsylvania in 1791-94. Philadelphia served as the nation’s capital during this period and therefore was the city in which the excise legislation was passed, where President George Washington (1732-99) issued his proclamations against the rebels, and where the trials for a number of the rebels took place.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">The Whiskey Rebellion developed after the First United States Congress, seated at Congress Hall at Sixth and Chestnut Streets, passed an excise tax on domestic whiskey on March 3, 1791. This legislation, pushed through Congress by Secretary of Treasury Alexander Hamilton (1755-1804), was designed to help pay off state debts assumed by Congress in 1790. The law required citizens to register their stills and pay a tax to a federal commissioner within their region. Almost immediately, protests flared in areas such as North Carolina, Kentucky, and particularly western Pennsylvania. Citizens on the frontier protested because they had little money to pay the tax and had used whiskey to barter within their regions for decades. Secondly, they thought that the tax opened the door for government intrusion into their domestic lives, which they believed Americans had fought against during the American Revolution.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">The first resistance to the excise tax in western Pennsylvania occurred in September 1791 when sixteen men assaulted an excise collector in Washington County by cutting his hair, tarring and feathering him, and leaving him in the woods. Protests continued through 1791, although they were not always violent. Citizens also organized mass meetings in July and September 1791 to draft petitions to Congress to repeal the tax. Western Pennsylvania then remained relatively peaceful until the fall of 1792, when John Neville (1731-1803), the regional supervisor for the collection of the federal excise tax, rented an office from a local man named William Faulkner. Within days, roughly twenty men ransacked Faulkner’s home and forced him to swear an oath to evict Neville, which he promptly did. Partly in response to this attack, but more importantly due to overall resistance to the excise tax, President Washington issued a proclamation condemning the excise resisters on September 15, 1792.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">Despite this federal proclamation, resistance continued into 1793. The intensity appeared to fade by the beginning of 1794, in part because Congress passed an amendment to the law allowing distillers to sell whiskey to the army to help pay the excise tax. Another amendment adopted on June 5, 1794, allowed trials of excise cases to take place in state, as opposed to federal, courts–just one week after U.S. District Attorney William Rawle (1759-1836) obtained federal writs requiring more than sixty western distillers to appear in federal court in Philadelphia. When U.S. Marshal David Lenox (1753-1828) and the tax supervisor John Neville traveled from Philadelphia to western Pennsylvania with the writs, their presence reignited resistance. On July 16, a nearly twenty-five-minute gun battle at Neville’s home in Allegheny County resulted in the death of one resister. In reaction to this “murder,” an estimated five hundred resisters came back on July 17 to Neville’s house, defended now by ten soldiers from Fort Pitt, and another gun battle ensued. The resisters burned Neville’s home and captured Lenox, who somehow managed to escape with his life. He returned to Philadelphia, where Hamilton and Washington called for military force to suppress the rebellion.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">As Washington prepared his 12,950-man army, drawn primarily from New Jersey and Pennsylvania state militia troops, citizens in Philadelphia and other cities including Hagerstown and Baltimore, Maryland, protested the use of military force against their countrymen. By the time troops reached western Pennsylvania in October 1794, most resisters gave in to the futility of opposing the federal forces. Washington’s army found little opposition and easily rounded up many potential resisters but not the supposed leaders of the rebellion, who had fled farther west. When the army marched back toward Philadelphia on November 19, only twenty suspects were in custody. When the army and the prisoners returned to Philadelphia by Christmas Day, the accused rebels were paraded through the city and down Broad Street as trophies.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">Many of these prisoners languished in prison for nearly six months while they awaited federal trial for treason. Eventually, only ten of the accused whiskey rebels were tried for treason at the U.S. District Court for the Eastern District of Pennsylvania, which sat in City Hall (later known as Old City Hall, Fifth and Chestnut Streets). Two of these ten men, John Mitchell and Philip Vigol (or Weigle), were convicted due in large part to William Rawle’s expanded definition of treason that combining to defeat or resist a federal law was the equivalent of levying war against the United States and therefore an act of treason. This set a precedent for treason that was used five years later in the aftermath of Fries’s Rebellion in Bucks County. Mitchell and Vigol were the first two Americans convicted of federal treason in American history. On November 2, 1795, Washington pardoned both Mitchell and Vigol after finding one to be a “simpleton” and the other to be “insane.” While these pardons unofficially ended the saga of the Whiskey Rebellion, the government’s use of military force to repress this “rebellion” and questions concerning the legitimacy of these “treasonous” acts remain controversial and are still debated among historians.</p>
 <p style="margin:24px 0;"><a href="https://philadelphiaencyclopedia.org/essays/whiskey-rebellion/" target="_blank" rel="noopener" style="display:inline-block;background:#0b4438;color:#fff;text-decoration:none;font:700 14px Arial;padding:11px 17px;">Read the Original Article</a></p>
 <h2 style="font:700 18px Arial;color:#14705d;border-bottom:2px solid #f0654a;padding-bottom:5px;margin:8px 0 14px;">Chicago Citations</h2>
-<div style="font:700 12px Arial;color:#0b4438;margin:5px 0;">BIBLIOGRAPHY ENTRY</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;padding-left:34px;text-indent:-34px;">Grubbs, Patrick. &quot;Whiskey Rebellion Trials.&quot; Encyclopedia of Greater Philadelphia. 2015 (mod. Apr. 23, 2022). https://philadelphiaencyclopedia.org/essays/whiskey-rebellion/.</p>
-<div style="font:700 12px Arial;color:#0b4438;margin:5px 0;">FULL FOOTNOTE</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;">Patrick Grubbs, &quot;Whiskey Rebellion Trials,&quot; Encyclopedia of Greater Philadelphia, 2015 (mod. Apr. 23, 2022), https://philadelphiaencyclopedia.org/essays/whiskey-rebellion/.</p>
-<div style="font:700 12px Arial;color:#0b4438;margin:5px 0;">SHORTENED FOOTNOTE</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;">Grubbs, &quot;Whiskey Rebellion Trials.&quot;</p>
-</td></tr><tr><td style="padding:0 36px 22px;"><div style="border-top:2px solid #f0654a;padding-top:11px;text-align:center;font:11px Arial;color:#0b4438;">UNIT 2 &middot; BUILDING A NATION | HISTORY B17A | DANIEL GARZA, M.A.</div></td></tr></tbody></table>
+<div class="citation-label" style="font:700 12px Arial;color:#0b4438;margin:5px 0;">BIBLIOGRAPHY ENTRY</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;padding-left:34px;text-indent:-34px;">Grubbs, Patrick. &quot;Whiskey Rebellion Trials.&quot; Encyclopedia of Greater Philadelphia. 2015 (mod. Apr. 23, 2022). https://philadelphiaencyclopedia.org/essays/whiskey-rebellion/.</p>
+<div class="citation-label" style="font:700 12px Arial;color:#0b4438;margin:5px 0;">FULL FOOTNOTE</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;">Patrick Grubbs, &quot;Whiskey Rebellion Trials,&quot; Encyclopedia of Greater Philadelphia, 2015 (mod. Apr. 23, 2022), https://philadelphiaencyclopedia.org/essays/whiskey-rebellion/.</p>
+<div class="citation-label" style="font:700 12px Arial;color:#0b4438;margin:5px 0;">SHORTENED FOOTNOTE</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;">Grubbs, &quot;Whiskey Rebellion Trials.&quot;</p>
+</td></tr><tr><td class="article-footer-cell" style="padding:0 36px 22px;"><div style="border-top:2px solid #f0654a;padding-top:11px;text-align:center;font:11px Arial;color:#0b4438;">UNIT 2 &middot; BUILDING A NATION | HISTORY B17A | DANIEL GARZA, M.A.</div></td></tr></tbody></table>
+<!-- preserved-article:end -->
+  </main>
+  <nav class="document-actions" aria-label="Article navigation">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_2/Sources/Web_Articles/"><span aria-hidden="true">←</span> Return to Web Article Archive</a>
+  </nav>
+  <script>
+    (() => {
+      const bar = document.getElementById('reading-progress');
+      const update = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = scrollable > 0 ? Math.min(1, window.scrollY / scrollable) : 0;
+        bar.style.width = `${progress * 100}%`;
+      };
+      update();
+      addEventListener('scroll', update, { passive: true });
+      addEventListener('resize', update);
+    })();
+  </script>
+</body>
+</html>

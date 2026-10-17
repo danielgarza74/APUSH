@@ -1,54 +1,410 @@
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#EDF6F4; max-width:820px; margin:0 auto;">
-  <tr><td style="padding:32px 36px 20px 36px;">
-<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;">Primary Source P7.3</div>
-<div style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;">Serious Considerations on the Election of a President: Addressed to the Citizens of the United States</div>
-<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;">[William Linn] (published anonymously) · 1800</div>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;"><tr><td style="border-top:4px solid #EF6449; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F6A88E; border-collapse:collapse; margin-bottom:26px;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Serious Considerations on the Election of a President: Addressed to the Citizens of the United States. Primary Source P7.3 for Unit 2: Building a Nation.">
+  <meta name="theme-color" content="#0B4438">
+  <title>Primary Source P7.3 | Serious Considerations on the Election of a President: Addressed to the Citizens of the United States</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_2/Sources/Primary/P7.03_Serious_Considerations_Election_President_1800.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #0B4438;
+      --forest-mid: #14705D;
+      --coral: #F0654A;
+      --coral-light: #F7A98F;
+      --cream: #F6F1E7;
+      --paper: #FFFEFA;
+      --mint: #EEF7F4;
+      --sage: #C9DBD6;
+      --ink: #163D34;
+      --muted: #5E746E;
+      --shadow: 0 22px 55px rgba(4, 43, 35, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(240, 101, 74, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(11, 68, 56, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(4, 43, 35, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(20, 112, 93, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Primary source navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_2/Sources/Primary/"><span aria-hidden="true">←</span> Primary Source Archive</a>
+      <div class="archive-meta">Unit 2 · Chapter 7 · P7.3</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="P7.3">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#EDF6F4; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Primary Source P7.3</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">Serious Considerations on the Election of a President: Addressed to the Citizens of the United States</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">[William Linn] (published anonymously) · 1800</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #EF6449; font-size:1px; line-height:1px;"> </td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F6A88E; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
   <tr>
     <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0B4438; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TOC FIT</td>
     <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0B4438; font-size:13.5px; line-height:1.55;">Chapter 7 · Essay prompt 7.1 (Was 1800 Really a “Revolution”?)</td>
   </tr>
   <tr>
     <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#0B4438; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WHY HERE</td>
-    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#0B4438; font-size:13.5px; line-height:1.55;">This campaign pamphlet shows what one Federalist-aligned clergyman believed was at stake in replacing Adams with Jefferson: not tariffs or treaties but the religious character of the presidency and of the nation. Students can weigh how far such fears measured a real break in political culture, and set the pamphlet&rsquo;s warnings beside what Jefferson actually said and did once in office.</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#0B4438; font-size:13.5px; line-height:1.55;">This campaign pamphlet shows what one Federalist-aligned clergyman believed was at stake in replacing Adams with Jefferson: not tariffs or treaties but the religious character of the presidency and of the nation. Students can weigh how far such fears measured a real break in political culture, and set the pamphlet’s warnings beside what Jefferson actually said and did once in office.</td>
   </tr>
 </table>
-<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:17px; font-weight:700; border-bottom:2px solid #EF6449; padding-bottom:4px; margin:6px 0 14px 0;">Historical Context</div>
-<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In the presidential contest of 1800, Federalist newspapers, sermons, and pamphlets attacked Thomas Jefferson not only as a friend of revolutionary France but as an unbeliever unfit to lead a Christian people. This pamphlet, printed anonymously in 1800, is generally attributed to William Linn (1752–1808), a Dutch Reformed minister in New York City who had served as the first chaplain of the U.S. House of Representatives. The author builds his case chiefly from Jefferson&rsquo;s <i>Notes on the State of Virginia</i> and from reported private conversations.</p>
-<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The pamphlet addressed ordinary voters and presidential electors in the months before electors were chosen, many of them by state legislatures. Jefferson&rsquo;s supporters answered with rebuttals, and Jefferson himself made no public reply. The passages reproduced here set out the author&rsquo;s purpose, his reading of Jefferson&rsquo;s views on religion and government, and his predictions of what a Jefferson presidency would mean for the country.</p>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 26px 0;"><tr>
-  <td style="border-left:4px solid #EF6449; background-color:rgba(20,112,93,0.07); padding:12px 16px; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; line-height:1.6;">Editorial note: Transcribed from the 1800 Trenton edition via the Internet Archive scan; long s modernized and obvious OCR errors corrected. The running quotation marks that the printer set at the start of each line of a quotation have been removed, and footnote reference marks and the author&rsquo;s footnotes omitted. Four passages are reproduced: the opening address (pp. [3]–5), the discussion of Jefferson&rsquo;s views on religion and civil government (pp. 14–16), the second of the author&rsquo;s three predicted effects of Jefferson&rsquo;s election (pp. 19–21), and the closing appeal (pp. 27–28). Sections on the Flood, the peopling of America, human origins, and the Bible in schools are not reproduced. Attribution to Linn rests on contemporary report and library cataloging; the pamphlet itself is unsigned.</td>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:17px; font-weight:700; border-bottom:2px solid #EF6449; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Historical Context</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In the presidential contest of 1800, Federalist newspapers, sermons, and pamphlets attacked Thomas Jefferson not only as a friend of revolutionary France but as an unbeliever unfit to lead a Christian people. This pamphlet, printed anonymously in 1800, is generally attributed to William Linn (1752–1808), a Dutch Reformed minister in New York City who had served as the first chaplain of the U.S. House of Representatives. The author builds his case chiefly from Jefferson’s <i>Notes on the State of Virginia</i> and from reported private conversations.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The pamphlet addressed ordinary voters and presidential electors in the months before electors were chosen, many of them by state legislatures. Jefferson’s supporters answered with rebuttals, and Jefferson himself made no public reply. The passages reproduced here set out the author’s purpose, his reading of Jefferson’s views on religion and government, and his predictions of what a Jefferson presidency would mean for the country.</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 26px 0;" class="editorial-note"><tr>
+  <td style="border-left:4px solid #EF6449; background-color:rgba(20,112,93,0.07); padding:12px 16px; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; line-height:1.6;">Editorial note: Transcribed from the 1800 Trenton edition via the Internet Archive scan; long s modernized and obvious OCR errors corrected. The running quotation marks that the printer set at the start of each line of a quotation have been removed, and footnote reference marks and the author’s footnotes omitted. Four passages are reproduced: the opening address (pp. [3]–5), the discussion of Jefferson’s views on religion and civil government (pp. 14–16), the second of the author’s three predicted effects of Jefferson’s election (pp. 19–21), and the closing appeal (pp. 27–28). Sections on the Flood, the peopling of America, human origins, and the Bible in schools are not reproduced. Attribution to Linn rests on contemporary report and library cataloging; the pamphlet itself is unsigned.</td>
 </tr></table>
-<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:17px; font-weight:700; border-bottom:2px solid #EF6449; padding-bottom:4px; margin:6px 0 14px 0;">Document Text</div>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:17px; font-weight:700; border-bottom:2px solid #EF6449; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Document Text</div>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">FELLOW-CITIZENS,</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">THE time is drawing near, when you will be called to give your voice in the election of a President. In the exercise of this important privilege, it will be granted, that great deliberation is necessary; and that upon the choice of a suitable person depends, under Divine Providence, the prosperity of our nation. A few considerations, therefore, will be received by you with candour, and allowed all the weight to which you may think them entitled. The writer of them has neither held, nor does he expect ever to hold any office under government; he means not to be an advocate for any particular man; he is not actuated by a mere regard to the political principles of any party; but, if his heart deceive him not, by a sincere desire for the public welfare.</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It is well understood that the Honorable Thomas Jefferson is a candidate for the Chief Magistracy of the United States, and that a number of our citizens will give him all their support. I would not presume to dictate to you who ought to be President, but entreat you to hear with patience my reasons why he ought not.</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To the declarations of disinterestedness and sincerity already made, I think it proper to add, that I have no personal resentment whatever against Mr. Jefferson, and that it is with pain I oppose him; that I never was in his company, and would hardly know him; that I honor him as holding a high office in government; that I admire his talents, and feel grateful for the services which he has been instrumental in rendering to his country; and that my objection to his being promoted to the Presidency is founded singly upon his disbelief of the Holy Scriptures; or, in other words, his rejection of the Christian Religion and open profession of Deism.</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Notwithstanding the general character of Mr. Jefferson, and the proofs of his Deistical principles which have been partly published, at different times, there are some who still doubt; or, if they admit the truth, are disposed to say that he is no worse than his opponents. Whether he is worse or not will be shown hereafter. When the spirit of party is so violent as we have seen it in this country, and the vilest calumnies have been propagated respecting the best characters, it is not surprising that the reports which are circulated should be received with caution, especially when there is not ready access to the highest and most infallible sources of information. I shall endeavour in this address, to present to your view the collective evidence of Mr. Jefferson’s principles as to religion, and show you why such a man ought not to be honored and entrusted with the office of chief magistrate. This I hope to do principally from Mr. Jefferson’s own writings, and in such a manner that neither he or any of his friends shall be able justly to charge me with the least misrepresentation.</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Besides the publications acknowledged by a man, some dependence may be fairly placed upon his general character, and his conversation as related by men of intelligence and veracity. The world is seldom mistaken as to a man’s talents and moral principles; and we safely rely upon respectable testimony. The avowal, therefore, of sentiments in conversation which shall be related, cannot be doubted, from the nature of the authority; and our belief will be strengthened when this is viewed in connection with the written evidence.</p>
-<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[.&nbsp;.&nbsp;.]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">There is another passage in Mr. Jefferson’s Notes which requires the most serious attention. In showing that civil rulers ought not to interfere with the rights of conscience, and that the legitimate powers of government extend to such acts only as are injurious to others, he says, “It does me no injury for my neighbor to say there are twenty gods, or no god. It neither picks my pocket, nor breaks my leg.” The whole passage is written with a great degree of spirit. It is remarkable for that conciseness, perspicuity and force which characterize the style of Mr. Jefferson. Some have ventured, from the words I have quoted to bring even the charge of atheism against him. This is a high charge, and it becomes us carefully to examine the ground upon which it rests; though the words themselves, their connection, and the design for which they are introduced may be insufficient to support it, yet there are concurrent circumstances to be taken into consideration, and which will fix at least a suspicion. These circumstances are, the general disregard of religious things, the associates at home and correspondents abroad, and the principles maintained in conversation. With these things I am not so well acquainted as many. I shall only mention what passed in conversation between Mr. Jefferson and a gentleman of distinguished talents and services, on the necessity of religion to government. The gentleman insisted that some religious faith and institutions of worship, claiming a divine origin, were necessary to the order and peace of society. Mr. Jefferson said that he differed widely from him, and that “he wished to see a government in which no religious opinions were held, and where the security for property and social order rested entirely upon the force of the laws.” Would not this be a nation of Atheists? Is it not natural, after the free declaration of such a sentiment, to suspect the man himself of Atheism? Could one who is impressed with the existence of a God, the Creator, Preserver, and Governor of all things, to whom we are under a law and accountable; and the inseparable connection of this truth with the social order and the eternal happiness of mankind, express himself in this manner.</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Putting the most favorable construction upon the words in the Notes, they are extremely reprehensible. Does not the belief influence the practice? How then can it be a matter of indifference what a man believes? The doctrine, that a man’s life may be good, let his faith be what it may, is contradictory to reason and the experience of mankind. It is true that a mere opinion of my neighbour will do me no injury. Government cannot regulate or punish it. The right of private opinion is inalienable. But let my neighbour once persuade himself that there is no God, and he will soon pick my pocket, and break, not only my leg but my neck. If there be no God, there is no law; no future account; government then is the ordinance of man only, and we cannot be subject for conscience sake. No colours can paint the horrid effects of such a principle, and the deluge of miseries with which it would overwhelm the human race.</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">How strongly soever Mr. Jefferson may reason against the punishment by law of erroneous opinions, even of Atheism, they are not the less frightful and dangerous in their consequences. He admits the propriety of rejecting the testimony of an atheist in a court of justice, and of fixing a stigma upon him. Just such a stigma the United States ought to fix upon himself. Though neither the constitution, nor any law forbids his election, yet the public opinion ought to disqualify him. On account of his disbelief of the Holy Scriptures, and his attempts to discredit them, he ought to be rejected from the Presidency. No professed deist, be his talents and acquirements what they may, ought to be promoted to this place by the suffrages of a Christian nation. The greater his talents and the more extensive his acquirements, the greater will be his power and the more extensive his influence in poisoning mankind.</p>
-<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[.&nbsp;.&nbsp;.]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">2. Consider the effects which the election of any man avowing the principles of Mr. Jefferson would have upon our citizens. The effects would be, to destroy religion, introduce immorality, and loosen all the bonds of society. Will it be said, that he is a man of too much understanding and prudence to meddle with religion, and seek to disseminate his own principles? What assurance have we of this? We remember that Hazael, when forewarned of the crimes which he would commit, answered, “But what! is thy servant a dog; that he should do this great thing?” And yet he afterwards did it. But Mr. Jefferson tells us openly what his principles are; and we are to presume that he will act upon them. It is a light thing with him to say there is no God. He wishes to see government where the people have no religious opinions and forms of worship. If he should endeavour to carry these principles into operation, and we should complain, he might say, “What right had you to expect otherwise? I told you before hand; and after this information you entrusted me. Had I not a better right to conclude, that you rather approved of my principles, than expected me to renounce them?” Mr. Jefferson indeed has shown us, that his conduct will correspond with his principles. We have not forgotten the sunday-feast of him and his friends at Fredericksburgh, in Virginia, on his return from the second seat in government.</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To do Mr. Jefferson, however, more than justice, let us suppose that he will make no attempts either by word or act to unsettle the religious belief; that he will not try his favorite project of a government without religion; and that he will not think it “high time for this country to get rid of religion and the clergy;” will not the station of President alone have a most baneful influence? Does not every person acquainted with human nature, and who is attentive to the state of manners in society, know that the principles and manners of those called the higher ranks, and especially of those in the administration of government, soon pervade all classes? Let the first magistrate be a professed infidel, and infidels will surround him. Let him spend the sabbath in feasting, in visiting or receiving visits, in riding abroad, but never in going to church; and to frequent public worship will become unfashionable. Infidelity will become the prattle from the highest to the lowest condition in life, and universal dissoluteness will follow. “The wicked walk on every side, when the vilest men are exalted.”</p>
-<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[.&nbsp;.&nbsp;.]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Will you then, my fellow-citizens, with all this evidence, and all these consequences before you, vote for electors who you believe will vote for Mr. Jefferson? or, if you are electors will you vote for him yourselves? Can you do either of these with a clear judgment, a peaceful conscience, and an unshaken hand? If you can, do it. Let nothing warp you from that line of conduct which an enlightened conscience directs, and the great Judge of all will approve. As to myself, were Mr. Jefferson connected with me by the nearest ties of blood, and did I owe him a thousand obligations, I would not, and could not vote for him. No; sooner than stretch forth my hand to place him at the head of the nation, “Let mine arm fall from my shoulderblade, and my arm be broken from the bone.” I can exalt no man who reviles my Saviour. We have seen tokens of the divine displeasure for several years past; and should the Presidential chair be permitted to become the “seat of the scornful,” I must consider it as an awful frown from Heaven, and the beginning of miseries. Natural pestilence is mercy compared with moral; and no nation can be more unhappy than to forsake God, and to be given up by him. If to this we are doomed, may the years be shortened! and may even you, the unwary instruments of drawing down the calamities, be sheltered, and obtain the forgiveness of God and your country!</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To conclude, I have not set my name to this address; not because I am either afraid or ashamed; but because I wish it to be fairly judged by its own merits distinct from every other consideration. On this account I wish to be always concealed; at the same time, if any apparent necessity should occur, I shall immediately become known. I would feel criminal had I expressed myself with less warmth. I rather fear that I have not risen to what the cause demanded. Against Mr. Jefferson I have no personal resentment. He and I can never be competitors for any place of honor and emolument. Separate him from his principles, and I could write his eulogium. Let me farther repeat, that no answer is intended in this address to his philosophical and religious principles; that the single thing intended, is to show that these principles are contrary to what we are taught in the holy scriptures, and that for this reason alone, he ought not to be honored and entrusted with the Presidency of the United States of America.</p>
-<div style="height:8px;"></div>
-<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:17px; font-weight:700; border-bottom:2px solid #EF6449; padding-bottom:4px; margin:6px 0 14px 0;">Chicago Citations</div>
-<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; margin:4px 0 6px 0;">Bibliography entry:</div>
+<div style="height:8px;" class="section-spacer"></div>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:17px; font-weight:700; border-bottom:2px solid #EF6449; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 16px 0; padding-left:36px; text-indent:-36px;">[Linn, William]. <i>Serious Considerations on the Election of a President: Addressed to the Citizens of the United States</i>. Trenton, NJ: Sherman, Mershon &amp; Thomas, 1800. Internet Archive, <a href="https://archive.org/details/seriousconsidera00linn" style="color:#14705D; text-decoration:underline; word-break:break-all;">https://archive.org/details/seriousconsidera00linn</a>.</p>
-<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; margin:4px 0 6px 0;">Footnote citation:</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 16px 0; ">[William Linn], <i>Serious Considerations on the Election of a President: Addressed to the Citizens of the United States</i> (Trenton, NJ: Sherman, Mershon &amp; Thomas, 1800), 15.</p>
-<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; margin:4px 0 6px 0;">Shortened citation:</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 16px 0; ">[Linn], <i>Serious Considerations</i>, 15.</p>
   </td></tr>
-  <tr><td style="padding:0 36px 22px 36px;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;"><tr>
-  <td style="padding-top:12px; border-top:1px solid #EF6449; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 2 &middot; BUILDING A NATION | HISTORY B17A | DANIEL GARZA, M.A.</td>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #EF6449; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 2 · BUILDING A NATION | HISTORY B17A | DANIEL GARZA, M.A.</td>
 </tr></table>
   </td></tr>
 </table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_2/Sources/Primary/"><span aria-hidden="true">←</span> Return to the Primary Source Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

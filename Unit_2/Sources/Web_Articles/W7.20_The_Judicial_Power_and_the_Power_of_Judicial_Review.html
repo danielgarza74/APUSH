@@ -1,8 +1,327 @@
-<table style="background:#eef7f4;max-width:820px;margin:0 auto;border-collapse:collapse;" role="presentation" width="100%"><tbody><tr><td style="padding:30px 36px 22px;">
-<div style="font-family:Arial,sans-serif;color:#f0654a;font-size:13px;font-weight:bold;letter-spacing:.04em;margin-bottom:8px;">WEB ARTICLE W7.20</div>
-<div style="font-family:Georgia,serif;color:#0b4438;font-size:30px;line-height:1.18;font-weight:bold;margin-bottom:8px;">The &#x27;Judicial Power&#x27; and the Power of Judicial Review</div>
-<div style="font-family:Arial,sans-serif;color:#14705d;font-size:14px;font-weight:bold;line-height:1.5;margin-bottom:14px;">Richard W. Garnett</div>
-<table role="presentation" width="100%" style="border-collapse:collapse;background:#fce8e1;border:1px solid #f0654a;margin:0 0 24px;"><tbody>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The &#x27;Judicial Power&#x27; and the Power of Judicial Review. Web Article W7.20 for Unit 2: Building a Nation.">
+  <meta name="theme-color" content="#0B4438">
+  <title>Web Article W7.20 | The &#x27;Judicial Power&#x27; and the Power of Judicial Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+
+    :root {
+      --forest: #0B4438;
+      --forest-mid: #14705D;
+      --coral: #F0654A;
+      --coral-light: #F7A98F;
+      --cream: #F6F1E7;
+      --paper: #FFFEFA;
+      --mint: #EEF7F4;
+      --sage: #C9DBD6;
+      --ink: #163D34;
+      --muted: #5E746E;
+      --shadow: 0 22px 55px rgba(4, 43, 35, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(240, 101, 74, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(11, 68, 56, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(4, 43, 35, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2.1rem;
+      right: 1.5rem;
+      color: rgba(20, 112, 93, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-article {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse !important;
+      table-layout: fixed !important;
+    }
+    .article-content { padding: clamp(2.25rem, 7vw, 5rem) !important; }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+      text-transform: uppercase;
+    }
+    .article-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em !important;
+      overflow-wrap: anywhere;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: italic 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+    }
+    .source-meta {
+      width: 100% !important;
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage) !important;
+      border-left: 5px solid var(--coral) !important;
+      border-collapse: collapse !important;
+    }
+    .source-meta td:first-child {
+      width: 24% !important;
+      padding: .9rem 1rem .78rem 1.15rem !important;
+      background: transparent !important;
+      color: var(--coral) !important;
+      font: 800 .65rem/1.45 var(--ui) !important;
+      letter-spacing: .12em !important;
+      vertical-align: top;
+    }
+    .source-meta td:last-child {
+      padding: .9rem 1.2rem .78rem .65rem !important;
+      color: var(--ink) !important;
+      font: 600 .82rem/1.6 var(--ui) !important;
+      vertical-align: top;
+    }
+    .source-meta tr + tr td { border-top: 1px solid var(--sage) !important; }
+    .article-content h2 {
+      display: block !important;
+      width: fit-content;
+      margin: 3.4rem 0 1.45rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral) !important;
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em !important;
+    }
+    .article-content h3 {
+      max-width: 67ch;
+      margin: 2rem auto .75rem !important;
+      color: var(--forest) !important;
+      font: 700 clamp(1.15rem, 2vw, 1.35rem)/1.35 var(--heading) !important;
+    }
+    .article-content p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font-family: var(--body) !important;
+      font-size: clamp(1.08rem, 1.8vw, 1.22rem) !important;
+      line-height: 1.78 !important;
+    }
+    .article-content p[style*="italic"] {
+      padding: .8rem 1rem;
+      color: var(--forest-mid) !important;
+      border-left: 3px solid var(--coral-light);
+      background: var(--mint);
+    }
+    .article-content p > a[target="_blank"] {
+      display: inline-flex !important;
+      align-items: center;
+      gap: .55rem;
+      padding: .8rem 1rem !important;
+      color: white !important;
+      border: 1px solid var(--forest) !important;
+      background: var(--forest) !important;
+      font: 700 .76rem var(--ui) !important;
+      letter-spacing: .07em;
+      text-decoration: none !important;
+      text-transform: uppercase;
+      transition: color .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .article-content p > a[target="_blank"]::after { content: '↗'; color: var(--coral-light); }
+    .article-content p > a[target="_blank"]:hover {
+      color: var(--forest) !important;
+      border-color: var(--coral) !important;
+      background: var(--coral-light) !important;
+    }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.4rem auto .45rem !important;
+      color: var(--coral) !important;
+      font: 800 .67rem var(--ui) !important;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+    .citation-label + p { font-size: 1.02rem !important; line-height: 1.65 !important; }
+    .article-footer-cell { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .article-footer-cell > div {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: rgba(255,254,250,.75);
+      font: 700 .7rem var(--ui);
+      letter-spacing: .08em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); background: var(--paper); }
+    @media (max-width: 680px) {
+      body { font-size: 18px; }
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: 1rem; }
+      .document-shell::before { right: .4rem; font-size: 5rem; }
+      .article-content { padding: 2.2rem 1.15rem !important; }
+      .article-title { font-size: clamp(2rem, 11vw, 3.2rem) !important; }
+      .source-meta, .source-meta tbody, .source-meta tr, .source-meta td { display: block; width: 100% !important; }
+      .source-meta td:first-child { padding-bottom: .15rem !important; }
+      .source-meta td:last-child { padding: .1rem 1.15rem .8rem !important; }
+      .source-meta tr + tr td:first-child { border-top: 1px solid var(--sage) !important; }
+      .source-meta tr + tr td:last-child { border-top: 0 !important; }
+      .article-footer-cell { padding: 0 1.15rem 1.5rem !important; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+    @media print {
+      @page { margin: .6in; }
+      body { background: white; font-size: 10pt; }
+      body::before, .archive-bar, .document-actions { display: none !important; }
+      .document-shell { width: auto; margin: 0; overflow: visible; border: 0; border-top: 5px solid var(--coral); box-shadow: none; }
+      .document-shell::before { display: none; }
+      .article-content { padding: .35in 0 !important; }
+      .article-title { font-size: 25pt !important; }
+      .article-content p { max-width: none; font-size: 11pt !important; line-height: 1.55 !important; }
+      .source-meta, .article-content h2, .article-content h3, .article-content p { break-inside: avoid; }
+      .article-content p > a[target="_blank"] { color: var(--forest) !important; background: transparent !important; }
+      .article-footer-cell { padding: 0 !important; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#article-content">Skip to article</a>
+  <header class="archive-bar">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_2/Sources/Web_Articles/" aria-label="Return to the Unit 2 Web Article Archive"><span aria-hidden="true">←</span> Web Article Archive</a>
+      <span class="archive-meta">Chapter 7 · W7.20</span>
+    </div>
+    <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
+  </header>
+  <main id="article-content" class="document-shell" data-code="W7.20" aria-labelledby="article-title">
+<!-- preserved-article:start -->
+<table class="legacy-article" style="background:#eef7f4;max-width:820px;margin:0 auto;border-collapse:collapse;" role="presentation" width="100%"><tbody><tr><td class="article-content" style="padding:30px 36px 22px;">
+<p class="source-kicker" style="font-family:Arial,sans-serif;color:#f0654a;font-size:13px;font-weight:bold;letter-spacing:.04em;margin-bottom:8px;">WEB ARTICLE W7.20</p>
+<h1 class="article-title" id="article-title" style="font-family:Georgia,serif;color:#0b4438;font-size:30px;line-height:1.18;font-weight:bold;margin-bottom:8px;">The &#x27;Judicial Power&#x27; and the Power of Judicial Review</h1>
+<p class="source-byline" style="font-family:Arial,sans-serif;color:#14705d;font-size:14px;font-weight:bold;line-height:1.5;margin-bottom:14px;">Richard W. Garnett</p>
+<table class="source-meta" role="table" width="100%" style="border-collapse:collapse;background:#fce8e1;border:1px solid #f0654a;margin:0 0 24px;"><tbody>
 <tr><td style="width:24%;background:#f8b09a;padding:9px 11px;font:700 12px Arial;color:#0b4438;border-bottom:1px solid #f0654a;">AUTHOR</td><td style="padding:9px 12px;font:13px/1.5 Arial;color:#163d34;border-bottom:1px solid #f0654a;">Richard W. Garnett (Schierl/Fort Howard Professor of Law, Notre Dame)</td></tr>
 <tr><td style="background:#f8b09a;padding:9px 11px;font:700 12px Arial;color:#0b4438;border-bottom:1px solid #f0654a;">WEBSITE</td><td style="padding:9px 12px;font:13px/1.5 Arial;color:#163d34;border-bottom:1px solid #f0654a;">Interactive Constitution, NCC</td></tr>
 <tr><td style="background:#f8b09a;padding:9px 11px;font:700 12px Arial;color:#0b4438;border-bottom:1px solid #f0654a;">PUBLICATION</td><td style="padding:9px 12px;font:13px/1.5 Arial;color:#163d34;border-bottom:1px solid #f0654a;">n.d. (FLAG)</td></tr>
@@ -14,7 +333,27 @@
 <h3 style="font-family:Georgia,serif;color:#0b4438;font-size:18px;line-height:1.35;margin:20px 0 10px;">Common Interpretation</h3><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">Although the guarantee that judges will have lifetime tenure seems simple, it actually raises a difficult question in our system. In the federal government, there are many officials who do judge-like things—think of military courts-martial, for example—but who do not have the lifetime tenure that Article III seems to require for federal judges. Many of these officials are members of, or work for, administrative agencies—what is sometimes called the federal bureaucracy. Officials like this will rule on whether, for example, a company has used advertisements that deceive consumers, or a business has wrongly tried to prevent its workers from joining a union, or the government has not paid a person the disability benefits he or she is entitled to. Thousands of decisions of this kind are made every year by federal officials who are not considered “judges” for purposes of Article III, and therefore do not have lifetime tenure, but who are doing the kinds of things judges usually do: settle disputes between people. These administrative officials usually serve only for a few years, after which the President can replace them. There are safeguards to prevent officials of this kind from being openly biased or unfair, but because they are appointed so frequently, they are often thought to be more responsive to day-to-day politics than judges are.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">Why do we allow these officials to resolve disputes in the way that judges do, even though they do not have the lifetime tenure guarantee that judges have? The answer is complicated, but the basic idea is that you generally have a right to appeal from a decision of one of these officials to a judge whose independence is protected by lifetime tenure. So judges—including, potentially, the Supreme Court—will have the final word, and that, the Supreme Court has said, is enough to maintain the principle of judicial independence enshrined in Article III.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">The Constitution is clear about who has “the judicial Power of the United States”: the federal courts do—not the President, not the Congress, and not the states. It’s less clear, though, when it comes to what that power is. What is it, in other words, that the Constitution gives the “Judges . . . of the supreme and inferior courts” to do? We can assume that these judges do not have the power to enact legislation—the Congress has the federal “legislative Powers”—or the power to enforce the laws that Congress enacts—that’s the President’s job. So, again: what is it that federal judges do, and do not, have the “Power” to do?</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">One part of the answer is easy: the federal courts have the power to decide certain cases and resolve certain controversies, in a neutral and objective way, by interpreting the relevant laws and applying them to the relevant facts. However, what if the question before the judge has to do with the legality of the government’s actions or the constitutionality of a rule or law? Here, things get more complicated.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">Alexander Hamilton famously wrote, in The Federalist No. 78, that “the judiciary is beyond comparison the weakest” of the federal government’s three branches. This is because, he thought, the judiciary has “no influence over either the sword or the purse”; it has “neither FORCE nor WILL, but merely judgment[.]” True, he admitted, the courts have to exercise what we now call “judicial review,” and decide whether or not legislators’ and officials’ actions are consistent with the Constitution—which is, after all the “supreme Law of the Land”—but this doesn’t mean they are superior to the other branches. It simply means that all branches and officials of the federal government are constrained by the Constitution that “We the People” established.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">This explanation didn’t satisfy everyone at the Founding—some critics of the Constitution said that the power of judicial review would “enable [the courts] to mold the government into almost any shape they please”—and it is still debated today. After all, it is one thing to say that courts may and should interpret the Constitution, and strike down laws and official actions that are inconsistent with it, but what if Congress, or the President, or state legislators and governors, disagree with the courts’ interpretation? A branch of government that gets to decide what other branches may or may not do, and that gets to overturn policy choices made by elected and accountable branches, hardly seems like “the weakest.”</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">Yes, judges are independent, and the Founders thought that this independence would protect their ability to uphold the law, even when doing so is unpopular. On the other hand, this independence can look like unaccountability and it can create what the great legal scholar Alexander Bickel called the “countermajoritarian difficulty.” Throughout our history, many of the Supreme Court’s most contested decisions have been in cases—think of cases involving, for example, gun regulations or abortion restrictions—where the Justices struck down duly enacted laws and, critics contend, acted against the will and legitimate choice of the majority. Our written Constitution means that some such cases are probably inevitable. At the same time, our commitment to democracy means that they are, and will continue to be, controversial.</p>
 <p style="margin:24px 0;"><a href="https://constitutioncenter.org/the-constitution/articles/article-iii/clauses/45" target="_blank" rel="noopener" style="display:inline-block;background:#0b4438;color:#fff;text-decoration:none;font:700 14px Arial;padding:11px 17px;">Read the Original Article</a></p>
 <h2 style="font:700 18px Arial;color:#14705d;border-bottom:2px solid #f0654a;padding-bottom:5px;margin:8px 0 14px;">Chicago Citations</h2>
-<div style="font:700 12px Arial;color:#0b4438;margin:5px 0;">BIBLIOGRAPHY ENTRY</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;padding-left:34px;text-indent:-34px;">Garnett, Richard W.. &quot;The &#x27;Judicial Power&#x27; and the Power of Judicial Review.&quot; Interactive Constitution, NCC. n.d. Accessed October 14, 2026. https://constitutioncenter.org/the-constitution/articles/article-iii/clauses/45.</p>
-<div style="font:700 12px Arial;color:#0b4438;margin:5px 0;">FULL FOOTNOTE</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;">Richard W. Garnett, &quot;The &#x27;Judicial Power&#x27; and the Power of Judicial Review,&quot; Interactive Constitution, NCC, n.d. Accessed October 14, 2026, https://constitutioncenter.org/the-constitution/articles/article-iii/clauses/45.</p>
-<div style="font:700 12px Arial;color:#0b4438;margin:5px 0;">SHORTENED FOOTNOTE</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;">Garnett, &quot;The &#x27;Judicial Power&#x27; and the Power of Judicial Review.&quot;</p>
-</td></tr><tr><td style="padding:0 36px 22px;"><div style="border-top:2px solid #f0654a;padding-top:11px;text-align:center;font:11px Arial;color:#0b4438;">UNIT 2 &middot; BUILDING A NATION | HISTORY B17A | DANIEL GARZA, M.A.</div></td></tr></tbody></table>
+<div class="citation-label" style="font:700 12px Arial;color:#0b4438;margin:5px 0;">BIBLIOGRAPHY ENTRY</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;padding-left:34px;text-indent:-34px;">Garnett, Richard W.. &quot;The &#x27;Judicial Power&#x27; and the Power of Judicial Review.&quot; Interactive Constitution, NCC. n.d. Accessed October 14, 2026. https://constitutioncenter.org/the-constitution/articles/article-iii/clauses/45.</p>
+<div class="citation-label" style="font:700 12px Arial;color:#0b4438;margin:5px 0;">FULL FOOTNOTE</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;">Richard W. Garnett, &quot;The &#x27;Judicial Power&#x27; and the Power of Judicial Review,&quot; Interactive Constitution, NCC, n.d. Accessed October 14, 2026, https://constitutioncenter.org/the-constitution/articles/article-iii/clauses/45.</p>
+<div class="citation-label" style="font:700 12px Arial;color:#0b4438;margin:5px 0;">SHORTENED FOOTNOTE</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;">Garnett, &quot;The &#x27;Judicial Power&#x27; and the Power of Judicial Review.&quot;</p>
+</td></tr><tr><td class="article-footer-cell" style="padding:0 36px 22px;"><div style="border-top:2px solid #f0654a;padding-top:11px;text-align:center;font:11px Arial;color:#0b4438;">UNIT 2 &middot; BUILDING A NATION | HISTORY B17A | DANIEL GARZA, M.A.</div></td></tr></tbody></table>
+<!-- preserved-article:end -->
+  </main>
+  <nav class="document-actions" aria-label="Article navigation">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_2/Sources/Web_Articles/"><span aria-hidden="true">←</span> Return to Web Article Archive</a>
+  </nav>
+  <script>
+    (() => {
+      const bar = document.getElementById('reading-progress');
+      const update = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = scrollable > 0 ? Math.min(1, window.scrollY / scrollable) : 0;
+        bar.style.width = `${progress * 100}%`;
+      };
+      update();
+      addEventListener('scroll', update, { passive: true });
+      addEventListener('resize', update);
+    })();
+  </script>
+</body>
+</html>

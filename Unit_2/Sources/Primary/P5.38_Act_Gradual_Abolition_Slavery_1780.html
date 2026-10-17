@@ -1,26 +1,361 @@
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#EDF6F4; max-width:820px; margin:0 auto;">
-  <tr><td style="padding:32px 36px 20px 36px;">
-<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;">Primary Source P5.38</div>
-<div style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;">An Act for the Gradual Abolition of Slavery</div>
-<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;">General Assembly of the Commonwealth of Pennsylvania · Enacted March 1, 1780</div>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;"><tr><td style="border-top:4px solid #EF6449; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F6A88E; border-collapse:collapse; margin-bottom:26px;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An Act for the Gradual Abolition of Slavery. Primary Source P5.38 for Unit 2: Building a Nation.">
+  <meta name="theme-color" content="#0B4438">
+  <title>Primary Source P5.38 | An Act for the Gradual Abolition of Slavery</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_2/Sources/Primary/P5.38_Act_Gradual_Abolition_Slavery_1780.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #0B4438;
+      --forest-mid: #14705D;
+      --coral: #F0654A;
+      --coral-light: #F7A98F;
+      --cream: #F6F1E7;
+      --paper: #FFFEFA;
+      --mint: #EEF7F4;
+      --sage: #C9DBD6;
+      --ink: #163D34;
+      --muted: #5E746E;
+      --shadow: 0 22px 55px rgba(4, 43, 35, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(240, 101, 74, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(11, 68, 56, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(4, 43, 35, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(20, 112, 93, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Primary source navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_2/Sources/Primary/"><span aria-hidden="true">←</span> Primary Source Archive</a>
+      <div class="archive-meta">Unit 2 · Chapter 5 · P5.38</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="P5.38">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#EDF6F4; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Primary Source P5.38</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">An Act for the Gradual Abolition of Slavery</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">General Assembly of the Commonwealth of Pennsylvania · Enacted March 1, 1780</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #EF6449; font-size:1px; line-height:1px;"> </td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F6A88E; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
   <tr>
     <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0B4438; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TOC FIT</td>
     <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0B4438; font-size:13.5px; line-height:1.55;">Chapter 5 · Essay prompt 5.2 (How Radical Was the American Revolution?); Essay prompt 5.3 (Whose Liberty? The Revolution and Slavery)</td>
   </tr>
   <tr>
     <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#0B4438; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WHY HERE</td>
-    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#0B4438; font-size:13.5px; line-height:1.55;">The act joins a preamble full of revolutionary and religious language to detailed provisions on who would be freed, when, and on what terms, including registration of existing slaves, indentures to age twenty-eight, and exemptions for slaveholding visitors. Students can weigh the statute&rsquo;s stated principles against its practical mechanisms and ask whose freedom it secured and how quickly.</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#0B4438; font-size:13.5px; line-height:1.55;">The act joins a preamble full of revolutionary and religious language to detailed provisions on who would be freed, when, and on what terms, including registration of existing slaves, indentures to age twenty-eight, and exemptions for slaveholding visitors. Students can weigh the statute’s stated principles against its practical mechanisms and ask whose freedom it secured and how quickly.</td>
   </tr>
 </table>
-<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:17px; font-weight:700; border-bottom:2px solid #EF6449; padding-bottom:4px; margin:6px 0 14px 0;">Historical Context</div>
-<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Pennsylvania&rsquo;s Revolutionary legislature passed this law in March 1780, while the war was still under way. The state had a long Quaker antislavery tradition, and the assembly elected under the democratic constitution of 1776 had the votes to act; George Bryan, a leading figure in that constitutional party, is usually credited with pushing the bill forward. The act did not free any person then enslaved. It declared that children born in Pennsylvania after its passage would not be slaves for life, but it bound those children to serve their mothers&rsquo; owners until age twenty-eight. Slaveholders had to register the enslaved people they already held by November 1, 1780, or lose their claim to them.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:17px; font-weight:700; border-bottom:2px solid #EF6449; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Historical Context</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Pennsylvania’s Revolutionary legislature passed this law in March 1780, while the war was still under way. The state had a long Quaker antislavery tradition, and the assembly elected under the democratic constitution of 1776 had the votes to act; George Bryan, a leading figure in that constitutional party, is usually credited with pushing the bill forward. The act did not free any person then enslaved. It declared that children born in Pennsylvania after its passage would not be slaves for life, but it bound those children to serve their mothers’ owners until age twenty-eight. Slaveholders had to register the enslaved people they already held by November 1, 1780, or lose their claim to them.</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The law is often described as the first legislative act for gradual abolition in the United States. Because of its slow timetable, some people remained enslaved in Pennsylvania into the 1840s.</p>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 26px 0;"><tr>
-  <td style="border-left:4px solid #EF6449; background-color:rgba(20,112,93,0.07); padding:12px 16px; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; line-height:1.6;">Editorial note: The Norton Source Collection prints this document from the Avalon Project transcription (sections 1–14 and the Speaker&rsquo;s signature); this reader reproduces the same transcription in full. The Avalon transcription renders the printed long s as &ldquo;f&rdquo; (&ldquo;fhall,&rdquo; &ldquo;flaves,&rdquo; &ldquo;perfons&rdquo;); here the long s has been modernized to s throughout, and a few capital S&rsquo;s that stand for a lowercase long s mid-sentence (&ldquo;So unhappily,&rdquo; &ldquo;Seven hundred,&rdquo; &ldquo;Substantial&rdquo;) have been lowercased. Obvious scanning errors in the transcription have also been corrected to what the printed act reads: &ldquo;these ideas&rdquo; (sec. 1, transcribed &ldquo;there ideas&rdquo;), &ldquo;sense&rdquo; (sec. 1, &ldquo;fence&rdquo;), &ldquo;who&rdquo; (sec. 1, &ldquo;w ho&rdquo;), &ldquo;servant&rdquo; (sec. 4, &ldquo;fervent&rdquo;), &ldquo;holden&rdquo; (sec. 4, &ldquo;holder&rdquo;), &ldquo;cause to be delivered&rdquo; (sec. 5, &ldquo;calm to be delivered&rdquo;), &ldquo;and clerk&rdquo; (sec. 5, &ldquo;asked clerk&rdquo;), &ldquo;notwithstanding,&rdquo; &ldquo;master,&rdquo; and &ldquo;instrument&rdquo; (sec. 6, &ldquo;notwithfhanding,&rdquo; &ldquo;maftcr,&rdquo; &ldquo;inftrumcnt&rdquo;), &ldquo;may be&rdquo; (sec. 12, &ldquo;maybe&rdquo;), &ldquo;the province&rdquo; (sec. 14, &ldquo;die province&rdquo;), an opening quotation mark in sec. 14 (transcribed &ldquo;..&rdquo;), and &ldquo;Enacted into a law&rdquo; (closing line, &ldquo;Enabled into a law&rdquo;). Otherwise the period spelling, capitalization, and punctuation are left as transcribed, including apparent slips such as &ldquo;the freeman&rdquo; (sec. 3), &ldquo;or or&rdquo; (sec. 6), &ldquo;but case of remission&rdquo; (sec. 8), &ldquo;inititled&rdquo; and &ldquo;additional duty said slaves&rdquo; (sec. 14), where the transcription may omit or misread a word; no words have been supplied. The act&rsquo;s formal title line is represented in the entry title rather than reproduced.</td>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 26px 0;" class="editorial-note"><tr>
+  <td style="border-left:4px solid #EF6449; background-color:rgba(20,112,93,0.07); padding:12px 16px; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; line-height:1.6;">Editorial note: The Norton Source Collection prints this document from the Avalon Project transcription (sections 1–14 and the Speaker’s signature); this reader reproduces the same transcription in full. The Avalon transcription renders the printed long s as “f” (“fhall,” “flaves,” “perfons”); here the long s has been modernized to s throughout, and a few capital S’s that stand for a lowercase long s mid-sentence (“So unhappily,” “Seven hundred,” “Substantial”) have been lowercased. Obvious scanning errors in the transcription have also been corrected to what the printed act reads: “these ideas” (sec. 1, transcribed “there ideas”), “sense” (sec. 1, “fence”), “who” (sec. 1, “w ho”), “servant” (sec. 4, “fervent”), “holden” (sec. 4, “holder”), “cause to be delivered” (sec. 5, “calm to be delivered”), “and clerk” (sec. 5, “asked clerk”), “notwithstanding,” “master,” and “instrument” (sec. 6, “notwithfhanding,” “maftcr,” “inftrumcnt”), “may be” (sec. 12, “maybe”), “the province” (sec. 14, “die province”), an opening quotation mark in sec. 14 (transcribed “..”), and “Enacted into a law” (closing line, “Enabled into a law”). Otherwise the period spelling, capitalization, and punctuation are left as transcribed, including apparent slips such as “the freeman” (sec. 3), “or or” (sec. 6), “but case of remission” (sec. 8), “inititled” and “additional duty said slaves” (sec. 14), where the transcription may omit or misread a word; no words have been supplied. The act’s formal title line is represented in the entry title rather than reproduced.</td>
 </tr></table>
-<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:17px; font-weight:700; border-bottom:2px solid #EF6449; padding-bottom:4px; margin:6px 0 14px 0;">Document Text</div>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:17px; font-weight:700; border-bottom:2px solid #EF6449; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Document Text</div>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><i>SECTION 1.</i> WHEN we contemplate our abhorrence of that condition to which the arms and tyranny of Great Britain were exerted to reduce us; when we look back on the variety of dangers to which we have been exposed, and how miraculously our wants in many instances have been supplied, and our deliverances wrought, when even hope and human fortitude have become unequal to the conflict; we are unavoidably led to a serious and grateful sense of the manifold blessings which we have undeservedly received from the hand of that Being from whom every good and perfect gift cometh. Impressed with these ideas, we conceive that it is our duty, and we rejoice that it is in our power to extend a portion of that freedom to others, which hath been extended to us; and a release from that state of thraldom to which we ourselves were tyrannically doomed, and from which we have now every prospect of being delivered. It is not for us to enquire why, in the creation of mankind, the inhabitants of the several parts of the earth were distinguished by a difference in feature or complexion. It is sufficient to know that all are the work of an Almighty Hand. We find in the distribution of the human species, that the most fertile as well as the most barren parts of the earth are inhabited by men of complexions different from ours, and from each other; from whence we may reasonably, as well as religiously, infer, that He who placed them in their various situations, hath extended equally his care and protection to all, and that it becometh not us to counteract his mercies. We esteem it a peculiar blessing granted to us, that we are enabled this day to add one more step to universal civilization, by removing as much as possible the sorrows of those who have lived in undeserved bondage, and from which, by the assumed authority of the kings of Great Britain, no effectual, legal relief could be obtained. Weaned by a long course of experience from those narrower prejudices and partialities we had imbibed, we find our hearts enlarged with kindness and benevolence towards men of all conditions and nations; and we conceive ourselves at this particular period extraordinarily called upon, by the blessings which we have received, to manifest the sincerity of our profession, and to give a substantial proof of our gratitude.</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><i>SECT. 2.</i> And whereas the condition of those persons who have heretofore been denominated Negro and Mulatto slaves, has been attended with circumstances which not only deprived them of the common blessings that they were by nature entitled to, but has cast them into the deepest afflictions, by an unnatural separation and sale of husband and wife from each other and from their children; an injury, the greatness of which can only be conceived by supposing that we were in the same unhappy case. In justice therefore to persons so unhappily circumstanced, and who, having no prospect before them whereon they may rest their sorrows and their hopes, have no reasonable inducement to render their service to society, which they otherwise might; and also in grateful commemoration of our own happy deliverance from that state of unconditional submission to which we were doomed by the tyranny of Britain.</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><i>SECT. 3.</i> Be it enacted, and it is hereby enacted, by the representatives of the freeman of the commonwealth of Pennsylvania, in general assembly met, and by the authority of the same, That all persons, as well Negroes and Mulattoes as others, who shall be born within this state from and after the passing of this act, shall not be deemed and considered as servants for life, or slaves; and that all servitude for life, or slavery of children, in consequence of the slavery of their mothers, in the case of all children born within this state, from and after the passing of this act as aforesaid, shall be, and hereby is utterly taken away, extinguished and for ever abolished.</p>
@@ -34,21 +369,42 @@
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><i>SECT. 11.</i> Provided always; And be it further enacted by the authority aforesaid, That this act or any thing in it contained shall not give any relief or shelter to any absconding or runaway Negro or Mulatto slave or servant, who has absented himself or shall absent himself from his or her owner, master or mistress residing in any other state or country, but such owner, master or mistress shall have like right and aid to demand, claim and take away his slave or servant, as he might have had in case this act had not been made: And that all Negro and Mulatto slaves now owned and heretofore resident in this state, who have absented themselves, or been clandestinely carried away, or who may be employed abroad as seamen and have not returned or been brought back to their owners, masters or mistresses, before the passing of this act, may within five years be registered as effectually as is ordered by this act concerning those who are now within the state, on producing such slave before any two justices of the peace, and satisfying the said justices by due proof of the former residence, absconding, taking away, or absence of such slaves as aforesaid; who thereupon shall direct and order the said slave to be entered on the record as aforesaid.</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><i>SECT. 12.</i> And whereas attempts may be made to evade this act, by introducing into this state Negroes and Mulatoes bound by covenant to serve for long and unreasonable terms of years, if the same be not prevented:</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><i>SECT. 13.</i> Be it therefore enacted by the authority aforesaid, That no covenant of personal servitude or apprenticeship whatsoever shall be valid or binding on a Negro or Mulatto for a longer time than seven years, unless such servant or apprentice were at the commencement of such servitude or apprenticeship under the age of twenty one years; in which case such Negro or Mulatto may be holden as a servant or apprentice respectively, according to the covenant, as the case shall be, until he or she shall attain the age of twenty eight years, but no longer.</p>
-<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><i>SECT. 14.</i> And be it further enacted by the authority aforesaid, That an act of assembly of the province of Pennsylvania, passed in the year one thousand seven hundred and five, intitled, &ldquo;an Act for the trial of Negroes;&rdquo; and another act of assembly of the said province, passed in the year one thousand seven hundred and twenty five, intitled, &ldquo;An Act for the better regulating of Negroes in this province; &ldquo; and another act of assembly of the said province, passed in the year one thousand seven hundred and sixty one, intitled, &ldquo;An Act for laying a duty on Negro and Mulatto slaves imported into this province; &ldquo; and also another act of assembly of the said province, passed in the year one thousand seven hundred and seventy three, inititled, &ldquo;An Act making perpetual an Act laying a duty on Negro and Mulatto slaves imported into this province, and for laying an additional duty said slaves,&rdquo; shall be and are hereby repealed, annulled and made void.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><i>SECT. 14.</i> And be it further enacted by the authority aforesaid, That an act of assembly of the province of Pennsylvania, passed in the year one thousand seven hundred and five, intitled, “an Act for the trial of Negroes;” and another act of assembly of the said province, passed in the year one thousand seven hundred and twenty five, intitled, “An Act for the better regulating of Negroes in this province; “ and another act of assembly of the said province, passed in the year one thousand seven hundred and sixty one, intitled, “An Act for laying a duty on Negro and Mulatto slaves imported into this province; “ and also another act of assembly of the said province, passed in the year one thousand seven hundred and seventy three, inititled, “An Act making perpetual an Act laying a duty on Negro and Mulatto slaves imported into this province, and for laying an additional duty said slaves,” shall be and are hereby repealed, annulled and made void.</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">JOHN BAYARD, SPEAKER</p>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Enacted into a law at Philadelphia, on Wednesday, the first day of March, A.D. 1780</p>
-<div style="height:8px;"></div>
-<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:17px; font-weight:700; border-bottom:2px solid #EF6449; padding-bottom:4px; margin:6px 0 14px 0;">Chicago Citations</div>
-<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; margin:4px 0 6px 0;">Bibliography entry:</div>
-<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 16px 0; padding-left:36px; text-indent:-36px;">Pennsylvania General Assembly. &ldquo;An Act for the Gradual Abolition of Slavery.&rdquo; March 1, 1780. <i>The Avalon Project:</i> <i>Documents in Law, History and Diplomacy</i>. Lillian Goldman Law Library, Yale Law School. <a href="https://avalon.law.yale.edu/18th_century/pennst01.asp" style="color:#14705D; text-decoration:underline; word-break:break-all;">https://avalon.law.yale.edu/18th_century/pennst01.asp</a>.</p>
-<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; margin:4px 0 6px 0;">Footnote citation:</div>
-<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 16px 0; ">Pennsylvania General Assembly, &ldquo;An Act for the Gradual Abolition of Slavery,&rdquo; March 1, 1780, sec. 3, <i>The Avalon Project: Documents in Law, History and Diplomacy</i>, Lillian Goldman Law Library, Yale Law School, <a href="https://avalon.law.yale.edu/18th_century/pennst01.asp" style="color:#14705D; text-decoration:underline; word-break:break-all;">https://avalon.law.yale.edu/18th_century/pennst01.asp</a>.</p>
-<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; margin:4px 0 6px 0;">Shortened citation:</div>
+<div style="height:8px;" class="section-spacer"></div>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:17px; font-weight:700; border-bottom:2px solid #EF6449; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 16px 0; padding-left:36px; text-indent:-36px;">Pennsylvania General Assembly. “An Act for the Gradual Abolition of Slavery.” March 1, 1780. <i>The Avalon Project:</i> <i>Documents in Law, History and Diplomacy</i>. Lillian Goldman Law Library, Yale Law School. <a href="https://avalon.law.yale.edu/18th_century/pennst01.asp" style="color:#14705D; text-decoration:underline; word-break:break-all;">https://avalon.law.yale.edu/18th_century/pennst01.asp</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 16px 0; ">Pennsylvania General Assembly, “An Act for the Gradual Abolition of Slavery,” March 1, 1780, sec. 3, <i>The Avalon Project: Documents in Law, History and Diplomacy</i>, Lillian Goldman Law Library, Yale Law School, <a href="https://avalon.law.yale.edu/18th_century/pennst01.asp" style="color:#14705D; text-decoration:underline; word-break:break-all;">https://avalon.law.yale.edu/18th_century/pennst01.asp</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
 <p style="font-family:Georgia, 'Times New Roman', serif; color:#0B4438; font-size:15px; line-height:1.7; margin:0 0 16px 0; ">Pennsylvania, Act for the Gradual Abolition of Slavery, sec. 3.</p>
   </td></tr>
-  <tr><td style="padding:0 36px 22px 36px;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;"><tr>
-  <td style="padding-top:12px; border-top:1px solid #EF6449; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 2 &middot; BUILDING A NATION | HISTORY B17A | DANIEL GARZA, M.A.</td>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #EF6449; font-family:Arial, Helvetica, sans-serif; color:#14705D; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 2 · BUILDING A NATION | HISTORY B17A | DANIEL GARZA, M.A.</td>
 </tr></table>
   </td></tr>
 </table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_2/Sources/Primary/"><span aria-hidden="true">←</span> Return to the Primary Source Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

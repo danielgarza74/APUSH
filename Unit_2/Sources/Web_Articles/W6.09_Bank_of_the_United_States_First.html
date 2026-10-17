@@ -1,8 +1,327 @@
-<table style="background:#eef7f4;max-width:820px;margin:0 auto;border-collapse:collapse;" role="presentation" width="100%"><tbody><tr><td style="padding:30px 36px 22px;">
-<div style="font-family:Arial,sans-serif;color:#f0654a;font-size:13px;font-weight:bold;letter-spacing:.04em;margin-bottom:8px;">WEB ARTICLE W6.9</div>
-<div style="font-family:Georgia,serif;color:#0b4438;font-size:30px;line-height:1.18;font-weight:bold;margin-bottom:8px;">Bank of the United States (First)</div>
-<div style="font-family:Arial,sans-serif;color:#14705d;font-size:14px;font-weight:bold;line-height:1.5;margin-bottom:14px;">Jordan A. P. Fansler</div>
-<table role="presentation" width="100%" style="border-collapse:collapse;background:#fce8e1;border:1px solid #f0654a;margin:0 0 24px;"><tbody>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bank of the United States (First). Web Article W6.9 for Unit 2: Building a Nation.">
+  <meta name="theme-color" content="#0B4438">
+  <title>Web Article W6.9 | Bank of the United States (First)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+
+    :root {
+      --forest: #0B4438;
+      --forest-mid: #14705D;
+      --coral: #F0654A;
+      --coral-light: #F7A98F;
+      --cream: #F6F1E7;
+      --paper: #FFFEFA;
+      --mint: #EEF7F4;
+      --sage: #C9DBD6;
+      --ink: #163D34;
+      --muted: #5E746E;
+      --shadow: 0 22px 55px rgba(4, 43, 35, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(240, 101, 74, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(11, 68, 56, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(4, 43, 35, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2.1rem;
+      right: 1.5rem;
+      color: rgba(20, 112, 93, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-article {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse !important;
+      table-layout: fixed !important;
+    }
+    .article-content { padding: clamp(2.25rem, 7vw, 5rem) !important; }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+      text-transform: uppercase;
+    }
+    .article-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em !important;
+      overflow-wrap: anywhere;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: italic 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+    }
+    .source-meta {
+      width: 100% !important;
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage) !important;
+      border-left: 5px solid var(--coral) !important;
+      border-collapse: collapse !important;
+    }
+    .source-meta td:first-child {
+      width: 24% !important;
+      padding: .9rem 1rem .78rem 1.15rem !important;
+      background: transparent !important;
+      color: var(--coral) !important;
+      font: 800 .65rem/1.45 var(--ui) !important;
+      letter-spacing: .12em !important;
+      vertical-align: top;
+    }
+    .source-meta td:last-child {
+      padding: .9rem 1.2rem .78rem .65rem !important;
+      color: var(--ink) !important;
+      font: 600 .82rem/1.6 var(--ui) !important;
+      vertical-align: top;
+    }
+    .source-meta tr + tr td { border-top: 1px solid var(--sage) !important; }
+    .article-content h2 {
+      display: block !important;
+      width: fit-content;
+      margin: 3.4rem 0 1.45rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral) !important;
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em !important;
+    }
+    .article-content h3 {
+      max-width: 67ch;
+      margin: 2rem auto .75rem !important;
+      color: var(--forest) !important;
+      font: 700 clamp(1.15rem, 2vw, 1.35rem)/1.35 var(--heading) !important;
+    }
+    .article-content p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font-family: var(--body) !important;
+      font-size: clamp(1.08rem, 1.8vw, 1.22rem) !important;
+      line-height: 1.78 !important;
+    }
+    .article-content p[style*="italic"] {
+      padding: .8rem 1rem;
+      color: var(--forest-mid) !important;
+      border-left: 3px solid var(--coral-light);
+      background: var(--mint);
+    }
+    .article-content p > a[target="_blank"] {
+      display: inline-flex !important;
+      align-items: center;
+      gap: .55rem;
+      padding: .8rem 1rem !important;
+      color: white !important;
+      border: 1px solid var(--forest) !important;
+      background: var(--forest) !important;
+      font: 700 .76rem var(--ui) !important;
+      letter-spacing: .07em;
+      text-decoration: none !important;
+      text-transform: uppercase;
+      transition: color .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .article-content p > a[target="_blank"]::after { content: '↗'; color: var(--coral-light); }
+    .article-content p > a[target="_blank"]:hover {
+      color: var(--forest) !important;
+      border-color: var(--coral) !important;
+      background: var(--coral-light) !important;
+    }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.4rem auto .45rem !important;
+      color: var(--coral) !important;
+      font: 800 .67rem var(--ui) !important;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+    .citation-label + p { font-size: 1.02rem !important; line-height: 1.65 !important; }
+    .article-footer-cell { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .article-footer-cell > div {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: rgba(255,254,250,.75);
+      font: 700 .7rem var(--ui);
+      letter-spacing: .08em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); background: var(--paper); }
+    @media (max-width: 680px) {
+      body { font-size: 18px; }
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: 1rem; }
+      .document-shell::before { right: .4rem; font-size: 5rem; }
+      .article-content { padding: 2.2rem 1.15rem !important; }
+      .article-title { font-size: clamp(2rem, 11vw, 3.2rem) !important; }
+      .source-meta, .source-meta tbody, .source-meta tr, .source-meta td { display: block; width: 100% !important; }
+      .source-meta td:first-child { padding-bottom: .15rem !important; }
+      .source-meta td:last-child { padding: .1rem 1.15rem .8rem !important; }
+      .source-meta tr + tr td:first-child { border-top: 1px solid var(--sage) !important; }
+      .source-meta tr + tr td:last-child { border-top: 0 !important; }
+      .article-footer-cell { padding: 0 1.15rem 1.5rem !important; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+    @media print {
+      @page { margin: .6in; }
+      body { background: white; font-size: 10pt; }
+      body::before, .archive-bar, .document-actions { display: none !important; }
+      .document-shell { width: auto; margin: 0; overflow: visible; border: 0; border-top: 5px solid var(--coral); box-shadow: none; }
+      .document-shell::before { display: none; }
+      .article-content { padding: .35in 0 !important; }
+      .article-title { font-size: 25pt !important; }
+      .article-content p { max-width: none; font-size: 11pt !important; line-height: 1.55 !important; }
+      .source-meta, .article-content h2, .article-content h3, .article-content p { break-inside: avoid; }
+      .article-content p > a[target="_blank"] { color: var(--forest) !important; background: transparent !important; }
+      .article-footer-cell { padding: 0 !important; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#article-content">Skip to article</a>
+  <header class="archive-bar">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_2/Sources/Web_Articles/" aria-label="Return to the Unit 2 Web Article Archive"><span aria-hidden="true">←</span> Web Article Archive</a>
+      <span class="archive-meta">Chapter 6 · W6.9</span>
+    </div>
+    <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
+  </header>
+  <main id="article-content" class="document-shell" data-code="W6.9" aria-labelledby="article-title">
+<!-- preserved-article:start -->
+<table class="legacy-article" style="background:#eef7f4;max-width:820px;margin:0 auto;border-collapse:collapse;" role="presentation" width="100%"><tbody><tr><td class="article-content" style="padding:30px 36px 22px;">
+<p class="source-kicker" style="font-family:Arial,sans-serif;color:#f0654a;font-size:13px;font-weight:bold;letter-spacing:.04em;margin-bottom:8px;">WEB ARTICLE W6.9</p>
+<h1 class="article-title" id="article-title" style="font-family:Georgia,serif;color:#0b4438;font-size:30px;line-height:1.18;font-weight:bold;margin-bottom:8px;">Bank of the United States (First)</h1>
+<p class="source-byline" style="font-family:Arial,sans-serif;color:#14705d;font-size:14px;font-weight:bold;line-height:1.5;margin-bottom:14px;">Jordan A. P. Fansler</p>
+<table class="source-meta" role="table" width="100%" style="border-collapse:collapse;background:#fce8e1;border:1px solid #f0654a;margin:0 0 24px;"><tbody>
 <tr><td style="width:24%;background:#f8b09a;padding:9px 11px;font:700 12px Arial;color:#0b4438;border-bottom:1px solid #f0654a;">AUTHOR</td><td style="padding:9px 12px;font:13px/1.5 Arial;color:#163d34;border-bottom:1px solid #f0654a;">Jordan A. P. Fansler (PhD, early-modern Atlantic world; museum professional)</td></tr>
 <tr><td style="background:#f8b09a;padding:9px 11px;font:700 12px Arial;color:#0b4438;border-bottom:1px solid #f0654a;">WEBSITE</td><td style="padding:9px 12px;font:13px/1.5 Arial;color:#163d34;border-bottom:1px solid #f0654a;">Encyclopedia of Greater Philadelphia</td></tr>
 <tr><td style="background:#f8b09a;padding:9px 11px;font:700 12px Arial;color:#0b4438;border-bottom:1px solid #f0654a;">PUBLICATION</td><td style="padding:9px 12px;font:13px/1.5 Arial;color:#163d34;border-bottom:1px solid #f0654a;">2016 (mod. Mar. 12, 2022)</td></tr>
@@ -14,7 +333,27 @@
 <h3 style="font-family:Georgia,serif;color:#0b4438;font-size:18px;line-height:1.35;margin:20px 0 10px;">The First Rival Political Parties</h3><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">When Hamilton took office as Treasury secretary in 1789, economic instability and the Revolutionary War debt threatened the nation and the individual state governments. Capitalizing on those circumstances and using powers he believed the new U.S. Constitution granted, Hamilton put forth a plan that included the Bank of the United States, chartered by Congress. The bank would stabilize currency, act as a depository for and lender to the government, and raise money for the nation to pay down the war debts. Hamilton also recommended that the federal government assume the outstanding war debts of the states. By consistently paying down this debt, the nation would reestablish good faith for future loans. As an organ of the national government, the bank would also tie private citizens financially to the well-being of the United States, and those who held a stake in the war loans would likewise want to see the nation prosper to ensure their repayment.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">The bank immediately ignited controversy and, together with other early disputes, fueled a developing political divide that led to the first rival political parties, the Federalists and the Democratic-Republicans. Each side argued that failure to follow their policies was tantamount to abandoning the Revolution, to the ruin of the nation. Federalists, who supported the bank, tended to be urban merchants and lawyers. They supported the bank, deeming it necessary for strengthening the nation’s economy and the union in general. They believed that the Articles of Confederation had failed on both of those counts, and that the Constitution was adopted to enact just the types of vigorous national programs that Hamilton suggested. Their rivals, who often lived in rural areas and were often debtors rather than creditors, argued that the bank was unconstitutional. It would be a tool to further enrich urban elites who had stockpiled wealth during the Revolution, and increase the emphasis on volatile financial markets. Furthermore, it would do little to aid destitute veterans requiring immediate debt relief. These opponents, led by Secretary of State Thomas Jefferson (1743-1826) in the cabinet, and James Madison (1751-1836) in the House of Representatives, also argued that by encouraging speculation and financiers, the bank would run counter to the Revolutionary principles and the virtuous agrarian ideal that best suited a republican form of government. Despite the controversy, Congress passed the legislation necessary to establish the bank, and President George Washington (1732-99) signed the bill into law, granting it a twenty-year charter to 1811.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">Originally headquartered in Carpenters’ Hall, the meeting place of the First Continental Congress, after 1797 the Bank of the United States moved to its own building on Third Street (later part of Independence National Historical Park). The building, an example of neo-classical architecture emulating Greece and Rome, featured a colonnaded, marble façade alluding to the ancient republican ideals that the new nation espoused.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">As with the Bank of North America, the Bank of the United States drew many of its major stockholders from the Philadelphia region. Thomas Willing (1731-1821), formerly president of the Bank of North America and business partner to Robert Morris, became the national bank’s first president. Willing, Samuel Howell (1723-1807), and David Rittenhouse (1732-96), all Philadelphians, served as the bank’s first appointed commissioners. Another of Hamilton’s initiatives, the United States Mint, also located in Philadelphia, assisted the bank with its capacity to regulate the money supply. In addition to its local presence, the Bank of the United States connected Philadelphia to the nation through its branches in Boston, Baltimore, New York, and Charleston (opened in 1792); Norfolk, Va. (1800); Washington, D.C., and Savannah, Ga. (1802); and New Orleans (1805). Despite the difficulty of coordinating the far-flung branches, they assured the bank’s opponents, especially those in the South where most of the branches were established, that it would be truly national and serve more than simply Philadelphia’s merchant class.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">The national controversy surrounding the Bank of the United States abated after its creation, but the partisanship it engendered continued. Within months of its incorporation, the bank, through its initial branch in Philadelphia, played a hand in the credit bubble and restriction that set off the Panic of 1792, seemingly confirming fears about economic volatility held by the bank’s opponents. In spite of that incident, by the end of the bank’s twenty-year charter in 1811, national credit was largely established and the Democratic-Republicans controlling Congress allowed the charter to expire with the assets liquidated relatively peacefully, at least in Philadelphia. The Philadelphia branch’s shares were primarily bought out by Philadelphian Stephen Girard (1750-1831), who operated the institution as a private concern, the Girard Bank. Only five years later, in the midst of depressed trade after the War of 1812 and European Napoleonic Wars, Congress instituted a Second Bank of the United States (also headquartered in Philadelphia).</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">The First Bank of the United States played a pivotal role in establishing the nation’s credit. It drew from the traditions of banking already present in Philadelphia during the Revolution, was supported by Philadelphia’s merchant class, and set a precedent of national banking. It contributed to the growing partisanship of the early Federal period and helped the Philadelphia region and its wealthy elite remain at the epicenter of national finance and the economy into the nineteenth century, even after the seat of government shifted to Washington, D.C.</p>
 <p style="margin:24px 0;"><a href="https://philadelphiaencyclopedia.org/essays/bank-of-the-united-states-first/" target="_blank" rel="noopener" style="display:inline-block;background:#0b4438;color:#fff;text-decoration:none;font:700 14px Arial;padding:11px 17px;">Read the Original Article</a></p>
 <h2 style="font:700 18px Arial;color:#14705d;border-bottom:2px solid #f0654a;padding-bottom:5px;margin:8px 0 14px;">Chicago Citations</h2>
-<div style="font:700 12px Arial;color:#0b4438;margin:5px 0;">BIBLIOGRAPHY ENTRY</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;padding-left:34px;text-indent:-34px;">Fansler, Jordan A. P.. &quot;Bank of the United States (First).&quot; Encyclopedia of Greater Philadelphia. 2016 (mod. Mar. 12, 2022). https://philadelphiaencyclopedia.org/essays/bank-of-the-united-states-first/.</p>
-<div style="font:700 12px Arial;color:#0b4438;margin:5px 0;">FULL FOOTNOTE</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;">Jordan A. P. Fansler, &quot;Bank of the United States (First),&quot; Encyclopedia of Greater Philadelphia, 2016 (mod. Mar. 12, 2022), https://philadelphiaencyclopedia.org/essays/bank-of-the-united-states-first/.</p>
-<div style="font:700 12px Arial;color:#0b4438;margin:5px 0;">SHORTENED FOOTNOTE</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;">Fansler, &quot;Bank of the United States (First).&quot;</p>
-</td></tr><tr><td style="padding:0 36px 22px;"><div style="border-top:2px solid #f0654a;padding-top:11px;text-align:center;font:11px Arial;color:#0b4438;">UNIT 2 &middot; BUILDING A NATION | HISTORY B17A | DANIEL GARZA, M.A.</div></td></tr></tbody></table>
+<div class="citation-label" style="font:700 12px Arial;color:#0b4438;margin:5px 0;">BIBLIOGRAPHY ENTRY</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;padding-left:34px;text-indent:-34px;">Fansler, Jordan A. P.. &quot;Bank of the United States (First).&quot; Encyclopedia of Greater Philadelphia. 2016 (mod. Mar. 12, 2022). https://philadelphiaencyclopedia.org/essays/bank-of-the-united-states-first/.</p>
+<div class="citation-label" style="font:700 12px Arial;color:#0b4438;margin:5px 0;">FULL FOOTNOTE</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;">Jordan A. P. Fansler, &quot;Bank of the United States (First),&quot; Encyclopedia of Greater Philadelphia, 2016 (mod. Mar. 12, 2022), https://philadelphiaencyclopedia.org/essays/bank-of-the-united-states-first/.</p>
+<div class="citation-label" style="font:700 12px Arial;color:#0b4438;margin:5px 0;">SHORTENED FOOTNOTE</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;">Fansler, &quot;Bank of the United States (First).&quot;</p>
+</td></tr><tr><td class="article-footer-cell" style="padding:0 36px 22px;"><div style="border-top:2px solid #f0654a;padding-top:11px;text-align:center;font:11px Arial;color:#0b4438;">UNIT 2 &middot; BUILDING A NATION | HISTORY B17A | DANIEL GARZA, M.A.</div></td></tr></tbody></table>
+<!-- preserved-article:end -->
+  </main>
+  <nav class="document-actions" aria-label="Article navigation">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_2/Sources/Web_Articles/"><span aria-hidden="true">←</span> Return to Web Article Archive</a>
+  </nav>
+  <script>
+    (() => {
+      const bar = document.getElementById('reading-progress');
+      const update = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = scrollable > 0 ? Math.min(1, window.scrollY / scrollable) : 0;
+        bar.style.width = `${progress * 100}%`;
+      };
+      update();
+      addEventListener('scroll', update, { passive: true });
+      addEventListener('resize', update);
+    })();
+  </script>
+</body>
+</html>

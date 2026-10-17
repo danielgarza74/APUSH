@@ -1,8 +1,327 @@
-<table style="background:#eef7f4;max-width:820px;margin:0 auto;border-collapse:collapse;" role="presentation" width="100%"><tbody><tr><td style="padding:30px 36px 22px;">
-<div style="font-family:Arial,sans-serif;color:#f0654a;font-size:13px;font-weight:bold;letter-spacing:.04em;margin-bottom:8px;">WEB ARTICLE W6.11</div>
-<div style="font-family:Georgia,serif;color:#0b4438;font-size:30px;line-height:1.18;font-weight:bold;margin-bottom:8px;">Alexander Hamilton</div>
-<div style="font-family:Arial,sans-serif;color:#14705d;font-size:14px;font-weight:bold;line-height:1.5;margin-bottom:14px;">Kieran J. O&#x27;Keefe</div>
-<table role="presentation" width="100%" style="border-collapse:collapse;background:#fce8e1;border:1px solid #f0654a;margin:0 0 24px;"><tbody>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alexander Hamilton. Web Article W6.11 for Unit 2: Building a Nation.">
+  <meta name="theme-color" content="#0B4438">
+  <title>Web Article W6.11 | Alexander Hamilton</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+
+    :root {
+      --forest: #0B4438;
+      --forest-mid: #14705D;
+      --coral: #F0654A;
+      --coral-light: #F7A98F;
+      --cream: #F6F1E7;
+      --paper: #FFFEFA;
+      --mint: #EEF7F4;
+      --sage: #C9DBD6;
+      --ink: #163D34;
+      --muted: #5E746E;
+      --shadow: 0 22px 55px rgba(4, 43, 35, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(240, 101, 74, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(11, 68, 56, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(4, 43, 35, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2.1rem;
+      right: 1.5rem;
+      color: rgba(20, 112, 93, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-article {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse !important;
+      table-layout: fixed !important;
+    }
+    .article-content { padding: clamp(2.25rem, 7vw, 5rem) !important; }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+      text-transform: uppercase;
+    }
+    .article-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em !important;
+      overflow-wrap: anywhere;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: italic 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+    }
+    .source-meta {
+      width: 100% !important;
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage) !important;
+      border-left: 5px solid var(--coral) !important;
+      border-collapse: collapse !important;
+    }
+    .source-meta td:first-child {
+      width: 24% !important;
+      padding: .9rem 1rem .78rem 1.15rem !important;
+      background: transparent !important;
+      color: var(--coral) !important;
+      font: 800 .65rem/1.45 var(--ui) !important;
+      letter-spacing: .12em !important;
+      vertical-align: top;
+    }
+    .source-meta td:last-child {
+      padding: .9rem 1.2rem .78rem .65rem !important;
+      color: var(--ink) !important;
+      font: 600 .82rem/1.6 var(--ui) !important;
+      vertical-align: top;
+    }
+    .source-meta tr + tr td { border-top: 1px solid var(--sage) !important; }
+    .article-content h2 {
+      display: block !important;
+      width: fit-content;
+      margin: 3.4rem 0 1.45rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral) !important;
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em !important;
+    }
+    .article-content h3 {
+      max-width: 67ch;
+      margin: 2rem auto .75rem !important;
+      color: var(--forest) !important;
+      font: 700 clamp(1.15rem, 2vw, 1.35rem)/1.35 var(--heading) !important;
+    }
+    .article-content p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font-family: var(--body) !important;
+      font-size: clamp(1.08rem, 1.8vw, 1.22rem) !important;
+      line-height: 1.78 !important;
+    }
+    .article-content p[style*="italic"] {
+      padding: .8rem 1rem;
+      color: var(--forest-mid) !important;
+      border-left: 3px solid var(--coral-light);
+      background: var(--mint);
+    }
+    .article-content p > a[target="_blank"] {
+      display: inline-flex !important;
+      align-items: center;
+      gap: .55rem;
+      padding: .8rem 1rem !important;
+      color: white !important;
+      border: 1px solid var(--forest) !important;
+      background: var(--forest) !important;
+      font: 700 .76rem var(--ui) !important;
+      letter-spacing: .07em;
+      text-decoration: none !important;
+      text-transform: uppercase;
+      transition: color .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .article-content p > a[target="_blank"]::after { content: '↗'; color: var(--coral-light); }
+    .article-content p > a[target="_blank"]:hover {
+      color: var(--forest) !important;
+      border-color: var(--coral) !important;
+      background: var(--coral-light) !important;
+    }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.4rem auto .45rem !important;
+      color: var(--coral) !important;
+      font: 800 .67rem var(--ui) !important;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+    .citation-label + p { font-size: 1.02rem !important; line-height: 1.65 !important; }
+    .article-footer-cell { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .article-footer-cell > div {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: rgba(255,254,250,.75);
+      font: 700 .7rem var(--ui);
+      letter-spacing: .08em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); background: var(--paper); }
+    @media (max-width: 680px) {
+      body { font-size: 18px; }
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: 1rem; }
+      .document-shell::before { right: .4rem; font-size: 5rem; }
+      .article-content { padding: 2.2rem 1.15rem !important; }
+      .article-title { font-size: clamp(2rem, 11vw, 3.2rem) !important; }
+      .source-meta, .source-meta tbody, .source-meta tr, .source-meta td { display: block; width: 100% !important; }
+      .source-meta td:first-child { padding-bottom: .15rem !important; }
+      .source-meta td:last-child { padding: .1rem 1.15rem .8rem !important; }
+      .source-meta tr + tr td:first-child { border-top: 1px solid var(--sage) !important; }
+      .source-meta tr + tr td:last-child { border-top: 0 !important; }
+      .article-footer-cell { padding: 0 1.15rem 1.5rem !important; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+    @media print {
+      @page { margin: .6in; }
+      body { background: white; font-size: 10pt; }
+      body::before, .archive-bar, .document-actions { display: none !important; }
+      .document-shell { width: auto; margin: 0; overflow: visible; border: 0; border-top: 5px solid var(--coral); box-shadow: none; }
+      .document-shell::before { display: none; }
+      .article-content { padding: .35in 0 !important; }
+      .article-title { font-size: 25pt !important; }
+      .article-content p { max-width: none; font-size: 11pt !important; line-height: 1.55 !important; }
+      .source-meta, .article-content h2, .article-content h3, .article-content p { break-inside: avoid; }
+      .article-content p > a[target="_blank"] { color: var(--forest) !important; background: transparent !important; }
+      .article-footer-cell { padding: 0 !important; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#article-content">Skip to article</a>
+  <header class="archive-bar">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_2/Sources/Web_Articles/" aria-label="Return to the Unit 2 Web Article Archive"><span aria-hidden="true">←</span> Web Article Archive</a>
+      <span class="archive-meta">Chapter 6 · W6.11</span>
+    </div>
+    <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
+  </header>
+  <main id="article-content" class="document-shell" data-code="W6.11" aria-labelledby="article-title">
+<!-- preserved-article:start -->
+<table class="legacy-article" style="background:#eef7f4;max-width:820px;margin:0 auto;border-collapse:collapse;" role="presentation" width="100%"><tbody><tr><td class="article-content" style="padding:30px 36px 22px;">
+<p class="source-kicker" style="font-family:Arial,sans-serif;color:#f0654a;font-size:13px;font-weight:bold;letter-spacing:.04em;margin-bottom:8px;">WEB ARTICLE W6.11</p>
+<h1 class="article-title" id="article-title" style="font-family:Georgia,serif;color:#0b4438;font-size:30px;line-height:1.18;font-weight:bold;margin-bottom:8px;">Alexander Hamilton</h1>
+<p class="source-byline" style="font-family:Arial,sans-serif;color:#14705d;font-size:14px;font-weight:bold;line-height:1.5;margin-bottom:14px;">Kieran J. O&#x27;Keefe</p>
+<table class="source-meta" role="table" width="100%" style="border-collapse:collapse;background:#fce8e1;border:1px solid #f0654a;margin:0 0 24px;"><tbody>
 <tr><td style="width:24%;background:#f8b09a;padding:9px 11px;font:700 12px Arial;color:#0b4438;border-bottom:1px solid #f0654a;">AUTHOR</td><td style="padding:9px 12px;font:13px/1.5 Arial;color:#163d34;border-bottom:1px solid #f0654a;">Kieran J. O&#x27;Keefe (George Washington Univ.; degree not listed, FLAG)</td></tr>
 <tr><td style="background:#f8b09a;padding:9px 11px;font:700 12px Arial;color:#0b4438;border-bottom:1px solid #f0654a;">WEBSITE</td><td style="padding:9px 12px;font:13px/1.5 Arial;color:#163d34;border-bottom:1px solid #f0654a;">Mount Vernon Digital Encyclopedia</td></tr>
 <tr><td style="background:#f8b09a;padding:9px 11px;font:700 12px Arial;color:#0b4438;border-bottom:1px solid #f0654a;">PUBLICATION</td><td style="padding:9px 12px;font:13px/1.5 Arial;color:#163d34;border-bottom:1px solid #f0654a;">n.d.</td></tr>
@@ -14,7 +333,27 @@
 <p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">Alexander Hamilton was a founding father of the United States, who fought in the American Revolutionary War. He helped draft the Constitution and advocated for its ratification. He was the founder and architect of the American financial system through his role as the first secretary of the treasury.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">Hamilton was born on January 11, in 1755 or 1757 at Charlestown, on the British island of Nevis. His parents, Rachel Faucette and James Hamilton, were not married when he was born. James abandoned the family in 1766 and Rachel died in 1768. Hamilton spent his adolescence on the Danish possession of St. Croix. Locals recognized Hamilton’s remarkable intelligence after he published an eloquent letter describing a hurricane that hit the island, and raised money to send him to school in Britain’s North American colonies.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">Hamilton arrived in mainland America in late 1772. He initially applied to the College of New Jersey (present-day Princeton), but instead attended King’s College in New York City. While in New York, Hamilton became a supporter of colonial protests against British imperial policy. He wrote several pamphlets in 1774 and 1775 attacking the views of outspoken loyalist Samuel Seabury. In 1775, Hamilton drilled with a volunteer company of militia, and was made captain of an artillery company in March 1776. In the American Revolutionary War, he fought at the battles of Kip’s Bay, White Plains, Trenton, and Princeton.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">The young captain impressed senior officers in the Continental Army. William Alexander (Lord Stirling) even asked Hamilton to serve as his military aide. On January 25, 1777, the Pennsylvania Evening Post posted an advertisement: “Captain Alexander Hamilton, of the New-York company of artillery, by applying to the printer of this paper, may hear of something to his advantage.”1 This referenced General George Washington’s decision to invite Hamilton to his military staff, which Hamilton accepted, making him a lieutenant colonel. For the next four years, Hamilton was one of Washington’s most valued staff members. In this role, he had a variety of responsibilities, including writing letters to Congress, state politicians, and other Continental Army officers.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">While Washington’s aide, Hamilton married Elizabeth Schuyler, on December 14, 1780. She was the daughter of Philip Schuyler, who had served as a major general in the Continental Army and was one of the wealthiest men in New York. Hamilton left Washington’s staff in March 1781 after arguing with Washington about his desire for a field command. Washington ultimately granted him a field command, and on October 14, 1781, Hamilton led the successful assault of Redoubt 10 during the Siege of Yorktown, which contributed to the surrender of General Lord Charles Cornwallis.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">Following Yorktown, Hamilton was selected by New York to be a delegate to the Confederation Congress in 1782. As a member of the congress, he was part of a faction that attempted to use discontent among officers about pay to frighten the congress and the states into adopting an amendment that allowed the congress to tax imports. Some officers camped at Newburgh, New York and called for force against the Confederation Congress. George Washington personally pled for them to end their protests, which were later referred to as the Newburgh Conspiracy. Following this incident, Washington warned Hamilton that “the Army is a dangerous instrument to play with.”2</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">Hamilton served as one of New York’s delegates to the Constitutional Convention at Philadelphia in 1787. He proposed that senators and the executive serve for life, and that the executive have an absolute veto. Although his proposals were not fully adopted, Hamilton passionately campaigned for the Constitution. He joined James Madison and John Jay in writing the Federalist Papers in support of ratification, penning the majority of the essays. In the summer of 1788, Hamilton served as the delegate to the New York ratifying convention in Poughkeepsie. Through his efforts he convinced New York, which was initially Anti-Federalist to ratify the new Constitution.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">After George Washington was elected the nation’s first president in 1789, he appointed Hamilton secretary of the treasury. Hamilton sought to create a stable financial foundation for the nation and increase the power of the central government. He pushed for the national government to assume state debts, which would bind creditors to the federal government. Secretary of State Thomas Jefferson and Representative James Madison opposed this plan, and only assisted its passage through Congress when Hamilton agreed to a permanent location for the nation’s capital along the Potomac River in present-day Washington, D.C. Hamilton made the First Bank of the United States a centerpiece of his financial plan. Modeled on the Bank of England, the bank held government funds, issued loans to the government, provided currency, and increased liquid capital to facilitate economic growth. Hamilton’s opponents, led by Jefferson and Madison, believed his policies dangerously empowered the central government and favored the rich over farmers.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">In time, Hamilton and Jefferson became the leaders of the Federalist and Democratic-Republican parties respectively. Jefferson and Hamilton also disagreed over foreign policy. After war broke out between Great Britain and France in 1793, Hamilton favored Washington’s Proclama-tion of Neutrality, which Jefferson opposed. Jefferson resigned in December 1793, frustrated that Washington usually sided with Hamilton on matters in which they disagreed. In 1794, Hamilton helped put an end to the Whiskey Rebellion. He resigned from his cabinet position in January 1795, but assisted the incoming secretary of the treasury in the months that followed.3</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">Hamilton remained active politically after leaving the cabinet, and helped draft Washington’s Farewell Address in 1796. Washington was called out of retirement in 1798 to lead a Provisional Army, when war with France loomed. The aging Washington insisted that Hamilton be his second in command, noting that “I know not where a more competent choice could be made.”4 With Washington’s death in December 1799, Hamilton was briefly the senior-ranking officer of the army, until his departure from the service the following year.</p><p style="font-family:Georgia,serif;color:#163d34;font-size:15px;line-height:1.72;margin:0 0 15px;">When Thomas Jefferson finished in an electoral tie with Aaron Burr in the presidential election of 1800, some Federalist Congressmen wanted to select Burr as president. Hamilton believed Jefferson was preferable to Burr, and wrote to Federalists imploring them to support Jefferson. In one letter, he said Burr was “a man of extreme and irregular ambition; that he is selfish to a degree which excludes all social affections” and added “he [Burr] is inferior in real ability to Jefferson.”5 Hamilton helped break the congressional deadlock, so that Jefferson would be elected. During the New York gubernatorial election of 1804, the Albany Register published a letter stating that Hamilton had insulted Aaron Burr, one of the candidates, at a private dinner. Burr lost the election. After confronting Hamilton about the reported slander, challenged him to a duel. On July 11, 1804, Burr mortally wounded Hamilton in Weehawken, New Jersey, and Hamilton died the following day. Eliza survived her husband by fifty years, passing away in 1854.</p>
 <p style="margin:24px 0;"><a href="https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/alexander-hamilton" target="_blank" rel="noopener" style="display:inline-block;background:#0b4438;color:#fff;text-decoration:none;font:700 14px Arial;padding:11px 17px;">Read the Original Article</a></p>
 <h2 style="font:700 18px Arial;color:#14705d;border-bottom:2px solid #f0654a;padding-bottom:5px;margin:8px 0 14px;">Chicago Citations</h2>
-<div style="font:700 12px Arial;color:#0b4438;margin:5px 0;">BIBLIOGRAPHY ENTRY</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;padding-left:34px;text-indent:-34px;">O&#x27;Keefe, Kieran J.. &quot;Alexander Hamilton.&quot; Mount Vernon Digital Encyclopedia. n.d. Accessed October 14, 2026. https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/alexander-hamilton.</p>
-<div style="font:700 12px Arial;color:#0b4438;margin:5px 0;">FULL FOOTNOTE</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;">Kieran J. O&#x27;Keefe, &quot;Alexander Hamilton,&quot; Mount Vernon Digital Encyclopedia, n.d. Accessed October 14, 2026, https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/alexander-hamilton.</p>
-<div style="font:700 12px Arial;color:#0b4438;margin:5px 0;">SHORTENED FOOTNOTE</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;">O&#x27;Keefe, &quot;Alexander Hamilton.&quot;</p>
-</td></tr><tr><td style="padding:0 36px 22px;"><div style="border-top:2px solid #f0654a;padding-top:11px;text-align:center;font:11px Arial;color:#0b4438;">UNIT 2 &middot; BUILDING A NATION | HISTORY B17A | DANIEL GARZA, M.A.</div></td></tr></tbody></table>
+<div class="citation-label" style="font:700 12px Arial;color:#0b4438;margin:5px 0;">BIBLIOGRAPHY ENTRY</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;padding-left:34px;text-indent:-34px;">O&#x27;Keefe, Kieran J.. &quot;Alexander Hamilton.&quot; Mount Vernon Digital Encyclopedia. n.d. Accessed October 14, 2026. https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/alexander-hamilton.</p>
+<div class="citation-label" style="font:700 12px Arial;color:#0b4438;margin:5px 0;">FULL FOOTNOTE</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;">Kieran J. O&#x27;Keefe, &quot;Alexander Hamilton,&quot; Mount Vernon Digital Encyclopedia, n.d. Accessed October 14, 2026, https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/alexander-hamilton.</p>
+<div class="citation-label" style="font:700 12px Arial;color:#0b4438;margin:5px 0;">SHORTENED FOOTNOTE</div><p style="font:14px/1.65 Georgia;color:#163d34;margin:0 0 14px;">O&#x27;Keefe, &quot;Alexander Hamilton.&quot;</p>
+</td></tr><tr><td class="article-footer-cell" style="padding:0 36px 22px;"><div style="border-top:2px solid #f0654a;padding-top:11px;text-align:center;font:11px Arial;color:#0b4438;">UNIT 2 &middot; BUILDING A NATION | HISTORY B17A | DANIEL GARZA, M.A.</div></td></tr></tbody></table>
+<!-- preserved-article:end -->
+  </main>
+  <nav class="document-actions" aria-label="Article navigation">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_2/Sources/Web_Articles/"><span aria-hidden="true">←</span> Return to Web Article Archive</a>
+  </nav>
+  <script>
+    (() => {
+      const bar = document.getElementById('reading-progress');
+      const update = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = scrollable > 0 ? Math.min(1, window.scrollY / scrollable) : 0;
+        bar.style.width = `${progress * 100}%`;
+      };
+      update();
+      addEventListener('scroll', update, { passive: true });
+      addEventListener('resize', update);
+    })();
+  </script>
+</body>
+</html>
