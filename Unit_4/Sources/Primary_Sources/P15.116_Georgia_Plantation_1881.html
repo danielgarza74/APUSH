@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Georgia Plantation. Primary Source P15.116 for Unit 4: A House Divided and Rebuilt.">
+  <meta name="theme-color" content="#5A4A17">
+  <title>Primary Source P15.116 | A Georgia Plantation</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Primary_Sources/P15.116_Georgia_Plantation_1881.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #5A4A17;
+      --forest-mid: #806A24;
+      --coral: #4E6373;
+      --coral-light: #93A7B5;
+      --cream: #F8F5E9;
+      --paper: #FDFBF5;
+      --mint: #EEF1F3;
+      --sage: #D6DCE0;
+      --ink: #3F3410;
+      --muted: #6B6448;
+      --shadow: 0 22px 55px rgba(48, 40, 12, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #6E5A1E;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(78, 99, 115, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(90, 74, 23, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(48, 40, 12, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(140, 115, 39, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    /* Unit 4: light-slate context panel with dark text, as in the printed reader */
+    .context-grid { background: #93A7B5 !important; border-color: #93A7B5; border-left-color: var(--coral); }
+    .context-grid td:first-child, .context-grid td:last-child { color: #1F2A31 !important; }
+    .context-grid tr + tr td { border-top-color: rgba(255,255,255,.35); }
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Primary source navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Primary Source Archive</a>
+      <div class="archive-meta">Unit 4 · Chapter 15 · P15.116</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="P15.116">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F8F5E9; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Primary Source P15.116</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">A Georgia Plantation</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">David C. Barrow Jr. · Scribner's Monthly, April 1881</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #4E6373; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#93A7B5; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TOC FIT</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:13.5px; line-height:1.55;">Chapter 15 · Essay prompt 15.3 (Sharecropping: New Bondage or Compromise?)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WHY HERE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:13.5px; line-height:1.55;">A planter's son describes the shift from gang labor to Black tenant farming with its own churches and schools.</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TREATMENT</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:13.5px; line-height:1.55;">Public-domain text, complete article (from OCR transcription)</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:17px; font-weight:700; border-bottom:2px solid #4E6373; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Historical Context</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">David C. Barrow Jr. (1852–1929), son of a large planter in Oglethorpe County, Georgia, later became chancellor of the University of Georgia. He described how his father's plantation had changed since 1860.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Under slavery the enslaved lived in quarters near the big house and worked in gangs under an overseer. By 1881 the land was divided among Black tenant families, most paying a fixed rent in cotton, who lived in scattered cabins, built their own church and school, and ran their own affairs.</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 26px 0;" class="editorial-note"><tr>
+  <td style="border-left:4px solid #4E6373; background-color:rgba(140, 115, 39,0.07); padding:12px 16px; font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:13px; line-height:1.6;">Editorial note: Barrow wrote for a northern magazine audience and presents the arrangement favorably; the dialect passages are his. The text is HathiTrust's OCR as supplied by the instructor. The two plantation maps printed with the article are not reproduced. The Norton collection dates the article March 1881; it appeared in the April 1881 number.</td>
+</tr></table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:17px; font-weight:700; border-bottom:2px solid #4E6373; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Document Text</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">A GEORGIA PLANTATION.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">That in many parts of the South (and notably the State of Georgia) the labor-relations of the two races are adjusting themselves and working out a solution of the dreaded "negro problem" in a practical way, has been known to all observant residents or visitors. The confident prophecies of the croakers that Southern plantations would go to waste, and that nothing but ruin lay before us, have proved the merest bosh. The enormous increase in the cotton crop of the South alone shows that the colored people, as free laborers, have done well, for it is not to be disputed that they form very nearly the same proportion of the laborers in the cotton fields that they did when they were slaves. I do not wish to be understood as stating a proportion in which free labor is to slave labor as the cotton crop since the war is to the cotton crop before the war. This is not true; the yield of cotton has been increased by other causes. But I do say that under no circumstances could worthless labor have produced the enormous increase in this crop.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In Georgia, the negro has adapted himself to his new circumstances, and freedom fits him as if it had been cut out and made for him. It is not true that the negroes have formed a restless, troublesome population, nor is it true that they are like a lot of huddled sheep, frightened at the approach of strange white men, in dread of the terrible Ku-klux. As far as I know, our philosophers have presented them in one or the other of these phases, according as the writer wished to show the dread which is felt by the country of the negro, or the terror which his surroundings inspire in him. Nothing can be further from either of these ideas than the facts of the case; and when we come to look at these, we find the solution to the whole difficulty at our very doors.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To make this plain, I shall endeavor to give some idea of the home life of our colored people as it really exists, and shall, for my purpose, take a Middle Georgia plantation, and tell what the negroes are doing on it, and how they live. I shall confine myself to the colored man as a farmer, for the reason that the mass of colored people of whom little is known are farmers.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In most cases there has been an entire change in the plan upon which our Georgia lands are worked, the change being entirely in favor of "local self-government as opposed to centralization of power." It is true that in some rare instances large plantations are still worked under the direction of overseers, with labor hired for yearly, monthly, and daily wages, but, generally speaking, a tenant system prevails.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">One of the first planters in Middle Georgia to divide his plantations into farms was Mr. Barrow, of Oglethorpe. The plantation upon which he now lives is the one which I wish to present as a fair exponent of negro tenant life in Georgia. This place contains about two thousand acres of land, and with the exception of a single acre, which Mr. Barrow has given to his tenants for church and school purposes, is the same size it was before the war. Here, however, the similarity ceases. Before the war everything on the place was under the absolute rule of an overseer (Mr. Barrow living then on another place). He it was who directed the laborers each day as to their work, and to him the owner looked for the well-being of everything on the place. Under him, and subject to his direction, the most intelligent and authoritative negroes were selected, whose duty it was to see that the overseer's orders were carried into effect. These head men, with us, were called foremen, and not drivers; in fact, though I was raised here in Georgia, my first acquaintance with the word driver, and the character which it presents in this connection, was had from one of Mayne Reid's tales. As will be seen by looking at the plot of the plantation, "as it was," all the negro houses were close together, forming "the quarter." The house in which the overseer lived was close to the quarter, lying between the quarter and the stables. This was always distinguished as "the house," and I have so marked it on the plot. It will appear that this arrangement of the buildings was the best that could be made, giving, as it did, the overseer the best opportunity for overlooking the property under his control. This has all been so changed that the place would now hardly be recognized by one who had not seen it during the past sixteen years.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The transformation has been so gradual that almost imperceptibly a radical change has been effected. For several years after the war, the force on the plantation was divided into two squads, the arrangement and method of working of each being about the same as they had always been used to. Each of these squads was under the control of a foreman, who was in the nature of a general of volunteers. The plantation was divided into two equal parts, and by offering a reward for the most successful planting, and thus exciting a spirit of emulation, good work was done, and the yield was about as great as it had ever been. Then, too, the laborers were paid a portion of the crop as their wages, which did much toward making them feel interested in it. There was no overseer, in the old sense of the word, and in his place a young man lived on the plantation, who kept the accounts and exercised a protecting influence over his employer's property, but was not expected to direct the hands in their work. The negroes used to call him "supertender," in order to express their sense of the change.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">This was the first change made, and for several years it produced good results. After a while, however, even the liberal control of the foremen grew irksome, each man feeling the very natural desire to be his own "boss," and to farm to himself. As a consequence of this feeling, the two squads split up into smaller and then still smaller squads, still working for part of the crop, and using the owner's teams, until this method of farming came to involve great trouble and loss. The mules were ill-treated, the crop was frequently badly worked, and in many cases was divided in a way that did not accord with the contract. I have been told an amusing incident which occurred on a neighboring plantation: A tenant worked a piece of land, for which he was to pay one-fourth of the corn produced. When he gathered his crop, he hauled three loads to his own house, thereby exhausting the supply in the field. When, soon after, he came to return his landlord's wagon, which he had used in the hauling, the latter asked, suggestively:</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">"Well, William, where's my share of the corn?"</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">"You aint got none, sah," said William.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">"Haven't got any! Why, wasn't I to have the fourth of all you made?"</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">"Yes, sah; but hit never made no fourth; dere wasn't but dess my three loads made."</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Now, of course, this was an honest mistake, and while many equally honest and vexatious constantly occurred, I am constrained to say the tendency to divide on the same plan was frequent when there was no mistake. These and other troubles led to the present arrangement, which, while it had difficulties in the way of its inception, has been found to work thoroughly well. Under it our colored farmers are tenants, who are responsible only for damage to the farm they work and for the prompt payment of their rent. On the plantation about which I am writing, all of the tenants are colored men, who farm on a small scale, only two of them having more than one mule. Indeed, the first trouble in the way of dividing up the plantation into farms was to provide the new-made tenants with mules. Up to this time their contracts had been such that they plowed with mules belonging to Mr. Barrow, and very few had bought mules of their own. This trouble was met by selling them mules on credit, and though the experiment looked risky at the time, the mules were paid for in almost every case. After this, the location of the houses caused considerable inconvenience, and so it was determined to scatter them. When the hands all worked together, it was desirable to have all of the houses in a central location, but after the division into farms, some of them had to walk more than a mile to reach their work; then, too, they began to "want more elbow-room," and so, one by one, they moved their houses on to their farms. I have made a plot of the place "as it is," showing how the houses are distributed. Wherever there is a spring, there they settle, generally two or three near together, who have farms hard by. When no spring is convenient, they dig wells, though they greatly prefer the spring. A little bit of a darky, not much taller than the vessel he is carrying, will surprise you by the amount of water he can tote on his head. I have seen a mother and three or four children pulling along uphill from the spring, their vessels diminishing in size as the children do, until the last little fellow would carry hardly more than two or three cupfuls.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">I suppose nothing like one of these settlements is to be found elsewhere than in Georgia. The dwelling-house is an ordinary log-cabin, twenty feet square, the chimney built of sticks and dabbed over with mud; then there is a separate kitchen, which, in architectural design, is a miniature of the house,—in size approaches a chicken-coop,—and is really ridiculous in its pretentiousness. Off to one side are the out-houses, consisting of a diminutive stable, barely large enough to pack a small mule in, and a corn-crib and fodder-house, equally imposing. Every tenant has a cow—most of them several; and there is one old man—Lem Bryant—who is quite a Job in this respect. There is no law requiring stock to be kept up, and there is a large quantity of uncultivated land for pasture, so that the only cost connected with cattle is ten or fifteen dollars purchase money. An open pen, called the "cuppen," in this mild climate serves in place of cow-stables. On the opposite side from the lot, the house is flanked by the garden, surrounded by what is known as a "wattle" fence. This fence is made of split pine boards, "wattled" around three horizontal rails, fastened to posts, the first at the ground and the others respectively two and four feet above. Inseparable from this garden is a patch of "collord greens." The negroes think "collord greens, biled with plenty fat meat, hard to beat," when you are considering table delicacies. The only other noteworthy feature in connection with this home is the 'possum dog, who is the first to greet your approach. You will know him by the leanness of his body, the fierceness of his bark, and the rapidity of his retreat.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The labor of the farm is performed by the man, who usually does the plowing, and his wife and children, who do the hoeing, under his direction. Whenever they have heavy work to do they call on their neighbors, and receive willing aid. Their crops are principally corn and cotton, but they have patches of such things as potatoes, melons, and sorghum-cane, from which they make their sirup. They plant whatever they please, and their landlord interferes only far enough to see that sufficient cotton is made to pay the rent, which is seven hundred and fifty pounds of lint-cotton to each one-horse farm. The usual quantity of land planted is between twenty-five and thirty acres, about half of which is in cotton and the rest in corn and patches. An industrious man will raise three times the amount of his rent-cotton, besides making a full supply of corn, sirup, and other provisions, while really good farming would require about five times the rent to be raised in addition to the supply of provisions. Candor compels the admission that only a few tenants reach this standard of good farming; the others work sufficiently well to pay their rent, and make money enough to buy their clothes and spend at Christmas, and let the rainy days of the future take care of themselves. It is a point of honor with them to pay their rent, even if they find it necessary to mistake whose cotton they pay it with.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">There is one misfortune which, to our Georgia tenant, dwarfs all others, and this comes when his mule dies. Thanks to mulish endurance, this does not often happen, but when it does, the owner invariably expresses himself "broke up." He has to buy another on time, and work hard and live close the next year in order to pay for him, or else make his crop with a steer. An enterprising colored man will buy the mule, but I have frequently known tenants to resort to the steer. Whenever they get into trouble of this kind, they remind their landlord in pathetic terms that he is their old master, and generally get off with the payment of half the rent.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The slight supervision which is exercised over these tenants may surprise those ignorant of how completely the relations between the races at the South have changed. Mr. Barrow lives on his plantation, and yet there are some of his tenants' farms which he does not visit as often as once a month, and this, too, because they do not need overlooking. Very many negro farmers are capable of directing the working of their own crops, and not a few object to directions. There are, on the other hand, many, in fact a large majority, who, while they know how their crops should be worked, are slow to think and act for themselves, and an occasional visit from the landlord does them much good.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">One of the most intelligent colored men I know is Ben Thomas, the old foreman on this plantation, and the best farmer among the negroes on the place. I have secured Ben's contract for the past year, which reads as follows:</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">"By or before the 15th November, 1880, I promise to pay to David C. Barrow, 500 lbs. of white lint cotton, 40 bushels of cotton-seed, 25 bushels of corn and the shucks therefrom, and 500 lbs. of good fodder, as rent for land on Syll's Fork, during year 1880. his 1st Jan., 1880. Ben x Thomas. mark. Witness: O. C. Watson."</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It will be seen that this contract is nothing more than a memorandum of the amounts to be paid, expressed in the form of a promissory note. Very few of the negroes require any copy, or any written agreement; they have the land, they say. Ben's contract last year was exactly the same as this, and his crop, as near as I have been able to ascertain, was as follows:</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">5 bales Cotton, 2500 lbs. @ 11 cts. ........ $275.00 Corn, 160 bush. @ 75 cts. ................... 120.00 Fodder, 3000 lbs. @ $1.00 per hun. ........... 30.00 Wheat, 30 bush. @ $1.00 ...................... 30.00 Total ...................................... $455.00</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">This crop was raised by himself, his wife, a son and daughter.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">As one of the class who work not so wisely as well, Beckton Barrow is a good specimen. When the mules were divided out, upon the inauguration of the tenant system, Beck bought a large, fine young mule, promising to pay two hundred dollars for him. This was a big debt for a man whose earthly possessions consisted of a wife, two daughters, and a limited supply of provisions, but he paid it all off in two years, and since then he has been "well off," not to say rich. As soon as his mule was paid for, Beck seemed to dismiss further thought of economy, and if he knew what it meant, I have no doubt his motto would be dum vivimus vivamus. His contract is the same as Ben Thomas's, except that he pays one-fourth of his corn and fodder, instead of a stated amount. Under that contract, his last year's crop was as follows:</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">3 bales Cotton, 1500 lbs. @ 11 cts. ........ $165.00 Corn, 200 bush. @ 75 cts. ................... 150.00 Fodder, 3500 lbs. @ $1.00 per hun. ........... 35.00 Total ...................................... $350.00</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">At the risk of growing monotonous, I present one more crop, on account of some differences between it and the others. Handy Barrow pays as rent 750 pounds of cotton and sixty bushels cotton-seed, an increased amount of cotton, instead of corn. He is not so good a farmer as Ben Thomas, but his force is stronger, his father and mother assisting him. His crop was:</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">5 bales Cotton, 2500 lbs. @ 11 cts. ........ $275.00 Corn, 180 bush. @ 75 cts. ................... 135.00 Fodder, 3000 lbs. @ $1.00 per hun. ........... 30.00 Wheat, 25 bush. @ $1.00 ...................... 25.00 Sirup, 50 gals. @ 40 cts. .................... 20.00 Total ...................................... $485.00</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The cane from which the sirup is made is very exhausting to land, and while landowners do not prohibit its cultivation, because it is such an important food crop, they discourage the negroes from raising it for sale, and for this reason Mr. Barrow charges one-fourth of the sirup extra, whenever it is made.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">These estimates are as exact as can be had, for the reason that, as soon as the rent is paid, the tenant gives no further account of his crop; they are none of them very exact. The figures I have given are within the actual value of the crops, the prices being low, except for cotton, which is nearly correct, and several important items, cotton-seed for one, being omitted. The number of bales of cotton is correct, but the tenants frequently sell a part of their crop in the seed, and have what they call "rem[n]ents" left over, which are sold as loose cotton. Handy and Ben are among the best farmers on the plantation, and Beck is an average specimen.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">I have a letter from Mr. Barrow, in which he says: "They make per annum, on a farm plowed with one horse, from eighty to two hundred and twenty bushels of corn, two to six bales of cotton, some of them as much as forty bushels of wheat; with oats, peas, potatoes, and other smaller crops."</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">All of these negroes raise hogs, and these, with chickens, of which they raise great numbers, constitute a large portion of their meat food. They generally have to buy some meat during the year, however, for which they pay in the fall.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The land of this plantation is rich, and the tenants are, perhaps, better off than in some other places, but an industrious negro will pay good rent for land and make money for himself almost anywhere in Middle Georgia.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The last census showed three white and one hundred and sixty-two colored people on this plantation. I mention this to show that there must be many children among our country negroes. The adage, "poor folks for children," finds no exception here. There is one woman on the place who has three babies, Shadrach, Meshach, and Abednego, and fine children they are, too, and well cared for in spite of the number. It was commonly thought that the negroes, when freed, would care very little for their children, and would let them die for want of attention, but experience has proved this surmise unfounded. On the contrary, I suppose they take as good care of them as do the same class of people anywhere.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It will be seen by reference to plot of the place "as it is," that one corner has been cut off, and a church and school-house built on it. This has been given to them so long as they use it for church and school purposes. The church building is forty by fifty feet, and is a frame house, the Lord's house being here, if not elsewhere, better than the people's. They have a membership of about two hundred, from the plantation and the country around, which is in charge of the Rev. Derry Merton, a colored man, who preaches there twice a month. He has had charge of this church nine or ten years, and has other churches under his care. For its support, the male members pay fifty cents and the females twenty-five cents per annum. In addition to their regular church services, they have a Sunday-school, with a membership of one hundred and fifty or more, which has a regular superintendent, one of the tenants on the place. They use regular lesson-papers and singing-books, and especially delight in singing. I believe, generally speaking, negroes in the country are Baptists; at any rate, those on this place are. To go under the water is far more necessary to salvation, in their eyes, than anything else. There is a great tendency among them to become preachers, which, I fear, is induced as much by the desire to display their oratorical powers as by excess of piety.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Once a year, during August, there is a big meeting at Spring Hill church. From far and near friends come in, and all the houses of all the members are thrown open. They kill their pigs, kids, lambs, chickens, everything, by wholesale, and for three or four days they do little else but preach, sing, and eat. Fortunately their meeting comes at a time when very little work is to be done, so that the crops do not suffer. This August meeting, and the necessity of going under the water, are the bulwarks of their church.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Too great praise cannot be bestowed upon the earnestness which all negroes feel on the subject of education. Very soon after they were freed, these hands manifested a desire to establish a school, and Mr. Barrow gave them a site upon which they promptly built a school-house, and they have employed a teacher ever since. Free schools in Georgia last only about three months, but the negroes cheerfully pay their teacher the remainder of the year themselves. Quite a number who were grown when freed have since learned to read and write, and they all send their children. It is a strange fact that, even while they desire their children to be educated, many of them have a great prejudice against the profession of teaching. An old colored woman said to one of my sisters: "I tell you what, Miss Sallie, of all the lazy, good-for-nothin' trades, this here sittin' down in a cheer all day, with a book in your hand, hearing chillen say lessons, is the laziest." The latest romance of the plantation was the elopement of the school-teacher and the daughter of one of the old foremen. "Mr. Map" (so-called, I suppose, on account of his knowledge of geography) won the heart of "Ben's Mary," and sued for her hand. Very much to his surprise, the father not only refused, but it is said declared his intention of giving them both a good whipping the first time he caught them together, adding his opinion of the laziness and worthlessness of the suitor. As the old man would most likely have carried his threat into execution, the young couple had nothing left but a separation or an elopement. I think there was nothing against Map, except his occupation, and as he supported his wife, the old man soon relented and allowed them to return to the neighborhood.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">I have thus briefly given some facts connected with the farm life of the colored people in Georgia. If I have made my descriptions true to life, they fit any place in this portion of the State, mutatis mutandis. They all live nearly the same way. Occasionally one is found who wishes to have more of this world's goods; such buy land and pay for it as they did for their mules, and work the same crops as these I have written about. As a people they are happy; they have become suited to their new estate, and it to them. I do not know of a single negro who has swelled the number of the "exodus." That they have improved, and continue to improve, seems beyond controversy. The one man on this plantation who, as a slave, gave most trouble, so much, in fact, that he was almost beyond control of the overseer, was Lem Bryant. Since he has been freed, he has grown honest, quiet, and industrious; he educates his children and pays his debts. Mr. Barrow asked him, one day, what had changed him so. "Ah, master!" he replied, "I'm free now; I have to do right."</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:17px; font-weight:700; border-bottom:2px solid #4E6373; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Barrow, David C., Jr. "A Georgia Plantation." <em>Scribner's Monthly</em> 21, no. 6 (April 1881): 830–36. HathiTrust.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">David C. Barrow Jr., "A Georgia Plantation," <em>Scribner's Monthly</em> 21, no. 6 (April 1881): [page].</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Barrow, "Georgia Plantation," [page].</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #4E6373; font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 4 · A HOUSE DIVIDED AND REBUILT | HISTORY B17A | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Return to the Primary Source Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>
