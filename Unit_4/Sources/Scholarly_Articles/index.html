@@ -1,0 +1,2541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scholarly article archive for Unit 4: A House Divided and Rebuilt, Chapters 13–15, 1830–1877.">
+  <meta name="theme-color" content="#5A4A17">
+  <title>Unit 4 Scholarly Article Archive | A House Divided and Rebuilt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #5A4A17;
+      --forest-mid: #806A24;
+      --forest-light: #6E5B1D;
+      --coral: #4E6373;
+      --coral-light: #93A7B5;
+      --cream: #F8F5E9;
+      --paper: #FDFBF5;
+      --mint: #EEF1F3;
+      --sage: #D6DCE0;
+      --ink: #3F3410;
+      --muted: #6B6448;
+      --shadow: 0 16px 38px rgba(48, 40, 12, .13);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #6E5A1E;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 92% 5%, rgba(78, 99, 115, .11), transparent 24rem),
+        linear-gradient(145deg, rgba(255,255,255,.5), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    button, input { font: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-hero {
+      position: relative;
+      min-height: 470px;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      padding: 5rem clamp(1.5rem, 7vw, 7rem) 4.5rem;
+      border-bottom: 7px solid var(--coral);
+      background:
+        linear-gradient(115deg, rgba(0,0,0,.13), transparent 60%),
+        var(--forest);
+      color: var(--paper);
+      isolation: isolate;
+    }
+    .archive-hero::after {
+      content: '';
+      position: absolute;
+      inset: 1.2rem;
+      z-index: -1;
+      border: 1px solid rgba(147, 167, 181,.27);
+      pointer-events: none;
+    }
+    .hero-watermark {
+      position: absolute;
+      right: clamp(1rem, 7vw, 7rem);
+      top: -5rem;
+      z-index: -1;
+      color: rgba(255,255,255,.045);
+      font: 700 clamp(22rem, 40vw, 40rem)/1 var(--heading);
+      user-select: none;
+    }
+    .hero-content { max-width: 1040px; text-align: center; }
+    .hero-eyebrow {
+      margin: 0 0 1rem;
+      color: var(--coral-light);
+      font: 700 .72rem/1.4 var(--heading);
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    .archive-hero h1 {
+      max-width: 900px;
+      margin: 0 auto;
+      color: var(--paper);
+      font: 700 clamp(2.3rem, 5.5vw, 5.2rem)/1.08 var(--heading);
+      letter-spacing: .03em;
+      text-wrap: balance;
+    }
+    .hero-subtitle {
+      max-width: 760px;
+      margin: 1.35rem auto 0;
+      color: rgba(253, 251, 245,.88);
+      font: italic 600 clamp(1.15rem, 2vw, 1.45rem)/1.5 var(--body);
+      text-wrap: balance;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .65rem 1.35rem;
+      margin-top: 2.1rem;
+      color: var(--coral-light);
+      font: 700 .65rem/1.4 var(--heading);
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .hero-meta span + span::before { content: '◆'; margin-right: 1.35rem; font-size: .45rem; vertical-align: middle; }
+
+    .chapter-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--sage);
+      background: rgba(253, 251, 245,.96);
+      box-shadow: 0 8px 22px rgba(48, 40, 12,.08);
+      backdrop-filter: blur(12px);
+    }
+    .chapter-nav-inner {
+      width: min(1180px, calc(100% - 2rem));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 66px;
+    }
+    .archive-mark {
+      flex: 0 0 auto;
+      color: var(--forest);
+      font: 700 .7rem var(--heading);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .chapter-links { display: flex; align-items: stretch; align-self: stretch; }
+    .chapter-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: 0 1rem;
+      border-bottom: 3px solid transparent;
+      color: var(--forest);
+      font: 700 .67rem var(--ui);
+      letter-spacing: .04em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .chapter-links a span { color: var(--coral-text); font-family: var(--heading); }
+    .chapter-links a:hover { border-bottom-color: var(--coral); background: var(--mint); }
+
+    main { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; padding: 3.5rem 0 5rem; }
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .intro-card,
+    .citation-card {
+      position: relative;
+      padding: 2.25rem 2.35rem;
+      border: 1px solid var(--coral);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+    .intro-card::after,
+    .citation-card::after {
+      content: '';
+      position: absolute;
+      inset: 7px;
+      border: 1px solid rgba(78, 99, 115,.17);
+      pointer-events: none;
+    }
+    .eyebrow {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 .5rem;
+      color: var(--coral-text);
+      font: 800 .65rem var(--ui);
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .intro-card h2,
+    .citation-card h2 {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 1rem;
+      color: var(--forest);
+      font: 700 clamp(1.5rem, 2.6vw, 2.15rem)/1.2 var(--heading);
+    }
+    .intro-card p,
+    .citation-card p { position: relative; z-index: 1; margin: 0; }
+    .citation-card { background: var(--mint); }
+    .citation-card p + p { margin-top: .85rem; }
+
+    .catalog-tools {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: center;
+      margin: 2.5rem 0 3.2rem;
+      padding: 1.25rem 1.35rem;
+      border: 1px solid var(--sage);
+      background: rgba(253, 251, 245,.82);
+    }
+    .search-wrap { position: relative; }
+    .search-wrap svg {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      width: 19px;
+      transform: translateY(-50%);
+      color: var(--forest-mid);
+      pointer-events: none;
+    }
+    .source-search {
+      width: 100%;
+      padding: .9rem 1rem .9rem 3rem;
+      border: 1px solid var(--sage);
+      background: white;
+      color: var(--ink);
+      font: 600 .85rem var(--ui);
+    }
+    .source-search:focus { border-color: var(--coral); outline: 2px solid rgba(78, 99, 115,.15); }
+    .result-count {
+      min-width: 9rem;
+      margin: 0;
+      color: var(--muted);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .07em;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .chapter-section { margin-top: 4rem; scroll-margin-top: 88px; }
+    .chapter-heading {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 5rem 1fr auto;
+      gap: 1.2rem;
+      align-items: center;
+      min-height: 150px;
+      padding: 1.7rem 2rem;
+      border-top: 5px solid var(--coral);
+      background: var(--forest);
+      color: white;
+    }
+    .chapter-heading::after {
+      content: '';
+      position: absolute;
+      right: -4rem;
+      bottom: -8rem;
+      width: 18rem;
+      height: 18rem;
+      border: 1px solid rgba(147, 167, 181,.22);
+      border-radius: 50%;
+    }
+    .chapter-number {
+      color: rgba(255,255,255,.13);
+      font: 700 5rem/1 var(--heading);
+      text-align: center;
+    }
+    .chapter-heading p { margin: 0 0 .35rem; color: var(--coral-light); font: 700 .67rem var(--ui); letter-spacing: .14em; text-transform: uppercase; }
+    .chapter-heading h2 { margin: 0; color: white; font: 700 clamp(1.35rem, 3vw, 2.25rem)/1.18 var(--heading); text-wrap: balance; }
+    .chapter-count {
+      position: relative;
+      z-index: 1;
+      padding: .5rem .7rem;
+      border: 1px solid rgba(147, 167, 181,.48);
+      color: var(--coral-light);
+      font: 700 .65rem var(--ui);
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+    .source-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .75rem;
+      padding-top: 1rem;
+    }
+    .source-card {
+      display: grid;
+      grid-template-columns: 3.8rem 1fr 1.2rem;
+      gap: .85rem;
+      align-items: start;
+      min-height: 122px;
+      padding: 1.2rem 1.15rem;
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      color: var(--ink);
+      text-decoration: none;
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+    .source-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--coral);
+      box-shadow: 0 10px 24px rgba(48, 40, 12,.11);
+    }
+    .source-card[hidden] { display: none; }
+    .source-code {
+      padding-top: .12rem;
+      color: var(--coral-text);
+      font: 700 .74rem var(--heading);
+      letter-spacing: .025em;
+    }
+    .source-copy { display: flex; min-width: 0; flex-direction: column; }
+    .source-copy strong { color: var(--forest); font: 700 .83rem/1.42 var(--ui); }
+    .source-copy > span { margin-top: .35rem; color: var(--muted); font: italic 1rem/1.4 var(--body); }
+    .source-arrow { color: var(--coral-text); font-size: 1rem; transition: transform .2s ease; }
+    .source-card:hover .source-arrow { transform: translate(2px, -2px); }
+    .chapter-empty { margin: 1rem 0 0; padding: 1.4rem; border: 1px dashed var(--sage); color: var(--muted); text-align: center; }
+    .no-results {
+      margin: 3rem 0;
+      padding: 2rem;
+      border: 1px solid var(--coral-light);
+      background: #F3F5F6;
+      color: var(--forest);
+      text-align: center;
+    }
+    .page-footer {
+      margin-top: 5rem;
+      padding: 1.4rem 0 0;
+      border-top: 1px solid var(--coral);
+      color: var(--muted);
+      font: 700 .63rem var(--ui);
+      letter-spacing: .11em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .back-top {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: var(--forest-mid);
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .archive-hero { min-height: 410px; }
+      .archive-mark { display: none; }
+      .chapter-nav-inner { justify-content: center; }
+      .chapter-links { overflow-x: auto; }
+      .intro-grid { grid-template-columns: 1fr; }
+      .source-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      body { font-size: 18px; }
+      .archive-hero { min-height: 380px; padding: 4rem 1.2rem 3.6rem; }
+      .archive-hero::after { inset: .7rem; }
+      .hero-meta { flex-direction: column; gap: .35rem; }
+      .hero-meta span + span::before { content: ''; margin: 0; }
+      .chapter-nav-inner { width: 100%; }
+      .chapter-links { width: 100%; justify-content: space-around; }
+      .chapter-links a { flex: 1; justify-content: center; padding: 0 .5rem; white-space: nowrap; }
+      .chapter-links a .link-title { display: none; }
+      main { width: min(100% - 1.2rem, 1180px); padding-top: 2rem; }
+      .intro-card, .citation-card { padding: 1.7rem 1.35rem; }
+      .catalog-tools { grid-template-columns: 1fr; }
+      .result-count { min-width: 0; text-align: left; }
+      .chapter-section { scroll-margin-top: 74px; }
+      .chapter-heading { grid-template-columns: 3rem 1fr; min-height: 130px; padding: 1.35rem 1.1rem; }
+      .chapter-number { font-size: 3.5rem; }
+      .chapter-count { grid-column: 2; justify-self: start; }
+      .source-card { grid-template-columns: 3.2rem 1fr 1rem; min-height: 0; padding: 1rem .85rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+    @media print {
+      body { background: white; font-size: 10pt; }
+      .chapter-nav, .catalog-tools, .back-top { display: none !important; }
+      .archive-hero { min-height: 0; padding: .7in; print-color-adjust: exact; }
+      main { width: auto; padding: .35in; }
+      .intro-card, .citation-card, .source-card { box-shadow: none; }
+      .source-grid { grid-template-columns: 1fr 1fr; }
+      .source-card { min-height: 0; break-inside: avoid; }
+      .chapter-section { break-before: page; }
+    }
+    .intro-card p + p { margin-top: .85rem; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to source catalog</a>
+
+  <header class="archive-hero">
+    <div class="hero-watermark" aria-hidden="true">A</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">E Pluribus Unum · Part Four</p>
+      <h1>Scholarly Article Archive</h1>
+      <p class="hero-subtitle">Journal scholarship on western expansion, secession, the Civil War, and Reconstruction, reproduced as two-page facsimile excerpts.</p>
+      <div class="hero-meta">
+        <span>Unit 4 · A House Divided and Rebuilt</span>
+        <span>Chapters 13–15</span>
+        <span>1830–1877</span>
+        <span>221 articles</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="chapter-nav" aria-label="Chapter navigation">
+    <div class="chapter-nav-inner">
+      <span class="archive-mark">Scholarly Articles</span>
+      <div class="chapter-links"><a href="#chapter-13"><span>13</span><span class="link-title">Western Expansion and Southern Secession</span></a><a href="#chapter-14"><span>14</span><span class="link-title">The War of the Union</span></a><a href="#chapter-15"><span>15</span><span class="link-title">The Era of Reconstruction</span></a></div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="intro-grid" aria-label="Reader guidance">
+      <article class="intro-card">
+        <p class="eyebrow">Facsimile excerpts</p>
+        <h2>Read the pages as published.</h2>
+        <p>Each entry reproduces two continuous pages directly from the article. Original page numbers, note calls, notes, emphasis, tables, and spelling remain visible.</p>
+        <p>Under each page, “Text of this page” gives the machine-read text for searching and screen readers; it may contain scanning errors, so quote from the page image.</p>
+      </article>
+      <article class="citation-card">
+        <p class="eyebrow">Citing these readings</p>
+        <h2>Cite the journal pages.</h2>
+        <p>Use the full footnote citation the first time and the shortened form afterward. Cite the original journal pages shown on the facsimile, not reader page numbers, and create your own footnote numbering.</p>
+        <p>If an article quotes a primary document you did not consult yourself, use a “quoted in” note. The JSTOR link may require the Bakersfield College library login.</p>
+      </article>
+    </section>
+
+    <section class="catalog-tools" aria-label="Search the source catalog">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+        <label class="skip-link" for="source-search">Search scholarly articles</label>
+        <input id="source-search" class="source-search" type="search" autocomplete="off" placeholder="Search by article, author, journal, or code…">
+      </div>
+      <p id="result-count" class="result-count" aria-live="polite">221 articles</p>
+    </section>
+
+    <p id="no-results" class="no-results" hidden>No scholarly articles match that search. Try a shorter title, author surname, date, or source code.</p>
+
+
+
+      <section class="chapter-section" id="chapter-13" data-chapter-section aria-labelledby="chapter-13-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">13</div>
+          <div>
+            <p>Chapter 13 · 1830–1861</p>
+            <h2 id="chapter-13-title">Western Expansion and Southern Secession</h2>
+          </div>
+          <span class="chapter-count">71 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.01_Civil_War_As_Institutional_Fulfillment.html" data-source-card data-search="a13.1 the civil war as institutional fulfillment thomas b. alexander · the journal of southern history 47, no. 1 (1981)">
+              <span class="source-code">A13.1</span>
+              <span class="source-copy">
+                <strong>The Civil War as Institutional Fulfillment</strong>
+                <span>Thomas B. Alexander · <i>The Journal of Southern History 47, no. 1 (1981)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.02_Secession_Slavery_As_Positive_Good.html" data-source-card data-search="a13.2 secession and slavery as a positive good: the impact of the anthony burns drama in boston on virginia gordon s. barker · the virginia magazine of history and biography 118, no. 2 (2010)">
+              <span class="source-code">A13.2</span>
+              <span class="source-copy">
+                <strong>Secession and Slavery as a Positive Good: The Impact of the Anthony Burns Drama in Boston on Virginia</strong>
+                <span>Gordon S. Barker · <i>The Virginia Magazine of History and Biography 118, no. 2 (2010)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.03_Influence_Slavery_Colonization_Texas.html" data-source-card data-search="a13.3 the influence of slavery in the colonization of texas eugene c. barker · the mississippi valley historical review 11, no. 1 (1924)">
+              <span class="source-code">A13.3</span>
+              <span class="source-copy">
+                <strong>The Influence of Slavery in the Colonization of Texas</strong>
+                <span>Eugene C. Barker · <i>The Mississippi Valley Historical Review 11, no. 1 (1924)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.04_Texas_As_Viewed_Mexico_1820_1834.html" data-source-card data-search="a13.4 texas as viewed from mexico, 1820-1834 nettie lee benson · the southwestern historical quarterly 90, no. 3 (1987)">
+              <span class="source-code">A13.4</span>
+              <span class="source-copy">
+                <strong>Texas as Viewed from Mexico, 1820-1834</strong>
+                <span>Nettie Lee Benson · <i>The Southwestern Historical Quarterly 90, no. 3 (1987)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.05_Mexican_Opinion_Texas_Revolution.html" data-source-card data-search="a13.5 mexican opinion and the texas revolution gene brack · the southwestern historical quarterly 72, no. 2 (1968)">
+              <span class="source-code">A13.5</span>
+              <span class="source-copy">
+                <strong>Mexican Opinion and the Texas Revolution</strong>
+                <span>Gene Brack · <i>The Southwestern Historical Quarterly 72, no. 2 (1968)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.06_Mexican_Opinion_American_Racism_War_1846.html" data-source-card data-search="a13.6 mexican opinion, american racism, and the war of 1846 gene m. brack · the western historical quarterly 1, no. 2 (1970)">
+              <span class="source-code">A13.6</span>
+              <span class="source-copy">
+                <strong>Mexican Opinion, American Racism, and the War of 1846</strong>
+                <span>Gene M. Brack · <i>The Western Historical Quarterly 1, no. 2 (1970)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.07_Texas_Riddle_Secession.html" data-source-card data-search="a13.7 texas and the riddle of secession walter l. buenger · the southwestern historical quarterly 87, no. 2 (1983)">
+              <span class="source-code">A13.7</span>
+              <span class="source-copy">
+                <strong>Texas and the Riddle of Secession</strong>
+                <span>Walter L. Buenger · <i>The Southwestern Historical Quarterly 87, no. 2 (1983)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.08_Slavery_Early_Texas_I.html" data-source-card data-search="a13.8 slavery in early texas. i lester g. bugbee · political science quarterly 13, no. 3 (1898)">
+              <span class="source-code">A13.8</span>
+              <span class="source-copy">
+                <strong>Slavery in Early Texas. I</strong>
+                <span>Lester G. Bugbee · <i>Political Science Quarterly 13, no. 3 (1898)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.09_Manifest_Mirth.html" data-source-card data-search="a13.9 manifest mirth: the humorous critique of manifest destiny, 1846–1858 daniel burge · western historical quarterly 47, no. 3 (2016)">
+              <span class="source-code">A13.9</span>
+              <span class="source-copy">
+                <strong>Manifest Mirth: The Humorous Critique of Manifest Destiny, 1846–1858</strong>
+                <span>Daniel Burge · <i>Western Historical Quarterly 47, no. 3 (2016)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.10_Sometimes_When_I_Hear_Winds_Sigh.html" data-source-card data-search="a13.10 &#x27;sometimes when i hear the winds sigh&#x27;: mortality on the overland trail robert w. carter · california history 74, no. 2 (1995)">
+              <span class="source-code">A13.10</span>
+              <span class="source-copy">
+                <strong>'Sometimes When I Hear the Winds Sigh': Mortality on the Overland Trail</strong>
+                <span>Robert W. Carter · <i>California History 74, no. 2 (1995)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.11_Manifest_Destiny_Pacific.html" data-source-card data-search="a13.11 manifest destiny and the pacific dan e. clark · pacific historical review 1, no. 1 (1932)">
+              <span class="source-code">A13.11</span>
+              <span class="source-copy">
+                <strong>Manifest Destiny and the Pacific</strong>
+                <span>Dan E. Clark · <i>Pacific Historical Review 1, no. 1 (1932)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.12_Santa_Anna_Gomez_Farias_Administration_Mexico_1833.html" data-source-card data-search="a13.12 santa anna and the gómez farías administration in mexico, 1833-1834 michael p. costeloe · the americas 31, no. 1 (1974)">
+              <span class="source-code">A13.12</span>
+              <span class="source-copy">
+                <strong>Santa Anna and the Gómez Farías Administration in Mexico, 1833-1834</strong>
+                <span>Michael P. Costeloe · <i>The Americas 31, no. 1 (1974)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.13_Southern_Protestantism_Secession.html" data-source-card data-search="a13.13 southern protestantism and secession w. harrison daniel · the historian 29, no. 3 (1967)">
+              <span class="source-code">A13.13</span>
+              <span class="source-copy">
+                <strong>Southern Protestantism and Secession</strong>
+                <span>W. Harrison Daniel · <i>The Historian 29, no. 3 (1967)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.14_Bexar.html" data-source-card data-search="a13.14 bexar: profile of a tejano community, 1820-1832 jesús f. de la teja and john wheat · the southwestern historical quarterly 89, no. 1 (1985)">
+              <span class="source-code">A13.14</span>
+              <span class="source-copy">
+                <strong>Bexar: Profile of a Tejano Community, 1820-1832</strong>
+                <span>Jesús F. de la Teja and John Wheat · <i>The Southwestern Historical Quarterly 89, no. 1 (1985)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.15_Discovering_Tejano_Community_Early_Texas.html" data-source-card data-search="a13.15 discovering the tejano community in &#x27;early&#x27; texas jesús f. de la teja · journal of the early republic 18, no. 1 (1998)">
+              <span class="source-code">A13.15</span>
+              <span class="source-copy">
+                <strong>Discovering the Tejano Community in 'Early' Texas</strong>
+                <span>Jesús F. de la Teja · <i>Journal of the Early Republic 18, no. 1 (1998)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.16_Whither_Tejano_History.html" data-source-card data-search="a13.16 whither tejano history: origins, development, and status arnoldo de león · the southwestern historical quarterly 106, no. 3 (2003)">
+              <span class="source-code">A13.16</span>
+              <span class="source-copy">
+                <strong>Whither Tejano History: Origins, Development, and Status</strong>
+                <span>Arnoldo De León · <i>The Southwestern Historical Quarterly 106, no. 3 (2003)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.17_Independent_Indians_U_S_Mexican_War.html" data-source-card data-search="a13.17 independent indians and the u.s.-mexican war brian delay · the american historical review 112, no. 1 (2007)">
+              <span class="source-code">A13.17</span>
+              <span class="source-copy">
+                <strong>Independent Indians and the U.S.-Mexican War</strong>
+                <span>Brian DeLay · <i>The American Historical Review 112, no. 1 (2007)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.18_Wider_World_Handsome_Man.html" data-source-card data-search="a13.18 the wider world of the handsome man: southern plains indians invade mexico, 1830-1848 brian delay · journal of the early republic 27, no. 1 (2007)">
+              <span class="source-code">A13.18</span>
+              <span class="source-copy">
+                <strong>The Wider World of the Handsome Man: Southern Plains Indians Invade Mexico, 1830-1848</strong>
+                <span>Brian DeLay · <i>Journal of the Early Republic 27, no. 1 (2007)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.19_Who_Won_Secession_Election_Louisiana.html" data-source-card data-search="a13.19 who won the secession election in louisiana? charles b. dew · the journal of southern history 36, no. 1 (1970)">
+              <span class="source-code">A13.19</span>
+              <span class="source-copy">
+                <strong>Who Won the Secession Election in Louisiana?</strong>
+                <span>Charles B. Dew · <i>The Journal of Southern History 36, no. 1 (1970)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.20_Conspiracy_Popular_Movement.html" data-source-card data-search="a13.20 conspiracy or popular movement: the historiography of southern support for secession william j. donnelly · the north carolina historical review 42, no. 1 (1965)">
+              <span class="source-code">A13.20</span>
+              <span class="source-copy">
+                <strong>Conspiracy or Popular Movement: The Historiography of Southern Support for Secession</strong>
+                <span>William J. Donnelly · <i>The North Carolina Historical Review 42, no. 1 (1965)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.21_Oregon_Trail_Columbia_Gorge_1843_1855.html" data-source-card data-search="a13.21 the oregon trail in the columbia gorge, 1843-1855: the final ordeal g. thomas edwards · oregon historical quarterly 97, no. 2 (1996)">
+              <span class="source-code">A13.21</span>
+              <span class="source-copy">
+                <strong>The Oregon Trail in the Columbia Gorge, 1843-1855: The Final Ordeal</strong>
+                <span>G. Thomas Edwards · <i>Oregon Historical Quarterly 97, no. 2 (1996)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.22_Women_Their_Families_Overland_Trail_California_Oregon.html" data-source-card data-search="a13.22 women and their families on the overland trail to california and oregon, 1842-1867 johnny faragher and christine stansell · feminist studies 2, no. 2/3 (1975)">
+              <span class="source-code">A13.22</span>
+              <span class="source-copy">
+                <strong>Women and Their Families on the Overland Trail to California and Oregon, 1842-1867</strong>
+                <span>Johnny Faragher and Christine Stansell · <i>Feminist Studies 2, no. 2/3 (1975)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.23_Commerce_Conquest_Early_American_Foreign_Relations_17501850.html" data-source-card data-search="a13.23 commerce and conquest in early american foreign relations, 1750–1850 paul a. gilje · journal of the early republic 37, no. 4 (2017)">
+              <span class="source-code">A13.23</span>
+              <span class="source-copy">
+                <strong>Commerce and Conquest in Early American Foreign Relations, 1750–1850</strong>
+                <span>Paul A. Gilje · <i>Journal of the Early Republic 37, no. 4 (2017)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.24_Brush_Mexico.html" data-source-card data-search="a13.24 a brush with mexico piero gleijeses · diplomatic history 29, no. 2 (2005)">
+              <span class="source-code">A13.24</span>
+              <span class="source-copy">
+                <strong>A Brush with Mexico</strong>
+                <span>Piero Gleijeses · <i>Diplomatic History 29, no. 2 (2005)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.25_American_Interest_California_1845.html" data-source-card data-search="a13.25 american interest in california, 1845 norman a. graebner · pacific historical review 22, no. 1 (1953)">
+              <span class="source-code">A13.25</span>
+              <span class="source-copy">
+                <strong>American Interest in California, 1845</strong>
+                <span>Norman A. Graebner · <i>Pacific Historical Review 22, no. 1 (1953)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.26_Lessons_Mexican_War.html" data-source-card data-search="a13.26 lessons of the mexican war norman a. graebner · pacific historical review 47, no. 3 (1978)">
+              <span class="source-code">A13.26</span>
+              <span class="source-copy">
+                <strong>Lessons of the Mexican War</strong>
+                <span>Norman A. Graebner · <i>Pacific Historical Review 47, no. 3 (1978)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.27_Mexican_War.html" data-source-card data-search="a13.27 the mexican war: a study in causation norman a. graebner · pacific historical review 49, no. 3 (1980)">
+              <span class="source-code">A13.27</span>
+              <span class="source-copy">
+                <strong>The Mexican War: A Study in Causation</strong>
+                <span>Norman A. Graebner · <i>Pacific Historical Review 49, no. 3 (1980)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.28_Cave_Winds_Compromise_1850.html" data-source-card data-search="a13.28 &#x27;the cave of the winds&#x27; and the compromise of 1850 holman hamilton · the journal of southern history 23, no. 3 (1957)">
+              <span class="source-code">A13.28</span>
+              <span class="source-copy">
+                <strong>'The Cave of the Winds' and the Compromise of 1850</strong>
+                <span>Holman Hamilton · <i>The Journal of Southern History 23, no. 3 (1957)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.29_To_Preserve_African_Slavery.html" data-source-card data-search="a13.29 &#x27;to preserve african slavery&#x27;: the secession commissioners to texas, 1861 matthew k. hamilton · the southwestern historical quarterly 114, no. 4 (2011)">
+              <span class="source-code">A13.29</span>
+              <span class="source-copy">
+                <strong>'To Preserve African Slavery': The Secession Commissioners to Texas, 1861</strong>
+                <span>Matthew K. Hamilton · <i>The Southwestern Historical Quarterly 114, no. 4 (2011)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.30_Democratic_Senate_Leadership_Compromise_1850.html" data-source-card data-search="a13.30 democratic senate leadership and the compromise of 1850 holman hamilton · the mississippi valley historical review 41, no. 3 (1954)">
+              <span class="source-code">A13.30</span>
+              <span class="source-copy">
+                <strong>Democratic Senate Leadership and the Compromise of 1850</strong>
+                <span>Holman Hamilton · <i>The Mississippi Valley Historical Review 41, no. 3 (1954)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.31_Causes_Mexican_War.html" data-source-card data-search="a13.31 the causes of the mexican war: a note on changing interpretations peter t. harstad and richard w. resh · arizona and the west 6, no. 4 (1964)">
+              <span class="source-code">A13.31</span>
+              <span class="source-copy">
+                <strong>The Causes of the Mexican War: A Note on Changing Interpretations</strong>
+                <span>Peter T. Harstad and Richard W. Resh · <i>Arizona and the West 6, no. 4 (1964)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.32_Rise_Fall_Plains_Indian_Horse_Cultures.html" data-source-card data-search="a13.32 the rise and fall of plains indian horse cultures pekka hämäläinen · the journal of american history 90, no. 3 (2003)">
+              <span class="source-code">A13.32</span>
+              <span class="source-copy">
+                <strong>The Rise and Fall of Plains Indian Horse Cultures</strong>
+                <span>Pekka Hämäläinen · <i>The Journal of American History 90, no. 3 (2003)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.33_Tory_Sentiment_Anglo_Texan_Public_Opinion_1832.html" data-source-card data-search="a13.33 tory sentiment in anglo-texan public opinion, 1832-1836 margaret swett henson · the southwestern historical quarterly 90, no. 1 (1986)">
+              <span class="source-code">A13.33</span>
+              <span class="source-copy">
+                <strong>Tory Sentiment in Anglo-Texan Public Opinion, 1832-1836</strong>
+                <span>Margaret Swett Henson · <i>The Southwestern Historical Quarterly 90, no. 1 (1986)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.34_Ambiguous_Democrat.html" data-source-card data-search="a13.34 an ambiguous democrat: joseph brown and georgia&#x27;s road to secession wallace t. hettle · the georgia historical quarterly 81, no. 3 (1997)">
+              <span class="source-code">A13.34</span>
+              <span class="source-copy">
+                <strong>An Ambiguous Democrat: Joseph Brown and Georgia's Road to Secession</strong>
+                <span>Wallace T. Hettle · <i>The Georgia Historical Quarterly 81, no. 3 (1997)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.35_Authorship_Compromise_1850.html" data-source-card data-search="a13.35 the authorship of the compromise of 1850 f. h. hodder · the mississippi valley historical review 22, no. 4 (1936)">
+              <span class="source-code">A13.35</span>
+              <span class="source-copy">
+                <strong>The Authorship of the Compromise of 1850</strong>
+                <span>F. H. Hodder · <i>The Mississippi Valley Historical Review 22, no. 4 (1936)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.36_Three_Georgia_Unionists_Compromise_1850.html" data-source-card data-search="a13.36 three georgia unionists and the compromise of 1850 john t. hubbell · the georgia historical quarterly 51, no. 3 (1967)">
+              <span class="source-code">A13.36</span>
+              <span class="source-copy">
+                <strong>Three Georgia Unionists and the Compromise of 1850</strong>
+                <span>John T. Hubbell · <i>The Georgia Historical Quarterly 51, no. 3 (1967)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.37_Property_Rights_Slavery_Coming_Civil_War.html" data-source-card data-search="a13.37 property rights in slavery and the coming of the civil war james l. huston · the journal of southern history 65, no. 2 (1999)">
+              <span class="source-code">A13.37</span>
+              <span class="source-copy">
+                <strong>Property Rights in Slavery and the Coming of the Civil War</strong>
+                <span>James L. Huston · <i>The Journal of Southern History 65, no. 2 (1999)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.38_William_Parrott_American_Claims_Mexican_War.html" data-source-card data-search="a13.38 william parrott, american claims, and the mexican war peter m. jonas · journal of the early republic 12, no. 2 (1992)">
+              <span class="source-code">A13.38</span>
+              <span class="source-copy">
+                <strong>William Parrott, American Claims, and the Mexican War</strong>
+                <span>Peter M. Jonas · <i>Journal of the Early Republic 12, no. 2 (1992)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.39_Mexico_His_Head.html" data-source-card data-search="a13.39 &#x27;mexico in his head&#x27;: slavery and the texas-mexico border, 1810-1860 sean kelley · journal of social history 37, no. 3 (2004)">
+              <span class="source-code">A13.39</span>
+              <span class="source-copy">
+                <strong>'Mexico in His Head': Slavery and the Texas-Mexico Border, 1810-1860</strong>
+                <span>Sean Kelley · <i>Journal of Social History 37, no. 3 (2004)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.40_Henry_Clays_Constitutional_Unionism.html" data-source-card data-search="a13.40 henry clay&#x27;s constitutional unionism peter b. knupfer · the register of the kentucky historical society 89, no. 1 (1991)">
+              <span class="source-code">A13.40</span>
+              <span class="source-copy">
+                <strong>Henry Clay's Constitutional Unionism</strong>
+                <span>Peter B. Knupfer · <i>The Register of the Kentucky Historical Society 89, no. 1 (1991)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.41_Visions_Northwest_Coast.html" data-source-card data-search="a13.41 visions of the northwest coast: gwin and seward in the 1850s howard i. kushner · the western historical quarterly 4, no. 3 (1973)">
+              <span class="source-code">A13.41</span>
+              <span class="source-copy">
+                <strong>Visions of the Northwest Coast: Gwin and Seward in the 1850s</strong>
+                <span>Howard I. Kushner · <i>The Western Historical Quarterly 4, no. 3 (1973)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.42_Slavery_Texas_Revolution.html" data-source-card data-search="a13.42 slavery and the texas revolution paul d. lack · the southwestern historical quarterly 89, no. 2 (1985)">
+              <span class="source-code">A13.42</span>
+              <span class="source-copy">
+                <strong>Slavery and the Texas Revolution</strong>
+                <span>Paul D. Lack · <i>The Southwestern Historical Quarterly 89, no. 2 (1985)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.43_Class_Party_Secession_Crisis.html" data-source-card data-search="a13.43 class and party in the secession crisis: voting behavior in the deep south, 1856-1861 peyton mccrary, clark miller, and dale baum · the journal of interdisciplinary history 8, no. 3 (1978)">
+              <span class="source-code">A13.43</span>
+              <span class="source-copy">
+                <strong>Class and Party in the Secession Crisis: Voting Behavior in the Deep South, 1856-1861</strong>
+                <span>Peyton McCrary, Clark Miller, and Dale Baum · <i>The Journal of Interdisciplinary History 8, no. 3 (1978)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.44_Fugitive_Slave_Crisis_Cincinnati_1850_1860.html" data-source-card data-search="a13.44 the fugitive slave crisis in cincinnati, 1850-1860: resistance, enforcement, and black refugees stephen middleton · the journal of negro history 72, no. 1/2 (1987)">
+              <span class="source-code">A13.44</span>
+              <span class="source-copy">
+                <strong>The Fugitive Slave Crisis in Cincinnati, 1850-1860: Resistance, Enforcement, and Black Refugees</strong>
+                <span>Stephen Middleton · <i>The Journal of Negro History 72, no. 1/2 (1987)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.45_Children_Young_People_Overland_Trail.html" data-source-card data-search="a13.45 children and young people on the overland trail ruth barnes moynihan · the western historical quarterly 6, no. 3 (1975)">
+              <span class="source-code">A13.45</span>
+              <span class="source-copy">
+                <strong>Children and Young People on the Overland Trail</strong>
+                <span>Ruth Barnes Moynihan · <i>The Western Historical Quarterly 6, no. 3 (1975)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.46_Choice_Destiny.html" data-source-card data-search="a13.46 a choice of destiny: immigration policy, slavery, and the annexation of texas david e. narrett · the southwestern historical quarterly 100, no. 3 (1997)">
+              <span class="source-code">A13.46</span>
+              <span class="source-copy">
+                <strong>A Choice of Destiny: Immigration Policy, Slavery, and the Annexation of Texas</strong>
+                <span>David E. Narrett · <i>The Southwestern Historical Quarterly 100, no. 3 (1997)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.47_John_Bell_Compromise_1850.html" data-source-card data-search="a13.47 john bell and the compromise of 1850 joseph h. parks · the journal of southern history 9, no. 3 (1943)">
+              <span class="source-code">A13.47</span>
+              <span class="source-copy">
+                <strong>John Bell and the Compromise of 1850</strong>
+                <span>Joseph H. Parks · <i>The Journal of Southern History 9, no. 3 (1943)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.48_Americas_Long_Eulogy_Compromise.html" data-source-card data-search="a13.48 america&#x27;s long eulogy for compromise: henry clay and american politics, 1854–58 sarah bischoff paulus · journal of the civil war era 4, no. 1 (2014)">
+              <span class="source-code">A13.48</span>
+              <span class="source-copy">
+                <strong>America's Long Eulogy for Compromise: Henry Clay and American Politics, 1854–58</strong>
+                <span>Sarah Bischoff Paulus · <i>Journal of the Civil War Era 4, no. 1 (2014)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.49_Confrontation_Abolition_1850s.html" data-source-card data-search="a13.49 confrontation and abolition in the 1850s jane h. pease and william h. pease · the journal of american history 58, no. 4 (1972)">
+              <span class="source-code">A13.49</span>
+              <span class="source-copy">
+                <strong>Confrontation and Abolition in the 1850s</strong>
+                <span>Jane H. Pease and William H. Pease · <i>The Journal of American History 58, no. 4 (1972)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.50_Swelling_That_Great_Tide_Humanity.html" data-source-card data-search="a13.50 &#x27;swelling that great tide of humanity&#x27;: the concord, massachusetts, female anti-slavery society sandra harbert petrulionis · the new england quarterly 74, no. 3 (2001)">
+              <span class="source-code">A13.50</span>
+              <span class="source-copy">
+                <strong>'Swelling That Great Tide of Humanity': The Concord, Massachusetts, Female Anti-Slavery Society</strong>
+                <span>Sandra Harbert Petrulionis · <i>The New England Quarterly 74, no. 3 (2001)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.51_Religion_Without_Restriction.html" data-source-card data-search="a13.51 &#x27;religion without restriction&#x27;: anti-catholicism, all mexico, and the treaty of guadalupe hidalgo john c. pinheiro · journal of the early republic 23, no. 1 (2003)">
+              <span class="source-code">A13.51</span>
+              <span class="source-copy">
+                <strong>'Religion without Restriction': Anti-Catholicism, All Mexico, and the Treaty of Guadalupe Hidalgo</strong>
+                <span>John C. Pinheiro · <i>Journal of the Early Republic 23, no. 1 (2003)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.52_John_L_OSullivan_Manifest_Destiny.html" data-source-card data-search="a13.52 john l. o&#x27;sullivan and manifest destiny julius w. pratt · new york history 14, no. 3 (1933)">
+              <span class="source-code">A13.52</span>
+              <span class="source-copy">
+                <strong>John L. O'Sullivan and Manifest Destiny</strong>
+                <span>Julius W. Pratt · <i>New York History 14, no. 3 (1933)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.53_Austin_Leaming_Correspondence_1828_1836.html" data-source-card data-search="a13.53 the austin-leaming correspondence, 1828-1836 andreas reichstein · the southwestern historical quarterly 88, no. 3 (1985)">
+              <span class="source-code">A13.53</span>
+              <span class="source-copy">
+                <strong>The Austin-Leaming Correspondence, 1828-1836</strong>
+                <span>Andreas Reichstein · <i>The Southwestern Historical Quarterly 88, no. 3 (1985)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.54_National_Identity_Shifting_Border.html" data-source-card data-search="a13.54 national identity on a shifting border: texas and new mexico in the age of transition, 1821-1848 andrés reséndez · the journal of american history 86, no. 2 (1999)">
+              <span class="source-code">A13.54</span>
+              <span class="source-copy">
+                <strong>National Identity on a Shifting Border: Texas and New Mexico in the Age of Transition, 1821-1848</strong>
+                <span>Andrés Reséndez · <i>The Journal of American History 86, no. 2 (1999)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.55_Specter_Savage.html" data-source-card data-search="a13.55 the specter of a savage: rumors and alarmism on the overland trail glenda riley · the western historical quarterly 15, no. 4 (1984)">
+              <span class="source-code">A13.55</span>
+              <span class="source-copy">
+                <strong>The Specter of a Savage: Rumors and Alarmism on the Overland Trail</strong>
+                <span>Glenda Riley · <i>The Western Historical Quarterly 15, no. 4 (1984)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.56_Maritime_Destiny_As_Manifest_Destiny.html" data-source-card data-search="a13.56 maritime destiny as manifest destiny: american commercial expansionism and the idea of the indian brian rouleau · journal of the early republic 30, no. 3 (2010)">
+              <span class="source-code">A13.56</span>
+              <span class="source-copy">
+                <strong>Maritime Destiny as Manifest Destiny: American Commercial Expansionism and the Idea of the Indian</strong>
+                <span>Brian Rouleau · <i>Journal of the Early Republic 30, no. 3 (2010)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.57_What_Was_Compromise_1850.html" data-source-card data-search="a13.57 what was the compromise of 1850? robert r. russel · the journal of southern history 22, no. 3 (1956)">
+              <span class="source-code">A13.57</span>
+              <span class="source-copy">
+                <strong>What Was the Compromise of 1850?</strong>
+                <span>Robert R. Russel · <i>The Journal of Southern History 22, no. 3 (1956)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.58_Thomas_Jeffersons_Republicanism_Antebellum_Southern_Thought.html" data-source-card data-search="a13.58 thomas jefferson&#x27;s republicanism and antebellum southern thought robert e. shalhope · the journal of southern history 42, no. 4 (1976)">
+              <span class="source-code">A13.58</span>
+              <span class="source-copy">
+                <strong>Thomas Jefferson's Republicanism and Antebellum Southern Thought</strong>
+                <span>Robert E. Shalhope · <i>The Journal of Southern History 42, no. 4 (1976)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.59_Rendition_Anthony_Burns.html" data-source-card data-search="a13.59 the rendition of anthony burns samuel shapiro · the journal of negro history 44, no. 1 (1959)">
+              <span class="source-code">A13.59</span>
+              <span class="source-copy">
+                <strong>The Rendition of Anthony Burns</strong>
+                <span>Samuel Shapiro · <i>The Journal of Negro History 44, no. 1 (1959)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.60_Caning_Charles_Sumner.html" data-source-card data-search="a13.60 the caning of charles sumner: slavery, race, and ideology in the age of the civil war manisha sinha · journal of the early republic 23, no. 2 (2003)">
+              <span class="source-code">A13.60</span>
+              <span class="source-copy">
+                <strong>The Caning of Charles Sumner: Slavery, Race, and Ideology in the Age of the Civil War</strong>
+                <span>Manisha Sinha · <i>Journal of the Early Republic 23, no. 2 (2003)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.61_Indians_American_Mexican_Relations_Before_War_1846.html" data-source-card data-search="a13.61 indians in american-mexican relations before the war of 1846 ralph a. smith · the hispanic american historical review 43, no. 1 (1963)">
+              <span class="source-code">A13.61</span>
+              <span class="source-copy">
+                <strong>Indians in American-Mexican Relations before the War of 1846</strong>
+                <span>Ralph A. Smith · <i>The Hispanic American Historical Review 43, no. 1 (1963)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.62_Scalp_Hunter_Borderlands_1835_1850.html" data-source-card data-search="a13.62 the scalp hunter in the borderlands, 1835-1850 ralph a. smith · arizona and the west 6, no. 1 (1964)">
+              <span class="source-code">A13.62</span>
+              <span class="source-copy">
+                <strong>The Scalp Hunter in the Borderlands, 1835-1850</strong>
+                <span>Ralph A. Smith · <i>Arizona and the West 6, no. 1 (1964)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.63_Failure_Polks_Mexican_War_Intrigue_1845.html" data-source-card data-search="a13.63 the failure of polk&#x27;s mexican war intrigue of 1845 richard r. stenberg · pacific historical review 4, no. 1 (1935)">
+              <span class="source-code">A13.63</span>
+              <span class="source-copy">
+                <strong>The Failure of Polk's Mexican War Intrigue of 1845</strong>
+                <span>Richard R. Stenberg · <i>Pacific Historical Review 4, no. 1 (1935)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.64_Another_Look_Inevitability.html" data-source-card data-search="a13.64 another look at inevitability: the upper south and the limits of compromise in the secession crisis frank towers · tennessee historical quarterly 70, no. 2 (2011)">
+              <span class="source-code">A13.64</span>
+              <span class="source-copy">
+                <strong>Another Look at Inevitability: The Upper South and the Limits of Compromise in the Secession Crisis</strong>
+                <span>Frank Towers · <i>Tennessee Historical Quarterly 70, no. 2 (2011)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.65_Refuting_History_Fables.html" data-source-card data-search="a13.65 refuting history fables: collective memories, mexican texans, and texas history omar valerio-jiménez · the southwestern historical quarterly 123, no. 4 (2020)">
+              <span class="source-code">A13.65</span>
+              <span class="source-copy">
+                <strong>Refuting History Fables: Collective Memories, Mexican Texans, and Texas History</strong>
+                <span>Omar Valerio-Jiménez · <i>The Southwestern Historical Quarterly 123, no. 4 (2020)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.66_Declarations_Independence.html" data-source-card data-search="a13.66 declarations of independence: slavery, secession, and the confederate scapegoat chad vanderford · tennessee historical quarterly 70, no. 2 (2011)">
+              <span class="source-code">A13.66</span>
+              <span class="source-copy">
+                <strong>Declarations of Independence: Slavery, Secession, and the Confederate Scapegoat</strong>
+                <span>Chad Vanderford · <i>Tennessee Historical Quarterly 70, no. 2 (2011)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.67_Texas_Question_Mexican_Politics_1836_1845.html" data-source-card data-search="a13.67 the texas question in mexican politics, 1836-1845 josefina zoraida vázquez · the southwestern historical quarterly 89, no. 3 (1986)">
+              <span class="source-code">A13.67</span>
+              <span class="source-copy">
+                <strong>The Texas Question in Mexican Politics, 1836-1845</strong>
+                <span>Josefina Zoraida Vázquez · <i>The Southwestern Historical Quarterly 89, no. 3 (1986)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.68_Fire_Eaters_Seward_Lincoln.html" data-source-card data-search="a13.68 the fire-eaters and seward lincoln eric h. walther · journal of the abraham lincoln association 32, no. 1 (2011)">
+              <span class="source-code">A13.68</span>
+              <span class="source-copy">
+                <strong>The Fire-Eaters and Seward Lincoln</strong>
+                <span>Eric H. Walther · <i>Journal of the Abraham Lincoln Association 32, no. 1 (2011)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.69_Here_Rests_Juan_Espinosa.html" data-source-card data-search="a13.69 here rests juan espinosa: toward a clearer look at the image of the &#x27;indolent&#x27; californios david j. weber and david j. langum · the western historical quarterly 10, no. 1 (1979)">
+              <span class="source-code">A13.69</span>
+              <span class="source-copy">
+                <strong>Here Rests Juan Espinosa: Toward a Clearer Look at the Image of the 'Indolent' Californios</strong>
+                <span>David J. Weber and David J. Langum · <i>The Western Historical Quarterly 10, no. 1 (1979)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.70_Compromise_1850_Search_Usable_Past.html" data-source-card data-search="a13.70 the compromise of 1850 and the search for a usable past michael e. woods · journal of the civil war era 9, no. 3 (2019)">
+              <span class="source-code">A13.70</span>
+              <span class="source-copy">
+                <strong>The Compromise of 1850 and the Search for a Usable Past</strong>
+                <span>Michael E. Woods · <i>Journal of the Civil War Era 9, no. 3 (2019)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A13.71_Preserve_Us_Such_Democracy.html" data-source-card data-search="a13.71 &#x27;preserve us from such democracy&#x27;: politics, slavery, and political culture in antebellum northwest virginia, 1850–1861 adam j. zucconi · the virginia magazine of history and biography 123, no. 4 (2015)">
+              <span class="source-code">A13.71</span>
+              <span class="source-copy">
+                <strong>'Preserve Us From Such Democracy': Politics, Slavery, and Political Culture in Antebellum Northwest Virginia, 1850–1861</strong>
+                <span>Adam J. Zucconi · <i>The Virginia Magazine of History and Biography 123, no. 4 (2015)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+
+      <section class="chapter-section" id="chapter-14" data-chapter-section aria-labelledby="chapter-14-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">14</div>
+          <div>
+            <p>Chapter 14 · 1861–1865</p>
+            <h2 id="chapter-14-title">The War of the Union</h2>
+          </div>
+          <span class="chapter-count">74 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.01_Neighbor_Against_Neighbor.html" data-source-card data-search="a14.1 neighbor against neighbor: the inner civil war in the randolph county area of confederate north carolina william t. auman · the north carolina historical review 61, no. 1 (1984)">
+              <span class="source-code">A14.1</span>
+              <span class="source-copy">
+                <strong>Neighbor against Neighbor: The Inner Civil War in the Randolph County Area of Confederate North Carolina</strong>
+                <span>William T. Auman · <i>The North Carolina Historical Review 61, no. 1 (1984)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.02_Seeing_Emancipation.html" data-source-card data-search="a14.2 seeing emancipation: scale and freedom in the american south edward l. ayers and scott nesbit · journal of the civil war era 1, no. 1 (2011)">
+              <span class="source-code">A14.2</span>
+              <span class="source-copy">
+                <strong>Seeing Emancipation: Scale and Freedom in the American South</strong>
+                <span>Edward L. Ayers and Scott Nesbit · <i>Journal of the Civil War Era 1, no. 1 (2011)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.03_Sherman_Total_War_Carolinas.html" data-source-card data-search="a14.3 sherman and total war in the carolinas john g. barrett · the north carolina historical review 37, no. 3 (1960)">
+              <span class="source-code">A14.3</span>
+              <span class="source-copy">
+                <strong>Sherman and Total War in the Carolinas</strong>
+                <span>John G. Barrett · <i>The North Carolina Historical Review 37, no. 3 (1960)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.04_Desertion_As_Localism.html" data-source-card data-search="a14.4 desertion as localism: army unit solidarity and group norms in the u.s. civil war peter s. bearman · social forces 70, no. 2 (1991)">
+              <span class="source-code">A14.4</span>
+              <span class="source-copy">
+                <strong>Desertion as Localism: Army Unit Solidarity and Group Norms in the U.S. Civil War</strong>
+                <span>Peter S. Bearman · <i>Social Forces 70, no. 2 (1991)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.05_Protection_Personal_Liberty_Republican_Emancipation_Legislation_1862.html" data-source-card data-search="a14.5 protection of personal liberty in republican emancipation legislation of 1862 herman belz · the journal of southern history 42, no. 3 (1976)">
+              <span class="source-code">A14.5</span>
+              <span class="source-copy">
+                <strong>Protection of Personal Liberty in Republican Emancipation Legislation of 1862</strong>
+                <span>Herman Belz · <i>The Journal of Southern History 42, no. 3 (1976)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.06_Beyond_Chessboard_War.html" data-source-card data-search="a14.6 beyond the chessboard of war: contingency, command, and generalship in civil war military history andrew s. bledsoe · journal of the civil war era 9, no. 2 (2019)">
+              <span class="source-code">A14.6</span>
+              <span class="source-copy">
+                <strong>Beyond the Chessboard of War: Contingency, Command, and Generalship in Civil War Military History</strong>
+                <span>Andrew S. Bledsoe · <i>Journal of the Civil War Era 9, no. 2 (2019)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.07_Flag_Culture_Consolidation_Confederate_Nationalism.html" data-source-card data-search="a14.7 flag culture and the consolidation of confederate nationalism robert e. bonner · the journal of southern history 68, no. 2 (2002)">
+              <span class="source-code">A14.7</span>
+              <span class="source-copy">
+                <strong>Flag Culture and the Consolidation of Confederate Nationalism</strong>
+                <span>Robert E. Bonner · <i>The Journal of Southern History 68, no. 2 (2002)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.08_Reassessment_Union_Blockades_Effectiveness_Civil_War.html" data-source-card data-search="a14.8 reassessment of the union blockade&#x27;s effectiveness in the civil war m. brem bonner and peter mccord · the north carolina historical review 88, no. 4 (2011)">
+              <span class="source-code">A14.8</span>
+              <span class="source-copy">
+                <strong>Reassessment of the Union Blockade's Effectiveness in the Civil War</strong>
+                <span>M. Brem Bonner and Peter McCord · <i>The North Carolina Historical Review 88, no. 4 (2011)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.09_Social_Cultural_Dynamics_Soldiering_Hoods_Texas_Brigade.html" data-source-card data-search="a14.9 the social and cultural dynamics of soldiering in hood&#x27;s texas brigade charles e. brooks · the journal of southern history 67, no. 3 (2001)">
+              <span class="source-code">A14.9</span>
+              <span class="source-copy">
+                <strong>The Social and Cultural Dynamics of Soldiering in Hood's Texas Brigade</strong>
+                <span>Charles E. Brooks · <i>The Journal of Southern History 67, no. 3 (2001)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.10_Loanly_Runagee.html" data-source-card data-search="a14.10 the &#x27;loanly runagee&#x27;: draft evaders in confederate south georgia david carlson · the georgia historical quarterly 84, no. 4 (2000)">
+              <span class="source-code">A14.10</span>
+              <span class="source-copy">
+                <strong>The 'Loanly Runagee': Draft Evaders in Confederate South Georgia</strong>
+                <span>David Carlson · <i>The Georgia Historical Quarterly 84, no. 4 (2000)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.11_Did_Civil_War_Retard_Industrialization.html" data-source-card data-search="a14.11 did the civil war retard industrialization? thomas c. cochran · the mississippi valley historical review 48, no. 2 (1961)">
+              <span class="source-code">A14.11</span>
+              <span class="source-copy">
+                <strong>Did the Civil War Retard Industrialization?</strong>
+                <span>Thomas C. Cochran · <i>The Mississippi Valley Historical Review 48, no. 2 (1961)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.12_Reassessment_Jefferson_Davis_As_War_Leader.html" data-source-card data-search="a14.12 a reassessment of jefferson davis as war leader: the case from atlanta to nashville william j. cooper, jr. · the journal of southern history 36, no. 2 (1970)">
+              <span class="source-code">A14.12</span>
+              <span class="source-copy">
+                <strong>A Reassessment of Jefferson Davis as War Leader: The Case from Atlanta to Nashville</strong>
+                <span>William J. Cooper, Jr. · <i>The Journal of Southern History 36, no. 2 (1970)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.13_To_Make_Something_Out_Dying_This_War.html" data-source-card data-search="a14.13 &#x27;to make something out of the dying in this war&#x27;: the civil war and the rise of american medical science shauna devine · journal of the civil war era 6, no. 2 (2016)">
+              <span class="source-code">A14.13</span>
+              <span class="source-copy">
+                <strong>'To Make Something Out of the Dying in This War': The Civil War and the Rise of American Medical Science</strong>
+                <span>Shauna Devine · <i>Journal of the Civil War Era 6, no. 2 (2016)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.14_Replacement_Rebels.html" data-source-card data-search="a14.14 replacement rebels: confederate substitution and the issue of citizenship patrick j. doyle · journal of the civil war era 8, no. 1 (2018)">
+              <span class="source-code">A14.14</span>
+              <span class="source-copy">
+                <strong>Replacement Rebels: Confederate Substitution and the Issue of Citizenship</strong>
+                <span>Patrick J. Doyle · <i>Journal of the Civil War Era 8, no. 1 (2018)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.15_Context_Freedom.html" data-source-card data-search="a14.15 the context of freedom: georgia&#x27;s slaves during the civil war paul d. escott · the georgia historical quarterly 58, no. 1 (1974)">
+              <span class="source-code">A14.15</span>
+              <span class="source-copy">
+                <strong>The Context of Freedom: Georgia's Slaves During the Civil War</strong>
+                <span>Paul D. Escott · <i>The Georgia Historical Quarterly 58, no. 1 (1974)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.16_Social_Order_Violent_Disorder.html" data-source-card data-search="a14.16 the social order and violent disorder: an analysis of north carolina in the revolution and the civil war paul d. escott and jeffrey j. crow · the journal of southern history 52, no. 3 (1986)">
+              <span class="source-code">A14.16</span>
+              <span class="source-copy">
+                <strong>The Social Order and Violent Disorder: An Analysis of North Carolina in the Revolution and the Civil War</strong>
+                <span>Paul D. Escott and Jeffrey J. Crow · <i>The Journal of Southern History 52, no. 3 (1986)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.17_Feminized_Civil_War.html" data-source-card data-search="a14.17 the feminized civil war: gender, northern popular literature, and the memory of the war, 1861-1900 alice fahs · the journal of american history 85, no. 4 (1999)">
+              <span class="source-code">A14.17</span>
+              <span class="source-copy">
+                <strong>The Feminized Civil War: Gender, Northern Popular Literature, and the Memory of the War, 1861-1900</strong>
+                <span>Alice Fahs · <i>The Journal of American History 85, no. 4 (1999)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.18_Altars_Sacrifice.html" data-source-card data-search="a14.18 altars of sacrifice: confederate women and the narratives of war drew gilpin faust · the journal of american history 76, no. 4 (1990)">
+              <span class="source-code">A14.18</span>
+              <span class="source-copy">
+                <strong>Altars of Sacrifice: Confederate Women and the Narratives of War</strong>
+                <span>Drew Gilpin Faust · <i>The Journal of American History 76, no. 4 (1990)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.19_Christian_Soldiers.html" data-source-card data-search="a14.19 christian soldiers: the meaning of revivalism in the confederate army drew gilpin faust · the journal of southern history 53, no. 1 (1987)">
+              <span class="source-code">A14.19</span>
+              <span class="source-copy">
+                <strong>Christian Soldiers: The Meaning of Revivalism in the Confederate Army</strong>
+                <span>Drew Gilpin Faust · <i>The Journal of Southern History 53, no. 1 (1987)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.20_Lincolns_Wartime_Leadership.html" data-source-card data-search="a14.20 lincoln&#x27;s wartime leadership: the first hundred days don e. fehrenbacher and jacob l. tudor · journal of the abraham lincoln association 9 (1987)">
+              <span class="source-code">A14.20</span>
+              <span class="source-copy">
+                <strong>Lincoln's Wartime Leadership: The First Hundred Days</strong>
+                <span>Don E. Fehrenbacher and Jacob L. Tudor · <i>Journal of the Abraham Lincoln Association 9 (1987)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.21_Civilization_Savagery_American_Civil_War.html" data-source-card data-search="a14.21 civilization and savagery in the american civil war lorien foote · south central review 33, no. 1 (2016)">
+              <span class="source-code">A14.21</span>
+              <span class="source-copy">
+                <strong>Civilization and Savagery in the American Civil War</strong>
+                <span>Lorien Foote · <i>South Central Review 33, no. 1 (2016)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.22_Tale_Two_Armies.html" data-source-card data-search="a14.22 a tale of two armies: the confederate army of northern virginia and the union army of the potomac and their cultures joseph t. glatthaar · journal of the civil war era 6, no. 3 (2016)">
+              <span class="source-code">A14.22</span>
+              <span class="source-copy">
+                <strong>A Tale of Two Armies: The Confederate Army of Northern Virginia and the Union Army of the Potomac and Their Cultures</strong>
+                <span>Joseph T. Glatthaar · <i>Journal of the Civil War Era 6, no. 3 (2016)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.23_Roses_War_Gendered_Politics_Slave_Insurgency_Civil.html" data-source-card data-search="a14.23 rose&#x27;s war and the gendered politics of a slave insurgency in the civil war thavolia glymph · journal of the civil war era 3, no. 4 (2013)">
+              <span class="source-code">A14.23</span>
+              <span class="source-copy">
+                <strong>Rose's War and the Gendered Politics of a Slave Insurgency in the Civil War</strong>
+                <span>Thavolia Glymph · <i>Journal of the Civil War Era 3, no. 4 (2013)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.24_Economic_Cost_American_Civil_War.html" data-source-card data-search="a14.24 the economic cost of the american civil war: estimates and implications claudia d. goldin and frank d. lewis · the journal of economic history 35, no. 2 (1975)">
+              <span class="source-code">A14.24</span>
+              <span class="source-copy">
+                <strong>The Economic Cost of the American Civil War: Estimates and Implications</strong>
+                <span>Claudia D. Goldin and Frank D. Lewis · <i>The Journal of Economic History 35, no. 2 (1975)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.25_Fight_Principle.html" data-source-card data-search="a14.25 a fight for a principle: the 24th illinois volunteer infantry regiment david graham · journal of the illinois state historical society 104, no. 1/2 (2011)">
+              <span class="source-code">A14.25</span>
+              <span class="source-copy">
+                <strong>A Fight for a Principle: The 24th Illinois Volunteer Infantry Regiment</strong>
+                <span>David Graham · <i>Journal of the Illinois State Historical Society 104, no. 1/2 (2011)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.26_How_Abe_Lincoln_Lost_Black_Vote.html" data-source-card data-search="a14.26 how abe lincoln lost the black vote: lincoln and emancipation in the african american mind allen c. guelzo · journal of the abraham lincoln association 25, no. 1 (2004)">
+              <span class="source-code">A14.26</span>
+              <span class="source-copy">
+                <strong>How Abe Lincoln Lost the Black Vote: Lincoln and Emancipation in the African American Mind</strong>
+                <span>Allen C. Guelzo · <i>Journal of the Abraham Lincoln Association 25, no. 1 (2004)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.27_Effect_Civil_War_Southern_Marriage_Patterns.html" data-source-card data-search="a14.27 the effect of the civil war on southern marriage patterns j. david hacker, libra hilde, and james holland jones · the journal of southern history 76, no. 1 (2010)">
+              <span class="source-code">A14.27</span>
+              <span class="source-copy">
+                <strong>The Effect of the Civil War on Southern Marriage Patterns</strong>
+                <span>J. David Hacker, Libra Hilde, and James Holland Jones · <i>The Journal of Southern History 76, no. 1 (2010)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.28_Rejuvenating_Civil_War_Military_History.html" data-source-card data-search="a14.28 rejuvenating civil war military history: a new take on infantry tactics earl j. hess · journal of the civil war era 7, no. 2 (2017)">
+              <span class="source-code">A14.28</span>
+              <span class="source-copy">
+                <strong>Rejuvenating Civil War Military History: A New Take on Infantry Tactics</strong>
+                <span>Earl J. Hess · <i>Journal of the Civil War Era 7, no. 2 (2017)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.29_Men_Principle.html" data-source-card data-search="a14.29 men of principle: gender and the german american war for the union mischa honeck · journal of the civil war era 5, no. 1 (2015)">
+              <span class="source-code">A14.29</span>
+              <span class="source-copy">
+                <strong>Men of Principle: Gender and the German American War for the Union</strong>
+                <span>Mischa Honeck · <i>Journal of the Civil War Era 5, no. 1 (2015)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.30_Civil_War_Kentucky.html" data-source-card data-search="a14.30 the civil war in kentucky: the slave claims his freedom victor b. howard · the journal of negro history 67, no. 3 (1982)">
+              <span class="source-code">A14.30</span>
+              <span class="source-copy">
+                <strong>The Civil War in Kentucky: The Slave Claims His Freedom</strong>
+                <span>Victor B. Howard · <i>The Journal of Negro History 67, no. 3 (1982)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.31_Total_War_American_Civil_War_Reconsidered.html" data-source-card data-search="a14.31 total war and the american civil war reconsidered: the end of an outdated &#x27;master narrative&#x27; wayne wei-siang hsieh · journal of the civil war era 1, no. 3 (2011)">
+              <span class="source-code">A14.31</span>
+              <span class="source-copy">
+                <strong>Total War and the American Civil War Reconsidered: The End of an Outdated 'Master Narrative'</strong>
+                <span>Wayne Wei-siang Hsieh · <i>Journal of the Civil War Era 1, no. 3 (2011)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.32_Women_Gender_Boundaries_Reconstruction.html" data-source-card data-search="a14.32 women, gender, and the boundaries of reconstruction catherine a. jones · journal of the civil war era 8, no. 1 (2018)">
+              <span class="source-code">A14.32</span>
+              <span class="source-copy">
+                <strong>Women, Gender, and the Boundaries of Reconstruction</strong>
+                <span>Catherine A. Jones · <i>Journal of the Civil War Era 8, no. 1 (2018)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.33_Demise_Slavery_Border.html" data-source-card data-search="a14.33 the demise of slavery on the border: federal policy and the union army in henderson, kentucky j. michael crane jr. · the register of the kentucky historical society 113, no. 4 (2015)">
+              <span class="source-code">A14.33</span>
+              <span class="source-copy">
+                <strong>The Demise of Slavery on the Border: Federal Policy and the Union Army in Henderson, Kentucky</strong>
+                <span>J. Michael Crane Jr. · <i>The Register of the Kentucky Historical Society 113, no. 4 (2015)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.34_Republican_Party_Emancipation_Proclamation.html" data-source-card data-search="a14.34 the republican party and the emancipation proclamation mark m. krug · the journal of negro history 48, no. 2 (1963)">
+              <span class="source-code">A14.34</span>
+              <span class="source-copy">
+                <strong>The Republican Party and the Emancipation Proclamation</strong>
+                <span>Mark M. Krug · <i>The Journal of Negro History 48, no. 2 (1963)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.35_Draft_Evasion_North_During_Civil_War_1863.html" data-source-card data-search="a14.35 draft evasion in the north during the civil war, 1863-1865 peter levine · the journal of american history 67, no. 4 (1981)">
+              <span class="source-code">A14.35</span>
+              <span class="source-copy">
+                <strong>Draft Evasion in the North during the Civil War, 1863-1865</strong>
+                <span>Peter Levine · <i>The Journal of American History 67, no. 4 (1981)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.36_Who_Joined_Confederate_Army_Soldiers_Civilians_Communities.html" data-source-card data-search="a14.36 who joined the confederate army? soldiers, civilians, and communities in mississippi larry m. logue · journal of social history 26, no. 3 (1993)">
+              <span class="source-code">A14.36</span>
+              <span class="source-copy">
+                <strong>Who Joined the Confederate Army? Soldiers, Civilians, and Communities in Mississippi</strong>
+                <span>Larry M. Logue · <i>Journal of Social History 26, no. 3 (1993)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.37_Negros_Civil_War_Tennessee_1861_1865.html" data-source-card data-search="a14.37 the negro&#x27;s civil war in tennessee, 1861-1865 bobby l. lovett · the journal of negro history 61, no. 1 (1976)">
+              <span class="source-code">A14.37</span>
+              <span class="source-copy">
+                <strong>The Negro's Civil War in Tennessee, 1861-1865</strong>
+                <span>Bobby L. Lovett · <i>The Journal of Negro History 61, no. 1 (1976)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.38_Equal_Any_Minstrel_Concert_I_Ever_Attended.html" data-source-card data-search="a14.38 &#x27;equal to any minstrel concert i ever attended at home&#x27;: union soldiers and blackface performance in the civil war south peter c. luebke · journal of the civil war era 4, no. 4 (2014)">
+              <span class="source-code">A14.38</span>
+              <span class="source-copy">
+                <strong>'Equal to Any Minstrel Concert I Ever Attended at Home': Union Soldiers and Blackface Performance in the Civil War South</strong>
+                <span>Peter C. Luebke · <i>Journal of the Civil War Era 4, no. 4 (2014)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.39_Shifting_Terrain_Attitudes_Toward_Abraham_Lincoln_Emancipation.html" data-source-card data-search="a14.39 the shifting terrain of attitudes toward abraham lincoln and emancipation chandra manning · journal of the abraham lincoln association 34, no. 1 (2013)">
+              <span class="source-code">A14.39</span>
+              <span class="source-copy">
+                <strong>The Shifting Terrain of Attitudes Toward Abraham Lincoln and Emancipation</strong>
+                <span>Chandra Manning · <i>Journal of the Abraham Lincoln Association 34, no. 1 (2013)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.40_Working_Citizenship_Civil_War_Contraband_Camps.html" data-source-card data-search="a14.40 working for citizenship in civil war contraband camps chandra manning · journal of the civil war era 4, no. 2 (2014)">
+              <span class="source-code">A14.40</span>
+              <span class="source-copy">
+                <strong>Working for Citizenship in Civil War Contraband Camps</strong>
+                <span>Chandra Manning · <i>Journal of the Civil War Era 4, no. 2 (2014)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.41_Effect_Shortages_Confederate_Homefront.html" data-source-card data-search="a14.41 the effect of shortages on the confederate homefront mary elizabeth massey · the arkansas historical quarterly 9, no. 3 (1950)">
+              <span class="source-code">A14.41</span>
+              <span class="source-copy">
+                <strong>The Effect of Shortages on the Confederate Homefront</strong>
+                <span>Mary Elizabeth Massey · <i>The Arkansas Historical Quarterly 9, no. 3 (1950)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.42_Rare_Phenomenon_Philological_Vegetation.html" data-source-card data-search="a14.42 &#x27;a rare phenomenon of philological vegetation&#x27;: the word &#x27;contraband&#x27; and the meanings of emancipation in the united states kate masur · the journal of american history 93, no. 4 (2007)">
+              <span class="source-code">A14.42</span>
+              <span class="source-copy">
+                <strong>'A Rare Phenomenon of Philological Vegetation': The Word 'Contraband' and the Meanings of Emancipation in the United States</strong>
+                <span>Kate Masur · <i>The Journal of American History 93, no. 4 (2007)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.43_From_Preliminary_Final_Emancipation_Proclamation.html" data-source-card data-search="a14.43 from preliminary to final emancipation proclamation: the first hundred days roland c. mcconnell · the journal of negro history 48, no. 4 (1963)">
+              <span class="source-code">A14.43</span>
+              <span class="source-copy">
+                <strong>From Preliminary to Final Emancipation Proclamation: The First Hundred Days</strong>
+                <span>Roland C. McConnell · <i>The Journal of Negro History 48, no. 4 (1963)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.44_Enemy_Women_Laws_War_American_Civil_War.html" data-source-card data-search="a14.44 enemy women and the laws of war in the american civil war stephanie mccurry · law and history review 35, no. 3 (2017)">
+              <span class="source-code">A14.44</span>
+              <span class="source-copy">
+                <strong>Enemy Women and the Laws of War in the American Civil War</strong>
+                <span>Stephanie McCurry · <i>Law and History Review 35, no. 3 (2017)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.45_Womens_Role_Civil_War_Western_North_Carolina.html" data-source-card data-search="a14.45 women&#x27;s role in civil war western north carolina gordon b. mckinney · the north carolina historical review 69, no. 1 (1992)">
+              <span class="source-code">A14.45</span>
+              <span class="source-copy">
+                <strong>Women's Role in Civil War Western North Carolina</strong>
+                <span>Gordon B. McKinney · <i>The North Carolina Historical Review 69, no. 1 (1992)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.46_Who_Freed_Slaves.html" data-source-card data-search="a14.46 who freed the slaves? james m. mcpherson · proceedings of the american philosophical society 139, no. 1 (1995)">
+              <span class="source-code">A14.46</span>
+              <span class="source-copy">
+                <strong>Who Freed the Slaves?</strong>
+                <span>James M. McPherson · <i>Proceedings of the American Philosophical Society 139, no. 1 (1995)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.47_Disloyalty_Class_Consciousness_Southwestern_Arkansas_1862_1865.html" data-source-card data-search="a14.47 disloyalty and class consciousness in southwestern arkansas, 1862-1865 carl h. moneyhon · the arkansas historical quarterly 52, no. 3 (1993)">
+              <span class="source-code">A14.47</span>
+              <span class="source-copy">
+                <strong>Disloyalty and Class Consciousness in Southwestern Arkansas, 1862-1865</strong>
+                <span>Carl H. Moneyhon · <i>The Arkansas Historical Quarterly 52, no. 3 (1993)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.48_Reluctant_Emancipate.html" data-source-card data-search="a14.48 reluctant to emancipate?: another look at the first confiscation act james oakes · journal of the civil war era 3, no. 4 (2013)">
+              <span class="source-code">A14.48</span>
+              <span class="source-copy">
+                <strong>Reluctant to Emancipate?: Another Look at the First Confiscation Act</strong>
+                <span>James Oakes · <i>Journal of the Civil War Era 3, no. 4 (2013)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.49_Local_Defense_Overthrow_Confederacy.html" data-source-card data-search="a14.49 local defense and the overthrow of the confederacy: a study in state rights frank lawrence owsley · the mississippi valley historical review 11, no. 4 (1925)">
+              <span class="source-code">A14.49</span>
+              <span class="source-copy">
+                <strong>Local Defense and the Overthrow of the Confederacy: A Study in State Rights</strong>
+                <span>Frank Lawrence Owsley · <i>The Mississippi Valley Historical Review 11, no. 4 (1925)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.50_Lincoln_Colonization.html" data-source-card data-search="a14.50 lincoln and colonization: policy or propaganda? phillip shaw paludan · journal of the abraham lincoln association 25, no. 1 (2004)">
+              <span class="source-code">A14.50</span>
+              <span class="source-copy">
+                <strong>Lincoln and Colonization: Policy or Propaganda?</strong>
+                <span>Phillip Shaw Paludan · <i>Journal of the Abraham Lincoln Association 25, no. 1 (2004)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.51_Lincolns_Grasp_War.html" data-source-card data-search="a14.51 lincoln&#x27;s grasp of war: hard war and the politics of neutrality and slavery in the western border states, 1861–1862 christopher phillips · journal of the civil war era 3, no. 2 (2013)">
+              <span class="source-code">A14.51</span>
+              <span class="source-copy">
+                <strong>Lincoln's Grasp of War: Hard War and the Politics of Neutrality and Slavery in the Western Border States, 1861–1862</strong>
+                <span>Christopher Phillips · <i>Journal of the Civil War Era 3, no. 2 (2013)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.52_Military_Morality_Transformed.html" data-source-card data-search="a14.52 military morality transformed: weapons and soldiers on the nineteenth-century battlefield gervase phillips · the journal of interdisciplinary history 41, no. 4 (2011)">
+              <span class="source-code">A14.52</span>
+              <span class="source-copy">
+                <strong>Military Morality Transformed: Weapons and Soldiers on the Nineteenth-Century Battlefield</strong>
+                <span>Gervase Phillips · <i>The Journal of Interdisciplinary History 41, no. 4 (2011)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.53_Common_Soldier_Civil_War.html" data-source-card data-search="a14.53 the common soldier of the civil war: his rise and fall gerald prokopowicz · journal of the civil war era 11, no. 4 (2021)">
+              <span class="source-code">A14.53</span>
+              <span class="source-copy">
+                <strong>The Common Soldier of the Civil War: His Rise and Fall</strong>
+                <span>Gerald Prokopowicz · <i>Journal of the Civil War Era 11, no. 4 (2021)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.54_Conflict_Chaos_Confidence.html" data-source-card data-search="a14.54 conflict, chaos, and confidence: abraham lincoln&#x27;s struggle as commander in chief elizabeth brown pryor · the virginia magazine of history and biography 129, no. 1 (2021)">
+              <span class="source-code">A14.54</span>
+              <span class="source-copy">
+                <strong>Conflict, Chaos, and Confidence: Abraham Lincoln's Struggle as Commander in Chief</strong>
+                <span>Elizabeth Brown Pryor · <i>The Virginia Magazine of History and Biography 129, no. 1 (2021)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.55_Confederate_Belle.html" data-source-card data-search="a14.55 the confederate belle: the belle ideal, patriotic womanhood, and wartime reality in louisiana and mississippi, 1861-1865 giselle roberts · louisiana history 43, no. 2 (2002)">
+              <span class="source-code">A14.55</span>
+              <span class="source-copy">
+                <strong>The Confederate Belle: The Belle Ideal, Patriotic Womanhood, and Wartime Reality in Louisiana and Mississippi, 1861-1865</strong>
+                <span>Giselle Roberts · <i>Louisiana History 43, no. 2 (2002)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.56_Re_Enlistment_Patterns_Civil_War_Soldiers.html" data-source-card data-search="a14.56 re-enlistment patterns of civil war soldiers john robertson · the journal of interdisciplinary history 32, no. 1 (2001)">
+              <span class="source-code">A14.56</span>
+              <span class="source-copy">
+                <strong>Re-Enlistment Patterns of Civil War Soldiers</strong>
+                <span>John Robertson · <i>The Journal of Interdisciplinary History 32, no. 1 (2001)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.57_Hoosier_Women_Civil_War_Home_Front.html" data-source-card data-search="a14.57 hoosier women and the civil war home front thomas e. rodgers · indiana magazine of history 97, no. 2 (2001)">
+              <span class="source-code">A14.57</span>
+              <span class="source-copy">
+                <strong>Hoosier Women and the Civil War Home Front</strong>
+                <span>Thomas E. Rodgers · <i>Indiana Magazine of History 97, no. 2 (2001)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.58_Twenty_Negro_Overseer_Law.html" data-source-card data-search="a14.58 &#x27;twenty-negro,&#x27; or overseer law: a reconsideration john m. sacher · journal of the civil war era 7, no. 2 (2017)">
+              <span class="source-code">A14.58</span>
+              <span class="source-copy">
+                <strong>'Twenty-Negro,' or Overseer Law: A Reconsideration</strong>
+                <span>John M. Sacher · <i>Journal of the Civil War Era 7, no. 2 (2017)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.59_Inhospitable_Hospital.html" data-source-card data-search="a14.59 the inhospitable hospital: gender and professionalism in civil war medicine jane e. schultz · signs 17, no. 2 (1992)">
+              <span class="source-code">A14.59</span>
+              <span class="source-copy">
+                <strong>The Inhospitable Hospital: Gender and Professionalism in Civil War Medicine</strong>
+                <span>Jane E. Schultz · <i>Signs 17, no. 2 (1992)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.60_Body_Truly_Scientific_Work.html" data-source-card data-search="a14.60 a body of &#x27;truly scientific work&#x27;: the u.s. sanitary commission and the elaboration of race in the civil war era leslie a. schwalm · journal of the civil war era 8, no. 4 (2018)">
+              <span class="source-code">A14.60</span>
+              <span class="source-copy">
+                <strong>A Body of 'Truly Scientific Work': The U.S. Sanitary Commission and the Elaboration of Race in the Civil War Era</strong>
+                <span>Leslie A. Schwalm · <i>Journal of the Civil War Era 8, no. 4 (2018)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.61_She_Went_War.html" data-source-card data-search="a14.61 she went to war: indiana women nurses in the civil war peggy brase seigel · indiana magazine of history 86, no. 1 (1990)">
+              <span class="source-code">A14.61</span>
+              <span class="source-copy">
+                <strong>She Went to War: Indiana Women Nurses in the Civil War</strong>
+                <span>Peggy Brase Seigel · <i>Indiana Magazine of History 86, no. 1 (1990)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.62_Confederate_Conscription_Exemption_Acts.html" data-source-card data-search="a14.62 the confederate conscription and exemption acts william l. shaw · the american journal of legal history 6, no. 4 (1962)">
+              <span class="source-code">A14.62</span>
+              <span class="source-copy">
+                <strong>The Confederate Conscription and Exemption Acts</strong>
+                <span>William L. Shaw · <i>The American Journal of Legal History 6, no. 4 (1962)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.63_Justice_Has_Something_Do_It.html" data-source-card data-search="a14.63 justice has something to do with it: class relations and the confederate army aaron sheehan-dean · the virginia magazine of history and biography 113, no. 4 (2005)">
+              <span class="source-code">A14.63</span>
+              <span class="source-copy">
+                <strong>Justice Has Something to Do with It: Class Relations and the Confederate Army</strong>
+                <span>Aaron Sheehan-Dean · <i>The Virginia Magazine of History and Biography 113, no. 4 (2005)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.64_Medical_Perspective_Civil_War.html" data-source-card data-search="a14.64 a medical perspective on the civil war richard h. shryock · american quarterly 14, no. 2 (1962)">
+              <span class="source-code">A14.64</span>
+              <span class="source-copy">
+                <strong>A Medical Perspective on the Civil War</strong>
+                <span>Richard H. Shryock · <i>American Quarterly 14, no. 2 (1962)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.65_Our_Women_Played_Well_Their_Parts.html" data-source-card data-search="a14.65 &#x27;our women played well their parts&#x27;: confederate women in civil war east tennessee william a. strasser, jr. · tennessee historical quarterly 59, no. 2 (2000)">
+              <span class="source-code">A14.65</span>
+              <span class="source-copy">
+                <strong>'Our Women Played Well Their Parts': Confederate Women in Civil War East Tennessee</strong>
+                <span>William A. Strasser, Jr. · <i>Tennessee Historical Quarterly 59, no. 2 (2000)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.66_Northern_Naval_Superiority_Economics_American_Civil_War.html" data-source-card data-search="a14.66 northern naval superiority and the economics of the american civil war david g. surdam · the journal of economic history 56, no. 2 (1996)">
+              <span class="source-code">A14.66</span>
+              <span class="source-copy">
+                <strong>Northern Naval Superiority and the Economics of the American Civil War</strong>
+                <span>David G. Surdam · <i>The Journal of Economic History 56, no. 2 (1996)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.67_Hard_Hand_War_Comes_Western_Kentucky.html" data-source-card data-search="a14.67 the hard hand of war comes to western kentucky: what the union provost marshals saw in 1864 adam l. tate · the register of the kentucky historical society 119, no. 4 (2021)">
+              <span class="source-code">A14.67</span>
+              <span class="source-copy">
+                <strong>The Hard Hand of War Comes to Western Kentucky: What the Union Provost Marshals Saw in 1864</strong>
+                <span>Adam L. Tate · <i>The Register of the Kentucky Historical Society 119, no. 4 (2021)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.68_Jefferson_Davis_Leader_Without_Legend.html" data-source-card data-search="a14.68 jefferson davis--leader without legend frank e. vandiver · the journal of southern history 43, no. 1 (1977)">
+              <span class="source-code">A14.68</span>
+              <span class="source-copy">
+                <strong>Jefferson Davis--Leader Without Legend</strong>
+                <span>Frank E. Vandiver · <i>The Journal of Southern History 43, no. 1 (1977)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.69_Rich_Mans_War_Rich_Mans_Fight.html" data-source-card data-search="a14.69 rich man&#x27;s war, rich man&#x27;s fight: civil war and the transformation of public finance in georgia peter wallenstein · the journal of southern history 50, no. 1 (1984)">
+              <span class="source-code">A14.69</span>
+              <span class="source-copy">
+                <strong>Rich Man's War, Rich Man's Fight: Civil War and the Transformation of Public Finance in Georgia</strong>
+                <span>Peter Wallenstein · <i>The Journal of Southern History 50, no. 1 (1984)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.70_General_William_T_Sherman_Total_War.html" data-source-card data-search="a14.70 general william t. sherman and total war john bennett walters · the journal of southern history 14, no. 4 (1948)">
+              <span class="source-code">A14.70</span>
+              <span class="source-copy">
+                <strong>General William T. Sherman and Total War</strong>
+                <span>John Bennett Walters · <i>The Journal of Southern History 14, no. 4 (1948)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.71_Battle_Time.html" data-source-card data-search="a14.71 battle time: gender, modernity, and confederate hospitals cheryl a. wells · journal of social history 35, no. 2 (2001)">
+              <span class="source-code">A14.71</span>
+              <span class="source-copy">
+                <strong>Battle Time: Gender, Modernity, and Confederate Hospitals</strong>
+                <span>Cheryl A. Wells · <i>Journal of Social History 35, no. 2 (2001)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.72_Women_Rising.html" data-source-card data-search="a14.72 &#x27;the women rising&#x27;: cotton, class, and confederate georgia&#x27;s rioting women teresa crisp williams and david williams · the georgia historical quarterly 86, no. 1 (2002)">
+              <span class="source-code">A14.72</span>
+              <span class="source-copy">
+                <strong>'The Women Rising': Cotton, Class, and Confederate Georgia's Rioting Women</strong>
+                <span>Teresa Crisp Williams and David Williams · <i>The Georgia Historical Quarterly 86, no. 1 (2002)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.73_Give_Them_Their_Due.html" data-source-card data-search="a14.73 give them their due: a reassessment of african americans and union military service in florida during the civil war irvin d. s. winsboro · the journal of african american history 92, no. 3 (2007)">
+              <span class="source-code">A14.73</span>
+              <span class="source-copy">
+                <strong>Give Them Their Due: A Reassessment of African Americans and Union Military Service in Florida during the Civil War</strong>
+                <span>Irvin D. S. Winsboro · <i>The Journal of African American History 92, no. 3 (2007)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A14.74_From_Home_Front_Battlefront.html" data-source-card data-search="a14.74 from home front to battlefront: brothers in the civil war jeremy youngs · new york history 97, no. 2 (2016)">
+              <span class="source-code">A14.74</span>
+              <span class="source-copy">
+                <strong>From Home Front to Battlefront: Brothers in the Civil War</strong>
+                <span>Jeremy Youngs · <i>New York History 97, no. 2 (2016)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+
+      <section class="chapter-section" id="chapter-15" data-chapter-section aria-labelledby="chapter-15-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">15</div>
+          <div>
+            <p>Chapter 15 · 1865–1877</p>
+            <h2 id="chapter-15-title">The Era of Reconstruction</h2>
+          </div>
+          <span class="chapter-count">76 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.01_Laissez_Faire_Vs_Equal_Rights.html" data-source-card data-search="a15.1 laissez faire vs. equal rights: liberal republicans and limits to reconstruction wilbert h. ahern · phylon 40, no. 1 (1979)">
+              <span class="source-code">A15.1</span>
+              <span class="source-copy">
+                <strong>Laissez Faire vs. Equal Rights: Liberal Republicans and Limits to Reconstruction</strong>
+                <span>Wilbert H. Ahern · <i>Phylon 40, no. 1 (1979)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.02_Black_Urban_Churches_Southern_Frontier_1865_1900.html" data-source-card data-search="a15.2 black urban churches on the southern frontier, 1865-1900 alwyn barr · the journal of negro history 82, no. 4 (1997)">
+              <span class="source-code">A15.2</span>
+              <span class="source-copy">
+                <strong>Black Urban Churches on the Southern Frontier, 1865-1900</strong>
+                <span>Alwyn Barr · <i>The Journal of Negro History 82, no. 4 (1997)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.03_Politics_Economic_Crises.html" data-source-card data-search="a15.3 the politics of economic crises: the panic of 1873, the end of reconstruction, and the realignment of american politics nicolas barreyre · the journal of the gilded age and progressive era 10, no. 4 (2011)">
+              <span class="source-code">A15.3</span>
+              <span class="source-copy">
+                <strong>The Politics of Economic Crises: The Panic of 1873, the End of Reconstruction, and the Realignment of American Politics</strong>
+                <span>Nicolas Barreyre · <i>The Journal of the Gilded Age and Progressive Era 10, no. 4 (2011)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.04_Abraham_Lincoln_Federalism.html" data-source-card data-search="a15.4 abraham lincoln and federalism michael les benedict · journal of the abraham lincoln association 10 (1989)">
+              <span class="source-code">A15.4</span>
+              <span class="source-copy">
+                <strong>Abraham Lincoln and Federalism</strong>
+                <span>Michael Les Benedict · <i>Journal of the Abraham Lincoln Association 10 (1989)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.05_Preserving_Constitution.html" data-source-card data-search="a15.5 preserving the constitution: the conservative basis of radical reconstruction michael les benedict · the journal of american history 61, no. 1 (1974)">
+              <span class="source-code">A15.5</span>
+              <span class="source-copy">
+                <strong>Preserving the Constitution: The Conservative Basis of Radical Reconstruction</strong>
+                <span>Michael Les Benedict · <i>The Journal of American History 61, no. 1 (1974)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.06_Southern_Democrats_Crisis_1876_1877.html" data-source-card data-search="a15.6 southern democrats in the crisis of 1876-1877: a reconsideration of reunion and reaction michael les benedict · the journal of southern history 46, no. 4 (1980)">
+              <span class="source-code">A15.6</span>
+              <span class="source-copy">
+                <strong>Southern Democrats in the Crisis of 1876-1877: A Reconsideration of Reunion and Reaction</strong>
+                <span>Michael Les Benedict · <i>The Journal of Southern History 46, no. 4 (1980)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.07_Radical_Republican_Motivation.html" data-source-card data-search="a15.7 radical republican motivation: a case history george m. blackburn · the journal of negro history 54, no. 2 (1969)">
+              <span class="source-code">A15.7</span>
+              <span class="source-copy">
+                <strong>Radical Republican Motivation: A Case History</strong>
+                <span>George M. Blackburn · <i>The Journal of Negro History 54, no. 2 (1969)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.08_Historians_Radical_Republicans.html" data-source-card data-search="a15.8 historians and radical republicans: a meaning for today allan g. bogue · the journal of american history 70, no. 1 (1983)">
+              <span class="source-code">A15.8</span>
+              <span class="source-copy">
+                <strong>Historians and Radical Republicans: A Meaning for Today</strong>
+                <span>Allan G. Bogue · <i>The Journal of American History 70, no. 1 (1983)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.09_Outthinking_Outflanking_Owners_World.html" data-source-card data-search="a15.9 &#x27;outthinking and outflanking the owners of the world&#x27;: a historiography of the african american struggle for education ronald e. butchart · history of education quarterly 28, no. 3 (1988)">
+              <span class="source-code">A15.9</span>
+              <span class="source-copy">
+                <strong>'Outthinking and Outflanking the Owners of the World': A Historiography of the African American Struggle for Education</strong>
+                <span>Ronald E. Butchart · <i>History of Education Quarterly 28, no. 3 (1988)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.10_Racial_Violence_Reconstruction_Politics_Texas_1867_1868.html" data-source-card data-search="a15.10 racial violence and reconstruction politics in texas, 1867-1868 gregg cantrell · the southwestern historical quarterly 93, no. 3 (1990)">
+              <span class="source-code">A15.10</span>
+              <span class="source-copy">
+                <strong>Racial Violence and Reconstruction Politics in Texas, 1867-1868</strong>
+                <span>Gregg Cantrell · <i>The Southwestern Historical Quarterly 93, no. 3 (1990)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.11_On_Front_Line_Freedom.html" data-source-card data-search="a15.11 on the front line of freedom: freedmen&#x27;s bureau officers and agents in reconstruction georgia, 1865-1868 paul a. cimbala · the georgia historical quarterly 76, no. 3 (1992)">
+              <span class="source-code">A15.11</span>
+              <span class="source-copy">
+                <strong>On the Front Line of Freedom: Freedmen's Bureau Officers and Agents in Reconstruction Georgia, 1865-1868</strong>
+                <span>Paul A. Cimbala · <i>The Georgia Historical Quarterly 76, no. 3 (1992)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.12_Freedmens_Bureau_Freedmen_Shermans_Grant_Reconstruction_Georgia.html" data-source-card data-search="a15.12 the freedmen&#x27;s bureau, the freedmen, and sherman&#x27;s grant in reconstruction georgia, 1865-1867 paul a. cimbala · the journal of southern history 55, no. 4 (1989)">
+              <span class="source-code">A15.12</span>
+              <span class="source-copy">
+                <strong>The Freedmen's Bureau, the Freedmen, and Sherman's Grant in Reconstruction Georgia, 1865-1867</strong>
+                <span>Paul A. Cimbala · <i>The Journal of Southern History 55, no. 4 (1989)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.13_Negro_Involuntary_Servitude_South_1865_1940.html" data-source-card data-search="a15.13 negro involuntary servitude in the south, 1865-1940: a preliminary analysis william cohen · the journal of southern history 42, no. 1 (1976)">
+              <span class="source-code">A15.13</span>
+              <span class="source-copy">
+                <strong>Negro Involuntary Servitude in the South, 1865-1940: A Preliminary Analysis</strong>
+                <span>William Cohen · <i>The Journal of Southern History 42, no. 1 (1976)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.14_Metamorphosis_Slavery_1865_1900.html" data-source-card data-search="a15.14 the metamorphosis of slavery, 1865-1900 pete daniel · the journal of american history 66, no. 1 (1979)">
+              <span class="source-code">A15.14</span>
+              <span class="source-copy">
+                <strong>The Metamorphosis of Slavery, 1865-1900</strong>
+                <span>Pete Daniel · <i>The Journal of American History 66, no. 1 (1979)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.15_U_S_Army_Origins_Sharecropping_Natchez_District.html" data-source-card data-search="a15.15 the u. s. army and the origins of sharecropping in the natchez district: a case study ronald l. f. davis · the journal of negro history 62, no. 1 (1977)">
+              <span class="source-code">A15.15</span>
+              <span class="source-copy">
+                <strong>The U. S. Army and the Origins of Sharecropping in the Natchez District: A Case Study</strong>
+                <span>Ronald L. F. Davis · <i>The Journal of Negro History 62, no. 1 (1977)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.16_President_Hayess_Southern_Policy.html" data-source-card data-search="a15.16 president hayes&#x27;s southern policy vincent p. de santis · the journal of southern history 21, no. 4 (1955)">
+              <span class="source-code">A15.16</span>
+              <span class="source-copy">
+                <strong>President Hayes's Southern Policy</strong>
+                <span>Vincent P. De Santis · <i>The Journal of Southern History 21, no. 4 (1955)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.17_Republican_Party_Southern_Negro_1877_1897.html" data-source-card data-search="a15.17 the republican party and the southern negro, 1877-1897 vincent p. de santis · the journal of negro history 45, no. 2 (1960)">
+              <span class="source-code">A15.17</span>
+              <span class="source-copy">
+                <strong>The Republican Party and the Southern Negro, 1877-1897</strong>
+                <span>Vincent P. De Santis · <i>The Journal of Negro History 45, no. 2 (1960)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.18_Mountaineer_Reconstruction.html" data-source-card data-search="a15.18 mountaineer reconstruction: blacks in the political reconstruction of west virginia stephen d. engle · the journal of negro history 78, no. 3 (1993)">
+              <span class="source-code">A15.18</span>
+              <span class="source-copy">
+                <strong>Mountaineer Reconstruction: Blacks in the Political Reconstruction of West Virginia</strong>
+                <span>Stephen D. Engle · <i>The Journal of Negro History 78, no. 3 (1993)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.19_Sharecropping_Contracts_Late_Nineteenth_Century_South.html" data-source-card data-search="a15.19 sharecropping contracts in the late-nineteenth-century south louis ferleger · agricultural history 67, no. 3 (1993)">
+              <span class="source-code">A15.19</span>
+              <span class="source-copy">
+                <strong>Sharecropping Contracts in the Late-Nineteenth-Century South</strong>
+                <span>Louis Ferleger · <i>Agricultural History 67, no. 3 (1993)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.20_Ku_Klux_Klan.html" data-source-card data-search="a15.20 the ku klux klan: property crime and the plantation system in reconstruction alabama michael w. fitzgerald · agricultural history 71, no. 2 (1997)">
+              <span class="source-code">A15.20</span>
+              <span class="source-copy">
+                <strong>The Ku Klux Klan: Property Crime and the Plantation System in Reconstruction Alabama</strong>
+                <span>Michael W. Fitzgerald · <i>Agricultural History 71, no. 2 (1997)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.21_Rights_Constitution_Black_Life_During_Civil_War.html" data-source-card data-search="a15.21 rights and the constitution in black life during the civil war and reconstruction eric foner · the journal of american history 74, no. 3 (1987)">
+              <span class="source-code">A15.21</span>
+              <span class="source-copy">
+                <strong>Rights and the Constitution in Black Life during the Civil War and Reconstruction</strong>
+                <span>Eric Foner · <i>The Journal of American History 74, no. 3 (1987)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.22_Origins_African_American_Politics_Southwest_Georgia.html" data-source-card data-search="a15.22 the origins of african-american politics in southwest georgia: a case study of black political organization during presidential reconstruction, 1865-1867 lee w. formwalt · the journal of negro history 77, no. 4 (1992)">
+              <span class="source-code">A15.22</span>
+              <span class="source-copy">
+                <strong>The Origins of African-American Politics in Southwest Georgia: A Case Study of Black Political Organization During Presidential Reconstruction, 1865-1867</strong>
+                <span>Lee W. Formwalt · <i>The Journal of Negro History 77, no. 4 (1992)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.23_Potter_Committee_Investigation_Disputed_Election_1876.html" data-source-card data-search="a15.23 potter committee investigation of the disputed election of 1876 karen guenther · the florida historical quarterly 61, no. 3 (1983)">
+              <span class="source-code">A15.23</span>
+              <span class="source-copy">
+                <strong>Potter Committee Investigation of the Disputed Election of 1876</strong>
+                <span>Karen Guenther · <i>The Florida Historical Quarterly 61, no. 3 (1983)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.24_Origins_New_South_Retrospect.html" data-source-card data-search="a15.24 origins of the new south in retrospect sheldon hackney · the journal of southern history 38, no. 2 (1972)">
+              <span class="source-code">A15.24</span>
+              <span class="source-copy">
+                <strong>Origins of the New South in Retrospect</strong>
+                <span>Sheldon Hackney · <i>The Journal of Southern History 38, no. 2 (1972)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.25_Yonder_Come_Day.html" data-source-card data-search="a15.25 &#x27;yonder come day&#x27;: religious dimensions of the transition from slavery to freedom in florida robert l. hall · the florida historical quarterly 65, no. 4 (1987)">
+              <span class="source-code">A15.25</span>
+              <span class="source-copy">
+                <strong>'Yonder Come Day': Religious Dimensions of the Transition from Slavery to Freedom in Florida</strong>
+                <span>Robert L. Hall · <i>The Florida Historical Quarterly 65, no. 4 (1987)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.26_Reconstructing_Andrew_Johnson.html" data-source-card data-search="a15.26 reconstructing andrew johnson: the influence of laissez-faire constitutionalism on president johnson&#x27;s restoration policy william e. hardy · tennessee historical quarterly 65, no. 1 (2006)">
+              <span class="source-code">A15.26</span>
+              <span class="source-copy">
+                <strong>Reconstructing Andrew Johnson: The Influence of Laissez-Faire Constitutionalism on President Johnson's Restoration Policy</strong>
+                <span>William E. Hardy · <i>Tennessee Historical Quarterly 65, no. 1 (2006)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.27_Black_Politicians_Reconstruction_Charleston_South_Carolina.html" data-source-card data-search="a15.27 black politicians in reconstruction charleston, south carolina: a collective study william c. hine · the journal of southern history 49, no. 4 (1983)">
+              <span class="source-code">A15.27</span>
+              <span class="source-copy">
+                <strong>Black Politicians in Reconstruction Charleston, South Carolina: A Collective Study</strong>
+                <span>William C. Hine · <i>The Journal of Southern History 49, no. 4 (1983)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.28_Making_Freedom_Pay.html" data-source-card data-search="a15.28 making freedom pay: freedpeople working for themselves, north carolina, 1865-1900 sharon ann holt · the journal of southern history 60, no. 2 (1994)">
+              <span class="source-code">A15.28</span>
+              <span class="source-copy">
+                <strong>Making Freedom Pay: Freedpeople Working for Themselves, North Carolina, 1865-1900</strong>
+                <span>Sharon Ann Holt · <i>The Journal of Southern History 60, no. 2 (1994)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.29_Law_Rules_Presidential_Selection.html" data-source-card data-search="a15.29 law, rules, and presidential selection samuel issacharoff · political science quarterly 120, no. 1 (2005)">
+              <span class="source-code">A15.29</span>
+              <span class="source-copy">
+                <strong>Law, Rules, and Presidential Selection</strong>
+                <span>Samuel Issacharoff · <i>Political Science Quarterly 120, no. 1 (2005)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.30_To_Begin_Nation_Anew.html" data-source-card data-search="a15.30 to begin the nation anew: congress, citizenship, and civil rights after the civil war robert j. kaczorowski · the american historical review 92, no. 1 (1987)">
+              <span class="source-code">A15.30</span>
+              <span class="source-copy">
+                <strong>To Begin the Nation Anew: Congress, Citizenship, and Civil Rights after the Civil War</strong>
+                <span>Robert J. Kaczorowski · <i>The American Historical Review 92, no. 1 (1987)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.31_White_Supremacy_Settler_Colonialism_Two_Citizenships_Fourteenth.html" data-source-card data-search="a15.31 white supremacy, settler colonialism, and the two citizenships of the fourteenth amendment stephen kantrowitz · journal of the civil war era 10, no. 1 (2020)">
+              <span class="source-code">A15.31</span>
+              <span class="source-copy">
+                <strong>White Supremacy, Settler Colonialism, and the Two Citizenships of the Fourteenth Amendment</strong>
+                <span>Stephen Kantrowitz · <i>Journal of the Civil War Era 10, no. 1 (2020)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.32_Black_Republicans_Virginia_Tobacco_Fields_1867_70.html" data-source-card data-search="a15.32 black republicans in the virginia tobacco fields, 1867-70 jeff r. kerr-ritchie · the journal of negro history 86, no. 1 (2001)">
+              <span class="source-code">A15.32</span>
+              <span class="source-copy">
+                <strong>Black Republicans in the Virginia Tobacco Fields, 1867-70</strong>
+                <span>Jeff R. Kerr-Ritchie · <i>The Journal of Negro History 86, no. 1 (2001)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.33_Counting_Votes.html" data-source-card data-search="a15.33 counting the votes: south carolina&#x27;s stolen election of 1876 ronald f. king · the journal of interdisciplinary history 32, no. 2 (2001)">
+              <span class="source-code">A15.33</span>
+              <span class="source-copy">
+                <strong>Counting the Votes: South Carolina's Stolen Election of 1876</strong>
+                <span>Ronald F. King · <i>The Journal of Interdisciplinary History 32, no. 2 (2001)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.34_Was_Emancipated_Slave_Proletarian.html" data-source-card data-search="a15.34 was the emancipated slave a proletarian? alex lichtenstein · reviews in american history 26, no. 1 (1998)">
+              <span class="source-code">A15.34</span>
+              <span class="source-copy">
+                <strong>Was the Emancipated Slave a Proletarian?</strong>
+                <span>Alex Lichtenstein · <i>Reviews in American History 26, no. 1 (1998)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.35_Freedmens_Bureau_Politics_Institutional_Structure.html" data-source-card data-search="a15.35 the freedmen&#x27;s bureau and the politics of institutional structure robert c. lieberman · social science history 18, no. 3 (1994)">
+              <span class="source-code">A15.35</span>
+              <span class="source-copy">
+                <strong>The Freedmen's Bureau and the Politics of Institutional Structure</strong>
+                <span>Robert C. Lieberman · <i>Social Science History 18, no. 3 (1994)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.36_Local_Black_Leaders_During_Reconstruction_Virginia.html" data-source-card data-search="a15.36 local black leaders during reconstruction in virginia richard lowe · the virginia magazine of history and biography 103, no. 2 (1995)">
+              <span class="source-code">A15.36</span>
+              <span class="source-copy">
+                <strong>Local Black Leaders during Reconstruction in Virginia</strong>
+                <span>Richard Lowe · <i>The Virginia Magazine of History and Biography 103, no. 2 (1995)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.37_Freedmens_Bureau_Local_Black_Leadership.html" data-source-card data-search="a15.37 the freedmen&#x27;s bureau and local black leadership richard lowe · the journal of american history 80, no. 3 (1993)">
+              <span class="source-code">A15.37</span>
+              <span class="source-copy">
+                <strong>The Freedmen's Bureau and Local Black Leadership</strong>
+                <span>Richard Lowe · <i>The Journal of American History 80, no. 3 (1993)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.38_Freedom_Economic_Autonomy_Ecological_Change_Cotton_South.html" data-source-card data-search="a15.38 freedom, economic autonomy, and ecological change in the cotton south, 1865–1880 erin stewart mauldin · journal of the civil war era 7, no. 3 (2017)">
+              <span class="source-code">A15.38</span>
+              <span class="source-copy">
+                <strong>Freedom, Economic Autonomy, and Ecological Change in the Cotton South, 1865–1880</strong>
+                <span>Erin Stewart Mauldin · <i>Journal of the Civil War Era 7, no. 3 (2017)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.39_Coercion_Conciliation_Abolitionists_Debate_President_Hayess_Southern.html" data-source-card data-search="a15.39 coercion or conciliation? abolitionists debate president hayes&#x27;s southern policy james m. mcpherson · the new england quarterly 39, no. 4 (1966)">
+              <span class="source-code">A15.39</span>
+              <span class="source-copy">
+                <strong>Coercion or Conciliation? Abolitionists Debate President Hayes's Southern Policy</strong>
+                <span>James M. McPherson · <i>The New England Quarterly 39, no. 4 (1966)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.40_Education_Alabama_Freedmen_During_Presidential_Reconstruction_1865.html" data-source-card data-search="a15.40 the education of the alabama freedmen during presidential reconstruction, 1865-1867 john b. myers · the journal of negro education 40, no. 2 (1971)">
+              <span class="source-code">A15.40</span>
+              <span class="source-copy">
+                <strong>The Education of the Alabama Freedmen During Presidential Reconstruction, 1865-1867</strong>
+                <span>John B. Myers · <i>The Journal of Negro Education 40, no. 2 (1971)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.41_Andrew_Johnson_Freedmens_Bureau_Problem_Equal_Rights.html" data-source-card data-search="a15.41 andrew johnson, the freedmen&#x27;s bureau, and the problem of equal rights, 1865-1866 donald g. nieman · the journal of southern history 44, no. 3 (1978)">
+              <span class="source-code">A15.41</span>
+              <span class="source-copy">
+                <strong>Andrew Johnson, the Freedmen's Bureau, and the Problem of Equal Rights, 1865-1866</strong>
+                <span>Donald G. Nieman · <i>The Journal of Southern History 44, no. 3 (1978)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.42_Just_Self_Respecting_System.html" data-source-card data-search="a15.42 &#x27;a just and self-respecting system&#x27;?: black independence, sharecropping, and paternalistic relations in the american south and south africa ian d. ochiltree · agricultural history 72, no. 2 (1998)">
+              <span class="source-code">A15.42</span>
+              <span class="source-copy">
+                <strong>'A Just and Self-Respecting System'?: Black Independence, Sharecropping, and Paternalistic Relations in the American South and South Africa</strong>
+                <span>Ian D. Ochiltree · <i>Agricultural History 72, no. 2 (1998)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.43_Forty_Acres_Mule.html" data-source-card data-search="a15.43 &#x27;forty acres and a mule&#x27;: louisiana and the southern homestead act claude f. oubre · louisiana history 17, no. 2 (1976)">
+              <span class="source-code">A15.43</span>
+              <span class="source-copy">
+                <strong>'Forty Acres and a Mule': Louisiana and the Southern Homestead Act</strong>
+                <span>Claude F. Oubre · <i>Louisiana History 17, no. 2 (1976)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.44_Klan_Skepticism_Denial_Reconstruction_Era_Public_Discourse.html" data-source-card data-search="a15.44 klan skepticism and denial in reconstruction-era public discourse elaine frantz parsons · the journal of southern history 77, no. 1 (2011)">
+              <span class="source-code">A15.44</span>
+              <span class="source-copy">
+                <strong>Klan Skepticism and Denial in Reconstruction-Era Public Discourse</strong>
+                <span>Elaine Frantz Parsons · <i>The Journal of Southern History 77, no. 1 (2011)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.45_Midnight_Rangers.html" data-source-card data-search="a15.45 midnight rangers: costume and performance in the reconstruction-era ku klux klan elaine frantz parsons · the journal of american history 92, no. 3 (2005)">
+              <span class="source-code">A15.45</span>
+              <span class="source-copy">
+                <strong>Midnight Rangers: Costume and Performance in the Reconstruction-Era Ku Klux Klan</strong>
+                <span>Elaine Frantz Parsons · <i>The Journal of American History 92, no. 3 (2005)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.46_Election_1870_End_Reconstruction_Florida.html" data-source-card data-search="a15.46 election of 1870 and the end of reconstruction in florida ralph l. peek · the florida historical quarterly 45, no. 4 (1967)">
+              <span class="source-code">A15.46</span>
+              <span class="source-copy">
+                <strong>Election of 1870 and the End of Reconstruction in Florida</strong>
+                <span>Ralph L. Peek · <i>The Florida Historical Quarterly 45, no. 4 (1967)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.47_Was_There_Compromise_1877.html" data-source-card data-search="a15.47 was there a compromise of 1877 allan peskin · the journal of american history 60, no. 1 (1973)">
+              <span class="source-code">A15.47</span>
+              <span class="source-copy">
+                <strong>Was There a Compromise of 1877</strong>
+                <span>Allan Peskin · <i>The Journal of American History 60, no. 1 (1973)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.48_Legitimacy_Interventionism.html" data-source-card data-search="a15.48 legitimacy and interventionism: northern republicans, the &#x27;terrible carpetbagger,&#x27; and the retreat from reconstruction k. stephen prince · journal of the civil war era 2, no. 4 (2012)">
+              <span class="source-code">A15.48</span>
+              <span class="source-copy">
+                <strong>Legitimacy and Interventionism: Northern Republicans, the 'Terrible Carpetbagger,' and the Retreat from Reconstruction</strong>
+                <span>K. Stephen Prince · <i>Journal of the Civil War Era 2, no. 4 (2012)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.49_Republican_Albatross.html" data-source-card data-search="a15.49 republican albatross: the louisiana question, national politics, and the failure of reconstruction george rable · louisiana history 23, no. 2 (1982)">
+              <span class="source-code">A15.49</span>
+              <span class="source-copy">
+                <strong>Republican Albatross: The Louisiana Question, National Politics, and the Failure of Reconstruction</strong>
+                <span>George Rable · <i>Louisiana History 23, no. 2 (1982)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.50_Debt_Peonage_Cotton_South_After_Civil_War.html" data-source-card data-search="a15.50 debt peonage in the cotton south after the civil war roger l. ransom and richard sutch · the journal of economic history 32, no. 3 (1972)">
+              <span class="source-code">A15.50</span>
+              <span class="source-copy">
+                <strong>Debt Peonage in the Cotton South After the Civil War</strong>
+                <span>Roger L. Ransom and Richard Sutch · <i>The Journal of Economic History 32, no. 3 (1972)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.51_Freedmens_Bureau_As_Legal_Agent_Black_Men.html" data-source-card data-search="a15.51 the freedmen&#x27;s bureau as a legal agent for black men and women in georgia: 1865-1868 sara rapport · the georgia historical quarterly 73, no. 1 (1989)">
+              <span class="source-code">A15.51</span>
+              <span class="source-copy">
+                <strong>The Freedmen's Bureau as a Legal Agent for Black Men and Women in Georgia: 1865-1868</strong>
+                <span>Sara Rapport · <i>The Georgia Historical Quarterly 73, no. 1 (1989)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.52_Sharecropping_As_Understandable_Market_Response.html" data-source-card data-search="a15.52 sharecropping as an understandable market response: the post-bellum south joseph d. reid, jr. · the journal of economic history 33, no. 1 (1973)">
+              <span class="source-code">A15.52</span>
+              <span class="source-copy">
+                <strong>Sharecropping As An Understandable Market Response: The Post-Bellum South</strong>
+                <span>Joseph D. Reid, Jr. · <i>The Journal of Economic History 33, no. 1 (1973)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.53_Sharecropping_History_Theory.html" data-source-card data-search="a15.53 sharecropping in history and theory joseph d. reid, jr. · agricultural history 49, no. 2 (1975)">
+              <span class="source-code">A15.53</span>
+              <span class="source-copy">
+                <strong>Sharecropping in History and Theory</strong>
+                <span>Joseph D. Reid, Jr. · <i>Agricultural History 49, no. 2 (1975)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.54_Evaluation_Freedmens_Bureau_Florida.html" data-source-card data-search="a15.54 an evaluation of the freedmen&#x27;s bureau in florida joe m. richardson · the florida historical quarterly 41, no. 3 (1963)">
+              <span class="source-code">A15.54</span>
+              <span class="source-copy">
+                <strong>An Evaluation of the Freedmen's Bureau in Florida</strong>
+                <span>Joe M. Richardson · <i>The Florida Historical Quarterly 41, no. 3 (1963)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.55_Labor_Militancy_Black_Grassroots_Political_Mobilization_Louisiana.html" data-source-card data-search="a15.55 labor militancy and black grassroots political mobilization in the louisiana sugar region, 1865-1868 john c. rodrigue · the journal of southern history 67, no. 1 (2001)">
+              <span class="source-code">A15.55</span>
+              <span class="source-copy">
+                <strong>Labor Militancy and Black Grassroots Political Mobilization in the Louisiana Sugar Region, 1865-1868</strong>
+                <span>John C. Rodrigue · <i>The Journal of Southern History 67, no. 1 (2001)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.56_Justice_Millers_Reconstruction.html" data-source-card data-search="a15.56 justice miller&#x27;s reconstruction: the slaughter-house cases, health codes, and civil rights in new orleans, 1861-1873 michael a. ross · the journal of southern history 64, no. 4 (1998)">
+              <span class="source-code">A15.56</span>
+              <span class="source-copy">
+                <strong>Justice Miller's Reconstruction: The Slaughter-House Cases, Health Codes, and Civil Rights in New Orleans, 1861-1873</strong>
+                <span>Michael A. Ross · <i>The Journal of Southern History 64, no. 4 (1998)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.57_Fourteenth_Amendment_Transformation_Civil_Rights.html" data-source-card data-search="a15.57 the fourteenth amendment and the transformation of civil rights christopher w. schmidt · journal of the civil war era 10, no. 1 (2020)">
+              <span class="source-code">A15.57</span>
+              <span class="source-copy">
+                <strong>The Fourteenth Amendment and the Transformation of Civil Rights</strong>
+                <span>Christopher W. Schmidt · <i>Journal of the Civil War Era 10, no. 1 (2020)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.58_Ku_Klux_Klan_During_Reconstruction.html" data-source-card data-search="a15.58 the ku klux klan during reconstruction: the south carolina episode herbert shapiro · the journal of negro history 49, no. 1 (1964)">
+              <span class="source-code">A15.58</span>
+              <span class="source-copy">
+                <strong>The Ku Klux Klan During Reconstruction: The South Carolina Episode</strong>
+                <span>Herbert Shapiro · <i>The Journal of Negro History 49, no. 1 (1964)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.59_Origins_Southern_Sharecropping.html" data-source-card data-search="a15.59 the origins of southern sharecropping ralph shlomowitz · agricultural history 53, no. 3 (1979)">
+              <span class="source-code">A15.59</span>
+              <span class="source-copy">
+                <strong>The Origins of Southern Sharecropping</strong>
+                <span>Ralph Shlomowitz · <i>Agricultural History 53, no. 3 (1979)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.60_Transition_Slave_Freedman_Labor_Arrangements_Southern_Agriculture.html" data-source-card data-search="a15.60 the transition from slave to freedman labor arrangements in southern agriculture, 1865-1870 ralph shlomowitz · the journal of economic history 39, no. 1 (1979)">
+              <span class="source-code">A15.60</span>
+              <span class="source-copy">
+                <strong>The Transition from Slave to Freedman Labor Arrangements in Southern Agriculture, 1865-1870</strong>
+                <span>Ralph Shlomowitz · <i>The Journal of Economic History 39, no. 1 (1979)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.61_Florida_Courts_Disputed_Election_1876.html" data-source-card data-search="a15.61 florida courts and the disputed election of 1876 jerrell h. shofner · the florida historical quarterly 48, no. 1 (1969)">
+              <span class="source-code">A15.61</span>
+              <span class="source-copy">
+                <strong>Florida Courts and the Disputed Election of 1876</strong>
+                <span>Jerrell H. Shofner · <i>The Florida Historical Quarterly 48, no. 1 (1969)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.62_Fraud_Intimidation_Florida_Election_1876.html" data-source-card data-search="a15.62 fraud and intimidation in the florida election of 1876 jerrell h. shofner · the florida historical quarterly 42, no. 4 (1964)">
+              <span class="source-code">A15.62</span>
+              <span class="source-copy">
+                <strong>Fraud and Intimidation in the Florida Election of 1876</strong>
+                <span>Jerrell H. Shofner · <i>The Florida Historical Quarterly 42, no. 4 (1964)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.63_Mission_Impossible.html" data-source-card data-search="a15.63 mission impossible: reconstruction policy reconsidered brooks d. simpson · journal of the civil war era 6, no. 1 (2016)">
+              <span class="source-code">A15.63</span>
+              <span class="source-copy">
+                <strong>Mission Impossible: Reconstruction Policy Reconsidered</strong>
+                <span>Brooks D. Simpson · <i>Journal of the Civil War Era 6, no. 1 (2016)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.64_From_Barrel_Gun.html" data-source-card data-search="a15.64 from the barrel of a gun: the politics of murder in grant parish joel m. sipress · louisiana history 42, no. 3 (2001)">
+              <span class="source-code">A15.64</span>
+              <span class="source-copy">
+                <strong>From the Barrel of a Gun: The Politics of Murder in Grant Parish</strong>
+                <span>Joel M. Sipress · <i>Louisiana History 42, no. 3 (2001)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.65_I_Must_Learn_Now_Not_All.html" data-source-card data-search="a15.65 &#x27;i must learn now or not at all&#x27;: social and cultural capital in the educational initiatives of formerly enslaved african americans in mississippi, 1862-1869 christopher m. span · the journal of african american history 87 (2002)">
+              <span class="source-code">A15.65</span>
+              <span class="source-copy">
+                <strong>'I Must Learn Now or Not at All': Social and Cultural Capital in the Educational Initiatives of Formerly Enslaved African Americans in Mississippi, 1862-1869</strong>
+                <span>Christopher M. Span · <i>The Journal of African American History 87 (2002)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.66_Blueprint_Radical_Reconstruction.html" data-source-card data-search="a15.66 blueprint for radical reconstruction john g. sproat · the journal of southern history 23, no. 1 (1957)">
+              <span class="source-code">A15.66</span>
+              <span class="source-copy">
+                <strong>Blueprint for Radical Reconstruction</strong>
+                <span>John G. Sproat · <i>The Journal of Southern History 23, no. 1 (1957)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.67_Eric_Foners_Reconstruction_Twenty_Five.html" data-source-card data-search="a15.67 eric foner&#x27;s &#x27;reconstruction&#x27; at twenty-five luke staszak, kate masur, heather andrea williams, gregory p. downs, thavolia glymph, steven hahn, and eric foner · the journal of the gilded age and progressive era 14, no. 1 (2015)">
+              <span class="source-code">A15.67</span>
+              <span class="source-copy">
+                <strong>Eric Foner's 'Reconstruction' at Twenty-Five</strong>
+                <span>Luke Staszak, Kate Masur, Heather Andrea Williams, Gregory P. Downs, Thavolia Glymph, Steven Hahn, and Eric Foner · <i>The Journal of the Gilded Age and Progressive Era 14, no. 1 (2015)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.68_Enforcing_Fifteenth_Amendment_1870_1877.html" data-source-card data-search="a15.68 enforcing the fifteenth amendment, 1870-1877 everette swinney · the journal of southern history 28, no. 2 (1962)">
+              <span class="source-code">A15.68</span>
+              <span class="source-copy">
+                <strong>Enforcing the Fifteenth Amendment, 1870-1877</strong>
+                <span>Everette Swinney · <i>The Journal of Southern History 28, no. 2 (1962)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.69_Fourteenth_Amendment_Negro_Spirit_Times.html" data-source-card data-search="a15.69 the fourteenth amendment, the negro, and the spirit of the times joseph h. taylor · the journal of negro history 45, no. 1 (1960)">
+              <span class="source-code">A15.69</span>
+              <span class="source-copy">
+                <strong>The Fourteenth Amendment, the Negro, and the Spirit of the Times</strong>
+                <span>Joseph H. Taylor · <i>The Journal of Negro History 45, no. 1 (1960)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.70_Rutherford_B_Hayes_Politics_Discord.html" data-source-card data-search="a15.70 rutherford b. hayes and the politics of discord frank p. vazzano · the historian 68, no. 3 (2006)">
+              <span class="source-code">A15.70</span>
+              <span class="source-copy">
+                <strong>Rutherford B. Hayes and the Politics of Discord</strong>
+                <span>Frank P. Vazzano · <i>The Historian 68, no. 3 (2006)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.71_Federal_Enforcement_African_American_Voting_Rights_Post.html" data-source-card data-search="a15.71 federal enforcement of african american voting rights in the post-redemption south: louisiana and the election of 1878 lou falkner williams · louisiana history 55, no. 3 (2014)">
+              <span class="source-code">A15.71</span>
+              <span class="source-copy">
+                <strong>Federal Enforcement of African American Voting Rights in the Post-Redemption South: Louisiana and the Election of 1878</strong>
+                <span>Lou Falkner Williams · <i>Louisiana History 55, no. 3 (2014)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.72_Postbellum_Reorganization_Southern_Agriculture.html" data-source-card data-search="a15.72 postbellum reorganization of southern agriculture: the economics of sharecropping in tennessee donald l. winters · agricultural history 62, no. 4 (1988)">
+              <span class="source-code">A15.72</span>
+              <span class="source-copy">
+                <strong>Postbellum Reorganization of Southern Agriculture: The Economics of Sharecropping in Tennessee</strong>
+                <span>Donald L. Winters · <i>Agricultural History 62, no. 4 (1988)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.73_Post_Civil_War_Southern_Agriculture_Law.html" data-source-card data-search="a15.73 post-civil war southern agriculture and the law harold d. woodman · agricultural history 53, no. 1 (1979)">
+              <span class="source-code">A15.73</span>
+              <span class="source-copy">
+                <strong>Post-Civil War Southern Agriculture and the Law</strong>
+                <span>Harold D. Woodman · <i>Agricultural History 53, no. 1 (1979)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.74_Sequel_Slavery.html" data-source-card data-search="a15.74 sequel to slavery: the new history views the postbellum south harold d. woodman · the journal of southern history 43, no. 4 (1977)">
+              <span class="source-code">A15.74</span>
+              <span class="source-copy">
+                <strong>Sequel to Slavery: The New History Views the Postbellum South</strong>
+                <span>Harold D. Woodman · <i>The Journal of Southern History 43, no. 4 (1977)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.75_Tumultuous_Times.html" data-source-card data-search="a15.75 tumultuous times: tennessee&#x27;s passage of the reconstruction amendments to the u.s. constitution lucy dunaway zeier and charles d. zeier · tennessee historical quarterly 73, no. 2 (2014)">
+              <span class="source-code">A15.75</span>
+              <span class="source-copy">
+                <strong>Tumultuous Times: Tennessee's Passage of the Reconstruction Amendments to the U.S. Constitution</strong>
+                <span>Lucy Dunaway Zeier and Charles D. Zeier · <i>Tennessee Historical Quarterly 73, no. 2 (2014)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Scholarly_Articles/A15.76_Federal_Governments_Attack_Ku_Klux_Klan.html" data-source-card data-search="a15.76 the federal government&#x27;s attack on the ku klux klan: a reassessment richard zuczek · the south carolina historical magazine 97, no. 1 (1996)">
+              <span class="source-code">A15.76</span>
+              <span class="source-copy">
+                <strong>The Federal Government's Attack on the Ku Klux Klan: A Reassessment</strong>
+                <span>Richard Zuczek · <i>The South Carolina Historical Magazine 97, no. 1 (1996)</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+
+    <footer class="page-footer">
+      <a class="back-top" href="#top">Back to top ↑</a>
+      <div>Unit 4 · A House Divided and Rebuilt · History B17A · Daniel Garza, M.A.</div>
+    </footer>
+  </main>
+  <script>
+    (() => {
+      const input = document.getElementById('source-search');
+      const cards = [...document.querySelectorAll('[data-source-card]')];
+      const sections = [...document.querySelectorAll('[data-chapter-section]')];
+      const resultCount = document.getElementById('result-count');
+      const noResults = document.getElementById('no-results');
+
+      function normalize(value) {
+        return value.toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      }
+
+      function updateCatalog() {
+        const query = normalize(input.value.trim());
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const matches = !query || normalize(card.dataset.search).includes(query);
+          card.hidden = !matches;
+          if (matches) visibleCount += 1;
+        });
+
+        sections.forEach(section => {
+          const visibleInSection = section.querySelectorAll('[data-source-card]:not([hidden])').length;
+          section.querySelector('.chapter-empty').hidden = visibleInSection > 0;
+        });
+
+        resultCount.textContent = `${visibleCount} ${visibleCount === 1 ? 'article' : 'articles'}`;
+        noResults.hidden = visibleCount !== 0;
+      }
+
+      input.addEventListener('input', updateCatalog);
+      input.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && input.value) {
+          input.value = '';
+          updateCatalog();
+        }
+      });
+      updateCatalog();
+    })();
+</script>
+</body>
+</html>
