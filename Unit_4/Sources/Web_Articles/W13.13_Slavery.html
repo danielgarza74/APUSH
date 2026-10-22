@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Slavery. Web Article W13.13 for Unit 4: A House Divided and Rebuilt.">
+  <meta name="theme-color" content="#5A4A17">
+  <title>Web Article W13.13 | Slavery</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.13_Slavery.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #5A4A17;
+      --forest-mid: #806A24;
+      --coral: #4E6373;
+      --coral-light: #93A7B5;
+      --cream: #F8F5E9;
+      --paper: #FDFBF5;
+      --mint: #EEF1F3;
+      --sage: #D6DCE0;
+      --ink: #3F3410;
+      --muted: #6B6448;
+      --shadow: 0 22px 55px rgba(48, 40, 12, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #6E5A1E;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(78, 99, 115, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(90, 74, 23, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(48, 40, 12, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(140, 115, 39, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .context-grid { background: #93A7B5 !important; border-color: #93A7B5; border-left-color: var(--coral); }
+    .context-grid td:first-child, .context-grid td:last-child { color: #1F2A31 !important; }
+    .context-grid tr + tr td { border-top-color: rgba(255,255,255,.35); }
+
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Web Article navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/"><span aria-hidden="true">←</span> Web Article Archive</a>
+      <div class="archive-meta">Unit 4 · Chapter 13 · W13.13</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="W13.13">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F8F5E9; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Web Article W13.13</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">Slavery</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Randolph B. Campbell</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #4E6373; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#93A7B5; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">AUTHOR</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:13.5px; line-height:1.55;">Randolph B. Campbell (Historian of slavery in Texas; Regents Professor of History, University of North Texas; author of An Empire for Slavery)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WEBSITE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:13.5px; line-height:1.55;">Handbook of Texas Online, Texas State Historical Association</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">PUBLICATION</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:13.5px; line-height:1.55;">1996; revised July 27, 2023</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">CHAPTER / PROMPTS</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:13.5px; line-height:1.55;">Chapter 13 | 13.2</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARGUMENT ROLES</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:13.5px; line-height:1.55;">13.2.2 Qualify; 13.2.1 Support</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:17px; font-weight:700; border-bottom:2px solid #4E6373; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt · 1,063 words</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Texas was the last frontier of chattel slavery in the United States. In the fewer than fifty years between 1821 and 1865, the "Peculiar Institution," as Southerners called it, spread over the eastern two-fifths of the state, an area nearly as large as Alabama and Mississippi combined. Slavery thus linked Texas inextricably with the Old South.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">There were a few slaves in Texas while it was a Spanish province, but slavery did not really become an institution of significance in the region until the arrival of Anglo American settlers. The original empresario commission given Moses Austin by Spanish authorities in 1821 did not mention slaves, but when Stephen F. Austin was recognized as heir to his father's contract later that year, it was agreed that settlers could receive eighty acres of l<em>and</em> for each enslaved person they brought to the colony. The motivation for bringing slaves to Texas was primarily economic – using their labor to grow cotton, which was by 1820 the most valuable commodity in the Atlantic world. To Anglo-American slave owners slavery was a practical necessity in Texas – the only way to grow cotton profitably on its vast areas of fertile land. Stephen F. Austin made this clear in 1824: “The principal product that will elevate us from poverty is cotton,” he wrote, “and we cannot do this without the help of slaves.” (<em>see</em> BLACKS IN COLONIAL SPANISH TEXAS and ANGLO-AMERICAN COLONIZATION)</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Most of the early slaveholders owned only a few enslaved people, but a few brought enough to build plantations immediately. For example, Jared Groce arrived from Alabama in 1822 with ninety slaves and set up a cotton plantation on the Brazos River. The first census in Austin's colony in 1825 showed 443 slaves in a total population of 1,800.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Even as Austin’s colonists began to establish slavery on the lower Brazos and Colorado rivers, the independence of Mexico cast doubt on the future of the institution in Texas. Leaders of the Mexican nation tended to oppose slavery, in part from revolutionary idealism and in part because slavery was not essential to the new nation’s economy, and therefore regularly threatened to limit or abolish the institution. The Federal Constitution of 1824 did not mention slavery, but the 1827 Constitution of the State of Coahuila and Texas prohibited the further introduction of slaves and declared all children born thereafter to slaves already in the state to be free at birth. Anglo American settlers were very alarmed, but within a year the State Congress of Coahuila and Texas, some of its Tejano leaders impressed by the pleas of Austin's colonists concerning the need for labor and others distracted by debates over different issues, passed a law that used the familiar practice of indentured servitude to permit the bringing in of slaves under a different name. Before being brought to Texas, enslaved persons signed contracts with their masters by which they technically became free but, in return for their "freedom," agreed that they and their children would, in effect, be indentured to the master for life. In 1829, President Vicente Guerrero issued a decree abolishing slavery in all of Mexico, but within months he exempted Texas from that order. In short, from 1821 to 1836, the national government in Mexico City and the state government of Coahuila and Texas often threatened to restrict or destroy African American servitude, but always allowed settlers in Texas a loophole or an exemption.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Although Mexican governments did not adopt any consistent or effective policy to prevent slavery in Texas, their threats worried slaveholders and possibly retarded the immigration of planters from the Old South. In 1836 Texas had approximately 5,000 enslaved persons in a total population estimated at 38,470. The number likely would have been larger but for the attitude of the Mexican federal and state governments.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Disputes over slavery did not constitute an immediate cause of the Texas Revolution, but the institution was always in the background as what the noted Texas historian Eugene C. Barker called a "dull, organic ache." In other words, it was an underlying cause of the struggle in 1835 1836. Moreover, once the revolution came, slavery was very much on the minds of those involved. Texans worried constantly that the Mexicans were going to free their slaves or at least cause servile insurrection. And when they declared independence and wrote a constitution for their new republic, they made every effort, in the words of a later Texas Supreme Court justice, to "remove all doubt and uneasiness among the citizens of Texas in regard to the tenure by which they held dominion over their slaves." Section 9 of Constitution of the Republic of Texas read in part as follows:</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">All persons of color who were slaves for life previous to their emigration to Texas, and who are now held in bondage, shall remain in the like state of servitude... Congress shall pass no laws to prohibit emigrants from bringing their slaves into the republic with them, and holding them by the same tenure by which such slaves were held in the United States; nor shall congress have the power to emancipate slaves; nor shall any slave holder be allowed to emancipate his or her slave without the consent of congress, unless he or she shall send his or her slave or slaves without the limits of the republic.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Thus, slavery was not the immediate cause of the revolution, but the institution was always there as an issue, and the revolution made it more secure than ever in Texas.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Slavery expanded rapidly during the period of the republic. By the end of 1845, when Texas joined the United States, the state was home to at least 30,000 enslaved people. After statehood, in antebellum Texas, slavery grew even more rapidly. The census of 1850 reported 58,161 slaves, 27.4 percent of the 212,592 people in Texas, and the census of 1860 enumerated 182,566 slaves, 30.2 percent of the total population. Slaves were increasing faster than the population as a whole.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The great majority of slaves in Texas came with their owners from the older slave states. Sizable numbers, however, came through the domestic slave trade. New Orleans was the center of this trade in the Deep South, but there were slave dealers in Galveston and Houston, too. A relatively few slaves, perhaps as many as 2,000 between 1835 and 1865, came through the illegal African trade.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:17px; font-weight:700; border-bottom:2px solid #4E6373; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Original Article</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><a href="https://www.tshaonline.org/handbook/entries/slavery">https://www.tshaonline.org/handbook/entries/slavery</a></p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:17px; font-weight:700; border-bottom:2px solid #4E6373; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Campbell, Randolph B. "Slavery." <em>Handbook of Texas Online</em>. Texas State Historical Association. Last modified July 27, 2023. <a href="https://www.tshaonline.org/handbook/entries/slavery">https://www.tshaonline.org/handbook/entries/slavery</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Full footnote:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Randolph B. Campbell, "Slavery," <em>Handbook of Texas Online</em>, Texas State Historical Association, last modified July 27, 2023, <a href="https://www.tshaonline.org/handbook/entries/slavery">https://www.tshaonline.org/handbook/entries/slavery</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened footnote:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Campbell, "Slavery."</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #4E6373; font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 4 · A HOUSE DIVIDED AND REBUILT | HISTORY B17A | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/"><span aria-hidden="true">←</span> Return to the Web Article Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

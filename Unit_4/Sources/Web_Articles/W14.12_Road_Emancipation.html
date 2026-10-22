@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Road to Emancipation. Web Article W14.12 for Unit 4: A House Divided and Rebuilt.">
+  <meta name="theme-color" content="#5A4A17">
+  <title>Web Article W14.12 | The Road to Emancipation</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.12_Road_Emancipation.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #5A4A17;
+      --forest-mid: #806A24;
+      --coral: #4E6373;
+      --coral-light: #93A7B5;
+      --cream: #F8F5E9;
+      --paper: #FDFBF5;
+      --mint: #EEF1F3;
+      --sage: #D6DCE0;
+      --ink: #3F3410;
+      --muted: #6B6448;
+      --shadow: 0 22px 55px rgba(48, 40, 12, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #6E5A1E;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(78, 99, 115, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(90, 74, 23, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(48, 40, 12, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(140, 115, 39, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .context-grid { background: #93A7B5 !important; border-color: #93A7B5; border-left-color: var(--coral); }
+    .context-grid td:first-child, .context-grid td:last-child { color: #1F2A31 !important; }
+    .context-grid tr + tr td { border-top-color: rgba(255,255,255,.35); }
+
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Web Article navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/"><span aria-hidden="true">←</span> Web Article Archive</a>
+      <div class="archive-meta">Unit 4 · Chapter 14 · W14.12</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="W14.12">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F8F5E9; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Web Article W14.12</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">The Road to Emancipation</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Hari Jones</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #4E6373; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#93A7B5; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">AUTHOR</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:13.5px; line-height:1.55;">Hari Jones (Curator, African American Civil War Museum, Washington, D.C.)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WEBSITE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:13.5px; line-height:1.55;">American Battlefield Trust</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">PUBLICATION</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:13.5px; line-height:1.55;">September 5, 2012; updated November 12, 2025</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">CHAPTER / PROMPTS</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:13.5px; line-height:1.55;">Chapter 14 | 14.2</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARGUMENT ROLES</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:13.5px; line-height:1.55;">14.2.1 Challenge; 14.2.2 Challenge; 14.2.3 Challenge</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:17px; font-weight:700; border-bottom:2px solid #4E6373; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt · 1,126 words</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><em>"We are happy to believe - indeed, we have very good evidence to the fact - the Administration in Washington notwithstanding</em> <em>appearances, stand ready to inaugurate and carry out a policy towards slavery which will most certainly eventuate in</em> <em>breaking down slavery in all the rebel States, just as soon as the people require it."</em></p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:14px; font-weight:700; margin:8px 0 10px 0;" class="document-subheading" role="heading" aria-level="3">Frederick Douglass, August 1861</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">There was a profound divide in the abolitionist movement on the interpretation of the United States Constitution. William Lloyd Garrison argued that the Constitution was proslavery while James Birney argued that the Constitution was antislavery. America’s African descent abolitionists were also engaged in such a debate. In the State Convention of the Colored Citizens of Ohio held in Columbus in January 1851, African Americans debated and voted on a resolution concerning this subject. Hezekiah Ford Douglas argued that they should renounce the Constitution as proslavery because it was “a guilty compromise with Slavery in order to form the Union.” William Howard Day contended that if the Constitution “was framed to ‘establish justice,’ it, of course, is opposed to injustice; if it says plainly no person shall be deprived of ‘life, liberty, or property, without due process of law’ – I suppose it means it,” Day proclaimed, “and I shall avail myself to benefit of it.” Day argued that instead renouncing the Constitution they should work in league with the Constitution. He declared, “I consider the Constitution the foundation of American liberties, and wrapping myself in the flag of the nation, I would plant myself upon that Constitution, and using the weapons they have given me, I would appeal to the American people for the rights thus guaranteed.” At a vote of 28 to 2, the Convention resolved to work in league with the Constitution to gain equal rights as citizens and to abolish slavery.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In a New York convention held in September 1858, African descent New Yorkers stated that they regarded the Republican Party as the party “most likely than any other” to assist them in securing equity in “the elective franchise.” Identifying themselves as “Radical Abolitionists,” these New Yorkers expressed their support for the Republican Party. Like-minded African Americans across the country also expressed support for the young party. The Republican candidate in the 1856 Presidential election, the party’s first presidential candidate, John C. Fremont was publicly more anti-slavery than Abraham Lincoln the Republicans’ 1860 candidate. Fremont and his running mate William Dayton ran as the “Champions of Freedom.” African Americans believed that in spite of Lincoln’s more moderate public stance that he and his running mate, Hannibal Hamlin, were also “Champions of Freedom.” Frederick Douglass called Lincoln “a radical Republican” who was “fully committed to the doctrine of the ‘irrepressible conflict.'” New York Senator William Seward had articulated that doctrine as a conflict between slavery and freedom which the nation's founders intended freedom to win.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Many Southerners shared Douglass’s opinion of Lincoln. This opinion of Lincoln and his party exacerbated regional tensions fostered by slavery. Thomas Jefferson wrote in 1820 that such tensions established along “a geographical line, coinciding with a marked principle, moral and political,” especially as it pertained to the disposition of new territories as either slave or free, would lead regional leaders to an “act of suicide on themselves and of treason against the hopes of the world.” On December 20, 1860, South Carolina seceded from the Union declaring: “A geographical line has been drawn across the Union, and all the states north of that line have united in the election of a man to the high office of President of the United States, whose opinions and purposes are hostile to slavery.” Like the secessionists of South Carolina, many African Americans believed that Lincoln’s Republican administration would seek to abolish slavery throughout the republic. Douglass wrote that in Lincoln the nation had elected, “if not an Abolitionists, at least an anti-slavery reputation to the Presidency of the United States.” Lincoln, the secessionist declared, was “entrusted with the administration of the common Government, because he has declared that ‘Government cannot endure permanently half slave, half free,’ and that the public mind must rest in the belief that slavery is in the course of ultimate extinction.” Indeed what South Carolina’s secessionists asserted in their “Declaration of the Immediate Causes Which Induce and Justify the Secession of South Carolina from the Federal Union” as the goal of Lincoln’s party was what African Americans hoped was the ultimate objective of the Republican Party, to make the Republic all free.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The 1860 Republican platform was an anti-slavery platform. Declaration number 8 read: “That the normal condition of all the territory of the United States is that of freedom; that as our republican fathers, when they had abolished slavery in all our national territory, ordained that no ‘person should be deprived of life, liberty or property, without due process of law,’ it becomes our duty, by legislation, whenever such legislation is necessary, to maintain this provision of the constitution against all attempts to violate it; and we deny the authority of congress, of a territorial legislature, or of any individuals, to give legal existence to slavery in any territory of the United States.” This declaration was a direct assault on the Kansas-Nebraska Act which left the decision of whether a territory would allow slavery within its borders to the voters of that territory. The declaration also stated clearly that the Republicans viewed it as their duty “by legislation” to ensure that “no ‘person should be deprived of life, liberty or property, without due process of law,’” not by executive order but “by legislation.” Southern secessionists were concerned about the Republican President-elect and the Republicans in Congress.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Congress was not in session when open hostilities began on April 12, 1861, with the firing on Fort Sumter, Charleston Harbor, South Carolina. President Lincoln responded to the national emergency by issuing a proclamation calling for a special secession of Congress to convene on July 4, 1861. In his proclamation, Lincoln also called for 75,000 volunteers from the states “in order to suppress said combinations,” which meant suppress the newly formed Confederate States of America. Maryland was the only slaveholding state that promised troops. Kentucky refused to send volunteers declaring, “Your dispatch is received. In answer, I say emphatically that Kentucky will furnish no troops for the wicked purpose of subduing her sister Southern States.” Missouri’s governor claimed that the call for volunteers was “illegal, unconstitutional, and revolutionary.” He declared, “Not one man will, of the State of Missouri, furnish or carry on such an unholy crusade.” However, the Northern response was enthusiastic with Pennsylvania promising “100,000 men if necessary.” Harper’s Weekly pronounced Lincoln’s proclamation to be “an absolute declaration of war,” and thousands of volunteers were mobilized within a week after Lincoln’s call for volunteers.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:17px; font-weight:700; border-bottom:2px solid #4E6373; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Original Article</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><a href="https://www.battlefields.org/learn/articles/road-emancipation">https://www.battlefields.org/learn/articles/road-emancipation</a></p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:17px; font-weight:700; border-bottom:2px solid #4E6373; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Jones, Hari. "The Road to Emancipation." American Battlefield Trust. September 5, 2012, last modified November 12, 2025. <a href="https://www.battlefields.org/learn/articles/road-emancipation">https://www.battlefields.org/learn/articles/road-emancipation</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Full footnote:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Hari Jones, "The Road to Emancipation," American Battlefield Trust, September 5, 2012, last modified November 12, 2025, <a href="https://www.battlefields.org/learn/articles/road-emancipation">https://www.battlefields.org/learn/articles/road-emancipation</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened footnote:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Jones, "The Road to Emancipation."</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #4E6373; font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 4 · A HOUSE DIVIDED AND REBUILT | HISTORY B17A | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/"><span aria-hidden="true">←</span> Return to the Web Article Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web article archive for Unit 4: A House Divided and Rebuilt, Chapters 13–15, 1830–1877.">
+  <meta name="theme-color" content="#5A4A17">
+  <title>Unit 4 Web Article Archive | A House Divided and Rebuilt</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #5A4A17;
+      --forest-mid: #806A24;
+      --forest-light: #6E5B1D;
+      --coral: #4E6373;
+      --coral-light: #93A7B5;
+      --cream: #F8F5E9;
+      --paper: #FDFBF5;
+      --mint: #EEF1F3;
+      --sage: #D6DCE0;
+      --ink: #3F3410;
+      --muted: #6B6448;
+      --shadow: 0 16px 38px rgba(48, 40, 12, .13);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #6E5A1E;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 92% 5%, rgba(78, 99, 115, .11), transparent 24rem),
+        linear-gradient(145deg, rgba(255,255,255,.5), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    button, input { font: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-hero {
+      position: relative;
+      min-height: 470px;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      padding: 5rem clamp(1.5rem, 7vw, 7rem) 4.5rem;
+      border-bottom: 7px solid var(--coral);
+      background:
+        linear-gradient(115deg, rgba(0,0,0,.13), transparent 60%),
+        var(--forest);
+      color: var(--paper);
+      isolation: isolate;
+    }
+    .archive-hero::after {
+      content: '';
+      position: absolute;
+      inset: 1.2rem;
+      z-index: -1;
+      border: 1px solid rgba(147, 167, 181,.27);
+      pointer-events: none;
+    }
+    .hero-watermark {
+      position: absolute;
+      right: clamp(1rem, 7vw, 7rem);
+      top: -5rem;
+      z-index: -1;
+      color: rgba(255,255,255,.045);
+      font: 700 clamp(22rem, 40vw, 40rem)/1 var(--heading);
+      user-select: none;
+    }
+    .hero-content { max-width: 1040px; text-align: center; }
+    .hero-eyebrow {
+      margin: 0 0 1rem;
+      color: var(--coral-light);
+      font: 700 .72rem/1.4 var(--heading);
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    .archive-hero h1 {
+      max-width: 900px;
+      margin: 0 auto;
+      color: var(--paper);
+      font: 700 clamp(2.3rem, 5.5vw, 5.2rem)/1.08 var(--heading);
+      letter-spacing: .03em;
+      text-wrap: balance;
+    }
+    .hero-subtitle {
+      max-width: 760px;
+      margin: 1.35rem auto 0;
+      color: rgba(253, 251, 245,.88);
+      font: italic 600 clamp(1.15rem, 2vw, 1.45rem)/1.5 var(--body);
+      text-wrap: balance;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .65rem 1.35rem;
+      margin-top: 2.1rem;
+      color: var(--coral-light);
+      font: 700 .65rem/1.4 var(--heading);
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .hero-meta span + span::before { content: '◆'; margin-right: 1.35rem; font-size: .45rem; vertical-align: middle; }
+
+    .chapter-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--sage);
+      background: rgba(253, 251, 245,.96);
+      box-shadow: 0 8px 22px rgba(48, 40, 12,.08);
+      backdrop-filter: blur(12px);
+    }
+    .chapter-nav-inner {
+      width: min(1180px, calc(100% - 2rem));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 66px;
+    }
+    .archive-mark {
+      flex: 0 0 auto;
+      color: var(--forest);
+      font: 700 .7rem var(--heading);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .chapter-links { display: flex; align-items: stretch; align-self: stretch; }
+    .chapter-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: 0 1rem;
+      border-bottom: 3px solid transparent;
+      color: var(--forest);
+      font: 700 .67rem var(--ui);
+      letter-spacing: .04em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .chapter-links a span { color: var(--coral-text); font-family: var(--heading); }
+    .chapter-links a:hover { border-bottom-color: var(--coral); background: var(--mint); }
+
+    main { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; padding: 3.5rem 0 5rem; }
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .intro-card,
+    .citation-card {
+      position: relative;
+      padding: 2.25rem 2.35rem;
+      border: 1px solid var(--coral);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+    .intro-card::after,
+    .citation-card::after {
+      content: '';
+      position: absolute;
+      inset: 7px;
+      border: 1px solid rgba(78, 99, 115,.17);
+      pointer-events: none;
+    }
+    .eyebrow {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 .5rem;
+      color: var(--coral-text);
+      font: 800 .65rem var(--ui);
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .intro-card h2,
+    .citation-card h2 {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 1rem;
+      color: var(--forest);
+      font: 700 clamp(1.5rem, 2.6vw, 2.15rem)/1.2 var(--heading);
+    }
+    .intro-card p,
+    .citation-card p { position: relative; z-index: 1; margin: 0; }
+    .citation-card { background: var(--mint); }
+    .citation-card p + p { margin-top: .85rem; }
+
+    .catalog-tools {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: center;
+      margin: 2.5rem 0 3.2rem;
+      padding: 1.25rem 1.35rem;
+      border: 1px solid var(--sage);
+      background: rgba(253, 251, 245,.82);
+    }
+    .search-wrap { position: relative; }
+    .search-wrap svg {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      width: 19px;
+      transform: translateY(-50%);
+      color: var(--forest-mid);
+      pointer-events: none;
+    }
+    .source-search {
+      width: 100%;
+      padding: .9rem 1rem .9rem 3rem;
+      border: 1px solid var(--sage);
+      background: white;
+      color: var(--ink);
+      font: 600 .85rem var(--ui);
+    }
+    .source-search:focus { border-color: var(--coral); outline: 2px solid rgba(78, 99, 115,.15); }
+    .result-count {
+      min-width: 9rem;
+      margin: 0;
+      color: var(--muted);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .07em;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .chapter-section { margin-top: 4rem; scroll-margin-top: 88px; }
+    .chapter-heading {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 5rem 1fr auto;
+      gap: 1.2rem;
+      align-items: center;
+      min-height: 150px;
+      padding: 1.7rem 2rem;
+      border-top: 5px solid var(--coral);
+      background: var(--forest);
+      color: white;
+    }
+    .chapter-heading::after {
+      content: '';
+      position: absolute;
+      right: -4rem;
+      bottom: -8rem;
+      width: 18rem;
+      height: 18rem;
+      border: 1px solid rgba(147, 167, 181,.22);
+      border-radius: 50%;
+    }
+    .chapter-number {
+      color: rgba(255,255,255,.13);
+      font: 700 5rem/1 var(--heading);
+      text-align: center;
+    }
+    .chapter-heading p { margin: 0 0 .35rem; color: var(--coral-light); font: 700 .67rem var(--ui); letter-spacing: .14em; text-transform: uppercase; }
+    .chapter-heading h2 { margin: 0; color: white; font: 700 clamp(1.35rem, 3vw, 2.25rem)/1.18 var(--heading); text-wrap: balance; }
+    .chapter-count {
+      position: relative;
+      z-index: 1;
+      padding: .5rem .7rem;
+      border: 1px solid rgba(147, 167, 181,.48);
+      color: var(--coral-light);
+      font: 700 .65rem var(--ui);
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+    .source-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .75rem;
+      padding-top: 1rem;
+    }
+    .source-card {
+      display: grid;
+      grid-template-columns: 3.8rem 1fr 1.2rem;
+      gap: .85rem;
+      align-items: start;
+      min-height: 122px;
+      padding: 1.2rem 1.15rem;
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      color: var(--ink);
+      text-decoration: none;
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+    .source-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--coral);
+      box-shadow: 0 10px 24px rgba(48, 40, 12,.11);
+    }
+    .source-card[hidden] { display: none; }
+    .source-code {
+      padding-top: .12rem;
+      color: var(--coral-text);
+      font: 700 .74rem var(--heading);
+      letter-spacing: .025em;
+    }
+    .source-copy { display: flex; min-width: 0; flex-direction: column; }
+    .source-copy strong { color: var(--forest); font: 700 .83rem/1.42 var(--ui); }
+    .source-copy > span { margin-top: .35rem; color: var(--muted); font: italic 1rem/1.4 var(--body); }
+    .source-arrow { color: var(--coral-text); font-size: 1rem; transition: transform .2s ease; }
+    .source-card:hover .source-arrow { transform: translate(2px, -2px); }
+    .chapter-empty { margin: 1rem 0 0; padding: 1.4rem; border: 1px dashed var(--sage); color: var(--muted); text-align: center; }
+    .no-results {
+      margin: 3rem 0;
+      padding: 2rem;
+      border: 1px solid var(--coral-light);
+      background: #F3F5F6;
+      color: var(--forest);
+      text-align: center;
+    }
+    .page-footer {
+      margin-top: 5rem;
+      padding: 1.4rem 0 0;
+      border-top: 1px solid var(--coral);
+      color: var(--muted);
+      font: 700 .63rem var(--ui);
+      letter-spacing: .11em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .back-top {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: var(--forest-mid);
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .archive-hero { min-height: 410px; }
+      .archive-mark { display: none; }
+      .chapter-nav-inner { justify-content: center; }
+      .chapter-links { overflow-x: auto; }
+      .intro-grid { grid-template-columns: 1fr; }
+      .source-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      body { font-size: 18px; }
+      .archive-hero { min-height: 380px; padding: 4rem 1.2rem 3.6rem; }
+      .archive-hero::after { inset: .7rem; }
+      .hero-meta { flex-direction: column; gap: .35rem; }
+      .hero-meta span + span::before { content: ''; margin: 0; }
+      .chapter-nav-inner { width: 100%; }
+      .chapter-links { width: 100%; justify-content: space-around; }
+      .chapter-links a { flex: 1; justify-content: center; padding: 0 .5rem; white-space: nowrap; }
+      .chapter-links a .link-title { display: none; }
+      main { width: min(100% - 1.2rem, 1180px); padding-top: 2rem; }
+      .intro-card, .citation-card { padding: 1.7rem 1.35rem; }
+      .catalog-tools { grid-template-columns: 1fr; }
+      .result-count { min-width: 0; text-align: left; }
+      .chapter-section { scroll-margin-top: 74px; }
+      .chapter-heading { grid-template-columns: 3rem 1fr; min-height: 130px; padding: 1.35rem 1.1rem; }
+      .chapter-number { font-size: 3.5rem; }
+      .chapter-count { grid-column: 2; justify-self: start; }
+      .source-card { grid-template-columns: 3.2rem 1fr 1rem; min-height: 0; padding: 1rem .85rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+    @media print {
+      body { background: white; font-size: 10pt; }
+      .chapter-nav, .catalog-tools, .back-top { display: none !important; }
+      .archive-hero { min-height: 0; padding: .7in; print-color-adjust: exact; }
+      main { width: auto; padding: .35in; }
+      .intro-card, .citation-card, .source-card { box-shadow: none; }
+      .source-grid { grid-template-columns: 1fr 1fr; }
+      .source-card { min-height: 0; break-inside: avoid; }
+      .chapter-section { break-before: page; }
+    }
+    .intro-card p + p { margin-top: .85rem; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to source catalog</a>
+
+  <header class="archive-hero">
+    <div class="hero-watermark" aria-hidden="true">W</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">E Pluribus Unum · Part Four</p>
+      <h1>Web Article Archive</h1>
+      <p class="hero-subtitle">Scholarly and institutional web articles on western expansion, secession, the Civil War, and Reconstruction.</p>
+      <div class="hero-meta">
+        <span>Unit 4 · A House Divided and Rebuilt</span>
+        <span>Chapters 13–15</span>
+        <span>1830–1877</span>
+        <span>104 articles</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="chapter-nav" aria-label="Chapter navigation">
+    <div class="chapter-nav-inner">
+      <span class="archive-mark">Web Articles</span>
+      <div class="chapter-links"><a href="#chapter-13"><span>13</span><span class="link-title">Western Expansion and Southern Secession</span></a><a href="#chapter-14"><span>14</span><span class="link-title">The War of the Union</span></a><a href="#chapter-15"><span>15</span><span class="link-title">The Era of Reconstruction</span></a></div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="intro-grid" aria-label="Reader guidance">
+      <article class="intro-card">
+        <p class="eyebrow">Reading the excerpts</p>
+        <h2>Read the article in its own words.</h2>
+        <p>Each excerpt reproduces complete published paragraphs, normally 600–1,200 words; a shorter article is reproduced in full. A bracketed notice marks a move between separate parts of an article, and no bridging language has been added.</p>
+        <p>The panel at the top of each article lists every essay prompt it serves and whether it supports, challenges, or qualifies that line of argument.</p>
+      </article>
+      <article class="citation-card">
+        <p class="eyebrow">Citing these readings</p>
+        <h2>Cite the web article.</h2>
+        <p>Use the full footnote citation the first time you cite an article and the shortened form afterward. Cite the web article, not a reader page number, and include only works you actually use in your bibliography.</p>
+        <p>Web pages can move or change. Keep the access date shown in the citation, and use this excerpt if a live page later becomes unavailable.</p>
+      </article>
+    </section>
+
+    <section class="catalog-tools" aria-label="Search the source catalog">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+        <label class="skip-link" for="source-search">Search web articles</label>
+        <input id="source-search" class="source-search" type="search" autocomplete="off" placeholder="Search by article, author, website, or code…">
+      </div>
+      <p id="result-count" class="result-count" aria-live="polite">104 articles</p>
+    </section>
+
+    <p id="no-results" class="no-results" hidden>No web articles match that search. Try a shorter title, author surname, date, or source code.</p>
+
+
+
+      <section class="chapter-section" id="chapter-13" data-chapter-section aria-labelledby="chapter-13-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">13</div>
+          <div>
+            <p>Chapter 13 · 1830–1861</p>
+            <h2 id="chapter-13-title">Western Expansion and Southern Secession</h2>
+          </div>
+          <span class="chapter-count">40 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.01_Dragoon_Expeditions.html" data-source-card data-search="w13.1 the dragoon expeditions national park service, fort scott national historic site · national park service">
+              <span class="source-code">W13.1</span>
+              <span class="source-copy">
+                <strong>The Dragoon Expeditions</strong>
+                <span>National Park Service, Fort Scott National Historic Site · <i>National Park Service</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.02_Permanent_Indian_Frontier.html" data-source-card data-search="w13.2 permanent indian frontier national park service, fort scott national historic site · national park service">
+              <span class="source-code">W13.2</span>
+              <span class="source-copy">
+                <strong>Permanent Indian Frontier</strong>
+                <span>National Park Service, Fort Scott National Historic Site · <i>National Park Service</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.03_Oregon_Territory_1846.html" data-source-card data-search="w13.3 the oregon territory, 1846 office of the historian, u.s. department of state">
+              <span class="source-code">W13.3</span>
+              <span class="source-copy">
+                <strong>The Oregon Territory, 1846</strong>
+                <span>Office of the Historian, U.S. Department of State</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.04_Oregon_Trail.html" data-source-card data-search="w13.4 oregon trail william l. lang · the oregon encyclopedia, oregon historical society">
+              <span class="source-code">W13.4</span>
+              <span class="source-copy">
+                <strong>Oregon Trail</strong>
+                <span>William L. Lang · <i>The Oregon Encyclopedia, Oregon Historical Society</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.05_Religious_Origins_Manifest_Destiny.html" data-source-card data-search="w13.5 the religious origins of manifest destiny donald m. scott · teacherserve, national humanities center">
+              <span class="source-code">W13.5</span>
+              <span class="source-copy">
+                <strong>The Religious Origins of Manifest Destiny</strong>
+                <span>Donald M. Scott · <i>TeacherServe, National Humanities Center</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.06_Imperialism_Migration.html" data-source-card data-search="w13.6 imperialism and migration gary y. okihiro · national park service, finding a path forward: asian american and pacific islander national historic landmarks theme study">
+              <span class="source-code">W13.6</span>
+              <span class="source-copy">
+                <strong>Imperialism and Migration</strong>
+                <span>Gary Y. Okihiro · <i>National Park Service, Finding a Path Forward: Asian American and Pacific Islander National Historic Landmarks Theme Study</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.07_Invention_Mexico_Mexicans.html" data-source-card data-search="w13.7 invention of mexico and mexicans maría daniela thurber, editor and emmanuel ortega rodríguez, contributor · library of congress">
+              <span class="source-code">W13.7</span>
+              <span class="source-copy">
+                <strong>Invention of Mexico and Mexicans</strong>
+                <span>María Daniela Thurber, editor and Emmanuel Ortega Rodríguez, contributor · <i>Library of Congress</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.08_Latino_Crucible.html" data-source-card data-search="w13.8 the latino crucible: its origins in 19th-century wars, revolutions, and empire ramón a. gutiérrez · national park service">
+              <span class="source-code">W13.8</span>
+              <span class="source-copy">
+                <strong>The Latino Crucible: Its Origins in 19th-Century Wars, Revolutions, and Empire</strong>
+                <span>Ramón A. Gutiérrez · <i>National Park Service</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.09_United_States_Maritime_Expansion_Across_Pacific_During.html" data-source-card data-search="w13.9 united states maritime expansion across the pacific during the 19th century office of the historian, u.s. department of state">
+              <span class="source-code">W13.9</span>
+              <span class="source-copy">
+                <strong>United States Maritime Expansion across the Pacific during the 19th Century</strong>
+                <span>Office of the Historian, U.S. Department of State</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.10_Mexican_Texas.html" data-source-card data-search="w13.10 mexican texas arnoldo de león, revised by jesús f. de la teja · handbook of texas online, texas state historical association">
+              <span class="source-code">W13.10</span>
+              <span class="source-copy">
+                <strong>Mexican Texas</strong>
+                <span>Arnoldo De León, revised by Jesús F. de la Teja · <i>Handbook of Texas Online, Texas State Historical Association</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.11_Law_April_6_1830.html" data-source-card data-search="w13.11 law of april 6, 1830 curtis bishop · handbook of texas online, texas state historical association">
+              <span class="source-code">W13.11</span>
+              <span class="source-copy">
+                <strong>Law of April 6, 1830</strong>
+                <span>Curtis Bishop · <i>Handbook of Texas Online, Texas State Historical Association</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.12_Texas_Revolution.html" data-source-card data-search="w13.12 texas revolution eugene c. barker and james w. pohl, revised by mary l. scheer · handbook of texas online, texas state historical association">
+              <span class="source-code">W13.12</span>
+              <span class="source-copy">
+                <strong>Texas Revolution</strong>
+                <span>Eugene C. Barker and James W. Pohl, revised by Mary L. Scheer · <i>Handbook of Texas Online, Texas State Historical Association</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.13_Slavery.html" data-source-card data-search="w13.13 slavery randolph b. campbell · handbook of texas online, texas state historical association">
+              <span class="source-code">W13.13</span>
+              <span class="source-copy">
+                <strong>Slavery</strong>
+                <span>Randolph B. Campbell · <i>Handbook of Texas Online, Texas State Historical Association</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.14_James_K_Polk.html" data-source-card data-search="w13.14 james k. polk: foreign affairs john c. pinheiro · miller center, university of virginia">
+              <span class="source-code">W13.14</span>
+              <span class="source-copy">
+                <strong>James K. Polk: Foreign Affairs</strong>
+                <span>John C. Pinheiro · <i>Miller Center, University of Virginia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.15_Brief_Overview_Mexican_American_War_1846_1848.html" data-source-card data-search="w13.15 a brief overview of the mexican-american war, 1846-1848 american battlefield trust">
+              <span class="source-code">W13.15</span>
+              <span class="source-copy">
+                <strong>A Brief Overview of the Mexican-American War, 1846-1848</strong>
+                <span>American Battlefield Trust</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.16_Mexican_American_War.html" data-source-card data-search="w13.16 the mexican-american war national park service">
+              <span class="source-code">W13.16</span>
+              <span class="source-copy">
+                <strong>The Mexican-American War</strong>
+                <span>National Park Service</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.17_Fight_Texas.html" data-source-card data-search="w13.17 a fight for texas national park service, palo alto battlefield national historical park · national park service">
+              <span class="source-code">W13.17</span>
+              <span class="source-copy">
+                <strong>A Fight for Texas</strong>
+                <span>National Park Service, Palo Alto Battlefield National Historical Park · <i>National Park Service</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.18_Annexation_Texas_Mexican_American_War_Treaty_Guadalupe.html" data-source-card data-search="w13.18 the annexation of texas, the mexican-american war, and the treaty of guadalupe-hidalgo, 1845-1848 office of the historian, u.s. department of state">
+              <span class="source-code">W13.18</span>
+              <span class="source-copy">
+                <strong>The Annexation of Texas, the Mexican-American War, and the Treaty of Guadalupe-Hidalgo, 1845-1848</strong>
+                <span>Office of the Historian, U.S. Department of State</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.19_Mexican_American_War.html" data-source-card data-search="w13.19 the mexican-american war pbs american experience">
+              <span class="source-code">W13.19</span>
+              <span class="source-copy">
+                <strong>The Mexican-American War</strong>
+                <span>PBS American Experience</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.20_Comanche_Indians.html" data-source-card data-search="w13.20 comanche indians carol a. lipscomb · handbook of texas online, texas state historical association">
+              <span class="source-code">W13.20</span>
+              <span class="source-copy">
+                <strong>Comanche Indians</strong>
+                <span>Carol A. Lipscomb · <i>Handbook of Texas Online, Texas State Historical Association</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.21_1850.html" data-source-card data-search="w13.21 1850: one hundred and fifty years ago american heritage">
+              <span class="source-code">W13.21</span>
+              <span class="source-copy">
+                <strong>1850: One Hundred and Fifty Years Ago</strong>
+                <span>American Heritage</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.22_Americas_Great_Debate_Saved_Union_War.html" data-source-card data-search="w13.22 &#x27;america&#x27;s great debate&#x27; saved union from war fergus m. bordewich (interviewed by neal conan) · npr">
+              <span class="source-code">W13.22</span>
+              <span class="source-copy">
+                <strong>'America's Great Debate' Saved Union From War</strong>
+                <span>Fergus M. Bordewich (interviewed by Neal Conan) · <i>NPR</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.23_Clays_Last_Compromise.html" data-source-card data-search="w13.23 clay&#x27;s last compromise senate historical office · united states senate, art and history">
+              <span class="source-code">W13.23</span>
+              <span class="source-copy">
+                <strong>Clay's Last Compromise</strong>
+                <span>Senate Historical Office · <i>United States Senate, Art and History</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.24_Nashville_Convention.html" data-source-card data-search="w13.24 nashville convention thelma jennings · tennessee encyclopedia, tennessee historical society">
+              <span class="source-code">W13.24</span>
+              <span class="source-copy">
+                <strong>Nashville Convention</strong>
+                <span>Thelma Jennings · <i>Tennessee Encyclopedia, Tennessee Historical Society</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.25_Compromise_1850.html" data-source-card data-search="w13.25 compromise of 1850: a temporary peace american battlefield trust">
+              <span class="source-code">W13.25</span>
+              <span class="source-copy">
+                <strong>Compromise of 1850: A Temporary Peace</strong>
+                <span>American Battlefield Trust</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.26_Road_Secession_Part_2.html" data-source-card data-search="w13.26 road to secession, part 2 national park service, antietam national battlefield · national park service">
+              <span class="source-code">W13.26</span>
+              <span class="source-copy">
+                <strong>Road to Secession, Part 2</strong>
+                <span>National Park Service, Antietam National Battlefield · <i>National Park Service</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.27_Civil_War.html" data-source-card data-search="w13.27 the civil war: the senate&#x27;s story senate historical office · united states senate, art and history">
+              <span class="source-code">W13.27</span>
+              <span class="source-copy">
+                <strong>The Civil War: The Senate's Story</strong>
+                <span>Senate Historical Office · <i>United States Senate, Art and History</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.28_Fugitive_Slave_Laws.html" data-source-card data-search="w13.28 fugitive slave laws earl m. maltz · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W13.28</span>
+              <span class="source-copy">
+                <strong>Fugitive Slave Laws</strong>
+                <span>Earl M. Maltz · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.29_Introduction.html" data-source-card data-search="w13.29 introduction matthew pinsker · house divided project, dickinson college">
+              <span class="source-code">W13.29</span>
+              <span class="source-copy">
+                <strong>Introduction</strong>
+                <span>Matthew Pinsker · <i>House Divided Project, Dickinson College</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.30_Fugitive_Slave_Laws_Boston.html" data-source-card data-search="w13.30 the fugitive slave laws and boston national park service, boston african american national historic site · national park service">
+              <span class="source-code">W13.30</span>
+              <span class="source-copy">
+                <strong>The Fugitive Slave Laws and Boston</strong>
+                <span>National Park Service, Boston African American National Historic Site · <i>National Park Service</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.31_Secession.html" data-source-card data-search="w13.31 secession anthony gene carey · new georgia encyclopedia, georgia humanities / university of georgia press">
+              <span class="source-code">W13.31</span>
+              <span class="source-copy">
+                <strong>Secession</strong>
+                <span>Anthony Gene Carey · <i>New Georgia Encyclopedia, Georgia Humanities / University of Georgia Press</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.32_Secession.html" data-source-card data-search="w13.32 secession essential civil war curriculum">
+              <span class="source-code">W13.32</span>
+              <span class="source-copy">
+                <strong>Secession</strong>
+                <span>Essential Civil War Curriculum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.33_Georgia_Secession_Convention_1861.html" data-source-card data-search="w13.33 georgia secession convention of 1861 george justice · new georgia encyclopedia">
+              <span class="source-code">W13.33</span>
+              <span class="source-copy">
+                <strong>Georgia Secession Convention of 1861</strong>
+                <span>George Justice · <i>New Georgia Encyclopedia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.34_Why_Non_Slaveholding_Southerners_Fought.html" data-source-card data-search="w13.34 why non-slaveholding southerners fought gordon c. rhea · american battlefield trust">
+              <span class="source-code">W13.34</span>
+              <span class="source-copy">
+                <strong>Why Non-Slaveholding Southerners Fought</strong>
+                <span>Gordon C. Rhea · <i>American Battlefield Trust</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.35_Secession.html" data-source-card data-search="w13.35 secession j. mills thornton iii · encyclopedia of alabama, alabama humanities alliance / auburn university">
+              <span class="source-code">W13.35</span>
+              <span class="source-copy">
+                <strong>Secession</strong>
+                <span>J. Mills Thornton III · <i>Encyclopedia of Alabama, Alabama Humanities Alliance / Auburn University</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.36_Reasons_Secession.html" data-source-card data-search="w13.36 reasons for secession john pierce · american battlefield trust">
+              <span class="source-code">W13.36</span>
+              <span class="source-copy">
+                <strong>Reasons for Secession</strong>
+                <span>John Pierce · <i>American Battlefield Trust</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.37_States_Rights.html" data-source-card data-search="w13.37 states&#x27; rights michael demarco · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W13.37</span>
+              <span class="source-copy">
+                <strong>States' Rights</strong>
+                <span>Michael DeMarco · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.38_Mississippi_Secession.html" data-source-card data-search="w13.38 mississippi secession national park service, gulf islands national seashore · national park service">
+              <span class="source-code">W13.38</span>
+              <span class="source-copy">
+                <strong>Mississippi Secession</strong>
+                <span>National Park Service, Gulf Islands National Seashore · <i>National Park Service</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.39_Secession.html" data-source-card data-search="w13.39 secession walter l. buenger · handbook of texas online, texas state historical association">
+              <span class="source-code">W13.39</span>
+              <span class="source-copy">
+                <strong>Secession</strong>
+                <span>Walter L. Buenger · <i>Handbook of Texas Online, Texas State Historical Association</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W13.40_Civil_War_Alabama.html" data-source-card data-search="w13.40 civil war in alabama g. ward hubbs · encyclopedia of alabama">
+              <span class="source-code">W13.40</span>
+              <span class="source-copy">
+                <strong>Civil War in Alabama</strong>
+                <span>G. Ward Hubbs · <i>Encyclopedia of Alabama</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+
+      <section class="chapter-section" id="chapter-14" data-chapter-section aria-labelledby="chapter-14-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">14</div>
+          <div>
+            <p>Chapter 14 · 1861–1865</p>
+            <h2 id="chapter-14-title">The War of the Union</h2>
+          </div>
+          <span class="chapter-count">33 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.01_Ulysses_S_Grant.html" data-source-card data-search="w14.1 ulysses s. grant (1822–1885) a. wilson greene · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.1</span>
+              <span class="source-copy">
+                <strong>Ulysses S. Grant (1822–1885)</strong>
+                <span>A. Wilson Greene · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.02_Causes_Confederate_Defeat_Civil_War.html" data-source-card data-search="w14.2 causes of confederate defeat in the civil war aaron sheehan-dean · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.2</span>
+              <span class="source-copy">
+                <strong>Causes of Confederate Defeat in the Civil War</strong>
+                <span>Aaron Sheehan-Dean · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.03_Anaconda_Plan.html" data-source-card data-search="w14.3 anaconda plan brendan wolfe · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.3</span>
+              <span class="source-copy">
+                <strong>Anaconda Plan</strong>
+                <span>Brendan Wolfe · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.04_Economics_Civil_War.html" data-source-card data-search="w14.4 the economics of the civil war roger l. ransom · eh.net encyclopedia, economic history association">
+              <span class="source-code">W14.4</span>
+              <span class="source-copy">
+                <strong>The Economics of the Civil War</strong>
+                <span>Roger L. Ransom · <i>EH.Net Encyclopedia, Economic History Association</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.05_Confederate_Morale_During_Civil_War.html" data-source-card data-search="w14.5 confederate morale during the civil war aaron sheehan-dean · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.5</span>
+              <span class="source-copy">
+                <strong>Confederate Morale during the Civil War</strong>
+                <span>Aaron Sheehan-Dean · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.06_Desertion_During_Civil_War.html" data-source-card data-search="w14.6 desertion (confederate) during the civil war aaron sheehan-dean · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.6</span>
+              <span class="source-copy">
+                <strong>Desertion (Confederate) during the Civil War</strong>
+                <span>Aaron Sheehan-Dean · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.07_Unionism.html" data-source-card data-search="w14.7 unionism margaret m. storey · encyclopedia of alabama">
+              <span class="source-code">W14.7</span>
+              <span class="source-copy">
+                <strong>Unionism</strong>
+                <span>Margaret M. Storey · <i>Encyclopedia of Alabama</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.08_Confederate_Impressment_During_Civil_War.html" data-source-card data-search="w14.8 confederate impressment during the civil war mary a. decredico · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.8</span>
+              <span class="source-copy">
+                <strong>Confederate Impressment During the Civil War</strong>
+                <span>Mary A. DeCredico · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.09_Poverty_Poor_Relief_During_Civil_War.html" data-source-card data-search="w14.9 poverty and poor relief during the civil war paul d. escott · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.9</span>
+              <span class="source-copy">
+                <strong>Poverty and Poor Relief during the Civil War</strong>
+                <span>Paul D. Escott · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.10_Abolition_Slavery_Virginia.html" data-source-card data-search="w14.10 the abolition of slavery in virginia brent tarter · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.10</span>
+              <span class="source-copy">
+                <strong>The Abolition of Slavery in Virginia</strong>
+                <span>Brent Tarter · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.11_Thirteenth_Amendment_U_S_Constitution.html" data-source-card data-search="w14.11 the thirteenth amendment to the u.s. constitution brent tarter · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.11</span>
+              <span class="source-copy">
+                <strong>The Thirteenth Amendment to the U.S. Constitution</strong>
+                <span>Brent Tarter · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.12_Road_Emancipation.html" data-source-card data-search="w14.12 the road to emancipation hari jones · american battlefield trust">
+              <span class="source-code">W14.12</span>
+              <span class="source-copy">
+                <strong>The Road to Emancipation</strong>
+                <span>Hari Jones · <i>American Battlefield Trust</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.13_Slavery_During_Civil_War.html" data-source-card data-search="w14.13 slavery during the civil war jaime amanda martinez · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.13</span>
+              <span class="source-copy">
+                <strong>Slavery during the Civil War</strong>
+                <span>Jaime Amanda Martinez · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.14_Fort_Monroe_During_Civil_War.html" data-source-card data-search="w14.14 fort monroe during the civil war brian matthew jordan · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.14</span>
+              <span class="source-copy">
+                <strong>Fort Monroe during the Civil War</strong>
+                <span>Brian Matthew Jordan · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.15_Self_Emancipation.html" data-source-card data-search="w14.15 self-emancipation: the act of freeing oneself from slavery steward henderson · american battlefield trust">
+              <span class="source-code">W14.15</span>
+              <span class="source-copy">
+                <strong>Self-Emancipation: The Act of Freeing Oneself from Slavery</strong>
+                <span>Steward Henderson · <i>American Battlefield Trust</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.16_Refugees_During_Civil_War.html" data-source-card data-search="w14.16 refugees during the civil war susanna michele lee · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.16</span>
+              <span class="source-copy">
+                <strong>Refugees during the Civil War</strong>
+                <span>Susanna Michele Lee · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.17_Benjamin_F_Butler.html" data-source-card data-search="w14.17 benjamin f. butler (1818–1893) michael thomas smith · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.17</span>
+              <span class="source-copy">
+                <strong>Benjamin F. Butler (1818–1893)</strong>
+                <span>Michael Thomas Smith · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.18_Virginia_Soldiers_During_Civil_War.html" data-source-card data-search="w14.18 virginia soldiers (confederate) during the civil war aaron sheehan-dean · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.18</span>
+              <span class="source-copy">
+                <strong>Virginia Soldiers (Confederate) during the Civil War</strong>
+                <span>Aaron Sheehan-Dean · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.19_Alternative_Histories.html" data-source-card data-search="w14.19 alternative histories: integrating drafted men into the military narrative james marten · muster, journal of the civil war era">
+              <span class="source-code">W14.19</span>
+              <span class="source-copy">
+                <strong>Alternative Histories: Integrating Drafted Men into the Military Narrative</strong>
+                <span>James Marten · <i>Muster, Journal of the Civil War Era</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.20_Family_Life_During_Civil_War.html" data-source-card data-search="w14.20 family life during the civil war amy murrell taylor · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.20</span>
+              <span class="source-copy">
+                <strong>Family Life during the Civil War</strong>
+                <span>Amy Murrell Taylor · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.21_South_Side_Railroad_During_Civil_War.html" data-source-card data-search="w14.21 south side railroad during the civil war william r. feeney · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.21</span>
+              <span class="source-copy">
+                <strong>South Side Railroad during the Civil War</strong>
+                <span>William R. Feeney · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.22_Guerrilla_Warfare_Virginia_During_Civil_War.html" data-source-card data-search="w14.22 guerrilla warfare in virginia during the civil war daniel e. sutherland · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.22</span>
+              <span class="source-copy">
+                <strong>Guerrilla Warfare in Virginia during the Civil War</strong>
+                <span>Daniel E. Sutherland · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.23_Future_Civil_War_Era_Studies.html" data-source-card data-search="w14.23 the future of civil war era studies: military history barton a. myers · journal of the civil war era, forum essay">
+              <span class="source-code">W14.23</span>
+              <span class="source-copy">
+                <strong>The Future of Civil War Era Studies: Military History</strong>
+                <span>Barton A. Myers · <i>Journal of the Civil War Era, forum essay</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.24_Shermans_March_Sea.html" data-source-card data-search="w14.24 sherman&#x27;s march to the sea anne j. bailey · new georgia encyclopedia">
+              <span class="source-code">W14.24</span>
+              <span class="source-copy">
+                <strong>Sherman's March to the Sea</strong>
+                <span>Anne J. Bailey · <i>New Georgia Encyclopedia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.25_Hard_War_Virginia_During_Civil_War.html" data-source-card data-search="w14.25 hard war in virginia during the civil war jennifer m. murray · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.25</span>
+              <span class="source-copy">
+                <strong>Hard War in Virginia during the Civil War</strong>
+                <span>Jennifer M. Murray · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.26_Shenandoah_Valley_During_Civil_War.html" data-source-card data-search="w14.26 shenandoah valley during the civil war paul christopher anderson · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.26</span>
+              <span class="source-copy">
+                <strong>Shenandoah Valley during the Civil War</strong>
+                <span>Paul Christopher Anderson · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.27_Richmond_Bread_Riot.html" data-source-card data-search="w14.27 richmond bread riot mary a. decredico · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.27</span>
+              <span class="source-copy">
+                <strong>Richmond Bread Riot</strong>
+                <span>Mary A. DeCredico · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.28_Women_During_Civil_War.html" data-source-card data-search="w14.28 women during the civil war aerika a. wright · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.28</span>
+              <span class="source-copy">
+                <strong>Women during the Civil War</strong>
+                <span>Aerika A. Wright · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.29_Future_Civil_War_Era_Studies.html" data-source-card data-search="w14.29 the future of civil war era studies: northern women judith giesberg · journal of the civil war era, forum essay">
+              <span class="source-code">W14.29</span>
+              <span class="source-copy">
+                <strong>The Future of Civil War Era Studies: Northern Women</strong>
+                <span>Judith Giesberg · <i>Journal of the Civil War Era, forum essay</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.30_Womens_Rights_Reconstruction.html" data-source-card data-search="w14.30 women&#x27;s rights and reconstruction lisa tetrault · journal of the civil war era, forum essay">
+              <span class="source-code">W14.30</span>
+              <span class="source-copy">
+                <strong>Women's Rights and Reconstruction</strong>
+                <span>Lisa Tetrault · <i>Journal of the Civil War Era, forum essay</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.31_Female_Nurses_During_Civil_War.html" data-source-card data-search="w14.31 female nurses during the civil war paige gibbons backus · american battlefield trust">
+              <span class="source-code">W14.31</span>
+              <span class="source-copy">
+                <strong>Female Nurses During the Civil War</strong>
+                <span>Paige Gibbons Backus · <i>American Battlefield Trust</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.32_Civil_War_Widows.html" data-source-card data-search="w14.32 civil war widows robert c. kenzer · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W14.32</span>
+              <span class="source-copy">
+                <strong>Civil War Widows</strong>
+                <span>Robert C. Kenzer · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W14.33_Future_Civil_War_Era_Studies.html" data-source-card data-search="w14.33 the future of civil war era studies: the southern home front anne e. marshall · journal of the civil war era, forum essay">
+              <span class="source-code">W14.33</span>
+              <span class="source-copy">
+                <strong>The Future of Civil War Era Studies: The Southern Home Front</strong>
+                <span>Anne E. Marshall · <i>Journal of the Civil War Era, forum essay</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+
+      <section class="chapter-section" id="chapter-15" data-chapter-section aria-labelledby="chapter-15-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">15</div>
+          <div>
+            <p>Chapter 15 · 1865–1877</p>
+            <h2 id="chapter-15-title">The Era of Reconstruction</h2>
+          </div>
+          <span class="chapter-count">31 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.01_Reconstruction_Part_IV.html" data-source-card data-search="w15.1 reconstruction, part iv: the end of reconstruction and the return of democratic control allen w. trelease · ncpedia, encyclopedia of north carolina, unc press">
+              <span class="source-code">W15.1</span>
+              <span class="source-copy">
+                <strong>Reconstruction, Part IV: The End of Reconstruction and the Return of Democratic Control</strong>
+                <span>Allen W. Trelease · <i>NCpedia, Encyclopedia of North Carolina, UNC Press</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.02_Reconstruction.html" data-source-card data-search="w15.2 reconstruction carl h. moneyhon · handbook of texas online, texas state historical association">
+              <span class="source-code">W15.2</span>
+              <span class="source-copy">
+                <strong>Reconstruction</strong>
+                <span>Carl H. Moneyhon · <i>Handbook of Texas Online, Texas State Historical Association</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.03_Reconstruction.html" data-source-card data-search="w15.3 reconstruction jason phillips · mississippi encyclopedia, center for study of southern culture, university of mississippi">
+              <span class="source-code">W15.3</span>
+              <span class="source-copy">
+                <strong>Reconstruction</strong>
+                <span>Jason Phillips · <i>Mississippi Encyclopedia, Center for Study of Southern Culture, University of Mississippi</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.04_Ulysses_S_Grant.html" data-source-card data-search="w15.4 ulysses s. grant: domestic affairs joan waugh · miller center, university of virginia">
+              <span class="source-code">W15.4</span>
+              <span class="source-copy">
+                <strong>Ulysses S. Grant: Domestic Affairs</strong>
+                <span>Joan Waugh · <i>Miller Center, University of Virginia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.05_Ku_Klux_Klan_Virginia.html" data-source-card data-search="w15.5 ku klux klan in virginia john t. kneebone · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W15.5</span>
+              <span class="source-copy">
+                <strong>Ku Klux Klan in Virginia</strong>
+                <span>John T. Kneebone · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.06_Ku_Klux_Klan_Alabama_During_Reconstruction_Era.html" data-source-card data-search="w15.6 ku klux klan in alabama during the reconstruction era keith s. hébert · encyclopedia of alabama">
+              <span class="source-code">W15.6</span>
+              <span class="source-copy">
+                <strong>Ku Klux Klan in Alabama during the Reconstruction Era</strong>
+                <span>Keith S. Hébert · <i>Encyclopedia of Alabama</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.07_Reconstruction_Alabama.html" data-source-card data-search="w15.7 reconstruction in alabama michael w. fitzgerald · encyclopedia of alabama">
+              <span class="source-code">W15.7</span>
+              <span class="source-copy">
+                <strong>Reconstruction in Alabama</strong>
+                <span>Michael W. Fitzgerald · <i>Encyclopedia of Alabama</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.08_Civil_War_State_Building.html" data-source-card data-search="w15.8 the civil war and state-building: a reconsideration gary gerstle · journal of the civil war era, forum essay">
+              <span class="source-code">W15.8</span>
+              <span class="source-copy">
+                <strong>The Civil War and State-Building: A Reconsideration</strong>
+                <span>Gary Gerstle · <i>Journal of the Civil War Era, forum essay</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.09_Fifteenth_Amendment_U_S_Constitution.html" data-source-card data-search="w15.9 fifteenth amendment to the u.s. constitution brent tarter · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W15.9</span>
+              <span class="source-copy">
+                <strong>Fifteenth Amendment to the U.S. Constitution</strong>
+                <span>Brent Tarter · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.10_Reconstruction_Part_III.html" data-source-card data-search="w15.10 reconstruction, part iii: statewide changes and achievements during reconstruction allen w. trelease · ncpedia, encyclopedia of north carolina, unc press">
+              <span class="source-code">W15.10</span>
+              <span class="source-copy">
+                <strong>Reconstruction, Part III: Statewide Changes and Achievements during Reconstruction</strong>
+                <span>Allen W. Trelease · <i>NCpedia, Encyclopedia of North Carolina, UNC Press</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.11_Birthright_Citizenship_Reconstructions_Unfinished_Revolution.html" data-source-card data-search="w15.11 birthright citizenship and reconstruction&#x27;s unfinished revolution martha s. jones · journal of the civil war era, forum essay">
+              <span class="source-code">W15.11</span>
+              <span class="source-copy">
+                <strong>Birthright Citizenship and Reconstruction's Unfinished Revolution</strong>
+                <span>Martha S. Jones · <i>Journal of the Civil War Era, forum essay</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.12_Fourteenth_Amendment_U_S_Constitution.html" data-source-card data-search="w15.12 fourteenth amendment to the u.s. constitution brent tarter · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W15.12</span>
+              <span class="source-copy">
+                <strong>Fourteenth Amendment to the U.S. Constitution</strong>
+                <span>Brent Tarter · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.13_Reasons_Hope.html" data-source-card data-search="w15.13 reasons for hope: ketanji brown jackson, civil war era history, and the supreme court&#x27;s struggle over the second founding daniel w. crofts · muster, journal of the civil war era">
+              <span class="source-code">W15.13</span>
+              <span class="source-copy">
+                <strong>Reasons for Hope: Ketanji Brown Jackson, Civil War Era History, and the Supreme Court's Struggle over the Second Founding</strong>
+                <span>Daniel W. Crofts · <i>Muster, Journal of the Civil War Era</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.14_Reconstruction.html" data-source-card data-search="w15.14 reconstruction robert tracy mckenzie · tennessee encyclopedia, tennessee historical society">
+              <span class="source-code">W15.14</span>
+              <span class="source-copy">
+                <strong>Reconstruction</strong>
+                <span>Robert Tracy McKenzie · <i>Tennessee Encyclopedia, Tennessee Historical Society</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.15_Vagrancy_Act_1866.html" data-source-card data-search="w15.15 vagrancy act of 1866 brent tarter · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W15.15</span>
+              <span class="source-copy">
+                <strong>Vagrancy Act of 1866</strong>
+                <span>Brent Tarter · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.16_Sharecropping.html" data-source-card data-search="w15.16 sharecropping karin l. zipf · ncpedia, encyclopedia of north carolina, unc press">
+              <span class="source-code">W15.16</span>
+              <span class="source-copy">
+                <strong>Sharecropping</strong>
+                <span>Karin L. Zipf · <i>NCpedia, Encyclopedia of North Carolina, UNC Press</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.17_Sharecropping.html" data-source-card data-search="w15.17 sharecropping ronald l. f. davis · mississippi encyclopedia">
+              <span class="source-code">W15.17</span>
+              <span class="source-copy">
+                <strong>Sharecropping</strong>
+                <span>Ronald L. F. Davis · <i>Mississippi Encyclopedia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.18_Political_History.html" data-source-card data-search="w15.18 political history thomas c. holt · journal of the civil war era, forum essay">
+              <span class="source-code">W15.18</span>
+              <span class="source-copy">
+                <strong>Political History</strong>
+                <span>Thomas C. Holt · <i>Journal of the Civil War Era, forum essay</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.19_African_Americans_Politics_Virginia.html" data-source-card data-search="w15.19 african americans and politics in virginia (1865–1902) brent tarter · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W15.19</span>
+              <span class="source-copy">
+                <strong>African Americans and Politics in Virginia (1865–1902)</strong>
+                <span>Brent Tarter · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.20_Freedmens_Bureau_Alabama.html" data-source-card data-search="w15.20 freedmen&#x27;s bureau in alabama christopher a. nordmann · encyclopedia of alabama">
+              <span class="source-code">W15.20</span>
+              <span class="source-copy">
+                <strong>Freedmen's Bureau in Alabama</strong>
+                <span>Christopher A. Nordmann · <i>Encyclopedia of Alabama</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.21_Union_League_Alabama.html" data-source-card data-search="w15.21 union league of alabama michael w. fitzgerald · encyclopedia of alabama">
+              <span class="source-code">W15.21</span>
+              <span class="source-copy">
+                <strong>Union League of Alabama</strong>
+                <span>Michael W. Fitzgerald · <i>Encyclopedia of Alabama</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.22_Freedmens_Bureau.html" data-source-card data-search="w15.22 freedmen&#x27;s bureau cecil harper, jr. · handbook of texas online, texas state historical association">
+              <span class="source-code">W15.22</span>
+              <span class="source-copy">
+                <strong>Freedmen's Bureau</strong>
+                <span>Cecil Harper, Jr. · <i>Handbook of Texas Online, Texas State Historical Association</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.23_Freedmens_Education_Virginia_18611870.html" data-source-card data-search="w15.23 freedmen&#x27;s education in virginia, 1861–1870 ronald e. butchart · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W15.23</span>
+              <span class="source-copy">
+                <strong>Freedmen's Education in Virginia, 1861–1870</strong>
+                <span>Ronald E. Butchart · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.24_African_American_Churches_Virginia.html" data-source-card data-search="w15.24 african american churches in virginia (1865–1900) william e. montgomery · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W15.24</span>
+              <span class="source-copy">
+                <strong>African American Churches in Virginia (1865–1900)</strong>
+                <span>William E. Montgomery · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.25_Union_League.html" data-source-card data-search="w15.25 union league louis p. towles · ncpedia, encyclopedia of north carolina, unc press">
+              <span class="source-code">W15.25</span>
+              <span class="source-copy">
+                <strong>Union League</strong>
+                <span>Louis P. Towles · <i>NCpedia, Encyclopedia of North Carolina, UNC Press</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.26_Did_Rutherford_B_Hayes_End_Reconstruction.html" data-source-card data-search="w15.26 did rutherford b. hayes end reconstruction? thomas j. culbertson · rutherford b. hayes presidential library and museums">
+              <span class="source-code">W15.26</span>
+              <span class="source-copy">
+                <strong>Did Rutherford B. Hayes End Reconstruction?</strong>
+                <span>Thomas J. Culbertson · <i>Rutherford B. Hayes Presidential Library and Museums</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.27_Reconstruction_South.html" data-source-card data-search="w15.27 reconstruction in the south w. fitzhugh brundage · journal of the civil war era, forum essay">
+              <span class="source-code">W15.27</span>
+              <span class="source-copy">
+                <strong>Reconstruction in the South</strong>
+                <span>W. Fitzhugh Brundage · <i>Journal of the Civil War Era, forum essay</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.28_Conveying_1876_Election_Public_Era_Diminishing_Democratic.html" data-source-card data-search="w15.28 conveying the 1876 election to the public in an era of diminishing democratic norms dustin mclochlin · muster, journal of the civil war era">
+              <span class="source-code">W15.28</span>
+              <span class="source-copy">
+                <strong>Conveying the 1876 Election to the Public in an Era of Diminishing Democratic Norms</strong>
+                <span>Dustin McLochlin · <i>Muster, Journal of the Civil War Era</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.29_Compromise_1877.html" data-source-card data-search="w15.29 compromise of 1877 j. paul leslie · 64 parishes, louisiana endowment for the humanities">
+              <span class="source-code">W15.29</span>
+              <span class="source-copy">
+                <strong>Compromise of 1877</strong>
+                <span>J. Paul Leslie · <i>64 Parishes, Louisiana Endowment for the Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.30_Rutherford_B_Hayes.html" data-source-card data-search="w15.30 rutherford b. hayes: domestic affairs robert d. johnston · miller center, university of virginia">
+              <span class="source-code">W15.30</span>
+              <span class="source-copy">
+                <strong>Rutherford B. Hayes: Domestic Affairs</strong>
+                <span>Robert D. Johnston · <i>Miller Center, University of Virginia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Web_Articles/W15.31_Rutherford_B_Hayes.html" data-source-card data-search="w15.31 rutherford b. hayes: campaigns and elections robert d. johnston · miller center, university of virginia">
+              <span class="source-code">W15.31</span>
+              <span class="source-copy">
+                <strong>Rutherford B. Hayes: Campaigns and Elections</strong>
+                <span>Robert D. Johnston · <i>Miller Center, University of Virginia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+
+    <footer class="page-footer">
+      <a class="back-top" href="#top">Back to top ↑</a>
+      <div>Unit 4 · A House Divided and Rebuilt · History B17A · Daniel Garza, M.A.</div>
+    </footer>
+  </main>
+  <script>
+    (() => {
+      const input = document.getElementById('source-search');
+      const cards = [...document.querySelectorAll('[data-source-card]')];
+      const sections = [...document.querySelectorAll('[data-chapter-section]')];
+      const resultCount = document.getElementById('result-count');
+      const noResults = document.getElementById('no-results');
+
+      function normalize(value) {
+        return value.toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      }
+
+      function updateCatalog() {
+        const query = normalize(input.value.trim());
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const matches = !query || normalize(card.dataset.search).includes(query);
+          card.hidden = !matches;
+          if (matches) visibleCount += 1;
+        });
+
+        sections.forEach(section => {
+          const visibleInSection = section.querySelectorAll('[data-source-card]:not([hidden])').length;
+          section.querySelector('.chapter-empty').hidden = visibleInSection > 0;
+        });
+
+        resultCount.textContent = `${visibleCount} ${visibleCount === 1 ? 'article' : 'articles'}`;
+        noResults.hidden = visibleCount !== 0;
+      }
+
+      input.addEventListener('input', updateCatalog);
+      input.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && input.value) {
+          input.value = '';
+          updateCatalog();
+        }
+      });
+      updateCatalog();
+    })();
+</script>
+</body>
+</html>
