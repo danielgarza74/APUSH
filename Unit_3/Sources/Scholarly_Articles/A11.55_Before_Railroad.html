@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Before the Railroad: From Slavery to Freedom in the Canadian-American Borderland. Scholarly Article A11.55 for Unit 3: An Expanding Nation.">
+  <meta name="theme-color" content="#7A2E1F">
+  <title>Scholarly Article A11.55 | Before the Railroad: From Slavery to Freedom in the Canadian-American Borderland</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Scholarly_Articles/A11.55_Before_Railroad.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #7A2E1F;
+      --forest-mid: #A8412B;
+      --coral: #D9A15C;
+      --coral-light: #EAC896;
+      --cream: #FBF2E7;
+      --paper: #FFFDF9;
+      --mint: #F8ECDC;
+      --sage: #E6CFB3;
+      --ink: #3B1A12;
+      --muted: #7D5A4C;
+      --shadow: 0 22px 55px rgba(74, 26, 16, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A8412B;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(217, 161, 92, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(122, 46, 31, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(74, 26, 16, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(168, 65, 43, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Scholarly Article navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Scholarly_Articles/"><span aria-hidden="true">←</span> Scholarly Article Archive</a>
+      <div class="archive-meta">Unit 3 · Chapter 11 · A11.55</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="A11.55">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#FBF2E7; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Scholarly Article A11.55</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">Before the Railroad: From Slavery to Freedom in the Canadian-American Borderland</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Gregory Wigmore</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #D9A15C; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#EAC896; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARTICLE</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:13.5px; line-height:1.55;">Before the Railroad: From Slavery to Freedom in the Canadian-American Borderland</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">JOURNAL</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:13.5px; line-height:1.55;">The Journal of American History 98, no. 2 (2011)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">EXCERPT</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:13.5px; line-height:1.55;">Original journal pages 437-438</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">JSTOR</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:13.5px; line-height:1.55;"><a href="https://www.jstor.org/stable/41509964">https://www.jstor.org/stable/41509964</a></td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:17px; font-weight:700; border-bottom:2px solid #D9A15C; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt Format</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The next two pages are exact facsimiles from the supplied article PDF. Original pagination and the author's note system are preserved.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:17px; font-weight:700; border-bottom:2px solid #D9A15C; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Facsimile Excerpt</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 24px 0;" class="source-media"><tr>
+  <td style="text-align:center; padding:14px; background-color:#FFFFFF; border:1px solid #EAC896;">
+    <img src="images/A11.55_Before_Railroad_page1.png" alt="Original journal page 437." style="max-width:100%; height:auto; display:inline-block;" loading="lazy" decoding="async">
+    <div style="font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:12.5px; line-height:1.55; margin-top:10px; text-align:left;">Original journal page 437.</div>
+  </td>
+</tr></table>
+<details class="page-text"><summary>Text of this page (original journal page 437)</summary>
+<p>Before Before Before the the the Railroad: Railroad: Railroad: From From From to to to
+Slavery Slavery Slavery
+Freedom Freedom Freedom in in in the the the Canadian-American Canadian-American Canadian-American
+Borderland Borderland Borderland
+Gregory Gregory Gregory Wigmore Wigmore Wigmore
+On On On the the the of of of 1807, 1807, 1807, a a a woman woman woman and and and a a a out out out of of of
+night night night May May May 13, 13, 13, four-year-old four-year-old four-year-old boy boy boy stealthily stealthily stealthily crept crept crept
+the the the home home home of of of the the the Woods Woods Woods in in in Sandwich, Sandwich, Sandwich, Canada. Canada. Canada. a a a trunk trunk trunk
+attorney attorney attorney James James James Upper Upper Upper Clutching Clutching Clutching
+some some some and and and a a a few few few the the the mother mother mother led led led her her her son son son to to to the the the banks banks banks of of of
+containing containing containing bedding bedding bedding belongings, belongings, belongings,
+the the the Detroit Detroit Detroit River, River, River, a a a short short short away away away There There There met met met up up up with with with some some some acquaintances acquaintances acquaintances from from from
+sprint sprint sprint they they they
+the the the opposite opposite opposite shore shore shore who who who helped helped helped theminto theminto theminto a a a small small small boat boat boat and and and rowed rowed rowed under under under cover cover cover of of of darkness darkness darkness
+- - - a a a about about about a a a a a a
+for for for Detroit Detroit Detroit journey journey journey of of of mile. mile. mile. After After After reaching reaching reaching the the the town, town, town, the the the pair pair pair joined joined joined rapidly rapidly rapidly
+growing growing growing community community community of of of runaways runaways runaways who who who had had had fled fled fled Canadian Canadian Canadian for for for American American American freedom.1 freedom.1 freedom.1
+slavery slavery slavery
+The The The Woods Woods Woods sent sent sent a a a letter letter letter over over over the the the river river river to to to Solomon Solomon Solomon one one one of of of Detroit's Detroit's Detroit's
+following following following day, day, day, Sibley, Sibley, Sibley,
+leading leading leading him"a him"a him"a handsome handsome handsome fee"if fee"if fee"if he he he could could could secure secure secure the the the slaves' slaves' slaves' return, return, return,
+jurists, jurists, jurists, promising promising promising very very very
+or or or could could could at at at least least least obtain obtain obtain some some some redress redress redress for for for the the the lost lost lost Woods Woods Woods some some some ambiv- ambiv- ambiv-
+property. property. property. expressed expressed expressed
+alence alence alence about about about the the the "old "old "old woman," woman," woman," whose whose whose had had had suffered suffered suffered the the the
+recovering recovering recovering body body body presumably presumably presumably pre- pre- pre-
+mature mature mature of of of a a a life life life in in in Even Even Even so, so, so, he he he confessed confessed confessed to to to a a a
+aging aging aging process process process spent spent spent slavery. slavery. slavery. Sibley Sibley Sibley burning burning burning
+desire desire desire to to to "punish "punish "punish her her her in in in a a a small small small degree" degree" degree" for for for absconding absconding absconding with with with her her her more more more valuable valuable valuable son. son. son. Under Under Under
+Upper Upper Upper Canada's Canada's Canada's emancipation emancipation emancipation law, law, law, Woods Woods Woods was was was entitled entitled entitled to to to another another another two two two decades decades decades of of of
+gradual gradual gradual
+service service service from from from the the the boy, boy, boy, until until until he he he turned turned turned Given Given Given the the the of of of laborers laborers laborers and and and
+twenty-five. twenty-five. twenty-five. scarcity scarcity scarcity
+domestic domestic domestic servants, servants, servants, slaves slaves slaves remained remained remained a a a labor-starved labor-starved labor-starved
+precious precious precious commodity commodity commodity throughout throughout throughout
+Canada Canada Canada (now (now (now Ontario) Ontario) Ontario) and and and the the the broader broader broader Great Great Great Lakes Lakes Lakes
+Upper Upper Upper region.2 region.2 region.2
+Recognizing Recognizing Recognizing that that that his his his slaves' slaves' slaves' into into into jeopardized jeopardized jeopardized his his his
+flight flight flight foreign foreign foreign territory territory territory property property property rights, rights, rights,
+Woods Woods Woods a a a that that that would would would minimize minimize minimize his his his losses. losses. losses. He He He to to to
+desperately desperately desperately sought sought sought legal legal legal remedy remedy remedy suggested suggested suggested
+a a a wide wide wide of of of actions, actions, actions, whether whether whether be be be
+Sibley Sibley Sibley range range range legal legal legal inquiring inquiring inquiring they they they might might might successfully successfully successfully pursued pursued pursued
+in in in territorial territorial territorial court. court. court. Could Could Could he he he have have have the the the as as as servants? servants? servants?
+Michigan's Michigan's Michigan's pair pair pair apprehended apprehended apprehended runaway runaway runaway
+Could Could Could he he he sue sue sue the the the woman woman woman for for for the the the theft theft theft of of of the the the or or or for for for off off off the the the trunk trunk trunk of of of
+boy, boy, boy, carrying carrying carrying posses- posses- posses-
+sions, sions, sions, which which which legally legally legally belonged belonged belonged to to to him? him? him? Could Could Could he he he seek seek seek damages damages damages againstDetroiters againstDetroiters againstDetroiters whohad whohad whohad
+encouraged encouraged encouraged or or or assisted assisted assisted the the the runaways runaways runaways or or or who who who harbored harbored harbored them them them in in in Michigan Michigan Michigan If If If the the the
+Territory? Territory? Territory?
+Gregory Gregory Gregory is is is a a a doctoral doctoral doctoral candidate candidate candidate inthe inthe inthe of of of attheUniversity attheUniversity attheUniversity of of of Davis. Davis. Davis. He He He
+Wigmore Wigmore Wigmore Department Department Department History History History California, California, California,
+isespecialglryateftuol isespecialglryateftuol isespecialglryateftuol Robert Robert Robert ChesteArr,i ChesteArr,i ChesteArr,i Elisabeth Elisabeth Elisabeth Alan Alan Alan TayloFrr,anTkowers, TayloFrr,anTkowers, TayloFrr,anTkowers, Clarence Clarence Clarence Walker, Walker, Walker,
+Kelman, Kelman, Kelman, Ritacca, Ritacca, Ritacca,
+JameWs. JameWs. JameWs. St.G. St.G. St.G. Walker, Walker, Walker, and and and thereviewers thereviewers thereviewers and and and editorisatlaff editorisatlaff editorisatlaff of of of the the the AH AH AH fortheihrelpful fortheihrelpful fortheihrelpful comments comments comments on on on earlievrer- earlievrer- earlievrer-
+J J J
+sions sions sions of of of thiesssay. thiesssay. thiesssay. He He He also also also thanks thanks thanks Barbara Barbara Barbara DeWolfe DeWolfe DeWolfe and and and John John John MacLeod MacLeod MacLeod for for for valuable valuable valuable researlcehads, researlcehads, researlcehads, and and and
+providing providing providing
+Dinwiddie Dinwiddie Dinwiddie for for for available available available theLisettFeorth theLisettFeorth theLisettFeorth Steven Steven Steven s s s seminar seminar seminar in in in American American American slavery slavery slavery
+Philip Philip Philip making making making image. image. image. Deyle Deyle Deyle graduate graduate graduate
+much much much of of of theinitial theinitial theinitial inspiration inspiration inspiration forthis forthis forthis article. article. article.
+provided provided provided
+Readers Readers Readers may may may contact contact contact at at at
+Wigmore Wigmore Wigmore gswigmore@ucdavis.edu. gswigmore@ucdavis.edu. gswigmore@ucdavis.edu.
+1 1 1 to to to
+James James James Woods Woods Woods Solomon Solomon Solomon Sibley, Sibley, Sibley, May May May 14, 14, 14, 1807, 1807, 1807, Solomon Solomon Solomon Papers Papers Papers Historical Historical Historical
+Sibley Sibley Sibley (Burton (Burton (Burton Collection, Collection, Collection,
+Detroit Detroit Detroit Public Public Public Library, Library, Library, Detroit, Detroit, Detroit, Mich.). Mich.). Mich.).
+2 2 2
+Ibid.' Ibid.' Ibid.' Elizabeth Elizabeth Elizabeth JanEerringtoWni,ves JanEerringtoWni,ves JanEerringtoWni,ves and and and Mothe,rs Mothe,rs Mothe,rs School School School Mistresses Mistresses Mistresses and and and Scullery Scullery Scullery Maids: Maids: Maids: WorkiWngomeinn WorkiWngomeinn WorkiWngomeinn
+Upper Upper Upper Canada, Canada, Canada, 1790-1840 1790-1840 1790-1840 (Kingston, (Kingston, (Kingston, 1995), 1995), 1995), 141-42. 141-42. 141-42.
+doi1:0.1093/jahist/jar256 doi1:0.1093/jahist/jar256 doi1:0.1093/jahist/jar256
+©ThAeuth20o11r.PublibshyOexdfoUrndivePrrseiotsnysbehoafltfhOerganiozafAtmionerHicisatnorians. ©ThAeuth20o11r.PublibshyOexdfoUrndivePrrseiotsnysbehoafltfhOerganiozafAtmionerHicisatnorians. ©ThAeuth20o11r.PublibshyOexdfoUrndivePrrseiotsnysbehoafltfhOerganiozafAtmionerHicisatnorians.
+AlrligrhetsserFvoeprde.rmispslieoaens-sem,jaoiul:rnals.permissions@oup.com AlrligrhetsserFvoeprde.rmispslieoaens-sem,jaoiul:rnals.permissions@oup.com AlrligrhetsserFvoeprde.rmispslieoaens-sem,jaoiul:rnals.permissions@oup.com
+201 201 201 1 1 1 The The The of of of American American American 437 437 437
+September September September Journal Journal Journal History History History</p></details>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 24px 0;" class="source-media"><tr>
+  <td style="text-align:center; padding:14px; background-color:#FFFFFF; border:1px solid #EAC896;">
+    <img src="images/A11.55_Before_Railroad_page2.png" alt="Original journal page 438." style="max-width:100%; height:auto; display:inline-block;" loading="lazy" decoding="async">
+    <div style="font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:12.5px; line-height:1.55; margin-top:10px; text-align:left;">Original journal page 438.</div>
+  </td>
+</tr></table>
+<details class="page-text"><summary>Text of this page (original journal page 438)</summary>
+<p>438 438 438 The The The of of of American American American 201 201 201 1 1 1
+Journal Journal Journal History History History September September September
+court court court refused refused refused to to to restore restore restore his his his Woods Woods Woods wondered, wondered, wondered, could could could he he he still still still sell sell sell the the the mother mother mother and and and
+property, property, property,
+the the the remainder remainder remainder of of of her her her sons sons sons term term term of of of servitude servitude servitude to to to another another another party party party in in in Detroit?3 Detroit?3 Detroit?3
+When When When Sibley Sibley Sibley advised advised advised Woods Woods Woods that that that he he he sawno sawno sawno lawful lawful lawful means means means to to to recover recover recover the the the slaves slaves slaves or or or sell sell sell
+them them them to to to new new new owners owners owners in in in Detroit, Detroit, Detroit, the the the Upper Upper Upper Canadian Canadian Canadian accepted accepted accepted that that that his his his human human human
+grudgingly grudgingly grudgingly
+was was was lost lost lost forever.4 forever.4 forever.4 In In In the the the river, river, river, the the the woman woman woman and and and her her her child child child traversed traversed traversed more more more
+property property property crossing crossing crossing
+than than than a a a the the the British British British in in in Canada Canada Canada from from from American American American in in in
+just just just boundary boundary boundary separating separating separating Empire Empire Empire territory territory territory
+from from from one one one to to to another, another, another, the the the
+Michigan. Michigan. Michigan. By By By passing passing passing jurisdiction jurisdiction jurisdiction pair pair pair exploited exploited exploited competing competing competing
+laws laws laws in in in the the the borderland, borderland, borderland, which which which allowed allowed allowed enslavedindividuals enslavedindividuals enslavedindividuals to to to emancipate emancipate emancipate them- them- them-
+slavery slavery slavery
+selves selves selves simply simply simply by by by crossing crossing crossing the the the border. border. border.
+This This This article article article seeks seeks seeks to to to illuminate illuminate illuminate the the the between between between and and and borders borders borders in in in
+relationship relationship relationship slavery slavery slavery early early early
+North North North America, America, America, on on on the the the between between between the the the Old Old Old Northwest Northwest Northwest and and and Canada. Canada. Canada.
+focusing focusing focusing boundary boundary boundary Upper Upper Upper
+Unlike Unlike Unlike the the the wave wave wave of of of associated associated associated with with with the the the Underground Underground Underground Railroad Railroad Railroad in in in the the the
+larger larger larger migration migration migration
+decades decades decades the the the Civil Civil Civil War, War, War, an an an earlier earlier earlier of of of slaves slaves slaves who who who emancipated emancipated emancipated them- them- them-
+preceding preceding preceding generation generation generation
+selves selves selves remains remains remains overlooked overlooked overlooked American American American and and and Canadian Canadian Canadian historians. historians. historians. Despite Despite Despite their their their
+largely largely largely by by by
+slaves slaves slaves in in in the the the Canadian-American Canadian-American Canadian-American borderland borderland borderland along along along
+comparative comparative comparative obscurity, obscurity, obscurity, runaway runaway runaway early early early
+the the the Great Great Great Lakes Lakes Lakes a a a role role role in in in the the the of of of that that that Most Most Most of of of the the the
+played played played significant significant significant hardening hardening hardening boundary. boundary. boundary.
+cross-border cross-border cross-border flow flow flow of of of occurred occurred occurred in in in the the the the the the Detroit Detroit Detroit River. River. River. When When When
+fugitives fugitives fugitives region region region along along along
+Detroit Detroit Detroit passed passed passed from from from British British British to to to American American American rule rule rule in in in 1796, 1796, 1796, in in in accordance accordance accordance with with with the the the
+several several several slaveholders slaveholders slaveholders relocated relocated relocated to to to the the the new new new settlements settlements settlements of of of Amherstburg Amherstburg Amherstburg and and and
+Jay Jay Jay Treaty, Treaty, Treaty,
+Sandwich Sandwich Sandwich (now (now (now Windsor) Windsor) Windsor) on on on the the the Canadian Canadian Canadian side side side of of of the the the river, river, river, their their their human human human
+taking taking taking property property property
+withthem. withthem. withthem. Because Because Because the the the Northwest Northwest Northwest Ordinance Ordinance Ordinance of of of 1787 1787 1787 and and and the the the 1793 1793 1793 Act Act Act against against against Slavery Slavery Slavery
+in in in Canada Canada Canada forbade forbade forbade the the the introduction introduction introduction of of of new new new slaves slaves slaves into into into their their their respective respective respective territories, territories, territories,
+Upper Upper Upper
+enslaved enslaved enslaved people people people on on on both both both sides sides sides of of of the the the border border border soon soon soon learned learned learned that that that they they they could could could seize seize seize their their their
+freedom freedom freedom merely merely merely by by by crossing crossing crossing the the the river.5 river.5 river.5
+the the the institution institution institution of of of and and and the the the of of of the the the Canadian-American Canadian-American Canadian-American
+Investigating Investigating Investigating slavery slavery slavery development development development
+border border border in in in concert concert concert allows allows allows us us us to to to recast recast recast our our our understanding understanding understanding of of of both both both subjects, subjects, subjects, revealing revealing revealing the the the
+extent extent extent to to to which which which each each each shaped shaped shaped the the the other. other. other. For For For instance, instance, instance, the the the of of of runaway runaway runaway slaves slaves slaves across across across the the the
+flight flight flight
+between between between and and and Canada Canada Canada critical critical critical in in in
+emerging emerging emerging boundary boundary boundary Michigan Michigan Michigan Territory Territory Territory Upper Upper Upper proved proved proved
+the the the of of of the the the of of of borders borders borders in in in North North North America. America. America. It It It also also also led led led
+establishing establishing establishing principle principle principle inviolability inviolability inviolability
+authorities authorities authorities on on on the the the recognize recognize recognize the the the boundary's boundary's boundary's political political political significance significance significance as, as, as, in in in
+ground#to ground#to ground#to finally finally finally
+the the the historian historian historian Peter Peter Peter Sahlins Sahlins Sahlins words, words, words, "the "the "the point point point at at at which which which sovereignty sovereignty sovereignty found found found expression." expression." expression."
+During During During the the the decade decade decade following following following the the the borders borders borders establishment establishment establishment in in in 1796, 1796, 1796, local local local officials officials officials and and and prom- prom- prom-
+inent inent inent settlers settlers settlers on on on each each each side side side frequently frequently frequently sought sought sought to to to confront confront confront mutual mutual mutual challenges challenges challenges through through through recip- recip- recip-
+rocal rocal rocal (and (and (and even even even ad ad ad hoc) hoc) hoc) accommodation. accommodation. accommodation. However, However, However, the the the deterioration deterioration deterioration of of of Anglo-American Anglo-American Anglo-American
+relations relations relations after after after 1807 1807 1807 inflamed inflamed inflamed passions passions passions in in in the the the borderland. borderland. borderland. This This This rising rising rising tension tension tension prevented prevented prevented the the the
+3 3 3 toSibley, toSibley, toSibley, 14,Jun8e, 14,Jun8e, 14,Jun8e,
+Woods Woods Woods May May May 1807, 1807, 1807, Sibley Sibley Sibley Papers. Papers. Papers.
+4 4 4 to to to Tun5e, Tun5e, Tun5e, toSibley, toSibley, toSibley, 14, 14, 14, ibid. ibid. ibid.
+Sibiev Sibiev Sibiev Woods, Woods, Woods, 1807, 1807, 1807, ibid.; ibid.; ibid.; Woods Woods Woods Sept. Sept. Sept. 1807, 1807, 1807,
+5Surrendetroetdhe 5Surrendetroetdhe 5Surrendetroetdhe StatebsytheTreaty StatebsytheTreaty StatebsytheTreaty Pariisn Pariisn Pariisn severoalthewresterpnosts severoalthewresterpnosts severoalthewresterpnosts
+United United United of of of 1783, 1783, 1783, Detroit Detroit Detroit and and and
+British British British untialftetrhe untialftetrhe untialftetrhe conclusion conclusion conclusion of of of theJayTreatiyn theJayTreatiyn theJayTreatiyn 1794, 1794, 1794, when when when theBritisahgreetdorelin- theBritisahgreetdorelin- theBritisahgreetdorelin-
+remained remained remained possessions possessions possessions
+thembyJun1e, thembyJun1e, thembyJun1e, 1796. 1796. 1796. See See See AmericSatnatPeaperFs:oreigRnelations AmericSatnatPeaperFs:oreigRnelations AmericSatnatPeaperFs:oreigRnelations (6 (6 (6 vols., vols., vols., 1833-1859), 1833-1859), 1833-1859), I, I, I,
+quish quish quish Washington, Washington, Washington,
+520-25. 520-25. 520-25. "Ordinance "Ordinance "Ordinance of of of 1787," 1787," 1787," inTheTerritoPraiaplers inTheTerritoPraiaplers inTheTerritoPraiaplers the the the United United United States, States, States, ed. ed. ed. Clarence Clarence Clarence Edward Edward Edward Carter Carter Carter (28 (28 (28 vols., vols., vols.,
+of of of
+1934-1975), 1934-1975), 1934-1975), II, II, II, 39-50. 39-50. 39-50. Article Article Article VI VI VI of of of the the the ordinance ordinance ordinance reads: reads: reads: "There "There "There shall shall shall be be be neithselravernyor neithselravernyor neithselravernyor involun- involun- involun-
+Washington, Washington, Washington,
+tarsyervituidntehe tarsyervituidntehe tarsyervituidntehe territory." territory." territory." thefirstterritogroiavlernAorr,thuStr.Clairi,nterprettheedprohibi- thefirstterritogroiavlernAorr,thuStr.Clairi,nterprettheedprohibi- thefirstterritogroiavlernAorr,thuStr.Clairi,nterprettheedprohibi-
+said said said However, However, However,
+tionas tionas tionas onlytoslaves onlytoslaves onlytoslaves who who who arriveindtheterritoarfytetrhe arriveindtheterritoarfytetrhe arriveindtheterritoarfytetrhe ordinance. ordinance. ordinance. Those Those Those slaveaslreadiyntheterritory slaveaslreadiyntheterritory slaveaslreadiyntheterritory
+applying applying applying inThSet. inThSet. inThSet.
+remained remained remained legalleynslaveads, legalleynslaveads, legalleynslaveads, under under under Britisrhule. Britisrhule. Britisrhule. See See See ArthuStr. ArthuStr. ArthuStr. Clair Clair Clair to to to Luke Luke Luke Decker, Decker, Decker, Oct. Oct. Oct. 11, 11, 11, 1793, 1793, 1793, Clair Clair Clair
+PaperTs:heLife PaperTs:heLife PaperTs:heLife and and and Public Public Public Services Services Services ArthuSrt.Clair, ArthuSrt.Clair, ArthuSrt.Clair, ed. ed. ed. William William William Smith Smith Smith (2 (2 (2 vols., vols., vols., Cincinnati, Cincinnati, Cincinnati, 1882), 1882), 1882), II, II, II,
+of of of Henry Henry Henry
+St. St. St. toJudge toJudge toJudge Turner, Turner, Turner, Dec. Dec. Dec. 14, 14, 14, ibid.* ibid.* ibid.* 331-32. 331-32. 331-32. For For For theActagainSstlaversyee,Statutes theActagainSstlaversyee,Statutes theActagainSstlaversyee,Statutes
+318-19; 318-19; 318-19; Clair Clair Clair [George] [George] [George] 1794, 1794, 1794, II, II, II,
+of of of Canada, Canada, Canada, 33 33 33 3,c. 3,c. 3,c. 7 7 7 (1793), (1793), (1793), reprintinedTheStatutes reprintinedTheStatutes reprintinedTheStatutes theProvince theProvince theProvince Upper Upper Upper Canada Canada Canada
+Upper Upper Upper George George George of of of of of of (Kingston, (Kingston, (Kingston,
+Canada Canada Canada 1831), 1831), 1831), 41-42. 41-42. 41-42.</p></details>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:17px; font-weight:700; border-bottom:2px solid #D9A15C; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Wigmore, Gregory. "Before the Railroad: From Slavery to Freedom in the Canadian-American Borderland." <em>The Journal of</em> <em>American History</em> 98, no. 2 (2011): 437–454. <a href="https://www.jstor.org/stable/41509964">https://www.jstor.org/stable/41509964</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Gregory Wigmore, "Before the Railroad: From Slavery to Freedom in the Canadian-American Borderland," <em>The Journal of</em> <em>American History</em> 98, no. 2 (2011): 437–438, <a href="https://www.jstor.org/stable/41509964">https://www.jstor.org/stable/41509964</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Wigmore, "Before the Railroad," 437–438.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:17px; font-weight:700; border-bottom:2px solid #D9A15C; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Source Verification</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 26px 0;" class="editorial-note"><tr>
+  <td style="border-left:4px solid #D9A15C; background-color:rgba(168, 65, 43,0.07); padding:12px 16px; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; line-height:1.6;">Supplied PDF pages 2-3 correspond to original journal pages 437-438. The pages were inserted directly from the supplied PDF; no transcription or silent omission was introduced.</td>
+</tr></table>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #D9A15C; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 3 · AN EXPANDING NATION | HISTORY B17A | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Scholarly_Articles/"><span aria-hidden="true">←</span> Return to the Scholarly Article Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>
