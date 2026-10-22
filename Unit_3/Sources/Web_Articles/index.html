@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web article archive for Unit 3: An Expanding Nation, Chapters 8–12, 1790–1860.">
+  <meta name="theme-color" content="#7A2E1F">
+  <title>Unit 3 Web Article Archive | An Expanding Nation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #7A2E1F;
+      --forest-mid: #A8412B;
+      --forest-light: #8E3624;
+      --coral: #D9A15C;
+      --coral-light: #EAC896;
+      --cream: #FBF2E7;
+      --paper: #FFFDF9;
+      --mint: #F8ECDC;
+      --sage: #E6CFB3;
+      --ink: #3B1A12;
+      --muted: #7D5A4C;
+      --shadow: 0 16px 38px rgba(74, 26, 16, .13);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A8412B;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 92% 5%, rgba(217, 161, 92, .11), transparent 24rem),
+        linear-gradient(145deg, rgba(255,255,255,.5), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    button, input { font: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-hero {
+      position: relative;
+      min-height: 470px;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      padding: 5rem clamp(1.5rem, 7vw, 7rem) 4.5rem;
+      border-bottom: 7px solid var(--coral);
+      background:
+        linear-gradient(115deg, rgba(0,0,0,.13), transparent 60%),
+        var(--forest);
+      color: var(--paper);
+      isolation: isolate;
+    }
+    .archive-hero::after {
+      content: '';
+      position: absolute;
+      inset: 1.2rem;
+      z-index: -1;
+      border: 1px solid rgba(234, 200, 150,.27);
+      pointer-events: none;
+    }
+    .hero-watermark {
+      position: absolute;
+      right: clamp(1rem, 7vw, 7rem);
+      top: -5rem;
+      z-index: -1;
+      color: rgba(255,255,255,.045);
+      font: 700 clamp(22rem, 40vw, 40rem)/1 var(--heading);
+      user-select: none;
+    }
+    .hero-content { max-width: 1040px; text-align: center; }
+    .hero-eyebrow {
+      margin: 0 0 1rem;
+      color: var(--coral-light);
+      font: 700 .72rem/1.4 var(--heading);
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    .archive-hero h1 {
+      max-width: 900px;
+      margin: 0 auto;
+      color: var(--paper);
+      font: 700 clamp(2.3rem, 5.5vw, 5.2rem)/1.08 var(--heading);
+      letter-spacing: .03em;
+      text-wrap: balance;
+    }
+    .hero-subtitle {
+      max-width: 760px;
+      margin: 1.35rem auto 0;
+      color: rgba(255, 253, 249,.88);
+      font: italic 600 clamp(1.15rem, 2vw, 1.45rem)/1.5 var(--body);
+      text-wrap: balance;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .65rem 1.35rem;
+      margin-top: 2.1rem;
+      color: var(--coral-light);
+      font: 700 .65rem/1.4 var(--heading);
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .hero-meta span + span::before { content: '◆'; margin-right: 1.35rem; font-size: .45rem; vertical-align: middle; }
+
+    .chapter-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--sage);
+      background: rgba(255, 253, 249,.96);
+      box-shadow: 0 8px 22px rgba(74, 26, 16,.08);
+      backdrop-filter: blur(12px);
+    }
+    .chapter-nav-inner {
+      width: min(1180px, calc(100% - 2rem));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 66px;
+    }
+    .archive-mark {
+      flex: 0 0 auto;
+      color: var(--forest);
+      font: 700 .7rem var(--heading);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .chapter-links { display: flex; align-items: stretch; align-self: stretch; }
+    .chapter-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: 0 1rem;
+      border-bottom: 3px solid transparent;
+      color: var(--forest);
+      font: 700 .67rem var(--ui);
+      letter-spacing: .04em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .chapter-links a span { color: var(--coral-text); font-family: var(--heading); }
+    .chapter-links a:hover { border-bottom-color: var(--coral); background: var(--mint); }
+
+    main { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; padding: 3.5rem 0 5rem; }
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .intro-card,
+    .citation-card {
+      position: relative;
+      padding: 2.25rem 2.35rem;
+      border: 1px solid var(--coral);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+    .intro-card::after,
+    .citation-card::after {
+      content: '';
+      position: absolute;
+      inset: 7px;
+      border: 1px solid rgba(217, 161, 92,.17);
+      pointer-events: none;
+    }
+    .eyebrow {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 .5rem;
+      color: var(--coral-text);
+      font: 800 .65rem var(--ui);
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .intro-card h2,
+    .citation-card h2 {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 1rem;
+      color: var(--forest);
+      font: 700 clamp(1.5rem, 2.6vw, 2.15rem)/1.2 var(--heading);
+    }
+    .intro-card p,
+    .citation-card p { position: relative; z-index: 1; margin: 0; }
+    .citation-card { background: var(--mint); }
+    .citation-card p + p { margin-top: .85rem; }
+
+    .catalog-tools {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: center;
+      margin: 2.5rem 0 3.2rem;
+      padding: 1.25rem 1.35rem;
+      border: 1px solid var(--sage);
+      background: rgba(255, 253, 249,.82);
+    }
+    .search-wrap { position: relative; }
+    .search-wrap svg {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      width: 19px;
+      transform: translateY(-50%);
+      color: var(--forest-mid);
+      pointer-events: none;
+    }
+    .source-search {
+      width: 100%;
+      padding: .9rem 1rem .9rem 3rem;
+      border: 1px solid var(--sage);
+      background: white;
+      color: var(--ink);
+      font: 600 .85rem var(--ui);
+    }
+    .source-search:focus { border-color: var(--coral); outline: 2px solid rgba(217, 161, 92,.15); }
+    .result-count {
+      min-width: 9rem;
+      margin: 0;
+      color: var(--muted);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .07em;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .chapter-section { margin-top: 4rem; scroll-margin-top: 88px; }
+    .chapter-heading {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 5rem 1fr auto;
+      gap: 1.2rem;
+      align-items: center;
+      min-height: 150px;
+      padding: 1.7rem 2rem;
+      border-top: 5px solid var(--coral);
+      background: var(--forest);
+      color: white;
+    }
+    .chapter-heading::after {
+      content: '';
+      position: absolute;
+      right: -4rem;
+      bottom: -8rem;
+      width: 18rem;
+      height: 18rem;
+      border: 1px solid rgba(234, 200, 150,.22);
+      border-radius: 50%;
+    }
+    .chapter-number {
+      color: rgba(255,255,255,.13);
+      font: 700 5rem/1 var(--heading);
+      text-align: center;
+    }
+    .chapter-heading p { margin: 0 0 .35rem; color: var(--coral-light); font: 700 .67rem var(--ui); letter-spacing: .14em; text-transform: uppercase; }
+    .chapter-heading h2 { margin: 0; color: white; font: 700 clamp(1.35rem, 3vw, 2.25rem)/1.18 var(--heading); text-wrap: balance; }
+    .chapter-count {
+      position: relative;
+      z-index: 1;
+      padding: .5rem .7rem;
+      border: 1px solid rgba(234, 200, 150,.48);
+      color: var(--coral-light);
+      font: 700 .65rem var(--ui);
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+    .source-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .75rem;
+      padding-top: 1rem;
+    }
+    .source-card {
+      display: grid;
+      grid-template-columns: 3.8rem 1fr 1.2rem;
+      gap: .85rem;
+      align-items: start;
+      min-height: 122px;
+      padding: 1.2rem 1.15rem;
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      color: var(--ink);
+      text-decoration: none;
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+    .source-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--coral);
+      box-shadow: 0 10px 24px rgba(74, 26, 16,.11);
+    }
+    .source-card[hidden] { display: none; }
+    .source-code {
+      padding-top: .12rem;
+      color: var(--coral-text);
+      font: 700 .74rem var(--heading);
+      letter-spacing: .025em;
+    }
+    .source-copy { display: flex; min-width: 0; flex-direction: column; }
+    .source-copy strong { color: var(--forest); font: 700 .83rem/1.42 var(--ui); }
+    .source-copy > span { margin-top: .35rem; color: var(--muted); font: italic 1rem/1.4 var(--body); }
+    .source-arrow { color: var(--coral-text); font-size: 1rem; transition: transform .2s ease; }
+    .source-card:hover .source-arrow { transform: translate(2px, -2px); }
+    .chapter-empty { margin: 1rem 0 0; padding: 1.4rem; border: 1px dashed var(--sage); color: var(--muted); text-align: center; }
+    .no-results {
+      margin: 3rem 0;
+      padding: 2rem;
+      border: 1px solid var(--coral-light);
+      background: #FFF6EA;
+      color: var(--forest);
+      text-align: center;
+    }
+    .page-footer {
+      margin-top: 5rem;
+      padding: 1.4rem 0 0;
+      border-top: 1px solid var(--coral);
+      color: var(--muted);
+      font: 700 .63rem var(--ui);
+      letter-spacing: .11em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .back-top {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: var(--forest-mid);
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .archive-hero { min-height: 410px; }
+      .archive-mark { display: none; }
+      .chapter-nav-inner { justify-content: center; }
+      .chapter-links { overflow-x: auto; }
+      .intro-grid { grid-template-columns: 1fr; }
+      .source-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      body { font-size: 18px; }
+      .archive-hero { min-height: 380px; padding: 4rem 1.2rem 3.6rem; }
+      .archive-hero::after { inset: .7rem; }
+      .hero-meta { flex-direction: column; gap: .35rem; }
+      .hero-meta span + span::before { content: ''; margin: 0; }
+      .chapter-nav-inner { width: 100%; }
+      .chapter-links { width: 100%; justify-content: space-around; }
+      .chapter-links a { flex: 1; justify-content: center; padding: 0 .5rem; white-space: nowrap; }
+      .chapter-links a .link-title { display: none; }
+      main { width: min(100% - 1.2rem, 1180px); padding-top: 2rem; }
+      .intro-card, .citation-card { padding: 1.7rem 1.35rem; }
+      .catalog-tools { grid-template-columns: 1fr; }
+      .result-count { min-width: 0; text-align: left; }
+      .chapter-section { scroll-margin-top: 74px; }
+      .chapter-heading { grid-template-columns: 3rem 1fr; min-height: 130px; padding: 1.35rem 1.1rem; }
+      .chapter-number { font-size: 3.5rem; }
+      .chapter-count { grid-column: 2; justify-self: start; }
+      .source-card { grid-template-columns: 3.2rem 1fr 1rem; min-height: 0; padding: 1rem .85rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+    @media print {
+      body { background: white; font-size: 10pt; }
+      .chapter-nav, .catalog-tools, .back-top { display: none !important; }
+      .archive-hero { min-height: 0; padding: .7in; print-color-adjust: exact; }
+      main { width: auto; padding: .35in; }
+      .intro-card, .citation-card, .source-card { box-shadow: none; }
+      .source-grid { grid-template-columns: 1fr 1fr; }
+      .source-card { min-height: 0; break-inside: avoid; }
+      .chapter-section { break-before: page; }
+    }
+    .intro-card p + p { margin-top: .85rem; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to source catalog</a>
+
+  <header class="archive-hero">
+    <div class="hero-watermark" aria-hidden="true">W</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">E Pluribus Unum · Part Three</p>
+      <h1>Web Article Archive</h1>
+      <p class="hero-subtitle">Scholarly and institutional web articles on the market revolution, nationalism and sectionalism, Jacksonian democracy, slavery, and reform.</p>
+      <div class="hero-meta">
+        <span>Unit 3 · An Expanding Nation</span>
+        <span>Chapters 8–12</span>
+        <span>1790–1860</span>
+        <span>91 articles</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="chapter-nav" aria-label="Chapter navigation">
+    <div class="chapter-nav-inner">
+      <span class="archive-mark">Web Articles</span>
+      <div class="chapter-links"><a href="#chapter-8"><span>8</span><span class="link-title">The Emergence of a Market Economy</span></a><a href="#chapter-9"><span>9</span><span class="link-title">Nationalism and Sectionalism</span></a><a href="#chapter-10"><span>10</span><span class="link-title">A New Democratic Era</span></a><a href="#chapter-11"><span>11</span><span class="link-title">The South and Slavery</span></a><a href="#chapter-12"><span>12</span><span class="link-title">Religion, Romanticism, and Reform</span></a></div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="intro-grid" aria-label="Reader guidance">
+      <article class="intro-card">
+        <p class="eyebrow">Reading the excerpts</p>
+        <h2>Read the article in its own words.</h2>
+        <p>Each excerpt reproduces complete published paragraphs, normally 600–1,200 words; a shorter article is reproduced in full. A bracketed notice marks a move between separate parts of an article, and no bridging language has been added.</p>
+        <p>The panel at the top of each article lists every essay prompt it serves and whether it supports, challenges, or qualifies that line of argument.</p>
+      </article>
+      <article class="citation-card">
+        <p class="eyebrow">Citing these readings</p>
+        <h2>Cite the web article.</h2>
+        <p>Use the full footnote citation the first time you cite an article and the shortened form afterward. Cite the web article, not a reader page number, and include only works you actually use in your bibliography.</p>
+        <p>Web pages can move or change. Keep the access date shown in the citation, and use this excerpt if a live page later becomes unavailable.</p>
+      </article>
+    </section>
+
+    <section class="catalog-tools" aria-label="Search the source catalog">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+        <label class="skip-link" for="source-search">Search web articles</label>
+        <input id="source-search" class="source-search" type="search" autocomplete="off" placeholder="Search by article, author, website, or code…">
+      </div>
+      <p id="result-count" class="result-count" aria-live="polite">91 articles</p>
+    </section>
+
+    <p id="no-results" class="no-results" hidden>No web articles match that search. Try a shorter title, author surname, date, or source code.</p>
+
+
+
+      <section class="chapter-section" id="chapter-8" data-chapter-section aria-labelledby="chapter-8-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">8</div>
+          <div>
+            <p>Chapter 8 · 1793–1854</p>
+            <h2 id="chapter-8-title">The Emergence of a Market Economy</h2>
+          </div>
+          <span class="chapter-count">23 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.01_Q_James_Parisot.html" data-source-card data-search="w8.1 q&amp;a with james parisot james parisot (interview by tom cutterham) · the junto">
+              <span class="source-code">W8.1</span>
+              <span class="source-copy">
+                <strong>Q&amp;A with James Parisot</strong>
+                <span>James Parisot (interview by Tom Cutterham) · <i>The Junto</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.02_Roots_American_Industrialization_17901860.html" data-source-card data-search="w8.2 the roots of american industrialization, 1790–1860 david r. meyer · eh.net encyclopedia, economic history association">
+              <span class="source-code">W8.2</span>
+              <span class="source-copy">
+                <strong>The Roots of American Industrialization, 1790–1860</strong>
+                <span>David R. Meyer · <i>EH.Net Encyclopedia, Economic History Association</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.03_History_Culture.html" data-source-card data-search="w8.3 history and culture erie canalway national heritage corridor">
+              <span class="source-code">W8.3</span>
+              <span class="source-copy">
+                <strong>History and Culture</strong>
+                <span>Erie Canalway National Heritage Corridor</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.04_History_U_S_Telegraph_Industry.html" data-source-card data-search="w8.4 history of the u.s. telegraph industry tomas nonnenmacher · eh.net encyclopedia, economic history association">
+              <span class="source-code">W8.4</span>
+              <span class="source-copy">
+                <strong>History of the U.S. Telegraph Industry</strong>
+                <span>Tomas Nonnenmacher · <i>EH.Net Encyclopedia, Economic History Association</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.05_Internal_Improvements_Campaign.html" data-source-card data-search="w8.5 internal improvements campaign alexia jones helsley · south carolina encyclopedia, university of south carolina, institute for southern studies">
+              <span class="source-code">W8.5</span>
+              <span class="source-copy">
+                <strong>Internal Improvements Campaign</strong>
+                <span>Alexia Jones Helsley · <i>South Carolina Encyclopedia, University of South Carolina, Institute for Southern Studies</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.06_Main_Line_Public_Works.html" data-source-card data-search="w8.6 main line of public works charlene mires · encyclopedia of greater philadelphia, rutgers university–camden">
+              <span class="source-code">W8.6</span>
+              <span class="source-copy">
+                <strong>Main Line of Public Works</strong>
+                <span>Charlene Mires · <i>Encyclopedia of Greater Philadelphia, Rutgers University–Camden</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.07_Internal_Improvements.html" data-source-card data-search="w8.7 internal improvements david a. norris and alan d. watson · ncpedia, state library of north carolina">
+              <span class="source-code">W8.7</span>
+              <span class="source-copy">
+                <strong>Internal Improvements</strong>
+                <span>David A. Norris and Alan D. Watson · <i>NCpedia, State Library of North Carolina</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.08_Erie_Canal_Commissioners.html" data-source-card data-search="w8.8 the erie canal commissioners erie canal museum · reflections on erie’s waters, erie canal museum">
+              <span class="source-code">W8.8</span>
+              <span class="source-copy">
+                <strong>The Erie Canal Commissioners</strong>
+                <span>Erie Canal Museum · <i>Reflections on Erie’s Waters, Erie Canal Museum</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.09_Albert_Gallatin_Canals.html" data-source-card data-search="w8.9 albert gallatin and canals gayle martinelli · national park service">
+              <span class="source-code">W8.9</span>
+              <span class="source-copy">
+                <strong>Albert Gallatin and Canals</strong>
+                <span>Gayle Martinelli · <i>National Park Service</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.10_Turnpikes_Toll_Roads_Nineteenth_Century_America.html" data-source-card data-search="w8.10 turnpikes and toll roads in nineteenth-century america daniel b. klein and john majewski · eh.net encyclopedia, economic history association">
+              <span class="source-code">W8.10</span>
+              <span class="source-copy">
+                <strong>Turnpikes and Toll Roads in Nineteenth-Century America</strong>
+                <span>Daniel B. Klein and John Majewski · <i>EH.Net Encyclopedia, Economic History Association</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.11_Mill_Girls_Lowell.html" data-source-card data-search="w8.11 the mill girls of lowell national park service, lowell national historical park · national park service">
+              <span class="source-code">W8.11</span>
+              <span class="source-copy">
+                <strong>The Mill Girls of Lowell</strong>
+                <span>National Park Service, Lowell National Historical Park · <i>National Park Service</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.12_Lowell_Offering_Literature_Lowell_Mill_Girls.html" data-source-card data-search="w8.12 “the lowell offering” and the literature of the lowell mill girls patrick hastings · bibliomania, library of congress">
+              <span class="source-code">W8.12</span>
+              <span class="source-copy">
+                <strong>“The Lowell Offering” and the Literature of the Lowell Mill Girls</strong>
+                <span>Patrick Hastings · <i>Bibliomania, Library of Congress</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.13_Lowell_Story_Industrial_City.html" data-source-card data-search="w8.13 lowell, story of an industrial city: the mill girls thomas dublin · national park service">
+              <span class="source-code">W8.13</span>
+              <span class="source-copy">
+                <strong>Lowell, Story of an Industrial City: The Mill Girls</strong>
+                <span>Thomas Dublin · <i>National Park Service</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.14_Chapter_2.html" data-source-card data-search="w8.14 chapter 2: builders of the young republic edward pessen · u.s. department of labor">
+              <span class="source-code">W8.14</span>
+              <span class="source-copy">
+                <strong>Chapter 2: Builders of the Young Republic</strong>
+                <span>Edward Pessen · <i>U.S. Department of Labor</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.15_Radical_Revisions.html" data-source-card data-search="w8.15 radical revisions: thomas skidmore reads thomas paine in 1829 new york matteo battistini · commonplace: the journal of early american life">
+              <span class="source-code">W8.15</span>
+              <span class="source-copy">
+                <strong>Radical Revisions: Thomas Skidmore Reads Thomas Paine in 1829 New York</strong>
+                <span>Matteo Battistini · <i>Commonplace: The Journal of Early American Life</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.16_Working_Mens_Party.html" data-source-card data-search="w8.16 working men’s party patrick grubbs · encyclopedia of greater philadelphia, rutgers university–camden">
+              <span class="source-code">W8.16</span>
+              <span class="source-copy">
+                <strong>Working Men’s Party</strong>
+                <span>Patrick Grubbs · <i>Encyclopedia of Greater Philadelphia, Rutgers University–Camden</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.17_General_Trades_Union_Strike.html" data-source-card data-search="w8.17 general trades union strike (1835) patrick grubbs · encyclopedia of greater philadelphia, rutgers university–camden">
+              <span class="source-code">W8.17</span>
+              <span class="source-copy">
+                <strong>General Trades Union Strike (1835)</strong>
+                <span>Patrick Grubbs · <i>Encyclopedia of Greater Philadelphia, Rutgers University–Camden</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.18_Temperance_Movement.html" data-source-card data-search="w8.18 the temperance movement alice w. campbell · social welfare history project, vcu libraries">
+              <span class="source-code">W8.18</span>
+              <span class="source-copy">
+                <strong>The Temperance Movement</strong>
+                <span>Alice W. Campbell · <i>Social Welfare History Project, VCU Libraries</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.19_Religion_Nineteenth_Century_America.html" data-source-card data-search="w8.19 religion in nineteenth-century america graham warder · social welfare history project, vcu libraries">
+              <span class="source-code">W8.19</span>
+              <span class="source-copy">
+                <strong>Religion in Nineteenth-Century America</strong>
+                <span>Graham Warder · <i>Social Welfare History Project, VCU Libraries</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.20_Immigration.html" data-source-card data-search="w8.20 immigration (1790–1860) james bergquist · encyclopedia of greater philadelphia, rutgers university–camden">
+              <span class="source-code">W8.20</span>
+              <span class="source-copy">
+                <strong>Immigration (1790–1860)</strong>
+                <span>James Bergquist · <i>Encyclopedia of Greater Philadelphia, Rutgers University–Camden</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.21_Nativism.html" data-source-card data-search="w8.21 nativism james kopaczewski · encyclopedia of greater philadelphia, rutgers university–camden">
+              <span class="source-code">W8.21</span>
+              <span class="source-copy">
+                <strong>Nativism</strong>
+                <span>James Kopaczewski · <i>Encyclopedia of Greater Philadelphia, Rutgers University–Camden</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.22_Phillys_Early_Convention_History.html" data-source-card data-search="w8.22 philly’s early convention history: whigs, know nothings and a young gop scott bomboy · constitution daily, national constitution center">
+              <span class="source-code">W8.22</span>
+              <span class="source-copy">
+                <strong>Philly’s Early Convention History: Whigs, Know Nothings and a Young GOP</strong>
+                <span>Scott Bomboy · <i>Constitution Daily, National Constitution Center</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W8.23_Nativist_Riots_1844.html" data-source-card data-search="w8.23 nativist riots of 1844 zachary m. schrag · encyclopedia of greater philadelphia, rutgers university–camden">
+              <span class="source-code">W8.23</span>
+              <span class="source-copy">
+                <strong>Nativist Riots of 1844</strong>
+                <span>Zachary M. Schrag · <i>Encyclopedia of Greater Philadelphia, Rutgers University–Camden</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+
+      <section class="chapter-section" id="chapter-9" data-chapter-section aria-labelledby="chapter-9-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">9</div>
+          <div>
+            <p>Chapter 9 · 1811–1828</p>
+            <h2 id="chapter-9-title">Nationalism and Sectionalism</h2>
+          </div>
+          <span class="chapter-count">21 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.01_Beveridge_Loved_It_Roane_Hated_It_Few.html" data-source-card data-search="w9.1 beveridge loved it; roane hated it; few today understand mcculloch properly kevin c. walsh · law &amp; liberty, liberty fund">
+              <span class="source-code">W9.1</span>
+              <span class="source-copy">
+                <strong>Beveridge Loved It; Roane Hated It; Few Today Understand McCulloch Properly</strong>
+                <span>Kevin C. Walsh · <i>Law &amp; Liberty, Liberty Fund</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.02_Marshall_Takes_Virginia_Anti_Federalists.html" data-source-card data-search="w9.2 marshall takes on the virginia anti-federalists michael m. uhlmann · law &amp; liberty, liberty fund">
+              <span class="source-code">W9.2</span>
+              <span class="source-copy">
+                <strong>Marshall Takes on the Virginia Anti-Federalists</strong>
+                <span>Michael M. Uhlmann · <i>Law &amp; Liberty, Liberty Fund</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.03_Marshall_Court_18011835.html" data-source-card data-search="w9.3 the marshall court, 1801–1835 supreme court historical society">
+              <span class="source-code">W9.3</span>
+              <span class="source-copy">
+                <strong>The Marshall Court, 1801–1835</strong>
+                <span>Supreme Court Historical Society</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.04_Affirming_Judicial_Independence.html" data-source-card data-search="w9.4 affirming judicial independence supreme court historical society">
+              <span class="source-code">W9.4</span>
+              <span class="source-copy">
+                <strong>Affirming Judicial Independence</strong>
+                <span>Supreme Court Historical Society</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.05_Daniel_Webster.html" data-source-card data-search="w9.5 daniel webster supreme court historical society">
+              <span class="source-code">W9.5</span>
+              <span class="source-copy">
+                <strong>Daniel Webster</strong>
+                <span>Supreme Court Historical Society</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.06_Second_Bank_United_States.html" data-source-card data-search="w9.6 the second bank of the united states andrew t. hill · federal reserve history, federal reserve system">
+              <span class="source-code">W9.6</span>
+              <span class="source-copy">
+                <strong>The Second Bank of the United States</strong>
+                <span>Andrew T. Hill · <i>Federal Reserve History, Federal Reserve System</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.07_James_Monroe.html" data-source-card data-search="w9.7 james monroe: domestic affairs daniel preston · miller center, university of virginia">
+              <span class="source-code">W9.7</span>
+              <span class="source-copy">
+                <strong>James Monroe: Domestic Affairs</strong>
+                <span>Daniel Preston · <i>Miller Center, University of Virginia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.08_James_Monroe.html" data-source-card data-search="w9.8 james monroe: life in brief daniel preston · miller center, university of virginia">
+              <span class="source-code">W9.8</span>
+              <span class="source-copy">
+                <strong>James Monroe: Life in Brief</strong>
+                <span>Daniel Preston · <i>Miller Center, University of Virginia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.09_Martin_Van_Buren.html" data-source-card data-search="w9.9 martin van buren: life before the presidency mark cheathem · miller center, university of virginia">
+              <span class="source-code">W9.9</span>
+              <span class="source-copy">
+                <strong>Martin Van Buren: Life Before the Presidency</strong>
+                <span>Mark Cheathem · <i>Miller Center, University of Virginia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.10_Wolf_Ear.html" data-source-card data-search="w9.10 “the wolf by the ear”: thomas jefferson and the missouri crisis, 1819–21 gary sellick · monticello, thomas jefferson foundation">
+              <span class="source-code">W9.10</span>
+              <span class="source-copy">
+                <strong>“The Wolf by the Ear”: Thomas Jefferson and the Missouri Crisis, 1819–21</strong>
+                <span>Gary Sellick · <i>Monticello, Thomas Jefferson Foundation</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.11_Firebell_Night.html" data-source-card data-search="w9.11 “a firebell in the night”: jefferson and the missouri crisis gary sellick · monticello, thomas jefferson foundation">
+              <span class="source-code">W9.11</span>
+              <span class="source-copy">
+                <strong>“A Firebell in the Night”: Jefferson and the Missouri Crisis</strong>
+                <span>Gary Sellick · <i>Monticello, Thomas Jefferson Foundation</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.12_Road_Secession.html" data-source-card data-search="w9.12 the road to secession national park service, antietam national battlefield · national park service">
+              <span class="source-code">W9.12</span>
+              <span class="source-copy">
+                <strong>The Road to Secession</strong>
+                <span>National Park Service, Antietam National Battlefield · <i>National Park Service</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.13_James_Monroe.html" data-source-card data-search="w9.13 james monroe: foreign affairs daniel preston · miller center, university of virginia">
+              <span class="source-code">W9.13</span>
+              <span class="source-copy">
+                <strong>James Monroe: Foreign Affairs</strong>
+                <span>Daniel Preston · <i>Miller Center, University of Virginia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.14_3_Rs_Americas_Home_Hemisphere.html" data-source-card data-search="w9.14 the 3 r’s of america’s home hemisphere: republics; revolutionaries; &amp; the ’rithmatic of politics robert b. zoellick · belfer center for science and international affairs, harvard kennedy school">
+              <span class="source-code">W9.14</span>
+              <span class="source-copy">
+                <strong>The 3 R’s of America’s Home Hemisphere: Republics; Revolutionaries; &amp; the ’Rithmatic of Politics</strong>
+                <span>Robert B. Zoellick · <i>Belfer Center for Science and International Affairs, Harvard Kennedy School</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.15_Monroe_Doctrine_After_200_Years.html" data-source-card data-search="w9.15 the monroe doctrine after 200 years: a strategic hinge period in american history thomas e. mcnamara · american diplomacy, university of north carolina at chapel hill">
+              <span class="source-code">W9.15</span>
+              <span class="source-copy">
+                <strong>The Monroe Doctrine After 200 Years: A Strategic Hinge Period in American History</strong>
+                <span>Thomas E. McNamara · <i>American Diplomacy, University of North Carolina at Chapel Hill</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.16_Many_Faces_Monroe_Doctrine.html" data-source-card data-search="w9.16 the many faces of the monroe doctrine jay sexton · war on the rocks">
+              <span class="source-code">W9.16</span>
+              <span class="source-copy">
+                <strong>The Many Faces of the Monroe Doctrine</strong>
+                <span>Jay Sexton · <i>War on the Rocks</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.17_Monroe_Doctrine.html" data-source-card data-search="w9.17 monroe doctrine (1823) national archives · milestone documents, national archives">
+              <span class="source-code">W9.17</span>
+              <span class="source-copy">
+                <strong>Monroe Doctrine (1823)</strong>
+                <span>National Archives · <i>Milestone Documents, National Archives</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.18_Monroe_Doctrine_1823.html" data-source-card data-search="w9.18 monroe doctrine, 1823 office of the historian · milestones in the history of u.s. foreign relations, u.s. department of state">
+              <span class="source-code">W9.18</span>
+              <span class="source-copy">
+                <strong>Monroe Doctrine, 1823</strong>
+                <span>Office of the Historian · <i>Milestones in the History of U.S. Foreign Relations, U.S. Department of State</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.19_Andrew_Jackson.html" data-source-card data-search="w9.19 andrew jackson: campaigns and elections daniel feller · miller center, university of virginia">
+              <span class="source-code">W9.19</span>
+              <span class="source-copy">
+                <strong>Andrew Jackson: Campaigns and Elections</strong>
+                <span>Daniel Feller · <i>Miller Center, University of Virginia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.20_John_Quincy_Adams.html" data-source-card data-search="w9.20 john quincy adams: campaigns and elections margaret a. hogan · miller center, university of virginia">
+              <span class="source-code">W9.20</span>
+              <span class="source-copy">
+                <strong>John Quincy Adams: Campaigns and Elections</strong>
+                <span>Margaret A. Hogan · <i>Miller Center, University of Virginia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W9.21_Corrupt_Bargain.html" data-source-card data-search="w9.21 “corrupt bargain” margaret a. hogan · miller center, university of virginia">
+              <span class="source-code">W9.21</span>
+              <span class="source-copy">
+                <strong>“Corrupt Bargain”</strong>
+                <span>Margaret A. Hogan · <i>Miller Center, University of Virginia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+
+      <section class="chapter-section" id="chapter-10" data-chapter-section aria-labelledby="chapter-10-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">10</div>
+          <div>
+            <p>Chapter 10 · 1828–1840</p>
+            <h2 id="chapter-10-title">A New Democratic Era</h2>
+          </div>
+          <span class="chapter-count">16 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W10.01_Andrew_Jackson.html" data-source-card data-search="w10.1 andrew jackson: impact and legacy daniel feller · miller center, university of virginia">
+              <span class="source-code">W10.1</span>
+              <span class="source-copy">
+                <strong>Andrew Jackson: Impact and Legacy</strong>
+                <span>Daniel Feller · <i>Miller Center, University of Virginia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W10.02_Andrew_Jackson.html" data-source-card data-search="w10.2 andrew jackson: domestic affairs daniel feller · miller center, university of virginia">
+              <span class="source-code">W10.2</span>
+              <span class="source-copy">
+                <strong>Andrew Jackson: Domestic Affairs</strong>
+                <span>Daniel Feller · <i>Miller Center, University of Virginia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W10.03_Jacksonian_Backlash.html" data-source-card data-search="w10.3 the jacksonian backlash mike o’connor · u.s. intellectual history blog, society for u.s. intellectual history">
+              <span class="source-code">W10.3</span>
+              <span class="source-copy">
+                <strong>The Jacksonian Backlash</strong>
+                <span>Mike O’Connor · <i>U.S. Intellectual History Blog, Society for U.S. Intellectual History</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W10.04_Appeal_Forty_Thousand_Citizens.html" data-source-card data-search="w10.4 appeal of forty thousand citizens david reader · encyclopedia of greater philadelphia, rutgers university–camden">
+              <span class="source-code">W10.4</span>
+              <span class="source-copy">
+                <strong>Appeal of Forty Thousand Citizens</strong>
+                <span>David Reader · <i>Encyclopedia of Greater Philadelphia, Rutgers University–Camden</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W10.05_Nullification.html" data-source-card data-search="w10.5 nullification manisha sinha · south carolina encyclopedia, university of south carolina, institute for southern studies">
+              <span class="source-code">W10.5</span>
+              <span class="source-copy">
+                <strong>Nullification</strong>
+                <span>Manisha Sinha · <i>South Carolina Encyclopedia, University of South Carolina, Institute for Southern Studies</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W10.06_John_C_Calhoun_American_Disunion.html" data-source-card data-search="w10.6 john c. calhoun and american disunion robert elder · digital collections for the classroom, newberry library">
+              <span class="source-code">W10.6</span>
+              <span class="source-copy">
+                <strong>John C. Calhoun and American Disunion</strong>
+                <span>Robert Elder · <i>Digital Collections for the Classroom, Newberry Library</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W10.07_Calhoun_John_C.html" data-source-card data-search="w10.7 calhoun, john c. yasuhiro katagiri · federalism in america, center for the study of federalism">
+              <span class="source-code">W10.7</span>
+              <span class="source-copy">
+                <strong>Calhoun, John C.</strong>
+                <span>Yasuhiro Katagiri · <i>Federalism in America, Center for the Study of Federalism</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W10.08_Robert_Y_Hayne_Reply_Daniel_Webster_January.html" data-source-card data-search="w10.8 robert y. hayne, reply to daniel webster, january 21 and 25, 1830 robert c. byrd · classic senate speeches, united states senate">
+              <span class="source-code">W10.8</span>
+              <span class="source-copy">
+                <strong>Robert Y. Hayne, Reply to Daniel Webster, January 21 and 25, 1830</strong>
+                <span>Robert C. Byrd · <i>Classic Senate Speeches, United States Senate</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W10.09_Isaac_McCoy.html" data-source-card data-search="w10.9 isaac mccoy kansas historical society · kansapedia, kansas historical society">
+              <span class="source-code">W10.9</span>
+              <span class="source-copy">
+                <strong>Isaac McCoy</strong>
+                <span>Kansas Historical Society · <i>Kansapedia, Kansas Historical Society</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W10.10_Andrew_Jacksons_Reputation_Is_Changing_Again.html" data-source-card data-search="w10.10 andrew jackson’s reputation is changing again steve inskeep · history news network">
+              <span class="source-code">W10.10</span>
+              <span class="source-copy">
+                <strong>Andrew Jackson’s Reputation Is Changing Again</strong>
+                <span>Steve Inskeep · <i>History News Network</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W10.11_Trail_Tears_Nunna_Da_Ul_Tsun_Yi.html" data-source-card data-search="w10.11 trail of tears, or nunna-da-ul-tsun-yi ben harris mcclary · tennessee encyclopedia">
+              <span class="source-code">W10.11</span>
+              <span class="source-copy">
+                <strong>Trail of Tears, or Nunna-da-ul-tsun-yi</strong>
+                <span>Ben Harris McClary · <i>Tennessee Encyclopedia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W10.12_Creek_Indian_Removal.html" data-source-card data-search="w10.12 creek indian removal christopher haveman · encyclopedia of alabama">
+              <span class="source-code">W10.12</span>
+              <span class="source-copy">
+                <strong>Creek Indian Removal</strong>
+                <span>Christopher Haveman · <i>Encyclopedia of Alabama</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W10.13_Cherokee_Removal.html" data-source-card data-search="w10.13 cherokee removal tim alan garrison · new georgia encyclopedia">
+              <span class="source-code">W10.13</span>
+              <span class="source-copy">
+                <strong>Cherokee Removal</strong>
+                <span>Tim Alan Garrison · <i>New Georgia Encyclopedia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W10.14_Bank_War.html" data-source-card data-search="w10.14 bank war andrew tremel · encyclopedia of greater philadelphia, rutgers university–camden">
+              <span class="source-code">W10.14</span>
+              <span class="source-copy">
+                <strong>Bank War</strong>
+                <span>Andrew Tremel · <i>Encyclopedia of Greater Philadelphia, Rutgers University–Camden</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W10.15_Martin_Van_Buren.html" data-source-card data-search="w10.15 martin van buren: domestic affairs mark cheathem · miller center, university of virginia">
+              <span class="source-code">W10.15</span>
+              <span class="source-copy">
+                <strong>Martin Van Buren: Domestic Affairs</strong>
+                <span>Mark Cheathem · <i>Miller Center, University of Virginia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W10.16_Beyond_Biddle.html" data-source-card data-search="w10.16 beyond biddle jessica m. lepler · commonplace: the journal of early american life">
+              <span class="source-code">W10.16</span>
+              <span class="source-copy">
+                <strong>Beyond Biddle</strong>
+                <span>Jessica M. Lepler · <i>Commonplace: The Journal of Early American Life</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+
+      <section class="chapter-section" id="chapter-11" data-chapter-section aria-labelledby="chapter-11-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">11</div>
+          <div>
+            <p>Chapter 11 · 1790–1860</p>
+            <h2 id="chapter-11-title">The South and Slavery</h2>
+          </div>
+          <span class="chapter-count">16 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W11.01_Slavery_Antebellum_Georgia.html" data-source-card data-search="w11.1 slavery in antebellum georgia jeffrey robert young · new georgia encyclopedia">
+              <span class="source-code">W11.1</span>
+              <span class="source-copy">
+                <strong>Slavery in Antebellum Georgia</strong>
+                <span>Jeffrey Robert Young · <i>New Georgia Encyclopedia</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W11.02_Slavery_United_States.html" data-source-card data-search="w11.2 slavery in the united states jenny bourne · eh.net encyclopedia, economic history association">
+              <span class="source-code">W11.2</span>
+              <span class="source-copy">
+                <strong>Slavery in the United States</strong>
+                <span>Jenny Bourne · <i>EH.Net Encyclopedia, Economic History Association</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W11.03_Continuing_Debate_Slavery_Capitalism.html" data-source-card data-search="w11.3 continuing the debate on slavery and capitalism tom cutterham · the junto">
+              <span class="source-code">W11.3</span>
+              <span class="source-copy">
+                <strong>Continuing the Debate on Slavery and Capitalism</strong>
+                <span>Tom Cutterham · <i>The Junto</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W11.04_George_Fitzhugh.html" data-source-card data-search="w11.4 george fitzhugh (1806–1881) calvin schermerhorn · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W11.4</span>
+              <span class="source-copy">
+                <strong>George Fitzhugh (1806–1881)</strong>
+                <span>Calvin Schermerhorn · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W11.05_Slavery.html" data-source-card data-search="w11.5 slavery carl h. moneyhon · cals encyclopedia of arkansas">
+              <span class="source-code">W11.5</span>
+              <span class="source-copy">
+                <strong>Slavery</strong>
+                <span>Carl H. Moneyhon · <i>CALS Encyclopedia of Arkansas</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W11.06_Home_Sweet_Home.html" data-source-card data-search="w11.6 home, sweet home: gender in the antebellum household—men’s role as head of household elizabeth vanek · civil war era nc, nc state university">
+              <span class="source-code">W11.6</span>
+              <span class="source-copy">
+                <strong>Home, Sweet Home: Gender in the Antebellum Household—Men’s Role as Head of Household</strong>
+                <span>Elizabeth Vanek · <i>Civil War Era NC, NC State University</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W11.07_Poor_Whites_Slavery_Antebellum_South.html" data-source-card data-search="w11.7 poor whites and slavery in the antebellum south: an interview with historian keri leigh merritt keri leigh merritt (interview by robin lindley) · history news network">
+              <span class="source-code">W11.7</span>
+              <span class="source-copy">
+                <strong>Poor Whites and Slavery in the Antebellum South: An Interview with Historian Keri Leigh Merritt</strong>
+                <span>Keri Leigh Merritt (interview by Robin Lindley) · <i>History News Network</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W11.08_Helper_Hinton_Rowan.html" data-source-card data-search="w11.8 helper, hinton rowan james w. wall · ncpedia, state library of north carolina">
+              <span class="source-code">W11.8</span>
+              <span class="source-copy">
+                <strong>Helper, Hinton Rowan</strong>
+                <span>James W. Wall · <i>NCpedia, State Library of North Carolina</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W11.09_Introduction_WPA_Slave_Narratives.html" data-source-card data-search="w11.9 an introduction to the wpa slave narratives norman r. yetman · born in slavery: slave narratives from the federal writers’ project, 1936–1938, library of congress">
+              <span class="source-code">W11.9</span>
+              <span class="source-copy">
+                <strong>An Introduction to the WPA Slave Narratives</strong>
+                <span>Norman R. Yetman · <i>Born in Slavery: Slave Narratives from the Federal Writers’ Project, 1936–1938, Library of Congress</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W11.10_Vesey_Denmark.html" data-source-card data-search="w11.10 vesey, denmark douglas r. egerton · south carolina encyclopedia, university of south carolina, institute for southern studies">
+              <span class="source-code">W11.10</span>
+              <span class="source-copy">
+                <strong>Vesey, Denmark</strong>
+                <span>Douglas R. Egerton · <i>South Carolina Encyclopedia, University of South Carolina, Institute for Southern Studies</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W11.11_African_American_Christianity_Pt_I.html" data-source-card data-search="w11.11 african american christianity, pt. i: to the civil war laurie maffly-kipp · teacherserve, national humanities center">
+              <span class="source-code">W11.11</span>
+              <span class="source-copy">
+                <strong>African American Christianity, Pt. I: To the Civil War</strong>
+                <span>Laurie Maffly-Kipp · <i>TeacherServe, National Humanities Center</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W11.12_Gabriels_Rebellion.html" data-source-card data-search="w11.12 gabriel’s rebellion (1800) michael l. nicholls · encyclopedia virginia, virginia humanities">
+              <span class="source-code">W11.12</span>
+              <span class="source-copy">
+                <strong>Gabriel’s Rebellion (1800)</strong>
+                <span>Michael L. Nicholls · <i>Encyclopedia Virginia, Virginia Humanities</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W11.13_Home_Sweet_Home.html" data-source-card data-search="w11.13 home, sweet home: gender in the antebellum household—domestic sphere elizabeth vanek · civil war era nc, nc state university">
+              <span class="source-code">W11.13</span>
+              <span class="source-copy">
+                <strong>Home, Sweet Home: Gender in the Antebellum Household—Domestic Sphere</strong>
+                <span>Elizabeth Vanek · <i>Civil War Era NC, NC State University</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W11.14_Chesnut_Mary_Boykin_Miller.html" data-source-card data-search="w11.14 chesnut, mary boykin miller james o. farmer jr. · south carolina encyclopedia, university of south carolina, institute for southern studies">
+              <span class="source-code">W11.14</span>
+              <span class="source-copy">
+                <strong>Chesnut, Mary Boykin Miller</strong>
+                <span>James O. Farmer Jr. · <i>South Carolina Encyclopedia, University of South Carolina, Institute for Southern Studies</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W11.15_Women_North_Carolina_Part_4.html" data-source-card data-search="w11.15 women in north carolina, part 4: life in antebellum north carolina terrell a. crow and ansley herring wegner · ncpedia, state library of north carolina">
+              <span class="source-code">W11.15</span>
+              <span class="source-copy">
+                <strong>Women in North Carolina, Part 4: Life in Antebellum North Carolina</strong>
+                <span>Terrell A. Crow and Ansley Herring Wegner · <i>NCpedia, State Library of North Carolina</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W11.16_Stephanie_Jones_Rogers_Gives_Interview_How_White.html" data-source-card data-search="w11.16 stephanie jones-rogers gives interview on how white women’s “investment” in slavery has shaped america today stephanie e. jones-rogers (interview by anna north) · history news network">
+              <span class="source-code">W11.16</span>
+              <span class="source-copy">
+                <strong>Stephanie Jones-Rogers Gives Interview on How White Women’s “Investment” in Slavery Has Shaped America Today</strong>
+                <span>Stephanie E. Jones-Rogers (interview by Anna North) · <i>History News Network</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+
+      <section class="chapter-section" id="chapter-12" data-chapter-section aria-labelledby="chapter-12-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">12</div>
+          <div>
+            <p>Chapter 12 · 1825–1854</p>
+            <h2 id="chapter-12-title">Religion, Romanticism, and Reform</h2>
+          </div>
+          <span class="chapter-count">15 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W12.01_Evangelicalism_Revivalism_Second_Great_Awakening.html" data-source-card data-search="w12.1 evangelicalism, revivalism, and the second great awakening donald scott · teacherserve, national humanities center">
+              <span class="source-code">W12.1</span>
+              <span class="source-copy">
+                <strong>Evangelicalism, Revivalism, and the Second Great Awakening</strong>
+                <span>Donald Scott · <i>TeacherServe, National Humanities Center</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W12.02_Evangelicalism_As_Social_Movement.html" data-source-card data-search="w12.2 evangelicalism as a social movement donald scott · teacherserve, national humanities center">
+              <span class="source-code">W12.2</span>
+              <span class="source-copy">
+                <strong>Evangelicalism as a Social Movement</strong>
+                <span>Donald Scott · <i>TeacherServe, National Humanities Center</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W12.03_Jarena_Lee_Early_M_E_Church.html" data-source-card data-search="w12.3 jarena lee and the early a.m.e. church national museum of african american history and culture · national museum of african american history and culture, smithsonian institution">
+              <span class="source-code">W12.3</span>
+              <span class="source-copy">
+                <strong>Jarena Lee and the Early A.M.E. Church</strong>
+                <span>National Museum of African American History and Culture · <i>National Museum of African American History and Culture, Smithsonian Institution</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W12.04_Horace_Mann_Creation_Common_School.html" data-source-card data-search="w12.4 horace mann and the creation of the common school graham warder · social welfare history project, vcu libraries">
+              <span class="source-code">W12.4</span>
+              <span class="source-copy">
+                <strong>Horace Mann and the Creation of the Common School</strong>
+                <span>Graham Warder · <i>Social Welfare History Project, VCU Libraries</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W12.05_Dix_Dorthea_Lynde.html" data-source-card data-search="w12.5 dix, dorthea lynde graham warder · social welfare history project, vcu libraries">
+              <span class="source-code">W12.5</span>
+              <span class="source-copy">
+                <strong>Dix, Dorthea Lynde</strong>
+                <span>Graham Warder · <i>Social Welfare History Project, VCU Libraries</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W12.06_Eastern_State_Penitentiary.html" data-source-card data-search="w12.6 eastern state penitentiary jennifer lawrence janofsky · encyclopedia of greater philadelphia, rutgers university–camden">
+              <span class="source-code">W12.6</span>
+              <span class="source-copy">
+                <strong>Eastern State Penitentiary</strong>
+                <span>Jennifer Lawrence Janofsky · <i>Encyclopedia of Greater Philadelphia, Rutgers University–Camden</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W12.07_Poor_Relief_Almshouse.html" data-source-card data-search="w12.7 poor relief and the almshouse david wagner · social welfare history project, vcu libraries">
+              <span class="source-code">W12.7</span>
+              <span class="source-copy">
+                <strong>Poor Relief and the Almshouse</strong>
+                <span>David Wagner · <i>Social Welfare History Project, VCU Libraries</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W12.08_American_Abolitionism_Religion.html" data-source-card data-search="w12.8 american abolitionism and religion bertram wyatt-brown · teacherserve, national humanities center">
+              <span class="source-code">W12.8</span>
+              <span class="source-copy">
+                <strong>American Abolitionism and Religion</strong>
+                <span>Bertram Wyatt-Brown · <i>TeacherServe, National Humanities Center</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W12.09_How_Alliance_Between_Slaves_Abolitionists_Ended_Slavery.html" data-source-card data-search="w12.9 how the alliance between slaves and abolitionists ended slavery patrick rael · black perspectives, african american intellectual history society">
+              <span class="source-code">W12.9</span>
+              <span class="source-copy">
+                <strong>How the Alliance between Slaves and Abolitionists Ended Slavery</strong>
+                <span>Patrick Rael · <i>Black Perspectives, African American Intellectual History Society</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W12.10_Northern_Black_Peoples_Freedom_Struggle_Nineteenth_Century.html" data-source-card data-search="w12.10 northern black people’s freedom struggle in the nineteenth century holly a. pinheiro jr. · black perspectives, african american intellectual history society">
+              <span class="source-code">W12.10</span>
+              <span class="source-copy">
+                <strong>Northern Black People’s Freedom Struggle in the Nineteenth Century</strong>
+                <span>Holly A. Pinheiro Jr. · <i>Black Perspectives, African American Intellectual History Society</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W12.11_Seneca_Falls_Building_Movement_17761890.html" data-source-card data-search="w12.11 seneca falls and building a movement, 1776–1890 library of congress · shall not be denied: women fight for the vote, library of congress">
+              <span class="source-code">W12.11</span>
+              <span class="source-copy">
+                <strong>Seneca Falls and Building a Movement, 1776–1890</strong>
+                <span>Library of Congress · <i>Shall Not Be Denied: Women Fight for the Vote, Library of Congress</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W12.12_Seneca_Falls_1848.html" data-source-card data-search="w12.12 seneca falls in 1848 national park service, women’s rights national historical park · national park service">
+              <span class="source-code">W12.12</span>
+              <span class="source-copy">
+                <strong>Seneca Falls in 1848</strong>
+                <span>National Park Service, Women’s Rights National Historical Park · <i>National Park Service</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W12.13_Henry_David_Thoreau.html" data-source-card data-search="w12.13 henry david thoreau rick anthony furtak · stanford encyclopedia of philosophy">
+              <span class="source-code">W12.13</span>
+              <span class="source-copy">
+                <strong>Henry David Thoreau</strong>
+                <span>Rick Anthony Furtak · <i>Stanford Encyclopedia of Philosophy</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W12.14_Transcendentalism.html" data-source-card data-search="w12.14 transcendentalism russell goodman · stanford encyclopedia of philosophy">
+              <span class="source-code">W12.14</span>
+              <span class="source-copy">
+                <strong>Transcendentalism</strong>
+                <span>Russell Goodman · <i>Stanford Encyclopedia of Philosophy</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W12.15_Ralph_Waldo_Emerson.html" data-source-card data-search="w12.15 ralph waldo emerson russell goodman · stanford encyclopedia of philosophy">
+              <span class="source-code">W12.15</span>
+              <span class="source-copy">
+                <strong>Ralph Waldo Emerson</strong>
+                <span>Russell Goodman · <i>Stanford Encyclopedia of Philosophy</i></span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+
+    <footer class="page-footer">
+      <a class="back-top" href="#top">Back to top ↑</a>
+      <div>Unit 3 · An Expanding Nation · History B17A · Daniel Garza, M.A.</div>
+    </footer>
+  </main>
+  <script>
+    (() => {
+      const input = document.getElementById('source-search');
+      const cards = [...document.querySelectorAll('[data-source-card]')];
+      const sections = [...document.querySelectorAll('[data-chapter-section]')];
+      const resultCount = document.getElementById('result-count');
+      const noResults = document.getElementById('no-results');
+
+      function normalize(value) {
+        return value.toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      }
+
+      function updateCatalog() {
+        const query = normalize(input.value.trim());
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const matches = !query || normalize(card.dataset.search).includes(query);
+          card.hidden = !matches;
+          if (matches) visibleCount += 1;
+        });
+
+        sections.forEach(section => {
+          const visibleInSection = section.querySelectorAll('[data-source-card]:not([hidden])').length;
+          section.querySelector('.chapter-empty').hidden = visibleInSection > 0;
+        });
+
+        resultCount.textContent = `${visibleCount} ${visibleCount === 1 ? 'article' : 'articles'}`;
+        noResults.hidden = visibleCount !== 0;
+      }
+
+      input.addEventListener('input', updateCatalog);
+      input.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && input.value) {
+          input.value = '';
+          updateCatalog();
+        }
+      });
+      updateCatalog();
+    })();
+</script>
+</body>
+</html>

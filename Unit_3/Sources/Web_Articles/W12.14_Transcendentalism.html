@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Transcendentalism. Web Article W12.14 for Unit 3: An Expanding Nation.">
+  <meta name="theme-color" content="#7A2E1F">
+  <title>Web Article W12.14 | Transcendentalism</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/W12.14_Transcendentalism.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #7A2E1F;
+      --forest-mid: #A8412B;
+      --coral: #D9A15C;
+      --coral-light: #EAC896;
+      --cream: #FBF2E7;
+      --paper: #FFFDF9;
+      --mint: #F8ECDC;
+      --sage: #E6CFB3;
+      --ink: #3B1A12;
+      --muted: #7D5A4C;
+      --shadow: 0 22px 55px rgba(74, 26, 16, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A8412B;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(217, 161, 92, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(122, 46, 31, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(74, 26, 16, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(168, 65, 43, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Web Article navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/"><span aria-hidden="true">←</span> Web Article Archive</a>
+      <div class="archive-meta">Unit 3 · Chapter 12 · W12.14</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="W12.14">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#FBF2E7; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Web Article W12.14</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">Transcendentalism</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Russell Goodman</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #D9A15C; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#EAC896; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">AUTHOR</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:13.5px; line-height:1.55;">Russell Goodman (Philosopher, University of New Mexico)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WEBSITE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:13.5px; line-height:1.55;">Stanford Encyclopedia of Philosophy</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">PUBLICATION</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:13.5px; line-height:1.55;">February 6, 2003; substantive revision September 12, 2023</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">CHAPTER / PROMPTS</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:13.5px; line-height:1.55;">Chapter 12 | 12.5</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARGUMENT ROLES</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#7A2E1F; font-size:13.5px; line-height:1.55;">12.5.1 Support; 12.5.2 Support; 12.5.3 Support</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:17px; font-weight:700; border-bottom:2px solid #D9A15C; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt · 1,085 words</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Transcendentalism is an American literary, philosophical, religious, and political movement of the early nineteenth century, centered around Ralph Waldo Emerson. Other important transcendentalists were Henry David Thoreau, Margaret Fuller, Lydia Maria Child, Amos Bronson Alcott, Frederic Henry Hedge, Elizabeth Palmer Peabody, and Theodore Parker. Stimulated by English and German Romanticism, the Biblical criticism of Herder and Schleiermacher, and the skepticism of Hume, the transcendentalists operated with the sense that a new era was at hand. They were critics of their contemporary society for its unthinking conformity, and urged that each person find, in Emerson’s words, “an original relation to the universe” (O, 3). Emerson and Thoreau sought this relation in solitude amidst nature, and in their writing. By the 1840s they, along with other transcendentalists, were engaged in the social experiments of Brook Farm, Fruitlands, and Walden; and, by the 1850s in an increasingly urgent critique of American slavery.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:14px; font-weight:700; margin:8px 0 10px 0;" class="document-subheading" role="heading" aria-level="3">1. Origins and Character</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">What we now know as transcendentalism first arose among the liberal New England Congregationalists, who departed from orthodox Calvinism in two respects: they believed in the importance and efficacy of human striving, as opposed to the bleaker Puritan picture of complete and inescapable human depravity; and they emphasized the unity rather than the “Trinity” of God (hence the term “Unitarian,” originally a term of abuse that they came to adopt.) Most of the Unitarians held that Jesus was in some way inferior to God the Father but still greater than human beings; a few followed the English Unitarian Joseph Priestley (1733–1804) in holding that Jesus was thoroughly human, although endowed with special authority. The Unitarians’ leading preacher, William Ellery Channing (1780–1842), portrayed orthodox Congregationalism as a religion of fear, and maintained that Jesus saved human beings from sin, not just from punishment. His sermon “Unitarian Christianity” (1819) denounced “the conspiracy of ages against the liberty of Christians” (P, 336) and helped give the Unitarian movement its name. In “Likeness to God” (1828) he proposed that human beings “partake” of Divinity and that they may achieve “a growing likeness to the Supreme Being” (T, 4).</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Unitarians were “modern.” They attempted to reconcile Locke’s empiricism with Christianity by maintaining that the accounts of miracles in the Bible provide overwhelming evidence for the truth of religion. It was precisely on this ground, however, that the transcendentalists found fault with Unitarianism. For although they admired Channing’s idea that human beings can become more like God, they were persuaded by Hume that no empirical proof of religion could be satisfactory. In letters written in his freshman year at Harvard (1817), Emerson tried out Hume’s skeptical arguments on his devout and respected Aunt Mary Moody Emerson, and in his journals of the early 1820s he discusses with approval Hume’s Dialogues on Natural Religion and his underlying critique of necessary connection. “We have no experience of a Creator,” Emerson writes, and therefore we “know of none” (JMN 2, 161).</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Skepticism about religion was also engendered by the publication of an English translation of F. D. E. Schleiermacher’s Critical Essay Upon the Gospel of St. Luke (1825), which introduced the idea that the Bible was a product of human history and culture. Equally important was the publication in 1833—some fifty years after its initial appearance in Germany—of James Marsh’s translation of Johann Gottfried von Herder’s Spirit of Hebrew Poetry (1782). Herder blurred the lines between religious texts and humanly-produced poetry, casting doubt on the authority of the Bible, but also suggesting that texts with equal authority could still be written. It was against this background that Emerson asked in 1836, in the first paragraph of Nature: “Why should we not have a poetry and philosophy of insight and not of tradition, and a religion by revelation to us, and not the history of theirs” (O, 5). The individual’s “revelation”—or “intuition,” as Emerson was later to speak of it—was to be the counter both to Unitarian empiricism and Humean skepticism.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">An important source for the transcendentalists’ knowledge of German philosophy was Frederic Henry Hedge (1805–90). Hedge’s father Levi Hedge, a Harvard professor of logic, sent him to preparatory school in Germany at the age of thirteen, after which he attended the Harvard Divinity School. Ordained as a Unitarian minister, Hedge wrote a long review of the work of Samuel Taylor Coleridge for the Christian Examiner in 1833. Noting Coleridge’s fondness for “German metaphysics” and his immense gifts of erudition and expression, he laments that Coleridge had not made Kant and the post-Kantians more accessible to an English-speaking audience. This is the task—to introduce the “transcendental philosophy” of Kant, (T, 87)—that Hedge takes up. In particular, he explains Kant’s idea of a Copernican Revolution in philosophy: “[S]ince the supposition that our intuitions depend on the nature of the world without, will not answer, assume that the world without depends on the nature of our intuitions.” This “key to the whole critical philosophy,” Hedge continues, explains the possibility of “a priori knowledge” (T, 92). Hedge organized what eventually became known as the Transcendental Club, by suggesting to Emerson in 1836 that they form a discussion group for disaffected young Unitarian clergy. The group included George Ripley and Bronson Alcott, had some 30 meetings in four years, and was a sponsor of The Dial and Brook Farm. Hedge was a vocal opponent of slavery in the 1830s and a champion of women’s rights in the 1850s, but he remained a Unitarian minister, and became a professor at the Harvard Divinity School.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Another source for the transcendentalists’ knowledge of German philosophy was Germaine de Staël (Anne-Louise-Germaine Necker) (1766–1817), whose De l’Allemagne (On Germany) was a favorite of the young Emerson. In a sweeping survey of European metaphysics and political philosophy, de Staël praises Locke’s devotion to liberty, but sees him as the originator of a sensationalist school of epistemology that leads to the skepticism of Hume. She finds an attractive contrast in the German tradition that begins with Leibniz and culminates in Kant, which asserts the power and authority of the mind.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">James Marsh (1794–1842), a graduate of Andover and the president of the University of Vermont, was equally important for the emerging philosophy of transcendentalism. Marsh was convinced that German philosophy held the key to a reformed theology. His American edition of Coleridge’s Aids to Reflection (1829) introduced Coleridge’s version—much indebted to Schelling—of Kantian terminology, terminology that runs throughout Emerson’s early work. In Nature, for example, Emerson writes: “The Imagination may be defined to be, the use which the Reason makes of the material world” (O, 25).</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:17px; font-weight:700; border-bottom:2px solid #D9A15C; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Original Article</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><a href="https://plato.stanford.edu/entries/transcendentalism/">https://plato.stanford.edu/entries/transcendentalism/</a></p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:17px; font-weight:700; border-bottom:2px solid #D9A15C; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Goodman, Russell. "Transcendentalism." <em>Stanford Encyclopedia of Philosophy</em>. Substantively revised September 12, 2023. <a href="https://plato.stanford.edu/entries/transcendentalism/">https://plato.stanford.edu/entries/transcendentalism/</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Full footnote:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Russell Goodman, "Transcendentalism," <em>Stanford Encyclopedia of Philosophy</em>, substantively revised September 12, 2023, <a href="https://plato.stanford.edu/entries/transcendentalism/">https://plato.stanford.edu/entries/transcendentalism/</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened footnote:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#7A2E1F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Goodman, "Transcendentalism."</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #D9A15C; font-family:Arial, Helvetica, sans-serif; color:#A8412B; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 3 · AN EXPANDING NATION | HISTORY B17A | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_3/Sources/Web_Articles/"><span aria-hidden="true">←</span> Return to the Web Article Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>
