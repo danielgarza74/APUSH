@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web article archive for Unit 5: Growing Pains, Chapters 16–19, 1859–1917.">
+  <meta name="theme-color" content="#6D3E49">
+  <title>Unit 5 Web Article Archive | Growing Pains</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #6D3E49;
+      --forest-mid: #975666;
+      --forest-light: #8D505F;
+      --coral: #17706A;
+      --coral-light: #8BB8B4;
+      --cream: #EAF6F4;
+      --paper: #F9FCFC;
+      --mint: #FAEFF2;
+      --sage: #C5DBDA;
+      --ink: #093430;
+      --muted: #41625F;
+      --shadow: 0 16px 38px rgba(65, 37, 44, .13);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #17706A;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 92% 5%, rgba(23, 112, 106, .11), transparent 24rem),
+        linear-gradient(145deg, rgba(255,255,255,.5), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    button, input { font: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-hero {
+      position: relative;
+      min-height: 470px;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      padding: 5rem clamp(1.5rem, 7vw, 7rem) 4.5rem;
+      border-bottom: 7px solid var(--coral);
+      background:
+        linear-gradient(115deg, rgba(0,0,0,.13), transparent 60%),
+        var(--forest);
+      color: var(--paper);
+      isolation: isolate;
+    }
+    .archive-hero::after {
+      content: '';
+      position: absolute;
+      inset: 1.2rem;
+      z-index: -1;
+      border: 1px solid rgba(139, 184, 180,.27);
+      pointer-events: none;
+    }
+    .hero-watermark {
+      position: absolute;
+      right: clamp(1rem, 7vw, 7rem);
+      top: -5rem;
+      z-index: -1;
+      color: rgba(255,255,255,.045);
+      font: 700 clamp(22rem, 40vw, 40rem)/1 var(--heading);
+      user-select: none;
+    }
+    .hero-content { max-width: 1040px; text-align: center; }
+    .hero-eyebrow {
+      margin: 0 0 1rem;
+      color: var(--coral-light);
+      font: 700 .72rem/1.4 var(--heading);
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    .archive-hero h1 {
+      max-width: 900px;
+      margin: 0 auto;
+      color: var(--paper);
+      font: 700 clamp(2.3rem, 5.5vw, 5.2rem)/1.08 var(--heading);
+      letter-spacing: .03em;
+      text-wrap: balance;
+    }
+    .hero-subtitle {
+      max-width: 760px;
+      margin: 1.35rem auto 0;
+      color: rgba(249, 252, 252,.88);
+      font: italic 600 clamp(1.15rem, 2vw, 1.45rem)/1.5 var(--body);
+      text-wrap: balance;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .65rem 1.35rem;
+      margin-top: 2.1rem;
+      color: var(--coral-light);
+      font: 700 .65rem/1.4 var(--heading);
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .hero-meta span + span::before { content: '◆'; margin-right: 1.35rem; font-size: .45rem; vertical-align: middle; }
+
+    .chapter-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--sage);
+      background: rgba(249, 252, 252,.96);
+      box-shadow: 0 8px 22px rgba(65, 37, 44,.08);
+      backdrop-filter: blur(12px);
+    }
+    .chapter-nav-inner {
+      width: min(1180px, calc(100% - 2rem));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 66px;
+    }
+    .archive-mark {
+      flex: 0 0 auto;
+      color: var(--forest);
+      font: 700 .7rem var(--heading);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .chapter-links { display: flex; align-items: stretch; align-self: stretch; }
+    .chapter-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: 0 1rem;
+      border-bottom: 3px solid transparent;
+      color: var(--forest);
+      font: 700 .67rem var(--ui);
+      letter-spacing: .04em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .chapter-links a span { color: var(--coral-text); font-family: var(--heading); }
+    .chapter-links a:hover { border-bottom-color: var(--coral); background: var(--mint); }
+
+    main { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; padding: 3.5rem 0 5rem; }
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .intro-card,
+    .citation-card {
+      position: relative;
+      padding: 2.25rem 2.35rem;
+      border: 1px solid var(--coral);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+    .intro-card::after,
+    .citation-card::after {
+      content: '';
+      position: absolute;
+      inset: 7px;
+      border: 1px solid rgba(23, 112, 106,.17);
+      pointer-events: none;
+    }
+    .eyebrow {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 .5rem;
+      color: var(--coral-text);
+      font: 800 .65rem var(--ui);
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .intro-card h2,
+    .citation-card h2 {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 1rem;
+      color: var(--forest);
+      font: 700 clamp(1.5rem, 2.6vw, 2.15rem)/1.2 var(--heading);
+    }
+    .intro-card p,
+    .citation-card p { position: relative; z-index: 1; margin: 0; }
+    .citation-card { background: var(--mint); }
+    .citation-card p + p { margin-top: .85rem; }
+
+    .catalog-tools {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: center;
+      margin: 2.5rem 0 3.2rem;
+      padding: 1.25rem 1.35rem;
+      border: 1px solid var(--sage);
+      background: rgba(249, 252, 252,.82);
+    }
+    .search-wrap { position: relative; }
+    .search-wrap svg {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      width: 19px;
+      transform: translateY(-50%);
+      color: var(--forest-mid);
+      pointer-events: none;
+    }
+    .source-search {
+      width: 100%;
+      padding: .9rem 1rem .9rem 3rem;
+      border: 1px solid var(--sage);
+      background: white;
+      color: var(--ink);
+      font: 600 .85rem var(--ui);
+    }
+    .source-search:focus { border-color: var(--coral); outline: 2px solid rgba(23, 112, 106,.15); }
+    .result-count {
+      min-width: 9rem;
+      margin: 0;
+      color: var(--muted);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .07em;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .chapter-section { margin-top: 4rem; scroll-margin-top: 88px; }
+    .chapter-heading {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 5rem 1fr auto;
+      gap: 1.2rem;
+      align-items: center;
+      min-height: 150px;
+      padding: 1.7rem 2rem;
+      border-top: 5px solid var(--coral);
+      background: var(--forest);
+      color: white;
+    }
+    .chapter-heading::after {
+      content: '';
+      position: absolute;
+      right: -4rem;
+      bottom: -8rem;
+      width: 18rem;
+      height: 18rem;
+      border: 1px solid rgba(139, 184, 180,.22);
+      border-radius: 50%;
+    }
+    .chapter-number {
+      color: rgba(255,255,255,.13);
+      font: 700 5rem/1 var(--heading);
+      text-align: center;
+    }
+    .chapter-heading p { margin: 0 0 .35rem; color: var(--coral-light); font: 700 .67rem var(--ui); letter-spacing: .14em; text-transform: uppercase; }
+    .chapter-heading h2 { margin: 0; color: white; font: 700 clamp(1.35rem, 3vw, 2.25rem)/1.18 var(--heading); text-wrap: balance; }
+    .chapter-count {
+      position: relative;
+      z-index: 1;
+      padding: .5rem .7rem;
+      border: 1px solid rgba(139, 184, 180,.48);
+      color: var(--coral-light);
+      font: 700 .65rem var(--ui);
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+    .source-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .75rem;
+      padding-top: 1rem;
+    }
+    .source-card {
+      display: grid;
+      grid-template-columns: 3.8rem 1fr 1.2rem;
+      gap: .85rem;
+      align-items: start;
+      min-height: 122px;
+      padding: 1.2rem 1.15rem;
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      color: var(--ink);
+      text-decoration: none;
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+    .source-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--coral);
+      box-shadow: 0 10px 24px rgba(65, 37, 44,.11);
+    }
+    .source-card[hidden] { display: none; }
+    .source-code {
+      padding-top: .12rem;
+      color: var(--coral-text);
+      font: 700 .74rem var(--heading);
+      letter-spacing: .025em;
+    }
+    .source-copy { display: flex; min-width: 0; flex-direction: column; }
+    .source-copy strong { color: var(--forest); font: 700 .83rem/1.42 var(--ui); }
+    .source-copy > span { margin-top: .35rem; color: var(--muted); font: italic 1rem/1.4 var(--body); }
+    .source-arrow { color: var(--coral-text); font-size: 1rem; transition: transform .2s ease; }
+    .source-card:hover .source-arrow { transform: translate(2px, -2px); }
+    .chapter-empty { margin: 1rem 0 0; padding: 1.4rem; border: 1px dashed var(--sage); color: var(--muted); text-align: center; }
+    .no-results {
+      margin: 3rem 0;
+      padding: 2rem;
+      border: 1px solid var(--coral-light);
+      background: #F9EBEF;
+      color: var(--forest);
+      text-align: center;
+    }
+    .page-footer {
+      margin-top: 5rem;
+      padding: 1.4rem 0 0;
+      border-top: 1px solid var(--coral);
+      color: var(--muted);
+      font: 700 .63rem var(--ui);
+      letter-spacing: .11em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .back-top {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: var(--forest-mid);
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .archive-hero { min-height: 410px; }
+      .archive-mark { display: none; }
+      .chapter-nav-inner { justify-content: center; }
+      .chapter-links { overflow-x: auto; }
+      .intro-grid { grid-template-columns: 1fr; }
+      .source-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      body { font-size: 18px; }
+      .archive-hero { min-height: 380px; padding: 4rem 1.2rem 3.6rem; }
+      .archive-hero::after { inset: .7rem; }
+      .hero-meta { flex-direction: column; gap: .35rem; }
+      .hero-meta span + span::before { content: ''; margin: 0; }
+      .chapter-nav-inner { width: 100%; }
+      .chapter-links { width: 100%; justify-content: space-around; }
+      .chapter-links a { flex: 1; justify-content: center; padding: 0 .5rem; white-space: nowrap; }
+      .chapter-links a .link-title { display: none; }
+      main { width: min(100% - 1.2rem, 1180px); padding-top: 2rem; }
+      .intro-card, .citation-card { padding: 1.7rem 1.35rem; }
+      .catalog-tools { grid-template-columns: 1fr; }
+      .result-count { min-width: 0; text-align: left; }
+      .chapter-section { scroll-margin-top: 74px; }
+      .chapter-heading { grid-template-columns: 3rem 1fr; min-height: 130px; padding: 1.35rem 1.1rem; }
+      .chapter-number { font-size: 3.5rem; }
+      .chapter-count { grid-column: 2; justify-self: start; }
+      .source-card { grid-template-columns: 3.2rem 1fr 1rem; min-height: 0; padding: 1rem .85rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+    @media print {
+      body { background: white; font-size: 10pt; }
+      .chapter-nav, .catalog-tools, .back-top { display: none !important; }
+      .archive-hero { min-height: 0; padding: .7in; print-color-adjust: exact; }
+      main { width: auto; padding: .35in; }
+      .intro-card, .citation-card, .source-card { box-shadow: none; }
+      .source-grid { grid-template-columns: 1fr 1fr; }
+      .source-card { min-height: 0; break-inside: avoid; }
+      .chapter-section { break-before: page; }
+    }
+    .intro-card p + p { margin-top: .85rem; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to source catalog</a>
+
+  <header class="archive-hero">
+    <div class="hero-watermark" aria-hidden="true">W</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">HIST C1002 · UNITED STATES HISTORY SINCE 1865</p>
+      <h1>Web Article Archive</h1>
+      <p class="hero-subtitle">Scholarly and institutional web articles on industrialization and labor, the New South and the West, Gilded Age politics and Populism, and overseas empire.</p>
+      <div class="hero-meta">
+        <span>Unit 5 · Growing Pains</span>
+        <span>Chapters 16–19</span>
+        <span>1859–1917</span>
+        <span>77 articles</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="chapter-nav" aria-label="Chapter navigation">
+    <div class="chapter-nav-inner">
+      <span class="archive-mark">Web Articles</span>
+      <div class="chapter-links"><a href="#chapter-16"><span>16</span><span class="link-title">Business and Labor in the Industrial Era</span></a><a href="#chapter-17"><span>17</span><span class="link-title">Legends and Realities: The South and the West</span></a><a href="#chapter-18"><span>18</span><span class="link-title">The Gilded Age: Political Stalemate and Rural Revolt</span></a><a href="#chapter-19"><span>19</span><span class="link-title">Seizing an American Empire</span></a></div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="intro-grid" aria-label="Reader guidance">
+      <article class="intro-card">
+        <p class="eyebrow">Reading the excerpts</p>
+        <h2>Read the article in its own words.</h2>
+        <p>Each excerpt reproduces complete published paragraphs, normally 600–1,200 words; a shorter article is reproduced in full. A bracketed notice marks a move between separate parts of an article, and no bridging language has been added.</p>
+        <p>The panel at the top of each article lists every essay prompt it serves and whether it supports, qualifies, challenges, or counters that line of argument.</p>
+      </article>
+      <article class="citation-card">
+        <p class="eyebrow">Citing these readings</p>
+        <h2>Cite the web article.</h2>
+        <p>Use the full footnote citation the first time you cite an article and the shortened form afterward. Cite the web article, not a reader page number, and include only works you actually use in your bibliography.</p>
+        <p>Web pages can move or change. Keep the access date shown in the citation, and use this excerpt if a live page later becomes unavailable.</p>
+      </article>
+    </section>
+
+    <section class="catalog-tools" aria-label="Search the source catalog">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+        <label class="skip-link" for="source-search">Search web articles</label>
+        <input id="source-search" class="source-search" type="search" autocomplete="off" placeholder="Search by article, author, website, or code…">
+      </div>
+      <p id="result-count" class="result-count" aria-live="polite">77 articles</p>
+    </section>
+
+    <p id="no-results" class="no-results" hidden>No web articles match that search. Try a shorter title, author surname, date, or source code.</p>
+
+      <section class="chapter-section" id="chapter-16" data-chapter-section aria-labelledby="chapter-16-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">16</div>
+          <div>
+            <p>Chapter 16 · 1859–1901</p>
+            <h2 id="chapter-16-title">Business and Labor in the Industrial Era</h2>
+          </div>
+          <span class="chapter-count">11 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W16.01_History_Workplace_Safety_United_States.html" data-source-card data-search="w16.1 history of workplace safety in the united states, 1880–1970 mark aldrich, smith college · eh.net encyclopedia">
+              <span class="source-code">W16.1</span>
+              <span class="source-copy">
+                <strong>History of Workplace Safety in the United States, 1880–1970</strong>
+                <span>Mark Aldrich, Smith College · EH.Net Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W16.02_Haymarket_Affair_Narrative.html" data-source-card data-search="w16.2 the haymarket affair narrative chicago historical society (chicago history museum) · the haymarket affair digital collection">
+              <span class="source-code">W16.2</span>
+              <span class="source-copy">
+                <strong>The Haymarket Affair Narrative</strong>
+                <span>Chicago Historical Society (Chicago History Museum) · The Haymarket Affair Digital Collection</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W16.03_Labor_Unions_United_States.html" data-source-card data-search="w16.3 labor unions in the united states gerald friedman, university of massachusetts at amherst · eh.net encyclopedia">
+              <span class="source-code">W16.3</span>
+              <span class="source-copy">
+                <strong>Labor Unions in the United States</strong>
+                <span>Gerald Friedman, University of Massachusetts at Amherst · EH.Net Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W16.04_Gender_Gap.html" data-source-card data-search="w16.4 gender gap claudia goldin, henry lee professor of economics, harvard university; program director and research associate, national bureau of economic research · the concise encyclopedia of economics">
+              <span class="source-code">W16.4</span>
+              <span class="source-copy">
+                <strong>Gender Gap</strong>
+                <span>Claudia Goldin, Henry Lee Professor of Economics, Harvard University; program director and research associate, National Bureau of Economic Research · The Concise Encyclopedia of Economics</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W16.05_Grover_Cleveland_Domestic_Affairs.html" data-source-card data-search="w16.5 grover cleveland: domestic affairs henry f. graff, professor emeritus of history, columbia university · miller center">
+              <span class="source-code">W16.5</span>
+              <span class="source-copy">
+                <strong>Grover Cleveland: Domestic Affairs</strong>
+                <span>Henry F. Graff, Professor Emeritus of History, Columbia University · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W16.06_Great_Southwest_Strike_1886_Turning.html" data-source-card data-search="w16.6 the great southwest strike of 1886: a turning point for labor unions james c. maroney · handbook of texas online">
+              <span class="source-code">W16.6</span>
+              <span class="source-copy">
+                <strong>The Great Southwest Strike of 1886: A Turning Point for Labor Unions</strong>
+                <span>James C. Maroney · Handbook of Texas Online</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W16.07_Knights_Labor_Historical_Overview_Texas.html" data-source-card data-search="w16.7 the knights of labor: a historical overview in texas james c. maroney · handbook of texas online">
+              <span class="source-code">W16.7</span>
+              <span class="source-copy">
+                <strong>The Knights of Labor: A Historical Overview in Texas</strong>
+                <span>James C. Maroney · Handbook of Texas Online</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W16.08_Benjamin_Harrison_Domestic_Affairs.html" data-source-card data-search="w16.8 benjamin harrison: domestic affairs miller center of public affairs, university of virginia · miller center">
+              <span class="source-code">W16.8</span>
+              <span class="source-copy">
+                <strong>Benjamin Harrison: Domestic Affairs</strong>
+                <span>Miller Center of Public Affairs, University of Virginia · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W16.09_Rock_Springs_Massacre.html" data-source-card data-search="w16.9 the rock springs massacre tom rea, editor and co-founder, with the wyoming state historical society, of wyohistory.org; author of bone wars, devil&#x27;s gate, and the hole in the wall ranch · wyohistory.org">
+              <span class="source-code">W16.9</span>
+              <span class="source-copy">
+                <strong>The Rock Springs Massacre</strong>
+                <span>Tom Rea, Editor and co-founder, with the Wyoming State Historical Society, of WyoHistory.org; author of Bone Wars, Devil's Gate, and The Hole in the Wall Ranch · WyoHistory.org</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W16.10_Anarchists_Haymarket_Square_Incident.html" data-source-card data-search="w16.10 the anarchists and the haymarket square incident wgbh educational foundation · american experience">
+              <span class="source-code">W16.10</span>
+              <span class="source-copy">
+                <strong>The Anarchists and the Haymarket Square Incident</strong>
+                <span>WGBH Educational Foundation · American Experience</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W16.11_Hours_Work_U_S_History.html" data-source-card data-search="w16.11 hours of work in u.s. history robert whaples, wake forest university · eh.net encyclopedia">
+              <span class="source-code">W16.11</span>
+              <span class="source-copy">
+                <strong>Hours of Work in U.S. History</strong>
+                <span>Robert Whaples, Wake Forest University · EH.Net Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+      <section class="chapter-section" id="chapter-17" data-chapter-section aria-labelledby="chapter-17-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">17</div>
+          <div>
+            <p>Chapter 17 · 1859–1900</p>
+            <h2 id="chapter-17-title">Legends and Realities: The South and the West</h2>
+          </div>
+          <span class="chapter-count">26 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.01_Constitutional_Convention_Virginia_1901_1902.html" data-source-card data-search="w17.1 constitutional convention, virginia (1901–1902) susan breitzer · encyclopedia virginia">
+              <span class="source-code">W17.1</span>
+              <span class="source-copy">
+                <strong>Constitutional Convention, Virginia (1901–1902)</strong>
+                <span>Susan Breitzer · Encyclopedia Virginia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.02_Booker_T_Washington.html" data-source-card data-search="w17.2 booker t. washington f. erik brooks, georgia southern university · encyclopedia of alabama">
+              <span class="source-code">W17.2</span>
+              <span class="source-copy">
+                <strong>Booker T. Washington</strong>
+                <span>F. Erik Brooks, Georgia Southern University · Encyclopedia of Alabama</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.03_Convict_Lease_System.html" data-source-card data-search="w17.3 convict-lease system mary ellen curtin, university of essex · encyclopedia of alabama">
+              <span class="source-code">W17.3</span>
+              <span class="source-copy">
+                <strong>Convict-Lease System</strong>
+                <span>Mary Ellen Curtin, University of Essex · Encyclopedia of Alabama</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.04_Johnson_County_War_1892_Invasion.html" data-source-card data-search="w17.4 the johnson county war: 1892 invasion of northern wyoming john w. davis, attorney in worland, wyoming (1973–2016); author of wyoming range war: the infamous invasion of johnson county (2010) · wyohistory.org">
+              <span class="source-code">W17.4</span>
+              <span class="source-copy">
+                <strong>The Johnson County War: 1892 Invasion of Northern Wyoming</strong>
+                <span>John W. Davis, Attorney in Worland, Wyoming (1973–2016); author of Wyoming Range War: The Infamous Invasion of Johnson County (2010) · WyoHistory.org</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.05_Research_links_19th_century_land.html" data-source-card data-search="w17.5 research links 19th-century land program to sharp rise in native american mortality beth duff-brown · stanford report">
+              <span class="source-code">W17.5</span>
+              <span class="source-copy">
+                <strong>Research links 19th-century land program to sharp rise in Native American mortality</strong>
+                <span>Beth Duff-Brown · Stanford Report</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.06_Legislative_Sessions_Women_s_Suffrage.html" data-source-card data-search="w17.6 legislative sessions and women’s suffrage (1861–93) judy e. gaughan · colorado encyclopedia">
+              <span class="source-code">W17.6</span>
+              <span class="source-copy">
+                <strong>Legislative Sessions and Women’s Suffrage (1861–93)</strong>
+                <span>Judy E. Gaughan · Colorado Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.07_Jim_Crow_Laws_Racial_Segregation.html" data-source-card data-search="w17.7 jim crow laws and racial segregation j. e. hansan, founder, social welfare history project · social welfare history project">
+              <span class="source-code">W17.7</span>
+              <span class="source-copy">
+                <strong>Jim Crow Laws and Racial Segregation</strong>
+                <span>J. E. Hansan, Founder, Social Welfare History Project · Social Welfare History Project</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.08_Populist_Party.html" data-source-card data-search="w17.8 populist party james l. hunt · ncpedia">
+              <span class="source-code">W17.8</span>
+              <span class="source-copy">
+                <strong>Populist Party</strong>
+                <span>James L. Hunt · NCpedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.09_Allotment.html" data-source-card data-search="w17.9 allotment clara sue kidwell · the encyclopedia of oklahoma history and culture">
+              <span class="source-code">W17.9</span>
+              <span class="source-copy">
+                <strong>Allotment</strong>
+                <span>Clara Sue Kidwell · The Encyclopedia of Oklahoma History and Culture</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.10_Where_Buffalo_No_Longer_Roamed.html" data-source-card data-search="w17.10 where the buffalo no longer roamed gilbert king, contributing writer in history for smithsonian.com; author of the pulitzer prize–winning devil in the grove · smithsonian magazine">
+              <span class="source-code">W17.10</span>
+              <span class="source-copy">
+                <strong>Where the Buffalo No Longer Roamed</strong>
+                <span>Gilbert King, Contributing writer in history for Smithsonian.com; author of the Pulitzer Prize–winning Devil in the Grove · Smithsonian Magazine</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.11_Buffalo_Tales_Near_Extermination_American.html" data-source-card data-search="w17.11 buffalo tales: the near-extermination of the american bison shepard krech iii, brown university · teacherserve">
+              <span class="source-code">W17.11</span>
+              <span class="source-copy">
+                <strong>Buffalo Tales: The Near-Extermination of the American Bison</strong>
+                <span>Shepard Krech III, Brown University · TeacherServe</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.12_Birmingham.html" data-source-card data-search="w17.12 birmingham herbert j. lewis · encyclopedia of alabama">
+              <span class="source-code">W17.12</span>
+              <span class="source-copy">
+                <strong>Birmingham</strong>
+                <span>Herbert J. Lewis · Encyclopedia of Alabama</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.13_Sharecropping.html" data-source-card data-search="w17.13 sharecropping robert tracy mckenzie · tennessee encyclopedia">
+              <span class="source-code">W17.13</span>
+              <span class="source-copy">
+                <strong>Sharecropping</strong>
+                <span>Robert Tracy McKenzie · Tennessee Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.14_Booker_T_Washington_s_1895.html" data-source-card data-search="w17.14 booker t. washington’s 1895 atlanta exposition speech (1908 recreation) jacqueline m. moore, professor of history, austin college · national recording registry">
+              <span class="source-code">W17.14</span>
+              <span class="source-copy">
+                <strong>Booker T. Washington’s 1895 Atlanta Exposition Speech (1908 recreation)</strong>
+                <span>Jacqueline M. Moore, Professor of History, Austin College · National Recording Registry</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.15_Two_Landmark_Decisions_Fight_Equality.html" data-source-card data-search="w17.15 two landmark decisions in the fight for equality and justice national museum of african american history and culture, smithsonian institution · national museum of african american history and culture">
+              <span class="source-code">W17.15</span>
+              <span class="source-copy">
+                <strong>Two Landmark Decisions in the Fight for Equality and Justice</strong>
+                <span>National Museum of African American History and Culture, Smithsonian Institution · National Museum of African American History and Culture</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.16_Chinese_Massacre_Deep_Creek.html" data-source-card data-search="w17.16 chinese massacre at deep creek greg nokes · oregon encyclopedia">
+              <span class="source-code">W17.16</span>
+              <span class="source-copy">
+                <strong>Chinese Massacre at Deep Creek</strong>
+                <span>Greg Nokes · Oregon Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.17_Sharecropping_Tenant_Farming_Alabama.html" data-source-card data-search="w17.17 sharecropping and tenant farming in alabama kenneth e. phillips, wallace community college, dothan · encyclopedia of alabama">
+              <span class="source-code">W17.17</span>
+              <span class="source-copy">
+                <strong>Sharecropping and Tenant Farming in Alabama</strong>
+                <span>Kenneth E. Phillips, Wallace Community College, Dothan · Encyclopedia of Alabama</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.18_Right_Choice_Wrong_Reasons_Wyoming.html" data-source-card data-search="w17.18 right choice, wrong reasons: wyoming women win the right to vote tom rea, editor and co-founder of wyohistory.org; former newspaper journalist and author of several books · wyohistory.org">
+              <span class="source-code">W17.18</span>
+              <span class="source-copy">
+                <strong>Right Choice, Wrong Reasons: Wyoming Women Win the Right to Vote</strong>
+                <span>Tom Rea, Editor and co-founder of WyoHistory.org; former newspaper journalist and author of several books · WyoHistory.org</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.19_History_Lynching_Texas_Dark_Chapter.html" data-source-card data-search="w17.19 the history of lynching in texas: a dark chapter john r. ross · handbook of texas online">
+              <span class="source-code">W17.19</span>
+              <span class="source-copy">
+                <strong>The History of Lynching in Texas: A Dark Chapter</strong>
+                <span>John R. Ross · Handbook of Texas Online</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.20_Non_Partisan_Equal_Suffrage_Association.html" data-source-card data-search="w17.20 the non-partisan equal suffrage association of colorado sarah rounsville, brigham young university · intermountain histories">
+              <span class="source-code">W17.20</span>
+              <span class="source-copy">
+                <strong>The Non-Partisan Equal Suffrage Association of Colorado</strong>
+                <span>Sarah Rounsville, Brigham Young University · Intermountain Histories</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.21_Frontiers_Perspectives.html" data-source-card data-search="w17.21 frontiers and perspectives bradley shreve, ph.d.; managing editor of tribal college journal · tribal college journal of american indian higher education">
+              <span class="source-code">W17.21</span>
+              <span class="source-copy">
+                <strong>Frontiers and Perspectives</strong>
+                <span>Bradley Shreve, Ph.D.; managing editor of Tribal College Journal · Tribal College Journal of American Indian Higher Education</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.22_Readjuster_Party.html" data-source-card data-search="w17.22 the readjuster party brent tarter · encyclopedia virginia">
+              <span class="source-code">W17.22</span>
+              <span class="source-copy">
+                <strong>The Readjuster Party</strong>
+                <span>Brent Tarter · Encyclopedia Virginia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.23_History_Buffalo_Hunting_Great_Plains.html" data-source-card data-search="w17.23 the history of buffalo hunting on the great plains david vigness · handbook of texas online">
+              <span class="source-code">W17.23</span>
+              <span class="source-copy">
+                <strong>The History of Buffalo Hunting on the Great Plains</strong>
+                <span>David Vigness · Handbook of Texas Online</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.24_Alabama_Constitution_1901.html" data-source-card data-search="w17.24 alabama constitution of 1901 sarah a. warren, birmingham, alabama · encyclopedia of alabama">
+              <span class="source-code">W17.24</span>
+              <span class="source-copy">
+                <strong>Alabama Constitution of 1901</strong>
+                <span>Sarah A. Warren, Birmingham, Alabama · Encyclopedia of Alabama</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.25_Booker_T_Washington_1856_1915.html" data-source-card data-search="w17.25 booker t. washington (1856–1915) jeremy wells · encyclopedia virginia">
+              <span class="source-code">W17.25</span>
+              <span class="source-copy">
+                <strong>Booker T. Washington (1856–1915)</strong>
+                <span>Jeremy Wells · Encyclopedia Virginia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W17.26_How_Myth_American_Frontier_Got.html" data-source-card data-search="w17.26 how the myth of the american frontier got its start colin woodard, director, nationhood lab (per nationhood lab listing; no bio shown on fetched page) · smithsonian magazine">
+              <span class="source-code">W17.26</span>
+              <span class="source-copy">
+                <strong>How the Myth of the American Frontier Got Its Start</strong>
+                <span>Colin Woodard, Director, Nationhood Lab (per Nationhood Lab listing; no bio shown on fetched page) · Smithsonian Magazine</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+      <section class="chapter-section" id="chapter-18" data-chapter-section aria-labelledby="chapter-18-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">18</div>
+          <div>
+            <p>Chapter 18 · 1859–1898</p>
+            <h2 id="chapter-18-title">The Gilded Age: Political Stalemate and Rural Revolt</h2>
+          </div>
+          <span class="chapter-count">15 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W18.01_Rise_Fall_People_s_Party.html" data-source-card data-search="w18.1 the rise and fall of the people&#x27;s party in texas: a historical overview donna a. barnes · handbook of texas online">
+              <span class="source-code">W18.1</span>
+              <span class="source-copy">
+                <strong>The Rise and Fall of the People's Party in Texas: A Historical Overview</strong>
+                <span>Donna A. Barnes · Handbook of Texas Online</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W18.02_Rise_Fall_Southern_Farmers_Alliance.html" data-source-card data-search="w18.2 the rise and fall of the southern farmers&#x27; alliance: economic struggles and political action donna a. barnes · handbook of texas online">
+              <span class="source-code">W18.2</span>
+              <span class="source-copy">
+                <strong>The Rise and Fall of the Southern Farmers' Alliance: Economic Struggles and Political Action</strong>
+                <span>Donna A. Barnes · Handbook of Texas Online</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W18.03_Chester_Arthur_Campaigns_Elections.html" data-source-card data-search="w18.3 chester a. arthur: campaigns and elections justus doenecke, professor emeritus of history, new college of florida · miller center">
+              <span class="source-code">W18.3</span>
+              <span class="source-copy">
+                <strong>Chester A. Arthur: Campaigns and Elections</strong>
+                <span>Justus Doenecke, Professor emeritus of history, New College of Florida · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W18.04_Chester_Arthur_Domestic_Affairs.html" data-source-card data-search="w18.4 chester a. arthur: domestic affairs justus doenecke, professor emeritus of history, new college of florida · miller center">
+              <span class="source-code">W18.4</span>
+              <span class="source-copy">
+                <strong>Chester A. Arthur: Domestic Affairs</strong>
+                <span>Justus Doenecke, Professor Emeritus of History, New College of Florida · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W18.05_Italians.html" data-source-card data-search="w18.5 italians charles ferroni, ashland college · encyclopedia of cleveland history">
+              <span class="source-code">W18.5</span>
+              <span class="source-copy">
+                <strong>Italians</strong>
+                <span>Charles Ferroni, Ashland College · Encyclopedia of Cleveland History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W18.06_Immigration_Migration.html" data-source-card data-search="w18.6 immigration and migration john j. grabowski, case western reserve university and western reserve historical society · encyclopedia of cleveland history">
+              <span class="source-code">W18.6</span>
+              <span class="source-copy">
+                <strong>Immigration and Migration</strong>
+                <span>John J. Grabowski, Case Western Reserve University and Western Reserve Historical Society · Encyclopedia of Cleveland History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W18.07_Grover_Cleveland_Campaigns_Elections.html" data-source-card data-search="w18.7 grover cleveland: campaigns and elections henry f. graff, professor emeritus of history, columbia university · miller center">
+              <span class="source-code">W18.7</span>
+              <span class="source-copy">
+                <strong>Grover Cleveland: Campaigns and Elections</strong>
+                <span>Henry F. Graff, Professor emeritus of history, Columbia University · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W18.08_Rutherford_B_Hayes_Domestic_Affairs.html" data-source-card data-search="w18.8 rutherford b. hayes: domestic affairs ari hoogenboom, professor (original author); revised 2020 by robert d. johnston, professor of history, university of illinois at chicago · miller center">
+              <span class="source-code">W18.8</span>
+              <span class="source-copy">
+                <strong>Rutherford B. Hayes: Domestic Affairs</strong>
+                <span>Ari Hoogenboom, Professor (original author); revised 2020 by Robert D. Johnston, Professor of History, University of Illinois at Chicago · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W18.09_James_Garfield_Campaigns_Elections.html" data-source-card data-search="w18.9 james a. garfield: campaigns and elections miller center of public affairs, university of virginia · miller center">
+              <span class="source-code">W18.9</span>
+              <span class="source-copy">
+                <strong>James A. Garfield: Campaigns and Elections</strong>
+                <span>Miller Center of Public Affairs, University of Virginia · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W18.10_William_McKinley_Campaigns_Elections.html" data-source-card data-search="w18.10 william mckinley: campaigns and elections miller center of public affairs, university of virginia · miller center">
+              <span class="source-code">W18.10</span>
+              <span class="source-copy">
+                <strong>William McKinley: Campaigns and Elections</strong>
+                <span>Miller Center of Public Affairs, University of Virginia · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W18.11_Slovaks.html" data-source-card data-search="w18.11 slovaks gerald sabo, john carroll university · encyclopedia of cleveland history">
+              <span class="source-code">W18.11</span>
+              <span class="source-copy">
+                <strong>Slovaks</strong>
+                <span>Gerald Sabo, John Carroll University · Encyclopedia of Cleveland History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W18.12_Economics_American_Farm_Unrest_1865.html" data-source-card data-search="w18.12 the economics of american farm unrest, 1865–1900 james i. stewart, reed college · eh.net encyclopedia">
+              <span class="source-code">W18.12</span>
+              <span class="source-copy">
+                <strong>The Economics of American Farm Unrest, 1865–1900</strong>
+                <span>James I. Stewart, Reed College · EH.Net Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W18.13_Herbert_Spencer_1820_1903.html" data-source-card data-search="w18.13 herbert spencer (1820—1903) william sweet, st. francis xavier university, canada · internet encyclopedia of philosophy">
+              <span class="source-code">W18.13</span>
+              <span class="source-copy">
+                <strong>Herbert Spencer (1820—1903)</strong>
+                <span>William Sweet, St. Francis Xavier University, Canada · Internet Encyclopedia of Philosophy</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W18.14_Chinese_Immigration_Chinese_Exclusion_Acts.html" data-source-card data-search="w18.14 chinese immigration and the chinese exclusion acts u.s. department of state, office of the historian · milestones in the history of u.s. foreign relations">
+              <span class="source-code">W18.14</span>
+              <span class="source-copy">
+                <strong>Chinese Immigration and the Chinese Exclusion Acts</strong>
+                <span>U.S. Department of State, Office of the Historian · Milestones in the History of U.S. Foreign Relations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W18.15_Herbert_Spencer.html" data-source-card data-search="w18.15 herbert spencer david weinstein, wake forest university (affiliation indicated only by author email on page) · stanford encyclopedia of philosophy">
+              <span class="source-code">W18.15</span>
+              <span class="source-copy">
+                <strong>Herbert Spencer</strong>
+                <span>David Weinstein, Wake Forest University (affiliation indicated only by author email on page) · Stanford Encyclopedia of Philosophy</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+      <section class="chapter-section" id="chapter-19" data-chapter-section aria-labelledby="chapter-19-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">19</div>
+          <div>
+            <p>Chapter 19 · 1867–1917</p>
+            <h2 id="chapter-19-title">Seizing an American Empire</h2>
+          </div>
+          <span class="chapter-count">25 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.01_Protesting_Statehood_Hawaiian_Women_s.html" data-source-card data-search="w19.1 protesting statehood: hawaiian women&#x27;s petition against annexation callie belback, national archives history office · pieces of history">
+              <span class="source-code">W19.1</span>
+              <span class="source-copy">
+                <strong>Protesting Statehood: Hawaiian Women's Petition Against Annexation</strong>
+                <span>Callie Belback, National Archives History Office · Pieces of History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.02_Changing_Guard_Puerto_Rico_1898.html" data-source-card data-search="w19.2 the changing of the guard: puerto rico in 1898 marisabel brás, ph.d. · world of 1898: international perspectives on the spanish american war">
+              <span class="source-code">W19.2</span>
+              <span class="source-copy">
+                <strong>The Changing of the Guard: Puerto Rico in 1898</strong>
+                <span>Marisabel Brás, Ph.D. · World of 1898: International Perspectives on the Spanish American War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.03_Plan_San_Diego_Revolutionary_Movement.html" data-source-card data-search="w19.3 the plan of san diego: a revolutionary movement in early 20th century texas don m. coerver · handbook of texas online">
+              <span class="source-code">W19.3</span>
+              <span class="source-copy">
+                <strong>The Plan of San Diego: A Revolutionary Movement in Early 20th Century Texas</strong>
+                <span>Don M. Coerver · Handbook of Texas Online</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.04_Cuba_1898.html" data-source-card data-search="w19.4 cuba in 1898 josé m. hernández · world of 1898: international perspectives on the spanish american war">
+              <span class="source-code">W19.4</span>
+              <span class="source-copy">
+                <strong>Cuba in 1898</strong>
+                <span>José M. Hernández · World of 1898: International Perspectives on the Spanish American War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.05_Aniceto_Piza_Poet_Revolutionary_Leader.html" data-source-card data-search="w19.5 aniceto pizaña: poet and revolutionary leader (1877–1957) carlos m. larralde · handbook of texas online">
+              <span class="source-code">W19.5</span>
+              <span class="source-copy">
+                <strong>Aniceto Pizaña: Poet and Revolutionary Leader (1877–1957)</strong>
+                <span>Carlos M. Larralde · Handbook of Texas Online</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.06_Convention_Aguascalientes_Pancho_Villa_s.html" data-source-card data-search="w19.6 from the convention of aguascalientes to pancho villa&#x27;s attack on columbus, nm library of congress · the mexican revolution and the united states in the collections of the library of congress">
+              <span class="source-code">W19.6</span>
+              <span class="source-copy">
+                <strong>From the Convention of Aguascalientes to Pancho Villa's Attack on Columbus, NM</strong>
+                <span>Library of Congress · The Mexican Revolution and the United States in the Collections of the Library of Congress</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.07_Woodrow_Wilson_s_Inauguration_Invasion.html" data-source-card data-search="w19.7 from woodrow wilson&#x27;s inauguration to the invasion of veracruz library of congress · the mexican revolution and the united states in the collections of the library of congress">
+              <span class="source-code">W19.7</span>
+              <span class="source-copy">
+                <strong>From Woodrow Wilson's Inauguration to the Invasion of Veracruz</strong>
+                <span>Library of Congress · The Mexican Revolution and the United States in the Collections of the Library of Congress</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.08_Victoriano_Huerta_President.html" data-source-card data-search="w19.8 victoriano huerta as president library of congress · the mexican revolution and the united states in the collections of the library of congress">
+              <span class="source-code">W19.8</span>
+              <span class="source-copy">
+                <strong>Victoriano Huerta as President</strong>
+                <span>Library of Congress · The Mexican Revolution and the United States in the Collections of the Library of Congress</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.09_Theodore_Roosevelt_Foreign_Affairs.html" data-source-card data-search="w19.9 theodore roosevelt: foreign affairs miller center of public affairs, university of virginia · miller center">
+              <span class="source-code">W19.9</span>
+              <span class="source-copy">
+                <strong>Theodore Roosevelt: Foreign Affairs</strong>
+                <span>Miller Center of Public Affairs, University of Virginia · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.10_William_McKinley_Foreign_Affairs.html" data-source-card data-search="w19.10 william mckinley: foreign affairs miller center of public affairs, university of virginia · miller center">
+              <span class="source-code">W19.10</span>
+              <span class="source-copy">
+                <strong>William McKinley: Foreign Affairs</strong>
+                <span>Miller Center of Public Affairs, University of Virginia · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.11_Woodrow_Wilson_Foreign_Affairs.html" data-source-card data-search="w19.11 woodrow wilson: foreign affairs miller center of public affairs, university of virginia · miller center">
+              <span class="source-code">W19.11</span>
+              <span class="source-copy">
+                <strong>Woodrow Wilson: Foreign Affairs</strong>
+                <span>Miller Center of Public Affairs, University of Virginia · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.12_1897_Petition_Against_Annexation_Hawaii.html" data-source-card data-search="w19.12 the 1897 petition against the annexation of hawaii national archives and records administration · national archives educator resources">
+              <span class="source-code">W19.12</span>
+              <span class="source-copy">
+                <strong>The 1897 Petition Against the Annexation of Hawaii</strong>
+                <span>National Archives and Records Administration · National Archives Educator Resources</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.13_Building_Panama_Canal_1903_1914.html" data-source-card data-search="w19.13 building the panama canal, 1903–1914 office of the historian, u.s. department of state · milestones in the history of u.s. foreign relations">
+              <span class="source-code">W19.13</span>
+              <span class="source-copy">
+                <strong>Building the Panama Canal, 1903–1914</strong>
+                <span>Office of the Historian, U.S. Department of State · Milestones in the History of U.S. Foreign Relations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.14_Dollar_Diplomacy_1909_1913.html" data-source-card data-search="w19.14 dollar diplomacy, 1909–1913 office of the historian, u.s. department of state · milestones in the history of u.s. foreign relations">
+              <span class="source-code">W19.14</span>
+              <span class="source-copy">
+                <strong>Dollar Diplomacy, 1909–1913</strong>
+                <span>Office of the Historian, U.S. Department of State · Milestones in the History of U.S. Foreign Relations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.15_Roosevelt_Corollary_Monroe_Doctrine_1904.html" data-source-card data-search="w19.15 roosevelt corollary to the monroe doctrine, 1904 office of the historian, u.s. department of state · milestones in the history of u.s. foreign relations">
+              <span class="source-code">W19.15</span>
+              <span class="source-copy">
+                <strong>Roosevelt Corollary to the Monroe Doctrine, 1904</strong>
+                <span>Office of the Historian, U.S. Department of State · Milestones in the History of U.S. Foreign Relations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.16_Secretary_State_John_Hay_Open.html" data-source-card data-search="w19.16 secretary of state john hay and the open door in china, 1899–1900 office of the historian, u.s. department of state · milestones in the history of u.s. foreign relations">
+              <span class="source-code">W19.16</span>
+              <span class="source-copy">
+                <strong>Secretary of State John Hay and the Open Door in China, 1899–1900</strong>
+                <span>Office of the Historian, U.S. Department of State · Milestones in the History of U.S. Foreign Relations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.17_Philippine_American_War_1899_1902.html" data-source-card data-search="w19.17 the philippine-american war, 1899–1902 office of the historian, u.s. department of state · milestones in the history of u.s. foreign relations">
+              <span class="source-code">W19.17</span>
+              <span class="source-copy">
+                <strong>The Philippine-American War, 1899–1902</strong>
+                <span>Office of the Historian, U.S. Department of State · Milestones in the History of U.S. Foreign Relations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.18_Spanish_American_War_1898.html" data-source-card data-search="w19.18 the spanish-american war, 1898 office of the historian, u.s. department of state · milestones in the history of u.s. foreign relations">
+              <span class="source-code">W19.18</span>
+              <span class="source-copy">
+                <strong>The Spanish-American War, 1898</strong>
+                <span>Office of the Historian, U.S. Department of State · Milestones in the History of U.S. Foreign Relations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.19_U_S_Diplomacy_Yellow_Journalism.html" data-source-card data-search="w19.19 u.s. diplomacy and yellow journalism, 1895–1898 office of the historian, u.s. department of state · milestones in the history of u.s. foreign relations">
+              <span class="source-code">W19.19</span>
+              <span class="source-copy">
+                <strong>U.S. Diplomacy and Yellow Journalism, 1895–1898</strong>
+                <span>Office of the Historian, U.S. Department of State · Milestones in the History of U.S. Foreign Relations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.20_Spanish_American_War_1898_Spanish.html" data-source-card data-search="w19.20 the spanish-american war of 1898: a spanish view jaime de ojeda · world of 1898: international perspectives on the spanish american war">
+              <span class="source-code">W19.20</span>
+              <span class="source-copy">
+                <strong>The Spanish-American War of 1898: A Spanish View</strong>
+                <span>Jaime de Ojeda · World of 1898: International Perspectives on the Spanish American War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.21_History_Racial_Violence_Mexico_Texas.html" data-source-card data-search="w19.21 the history of racial violence on the mexico–texas border refusing to forget · refusing to forget">
+              <span class="source-code">W19.21</span>
+              <span class="source-copy">
+                <strong>The History of Racial Violence on the Mexico–Texas Border</strong>
+                <span>Refusing to Forget · Refusing to Forget</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.22_1897_Petitions_Protesting_Annexation.html" data-source-card data-search="w19.22 the 1897 petitions protesting annexation noenoe k. silva · the annexation of hawaii: a collection of documents">
+              <span class="source-code">W19.22</span>
+              <span class="source-copy">
+                <strong>The 1897 Petitions Protesting Annexation</strong>
+                <span>Noenoe K. Silva · The Annexation of Hawaii: A Collection of Documents</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.23_Spanish_American_War.html" data-source-card data-search="w19.23 the spanish-american war david f. trask · world of 1898: international perspectives on the spanish american war">
+              <span class="source-code">W19.23</span>
+              <span class="source-copy">
+                <strong>The Spanish-American War</strong>
+                <span>David F. Trask · World of 1898: International Perspectives on the Spanish American War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.24_Overlooked_Histories_Behind_America_s.html" data-source-card data-search="w19.24 the overlooked histories behind america&#x27;s rise as a world power maya wei-haas, reporter; freelance science writer · smithsonian magazine">
+              <span class="source-code">W19.24</span>
+              <span class="source-copy">
+                <strong>The Overlooked Histories Behind America's Rise as a World Power</strong>
+                <span>Maya Wei-Haas, Reporter; freelance science writer · Smithsonian Magazine</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.25_United_States_Armed_Forces_Mexican.html" data-source-card data-search="w19.25 the united states armed forces and the mexican punitive expedition: part 1 mitchell yockelson, reference archivist, modern military records branch, national archives and records administration · prologue">
+              <span class="source-code">W19.25</span>
+              <span class="source-copy">
+                <strong>The United States Armed Forces and the Mexican Punitive Expedition: Part 1</strong>
+                <span>Mitchell Yockelson, Reference archivist, Modern Military Records Branch, National Archives and Records Administration · Prologue</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+
+    <footer class="page-footer">
+      <a class="back-top" href="#top">Back to top ↑</a>
+      <div>Unit 5 · Growing Pains · History C1002 · Daniel Garza, M.A.</div>
+    </footer>
+  </main>
+  <script>
+    (() => {
+      const input = document.getElementById('source-search');
+      const cards = [...document.querySelectorAll('[data-source-card]')];
+      const sections = [...document.querySelectorAll('[data-chapter-section]')];
+      const resultCount = document.getElementById('result-count');
+      const noResults = document.getElementById('no-results');
+
+      function normalize(value) {
+        return value.toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      }
+
+      function updateCatalog() {
+        const query = normalize(input.value.trim());
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const matches = !query || normalize(card.dataset.search).includes(query);
+          card.hidden = !matches;
+          if (matches) visibleCount += 1;
+        });
+
+        sections.forEach(section => {
+          const visibleInSection = section.querySelectorAll('[data-source-card]:not([hidden])').length;
+          section.querySelector('.chapter-empty').hidden = visibleInSection > 0;
+        });
+
+        resultCount.textContent = `${visibleCount} ${visibleCount === 1 ? 'article' : 'articles'}`;
+        noResults.hidden = visibleCount !== 0;
+      }
+
+      input.addEventListener('input', updateCatalog);
+      input.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && input.value) {
+          input.value = '';
+          updateCatalog();
+        }
+      });
+      updateCatalog();
+    })();
+</script>
+</body>
+</html>

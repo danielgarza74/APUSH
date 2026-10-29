@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Narrating the New South. Scholarly Article A17.3 for Unit 5: Growing Pains.">
+  <meta name="theme-color" content="#6D3E49">
+  <title>Scholarly Article A17.3 | Narrating the New South</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Scholarly_Articles/A17.03_Narrating_New_South.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #6D3E49;
+      --forest-mid: #975666;
+      --coral: #17706A;
+      --coral-light: #8BB8B4;
+      --cream: #EAF6F4;
+      --paper: #F9FCFC;
+      --mint: #FAEFF2;
+      --sage: #C5DBDA;
+      --ink: #093430;
+      --muted: #41625F;
+      --shadow: 0 22px 55px rgba(65, 37, 44, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #17706A;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(23, 112, 106, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(109, 62, 73, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(65, 37, 44, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(151, 86, 102, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Scholarly Article navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Scholarly_Articles/"><span aria-hidden="true">←</span> Scholarly Article Archive</a>
+      <div class="archive-meta">Unit 5 · Chapter 17 · A17.3</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="A17.3">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#EAF6F4; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Scholarly Article A17.3</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">Narrating the New South</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Edward L. Ayers</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #C97288; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#E7B0BE; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARTICLE</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">Narrating the New South</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">JOURNAL</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">The Journal of Southern History 61, no. 3 (1995)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">EXCERPT</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">Original journal pages 555-556</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">JSTOR</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">https://www.jstor.org/stable/2211872</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ESSAY PROMPTS</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">17.1</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARGUMENT ROLES</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">17.1.5 Supports; 17.1.1 Challenges</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:17px; font-weight:700; border-bottom:2px solid #C97288; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt Format</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The next two pages are exact facsimiles from the supplied article PDF. Original pagination and the author's note system are preserved.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:17px; font-weight:700; border-bottom:2px solid #C97288; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Facsimile Excerpt</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 24px 0;" class="source-media"><tr>
+  <td style="text-align:center; padding:14px; background-color:#FFFFFF; border:1px solid #E7B0BE;">
+    <img src="images/A17.03_Narrating_New_South_page1.png" alt="Original journal page 555." style="max-width:100%; height:auto; display:inline-block;" loading="lazy" decoding="async">
+    <div style="font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12.5px; line-height:1.55; margin-top:10px; text-align:left;">Original journal page 555.</div>
+  </td>
+</tr></table>
+<details class="page-text"><summary>Text of this page (original journal page 555)</summary>
+<p>Narrating the New South
+ By EDWARD L. AYERS
+ M4Y BOOK, The Promise of the New South, WAS INTENDED AS SOM
+ thing of an experiment with narrative. While some reviewers thought
+ the experiment worked well enough, others disagreed. In the eyes of
+ such critics, my book was underdeveloped and noncommittal, refusing
+ to say what it really meant and refusing to cast itself as an alternative
+ to other interpretations. Howard N. Rabinowitz, writing in this jour-
+ nal, saw symptoms of a deeper malady in the book, a case of "post-
+ structuralism." Given these criticisms, I thought that perhaps a word
+ of explanation would be useful, describing the intentions, if not nec-
+ essarily the accomplishments, of Promise.1
+ One way to describe the idea behind Promise is to suggest a distinc-
+ tion between "fixed narratives" and "open narratives." Most works of
+ professional history mix, in various proportions, nineteenth-century
+ styles of storytelling with twentieth-century forms of social science.
+ These fixed narratives tend to be organized in a linear way, either
+ chronologically or in the form of an argument, seeking balance and au-
+ thority. Though history writing is not as formalized as, say, sociology
+ or political science, historians do rely on introductions, chapter sum-
+ maries, and conclusions, do expect arguments to be clearly labeled as
+ such, and do ask that works be positioned in relation to other studies.
+ Most works of history are implicitly and explicitly measured against
+ this standard of the fixed narrative, tailored to an audience of students
+ and professors, effectively designed for historiographical utility.
+ Open narratives challenge various parts of that formula. In some
+ open histories the authors let the reader in on the way the argument is
+ being constructed; rather than presenting history as a self-contained
+ 1 Edward L. Ayers, The Promise of the New South: Life After Reconstruction (New York and
+ Oxford, 1992); and Howard N. Rabinowitz, "The Origins of a Poststructural New South: A Re-
+ view of Edward L. Ayers's The Promise of the New South: Life After Reconstruction," Journal
+ of Southern History, LIX (August 1993), 505-15. I am grateful to John Boles for the invitation
+ to write this essay and to the Journal's anonymous referees for their helpful comments. I also ap-
+ preciate the suggestions from Brian Balogh, Brooks Barnes, Rebecca Edwards, Bruce Fort, Scot
+ French, Paul Gaston, Peter Kastor, Anne Rubin, Phillip Troutman, and Rob Weise.
+ MR. AYERS is a professor of history at the University of Virginia.
+ THE JOURNAL OF SOUTHERN HISTORY
+ Volume LXI, No. 3, August 1995
+This content downloaded from 
+            132.174.249.220 on Mon, 26 Oct 2026 06:04:58 UTC             
+All use subject to https://about.jstor.org/terms</p></details>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 24px 0;" class="source-media"><tr>
+  <td style="text-align:center; padding:14px; background-color:#FFFFFF; border:1px solid #E7B0BE;">
+    <img src="images/A17.03_Narrating_New_South_page2.png" alt="Original journal page 556." style="max-width:100%; height:auto; display:inline-block;" loading="lazy" decoding="async">
+    <div style="font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12.5px; line-height:1.55; margin-top:10px; text-align:left;">Original journal page 556.</div>
+  </td>
+</tr></table>
+<details class="page-text"><summary>Text of this page (original journal page 556)</summary>
+<p>556 THE JOURNAL OF SOUTHERN HISTORY
+ and authoritative argument, these historians openly grapple with prob-
+ lematic sources and presentation. Their narratives suggest that the ap-
+ pearance of coherence and a commanding argument may ultimately be
+ less useful than a reckoning with the limits of our knowledge or un-
+ derstanding. Other open histories ask storytelling and language to do
+ more work. Instead of using the narrative as a means to an analytical
+ end outside the story, these histories attempt to fold the analysis into
+ the story itself. They do not simply relate facts or lay out a chronicle-
+ they analyze their topics and make arguments, but not in ways that ob-
+ viously segregate judgment from storytelling. These open histories
+ may intentionally leave ambiguities unresolved or seek tension and
+ resolution less in professional debate than in evidence, characters, and
+ situations.2
+ Most of our books, of course, range along a continuum somewhere
+ between fixed and open narratives. There is no need to force books in-
+ to one camp or another. It is impossible to write a perfectly fixed nar-
+ 2 In the field of southern history, a number of books that might be considered open in vari-
+ ous ways have been published over the last fifteen years or so, pioneered by Rhys Isaac's The
+ Transformation of Virginia, 1740-1790 (Chapel Hill, 1982). Other examples of what I take to be,
+ for various reasons, open narratives include Michael P. Johnson and James L. Roark, Black Mas-
+ ters: A Free Family of Color in the Old South (New York and London, 1984); Suzanne Lebsock,
+ The Free Women of Petersburg: Status and Culture in a Southern Town, 1784-1860 (New York
+ and London, 1984); Theodore Rosengarten, Tombee: Portrait of a Cotton Planter (New York,
+ 1986); Allen Tullos, Habits of Industry: White Culture and the Transformation of the Carolina
+ Piedmont (Chapel Hill and London, 1989); Melton Alonza McLaurin, Celia, A Slave (Athens,
+ Ga., 1991); Winthrop D. Jordan, Tumult and Silence at Second Creek: An Inquiry into a Civil
+ War Slave Conspiracy (Baton Rouge and London, 1993); and James Goodman, Stories of Scotts-
+ boro (New York, 1994). None of these authors has been asked to endorse the views put forward
+ in this paper, which focuses on motives that I infer from their books. Notice that "open" does not
+ mean "inclusive"; there have been many social histories of the South that include a wide range
+ of people and evidence that speak from a relatively "fixed" point of view. As the remainder of
+ this essay suggests, I do not intend that as a criticism. Each experimental narrative is open in a
+ different way. Taking his cue from the anthropologist Clifford Geertz, for example, Rhys Isaac
+ dwells on the way that ritual, landscape, and presentation of self dramatized the deep structures
+ of power in colonial Virginia. For Isaac, history is not so much a stream from one event to an-
+ other as it is a series of juxtapositions, a series of "resonances" created among simultaneous
+ processes. His narrative takes the form of a series of tableaux vivants, of dramas played out by
+ actors half-conscious of their roles. The narratives of Lebsock, Rosengarten, McLaurin, and Jor-
+ dan, on the other hand, focus on close interpretations of ambiguous documents, piecing togeth-
+ er motive and consequence. The haunting story of black masters told by Johnson and Roark be-
+ gins with a box of old letters found under a porch; the narrative continually calls attention to the
+ inferences made from those letters, the things left unsaid in the record. In Allen Tullos's book,
+ in some ways the boldest of the open narratives, one chapter consists almost entirely of an un-
+ interrupted and uninterpreted transcript of a woman's oral account of her life. Goodman's histo-
+ ry of Scottsboro calls attention to the margins of the story, to the long days in prison and on pa-
+ role, as well as to public events. His very title stresses that "Scottsboro" was not so much one
+ story as many, not so much a single event as the intersection of disparate lives. I discuss Good-
+ man's open narratives in "Prisms and Prisons," New Republic, CCXI (July 11, 1994), 36-38.
+This content downloaded from 
+            132.174.249.220 on Mon, 26 Oct 2026 06:04:58 UTC             
+All use subject to https://about.jstor.org/terms</p></details>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:17px; font-weight:700; border-bottom:2px solid #C97288; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Ayers, Edward L. “Narrating the New South.” <em>The Journal of Southern History</em> 61, no. 3 (1995): 555–566. https://www.jstor.org/stable/2211872.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Edward L. Ayers, “Narrating the New South,” <em>The Journal of Southern History</em> 61, no. 3 (1995): 555–556, https://www.jstor.org/stable/2211872.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Ayers, “Narrating the New South,” 555–556.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:17px; font-weight:700; border-bottom:2px solid #C97288; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Source Verification</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Supplied PDF pages 2-3 correspond to original journal pages 555-556. The pages were inserted directly from the supplied PDF; no transcription or silent omission was introduced.</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #C97288; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 5 · GROWING PAINS | HISTORY C1002 | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Scholarly_Articles/"><span aria-hidden="true">←</span> Return to the Scholarly Article Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

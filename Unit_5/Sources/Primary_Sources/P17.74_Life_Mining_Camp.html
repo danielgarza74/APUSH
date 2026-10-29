@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Life in a Mining Camp. Primary Source P17.74 for Unit 5: Growing Pains.">
+  <meta name="theme-color" content="#6D3E49">
+  <title>Primary Source P17.74 | Life in a Mining Camp</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Primary_Sources/P17.74_Life_Mining_Camp.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #6D3E49;
+      --forest-mid: #975666;
+      --coral: #17706A;
+      --coral-light: #8BB8B4;
+      --cream: #EAF6F4;
+      --paper: #F9FCFC;
+      --mint: #FAEFF2;
+      --sage: #C5DBDA;
+      --ink: #093430;
+      --muted: #41625F;
+      --shadow: 0 22px 55px rgba(65, 37, 44, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #17706A;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(23, 112, 106, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(109, 62, 73, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(65, 37, 44, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(151, 86, 102, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Primary Source navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Primary Source Archive</a>
+      <div class="archive-meta">Unit 5 · Chapter 17 · P17.74</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="P17.74">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#EAF6F4; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Primary Source P17.74</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">Life in a Mining Camp</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Rachel Haskell · March 1867</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #C97288; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#E7B0BE; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TOC FIT</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">Life in the New West: Mining Boomtowns; Women in the West: The Pains of Pioneering</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WHY HERE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">A month of diary entries from a western mining town shows the household labor, family strains, and social life of a woman raising young children there.</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TREATMENT</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">Public-domain text, selected excerpts</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ESSAY PROMPTS</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">17.9</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARGUMENT ROLES</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">17.9.2 Supports; 17.9.1 Counters</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:17px; font-weight:700; border-bottom:2px solid #C97288; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Historical Context</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Rachel Haskell kept this diary in 1867 while living in a western mining town with her husband, whom she calls 'Mr. H.' or 'Papa,' their children, and a young friend of the family named Ella. The diary was private writing, a record of her days kept for herself rather than for readers. In 1944 the historian Richard Lillard edited and published it in a scholarly journal. Because it was not written to persuade anyone, it offers an unusually direct view of ordinary days, including the parts she found tiring or troubling.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Western mining towns grew quickly after gold and silver strikes and often shrank just as quickly when the ore ran out. Men greatly outnumbered women in many camps, and saloons, fraternal lodges such as the Odd Fellows and Masons, and dances shaped social life. Families like the Haskells furnished their homes with pianos, sewing machines, books, and magazines. Native peoples remained part of these places; Haskell notes Native women gathering firewood in the hills. Watch for what the diary shows about who did which kinds of work.</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 26px 0;" class="editorial-note"><tr>
+  <td style="border-left:4px solid #C97288; background-color:rgba(23, 112, 106,0.07); padding:12px 16px; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; line-height:1.6;"><strong>Editorial note.</strong> Ellipses mark omissions in the edition reproduced. Bracketed words are an editorial insertion. The diary uses “squaws,” a term now recognized as offensive, for Native women.</td>
+</tr></table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:17px; font-weight:700; border-bottom:2px solid #C97288; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Document Text</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Sunday Mar. 3rd. Got up late as usual these stormy times. Breakfast noon. I washed boys, a good scouring all over, dressed them, then went thru my own toilet. Ella read Gulliver’s Travels aloud to boys While Mr. H read in kitchen, I lay on sofa and enjoyed myself in said quiet position reading a book till supper was nearly ready. Mr. H. keeps it going on stove. Washed dishes alone. Mr. H. talking in kitchen, Ella playing on piano some pleasant airs. Both ministers sick, so no church today. Came to sitting room, sat on a stool near piano while Ella accompanied songs by the family in chorus. . . . Mr. H., after playing on floor with two younger ones lay on the lounge and read likewise. . . .</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Thursday 7th. Woke with dreadful headache, breakfast over felt still worse, pale as a sheet. Had to lay on sofa, could not sleep, tried to play some on piano, but no go. Mr. H. did all he could to relieve me, sat reading Esther or Job in the Bible keeping room quiet. I got some camphor and lay on the bed . . . which stopped the throbbing in my brain; so long since I had a heavy head ache I had forgotten the misery. Kimball and Carlton called in during afternoon. Felt better and got up. Went to table and ate some supper. Mr. Givin came in. Ella and John went to spend evening up town. Had a social chat in front room with the visitors, Maney very cross running from Mr. H. to me. He still reading Job. We ate some pine nuts. . . .</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Friday, 8th. Pretty bright morning. Kept the house open for a while. Washed after arranging the shelves more to my liking, put specimens, shells, etc. on them. Washing easy, today. Mr. H. cleaned up stairs. Kept water and fire up and scrubbed kitchen floor, when I got thru. Wrote up this book from Tuesday while waiting supper. Snow falling lightly and tops of hills slightly invisible.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Saturday 9th. Exceedingly deep snow, the deepest of the season. Breakfast over and work was made easy today. Sat down to complete the dear little velvet breeches commenced so long ago. . . . Had a boiled dinner, of cabbage, potatoes and carrots, which were cooked on the front room stove. Ate our supper alone, Mr. H. not coming. Felt very much concerned thereat, worried in mind a good deal. Completed Birdie’s suit, put him in them, admiring him as he ran up and down in his first habiliments. Hemmed some ruffling on machine to put on bottoms. Received a present of handsome carving knife and fork, from John D. Papa came home very late with a dreadful headache. He laid on the sofa saying “I never was so sick in his life.” Threw up. And I went to sleep with Ella.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Sunday 10th. Almost snowed in, snow very very deep. 2 feet. John D. started home; gave me a nice, large platter to go with carving knife and fork, and side-board, both of which he bought of Mrs. Cooper. We were very very sorry to part with him having had a most brotherly visit of several weeks. The snow was so heavy we feared it would crack the kitchen roof, as it groaned once or twice, which made us all scoot. Papa ascended the roof and removed the weight. I washed Dudley and Harry and they went to morning service single file through the snow with their Father. Washed up the floor which looked rather soiled, while Ella . . . washed and dressed Birdie and Manie. . . . Pop and boys home in good season. I made plum pies and cunning little tarts, latter which pleased the five children exceedingly. Enjoyed our Sunday dinner. The children did not go to sabbath school. Donned my usual short grey to commence my rest just at dusk. Papa went to town, promising to come back soon with peanuts. I read aloud to Dudley and Harry. . . . Boys enjoyed their stories exceedingly. Mr. H returned in good season, peanuts all safe which we enjoyed, with the addition of a few pines. Finis to Sunday.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Monday 11th. Sprinkled last week clothes for ironing, made yeast. Ella ironed. . . . How comfortable and cozy the sitting room did look this evening by twilight. The shelves laden with books, specimens, minerals, shells. The Piano, the Sewing Machine, comfortable sofa and easy chair, with healthy, happy, prattling . . . little children. We heard a most piteous wail of wind that seemed like a groan of the Spheres or the wail of a lost soul. Twice or thrice repeated, then died away into a perfect calm. We went to bed without Mr. H. who did not return till after 12 o’clock, ostensibly waiting for the mail.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Sat. 16th. Scrubbed kitchen again which looked terrific by this morning. Made bread, and set doughnuts—all tardy in rising. Sat in entry and read the Dodge Club in Harper, Ella sewed some on machine while I sat at back window in sitting room enjoying the view and sewing Birdie’s velvet pants which proved too short in legs. . . . Waited supper on Mr. H. who did not come. . . . Passed a pleasant evening. Mr. R. brot us a nice mince pie, had quite a talk with him. Mr. Chapin recd two pieces of music, both of which he presented to us, “What are the wild waves saying” and “Bonnie Eloise.” Also a pack of author cards to the children which we played with much zest. After our callers left we sat up quite late children and all, warmed our mince pie and enjoyed eating it much. . . . Mr. H. did not come home all night. But I thought of other things. Ella’s dress I must make for Odd fellows ball and so forth so I experienced no particular harassment.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Sunday 17th. Waked with rather a forlorn, angry feeling at heart. No matches. Dudley started up town to get them and see where papa was. Met him coming home. Had a sharp talk on these growing peccadillos, but went to church together. How wearied and haggard he looked. Small turn out of ladies at Church. Snowy path to church. Had to fry my cakes after return. Mr. H. lay down and slept till dark, supper over, Mr. Medley spent evening and I read my book till my eyes grew heavy and I threw myself on the bed and had good sleep. Mr. H. seems much more affectionate.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Monday 18th. Everything to arrange in cupboard and kitchen. Scrubbed floor and made every thing look neat. Read Hawthorne while resting. Ella making Maney a frock of some old plaid. Put on beans. Had liver and onion, pickles Mr. H brot down. After supper Mr. H. read near the stove in kitchen while I cut out flannel shirt for Dudley and sewed the seams. Ella writing some in her never ending style. Ball up town tonight, lot of boys came down to skating pond, our Dud got out of bed and joined them. Maney cross; could not sew or read so went to bed. Boys staid out long time. We did not hear them come in, but they were disgusted with the big boys who drank liquor from a bottle.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Tuesday 26th. Birdie was dreadfully croupy last night. His breathing intensely labored. Put a wet cloth on his chest which did not relieve him so promptly as it does generally. It was a great drain on my sympathy all the hours of the night. He talked excitedly too a great deal. My eyes were shut, and so very sore when I waked. This eternal covering of snow which continually meets the gaze so glittering must prove hurtful to an organ whose natural color should be green to look upon. . . .</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Thursday 28th. Got up late, later than usual, which is not necessary. Disturbed Mr. H. by preparing for washing said weekly business being repugnant to his nerves. Swept rooms first and got thro well enough with the Herculean task which women all dread, but which is a diversion to me, and proceeded to getting supper. Made oyster soup which children hailed as glorious. Mr. H. ate his sour with vinegar. I washed dishes to let Ella get ready to attend of “Master Mason’s daughter,” up town. Our guest of previous evening Mr. Mitchener came for her. I never saw her looking prettier than when she came in soon ready to start, expectation in her countenance health in her cheek and nobleness in her manner. Left to ourselves had a quiet evening. . . .</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Sat. 30th. Mr. H. gathered wood off the hills much to his satisfaction, boys accompanying him. Squaws engaged in same business packing off loads on their backs. Scrubbed kitchen and chairs. I sewed at skirt of Ella’s dress. Had cabbage boiled for supper and bacon. Mr. H. washed entry and stairs down, [and he was] rather surly till supper was over when he beamed forth a little. Maney so cross and fretful and my eyes so painful I took her to bed quite early. . . .</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:17px; font-weight:700; border-bottom:2px solid #C97288; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Lillard, Richard, ed. “A Literate Woman in the Mines: The Diary of Rachel Haskell.” <em>Mississippi Valley Historical Review</em> 31, no. 1 (June 1944): 81–98.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Rachel Haskell, diary, March 1867, in Richard Lillard, ed., “A Literate Woman in the Mines: The Diary of Rachel Haskell,” <em>Mississippi Valley Historical Review</em> 31, no. 1 (June 1944): 81–98.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Haskell, diary, in Lillard, “Literate Woman,” 81–98.</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #C97288; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 5 · GROWING PAINS | HISTORY C1002 | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Return to the Primary Source Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

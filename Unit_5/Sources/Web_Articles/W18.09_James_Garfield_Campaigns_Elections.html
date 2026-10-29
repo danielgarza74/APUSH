@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="James A. Garfield: Campaigns and Elections. Web Article W18.9 for Unit 5: Growing Pains.">
+  <meta name="theme-color" content="#6D3E49">
+  <title>Web Article W18.9 | James A. Garfield: Campaigns and Elections</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W18.09_James_Garfield_Campaigns_Elections.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #6D3E49;
+      --forest-mid: #975666;
+      --coral: #17706A;
+      --coral-light: #8BB8B4;
+      --cream: #EAF6F4;
+      --paper: #F9FCFC;
+      --mint: #FAEFF2;
+      --sage: #C5DBDA;
+      --ink: #093430;
+      --muted: #41625F;
+      --shadow: 0 22px 55px rgba(65, 37, 44, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #17706A;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(23, 112, 106, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(109, 62, 73, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(65, 37, 44, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(151, 86, 102, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Web Article navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/"><span aria-hidden="true">←</span> Web Article Archive</a>
+      <div class="archive-meta">Unit 5 · Chapter 18 · W18.9</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="W18.9">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#EAF6F4; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Web Article W18.9</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">James A. Garfield: Campaigns and Elections</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Miller Center of Public Affairs, University of Virginia</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #C97288; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#E7B0BE; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">AUTHOR</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">Miller Center of Public Affairs, University of Virginia</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WEBSITE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">Miller Center (Miller Center of Public Affairs, University of Virginia)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">PUBLICATION</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">n.d.</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ESSAY PROMPTS</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">18.2</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARGUMENT ROLES</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">18.2.1 Supports; 18.2.3 Qualifies</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:17px; font-weight:700; border-bottom:2px solid #C97288; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt · (complete article)</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:14px; font-weight:700; margin:8px 0 10px 0;" class="document-subheading" role="heading" aria-level="3">The Campaign and Election of 1880:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">President Rutherford B. Hayes had vowed to be a one-term President, and he kept his pledge. When Republicans convened in Chicago in June 1880, the fight for the nomination stood between former President Ulysses S. Grant, a Stalwart, and James G. Blaine, the Half-Breed senator from Maine. Garfield, head of the Ohio delegation and chairman of the Convention Rules Committee, backed Treasury Secretary John Sherman of Ohio, a veteran of both the House and the Senate. Though he bore the cross of dullness, Sherman might emerge as the ideal compromise candidate. Garfield nominated Sherman. The convention deadlocked through the next thirty-three ballots, with Grant leading, followed by Blaine and Sherman.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Throughout the convention balloting, Garfield had received one or two courtesy votes on each roll call. On the thirty-fourth ballot, Wisconsin cast sixteen votes for Garfield. On the next ballot, Garfield received fifty votes. The move became a stampede on the thirty-sixth ballot as the Blaine and Sherman forces rallied to the Ohio congressman, who had been elected by the Ohio state legislature to the U.S. Senate just prior to the Republican convention. Garfield won 399 votes to Grant's 306, putting him over the top and giving him the Republican nomination.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Conkling's friend and protege, Chester A. Arthur, former customs collector at the Port of New York, received the party's nomination for vice president with Garfield's endorsement. Conkling warned Arthur against accepting the slot, predicting Garfield's defeat and urging him to "drop it as you would a red hot shoe from the forge." Arthur responded that the "office of the Vice-President is a great honor than I ever dreamed of attaning." Arthur's nomination had been organized behind Garfield's back. Garfield reluctantly approved, knowing he needed Stalwart support to emerge victorious.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">When Samuel J. Tilden, former New York governor and the Democratic nominee in 1876, withdrew his name from consideration, the Democrats nominated Winfield S. Hancock, a Civil War hero and career Army officer. Hancock had seen Civil War action at Antietam and Gettysburg, where he had blunted Pickett's Charge. He also fought in the Wilderness campaign and at a dozen other engagements as well. He served as the military governor of Louisiana and Texas during Reconstruction, running afoul of Radical Republicans when his policies supported whites and Democrats over blacks and carpetbaggers.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The presidential campaign revealed few differences between the candidates, except for the tariff. Hancock stumbled when he dismissed the tariff issue as "a local question." Democrats attacked Garfield for his part in the Credit Mobilier scandal. Following President Hayes's advice, Garfield kept a low profile during the campaign.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Since Garfield was, quite correctly, perceived as tied far more to the Half-Breeds than to the Stalwarts, he immediately realized that he had to mend political fences. On August 5, he met with party leaders, though not Conkling, in New York City. During an exchange of views, Garfield promised to recognize all party factions, including the Stalwarts, when presidential appointments were made. Though the terms were vague and ambiguous, pundits dubbed the conference the "Treaty of Fifth Avenue." Both Conkling and Garfield knew that the electoral votes in New York might well prove decisive in the election.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In one of the closest elections on record, Garfield beat Hancock by a mere 7,368 votes, less than one-tenth of one percent of the total votes cast. Taking such minor parties as the Greenbackers and Prohibitionists into account, Garfield received only 48.3 percent. His support was much stronger in the electoral college, where he received 214 votes to Hancock's 155. Each candidate carried nineteen states. Garfield won the northern and midwestern states while Hancock carried the South and most of the border states. Had New York gone Democratic, resulting in a shift of a few thousand votes in each state, Hancock would have won in the electoral college.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:17px; font-weight:700; border-bottom:2px solid #C97288; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Original Article</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><a href="https://millercenter.org/president/garfield/campaigns-and-elections">https://millercenter.org/president/garfield/campaigns-and-elections</a></p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Accessed October 26, 2026. The text above is copied from the article as published on that date.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:17px; font-weight:700; border-bottom:2px solid #C97288; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">“James A. Garfield: Campaigns and Elections.” Miller Center. Miller Center of Public Affairs, University of Virginia, n.d. Accessed October 26, 2026. &lt;link href="https://millercenter.org/president/garfield/campaigns-and-elections"&gt;https://millercenter.org/president/garfield/campaigns-and-elections&lt;/link&gt;.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">“James A. Garfield: Campaigns and Elections,” Miller Center, Miller Center of Public Affairs, University of Virginia, n.d., accessed October 26, 2026, &lt;link href="https://millercenter.org/president/garfield/campaigns-and-elections"&gt;https://millercenter.org/president/garfield/campaigns-and-elections&lt;/link&gt;.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">“Garfield Campaigns.”</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #C97288; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 5 · GROWING PAINS | HISTORY C1002 | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/"><span aria-hidden="true">←</span> Return to the Web Article Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

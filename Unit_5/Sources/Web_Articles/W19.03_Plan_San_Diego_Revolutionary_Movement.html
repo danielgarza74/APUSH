@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Plan of San Diego: A Revolutionary Movement in Early 20th Century Texas. Web Article W19.3 for Unit 5: Growing Pains.">
+  <meta name="theme-color" content="#6D3E49">
+  <title>Web Article W19.3 | The Plan of San Diego: A Revolutionary Movement in Early 20th Century Texas</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/W19.03_Plan_San_Diego_Revolutionary_Movement.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #6D3E49;
+      --forest-mid: #975666;
+      --coral: #17706A;
+      --coral-light: #8BB8B4;
+      --cream: #EAF6F4;
+      --paper: #F9FCFC;
+      --mint: #FAEFF2;
+      --sage: #C5DBDA;
+      --ink: #093430;
+      --muted: #41625F;
+      --shadow: 0 22px 55px rgba(65, 37, 44, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #17706A;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(23, 112, 106, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(109, 62, 73, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(65, 37, 44, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(151, 86, 102, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Web Article navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/"><span aria-hidden="true">←</span> Web Article Archive</a>
+      <div class="archive-meta">Unit 5 · Chapter 19 · W19.3</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="W19.3">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#EAF6F4; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Web Article W19.3</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">The Plan of San Diego: A Revolutionary Movement in Early 20th Century Texas</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Don M. Coerver</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #C97288; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#E7B0BE; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">AUTHOR</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">Don M. Coerver</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WEBSITE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">Handbook of Texas Online (Texas State Historical Association)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">PUBLICATION</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">Updated January 7, 2021</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ESSAY PROMPTS</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">19.10</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARGUMENT ROLES</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">19.10.2 Supports</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:17px; font-weight:700; border-bottom:2px solid #C97288; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt · (complete article)</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">With the outbreak of revolution in northern Mexico in 1910, federal authorities and officials of the state of Texas feared that the violence and disorder might spill over into the Rio Grande valley. The Mexican and Mexican-American populations residing in the Valley far outnumbered the Anglo population. Many Valley residents either had relatives living in areas of Mexico affected by revolutionary activity or aided the various revolutionary factions in Mexico. The revolution caused an influx of political refugees and undocumented immigrants into the border region, politicizing the Valley population and disturbing the traditional politics of the region. Some radical elements saw the Mexican Revolution as an opportunity to bring about drastic political and economic changes in South Texas. The most extreme example of this was a movement supporting the "Plan of San Diego," a revolutionary manifesto supposedly written and signed at the South Texas town of San Diego on January 6, 1915. The plan, actually drafted in a jail in Monterrey, Nuevo León, provided for the formation of a "Liberating Army of Races and Peoples," to be made up of Mexican Americans, African Americans, and Japanese, to "free" the states of Texas, New Mexico, Arizona, California, and Colorado from United States control. The liberated states would be organized into an independent republic, which might later seek annexation to Mexico. There would be a no-quarter race war, with summary execution of all White males over the age of sixteen. The revolution was to begin on February 20, 1915. Federal and state officials found a copy of the plan when local authorities in McAllen, Texas, arrested Basilio Ramos, Jr., one of the leaders of the plot, on January 24, 1915.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The arrival of February 20 produced only another revolutionary manifesto, rather than the promised insurrection. Similar to the original plan, this second Plan of San Diego emphasized the "liberation" of the proletariat and focused on Texas, where a "social republic" would be established to serve as a base for spreading the revolution throughout the southwestern United States. Indians were also to be enlisted in the cause. But with no signs of revolutionary activity, state and federal authorities dismissed the plan as one more example of the revolutionary rhetoric that flourished along the border. This feeling of complacency was shattered in July 1915 with a series of raids in the lower Rio Grande valley connected with the Plan of San Diego. These raids were led by two adherents of Venustiano Carranza, revolutionary general, and Aniceto Pizaña and Luis De la Rosa, residents of South Texas. The bands used the guerilla tactics of disrupting transportation and communication in the border area and killing Anglos. In response, the United States Army moved reinforcements into the area.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">A third version of the plan called for the foundation of a "Republic of Texas" to be made up of Texas, New Mexico, California, Arizona, and parts of Mississippi and Oklahoma. San Antonio, Texas, was to serve as revolutionary headquarters, and the movement's leadership continued to come from South Texas. Raids originated on both sides of the Rio Grande, eventually assuming a pattern of guerilla warfare. Raids from the Mexican side came from territory under the control of Carranza, whose officers were accused of supporting the raiders. When the United States recognized Carranza as president of Mexico in October 1915, the raids came to an abrupt halt. Relations between the United States and Carranza quickly turned sour, however, amid growing violence along the border. When forces under another revolutionary general, Francisco (Pancho) Villa, attacked Columbus, New Mexico, in March 1916, the United States responded by sending a large military force under Gen. John J. Pershing into northern Mexico in pursuit of Villa. When the United States rejected Carranza's demands to withdraw Pershing's troops, fear of a military conflict between the United States and Mexico grew. In this volatile context, there was a renewal of raiding under the Plan of San Diego in May 1916. Mexican officials were even considering the possibility of combining the San Diego raiders with regular Mexican forces in an attack on Laredo. In late June, Mexican and United States officials agreed to a peaceful settlement of differences, and raids under the Plan of San Diego came to a halt.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Plan of San Diego and the raids that accompanied it were originally attributed to the supporters of the ousted Mexican dictator Gen. Victoriano Huerta, who had been overthrown by Carranza in 1914. The evidence indicates, however, that the raids were carried out by followers of Carranza, who manipulated the movement in an effort to influence relations with the United States. Fatalities directly linked to the raids were surprisingly small; between July 1915 and July 1916 some thirty raids into Texas produced only twenty-one American deaths, both civilian and military. More destructive and disruptive was the near race war that ensued in the wake of the plan as relations between the Whites and the Mexicans and Mexican Americans deteriorated in 1915–16. Federal reports indicated that more than 300 Mexicans or Mexican Americans were summarily executed in South Texas in the atmosphere generated by the plan. Economic losses ran into the millions of dollars, and virtually all residents of the lower Rio Grande valley suffered some disruption in their lives from the raids. Moreover, the plan's legacy of racial antagonism endured long after the plan itself had been forgotten.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:17px; font-weight:700; border-bottom:2px solid #C97288; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Original Article</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><a href="https://www.tshaonline.org/handbook/entries/plan-of-san-diego">https://www.tshaonline.org/handbook/entries/plan-of-san-diego</a></p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Accessed October 26, 2026. The text above is copied from the article as published on that date.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:17px; font-weight:700; border-bottom:2px solid #C97288; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Coerver, Don M. “The Plan of San Diego: A Revolutionary Movement in Early 20th Century Texas.” <em>Handbook of Texas Online</em>. Texas State Historical Association, January 7, 2021. &lt;link href="https://www.tshaonline.org/handbook/entries/plan-of-san-diego"&gt;https://www.tshaonline.org/handbook/entries/plan-of-san-diego&lt;/link&gt;.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Don M. Coerver, “The Plan of San Diego: A Revolutionary Movement in Early 20th Century Texas,” <em>Handbook of Texas Online</em>, Texas State Historical Association, January 7, 2021, &lt;link href="https://www.tshaonline.org/handbook/entries/plan-of-san-diego"&gt;https://www.tshaonline.org/handbook/entries/plan-of-san-diego&lt;/link&gt;.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Coerver, “Plan of San Diego.”</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #C97288; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 5 · GROWING PAINS | HISTORY C1002 | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Web_Articles/"><span aria-hidden="true">←</span> Return to the Web Article Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

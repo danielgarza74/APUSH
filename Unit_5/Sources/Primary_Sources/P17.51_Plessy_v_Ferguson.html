@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plessy v. Ferguson. Primary Source P17.51 for Unit 5: Growing Pains.">
+  <meta name="theme-color" content="#6D3E49">
+  <title>Primary Source P17.51 | Plessy v. Ferguson</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Primary_Sources/P17.51_Plessy_v_Ferguson.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #6D3E49;
+      --forest-mid: #975666;
+      --coral: #17706A;
+      --coral-light: #8BB8B4;
+      --cream: #EAF6F4;
+      --paper: #F9FCFC;
+      --mint: #FAEFF2;
+      --sage: #C5DBDA;
+      --ink: #093430;
+      --muted: #41625F;
+      --shadow: 0 22px 55px rgba(65, 37, 44, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #17706A;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(23, 112, 106, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(109, 62, 73, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(65, 37, 44, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(151, 86, 102, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Primary Source navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Primary Source Archive</a>
+      <div class="archive-meta">Unit 5 · Chapter 17 · P17.51</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="P17.51">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#EAF6F4; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Primary Source P17.51</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">Plessy v. Ferguson</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">U.S. Supreme Court (opinion by Justice Henry Billings Brown; dissent by Justice John Marshall Harlan) · Decided May 18, 1896</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #C97288; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#E7B0BE; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TOC FIT</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">The Spread of Segregation: Plessy v. Ferguson (1896)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WHY HERE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">The Supreme Court decision that upheld a Louisiana law requiring separate railroad cars for white and Black passengers, with Justice Harlan's dissent.</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TREATMENT</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">Public-domain text, selected excerpts</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ESSAY PROMPTS</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">17.3, 18.4</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARGUMENT ROLES</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#0D4A44; font-size:13.5px; line-height:1.55;">17.3.4 Supports; 17.3.3 Supports; 18.4.3 Supports</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:17px; font-weight:700; border-bottom:2px solid #C97288; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Historical Context</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">This document comes from the U.S. Supreme Court's decision in Plessy v. Ferguson, announced May 18, 1896. It begins with the Court's formal judgment from its records at the National Archives and continues with a transcription of the opinions: the majority opinion by Justice Henry Billings Brown, joined by six other justices, and the lone dissent by Justice John Marshall Harlan, a Kentuckian and former slaveholder. Justice David Brewer did not take part. The justices wrote for the lawyers, judges, and lawmakers who would apply the ruling.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In 1890 Louisiana required railroads to provide "equal but separate" cars for white and Black passengers. A New Orleans committee of Black and Creole activists arranged a test case: in June 1892 Homer Plessy, who was one-eighth African in ancestry, took a seat in a white car and was arrested. His lawyers, including Albion Tourgée, argued that the law violated the Thirteenth and Fourteenth Amendments. The ruling approved "separate but equal" and gave constitutional cover to segregation laws across the South until Brown v. Board of Education (1954).</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 26px 0;" class="editorial-note"><tr>
+  <td style="border-left:4px solid #C97288; background-color:rgba(23, 112, 106,0.07); padding:12px 16px; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; line-height:1.6;"><strong>Editorial note.</strong> Ellipses mark omissions in the edition reproduced. The opinions use the racial terms and assumptions of the 1890s, including "colored" and "Chinaman."</td>
+</tr></table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:17px; font-weight:700; border-bottom:2px solid #C97288; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Document Text</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Supreme Court of the United States, No.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">210, October Term, 1895.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Homer Adolph Plessy,</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Plaintiff in Error, vs.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">J.H. Ferguson, Judge of Section “A”</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Criminal District Court for the Parish of Orleans</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In Error to the Supreme Court of the State of Louisiana</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">This cause came on to be heard on the transcript of the record from the Supreme Court of the State of Louisiana, and was argued by counsel.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">On consideration whereof, It is now here ordered and adjudged by this Court that the judgment of the said Supreme Court, in this cause, be and the the same is hereby, affirmed with costs.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">per Mr. Justice Brown,</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">May 18, 1896.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Dissenting:</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Mr. Justice Harlan</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">(Transcription of Opinion of the Supreme Court of the United States in Plessy v. Ferguson.)</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">U.S. Supreme Court</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">PLESSY v. FERGUSON, 163 U.S. 537 (1896)</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">163 U.S. 537 PLESSY</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">v.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">FERGUSON.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">No. 210.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">May 18, 1896.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">This was a petition for writs of prohibition and certiorari originally filed in the supreme court of the state by Plessy, the plaintiff in error, against the Hon. John H. Ferguson, judge of the criminal district court for the parish of Orleans, and setting forth, in substance, the following facts:</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">That petitioner was a citizen of the United States and a resident of the state of Louisiana, of mixed descent, in the proportion of seven-eighths Caucasian and one-eighth African blood; that the mixture of colored blood was not discernible in him, and that he was entitled to every recognition, right, privilege, and immunity secured to the citizens of the United States of the white race by its constitution and laws; that on June 7, 1892, he engaged and paid for a first-class passage on the East Louisiana Railway, from New Orleans to Covington, in the same state, and thereupon entered a passenger train, and took possession of a vacant seat in a coach where passengers of the white race were accommodated; that such railroad company was incorporated by the laws of Louisiana as a common carrier, and was not authorized to distinguish between citizens according to their race, but, notwithstanding this, petitioner was required by the conductor, under penalty of ejection from said train and imprisonment, to vacate said coach, and occupy another seat, in a coach assigned by said company for persons not of the white race, and for no other reason than that petitioner was of the colored race; that, upon petitioner’s refusal to comply with such order, he was, with the aid of a police officer, forcibly ejected from said coach, and hurried off to, and imprisoned in, the parish jail of New Orleans, and there held to answer a charge made by such officer to the effect that he was guilty of having criminally violated an act of the general assembly of the state, approved July 10, 1890, in such case made and provided.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The petitioner was subsequently brought before the recorder of the city for preliminary examination, and committed for trial to the criminal district court for the parish of Orleans, where an information was filed against him in the matter above set forth, for a violation of the above act, which act the petitioner affirmed to be null and void, because in conflict with the constitution of the United States; that petitioner interposed a plea to such information, based upon the unconstitutionality of the act of the general assembly, to which the district attorney, on behalf of the state, filed a demurrer; that, upon issue being joined upon such demurrer and plea, the court sustained the demurrer, overruled the plea, and ordered petitioner to plead over to the facts set forth in the information, and that, unless the judge of the said court be enjoined by a writ of prohibition from further proceeding in such case, the court will proceed to fine and sentence petitioner to imprisonment, and thus deprive him of his constitutional rights set forth in his said plea, notwithstanding the unconstitutionality of the act under which he was being prosecuted; that no appeal lay from such sentence, and petitioner was without relief or remedy except by writs of prohibition and certiorari. Copies of the information and other proceedings in the criminal district court were annexed to the petition as an exhibit.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Upon the filing of this petition, an order was issued upon the respondent to show cause why a writ of prohibition should not issue, and be made perpetual, and a further order that the record of the proceedings had in the criminal cause be certified and transmitted to the supreme court.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To this order the respondent made answer, transmitting a certified copy of the proceedings, asserting the constitutionality of the law, and averring that, instead of pleading or admitting that he belonged to the colored race, the said Plessy declined and refused, either by pleading or otherwise, to admit that he was in any sense or in any proportion a colored man.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The case coming on for hearing before the supreme court, that court was of opinion that the law under which the prosecution was had was constitutional and denied the relief prayed for by the petitioner (Ex parte Plessy, 45 La. Ann. 80, 11 South. 948); whereupon petitioner prayed for a writ of error from this court, which was allowed by the chief justice of the supreme court of Louisiana.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Mr. Justice Harlan dissenting.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">A. W. Tourgee and S. F. Phillips, for plaintiff in error.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Alex. Porter Morse, for defendant in error.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Mr. Justice BROWN, after stating the facts in the foregoing language, delivered the opinion of the court.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">This case turns upon the constitutionality of an act of the general assembly of the state of Louisiana, passed in 1890, providing for separate railway carriages for the white and colored races. Acts 1890, No. 111, p. 152.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The first section of the statute enacts “that all railway companies carrying passengers in their coaches in this state, shall provide equal but separate accommodations for the white, and colored races, by providing two or more passenger coaches for each passenger train, or by dividing the passenger coaches by a partition so as to secure separate accommodations: provided, that this section shall not be construed to apply to street railroads. No person or persons shall be permitted to occupy seats in coaches, other than the ones assigned to them, on account of the race they belong to.”</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">By the second section it was enacted “that the officers of such passenger trains shall have power and are hereby required to assign each passenger to the coach or compartment used for the race to which such passenger belongs; any passenger insisting on going into a coach or compartment to which by race he does not belong, shall be liable to a fine of twenty-five dollars, or in lieu thereof to imprisonment for a period of not more than twenty days in the parish prison, and any officer of any railroad insisting on assigning a passenger to a coach or compartment other than the one set aside for the race to which said passenger belongs, shall be liable to a fine of twenty-five dollars, or in lieu thereof to imprisonment for a period of not more than twenty days in the parish prison; and should any passenger refuse to occupy the coach or compartment to which he or she is assigned by the officer of such railway, said officer shall have power to refuse to carry such passenger on his train, and for such refusal neither he nor the railway company which he represents shall be liable for damages in any of the courts of this state.”</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The third section provides penalties for the refusal or neglect of the officers, directors, conductors, and employees of railway companies to comply with the act, with a proviso that “nothing in this act shall be construed as applying to nurses attending children of the other race.” The fourth section is immaterial.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The information filed in the criminal district court charged, in substance, that Plessy, being a passenger between two stations within the state of Louisiana, was assigned by officers of the company to the coach used for the race to which he belonged, but he insisted upon going into a coach used by the race to which he did not belong. Neither in the information nor plea was his particular race or color averred.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The petition for the writ of prohibition averred that petitioner was seven-eights Caucasian and one-eighth African blood; that the mixture of colored blood was not discernible in him; and that he was entitled to every right, privilege, and immunity secured to citizens of the United States of the white race; and that, upon such theory, he took possession of a vacant seat in a coach where passengers of the white race were accommodated, and was ordered by the conductor to vacate said coach, and take a seat in another, assigned to persons of the colored race, and, having refused to comply with such demand, he was forcibly ejected, with the aid of a police officer, and imprisoned in the parish jail to answer a charge of having violated the above act.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The constitutionality of this act is attacked upon the ground that it conflicts both with the thirteenth amendment of the constitution, abolishing slavery, and the fourteenth amendment, which prohibits certain restrictive legislation on the part of the states.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">1. That it does not conflict with the thirteenth amendment, which abolished slavery and involuntary servitude, except a punishment for crime, is too clear for argument. Slavery implies involuntary servitude,—a state of bondage; the ownership of mankind as a chattel, or, at least, the control of the labor and services of one man for the benefit of another, and the absence of a legal right to the disposal of his own person, property, and services. This amendment was said in the Slaughter-House Cases, 16 Wall. 36, to have been intended primarily to abolish slavery, as it had been previously known in this country, and that it equally forbade Mexican peonage or the Chinese coolie trade, when they amounted to slavery or involuntary servitude, and that the use of the word “servitude” was intended to prohibit the use of all forms of involuntary slavery, of whatever class or name. It was intimated, however, in that case, that this amendment was regarded by the statesmen of that day as insufficient to protect the colored race from certain laws which had been enacted in the Southern states, imposing upon the colored race onerous disabilities and burdens, and curtailing their rights in the pursuit of life, liberty, and property to such an extent that their freedom was of little value; and that the fourteenth amendment was devised to meet this exigency.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">So, too, in the Civil Rights Cases, 109 U.S. 3, 3 Sup. Ct. 18, it was said that the act of a mere individual, the owner of an inn, a public conveyance or place of amusement, refusing accommodations to colored people, cannot be justly regarded as imposing any badge of slavery or servitude upon the applicant, but only as involving an ordinary civil injury, properly cognizable by the laws of the state, and presumably subject to redress by those laws until the contrary appears. “It would be running the slavery question into the ground,” said Mr. Justice Bradley, “to make it apply to every act of discrimination which a person may see fit to make as to the guests he will entertain, or as to the people he will take into his coach or cab or car, or admit to his concert or theater, or deal with in other matters of intercourse or business.”</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">A statute which implies merely a legal distinction between the white and colored races—a distinction which is founded in the color of the two races, and which must always exist so long as white men are distinguished from the other race by color—has no tendency to destroy the legal equality of the two races, or re-establish a state of involuntary servitude. Indeed, we do not understand that the thirteenth amendment is strenuously relied upon by the plaintiff in error in this connection.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">2. By the fourteenth amendment, all persons born or naturalized in the United States, and subject to the jurisdiction thereof, are made citizens of the United States and of the state wherein they reside; and the states are forbidden from making or enforcing any law which shall abridge the privileges or immunities of citizens of the United States, or shall deprive any person of life, liberty, or property without due process of law, or deny to any person within their jurisdiction the equal protection of the laws.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The proper construction of this amendment was first called to the attention of this court in the Slaughter-House Cases, 16 Wall. 36, which involved, however, not a question of race, but one of exclusive privileges. The case did not call for any expression of opinion as to the exact rights it was intended to secure to the colored race, but it was said generally that its main purpose was to establish the citizenship of the negro, to give definitions of citizenship of the United States and of the states, and to protect from the hostile legislation of the states the privileges and immunities of citizens of the United States, as distinguished from those of citizens of the states. The object of the amendment was undoubtedly to enforce the absolute equality of the two races before the law, but, in the nature of things, it could not have been intended to abolish distinctions based upon color, or to enforce social, as distinguish d from political, equality, or a commingling of the two races upon terms unsatisfactory to either. Laws permitting, and even requiring, their separation, in places where they are liable to be brought into contact, do not necessarily imply the inferiority of either race to the other, and have been generally, if not universally, recognized as within the competency of the state legislatures in the exercise of their police power. The most common instance of this is connected with the establishment of separate schools for white and colored children, which have been held to be a valid exercise of the legislative power even by courts of states where the political rights of the colored race have been longest and most earnestly enforced.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">. . .</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">While we think the enforced separation of the races, as applied to the internal commerce of the state, neither abridges the privileges or immunities of the colored man, deprives him of his property without due process of law, nor denies him the equal protection of the laws, within the meaning of the fourteenth amendment, we are not prepared to say that the conductor, in assigning passengers to the coaches according to their race, does not act at his peril, or that the provision of the second section of the act that denies to the passenger compensation in damages for a refusal to receive him into the coach in which he properly belongs is a valid exercise of the legislative power. Indeed, we understand it to be conceded by the state’s attorney that such part of the act as exempts from liability the railway company and its officers is unconstitutional. The power to assign to a particular coach obviously implies the power to determine to which race the passenger belongs, as well as the power to determine who, under the laws of the particular state, is to be deemed a white, and who a colored, person. This question, though indicated in the brief of the plaintiff in error, does not properly arise upon the record in this case, since the only issue made is as to the unconstitutionality of the act, so far as it requires the railway to provide separate accommodations, and the conductor to assign passengers according to their race.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It is claimed by the plaintiff in error that, in a mixed community, the reputation of belonging to the dominant race, in this instance the white race, is “property,” in the same sense that a right of action or of inheritance is property. Conceding this to be so, for the purposes of this case, we are unable to see how this statute deprives him of, or in any way affects his right to, such property. If he be a white man, and assigned to a colored coach, he may have his action for damages against the company for being deprived of his so-called “property.” Upon the other hand, if he be a colored man, and be so assigned, he has been deprived of no property, since he is not lawfully entitled to the reputation of being a white man.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In this connection, it is also suggested by the learned counsel for the plaintiff in error that the same argument that will justify the state legislature in requiring railways to provide separate accommodations for the two races will also authorize them to require separate cars to be provided for people whose hair is of a certain color, or who are aliens, or who belong to certain nationalities, or to enact laws requiring colored people to walk upon one side of the street, and white people upon the other, or requiring white men’s houses to be painted white, and colored men’s black, or their vehicles or business signs to be of different colors, upon the theory that one side of the street is as good as the other, or that a house or vehicle of one color is as good as one of another color. The reply to all this is that every exercise of the police power must be reasonable, and extend only to such laws as are enacted in good faith for the promotion of the public good, and not for the annoyance or oppression of a particular class. Thus, in Yick Wo v. Hopkins, 118 U.S. 356, 6 Sup. Ct. 1064, it was held by this court that a municipal ordinance of the city of San Francisco, to regulate the carrying on of public laundries within the limits of the municipality, violated the provisions of the constitution of the United States, if it conferred upon the municipal authorities arbitrary power, at their own will, and without regard to discretion, in the legal sense of the term, to give or withhold consent as to persons or places, without regard to the competency of the persons applying or the propriety of the places selected for the carrying on of the business. It was held to be a covert attempt on the part of the municipality to make an arbitrary and unjust discrimination against the Chinese race. While this was the case of a municipal ordinance, a like principle has been held to apply to acts of a state legislature passed in the exercise of the police power. Railroad Co. v. Husen, 95 U.S. 465; Louisville &amp; N. R. Co. v. Kentucky, 161 U.S. 677, 16 Sup. Ct. 714, and cases cited on page 700, 161 U. S., and page 714, 16 Sup. Ct.; Daggett v. Hudson, 43 Ohio St. 548, 3 N. E. 538; Capen v. Foster, 12 Pick. 485; State v. Baker, 38 Wis. 71; Monroe v. Collins, 17 Ohio St. 665; Hulseman v. Rems, 41 Pa. St. 396; Osman v. Riley, 15 Cal. 48.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">So far, then, as a conflict with the fourteenth amendment is concerned, the case reduces itself to the question whether the statute of Louisiana is a reasonable regulation, and with respect to this there must necessarily be a large discretion on the part of the legislature. In determining the question of reasonableness, it is at liberty to act with reference to the established usages, customs, and traditions of the people, and with a view to the promotion of their comfort, and the preservation of the public peace and good order. Gauged by this standard, we cannot say that a law which authorizes or even requires the separation of the two races in public conveyances is unreasonable, or more obnoxious to the fourteenth amendment than the acts of congress requiring separate schools for colored children in the District of Columbia, the constitutionality of which does not seem to have been questioned, or the corresponding acts of state legislatures.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">We consider the underlying fallacy of the plaintiff’s argument to consist in the assumption that the enforced separation of the two races stamps the colored race with a badge of inferiority. If this be so, it is not by reason of anything found in the act, but solely because the colored race chooses to put that construction upon it. The argument necessarily assumes that if, as has been more than once the case, and is not unlikely to be so again, the colored race should become the dominant power in the state legislature, and should enact a law in precisely similar terms, it would thereby relegate the white race to an inferior position. We imagine that the white race, at least, would not acquiesce in this assumption. The argument also assumes that social prejudices may be overcome by legislation, and that equal rights cannot be secured to the negro except by an enforced commingling of the two races. We cannot accept this proposition. If the two races are to meet upon terms of social equality, it must be the result of natural affinities, a mutual appreciation of each other’s merits, and a voluntary consent of individuals. As was said by the court of appeals of New York in People v. Gallagher, 93 N. Y. 438, 448: “This end can neither be accomplished nor promoted by laws which conflict with the general sentiment of the community upon whom they are designed to operate. When the government, therefore, has secured to each of its citizens equal rights before the law, and equal opportunities for improvement and progress, it has accomplished the end for which it was organized, and performed all of the functions respecting social advantages with which it is endowed.” Legislation is powerless to eradicate racial instincts, or to abolish distinctions based upon physical differences, and the attempt to do so can only result in accentuating the difficulties of the present situation. If the civil and political rights of both races be equal, one cannot be inferior to the other civilly or politically. If one race be inferior to the other socially, the constitution of the United States cannot put them upon the same plane.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It is true that the question of the proportion of colored blood necessary to constitute a colored person, as distinguished from a white person, is one upon which there is a difference of opinion in the different states; some holding that any visible admixture of black blood stamps the person as belonging to the colored race (State v. Chavers, 5 Jones [N. C.] 1); others, that it depends upon the preponderance of blood (Gray v. State, 4 Ohio, 354; Monroe v. Collins, 17 Ohio St. 665); and still others, that the predominance of white blood must only be in the proportion of three-fourths (People v. Dean, 14 Mich. 406; Jones v. Com., 80 Va. 544). But these are questions to be determined under the laws of each state, and are not properly put in issue in this case. Under the allegations of his petition, it may undoubtedly become a question of importance whether, under the laws of Louisiana, the petitioner belongs to the white or colored race.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The judgment of the court below is therefore affirmed.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Mr. Justice BREWER did not hear the argument or participate in the decision of this case.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Mr. Justice HARLAN dissenting.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">By the Louisiana statute the validity of which is here involved, all railway companies (other than street-railroad companies) carry passengers in that state are required to have separate but equal accommodations for white and colored persons, “by providing two or more passenger coaches for each passenger train, or by dividing the passenger coaches by a partition so as to secure separate accommodations.” Under this statute, no colored person is permitted to occupy a seat in a coach assigned to white persons; nor any white person to occupy a seat in a coach assigned to colored persons. The managers of the railroad are not allowed to exercise any discretion in the premises, but are required to assign each passenger to some coach or compartment set apart for the exclusive use of is race. If a passenger insists upon going into a coach or compartment not set apart for persons of his race, he is subject to be fined, or to be imprisoned in the parish jail. Penalties are prescribed for the refusal or neglect of the officers, directors, conductors, and employees of railroad companies to comply with the provisions of the act.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Only “nurses attending children of the other race” are excepted from the operation of the statute. No exception is made of colored attendants traveling with adults. A white man is not permitted to have his colored servant with him in the same coach, even if his condition of health requires the constant personal assistance of such servant. If a colored maid insists upon riding in the same coach with a white woman whom she has been employed to serve, and who may need her personal attention while traveling, she is subject to be fined or imprisoned for such an exhibition of zeal in the discharge of duty.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">While there may be in Louisiana persons of different races who are not citizens of the United States, the words in the act “white and colored races” necessarily include all citizens of the United States of both races residing in that state. So that we have before us a state enactment that compels, under penalties, the separation of the two races in railroad passenger coaches, and makes it a crime for a citizen of either race to enter a coach that has been assigned to citizens of the other race.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Thus, the state regulates the use of a public highway by citizens of the United States solely upon the basis of race.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">However apparent the injustice of such legislation may be, we have only to consider whether it is consistent with the constitution of the United States.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">. . .</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In respect of civil rights, common to all citizens, the constitution of the United States does not, I think, permit any public authority to know the race of those entitled to be protected in the enjoyment of such rights. Every true man has pride of race, and under appropriate circumstances, when the rights of others, his equals before the law, are not to be affected, it is his privilege to express such pride and to take such action based upon it as to him seems proper. But I deny that any legislative body or judicial tribunal may have regard to the race of citizens when the civil rights of those citizens are involved. Indeed, such legislation as that here in question is inconsistent not only with that equality of rights which pertains to citizenship, national and state, but with the personal liberty enjoyed by every one within the United States.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The thirteenth amendment does not permit the withholding or the deprivation of any right necessarily inhering in freedom. It not only struck down the institution of slavery as previously existing in the United States, but it prevents the imposition of any burdens or disabilities that constitute badges of slavery or servitude. It decreed universal civil freedom in this country. This court has so adjudged. But, that amendment having been found inadequate to the protection of the rights of those who had been in slavery, it was followed by the fourteenth amendment, which added greatly to the dignity and glory of American citizenship, and to the security of personal liberty, by declaring that “all persons born or naturalized in the United States, and subject to the jurisdiction thereof, are citizens of the United States and of the state wherein they reside,” and that “no state shall make or enforce any law which shall abridge the privileges or immunities of citizens of the United States; nor shall any state deprive any person of life, liberty or property without due process of law, nor deny to any person within its jurisdiction the equal protection of the laws.” These two amendments, if enforced according to their true intent and meaning, will protect all the civil rights that pertain to freedom and citizenship. Finally, and to the end that no citizen should be denied, on account of his race, the privilege of participating in the political control of his country, it was declared by the fifteenth amendment that “the right of citizens of the United States to vote shall not be denied or abridged by the United States or by any state on account of race, color or previous condition of servitude.”</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">These notable additions to the fundamental law were welcomed by the friends of liberty throughout the world. They removed the race line from our governmental systems. They had, as this court has said, a common purpose, namely, to secure “to a race recently emancipated, a race that through many generations have been held in slavery, all the civil rights that the superior race enjoy.” They declared, in legal effect, this court has further said, “that the law in the states shall be the same for the black as for the white; that all persons, whether colored or white, shall stand equal before the laws of the states; and in regard to the colored race, for whose protection the amendment was primarily designed, that no discrimination shall be made against them by law because of their color.” We also said: “The words of the amendment, it is true, are prohibitory, but they contain a necessary implication of a positive immunity or right, most valuable to the colored race,—the right to exemption from unfriendly legislation against them distinctively as colored; exemption from legal discriminations, implying inferiority in civil society, lessening the security of their enjoyment of the rights which others enjoy; and discriminations which are steps towards reducing them to the condition of a subject race.” It was, consequently, adjudged that a state law that excluded citizens of the colored race from juries, because of their race, however well qualified in other respects to discharge the duties of jurymen, was repugnant to the fourteenth amendment. Strauder v. West Virginia, 100 U.S. 303, 306, 307 S.; Virginia v. Rives, Id. 313; Ex parte Virginia, Id. 339; Neal v. Delaware, 103 U.S. 370, 386; Bush v. Com., 107 U.S. 110, 116, 1 S. Sup. Ct. 625. At the present term, referring to the previous adjudications, this court declared that “underlying all of those decisions is the principle that the constitution of the United States, in its present form, forbids, so far as civil and political rights are concerned, discrimination by the general government or the states against any citizen because of his race. All citizens are equal before the law.” Gibson v. State, 162 U.S. 565, 16 Sup. Ct. 904.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The decisions referred to show the scope of the recent amendments of the constitution. They also show that it is not within the power of a state to prohibit colored citizens, because of their race, from participating as jurors in the administration of justice.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It was said in argument that the statute of Louisiana does not discriminate against either race, but prescribes a rule applicable alike to white and colored citizens. But this argument does not meet the difficulty. Every one knows that the statute in question had its origin in the purpose, not so much to exclude white persons from railroad cars occupied by blacks, as to exclude colored people from coaches occupied by or assigned to white persons. Railroad corporations of Louisiana did not make discrimination among whites in the matter of accommodation for travelers. The thing to accomplish was, under the guise of giving equal accommodation for whites and blacks, to compel the latter to keep to themselves while traveling in railroad passenger coaches. No one would be so wanting in candor as to assert the contrary. The fundamental objection, therefore, to the statute, is that it interferes with the personal freedom of citizens. “Personal liberty,” it has been well said, “consists in the power of locomotion, of changing situation, or removing one’s person to whatsoever places one’s own inclination may direct, without imprisonment or restraint, unless by due course of law.” 1 Bl. Comm. *134. If a white man and a black man choose to occupy the same public conveyance on a public highway, it is their right to do so; and no government, proceeding alone on grounds of race, can prevent it without infringing the personal liberty of each.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It is one thing for railroad carriers to furnish, or to be required by law to furnish, equal accommodations for all whom they are under a legal duty to carry. It is quite another thing for government to forbid citizens of the white and black races from traveling in the same public conveyance, and to punish officers of railroad companies for permitting persons of the two races to occupy the same passenger coach. If a state can prescribe, as a rule of civil conduct, that whites and blacks shall not travel as passengers in the same railroad coach, why may it not so regulate the use of the streets of its cities and towns as to compel white citizens to keep on one side of a street, and black citizens to keep on the other? Why may it not, upon like grounds, punish whites and blacks who ride together in street cars or in open vehicles on a public road or street? Why may it not require sheriffs to assign whites to one side of a court room, and blacks to the other? And why may it not also prohibit the commingling of the two races in the galleries of legislative halls or in public assemblages convened for the consideration of the political questions of the day? Further, if this statute of Louisiana is consistent with the personal liberty of citizens, why may not the state require the separation in railroad coaches of native and naturalized citizens of the United States, or of Protestants and Roman Catholics?</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The answer given at the argument to these questions was that regulations of the kind they suggest would be unreasonable, and could not, therefore, stand before the law. Is it meant that the determination of questions of legislative power depends upon the inquiry whether the statute whose validity is questioned is, in the judgment of the courts, a reasonable one, taking all the circumstances into consideration? A statute may be unreasonable merely because a sound public policy forbade its enactment. But I do not understand that the courts have anything to do with the policy or expediency of legislation. A statute may be valid, and yet, upon grounds of public policy, may well be characterized as unreasonable. Mr. Sedgwick correctly states the rule when he says that, the legislative intention being clearly ascertained, “the courts have no other duty to perform than to execute the legislative will, without any regard to their views as to the wisdom or justice of the particular enactment.” Sedg. St. &amp; Const. Law, 324. There is a dangerous tendency in these latter days to enlarge the functions of the courts, by means of judicial interference with the will of the people as expressed by the legislature. Our institutions have the distinguishing characteristic that the three departments of government are co-ordinate and separate. Each much keep within the limits defined by the constitution. And the courts best discharge their duty by executing the will of the law-making power, constitutionally expressed, leaving the results of legislation to be dealt with by the people through their representatives. Statutes must always have a reasonable construction. Sometimes they are to be construed strictly, sometimes literally, in order to carry out the legislative will. But, however construed, the intent of the legislature is to be respected if the particular statute in question is valid, although the courts, looking at the public interests, may conceive the statute to be both unreasonable and impolitic. If the power exists to enact a statute, that ends the matter so far as the courts are concerned. The adjudged cases in which statutes have been held to be void, because unreasonable, are those in which the means employed by the legislature were not at all germane to the end to which the legislature was competent.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The white race deems itself to be the dominant race in this country. And so it is, in prestige, in achievements, in education, in wealth, and in power. So, I doubt not, it will continue to be for all time, if it remains true to its great heritage, and holds fast to the principles of constitutional liberty. But in view of the constitution, in the eye of the law, there is in this country no superior, dominant, ruling class of citizens. There is no caste here. Our constitution is color-blind, and neither knows nor tolerates classes among citizens. In respect of civil rights, all citizens are equal before the law. The humblest is the peer of the most powerful. The law regards man as man, and takes no account of his surroundings or of his color when his civil rights as guarantied by the supreme law of the land are involved. It is therefore to be regretted that this high tribunal, the final expositor of the fundamental law of the land, has reached the conclusion that it is competent for a state to regulate the enjoyment by citizens of their civil rights solely upon the basis of race.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In my opinion, the judgment this day rendered will, in time, prove to be quite as pernicious as the decision made by this tribunal in the Dred Scott Case.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It was adjudged in that case that the descendants of Africans who were imported into this country, and sold as slaves, were not included nor intended to be included under the word “citizens” in the constitution, and could not claim any of the rights and privileges which that instrument provided for and secured to citizens of the United States; that, at time of the adoption of the constitution, they were “considered as a subordinate and inferior class of beings, who had been subjugated by the dominant race, and, whether emancipated or not, yet remained subject to their authority, and had no rights or privileges but such as those who held the power and the government might choose to grant them.” 17 How. 393, 404. The recent amendments of the constitution, it was supposed, had eradicated these principles from our institutions. But it seems that we have yet, in some of the states, a dominant race,—a superior class of citizens,—which assumes to regulate the enjoyment of civil rights, common to all citizens, upon the basis of race. The present decision, it may well be apprehended, will not only stimulate aggressions, more or less brutal and irritating, upon the admitted rights of colored citizens, but will encourage the belief that it is possible, by means of state enactments, to defeat the beneficent purposes which the people of the United States had in view when they adopted the recent amendments of the constitution, by one of which the blacks of this country were made citizens of the United States and of the states in which they respectively reside, and whose privileges and immunities, as citizens, the states are forbidden to abridge. Sixty millions of whites are in no danger from the presence here of eight millions of blacks. The destinies of the two races, in this country, are indissolubly linked together, and the interests of both require that the common government of all shall not permit the seeds of race hate to be planted under the sanction of law. What can more certainly arouse race hate, what more certainly create and perpetuate a feeling of distrust between these races, than state enactments which, in fact, proceed on the ground that colored citizens are so inferior and degraded that they cannot be allowed to sit in public coaches occupied by white citizens? That, as all will admit, is the real meaning of such legislation as was enacted in Louisiana.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The sure guaranty of the peace and security of each race is the clear, distinct, unconditional recognition by our governments, national and state, of every right that inheres in civil freedom, and of the equality before the law of all citizens of the United States, without regard to race. State enactments regulating the enjoyment of civil rights upon the basis of race, and cunningly devised to defeat legitimate results of the war, under the pretense of recognizing equality of rights, can have no other result than to render permanent peace impossible, and to keep alive a conflict of races, the continuance of which must do harm to all concerned. This question is not met by the suggestion that social equality cannot exist between the white and black races in this country. That argument, if it can be properly regarded as one, is scarcely worthy of consideration; for social equality no more exists between two races when traveling in a passenger coach or a public highway than when members of the same races sit by each other in a street car or in the jury box, or stand or sit with each other in a political assembly, or when they use in common the streets of a city or town, or when they are in the same room for the purpose of having their names placed on the registry of voters, or when they approach the ballot box in order to exercise the high privilege of voting.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">There is a race so different from our own that we do not permit those belonging to it to become citizens of the United States. Persons belonging to it are, with few exceptions, absolutely excluded from our country. I allude to the Chinese race. But, by the statute in question, a Chinaman can ride in the same passenger coach with white citizens of the United States, while citizens of the black race in Louisiana, many of whom, perhaps, risked their lives for the preservation of the Union, who are entitled, by law, to participate in the political control of the state and nation, who are not excluded, by law or by reason of their race, from public stations of any kind, and who have all the legal rights that belong to white citizens, are yet declared to be criminals, liable to imprisonment, if they ride in a public coach occupied by citizens of the white race. It is scarcely just to say that a colored citizen should not object to occupying a public coach assigned to his own race. He does not object, nor, perhaps, would he object to separate coaches for his race if his rights under the law were recognized. But he does object, and he ought never to cease objecting, that citizens of the white and black races can be adjudged criminals because they sit, or claim the right to sit, in the same public coach on a public highway. The arbitrary separation of citizens, on the basis of race, while they are on a public highway, is a badge of servitude wholly inconsistent with the civil freedom and the equality before the law established by the constitution. It cannot be justified upon any legal grounds.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">If evils will result from the commingling of the two races upon public highways established for the benefit of all, they will be infinitely less than those that will surely come from state legislation regulating the enjoyment of civil rights upon the basis of race. We boast of the freedom enjoyed by our people above all other peoples. But it is difficult to reconcile that boast with a state of the law which, practically, puts the brand of servitude and degradation upon a large class of our fellow citizens,—our equals before the law. The thin disguise of “equal” accommodations for passengers in railroad coaches will not mislead any one, nor atone for the wrong this day done.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The result of the whole matter is that while this court has frequently adjudged, and at the present term has recognized the doctrine, that a state cannot, consistently with the constitution of the United States, prevent white and black citizens, having the required qualifications for jury service, from sitting in the same jury box, it is now solemnly held that a state may prohibit white and black citizens from sitting in the same passenger coach on a public highway, or may require that they be separated by a “partition” when in the same passenger coach. May it not now be reasonably expected that astute men of the dominant race, who affect to be disturbed at the possibility that the integrity of the white race may be corrupted, or that its supremacy will be imperiled, by contact on public highways with black people, will endeavor to procure statutes requiring white and black jurors to be separated in the jury box by a “partition,” and that, upon retiring from the court room to consult as to their verdict, such partition, if it be a movable one, shall be taken to their consultation room, and set up in such way as to prevent black jurors from coming too close to their brother jurors of the white race. If the “partition” used in the court room happens to be stationary, provision could be made for screens with openings through which jurors of the two races could confer as to their verdict without coming into personal contact with each other. I cannot see but that, according to the principles this day announced, such state legislation, although conceived in hostility to, and enacted for the purpose of humiliating, citizens of the United States of a particular race, would be held to be consistent with the constitution.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">I do not deem it necessary to review the decisions of state courts to which reference was made in argument. Some, and the most important, of them, are wholly inapplicable, because rendered prior to the adoption of the last amendments of the constitution, when colored people had very few rights which the dominant race felt obliged to respect. Others were made at a time when public opinion, in many localities, was dominated by the institution of slavery; when it would not have been safe to do justice to the black man; and when, so far as the rights of blacks were concerned, race prejudice was, practically, the supreme law of the land. Those decisions cannot be guides in the era introduced by the recent amendments of the supreme law, which established universal civil freedom, gave citizenship to all born or naturalized in the United States, and residing ere, obliterated the race line from our systems of governments, national and state, and placed our free institutions upon the broad and sure foundation of the equality of all men before the law.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">I am of opinion that the state of Louisiana is inconsistent with the personal liberty of citizens, white and black, in that state, and hostile to both the spirit and letter of the constitution of the United States. If laws of like character should be enacted in the several states of the Union, the effect would be in the highest degree mischievous. Slavery, as an institution tolerated by law, would, it is true, have disappeared from our country; but there would remain a power in the states, by sinister legislation, to interfere with the full enjoyment of the blessings of freedom, to regulate civil rights, common to all citizens, upon the basis of race, and to place in a condition of legal inferiority a large body of American citizens, now constituting a part of the political community, called the “People of the United States,” for whom, and by whom through representatives, our government is administered. Such a system is inconsistent with the guaranty given by the constitution to each state of a republican form of government, and may be stricken down by congressional action, or by the courts in the discharge of their solemn duty to maintain the supreme law of the land, anything in the constitution or laws of any state to the contrary notwithstanding.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">For the reason stated, I am constrained to withhold my assent from the opinion and judgment of the majority.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:17px; font-weight:700; border-bottom:2px solid #C97288; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;"><em>Plessy v. Ferguson</em>, 163 U.S. 537 (1896). Judgment, decided May 18, 1896. Records of the Supreme Court of the United States, Record Group 267, National Archives.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><em>Plessy v. Ferguson</em>, 163 U.S. 537 (1896).</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#0D4A44; font-size:15px; line-height:1.7; margin:0 0 14px 0; "><em>Plessy</em>, 163 U.S. 537.</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #C97288; font-family:Arial, Helvetica, sans-serif; color:#17706A; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 5 · GROWING PAINS | HISTORY C1002 | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_5/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Return to the Primary Source Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>
