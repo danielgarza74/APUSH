@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Voice from the South. Primary Source P20.2 for Unit 6: Modern America.">
+  <meta name="theme-color" content="#8A3A1E">
+  <title>Primary Source P20.2 | A Voice from the South</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Primary_Sources/P20.02_Voice_South.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #8A3A1E;
+      --forest-mid: #B85C2E;
+      --coral: #3B5B77;
+      --coral-light: #7FA1BD;
+      --cream: #F6EFE7;
+      --paper: #FCFAF8;
+      --mint: #E5ECF2;
+      --sage: #EDD6CB;
+      --ink: #4C2010;
+      --muted: #865A4A;
+      --shadow: 0 22px 55px rgba(83, 35, 18, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A35128;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(59, 91, 119, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(138, 58, 30, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(83, 35, 18, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(184, 92, 46, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Primary Source navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Primary Source Archive</a>
+      <div class="archive-meta">Unit 6 · Chapter 20 · P20.2</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="P20.2">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F6EFE7; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Primary Source P20.2</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">A Voice from the South</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Anna Julia Cooper · 1892</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #3B5B77; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#7FA1BD; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TOC FIT</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:13.5px; line-height:1.55;">The Varied Sources of Progressivism: The Women's Suffrage Movement; Promotion of Social Justice: Racial Violence and the Origins of Modern Civil Rights Organizing</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WHY HERE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:13.5px; line-height:1.55;">A Black teacher and scholar from Washington, D.C., argues that the progress of Black Americans depends on Black women, and criticizes white women's organizations that excluded Black women or built their claims on the supposed inferiority of other races.</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TREATMENT</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:13.5px; line-height:1.55;">Public-domain text, selected excerpts</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:17px; font-weight:700; border-bottom:2px solid #3B5B77; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Historical Context</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Anna Julia Cooper was born into slavery in Raleigh, North Carolina, around 1858. She graduated from Oberlin College in 1884 and taught at the M Street (Colored) High School in Washington, D.C., which she later led as principal; much later, in 1925, she earned a doctorate from the University of Paris. A Voice from the South, "by a Black Woman of the South," was printed in 1892 by the Aldine Printing House of Xenia, Ohio. It collects essays and addresses, including a paper she read to Episcopal clergy in 1886, and was written for both Black and white readers.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Cooper wrote as Southern states were passing segregation laws and beginning to strip Black men of the vote, and as white women's organizations were growing rapidly. The second essay answers a paper titled "Woman versus the Indian" that the suffragist Anna Howard Shaw read to the National Council of Women in 1891, and it describes a racial dispute in a Washington women's club called Wimodaughsis. Notice that Cooper praises Shaw and Susan B. Anthony personally while attacking arguments that white women deserved the vote more than Black or Native American men.</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 26px 0;" class="editorial-note"><tr>
+  <td style="border-left:4px solid #3B5B77; background-color:rgba(163, 81, 40,0.07); padding:12px 16px; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; line-height:1.6;"><strong>Editorial note.</strong> Cooper quotes a white man's racial slur as evidence of the treatment she met while traveling; it is reproduced as printed. The Documenting the American South transcription encodes quotation marks as straight marks and dashes as "--"; they are given here as curly quotation marks and em dashes. Italics are Cooper's. Bracketed ellipses mark omissions made for this reader.</td>
+</tr></table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:17px; font-weight:700; border-bottom:2px solid #3B5B77; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Document Text</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:14px; font-weight:700; margin:8px 0 10px 0;" class="document-subheading" role="heading" aria-level="3">Womanhood a Vital Element in the Regeneration and Progress of a Race</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Not by pointing to sun-bathed mountain tops do we prove that Phoebus warms the valleys. We must point to homes, average homes, homes of the rank and file of horny handed toiling men and women of the South (where the masses are) lighted and cheered by the good, the beautiful, and the true,—then and not till then will the whole plateau be lifted into the sunlight.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Only the BLACK WOMAN can say “when and where I enter, in the quiet, undisputed dignity of my womanhood, without violence and without suing or special patronage, then and there the whole <em>Negro race enters with me</em>.” Is it not evident then that as individual workers for this race we must address ourselves with no half-hearted zeal to this feature of our mission. The need is felt and must be recognized by all. There is a call for workers, for missionaries, for men and women with the double consecration of a fundamental love of humanity and a desire for its melioration through the Gospel; but superadded to this we demand an intelligent and sympathetic comprehension of the interests and special needs of the Negro.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:14px; font-weight:700; margin:8px 0 10px 0;" class="document-subheading" role="heading" aria-level="3">“Woman versus the Indian”</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">IN the National Woman’s Council convened at Washington in February 1891, among a number of thoughtful and suggestive papers read by eminent women, was one by the Rev. Anna Shaw, bearing the above title.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">That Miss Shaw is broad and just and liberal in principal is proved beyond contradiction. Her noble generosity and womanly firmness are unimpeachable. The unwavering stand taken by herself and Miss Anthony in the subsequent color ripple in Wimodaughsis ought to be sufficient to allay forever any doubts as to the pure gold of these two women.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Of Wimodaughsis (which, being interpreted for the uninitiated, is a woman’s culture club whose name is made up of the first few letters of the four words wives, mothers, daughters, and sisters) Miss Shaw is president, and a lady from the Blue Grass State <em>was</em> secretary.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Pandora’s box is opened in the ideal harmony of this modern Eden without an Adam when a colored lady, a teacher in one of our schools, applies for admission to its privileges and opportunities.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Kentucky secretary, a lady zealous in good works and one who, I can’t help imagining, belongs to that estimable class who daily thank the Lord that He made the earth that they may have the job of superintending its rotations, and who really would like to help “elevate” the colored people (in her own way of course and so long as they understand their places) is filled with grief and horror that any persons of Negro extraction should aspire to learn type-writing or languages or to enjoy any other advantages offered in the sacred halls of Wimodaughsis. Indeed, she had not calculated that there were any wives, mothers, daughters, and sisters, except white ones; and, she is really convinced that <em>Whimodaughsis</em> would sound just as well, and then it need mean just <em>white mothers, daughters and sisters.</em> In fact, so far as there is anything in a name, nothing would be lost by omitting for the sake of euphony, from this unique mosaic, the letters that represent wives. <em>Whiwimodaughsis</em> might be a little startling, and on the whole wives would better yield to white; since clearly all women are not wives, while surely all wives are daughters. The daughters therefore could represent the wives and this immaculate assembly for propagating liberal and progressive ideas and disseminating a broad and humanizing culture might be spared the painful possibility of the sight of a black man coming in the future to escort from an evening class this solitary cream-colored applicant. Accordingly the Kentucky secretary took the cream-colored applicant aside, and, with emotions befitting such an epoch-making crisis, told her, “as kindly as she could,” that colored people were not admitted to the classes, at the same time refunding the money which said cream-colored applicant had paid for lessons in type-writing.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">When this little incident came to the knowledge of Miss Shaw, she said firmly and emphatically, NO. As a minister of the gospel and as a Christian woman, she could not lend her influence to such unreasonable and uncharitable discrimination; and she must resign the honor of president of Wimodaughsis if persons were to be proscribed solely on account of their color.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To the honor of the board of managers, be it said, they sustained Miss Shaw; and the Kentucky secretary, and those whom she succeeded in inoculating with her prejudices, resigned.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">’Twas only a ripple,—some bewailing of lost opportunity on the part of those who could not or would not seize God’s opportunity for broadening and enlarging their own souls—and then the work flowed on as before.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Susan B. Anthony and Anna Shaw are evidently too noble to be held in thrall by the provincialisms of women who seem never to have breathed the atmosphere, beyond the confines of their grandfathers’ plantations. It is only from the broad plateau of light and love that one can see petty prejudice and narrow priggishness in their true perspective; and it is on this high ground, as I sincerely believe, these two grand women stand.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">But when a great burly six feet of masculinity with sloping shoulders and unkempt beard swaggers in, and, throwing a roll of tobacco into one corner of his jaw, growls out at me over the paper I am reading, “Here gurl,” (I am past thirty) “you better git out ’n dis kyar ’f yer don’t, I’ll put yer out,”—my mental annotation is <em>Here’s an American citizen who has been badly trained. He is sadly lacking in both ‘sweetness’ and ‘light’</em>; and when in the same section of our enlightened and progressive country, I see from the car window, working on private estates, convicts from the state penitentiary, among them squads of boys from fourteen to eighteen years of age in a chain-gang, their feet chained together and heavy blocks attached—not in 1850, but in 1890, ’91 and ’92, I make a note on the flyleaf of my memorandum, <em>The women in this section should organize a Society for the Prevention of Cruelty to Human Beings, and disseminate civilizing tracts, and send throughout the region apostles of anti-barbarism for the propagation of humane and enlightened ideas.</em> And when farther on in the same section our train stops at a dilapidated station, rendered yet more unsightly by dozens of loafers with their hands in their pockets while a productive soil and inviting climate beckon in vain to industry; and when, looking a little more closely, I see two dingy little rooms with, “FOR LADIES” swinging over one and “FOR COLORED PEOPLE” over the other; while wondering under which head I come, I notice a little way off the only hotel proprietor of the place whittling a pine stick as he sits with one leg thrown across an empty goods box; and as my eye falls on a sample room next door which seems to be driving the only wide-awake and popular business of the commonwealth, I cannot help ejaculating under my breath, “What a field for the missionary woman.” I know that if by any fatality I should be obliged to lie over at that station, and, driven by hunger, should be compelled to seek refreshments or the bare necessaries of life at the only public accommodation in the town, that same stick-whittler would coolly inform me, without looking up from his pine splinter, “We doan uccommodate no niggers hyur.” And yet we are so scandalized at Russia’s barbarity and cruelty to the Jews! We pay a man a thousand dollars a night just to make us weep, by a recital of such heathenish inhumanity as is practiced on Sclavonic soil.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It is not the intelligent woman vs. the ignorant woman; nor the white woman vs. the black, the brown, and the red,—it is not even the cause of woman vs. man. Nay, ’tis woman’s strongest vindication for speaking that <em>the world needs to hear her voice</em>. It would be subversive of every human interest that the cry of one-half the human family be stifled. Woman in stepping from the pedestal of statue-like inactivity in the domestic shrine, and daring to think and move and speak,—to undertake to help shape, mold, and direct the thought of her age, is merely completing the circle of the world’s vision. Hers is every interest that has lacked an interpreter and a defender. Her cause is linked with that of every agony that has been dumb—every wrong that needs a voice.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">What a travesty of its case for this eye to become plaintiff in a suit, <em>Eye vs. Foot</em>. “There is that dull clod, the foot, allowed to roam at will, free and untrammelled; while I, the source and medium of light, brilliant and beautiful, am fettered in darkness and doomed to desuetude.” The great burly black man, ignorant and gross and depraved, is allowed to vote; while the franchise is withheld from the intelligent and refined, the pure-minded and lofty souled white woman. Even the untamed and untamable Indian of the prairie, who can answer nothing but ‘ugh’ to great economic and civic questions is thought by some worthy to wield the ballot which is still denied the Puritan maid and the first lady of Virginia.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Is not this hitching our wagon to something much lower than a star? Is not woman’s cause broader, and deeper, and grander, than a blue stocking debate or an aristocratic pink tea? Why should woman become plaintiff in a suit versus the Indian, or the Negro or any other race or class who have been crushed under the iron heel of Anglo-Saxon power and selfishness? If the Indian has been wronged and cheated by the puissance of this American government, it is woman’s mission to plead with her country to cease to do evil and to pay its honest debts. If the Negro has been deceitfully cajoled or inhumanly cuffed according to selfish expediency or capricious antipathy, let it be woman’s mission to plead that he be met as a man and honestly given half the road. If woman’s own happiness has been ignored or misunderstood in our country’s legislating for bread winners, for rum sellers, for property holders, for the family relations, for any, or all the interests that touch her vitally, let her rest her plea, not on Indian inferiority, nor on Negro depravity, but on the obligation of legislators to do for her as they would have others do for them were relations reversed. Let her try to teach her country that every interest in this world is entitled at least to a respectful hearing, that every sentiency is worthy of its own gratification, that a helpless cause should not be trampled down, nor a bruised reed broken; and when the right of the individual is made sacred, when the image of God in human form, whether in marble or in clay, whether in alabaster or in ebony, is consecrated and inviolable, when men have been taught to look beneath the rags and grime, the pomp and pageantry of mere circumstance and have regard unto the celestial kernel uncontaminated at the core,—when race, color, sex, condition, are realized to be the accidents, not the substance of life, and consequently as not obscuring or modifying the inalienable title to life, liberty, and pursuit of happiness,—then is mastered the science of politeness, the art of courteous contact, which is naught but the practical application of the principal of benevolence, the back bone and marrow of all religion; then woman’s lesson is taught and woman’s cause is won—not the white woman nor the black woman nor the red woman, but the cause of every man or woman who has writhed silently under a mighty wrong. The pleading of the American woman for the right and the opportunity to employ the American method of influencing the disposal to be made of herself, her property, her children in civil, economic, or domestic relations is thus seen to be based on a principle as broad as the human race and as old as human society. Her wrongs are thus indissolubly linked with all undefended woe, all helpless suffering, and the plenitude of her “rights” will mean the final triumph of all right over might, the supremacy of the moral forces of reason and justice and love in the government of the nation.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">God hasten the day.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:17px; font-weight:700; border-bottom:2px solid #3B5B77; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Cooper, Anna Julia. <em>A Voice from the South</em>. By a Black Woman of the South. Xenia, OH: Aldine Printing House, 1892. Documenting the American South, University of North Carolina at Chapel Hill, 2000. <a href="https://docsouth.unc.edu/church/cooper/cooper.html" style="overflow-wrap:anywhere;word-break:break-all">https://docsouth.unc.edu/church/cooper/cooper.html</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Anna Julia Cooper, <em>A Voice from the South</em> (Xenia, OH: Aldine Printing House, 1892), 30–31, 80–83, 95–97, 121–26, Documenting the American South, <a href="https://docsouth.unc.edu/church/cooper/cooper.html" style="overflow-wrap:anywhere;word-break:break-all">https://docsouth.unc.edu/church/cooper/cooper.html</a>.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Cooper, <em>Voice from the South</em>, 30–31, 80–83, 95–97, 121–26.</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #3B5B77; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 6 · MODERN AMERICA | HISTORY B17A | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Return to the Primary Source Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

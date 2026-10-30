@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Final Report: Japanese Evacuation from the West Coast, 1942. Primary Source P24.45 for Unit 6: Modern America.">
+  <meta name="theme-color" content="#8A3A1E">
+  <title>Primary Source P24.45 | Final Report: Japanese Evacuation from the West Coast, 1942</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Primary_Sources/P24.45_Final_Report_Japanese_Evacuation_West.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #8A3A1E;
+      --forest-mid: #B85C2E;
+      --coral: #3B5B77;
+      --coral-light: #7FA1BD;
+      --cream: #F6EFE7;
+      --paper: #FCFAF8;
+      --mint: #E5ECF2;
+      --sage: #EDD6CB;
+      --ink: #4C2010;
+      --muted: #865A4A;
+      --shadow: 0 22px 55px rgba(83, 35, 18, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A35128;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(59, 91, 119, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(138, 58, 30, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(83, 35, 18, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(184, 92, 46, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Primary Source navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Primary Source Archive</a>
+      <div class="archive-meta">Unit 6 · Chapter 24 · P24.45</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="P24.45">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F6EFE7; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Primary Source P24.45</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">Final Report: Japanese Evacuation from the West Coast, 1942</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">John L. DeWitt, Western Defense Command and Fourth Army · 1943</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #3B5B77; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#7FA1BD; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TOC FIT</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:13.5px; line-height:1.55;">The Transformative Effects of World War: Japanese Americans during the War</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WHY HERE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:13.5px; line-height:1.55;">The Army general who ordered the removal of Japanese Americans from the West Coast lays out his official case that it was a “military necessity,” including his February 1942 recommendation that called them “an enemy race.”</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TREATMENT</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:13.5px; line-height:1.55;">Public-domain text, selected excerpts</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:17px; font-weight:700; border-bottom:2px solid #3B5B77; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Historical Context</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Lieutenant General John L. DeWitt commanded the Army’s Western Defense Command, responsible for the security of the Pacific Coast, when Japan attacked Pearl Harbor. In February 1942 he recommended removing all people of Japanese ancestry from the coast, and after President Roosevelt signed Executive Order 9066 he carried out the removal of more than 110,000 people. His <em>Final Report</em>, dated June 1943 and printed by the Government Printing Office, is a long official history of the operation, with chapters, statistics, maps, and photographs. These excerpts come from DeWitt’s letter sending the report to the Army’s chief of staff, from Chapter II, which explains the “need” for evacuation, and from his February 14, 1942, recommendation, printed as an appendix.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The government relied on reasoning like this when it defended the removal before the Supreme Court in <em>Hirabayashi</em> (1943) and <em>Korematsu</em> (1944). Decades later, researchers showed that other federal agencies had already found key claims false; the Federal Communications Commission, for example, could not confirm the reports of illegal radio signaling. DeWitt left the Western Defense Command later in 1943. Read his words carefully: separate the facts he states from the conclusions he draws, and notice what he says about race, about loyalty, and about the fact that “no sabotage has taken place to date.”</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 26px 0;" class="editorial-note"><tr>
+  <td style="border-left:4px solid #3B5B77; background-color:rgba(163, 81, 40,0.07); padding:12px 16px; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; line-height:1.6;"><strong>Editorial note.</strong> DeWitt’s racial language (“The Japanese race is an enemy race”) is reproduced as evidence of the reasoning behind the removal. The report’s own footnote on radio signals is kept, marked ¹. Running heads and page numbers are omitted.</td>
+</tr></table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:17px; font-weight:700; border-bottom:2px solid #3B5B77; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Document Text</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:14px; font-weight:700; margin:8px 0 10px 0;" class="document-subheading" role="heading" aria-level="3">Letter of Transmittal</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">HEADQUARTERS WESTERN DEFENSE COMMAND AND FOURTH ARMY</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">OFFICE OF THE COMMANDING GENERAL</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">PRESIDIO OF SAN FRANCISCO, CALIFORNIA</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">June 5, 1943</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">SUBJECT: Final Report on the Evacuation of Japanese from Certain Military Areas in Western Defense Command.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">TO: Chief of Staff, United States Army, War Department, Washington, D. C.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">1. I transmit herewith my final report on the evacuation of Japanese from the Pacific Coast.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">2. The evacuation was impelled by military necessity. The security of the Pacific Coast continues to require the exclusion of Japanese from the area now prohibited to them and will so continue as long as that military necessity exists. The surprise attack at Pearl Harbor by the enemy crippled a major portion of the Pacific Fleet and exposed the West Coast to an attack which could not have been substantially impeded by defensive fleet operations. More than 115,000 persons of Japanese ancestry resided along the coast and were significantly concentrated near many highly sensitive installations essential to the war effort. Intelligence services records reflected the existence of hundreds of Japanese organizations in California, Washington, Oregon and Arizona which, prior to December 7, 1941, were actively engaged in advancing Japanese war aims. These records also disclosed that thousands of American-born Japanese had gone to Japan to receive their education and indoctrination there and had become rabidly pro-Japanese and then had returned to the United States. Emperor worshipping ceremonies were commonly held and millions of dollars had flowed into the Japanese imperial war chest from the contributions freely made by Japanese here. The continued presence of a large, unassimilated, tightly knit racial group, bound to an enemy nation by strong ties of race, culture, custom and religion along a frontier vulnerable to attack constituted a menace which had to be dealt with. Their loyalties were unknown and time was of the essence. The evident aspirations of the enemy emboldened by his recent successes made it worse than folly to have left any stone unturned in the building up of our defenses. It is better to have had this protection and not to have needed it than to have needed it and not to have had it—as we have learned to our sorrow.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">3. On February 14, 1942, I recommended to the War Department that the military security of the Pacific Coast required the establishment of broad civil control, anti-sabotage and counter-espionage measures, including the evacuation therefrom of all persons of Japanese ancestry. In recognition of this situation, the President issued Executive Order No. 9066 on February 19, 1942, authorizing the accomplishment of these and any other necessary security measures. By letter dated February 20, 1942, the Secretary of War authorized me to effectuate my recommendations and to exercise all of the powers which the Executive Order conferred upon him and upon any military commander designated by him. A number of separate and distinct security measures have been instituted under the broad authority thus delegated, and future events may demand the initiation of others. Among the steps taken was the evacuation of Japanese from western Washington and Oregon, California, and southern Arizona. Transmitted herewith is the final report of that evacuation.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:14px; font-weight:700; margin:8px 0 10px 0;" class="document-subheading" role="heading" aria-level="3">Chapter II. Need for Military Control and for Evacuation</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Meanwhile, the uncertainties of the situation became further complicated. The enforcement of contraband provisions was impeded by the fact that many Japanese aliens resided in premises owned by American-born persons of Japanese ancestry. The Department of Justice had agreed to authorize its special field agents of the Federal Bureau of Investigation to undertake spot raids without warrant to determine the possession of arms, cameras and other contraband by Japanese, but only in those premises occupied <em>exclusively</em> by enemy aliens. The search of mixed occupancy premises or dwellings had not been authorized except by warrant only. (See Memo 1/5/42 at end of this chapter.)</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In the Monterey area in California a Federal Bureau of Investigation spot raid made about February 12, 1942, found more than 60,000 rounds of ammunition and many rifles, shotguns and maps of all kinds. These raids had not succeeded in arresting the continuance of illicit signaling. Most dwelling places were in the mixed occupancy class and could not be searched promptly upon receipt of reports. It became increasingly apparent that adequate security measures could not be taken unless the Federal Government placed itself in a position to deal with the whole problem.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Pacific Coast had become exposed to attack by enemy successes in the Pacific. The situation in the Pacific theatre had gravely deteriorated. There were hundreds of reports nightly of signal lights visible from the coast, and of intercepts of unidentified radio transmissions. Signaling was often observed at premises which could not be entered without a warrant because of mixed occupancy. The problem required immediate solution. It called for the application of measures not then in being.¹</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">¹ It is interesting to note that following the evacuation, interceptions of suspicious or unidentified radio signals and shore-to-ship signal lights were virtually eliminated and attacks on outbound shipping from west coast ports appreciably reduced.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Further, the situation was fraught with danger to the Japanese population itself. The combination of spot raids revealing hidden caches of contraband, the attacks on coastwise shipping, the interception of illicit radio transmissions, the nightly observation of visual signal lamps from constantly changing locations, and the success of the enemy offensive in the Pacific, had so aroused the public along the West Coast against the Japanese that it was ready to take matters into its own hands. Press and periodical reports of the public attitudes along the West Coast from December 7, 1941, to the initiation of controlled evacuation clearly reflected the intensity of feeling. Numerous incidents of violence involving Japanese and others occurred; many more were reported but were subsequently either unverified or were found to be cumulative.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The acceptance by the Attorney General of the Washington and Oregon recommendations would not have provided the security which the military situation then required. More than two-thirds of the total Japanese population on the West Coast were not subject to alien enemy regulations. The action ultimately taken was based upon authority not then existing. It had become essential to provide means which would remove the potential menace to which the presence of this group under all the circumstances subjected the West Coast. It is pertinent now to examine the situation with which the military authorities were then confronted.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Because of the ties of race, the intense feeling of filial piety and the strong bonds of common tradition, culture and customs, this population presented a tightly-knit racial group. It included in excess of 115,000 persons deployed along the Pacific Coast. Whether by design or accident, virtually always their communities were adjacent to very vital shore installations, war plants, etc. While it was believed that some were loyal, it was known that many were not. To complicate the situation no ready means existed for determining the loyal and the disloyal with any degree of safety. It was necessary to face the realities—a positive determination could not have been made.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It could not be established, of course, that the location of thousands of Japanese adjacent to strategic points verified the existence of some vast conspiracy to which all of them were parties. Some of them doubtless resided there through mere coincidence. It seemed equally beyond doubt, however, that the presence of others was not mere coincidence. It was difficult to explain the situation in Santa Barbara County, for example, by coincidence alone.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Throughout the Santa Maria Valley in that County, including the cities of Santa Maria and Guadalupe, every utility, air field, bridge, telephone and power line or other facility of importance was flanked by Japanese. They even surrounded the oil fields in this area. Only a few miles south, however, in the Santa Ynez Valley, lay an area equally as productive agriculturally as the Santa Maria Valley and with lands equally available for purchase and lease, but without any strategic installations whatever. There were no Japanese in the Santa Ynez Valley.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Similarly, along the coastal plain of Santa Barbara County from Gaviota south, the entire plain, though narrow, had been subject to intensive cultivation. Yet, the only Japanese in this area were located immediately adjacent to such widely separated points as the El Capitan Oil Field, Elwood Oil Field, Summerland Oil Field, Santa Barbara airport and Santa Barbara lighthouse and harbor entrance. There were no Japanese on the equally attractive lands between these points. In the north end of the county is a stretch of open beach ideally suited for landing purposes, extending for 15 or 20 miles, on which almost the only inhabitants were Japanese.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Such a distribution of the Japanese population appeared to manifest something more than coincidence. In any case, it was certainly evident that the Japanese population of the Pacific Coast was, as a whole, ideally situated with reference to points of strategic importance, to carry into execution a tremendous program of sabotage on a mass scale should any considerable number of them have been inclined to do so.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In summary, the Commanding General was confronted with the Pearl Harbor experience, which involved a positive enemy knowledge of our patrols, our naval dispositions, etc., on the morning of December 7th; with the fact that ships leaving West Coast ports were being intercepted regularly by enemy submarines; and with the fact that an enemy element was in a position to do great damage and substantially to aid the enemy nation. Time was of the essence. The Commanding General, charged as he was with the mission of providing for the defense of the West Coast, had to take into account these and other military considerations. He had no alternative but to conclude that the Japanese constituted a potentially dangerous element from the viewpoint of military security—that military necessity required their immediate evacuation to the interior. The impelling military necessity had become such that any measures other than those pursued along the Pacific Coast might have been “too little and too late”.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:14px; font-weight:700; margin:8px 0 10px 0;" class="document-subheading" role="heading" aria-level="3">Appendix to Chapter III. Final Recommendation of the Commanding General, Western Defense Command and Fourth Army, Submitted to the Secretary of War, February 14, 1942</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">(2) The area lying to the west of the Cascade and Sierra Nevada Mountains in Washington, Oregon and California, is highly critical not only because the lines of communication and supply to the Pacific theater pass through it, but also because of the vital industrial production therein, particularly aircraft. In the war in which we are now engaged racial affinities are not severed by migration. The Japanese race is an enemy race and while many second and third generation Japanese born on United States soil, possessed of United States citizenship, have become “Americanized”, the racial strains are undiluted. To conclude otherwise is to expect that children born of white parents on Japanese soil sever all racial affinity and become loyal Japanese subjects, ready to fight and, if necessary, to die for Japan in a war against the nation of their parents. That Japan is allied with Germany and Italy in this struggle is no ground for assuming that any Japanese, barred from assimilation by convention as he is, though born and raised in the United States, will not turn against this nation when the final test of loyalty comes. It, therefore, follows that along the vital Pacific Coast over 112,000 potential enemies, of Japanese extraction, are at large today. There are indications that these are organized and ready for concerted action at a favorable opportunity. The very fact that no sabotage has taken place to date is a disturbing and confirming indication that such action will be taken.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:17px; font-weight:700; border-bottom:2px solid #3B5B77; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">DeWitt, J. L. <em>Final Report: Japanese Evacuation from the West Coast, 1942</em>. Washington, DC: Government Printing Office, 1943.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">J. L. DeWitt, <em>Final Report: Japanese Evacuation from the West Coast, 1942</em> (Washington, DC: Government Printing Office, 1943), vii–viii, 8–10, 18–19, 34.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">DeWitt, <em>Final Report</em>, vii–viii, 8–10, 18–19, 34.</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #3B5B77; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 6 · MODERN AMERICA | HISTORY B17A | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Return to the Primary Source Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

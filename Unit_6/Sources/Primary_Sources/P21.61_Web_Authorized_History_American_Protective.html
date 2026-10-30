@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Web: The Authorized History of the American Protective League. Primary Source P21.61 for Unit 6: Modern America.">
+  <meta name="theme-color" content="#8A3A1E">
+  <title>Primary Source P21.61 | The Web: The Authorized History of the American Protective League</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Primary_Sources/P21.61_Web_Authorized_History_American_Protective.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #8A3A1E;
+      --forest-mid: #B85C2E;
+      --coral: #3B5B77;
+      --coral-light: #7FA1BD;
+      --cream: #F6EFE7;
+      --paper: #FCFAF8;
+      --mint: #E5ECF2;
+      --sage: #EDD6CB;
+      --ink: #4C2010;
+      --muted: #865A4A;
+      --shadow: 0 22px 55px rgba(83, 35, 18, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A35128;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(59, 91, 119, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(138, 58, 30, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(83, 35, 18, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(184, 92, 46, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Primary Source navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Primary Source Archive</a>
+      <div class="archive-meta">Unit 6 · Chapter 21 · P21.61</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="P21.61">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F6EFE7; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Primary Source P21.61</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">The Web: The Authorized History of the American Protective League</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Emerson Hough · 1919</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #3B5B77; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#7FA1BD; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TOC FIT</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:13.5px; line-height:1.55;">A Loss of Civil Liberties: The "Poison of Disloyalty"; A Loss of Civil Liberties: Waging War on Labor Radicals</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WHY HERE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:13.5px; line-height:1.55;">The official history of a private, government-approved league of a quarter-million volunteer detectives describes how its members watched their neighbors, shadowed the I.W.W., and rounded up suspected draft evaders by the thousands.</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TREATMENT</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:13.5px; line-height:1.55;">Public-domain text, selected excerpts</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:17px; font-weight:700; border-bottom:2px solid #3B5B77; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Historical Context</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Emerson Hough was a popular American novelist and journalist, best known for adventure stories of the West. He wrote The Web at the request of the national directors of the American Protective League (A. P. L.), and Reilly &amp; Lee of Chicago published it in 1919, soon after the League disbanded on February 1 of that year. The book opens with a letter of thanks from Attorney General Thomas W. Gregory, and Hough says that he himself worked for a time in the Army’s Military Intelligence Division. It is a celebration written by a supporter for the general public, not an outside investigation, and its numbers are the League’s own claims.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The League began in Chicago in March 1917 when businessman Albert M. Briggs offered unpaid volunteers with automobiles to the understaffed Bureau of Investigation of the Justice Department. It spread nationwide. Members carried badges, investigated people accused of disloyal talk under the Espionage Act, checked the loyalty of men applying for commissions, and joined the hunt for men who had not registered for the draft. The 1918 “slacker raids,” especially in New York that September, drew sharp criticism because many of the men detained had done nothing wrong. Notice the gap between Hough’s claim that the League had “no concern with labor questions” and his account of its work on the I. W. W. case.</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 26px 0;" class="editorial-note"><tr>
+  <td style="border-left:4px solid #3B5B77; background-color:rgba(163, 81, 40,0.07); padding:12px 16px; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; line-height:1.6;"><strong>Editorial note.</strong> Five passages are reproduced from the first part of the book. Hough’s phrase “the Vigilantes, the Klu Klux, the Horse-Thief Detectors” is printed as in the original.</td>
+</tr></table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:17px; font-weight:700; border-bottom:2px solid #3B5B77; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Document Text</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:14px; font-weight:700; margin:8px 0 10px 0;" class="document-subheading" role="heading" aria-level="3">Chapter II. The Web</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It is to Mr. A. M. Briggs of Chicago that credit should go for the initial idea of the American Protective League. The first flash came many months before the declaration of war, although, for reasons outlined, it long was obvious that we must eventually go to war.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Department of Justice in Chicago was in a terribly congested condition, and long had been, for the neutrality cases were piling up.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">“I could get ten times as much done if I had men and money to work with,” said Hinton G. Clabaugh, Superintendent of the Bureau of Investigation. “There are thousands of men who are enemies of this country and ought to be behind bars, but it takes a spy to catch a spy, and I’ve got a dozen spies to catch a hundred thousand spies right here in Chicago. They have motor cars against my street cars. They’re supplied with all the money they want; my own funds are limited. We’re not at war. All this is civil work. We simply haven’t ways and means to meet this emergency.”</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">“I can get ten or twenty good, quiet men with cars who’ll work for nothing,” said Mr. Briggs one day. “They’ll take either their business time or their leisure time, or both, and join forces with you. I know we’re not at war, but we’re all Americans together.”</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In that chance conversation—only we ought not to call it chance at all, but a thing foreordained—began the greatest society the world ever saw,—an army of men equipped with money, brains, loyalty, which grew into one of the main legions of our defense. That army to-day probably knows more about you and your affairs than you ever thought anyone could know. If you were not and are not loyal, those facts are known and recorded, whether you live in New York or California or anywhere between.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Once started, the voluntary service idea ran like wildfire. It began as a free taxicab company, working for the most impeccable and most dignified branch of our Government—that branch for which our people always have had the most respect.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The ten private cars grew to two dozen. As many quiet-faced, silent drivers as were necessary were always ready. Word passed among reliable business men, and they came quietly and asked what they could do. They were the best men of the city. They worked for principle, not for excitement, not in any vanity, not for any pay. It was the “live-wires” of the business world that were selected. They were all good men, big men, brave and able, else they must have failed, and else this organization never could have grown. It was secret, absolutely so; clandestine absolutely, this organization of Regulators. But unlike the Vigilantes, the Klu Klux, the Horse-Thief Detectors, it took no punishments into its own hands. It was absolutely nonpartisan. It had then and has now no concern with labor questions or political questions. It worked only as collector of evidence. It had no governmental or legal status at all. It tried no cases, suggested no remedies. It simply found the facts.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It became apparent that the City of Chicago was not all America. These American men had America and not Chicago at heart. Before long, five hundred men, in widely separated and sometimes overlapping sections, were at work piling up evidence against German and pro-German suspects. These men began to enlist under them yet others. The thing was going swiftly, unaccountably swiftly. America’s volunteers were pouring out. The Minute Men were afoot again, ready to fight.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">All this meant money. But America, unasked, opened her secret purse strings. Banks, prominent firms, loyal individuals gave thousands and hundreds of thousands of dollars for a work which they knew must be done if America was to be safe for decent men. And so the silent army of which you never knew, grew and marched out daily. Your house, your neighbor’s, was known and watched, guarded as loyal, circled as disloyal. The nature of your business and your neighbor’s was known—and tabulated. You do not know to-day how thoroughly America knows you. If you are hyphenated now, if you are disloyal to this flag, so much the worse for you.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">One thing must be very plain and clear. These men, each and all of them, worked as civilian patriots, and, except in a very few necessary clerical cases, without pay of any sort. There was no mummery about the League, no countersigns or grips or passwords, no rituals, no rules. It never was a “secret society,” as we understand that usually. It was—the American Protective League, deadly simple, deadly silent, deadly in earnest. There has been no glory, no pay, no publicity, no advertising, no reward in the American Protective League, except as each man’s conscience gave him his best reward, the feeling that he had fulfilled the imperative obligations of his citizenship and had done his bit in the world’s greatest war.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">By the time the League was in Washington, it had a quarter-million members. Its records ran into tons and tons; its clerical work was an enormous thing.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:14px; font-weight:700; margin:8px 0 10px 0;" class="document-subheading" role="heading" aria-level="3">Chapter X. The Great I. W. W. Trial</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">With this great case, the American Protective League had been connected practically all the time from the date of its own inception. It had men shadowing the suspects, men intercepting their mail, men ingratiating themselves into their good graces, men watching all their comings and goings, men transcribing and indexing the reports, men looking into the law in all its phases as bearing on these cases. No one knows how many A. P. L. operatives, in all the states from Michigan westward, worked on this case for months before an arrest was made. There were fifteen lawyers, all of them members of the League, not one of whom got a cent of pay, who worked for a full year helping the Bureau of Investigation to brief the evidence. There you see the A. P. L. in action.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:14px; font-weight:700; margin:8px 0 10px 0;" class="document-subheading" role="heading" aria-level="3">Chapter XI. The Slacker Raids</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Orders went out, in the summer of 1918, from the Department of Justice to throw the net for slackers. That meant the immediate mobilization for police duty not only of many soldiers and sailors, many policemen and all the force of the Bureau of Investigation, but also of the entire personnel of the American Protective League. With the exception of the I. W. W. cases, the aid the Chicago division of the League gave in the great raids of July 11, 12, 13 and 14, in 1918, was its most important single contribution to the welfare of the country. The New York slacker raids (of a certain publicity), those carried on also in Philadelphia, San Francisco, and many other cities, were all so similar in method, that the story of the Chicago raids will describe them all.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The big slacker drive in Chicago meant the mobilization of the entire League membership, and over 10,000 men were enlisted from this organization alone as operatives in the slacker search. These men interrogated over 150,000 suspects, and seized over 20,000; and they inducted into the army, as willing or unwilling patriots, around 1,400 young men of that one city who otherwise would not have served. At one time they had herded on the great Municipal Pier over 1,100 men, all of whom had to pass the night there. Countless motor cars and wagons carried loads under guard. A big tourist motor-bus was requisitioned also, and all the street cars were packed. Hundreds of men were crowded over night in the rooms of the Bureau of Investigation in the Federal Building. The courts and jails were jammed. Vacant store-rooms were filled with prisoners. Mothers, wives, sweethearts, sisters, brothers and babies made the Federal Building an actual bedlam when they rallied to the attempted rescue. But the grist ground on through, and the guilty were found and dealt with. Most of the young men were glad enough to exchange a bed on a stone floor for one in an Army tent. No doubt, most of them made good soldiers afterwards. They were rather passively than actively disloyal—and all of them were young.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">No announcement was made of the plans of the Government. The word was passed silently that at a certain hour the hunt would be on. Once begun, it was prosecuted with energy and system. All the current ball games were visited, and the crowds were told to file out at a gate, where each suspect was asked to show his registration card. Motion picture shows were treated in the same way, the perfect districting and subdividing of the League’s force making all this synchronous and smooth. Cabarets and all-night places of all sorts were combed out. All the city parks were patrolled at night, and many a young man was taken from his young woman companion in that way. Members of the League even donned bathing costumes, and swimming out among the bathers at the beaches, plied their questions there! They took in over one hundred slackers out of the wet in that way.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">At a thronged boulevard crossing in the loop district, every motor car was stopped. A. P. L. operatives met every incoming railway train and were at the gate of every train leaving the city. Countless homes and shops were visited. Sunday picnics in the suburbs were inspected, every theater and public building, every “L” road station and steamboat landing was investigated and guarded by men who made but one remark: “Show me!” On one night of the four, 7,000 men in a short time were gathered, held and taken to the police stations. Factories, stores, saloons, the open streets, all yielded up their toll—many innocent, many loyal, many negligent, many culpable and many disloyal evaders who were trying to dodge the draft.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In a vast wave, the vigilantes of Chicago, whose existence was suspected by almost none of these, swept out into the open. The guilty and the lukewarm alike, the innocent and ignorant conscript and the veiled enemy alike, got the largest and swiftest lesson in Americanism this country ever had had up to that hour. It showed a certain element that under the careless American character there are vast capacities for self-government and a stern respect for law and government. Many a pro-German has known in his soul since last July that about the most uncompromising autocrat he ever met was a simple man bearing not a scepter but a little badge.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">There are two distinct points of view as to the slacker raids, so called, and criticisms as well as praise have come to the A. P. L. for its part in them all over the country. Naturally, no miracle was wrought in human nature. The families of the men who were hid or shielded were no more loyal after their men were taken than they had been before. The conscientious objector experienced no stiffening of fiber in his flabby soul. But even these would have felt otherwise towards the slacker drives had they known all the truth. Ask the men themselves who were inducted into the army what they think about it now. Nine-tenths of them will say that they are ashamed that they had to be asked twice to go into the army. The other one-tenth is the better for having gone, whether or not they will confess so much. As a saving influence, a mere reclamation enterprise, the slacker raids were a vast agency for the public good. They were not man-hunters, but man-savers, these men who conducted the raids.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:17px; font-weight:700; border-bottom:2px solid #3B5B77; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Hough, Emerson. <em>The Web: The Authorized History of the American Protective League</em>. Chicago: Reilly &amp; Lee, 1919.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Emerson Hough, <em>The Web: The Authorized History of the American Protective League</em> (Chicago: Reilly &amp; Lee, 1919), 29–34, 133–34, 143–46.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Hough, <em>The Web</em>, 29–34, 133–34, 143–46.</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #3B5B77; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 6 · MODERN AMERICA | HISTORY B17A | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Return to the Primary Source Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

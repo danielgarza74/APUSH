@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scopes. Primary Source P22.82 for Unit 6: Modern America.">
+  <meta name="theme-color" content="#8A3A1E">
+  <title>Primary Source P22.82 | Scopes</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Primary_Sources/P22.82_Scopes.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #8A3A1E;
+      --forest-mid: #B85C2E;
+      --coral: #3B5B77;
+      --coral-light: #7FA1BD;
+      --cream: #F6EFE7;
+      --paper: #FCFAF8;
+      --mint: #E5ECF2;
+      --sage: #EDD6CB;
+      --ink: #4C2010;
+      --muted: #865A4A;
+      --shadow: 0 22px 55px rgba(83, 35, 18, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A35128;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(59, 91, 119, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(138, 58, 30, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(83, 35, 18, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(184, 92, 46, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Primary Source navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Primary Source Archive</a>
+      <div class="archive-meta">Unit 6 · Chapter 22 · P22.82</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="P22.82">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F6EFE7; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Primary Source P22.82</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">Scopes</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">The Crisis (W. E. B. Du Bois, editor) · September 1925</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #3B5B77; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#7FA1BD; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TOC FIT</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:13.5px; line-height:1.55;">The Scopes Trial; Fundamentalism</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WHY HERE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:13.5px; line-height:1.55;">The NAACP's magazine argues that the Dayton evolution trial was not a backwoods oddity but a sign of a national habit of ignorance that also kept Black Americans undereducated and unprotected.</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TREATMENT</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:13.5px; line-height:1.55;">Public-domain text, complete</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:17px; font-weight:700; border-bottom:2px solid #3B5B77; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Historical Context</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Crisis was the monthly magazine of the National Association for the Advancement of Colored People (NAACP), founded in 1910 and edited from New York by the scholar and activist W. E. B. Du Bois. Its unsigned editorials were generally Du Bois's own work, and the magazine reached a national readership of Black Americans and white sympathizers. This short editorial appeared on page 218 of the September 1925 issue, about six weeks after the trial of John T. Scopes ended in Dayton, Tennessee, with his conviction for teaching evolution in violation of the state's new Butler Act.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Much of the national press had treated the trial as a comic spectacle of rural Southern backwardness. The Crisis rejected that reading. Notice how the editorial shifts blame away from the 'back-woodsmen' of Dayton and onto educated Americans (professors, scientists, ministers, and the wealthy), and how it ties the fight over teaching science in white schools to the denial of education, voting rights, and protection from lynching to Black Southerners. The references to the 18th Amendment (Prohibition) and the 15th Amendment (voting rights regardless of race) point to which constitutional commands white Southern leaders chose to enforce.</p>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:4px 0 26px 0;" class="editorial-note"><tr>
+  <td style="border-left:4px solid #3B5B77; background-color:rgba(163, 81, 40,0.07); padding:12px 16px; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; line-height:1.6;"><strong>Editorial note.</strong> The editorial is reproduced complete. The page also carries the end of a preceding item and the start of the next editorial; both are left out.</td>
+</tr></table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:17px; font-weight:700; border-bottom:2px solid #3B5B77; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Document Text</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:14px; font-weight:700; margin:8px 0 10px 0;" class="document-subheading" role="heading" aria-level="3">Scopes</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">One hundred per cent Americans are now endeavoring to persuade hilarious and sarcastic Europe that Dayton, Tennessee, is a huge joke and very, very exceptional. And in proof of all this the learned American press is emitting huge guffaws and peals of Brobdingnagian laughter combined with streaming tears. But few are deceived, even of those who joke and slap each other on the back. The truth is and we know it: Dayton, Tennessee, is America: a great, ignorant, simple-minded land, curiously compounded of brutality, bigotry, religious faith and demagoguery, and capable not simply of mistakes but of persecution, lynching, murder and idiotic blundering, as well as charity, missions, love and hope.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">That is America and America is what it is because we believe in Ignorance. The whole modern Nordic civilization of which America is a great and leading branch has sold its soul to Ignorance. Its leading priests profess a religious faith which they do not believe and which they know, and every man of intelligence knows, they do not and cannot believe; and then when a knot of back-woodsmen led by some cheap demagogues try to drive out error in a logical way they learn to their own intense surprise that what the world was thinking and doing had in some unaccountable way been kept from them. Either then, they have been deceived or are being attacked. They resent it and with the proper demagogue to lead they are ready to drive out heretics and defend the Truth as they have received it with gun and fagots.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Who is to blame? They that know; they that teach; they that have; they that sit silent and enjoy; great universities that close their doors to the mob; great scientists who prostitute truth to prejudice; great preachers who quibble with faith and facts; great rulers of wealth who fear understanding; and voluptuaries who have no wish to be disturbed by real democracy.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The folk who leave white Tennessee in blank and ridiculous ignorance of what science has taught the world since 1859 are the same ones who would leave black Tennessee and black America with just as little education as is consistent with fairly efficient labor and reasonable contentment; who rave over the 18th Amendment and are dumb over the 15th; who permit lynching and make bastardy legal in order to render their race “pure”. It is such folk who, when in sudden darkness they descry the awful faces of the Fanatic, the Fury and the Fool, try to hide the vision with gales of laughter.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">But Dayton, Tennessee, is no laughing matter. It is menace and warning. It is a challenge to Religion, Science and Democracy.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:17px; font-weight:700; border-bottom:2px solid #3B5B77; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">“Scopes.” <em>The Crisis</em> 30, no. 5 (September 1925): 218.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">“Scopes,” <em>The Crisis</em> 30, no. 5 (September 1925): 218.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">“Scopes,” 218.</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #3B5B77; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 6 · MODERN AMERICA | HISTORY B17A | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Return to the Primary Source Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

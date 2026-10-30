@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Hetch-Hetchy Valley. Primary Source P20.68 for Unit 6: Modern America.">
+  <meta name="theme-color" content="#8A3A1E">
+  <title>Primary Source P20.68 | The Hetch-Hetchy Valley</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Primary_Sources/P20.68_Hetch_Hetchy_Valley.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #8A3A1E;
+      --forest-mid: #B85C2E;
+      --coral: #3B5B77;
+      --coral-light: #7FA1BD;
+      --cream: #F6EFE7;
+      --paper: #FCFAF8;
+      --mint: #E5ECF2;
+      --sage: #EDD6CB;
+      --ink: #4C2010;
+      --muted: #865A4A;
+      --shadow: 0 22px 55px rgba(83, 35, 18, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A35128;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(59, 91, 119, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(138, 58, 30, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(83, 35, 18, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(184, 92, 46, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Primary Source navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Primary Source Archive</a>
+      <div class="archive-meta">Unit 6 · Chapter 20 · P20.68</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="P20.68">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F6EFE7; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Primary Source P20.68</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">The Hetch-Hetchy Valley</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">John Muir · January 1908</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #3B5B77; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#7FA1BD; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TOC FIT</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:13.5px; line-height:1.55;">Progressivism under Roosevelt and Taft: Environmental Conservation</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WHY HERE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:13.5px; line-height:1.55;">The Sierra Club's president argues in his club's journal that San Francisco's plan to dam a valley inside Yosemite National Park would destroy a sacred public place for private gain, showing the preservationist case at the start of the Hetch Hetchy fight.</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">TREATMENT</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#8A3A1E; font-size:13.5px; line-height:1.55;">Public-domain text, selected excerpts</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:17px; font-weight:700; border-bottom:2px solid #3B5B77; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Historical Context</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">John Muir, a Scottish-born naturalist and writer, had spent much of his life exploring California's Sierra Nevada and had campaigned for the creation of Yosemite National Park in 1890. Two years later he helped found the Sierra Club, a San Francisco organization of hikers and nature lovers, and served as its president. He published this article in the club's <em>Sierra Club Bulletin</em> in January 1908, writing to its members and to the wider public while the secretary of the interior was still deciding whether to let San Francisco build a dam and reservoir in the Hetch Hetchy Valley, a granite valley inside the national park.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">After the earthquake and fire of 1906, San Francisco's leaders pressed harder for a large, city-owned water supply from the Tuolumne River. Many leading conservationists, including Gifford Pinchot, head of the U.S. Forest Service, saw the reservoir as a sound public use of the West's resources. Muir saw a national park being opened to commerce. In 1908 the Interior Department granted the city's application, and in 1913 Congress and President Woodrow Wilson approved the dam. As you read, notice the religious language Muir uses for nature, and the words he puts in quotation marks to mock his opponents' idea of “utilization.”</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:17px; font-weight:700; border-bottom:2px solid #3B5B77; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Document Text</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It is impossible to overestimate the value of wild mountains and mountain temples as places for people to grow in, recreation grounds for soul and body. They are the greatest of our natural resources, God’s best gifts, but none, however high and holy, is beyond reach of the spoiler. In these ravaging money-mad days monopolizing San Francisco capitalists are now doing their best to destroy the Yosemite Park, the most wonderful of all our great mountain national parks. Beginning on the Tuolumne side, they are trying with a lot of sinful ingenuity to get the Government’s permission to dam and destroy the Hetch-Hetchy Valley for a reservoir, simply that comparatively private gain may be made out of universal public loss, while of course the Sierra Club is doing all it can to save the valley. The Honorable Secretary of the Interior has not yet announced his decision in the case, but in all that has come and gone nothing discouraging is yet in sight on our side of the fight.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">As long as the busy public in general knew little or nothing about the Hetch-Hetchy Valley, the few cunning drivers of the damming scheme, working in darkness like moles in a low-lying meadow, seemed confident of success; but when light was turned on and the truth became manifest that next to Yosemite, Hetch-Hetchy is the most wonderful and most important feature of the great park, that damming it would destroy it, render it inaccessible, and block the way through the wonderful Tuolumne Cañon to the grand central campground in the upper Tuolumne Valley, thousands from near and far came to our help,—mountaineers, nature-lovers, naturalists. Most of our thousand club members wrote to the President or Secretary protesting against the destructive reservoir scheme while other sources of city water as pure or purer than the Hetch-Hetchy were available; so also did the Oregon and Washington mountaineering clubs and the Appalachian of Boston and public-spirited citizens everywhere. And the President, recognizing the need of beauty as well as bread and water in the life of the nation, far from favoring the destruction of any of our country’s natural wonder parks and temples, is trying amid a host of other cares to save them all. Within a very short time he has saved the petrified forests of Arizona and the Grand Cañon, and in our own State the jagged peaks of San Benito county known as “The Pinnacles,” making them national monuments or parks to be preserved for the people forever. None, therefore, need doubt that everything possible will be done to save Hetch-Hetchy.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">It appears therefore that Hetch-Hetchy Valley, far from being a plain common rockbound meadow, as many who have not seen it seem to suppose, is a grand landscape garden, one of Nature’s rarest and most precious mountain mansions. As in Yosemite, the sublime rocks of its walls seem to the nature-lover to glow with life, whether leaning back in repose or standing erect in thoughtful attitudes giving welcome to storms and calms alike. And how softly these mountain rocks are adorned, and how fine and reassuring the company they keep—their brows in the sky, their feet set in groves and gay emerald meadows, a thousand flowers leaning confidingly against their adamantine bosses, while birds, bees, and butterflies help the river and waterfalls to stir all the air into music—things frail and fleeting and types of permanence meeting here and blending, as if into this glorious mountain temple Nature had gathered her choicest treasures, whether great or small, to draw her lovers into close confiding communion with her.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Strange to say, this is the mountain temple that is now in danger of being dammed and made into a reservoir to help supply San Francisco with water and light. This use of the valley, so destructive and foreign to its proper park use, has long been planned and prayed for, and is still being prayed for by the San Francisco board of supervisors, not because water as pure and abundant cannot be got from adjacent sources outside the park,—for it can,—but seemingly only because of the comparative cheapness of the dam required.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Garden- and park-making goes on everywhere with civilization, for everybody needs beauty as well as bread, places to play in and pray in, where Nature may heal and cheer and give strength to body and soul. This natural beauty-hunger is displayed in poor folks’ window-gardens made up of a few geranium slips in broken cups, as well as in the costly lily gardens of the rich, the thousands of spacious city parks and botanical gardens, and in our magnificent National Parks,—the Yellowstone, Yosemite, Sequoia, etc.,—Nature’s own wonderlands, the admiration and joy of the world. Nevertheless, like everything else worth while, however sacred and precious and well-guarded, they have always been subject to attack, mostly by despoiling gain-seekers,—mischief-makers of every degree from Satan to supervisors, lumbermen, cattlemen, farmers, etc., eagerly trying to make everything dollarable, often thinly disguised in smiling philanthropy, calling pocket-filling plunder “Utilization of beneficent natural resources, that man and beast may be fed and the dear Nation grow great.” Thus long ago a lot of enterprising merchants made part of the Jerusalem temple into a place of business instead of a place of prayer, changing money, buying and selling cattle and sheep and doves. And earlier still the Lord’s garden in Eden, and the first forest reservation, including only one tree, was spoiled. And so to some extent have all our reservations and parks. Ever since the establishment of the Yosemite National Park by act of Congress, October 8, 1890, constant strife has been going on around its borders, and I suppose will go on as part of the universal battle between right and wrong, however its boundaries may be shorn or wild beauty destroyed. The first application to the Government by the San Francisco supervisors for the use of Lake Eleanor and the Hetch-Hetchy Valley was made in 1903, and denied December 22d of that year by the Secretary of the Interior. In his report on this case he well says: “Presumably the Yosemite National Park was created such by law because of the natural objects, of varying degrees of scenic importance, located within its boundaries, inclusive alike of its beautiful small lakes, like Eleanor, and its majestic wonders, like Hetch-Hetchy and Yosemite Valley. It is the aggregation of such natural scenic features that makes the Yosemite Park a wonderland which the Congress of the United States sought by law to preserve for all coming time as nearly as practicable in the condition fashioned by the hand of the Creator—a worthy object of national pride and a source of healthful pleasure and rest for the thousands of people who may annually sojourn there during the heated months.”</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">That any one would try to destroy such a place seemed impossible, but sad experience shows that there are people good enough and bad enough for anything. The proponents of the dam scheme bring forward a lot of bad arguments to prove that the only righteous thing for Hetch-Hetchy is its destruction. These arguments are curiously like those of the devil devised for the destruction of the first garden—so much of the very best Eden fruit going to waste, so much of the best Tuolumne water. Very few of their statements are even partly true, and all are misleading. Thus, Hetch-Hetchy, they say, is “a low-lying meadow.”</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">On the contrary, it is a high-lying natural landscape garden.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">“It is a common minor feature, like thousands of others.”</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">On the contrary, it is a very uncommon feature, after Yosemite, the rarest and in many ways the most important in the park.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">“Damming and submerging it 175 feet deep would enhance its beauty by forming a crystal-clear lake.”</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Landscape gardens, places of recreation and worship, are never made beautiful by destroying and burying them. The beautiful lake forsooth would be only an eyesore, a dismal blot on the landscape, like many others to be seen in the Sierra. For, instead of keeping it at the same level all the year, allowing Nature to make new shores, it would of course be full only a month or two in the spring, when the snow is melting fast; then it would be gradually drained, exposing the slimy sides of the basin and shallower parts of the bottom, with the gathered drift and waste, death and decay, of the upper basins, caught here instead of being swept on to decent natural burial along the banks of the river or in the sea. Thus the Hetch-Hetchy dam-lake would be only a rough imitation of a natural lake for a few of the spring months; an open mountain sepulcher the others.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">“Hetch-Hetchy water is the purest, wholly unpolluted, and forever unpollutable.”</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">On the contrary, excepting that of the Merced below Yosemite, it is less pure than that of most of the other Sierra streams, because of the sewerage of campgrounds draining into it, especially of the Big Tuolumne Meadows campgrounds, where hundreds of tourists and mountaineers, with their animals, are encamped for months every summer, soon to be followed by thousands of travelers from all the world.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">These temple destroyers, devotees of ravaging commercialism, seem to have a perfect contempt for Nature, and instead of lifting their eyes to the mountains, lift them to dams and town skyscrapers.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Dam Hetch-Hetchy! As well dam for water-tanks the people’s cathedrals and churches, for no holier temple has ever been consecrated by the heart of man.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:17px; font-weight:700; border-bottom:2px solid #3B5B77; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Muir, John. “The Hetch-Hetchy Valley.” <em>Sierra Club Bulletin</em> 6, no. 4 (January 1908): 211–20.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">John Muir, “The Hetch-Hetchy Valley,” <em>Sierra Club Bulletin</em> 6, no. 4 (January 1908): 211–12, 216–20.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#8A3A1E; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Muir, “Hetch-Hetchy Valley,” 211–12, 216–20.</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #3B5B77; font-family:Arial, Helvetica, sans-serif; color:#A35128; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 6 · MODERN AMERICA | HISTORY B17A | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Primary_Sources/"><span aria-hidden="true">←</span> Return to the Primary Source Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>
