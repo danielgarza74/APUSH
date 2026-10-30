@@ -1,0 +1,2419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web article archive for Unit 6: Modern America, Chapters 20–24, 1889–1946.">
+  <meta name="theme-color" content="#8A3A1E">
+  <title>Unit 6 Web Article Archive | Modern America</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #8A3A1E;
+      --forest-mid: #B85C2E;
+      --forest-light: #9C4824;
+      --coral: #3B5B77;
+      --coral-light: #7FA1BD;
+      --cream: #F6EFE7;
+      --paper: #FCFAF8;
+      --mint: #E5ECF2;
+      --sage: #EDD6CB;
+      --ink: #4C2010;
+      --muted: #865A4A;
+      --shadow: 0 16px 38px rgba(83, 35, 18, .13);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #A35128;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 92% 5%, rgba(59, 91, 119, .11), transparent 24rem),
+        linear-gradient(145deg, rgba(255,255,255,.5), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    button, input { font: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-hero {
+      position: relative;
+      min-height: 470px;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      padding: 5rem clamp(1.5rem, 7vw, 7rem) 4.5rem;
+      border-bottom: 7px solid var(--coral);
+      background:
+        linear-gradient(115deg, rgba(0,0,0,.13), transparent 60%),
+        var(--forest);
+      color: var(--paper);
+      isolation: isolate;
+    }
+    .archive-hero::after {
+      content: '';
+      position: absolute;
+      inset: 1.2rem;
+      z-index: -1;
+      border: 1px solid rgba(127, 161, 189,.27);
+      pointer-events: none;
+    }
+    .hero-watermark {
+      position: absolute;
+      right: clamp(1rem, 7vw, 7rem);
+      top: -5rem;
+      z-index: -1;
+      color: rgba(255,255,255,.045);
+      font: 700 clamp(22rem, 40vw, 40rem)/1 var(--heading);
+      user-select: none;
+    }
+    .hero-content { max-width: 1040px; text-align: center; }
+    .hero-eyebrow {
+      margin: 0 0 1rem;
+      color: var(--coral-light);
+      font: 700 .72rem/1.4 var(--heading);
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    .archive-hero h1 {
+      max-width: 900px;
+      margin: 0 auto;
+      color: var(--paper);
+      font: 700 clamp(2.3rem, 5.5vw, 5.2rem)/1.08 var(--heading);
+      letter-spacing: .03em;
+      text-wrap: balance;
+    }
+    .hero-subtitle {
+      max-width: 760px;
+      margin: 1.35rem auto 0;
+      color: rgba(252, 250, 248,.88);
+      font: italic 600 clamp(1.15rem, 2vw, 1.45rem)/1.5 var(--body);
+      text-wrap: balance;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .65rem 1.35rem;
+      margin-top: 2.1rem;
+      color: var(--coral-light);
+      font: 700 .65rem/1.4 var(--heading);
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .hero-meta span + span::before { content: '◆'; margin-right: 1.35rem; font-size: .45rem; vertical-align: middle; }
+
+    .chapter-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--sage);
+      background: rgba(252, 250, 248,.96);
+      box-shadow: 0 8px 22px rgba(83, 35, 18,.08);
+      backdrop-filter: blur(12px);
+    }
+    .chapter-nav-inner {
+      width: min(1180px, calc(100% - 2rem));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 66px;
+    }
+    .archive-mark {
+      flex: 0 0 auto;
+      color: var(--forest);
+      font: 700 .7rem var(--heading);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .chapter-links { display: flex; align-items: stretch; align-self: stretch; }
+    .chapter-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: 0 1rem;
+      border-bottom: 3px solid transparent;
+      color: var(--forest);
+      font: 700 .67rem var(--ui);
+      letter-spacing: .04em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .chapter-links a span { color: var(--coral-text); font-family: var(--heading); }
+    .chapter-links a:hover { border-bottom-color: var(--coral); background: var(--mint); }
+
+    main { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; padding: 3.5rem 0 5rem; }
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .intro-card,
+    .citation-card {
+      position: relative;
+      padding: 2.25rem 2.35rem;
+      border: 1px solid var(--coral);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+    .intro-card::after,
+    .citation-card::after {
+      content: '';
+      position: absolute;
+      inset: 7px;
+      border: 1px solid rgba(59, 91, 119,.17);
+      pointer-events: none;
+    }
+    .eyebrow {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 .5rem;
+      color: var(--coral-text);
+      font: 800 .65rem var(--ui);
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .intro-card h2,
+    .citation-card h2 {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 1rem;
+      color: var(--forest);
+      font: 700 clamp(1.5rem, 2.6vw, 2.15rem)/1.2 var(--heading);
+    }
+    .intro-card p,
+    .citation-card p { position: relative; z-index: 1; margin: 0; }
+    .citation-card { background: var(--mint); }
+    .citation-card p + p { margin-top: .85rem; }
+
+    .catalog-tools {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: center;
+      margin: 2.5rem 0 3.2rem;
+      padding: 1.25rem 1.35rem;
+      border: 1px solid var(--sage);
+      background: rgba(252, 250, 248,.82);
+    }
+    .search-wrap { position: relative; }
+    .search-wrap svg {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      width: 19px;
+      transform: translateY(-50%);
+      color: var(--forest-mid);
+      pointer-events: none;
+    }
+    .source-search {
+      width: 100%;
+      padding: .9rem 1rem .9rem 3rem;
+      border: 1px solid var(--sage);
+      background: white;
+      color: var(--ink);
+      font: 600 .85rem var(--ui);
+    }
+    .source-search:focus { border-color: var(--coral); outline: 2px solid rgba(59, 91, 119,.15); }
+    .result-count {
+      min-width: 9rem;
+      margin: 0;
+      color: var(--muted);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .07em;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .chapter-section { margin-top: 4rem; scroll-margin-top: 88px; }
+    .chapter-heading {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 5rem 1fr auto;
+      gap: 1.2rem;
+      align-items: center;
+      min-height: 150px;
+      padding: 1.7rem 2rem;
+      border-top: 5px solid var(--coral);
+      background: var(--forest);
+      color: white;
+    }
+    .chapter-heading::after {
+      content: '';
+      position: absolute;
+      right: -4rem;
+      bottom: -8rem;
+      width: 18rem;
+      height: 18rem;
+      border: 1px solid rgba(127, 161, 189,.22);
+      border-radius: 50%;
+    }
+    .chapter-number {
+      color: rgba(255,255,255,.13);
+      font: 700 5rem/1 var(--heading);
+      text-align: center;
+    }
+    .chapter-heading p { margin: 0 0 .35rem; color: var(--coral-light); font: 700 .67rem var(--ui); letter-spacing: .14em; text-transform: uppercase; }
+    .chapter-heading h2 { margin: 0; color: white; font: 700 clamp(1.35rem, 3vw, 2.25rem)/1.18 var(--heading); text-wrap: balance; }
+    .chapter-count {
+      position: relative;
+      z-index: 1;
+      padding: .5rem .7rem;
+      border: 1px solid rgba(127, 161, 189,.48);
+      color: var(--coral-light);
+      font: 700 .65rem var(--ui);
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+    .source-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .75rem;
+      padding-top: 1rem;
+    }
+    .source-card {
+      display: grid;
+      grid-template-columns: 3.8rem 1fr 1.2rem;
+      gap: .85rem;
+      align-items: start;
+      min-height: 122px;
+      padding: 1.2rem 1.15rem;
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      color: var(--ink);
+      text-decoration: none;
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+    .source-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--coral);
+      box-shadow: 0 10px 24px rgba(83, 35, 18,.11);
+    }
+    .source-card[hidden] { display: none; }
+    .source-code {
+      padding-top: .12rem;
+      color: var(--coral-text);
+      font: 700 .74rem var(--heading);
+      letter-spacing: .025em;
+    }
+    .source-copy { display: flex; min-width: 0; flex-direction: column; }
+    .source-copy strong { color: var(--forest); font: 700 .83rem/1.42 var(--ui); }
+    .source-copy > span { margin-top: .35rem; color: var(--muted); font: italic 1rem/1.4 var(--body); }
+    .source-arrow { color: var(--coral-text); font-size: 1rem; transition: transform .2s ease; }
+    .source-card:hover .source-arrow { transform: translate(2px, -2px); }
+    .chapter-empty { margin: 1rem 0 0; padding: 1.4rem; border: 1px dashed var(--sage); color: var(--muted); text-align: center; }
+    .no-results {
+      margin: 3rem 0;
+      padding: 2rem;
+      border: 1px solid var(--coral-light);
+      background: #DFE8EE;
+      color: var(--forest);
+      text-align: center;
+    }
+    .page-footer {
+      margin-top: 5rem;
+      padding: 1.4rem 0 0;
+      border-top: 1px solid var(--coral);
+      color: var(--muted);
+      font: 700 .63rem var(--ui);
+      letter-spacing: .11em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .back-top {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: var(--forest-mid);
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .archive-hero { min-height: 410px; }
+      .archive-mark { display: none; }
+      .chapter-nav-inner { justify-content: center; }
+      .chapter-links { overflow-x: auto; }
+      .intro-grid { grid-template-columns: 1fr; }
+      .source-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      body { font-size: 18px; }
+      .archive-hero { min-height: 380px; padding: 4rem 1.2rem 3.6rem; }
+      .archive-hero::after { inset: .7rem; }
+      .hero-meta { flex-direction: column; gap: .35rem; }
+      .hero-meta span + span::before { content: ''; margin: 0; }
+      .chapter-nav-inner { width: 100%; }
+      .chapter-links { width: 100%; justify-content: space-around; }
+      .chapter-links a { flex: 1; justify-content: center; padding: 0 .5rem; white-space: nowrap; }
+      .chapter-links a .link-title { display: none; }
+      main { width: min(100% - 1.2rem, 1180px); padding-top: 2rem; }
+      .intro-card, .citation-card { padding: 1.7rem 1.35rem; }
+      .catalog-tools { grid-template-columns: 1fr; }
+      .result-count { min-width: 0; text-align: left; }
+      .chapter-section { scroll-margin-top: 74px; }
+      .chapter-heading { grid-template-columns: 3rem 1fr; min-height: 130px; padding: 1.35rem 1.1rem; }
+      .chapter-number { font-size: 3.5rem; }
+      .chapter-count { grid-column: 2; justify-self: start; }
+      .source-card { grid-template-columns: 3.2rem 1fr 1rem; min-height: 0; padding: 1rem .85rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+    @media print {
+      body { background: white; font-size: 10pt; }
+      .chapter-nav, .catalog-tools, .back-top { display: none !important; }
+      .archive-hero { min-height: 0; padding: .7in; print-color-adjust: exact; }
+      main { width: auto; padding: .35in; }
+      .intro-card, .citation-card, .source-card { box-shadow: none; }
+      .source-grid { grid-template-columns: 1fr 1fr; }
+      .source-card { min-height: 0; break-inside: avoid; }
+      .chapter-section { break-before: page; }
+    }
+    .intro-card p + p { margin-top: .85rem; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to source catalog</a>
+
+  <header class="archive-hero">
+    <div class="hero-watermark" aria-hidden="true">W</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">HIST C1002 · UNITED STATES HISTORY SINCE 1865</p>
+      <h1>Web Article Archive</h1>
+      <p class="hero-subtitle">Scholarly and institutional web articles on progressivism, the Great War, the cultural conflicts of the 1920s, the Great Depression and the New Deal, and the Second World War.</p>
+      <div class="hero-meta">
+        <span>Unit 6 · Modern America</span>
+        <span>Chapters 20–24</span>
+        <span>1889–1946</span>
+        <span>205 articles</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="chapter-nav" aria-label="Chapter navigation">
+    <div class="chapter-nav-inner">
+      <span class="archive-mark">Web Articles</span>
+      <div class="chapter-links"><a href="#chapter-20"><span>20</span><span class="link-title">The Progressive Era</span></a><a href="#chapter-21"><span>21</span><span class="link-title">America and the Great War</span></a><a href="#chapter-22"><span>22</span><span class="link-title">A Clash of Cultures</span></a><a href="#chapter-23"><span>23</span><span class="link-title">The Great Depression and the New Deal</span></a><a href="#chapter-24"><span>24</span><span class="link-title">World War II</span></a></div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="intro-grid" aria-label="Reader guidance">
+      <article class="intro-card">
+        <p class="eyebrow">Reading the excerpts</p>
+        <h2>Read the article in its own words.</h2>
+        <p>Each excerpt reproduces complete published paragraphs, normally 600–1,200 words; a shorter article is reproduced in full. A bracketed notice marks a move between separate parts of an article, and no bridging language has been added.</p>
+        <p>The panel at the top of each article lists every essay prompt it serves and whether it supports, qualifies, challenges, or counters that line of argument.</p>
+      </article>
+      <article class="citation-card">
+        <p class="eyebrow">Citing these readings</p>
+        <h2>Cite the web article.</h2>
+        <p>Use the full footnote citation the first time you cite an article and the shortened form afterward. Cite the web article, not a reader page number, and include only works you actually use in your bibliography.</p>
+        <p>Web pages can move or change. Keep the access date shown in the citation, and use this excerpt if a live page later becomes unavailable.</p>
+      </article>
+    </section>
+
+    <section class="catalog-tools" aria-label="Search the source catalog">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+        <label class="skip-link" for="source-search">Search web articles</label>
+        <input id="source-search" class="source-search" type="search" autocomplete="off" placeholder="Search by article, author, website, or code…">
+      </div>
+      <p id="result-count" class="result-count" aria-live="polite">205 articles</p>
+    </section>
+
+    <p id="no-results" class="no-results" hidden>No web articles match that search. Try a shorter title, author surname, date, or source code.</p>
+
+      <section class="chapter-section" id="chapter-20" data-chapter-section aria-labelledby="chapter-20-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">20</div>
+          <div>
+            <p>Chapter 20 · 1889–1916</p>
+            <h2 id="chapter-20-title">The Progressive Era</h2>
+          </div>
+          <span class="chapter-count">35 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.01_Woodrow_Wilson_Campaigns_Elections.html" data-source-card data-search="w20.1 woodrow wilson: campaigns and elections saladin ambar · miller center">
+              <span class="source-code">W20.1</span>
+              <span class="source-copy">
+                <strong>Woodrow Wilson: Campaigns and Elections</strong>
+                <span>Saladin Ambar · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.02_Woodrow_Wilson_Domestic_Affairs.html" data-source-card data-search="w20.2 woodrow wilson: domestic affairs saladin ambar · miller center">
+              <span class="source-code">W20.2</span>
+              <span class="source-copy">
+                <strong>Woodrow Wilson: Domestic Affairs</strong>
+                <span>Saladin Ambar · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.03_Woman_Suffrage_Crusade_1848_1920.html" data-source-card data-search="w20.3 woman suffrage crusade, 1848-1920 mildred andrews · historylink.org">
+              <span class="source-code">W20.3</span>
+              <span class="source-copy">
+                <strong>Woman Suffrage Crusade, 1848-1920</strong>
+                <span>Mildred Andrews · HistoryLink.org</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.04_Law_That_Nationalized_U_S.html" data-source-card data-search="w20.4 the law that nationalized the u.s. forest service lincoln bramwell and james g. lewis · forest history today">
+              <span class="source-code">W20.4</span>
+              <span class="source-copy">
+                <strong>The Law That Nationalized the U.S. Forest Service</strong>
+                <span>Lincoln Bramwell and James G. Lewis · Forest History Today</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.05_Woman_Suffrage_Southern_States.html" data-source-card data-search="w20.5 woman suffrage in the southern states sarah h. case · national park service">
+              <span class="source-code">W20.5</span>
+              <span class="source-copy">
+                <strong>Woman Suffrage in the Southern States</strong>
+                <span>Sarah H. Case · National Park Service</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.06_Not_Dead_Ender.html" data-source-card data-search="w20.6 not a dead ender g. william domhoff · in these times">
+              <span class="source-code">W20.6</span>
+              <span class="source-copy">
+                <strong>Not a Dead Ender</strong>
+                <span>G. William Domhoff · In These Times</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.07_How_Dam_Paved_Way_National.html" data-source-card data-search="w20.7 how a dam paved the way for the national park service deanna fanelli · in custodia legis">
+              <span class="source-code">W20.7</span>
+              <span class="source-copy">
+                <strong>How a Dam Paved the Way for the National Park Service</strong>
+                <span>Deanna Fanelli · In Custodia Legis</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.08_Federal_Reserve_Act_Signed_into.html" data-source-card data-search="w20.8 federal reserve act signed into law federal reserve bank of kansas city · federal reserve history">
+              <span class="source-code">W20.8</span>
+              <span class="source-copy">
+                <strong>Federal Reserve Act Signed into Law</strong>
+                <span>Federal Reserve Bank of Kansas City · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.09_Woman_Suffrage_Midwest.html" data-source-card data-search="w20.9 woman suffrage in the midwest elyssa ford · national park service">
+              <span class="source-code">W20.9</span>
+              <span class="source-copy">
+                <strong>Woman Suffrage in the Midwest</strong>
+                <span>Elyssa Ford · National Park Service</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.10_Gifford_Pinchot_1865_1946.html" data-source-card data-search="w20.10 gifford pinchot (1865-1946) forest history society · forest history society">
+              <span class="source-code">W20.10</span>
+              <span class="source-copy">
+                <strong>Gifford Pinchot (1865-1946)</strong>
+                <span>Forest History Society · Forest History Society</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.11_Story_We_ve_Been_Told.html" data-source-card data-search="w20.11 the story we’ve been told about america’s national parks is incomplete dina gilio-whitaker · history news network">
+              <span class="source-code">W20.11</span>
+              <span class="source-copy">
+                <strong>The Story We’ve Been Told About America’s National Parks Is Incomplete</strong>
+                <span>Dina Gilio-Whitaker · History News Network</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.12_Tammany_Through_Clear_Eyes.html" data-source-card data-search="w20.12 tammany, through clear eyes terry golway · vital city">
+              <span class="source-code">W20.12</span>
+              <span class="source-copy">
+                <strong>Tammany, Through Clear Eyes</strong>
+                <span>Terry Golway · Vital City</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.13_Flexing_Feminine_Muscles_Strategies_Conflicts.html" data-source-card data-search="w20.13 flexing feminine muscles: strategies and conflicts in the suffrage movement susan goodier · national park service">
+              <span class="source-code">W20.13</span>
+              <span class="source-copy">
+                <strong>Flexing Feminine Muscles: Strategies and Conflicts in the Suffrage Movement</strong>
+                <span>Susan Goodier · National Park Service</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.14_African_American_Women_Nineteenth_Amendment.html" data-source-card data-search="w20.14 african american women and the nineteenth amendment sharon harley · the 19th amendment and women’s access to the vote across america">
+              <span class="source-code">W20.14</span>
+              <span class="source-copy">
+                <strong>African American Women and the Nineteenth Amendment</strong>
+                <span>Sharon Harley · The 19th Amendment and Women’s Access to the Vote Across America</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.15_Woman_Suffrage_West.html" data-source-card data-search="w20.15 woman suffrage in the west jennifer helton · the 19th amendment and women’s access to the vote across america">
+              <span class="source-code">W20.15</span>
+              <span class="source-copy">
+                <strong>Woman Suffrage in the West</strong>
+                <span>Jennifer Helton · The 19th Amendment and Women’s Access to the Vote Across America</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.16_Tale_2_3_Progressivisms.html" data-source-card data-search="w20.16 a tale of 2 or 3 progressivisms jason jividen · teaching american history">
+              <span class="source-code">W20.16</span>
+              <span class="source-copy">
+                <strong>A Tale of 2 or 3 Progressivisms</strong>
+                <span>Jason Jividen · Teaching American History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.17_How_Black_Suffragists_Fought_Right.html" data-source-card data-search="w20.17 how black suffragists fought for the right to vote and a modicum of respect: hallie quinn brown and other &quot;homespun heroines&quot; martha s. jones · humanities">
+              <span class="source-code">W20.17</span>
+              <span class="source-copy">
+                <strong>How Black Suffragists Fought for the Right to Vote and a Modicum of Respect: Hallie Quinn Brown and Other "Homespun Heroines"</strong>
+                <span>Martha S. Jones · Humanities</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.18_Founding_Early_Years.html" data-source-card data-search="w20.18 founding and early years library of congress · naacp: a century in the fight for freedom">
+              <span class="source-code">W20.18</span>
+              <span class="source-copy">
+                <strong>Founding and Early Years</strong>
+                <span>Library of Congress · NAACP: A Century in the Fight for Freedom</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.19_Historical_Overview_National_Woman_s.html" data-source-card data-search="w20.19 historical overview of the national woman’s party library of congress · women of protest: photographs from the records of the national woman’s party">
+              <span class="source-code">W20.19</span>
+              <span class="source-copy">
+                <strong>Historical Overview of the National Woman’s Party</strong>
+                <span>Library of Congress · Women of Protest: Photographs from the Records of the National Woman’s Party</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.20_Children_s_Bureau.html" data-source-card data-search="w20.20 children’s bureau kriste lindenmeyer · social welfare history project">
+              <span class="source-code">W20.20</span>
+              <span class="source-copy">
+                <strong>Children’s Bureau</strong>
+                <span>Kriste Lindenmeyer · Social Welfare History Project</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.21_Theodore_Roosevelt_Domestic_Affairs.html" data-source-card data-search="w20.21 theodore roosevelt: domestic affairs sidney milkis · miller center">
+              <span class="source-code">W20.21</span>
+              <span class="source-copy">
+                <strong>Theodore Roosevelt: Domestic Affairs</strong>
+                <span>Sidney Milkis · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.22_Why_Election_1912_Changed_America.html" data-source-card data-search="w20.22 why the election of 1912 changed america sidney m. milkis · claremont review of books">
+              <span class="source-code">W20.22</span>
+              <span class="source-copy">
+                <strong>Why the Election of 1912 Changed America</strong>
+                <span>Sidney M. Milkis · Claremont Review of Books</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.23_Panic_1907.html" data-source-card data-search="w20.23 the panic of 1907 jon r. moen and ellis w. tallman · federal reserve history">
+              <span class="source-code">W20.23</span>
+              <span class="source-copy">
+                <strong>The Panic of 1907</strong>
+                <span>Jon R. Moen and Ellis W. Tallman · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.24_Necessity_Other_Social_Movements_Struggle.html" data-source-card data-search="w20.24 the necessity of other social movements to the struggle for woman suffrage robyn muncy · the 19th amendment and women’s access to the vote across america">
+              <span class="source-code">W20.24</span>
+              <span class="source-copy">
+                <strong>The Necessity of Other Social Movements to the Struggle for Woman Suffrage</strong>
+                <span>Robyn Muncy · The 19th Amendment and Women’s Access to the Vote Across America</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.25_Historic_Tribes.html" data-source-card data-search="w20.25 historic tribes national park service · yellowstone national park">
+              <span class="source-code">W20.25</span>
+              <span class="source-copy">
+                <strong>Historic Tribes</strong>
+                <span>National Park Service · Yellowstone National Park</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.26_Remember_Hetch_Hetchy_Raker_Act.html" data-source-card data-search="w20.26 remember hetch hetchy: the raker act and the evolution of the national park idea national park service · yosemite ranger notes">
+              <span class="source-code">W20.26</span>
+              <span class="source-copy">
+                <strong>Remember Hetch Hetchy: The Raker Act and the Evolution of the National Park Idea</strong>
+                <span>National Park Service · Yosemite Ranger Notes</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.27_Niagara_Movement.html" data-source-card data-search="w20.27 the niagara movement national park service · harpers ferry national historical park">
+              <span class="source-code">W20.27</span>
+              <span class="source-copy">
+                <strong>The Niagara Movement</strong>
+                <span>National Park Service · Harpers Ferry National Historical Park</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.28_Antiquities_Act_1906.html" data-source-card data-search="w20.28 antiquities act of 1906 national park service, archeology program · national park service">
+              <span class="source-code">W20.28</span>
+              <span class="source-copy">
+                <strong>Antiquities Act of 1906</strong>
+                <span>National Park Service, Archeology Program · National Park Service</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.29_Progressive_Era.html" data-source-card data-search="w20.29 the progressive era catherine a. paul · social welfare history project">
+              <span class="source-code">W20.29</span>
+              <span class="source-copy">
+                <strong>The Progressive Era</strong>
+                <span>Catherine A. Paul · Social Welfare History Project</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.30_Age_Reform_1955.html" data-source-card data-search="w20.30 the age of reform (1955) benjamin serby · richard hofstadter at 100">
+              <span class="source-code">W20.30</span>
+              <span class="source-copy">
+                <strong>The Age of Reform (1955)</strong>
+                <span>Benjamin Serby · Richard Hofstadter at 100</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.31_Antiquities_Act_1906.html" data-source-card data-search="w20.31 the antiquities act of 1906 theodore roosevelt center, dickinson state university · tr encyclopedia">
+              <span class="source-code">W20.31</span>
+              <span class="source-copy">
+                <strong>The Antiquities Act of 1906</strong>
+                <span>Theodore Roosevelt Center, Dickinson State University · TR Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.32_New_York_Factory_Investigating_Commission.html" data-source-card data-search="w20.32 the new york factory investigating commission u.s. department of labor · u.s. department of labor">
+              <span class="source-code">W20.32</span>
+              <span class="source-copy">
+                <strong>The New York Factory Investigating Commission</strong>
+                <span>U.S. Department of Labor · U.S. Department of Labor</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.33_Senator_Wagner_Triangle_Shirtwaist_Fire.html" data-source-card data-search="w20.33 senator wagner and the triangle shirtwaist fire u.s. senate historical office · united states senate">
+              <span class="source-code">W20.33</span>
+              <span class="source-copy">
+                <strong>Senator Wagner and the Triangle Shirtwaist Fire</strong>
+                <span>U.S. Senate Historical Office · United States Senate</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.34_Florence_Kelley_1859_1932_Social.html" data-source-card data-search="w20.34 florence kelley (1859 – 1932): social reformer, child welfare advocate, socialist and pacifist virginia commonwealth university libraries · social welfare history project">
+              <span class="source-code">W20.34</span>
+              <span class="source-copy">
+                <strong>Florence Kelley (1859 – 1932): Social Reformer, Child Welfare Advocate, Socialist and Pacifist</strong>
+                <span>Virginia Commonwealth University Libraries · Social Welfare History Project</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W20.35_Generations_Black_Women_Have_Envisioned.html" data-source-card data-search="w20.35 for generations, black women have envisioned a better, fairer american politics karin wulf · smithsonian magazine">
+              <span class="source-code">W20.35</span>
+              <span class="source-copy">
+                <strong>For Generations, Black Women Have Envisioned a Better, Fairer American Politics</strong>
+                <span>Karin Wulf · Smithsonian Magazine</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+      <section class="chapter-section" id="chapter-21" data-chapter-section aria-labelledby="chapter-21-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">21</div>
+          <div>
+            <p>Chapter 21 · 1914–1920</p>
+            <h2 id="chapter-21-title">America and the Great War</h2>
+          </div>
+          <span class="chapter-count">36 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.01_Woodrow_Wilson_Foreign_Affairs.html" data-source-card data-search="w21.1 woodrow wilson: foreign affairs saladin ambar · miller center">
+              <span class="source-code">W21.1</span>
+              <span class="source-copy">
+                <strong>Woodrow Wilson: Foreign Affairs</strong>
+                <span>Saladin Ambar · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.02_Woodrow_Wilson_Impact_Legacy.html" data-source-card data-search="w21.2 woodrow wilson: impact and legacy saladin ambar · miller center">
+              <span class="source-code">W21.2</span>
+              <span class="source-copy">
+                <strong>Woodrow Wilson: Impact and Legacy</strong>
+                <span>Saladin Ambar · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.03_Versailles_Treaty.html" data-source-card data-search="w21.3 versailles, treaty of susanne brandt · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.3</span>
+              <span class="source-copy">
+                <strong>Versailles, Treaty of</strong>
+                <span>Susanne Brandt · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.04_Palmer_Raids.html" data-source-card data-search="w21.4 palmer raids charlene fletcher brown · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.4</span>
+              <span class="source-copy">
+                <strong>Palmer Raids</strong>
+                <span>Charlene Fletcher Brown · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.05_U_S_Race_Riots.html" data-source-card data-search="w21.5 u.s. race riots charlene fletcher brown · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.5</span>
+              <span class="source-copy">
+                <strong>U.S. Race Riots</strong>
+                <span>Charlene Fletcher Brown · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.06_War_Aims_Peace_Discussions_USA.html" data-source-card data-search="w21.6 war aims and peace discussions (usa) john milton cooper · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.6</span>
+              <span class="source-copy">
+                <strong>War Aims and Peace Discussions (USA)</strong>
+                <span>John Milton Cooper · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.07_How_Woodrow_Wilson_s_Propaganda.html" data-source-card data-search="w21.7 how woodrow wilson’s propaganda machine changed american journalism christopher b. daly · smithsonian magazine">
+              <span class="source-code">W21.7</span>
+              <span class="source-copy">
+                <strong>How Woodrow Wilson’s Propaganda Machine Changed American Journalism</strong>
+                <span>Christopher B. Daly · Smithsonian Magazine</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.08_Federal_Reserve_s_Role_During.html" data-source-card data-search="w21.8 the federal reserve’s role during wwi phil davies · federal reserve history">
+              <span class="source-code">W21.8</span>
+              <span class="source-copy">
+                <strong>The Federal Reserve’s Role During WWI</strong>
+                <span>Phil Davies · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.09_Civilian_Military_Power_USA.html" data-source-card data-search="w21.9 civilian and military power (usa) nancy gentile ford · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.9</span>
+              <span class="source-copy">
+                <strong>Civilian and Military Power (USA)</strong>
+                <span>Nancy Gentile Ford · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.10_Seattle_General_Strike_1919.html" data-source-card data-search="w21.10 the seattle general strike of 1919 roberta gold · seattle general strike project">
+              <span class="source-code">W21.10</span>
+              <span class="source-copy">
+                <strong>The Seattle General Strike of 1919</strong>
+                <span>Roberta Gold · Seattle General Strike Project</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.11_Warfare_1917_1918_USA.html" data-source-card data-search="w21.11 warfare 1917-1918 (usa) mark e. grotelueschen · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.11</span>
+              <span class="source-copy">
+                <strong>Warfare 1917-1918 (USA)</strong>
+                <span>Mark E. Grotelueschen · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.12_Houston_Riot_1917_Tragic_Chapter.html" data-source-card data-search="w21.12 the houston riot of 1917: a tragic chapter in american race relations robert v. haynes · handbook of texas online">
+              <span class="source-code">W21.12</span>
+              <span class="source-copy">
+                <strong>The Houston Riot of 1917: A Tragic Chapter in American Race Relations</strong>
+                <span>Robert V. Haynes · Handbook of Texas Online</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.13_Post_war_Societies_USA.html" data-source-card data-search="w21.13 post-war societies (usa) adam j. hodges · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.13</span>
+              <span class="source-copy">
+                <strong>Post-war Societies (USA)</strong>
+                <span>Adam J. Hodges · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.14_United_States_America.html" data-source-card data-search="w21.14 united states of america jennifer d. keene · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.14</span>
+              <span class="source-copy">
+                <strong>United States of America</strong>
+                <span>Jennifer D. Keene · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.15_Governments_Parliaments_Parties_USA.html" data-source-card data-search="w21.15 governments, parliaments and parties (usa) ross kennedy · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.15</span>
+              <span class="source-copy">
+                <strong>Governments, Parliaments and Parties (USA)</strong>
+                <span>Ross Kennedy · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.16_Ethnic_Minorities_War_USA.html" data-source-card data-search="w21.16 ethnic minorities at war (usa) david laskin · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.16</span>
+              <span class="source-copy">
+                <strong>Ethnic Minorities at War (USA)</strong>
+                <span>David Laskin · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.17_Wilsonian_Moment.html" data-source-card data-search="w21.17 wilsonian moment erez manela · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.17</span>
+              <span class="source-copy">
+                <strong>Wilsonian Moment</strong>
+                <span>Erez Manela · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.18_African_American_Soldiers_USA.html" data-source-card data-search="w21.18 african american soldiers (usa) pellom mcdaniels, iii · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.18</span>
+              <span class="source-copy">
+                <strong>African American Soldiers (USA)</strong>
+                <span>Pellom McDaniels, III · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.19_Lusitania_Sinking.html" data-source-card data-search="w21.19 lusitania, sinking of chelsea autumn medlock · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.19</span>
+              <span class="source-copy">
+                <strong>Lusitania, Sinking of</strong>
+                <span>Chelsea Autumn Medlock · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.20_War_Finance.html" data-source-card data-search="w21.20 war finance nicholas mulder · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.20</span>
+              <span class="source-copy">
+                <strong>War Finance</strong>
+                <span>Nicholas Mulder · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.21_American_Protective_League_White_House.html" data-source-card data-search="w21.21 the american protective league and white house security during world war one bethany nagle · white house historical association">
+              <span class="source-code">W21.21</span>
+              <span class="source-copy">
+                <strong>The American Protective League and White House Security During World War One</strong>
+                <span>Bethany Nagle · White House Historical Association</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.22_League_Nations_1920.html" data-source-card data-search="w21.22 the league of nations, 1920 office of the historian, u.s. department of state · milestones in the history of u.s. foreign relations">
+              <span class="source-code">W21.22</span>
+              <span class="source-copy">
+                <strong>The League of Nations, 1920</strong>
+                <span>Office of the Historian, U.S. Department of State · Milestones in the History of U.S. Foreign Relations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.23_Paris_Peace_Conference_Treaty_Versailles.html" data-source-card data-search="w21.23 the paris peace conference and the treaty of versailles office of the historian, u.s. department of state · milestones in the history of u.s. foreign relations">
+              <span class="source-code">W21.23</span>
+              <span class="source-copy">
+                <strong>The Paris Peace Conference and the Treaty of Versailles</strong>
+                <span>Office of the Historian, U.S. Department of State · Milestones in the History of U.S. Foreign Relations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.24_U_S_Entry_into_World.html" data-source-card data-search="w21.24 u.s. entry into world war i, 1917 office of the historian, u.s. department of state · milestones in the history of u.s. foreign relations">
+              <span class="source-code">W21.24</span>
+              <span class="source-copy">
+                <strong>U.S. Entry into World War I, 1917</strong>
+                <span>Office of the Historian, U.S. Department of State · Milestones in the History of U.S. Foreign Relations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.25_Wilson_s_Fourteen_Points_1918.html" data-source-card data-search="w21.25 wilson’s fourteen points, 1918 office of the historian, u.s. department of state · milestones in the history of u.s. foreign relations">
+              <span class="source-code">W21.25</span>
+              <span class="source-copy">
+                <strong>Wilson’s Fourteen Points, 1918</strong>
+                <span>Office of the Historian, U.S. Department of State · Milestones in the History of U.S. Foreign Relations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.26_Justice_Department_Campaign_Against_IWW.html" data-source-card data-search="w21.26 the justice department campaign against the iww, 1917-1920 steven parfitt · iww history project">
+              <span class="source-code">W21.26</span>
+              <span class="source-copy">
+                <strong>The Justice Department Campaign Against the IWW, 1917-1920</strong>
+                <span>Steven Parfitt · IWW History Project</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.27_Historiography_1918_Today_USA.html" data-source-card data-search="w21.27 historiography 1918-today (usa) james s. price · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.27</span>
+              <span class="source-copy">
+                <strong>Historiography 1918-Today (USA)</strong>
+                <span>James S. Price · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.28_Zimmermann_Telegram.html" data-source-card data-search="w21.28 zimmermann telegram stefan rinke · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.28</span>
+              <span class="source-copy">
+                <strong>Zimmermann Telegram</strong>
+                <span>Stefan Rinke · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.29_U_S_Economy_World_War.html" data-source-card data-search="w21.29 u.s. economy in world war i hugh rockoff · eh.net encyclopedia">
+              <span class="source-code">W21.29</span>
+              <span class="source-copy">
+                <strong>U.S. Economy in World War I</strong>
+                <span>Hugh Rockoff · EH.Net Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.30_Paris_Peace_Conference_its_Consequences.html" data-source-card data-search="w21.30 the paris peace conference and its consequences alan sharp · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.30</span>
+              <span class="source-copy">
+                <strong>The Paris Peace Conference and its Consequences</strong>
+                <span>Alan Sharp · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.31_Racism_Armed_Forces_USA.html" data-source-card data-search="w21.31 racism in the armed forces (usa) debra j. sheffer · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.31</span>
+              <span class="source-copy">
+                <strong>Racism in the Armed Forces (USA)</strong>
+                <span>Debra J. Sheffer · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.32_Red_Scare.html" data-source-card data-search="w21.32 red scare matthew f. simmons · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.32</span>
+              <span class="source-copy">
+                <strong>Red Scare</strong>
+                <span>Matthew F. Simmons · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.33_American_Expeditionary_Forces.html" data-source-card data-search="w21.33 american expeditionary forces harold allen skinner, jr. · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.33</span>
+              <span class="source-copy">
+                <strong>American Expeditionary Forces</strong>
+                <span>Harold Allen Skinner, Jr. · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.34_Elaine_Massacre_1919.html" data-source-card data-search="w21.34 elaine massacre of 1919 grif stockley · cals encyclopedia of arkansas">
+              <span class="source-code">W21.34</span>
+              <span class="source-copy">
+                <strong>Elaine Massacre of 1919</strong>
+                <span>Grif Stockley · CALS Encyclopedia of Arkansas</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.35_Social_Conflict_Control_Protest_Repression.html" data-source-card data-search="w21.35 social conflict and control, protest and repression (usa) lon strauss · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.35</span>
+              <span class="source-copy">
+                <strong>Social Conflict and Control, Protest and Repression (USA)</strong>
+                <span>Lon Strauss · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W21.36_Propaganda_Home_USA.html" data-source-card data-search="w21.36 propaganda at home (usa) robert a. wells · 1914-1918-online. international encyclopedia of the first world war">
+              <span class="source-code">W21.36</span>
+              <span class="source-copy">
+                <strong>Propaganda at Home (USA)</strong>
+                <span>Robert A. Wells · 1914-1918-online. International Encyclopedia of the First World War</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+      <section class="chapter-section" id="chapter-22" data-chapter-section aria-labelledby="chapter-22-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">22</div>
+          <div>
+            <p>Chapter 22 · 1903–1928</p>
+            <h2 id="chapter-22-title">A Clash of Cultures</h2>
+          </div>
+          <span class="chapter-count">32 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.01_Scientist_Day_William_Jennings_Bryan.html" data-source-card data-search="w22.1 scientist of the day: william jennings bryan william b. ashworth, jr. · scientist of the day">
+              <span class="source-code">W22.1</span>
+              <span class="source-copy">
+                <strong>Scientist of the Day: William Jennings Bryan</strong>
+                <span>William B. Ashworth, Jr. · Scientist of the Day</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.02_Caribbean_American_Heritage_Month_Marcus.html" data-source-card data-search="w22.2 caribbean american heritage month: marcus garvey vincent bartholomew · pieces of history">
+              <span class="source-code">W22.2</span>
+              <span class="source-copy">
+                <strong>Caribbean American Heritage Month: Marcus Garvey</strong>
+                <span>Vincent Bartholomew · Pieces of History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.03_Did_Prohibition_Really_Work_Alcohol.html" data-source-card data-search="w22.3 did prohibition really work? alcohol prohibition as a public health innovation jack s. blocker, jr. · american journal of public health">
+              <span class="source-code">W22.3</span>
+              <span class="source-copy">
+                <strong>Did Prohibition Really Work? Alcohol Prohibition as a Public Health Innovation</strong>
+                <span>Jack S. Blocker, Jr. · American Journal of Public Health</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.04_First_came_suffrage_Then_came.html" data-source-card data-search="w22.4 first came suffrage. then came the women of the ku klux klan. ko bragg · the 19th">
+              <span class="source-code">W22.4</span>
+              <span class="source-copy">
+                <strong>First came suffrage. Then came the Women of the Ku Klux Klan.</strong>
+                <span>Ko Bragg · The 19th</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.05_Ku_Klux_Klan_after_1900.html" data-source-card data-search="w22.5 ku klux klan (after 1900) dianne dentice · cals encyclopedia of arkansas">
+              <span class="source-code">W22.5</span>
+              <span class="source-copy">
+                <strong>Ku Klux Klan (after 1900)</strong>
+                <span>Dianne Dentice · CALS Encyclopedia of Arkansas</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.06_Carl_Van_Vechten_Harlem_Renaissance.html" data-source-card data-search="w22.6 carl van vechten and the harlem renaissance morris dickstein · morris dickstein">
+              <span class="source-code">W22.6</span>
+              <span class="source-copy">
+                <strong>Carl Van Vechten and the Harlem Renaissance</strong>
+                <span>Morris Dickstein · Morris Dickstein</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.07_Warren_Harding_s_Love_Letters.html" data-source-card data-search="w22.7 warren harding’s love letters finally give us something to remember him for megan gambino · smithsonian magazine">
+              <span class="source-code">W22.7</span>
+              <span class="source-copy">
+                <strong>Warren Harding’s Love Letters Finally Give Us Something to Remember Him For</strong>
+                <span>Megan Gambino · Smithsonian Magazine</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.08_Calvin_Coolidge_Domestic_Affairs.html" data-source-card data-search="w22.8 calvin coolidge: domestic affairs david greenberg · miller center">
+              <span class="source-code">W22.8</span>
+              <span class="source-copy">
+                <strong>Calvin Coolidge: Domestic Affairs</strong>
+                <span>David Greenberg · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.09_Herbert_Hoover_Life_Before_Presidency.html" data-source-card data-search="w22.9 herbert hoover: life before the presidency david e. hamilton · miller center">
+              <span class="source-code">W22.9</span>
+              <span class="source-copy">
+                <strong>Herbert Hoover: Life Before the Presidency</strong>
+                <span>David E. Hamilton · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.10_Lisa_McGirr_Discusses_War_Alcohol.html" data-source-card data-search="w22.10 lisa mcgirr discusses ‘the war on alcohol’ and the legacy of prohibition history news network · history news network">
+              <span class="source-code">W22.10</span>
+              <span class="source-copy">
+                <strong>Lisa McGirr Discusses ‘The War on Alcohol’ and the Legacy of Prohibition</strong>
+                <span>History News Network · History News Network</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.11_Immigration_Act_1924.html" data-source-card data-search="w22.11 immigration act of 1924 shiho imai · densho encyclopedia">
+              <span class="source-code">W22.11</span>
+              <span class="source-copy">
+                <strong>Immigration Act of 1924</strong>
+                <span>Shiho Imai · Densho Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.12_New_Negro_Dawn_Harlem_Renaissance.html" data-source-card data-search="w22.12 the new negro and the dawn of the harlem renaissance ashawnta jackson · jstor daily">
+              <span class="source-code">W22.12</span>
+              <span class="source-copy">
+                <strong>The New Negro and the Dawn of the Harlem Renaissance</strong>
+                <span>Ashawnta Jackson · JSTOR Daily</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.13_What_Zora_Went_Looking.html" data-source-card data-search="w22.13 what zora went looking for charles king · humanities">
+              <span class="source-code">W22.13</span>
+              <span class="source-copy">
+                <strong>What Zora Went Looking For</strong>
+                <span>Charles King · Humanities</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.14_Hubert_Harrison_Black_Griot_Harlem.html" data-source-card data-search="w22.14 hubert harrison: black griot of the harlem renaissance brian kwoba · black perspectives">
+              <span class="source-code">W22.14</span>
+              <span class="source-copy">
+                <strong>Hubert Harrison: Black Griot of the Harlem Renaissance</strong>
+                <span>Brian Kwoba · Black Perspectives</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.15_Celebration_Waste.html" data-source-card data-search="w22.15 the celebration of waste christopher lasch · smithsonian education, looking at artifacts, thinking about history">
+              <span class="source-code">W22.15</span>
+              <span class="source-copy">
+                <strong>The Celebration of Waste</strong>
+                <span>Christopher Lasch · Smithsonian Education, Looking at Artifacts, Thinking About History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.16_State_v_John_Scopes_Monkey.html" data-source-card data-search="w22.16 state v. john scopes (&quot;the monkey trial&quot;): an account douglas o. linder · famous trials">
+              <span class="source-code">W22.16</span>
+              <span class="source-copy">
+                <strong>State v. John Scopes ("The Monkey Trial"): An Account</strong>
+                <span>Douglas O. Linder · Famous Trials</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.17_Eugenics_Laws_Restricting_Immigration.html" data-source-card data-search="w22.17 eugenics laws restricting immigration paul lombardo · image archive on the american eugenics movement">
+              <span class="source-code">W22.17</span>
+              <span class="source-copy">
+                <strong>Eugenics Laws Restricting Immigration</strong>
+                <span>Paul Lombardo · Image Archive on the American Eugenics Movement</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.18_Creating_Circumstances_Edward_Bernays_Psychoanalysis.html" data-source-card data-search="w22.18 creating circumstances: edward bernays, psychoanalysis, and the making of american consumer culture joseph malherek · perspectives on history">
+              <span class="source-code">W22.18</span>
+              <span class="source-copy">
+                <strong>Creating Circumstances: Edward Bernays, Psychoanalysis, and the Making of American Consumer Culture</strong>
+                <span>Joseph Malherek · Perspectives on History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.19_Golden_Age_Advertising.html" data-source-card data-search="w22.19 the golden age of advertising roland marchand · american heritage">
+              <span class="source-code">W22.19</span>
+              <span class="source-copy">
+                <strong>The Golden Age of Advertising</strong>
+                <span>Roland Marchand · American Heritage</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.20_Scopes_Trial_Problem_Democratic_Control.html" data-source-card data-search="w22.20 the scopes trial and the problem of democratic control ted mcallister · law &amp; liberty">
+              <span class="source-code">W22.20</span>
+              <span class="source-copy">
+                <strong>The Scopes Trial and the Problem of Democratic Control</strong>
+                <span>Ted McAllister · Law &amp; Liberty</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.21_Marcus_Garvey_s_Black_Star.html" data-source-card data-search="w22.21 marcus garvey’s black star line jay e. moore · the mariners’ museum and park">
+              <span class="source-code">W22.21</span>
+              <span class="source-copy">
+                <strong>Marcus Garvey’s Black Star Line</strong>
+                <span>Jay E. Moore · The Mariners’ Museum and Park</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.22_Immigration_Act_1924_Johnson_Reed.html" data-source-card data-search="w22.22 the immigration act of 1924 (the johnson-reed act) office of the historian, u.s. department of state · milestones in the history of u.s. foreign relations">
+              <span class="source-code">W22.22</span>
+              <span class="source-copy">
+                <strong>The Immigration Act of 1924 (The Johnson-Reed Act)</strong>
+                <span>Office of the Historian, U.S. Department of State · Milestones in the History of U.S. Foreign Relations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.23_What_If_Warren_Harding_Wasn.html" data-source-card data-search="w22.23 what if warren harding wasn’t a terrible president? ronald radosh and allis radosh · slate">
+              <span class="source-code">W22.23</span>
+              <span class="source-copy">
+                <strong>What If Warren Harding Wasn’t a Terrible President?</strong>
+                <span>Ronald Radosh and Allis Radosh · Slate</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.24_New_African_American_Identity_Harlem.html" data-source-card data-search="w22.24 a new african american identity: the harlem renaissance smithsonian institution · national museum of african american history and culture">
+              <span class="source-code">W22.24</span>
+              <span class="source-copy">
+                <strong>A New African American Identity: The Harlem Renaissance</strong>
+                <span>Smithsonian Institution · National Museum of African American History and Culture</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.25_History_Flapper_Part_1_Call.html" data-source-card data-search="w22.25 the history of the flapper, part 1: a call for freedom emily spivack · smithsonian magazine">
+              <span class="source-code">W22.25</span>
+              <span class="source-copy">
+                <strong>The History of the Flapper, Part 1: A Call for Freedom</strong>
+                <span>Emily Spivack · Smithsonian Magazine</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.26_Ku_Klux_Klan.html" data-source-card data-search="w22.26 ku klux klan eckard toy · the oregon encyclopedia">
+              <span class="source-code">W22.26</span>
+              <span class="source-copy">
+                <strong>Ku Klux Klan</strong>
+                <span>Eckard Toy · The Oregon Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.27_Warren_G_Harding_Domestic_Affairs.html" data-source-card data-search="w22.27 warren g. harding: domestic affairs eugene p. trani · miller center">
+              <span class="source-code">W22.27</span>
+              <span class="source-copy">
+                <strong>Warren G. Harding: Domestic Affairs</strong>
+                <span>Eugene P. Trani · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.28_Death_Gentle_Knight.html" data-source-card data-search="w22.28 death of a &quot;gentle knight&quot; u.s. senate historical office · united states senate">
+              <span class="source-code">W22.28</span>
+              <span class="source-copy">
+                <strong>Death of a "Gentle Knight"</strong>
+                <span>U.S. Senate Historical Office · United States Senate</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.29_Trial_Summary_Day_Seven.html" data-source-card data-search="w22.29 trial summary: day seven university of minnesota law library, riesenfeld rare books research center · evolution on the stand: revisiting the scopes trial at 100">
+              <span class="source-code">W22.29</span>
+              <span class="source-copy">
+                <strong>Trial Summary: Day Seven</strong>
+                <span>University of Minnesota Law Library, Riesenfeld Rare Books Research Center · Evolution on the Stand: Revisiting the Scopes Trial at 100</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.30_Marcus_Garvey_Universal_Negro_Improvement.html" data-source-card data-search="w22.30 marcus garvey and the universal negro improvement association david van leeuwen · divining america: religion in american history (teacherserve)">
+              <span class="source-code">W22.30</span>
+              <span class="source-copy">
+                <strong>Marcus Garvey and the Universal Negro Improvement Association</strong>
+                <span>David Van Leeuwen · Divining America: Religion in American History (TeacherServe)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.31_Rise_Fundamentalism.html" data-source-card data-search="w22.31 the rise of fundamentalism grant wacker · divining america: religion in american history (teacherserve)">
+              <span class="source-code">W22.31</span>
+              <span class="source-copy">
+                <strong>The Rise of Fundamentalism</strong>
+                <span>Grant Wacker · Divining America: Religion in American History (TeacherServe)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W22.32_Reflections_Dry_Season.html" data-source-card data-search="w22.32 reflections on the dry season bernard a. weisberger · american heritage">
+              <span class="source-code">W22.32</span>
+              <span class="source-copy">
+                <strong>Reflections on the Dry Season</strong>
+                <span>Bernard A. Weisberger · American Heritage</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+      <section class="chapter-section" id="chapter-23" data-chapter-section aria-labelledby="chapter-23-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">23</div>
+          <div>
+            <p>Chapter 23 · 1929–1937</p>
+            <h2 id="chapter-23-title">The Great Depression and the New Deal</h2>
+          </div>
+          <span class="chapter-count">53 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.01_African_Americans.html" data-source-card data-search="w23.1 african americans living new deal · living new deal">
+              <span class="source-code">W23.1</span>
+              <span class="source-copy">
+                <strong>African Americans</strong>
+                <span>Living New Deal · Living New Deal</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.02_American_Indians_New_Deal.html" data-source-card data-search="w23.2 american indians and the new deal living new deal · living new deal">
+              <span class="source-code">W23.2</span>
+              <span class="source-copy">
+                <strong>American Indians and the New Deal</strong>
+                <span>Living New Deal · Living New Deal</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.03_Sovereignty.html" data-source-card data-search="w23.3 sovereignty russel barsh · encyclopedia of the great plains">
+              <span class="source-code">W23.3</span>
+              <span class="source-copy">
+                <strong>Sovereignty</strong>
+                <span>Russel Barsh · Encyclopedia of the Great Plains</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.04_Eleanor_Roosevelt_1884_1962_First.html" data-source-card data-search="w23.4 eleanor roosevelt (1884-1962): first lady, social welfare advocate, human rights leader allida m. black · social welfare history project">
+              <span class="source-code">W23.4</span>
+              <span class="source-copy">
+                <strong>Eleanor Roosevelt (1884-1962): First Lady, Social Welfare Advocate, Human Rights Leader</strong>
+                <span>Allida M. Black · Social Welfare History Project</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.05_New_Deal.html" data-source-card data-search="w23.5 new deal john braeman · encyclopedia of the great plains">
+              <span class="source-code">W23.5</span>
+              <span class="source-copy">
+                <strong>New Deal</strong>
+                <span>John Braeman · Encyclopedia of the Great Plains</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.06_Frances_Perkins_Roosevelt_Years.html" data-source-card data-search="w23.6 frances perkins: the roosevelt years harris chaiklin · social welfare history project">
+              <span class="source-code">W23.6</span>
+              <span class="source-copy">
+                <strong>Frances Perkins: The Roosevelt Years</strong>
+                <span>Harris Chaiklin · Social Welfare History Project</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.07_Southern_Tenant_Farmers_Union.html" data-source-card data-search="w23.7 southern tenant farmers’ union william h. cobb · cals encyclopedia of arkansas">
+              <span class="source-code">W23.7</span>
+              <span class="source-copy">
+                <strong>Southern Tenant Farmers’ Union</strong>
+                <span>William H. Cobb · CALS Encyclopedia of Arkansas</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.08_Pecan_Shellers_Strike.html" data-source-card data-search="w23.8 pecan-shellers’ strike richard croxdale · handbook of texas online">
+              <span class="source-code">W23.8</span>
+              <span class="source-copy">
+                <strong>Pecan-Shellers’ Strike</strong>
+                <span>Richard Croxdale · Handbook of Texas Online</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.09_Dust_Bowl.html" data-source-card data-search="w23.9 the dust bowl geoff cunfer · eh.net encyclopedia">
+              <span class="source-code">W23.9</span>
+              <span class="source-copy">
+                <strong>The Dust Bowl</strong>
+                <span>Geoff Cunfer · EH.Net Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.10_Research_Note_17_Townsend_Plan.html" data-source-card data-search="w23.10 research note #17: the townsend plan’s pension scheme larry dewitt · social security administration">
+              <span class="source-code">W23.10</span>
+              <span class="source-copy">
+                <strong>Research Note #17: The Townsend Plan’s Pension Scheme</strong>
+                <span>Larry DeWitt · Social Security Administration</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.11_Decision_Exclude_Agricultural_Domestic_Workers.html" data-source-card data-search="w23.11 the decision to exclude agricultural and domestic workers from the 1935 social security act larry dewitt · social security bulletin">
+              <span class="source-code">W23.11</span>
+              <span class="source-copy">
+                <strong>The Decision to Exclude Agricultural and Domestic Workers from the 1935 Social Security Act</strong>
+                <span>Larry DeWitt · Social Security Bulletin</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.12_Banking_Panics_1931_33.html" data-source-card data-search="w23.12 banking panics of 1931-33 kristie m. engemann · federal reserve history">
+              <span class="source-code">W23.12</span>
+              <span class="source-copy">
+                <strong>Banking Panics of 1931-33</strong>
+                <span>Kristie M. Engemann · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.13_Labor_Unions_United_States.html" data-source-card data-search="w23.13 labor unions in the united states gerald friedman · eh.net encyclopedia">
+              <span class="source-code">W23.13</span>
+              <span class="source-copy">
+                <strong>Labor Unions in the United States</strong>
+                <span>Gerald Friedman · EH.Net Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.14_Banking_Act_1932.html" data-source-card data-search="w23.14 banking act of 1932 michael gou, gary richardson, alejandro komai, and daniel park · federal reserve history">
+              <span class="source-code">W23.14</span>
+              <span class="source-copy">
+                <strong>Banking Act of 1932</strong>
+                <span>Michael Gou, Gary Richardson, Alejandro Komai, and Daniel Park · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.15_Reconstruction_Finance_Corporation_Act.html" data-source-card data-search="w23.15 reconstruction finance corporation act michael gou, gary richardson, alejandro komai, and daniel park · federal reserve history">
+              <span class="source-code">W23.15</span>
+              <span class="source-copy">
+                <strong>Reconstruction Finance Corporation Act</strong>
+                <span>Michael Gou, Gary Richardson, Alejandro Komai, and Daniel Park · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.16_Emergency_Banking_Act_1933.html" data-source-card data-search="w23.16 emergency banking act of 1933 stephen greene · federal reserve history">
+              <span class="source-code">W23.16</span>
+              <span class="source-copy">
+                <strong>Emergency Banking Act of 1933</strong>
+                <span>Stephen Greene · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.17_Strikes_Unions.html" data-source-card data-search="w23.17 strikes &amp; unions james gregory · the great depression in washington state project">
+              <span class="source-code">W23.17</span>
+              <span class="source-copy">
+                <strong>Strikes &amp; Unions</strong>
+                <span>James Gregory · The Great Depression in Washington State Project</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.18_Huey_P_Long_Jr.html" data-source-card data-search="w23.18 huey p. long jr. edward f. haas · 64 parishes">
+              <span class="source-code">W23.18</span>
+              <span class="source-copy">
+                <strong>Huey P. Long Jr.</strong>
+                <span>Edward F. Haas · 64 Parishes</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.19_Herbert_Hoover_Domestic_Affairs.html" data-source-card data-search="w23.19 herbert hoover: domestic affairs david e. hamilton · miller center">
+              <span class="source-code">W23.19</span>
+              <span class="source-copy">
+                <strong>Herbert Hoover: Domestic Affairs</strong>
+                <span>David E. Hamilton · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.20_Herbert_Hoover_Impact_Legacy.html" data-source-card data-search="w23.20 herbert hoover: impact and legacy david e. hamilton · miller center">
+              <span class="source-code">W23.20</span>
+              <span class="source-copy">
+                <strong>Herbert Hoover: Impact and Legacy</strong>
+                <span>David E. Hamilton · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.21_New_Deal_Part_II.html" data-source-card data-search="w23.21 the new deal: part ii john e. hansan · social welfare history project">
+              <span class="source-code">W23.21</span>
+              <span class="source-copy">
+                <strong>The New Deal: Part II</strong>
+                <span>John E. Hansan · Social Welfare History Project</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.22_Suitcase_Farming.html" data-source-card data-search="w23.22 suitcase farming leslie hewes · encyclopedia of the great plains">
+              <span class="source-code">W23.22</span>
+              <span class="source-copy">
+                <strong>Suitcase Farming</strong>
+                <span>Leslie Hewes · Encyclopedia of the Great Plains</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.23_Dust_Bowl.html" data-source-card data-search="w23.23 dust bowl r. douglas hurt · encyclopedia of the great plains">
+              <span class="source-code">W23.23</span>
+              <span class="source-copy">
+                <strong>Dust Bowl</strong>
+                <span>R. Douglas Hurt · Encyclopedia of the Great Plains</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.24_Bank_Holiday_1933.html" data-source-card data-search="w23.24 bank holiday of 1933 robert jabaily · federal reserve history">
+              <span class="source-code">W23.24</span>
+              <span class="source-copy">
+                <strong>Bank Holiday of 1933</strong>
+                <span>Robert Jabaily · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.25_When_Radio_Stations_Stopped_Public.html" data-source-card data-search="w23.25 when radio stations stopped a public figure from spreading dangerous lies william kovarik · smithsonian magazine">
+              <span class="source-code">W23.25</span>
+              <span class="source-copy">
+                <strong>When Radio Stations Stopped a Public Figure From Spreading Dangerous Lies</strong>
+                <span>William Kovarik · Smithsonian Magazine</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.26_Franklin_D_Roosevelt_Domestic_Affairs.html" data-source-card data-search="w23.26 franklin d. roosevelt: domestic affairs william e. leuchtenburg · miller center">
+              <span class="source-code">W23.26</span>
+              <span class="source-copy">
+                <strong>Franklin D. Roosevelt: Domestic Affairs</strong>
+                <span>William E. Leuchtenburg · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.27_Franklin_D_Roosevelt_Impact_Legacy.html" data-source-card data-search="w23.27 franklin d. roosevelt: impact and legacy william e. leuchtenburg · miller center">
+              <span class="source-code">W23.27</span>
+              <span class="source-copy">
+                <strong>Franklin D. Roosevelt: Impact and Legacy</strong>
+                <span>William E. Leuchtenburg · Miller Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.28_American_Social_Policy_Great_Depression.html" data-source-card data-search="w23.28 american social policy in the great depression and world war ii jerry d. marx · social welfare history project">
+              <span class="source-code">W23.28</span>
+              <span class="source-copy">
+                <strong>American Social Policy in the Great Depression and World War II</strong>
+                <span>Jerry D. Marx · Social Welfare History Project</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.29_Mary_McLeod_Bethune_1875_1955.html" data-source-card data-search="w23.29 mary mcleod bethune (1875-1955) – educator, public administrator, civil rights activist jerry marx · social welfare history project">
+              <span class="source-code">W23.29</span>
+              <span class="source-copy">
+                <strong>Mary McLeod Bethune (1875-1955) – Educator, Public Administrator, Civil Rights Activist</strong>
+                <span>Jerry Marx · Social Welfare History Project</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.30_Banking_Act_1933_Glass_Steagall.html" data-source-card data-search="w23.30 banking act of 1933 (glass-steagall) julia maues · federal reserve history">
+              <span class="source-code">W23.30</span>
+              <span class="source-copy">
+                <strong>Banking Act of 1933 (Glass-Steagall)</strong>
+                <span>Julia Maues · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.31_Mexican_Americans_Repatriation.html" data-source-card data-search="w23.31 mexican americans and repatriation robert r. mckay · handbook of texas online">
+              <span class="source-code">W23.31</span>
+              <span class="source-copy">
+                <strong>Mexican Americans and Repatriation</strong>
+                <span>Robert R. McKay · Handbook of Texas Online</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.32_New_Deal_Successes_Accomplishments.html" data-source-card data-search="w23.32 new deal successes &amp; accomplishments brent mckee · living new deal">
+              <span class="source-code">W23.32</span>
+              <span class="source-copy">
+                <strong>New Deal Successes &amp; Accomplishments</strong>
+                <span>Brent McKee · Living New Deal</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.33_Dust_Bowl.html" data-source-card data-search="w23.33 the dust bowl national drought mitigation center, university of nebraska-lincoln · national drought mitigation center">
+              <span class="source-code">W23.33</span>
+              <span class="source-copy">
+                <strong>The Dust Bowl</strong>
+                <span>National Drought Mitigation Center, University of Nebraska-Lincoln · National Drought Mitigation Center</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.34_1932_Bonus_Army.html" data-source-card data-search="w23.34 the 1932 bonus army national park service · national park service">
+              <span class="source-code">W23.34</span>
+              <span class="source-copy">
+                <strong>The 1932 Bonus Army</strong>
+                <span>National Park Service · National Park Service</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.35_Smoot_Hawley_Tariff.html" data-source-card data-search="w23.35 smoot-hawley tariff anthony o&#x27;brien · eh.net encyclopedia">
+              <span class="source-code">W23.35</span>
+              <span class="source-copy">
+                <strong>Smoot-Hawley Tariff</strong>
+                <span>Anthony O'Brien · EH.Net Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.36_Black_Domestics_During_Depression_Workers.html" data-source-card data-search="w23.36 black domestics during the depression: workers, organizers, social commentators phyllis palmer · prologue magazine">
+              <span class="source-code">W23.36</span>
+              <span class="source-copy">
+                <strong>Black Domestics During the Depression: Workers, Organizers, Social Commentators</strong>
+                <span>Phyllis Palmer · Prologue Magazine</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.37_Overview_Great_Depression.html" data-source-card data-search="w23.37 an overview of the great depression randall parker · eh.net encyclopedia">
+              <span class="source-code">W23.37</span>
+              <span class="source-copy">
+                <strong>An Overview of the Great Depression</strong>
+                <span>Randall Parker · EH.Net Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.38_Civilian_Conservation_Corps.html" data-source-card data-search="w23.38 civilian conservation corps catherine a. paul · social welfare history project">
+              <span class="source-code">W23.38</span>
+              <span class="source-copy">
+                <strong>Civilian Conservation Corps</strong>
+                <span>Catherine A. Paul · Social Welfare History Project</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.39_Oklahoma_Indian_Welfare_Act.html" data-source-card data-search="w23.39 oklahoma indian welfare act brian f. rader · the encyclopedia of oklahoma history and culture">
+              <span class="source-code">W23.39</span>
+              <span class="source-copy">
+                <strong>Oklahoma Indian Welfare Act</strong>
+                <span>Brian F. Rader · The Encyclopedia of Oklahoma History and Culture</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.40_Banking_Act_1935.html" data-source-card data-search="w23.40 banking act of 1935 gary richardson, alejandro komai, and michael gou · federal reserve history">
+              <span class="source-code">W23.40</span>
+              <span class="source-copy">
+                <strong>Banking Act of 1935</strong>
+                <span>Gary Richardson, Alejandro Komai, and Michael Gou · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.41_Banking_Panics_1930_31.html" data-source-card data-search="w23.41 banking panics of 1930-31 gary richardson · federal reserve history">
+              <span class="source-code">W23.41</span>
+              <span class="source-copy">
+                <strong>Banking Panics of 1930-31</strong>
+                <span>Gary Richardson · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.42_Gold_Reserve_Act_1934.html" data-source-card data-search="w23.42 gold reserve act of 1934 gary richardson, alejandro komai, and michael gou · federal reserve history">
+              <span class="source-code">W23.42</span>
+              <span class="source-copy">
+                <strong>Gold Reserve Act of 1934</strong>
+                <span>Gary Richardson, Alejandro Komai, and Michael Gou · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.43_Roosevelt_s_Gold_Program.html" data-source-card data-search="w23.43 roosevelt’s gold program gary richardson, alejandro komai, and michael gou · federal reserve history">
+              <span class="source-code">W23.43</span>
+              <span class="source-copy">
+                <strong>Roosevelt’s Gold Program</strong>
+                <span>Gary Richardson, Alejandro Komai, and Michael Gou · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.44_Stock_Market_Crash_1929.html" data-source-card data-search="w23.44 stock market crash of 1929 gary richardson, alejandro komai, michael gou, and daniel park · federal reserve history">
+              <span class="source-code">W23.44</span>
+              <span class="source-copy">
+                <strong>Stock Market Crash of 1929</strong>
+                <span>Gary Richardson, Alejandro Komai, Michael Gou, and Daniel Park · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.45_Great_Depression.html" data-source-card data-search="w23.45 the great depression gary richardson · federal reserve history">
+              <span class="source-code">W23.45</span>
+              <span class="source-copy">
+                <strong>The Great Depression</strong>
+                <span>Gary Richardson · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.46_U_S_Economy_1920s.html" data-source-card data-search="w23.46 the u.s. economy in the 1920s gene smiley · eh.net encyclopedia">
+              <span class="source-code">W23.46</span>
+              <span class="source-copy">
+                <strong>The U.S. Economy in the 1920s</strong>
+                <span>Gene Smiley · EH.Net Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.47_Ordeal_Herbert_Hoover.html" data-source-card data-search="w23.47 the ordeal of herbert hoover richard norton smith and timothy walch · prologue magazine">
+              <span class="source-code">W23.47</span>
+              <span class="source-copy">
+                <strong>The Ordeal of Herbert Hoover</strong>
+                <span>Richard Norton Smith and Timothy Walch · Prologue Magazine</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.48_Into_Woods_First_Year_Civilian.html" data-source-card data-search="w23.48 into the woods: the first year of the civilian conservation corps joseph m. speakman · prologue magazine">
+              <span class="source-code">W23.48</span>
+              <span class="source-copy">
+                <strong>Into the Woods: The First Year of the Civilian Conservation Corps</strong>
+                <span>Joseph M. Speakman · Prologue Magazine</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.49_Radio_Priest_Charles_E_Coughlin.html" data-source-card data-search="w23.49 the radio priest: charles e. coughlin and american antisemitism united states holocaust memorial museum · holocaust encyclopedia">
+              <span class="source-code">W23.49</span>
+              <span class="source-copy">
+                <strong>The Radio Priest: Charles E. Coughlin and American Antisemitism</strong>
+                <span>United States Holocaust Memorial Museum · Holocaust Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.50_Recession_1937_38.html" data-source-card data-search="w23.50 recession of 1937-38 patricia waiwood · federal reserve history">
+              <span class="source-code">W23.50</span>
+              <span class="source-copy">
+                <strong>Recession of 1937-38</strong>
+                <span>Patricia Waiwood · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.51_Why_Calls_Unity_Are_Not.html" data-source-card data-search="w23.51 why calls for &#x27;unity&#x27; are not enough: look at the 1930s and 1940s wendy wall · the conversation">
+              <span class="source-code">W23.51</span>
+              <span class="source-copy">
+                <strong>Why Calls for 'Unity' Are Not Enough: Look at the 1930s and 1940s</strong>
+                <span>Wendy Wall · The Conversation</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.52_Dust_Bowl.html" data-source-card data-search="w23.52 dust bowl donald a. wilhite · the encyclopedia of oklahoma history and culture">
+              <span class="source-code">W23.52</span>
+              <span class="source-copy">
+                <strong>Dust Bowl</strong>
+                <span>Donald A. Wilhite · The Encyclopedia of Oklahoma History and Culture</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W23.53_Women_New_Deal.html" data-source-card data-search="w23.53 women and the new deal living new deal · living new deal">
+              <span class="source-code">W23.53</span>
+              <span class="source-copy">
+                <strong>Women and the New Deal</strong>
+                <span>Living New Deal · Living New Deal</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+      <section class="chapter-section" id="chapter-24" data-chapter-section aria-labelledby="chapter-24-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">24</div>
+          <div>
+            <p>Chapter 24 · 1933–1946</p>
+            <h2 id="chapter-24-title">World War II</h2>
+          </div>
+          <span class="chapter-count">49 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.01_War_Was_Won_Before_Hiroshima.html" data-source-card data-search="w24.1 the war was won before hiroshima—and the generals who dropped the bomb knew it gar alperovitz · the nation">
+              <span class="source-code">W24.1</span>
+              <span class="source-copy">
+                <strong>The War Was Won Before Hiroshima—and the Generals Who Dropped the Bomb Knew It</strong>
+                <span>Gar Alperovitz · The Nation</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.02_African_Americans_Fought_Freedom_Home.html" data-source-card data-search="w24.2 african americans fought for freedom at home and abroad during world war ii tyler bamford · the national wwii museum">
+              <span class="source-code">W24.2</span>
+              <span class="source-copy">
+                <strong>African Americans Fought for Freedom at Home and Abroad during World War II</strong>
+                <span>Tyler Bamford · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.03_Atomic_Bomb_End_World_War.html" data-source-card data-search="w24.3 the atomic bomb and the end of world war ii: a collection of primary sources william burr · national security archive electronic briefing book">
+              <span class="source-code">W24.3</span>
+              <span class="source-copy">
+                <strong>The Atomic Bomb and the End of World War II: A Collection of Primary Sources</strong>
+                <span>William Burr · National Security Archive Electronic Briefing Book</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.04_Operation_Barbarossa_Biggest_All_Time.html" data-source-card data-search="w24.4 operation barbarossa: the biggest of all time robert citino · the national wwii museum">
+              <span class="source-code">W24.4</span>
+              <span class="source-copy">
+                <strong>Operation Barbarossa: The Biggest of All Time</strong>
+                <span>Robert Citino · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.05_Leadership_Death_Legacy_Franklin_D.html" data-source-card data-search="w24.5 the leadership, death, and legacy of franklin d. roosevelt jeremy collins and nigel hamilton · the national wwii museum">
+              <span class="source-code">W24.5</span>
+              <span class="source-copy">
+                <strong>The Leadership, Death, and Legacy of Franklin D. Roosevelt</strong>
+                <span>Jeremy Collins and Nigel Hamilton · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.06_Lend_Lease_Eastern_Front.html" data-source-card data-search="w24.6 lend-lease to the eastern front john curatola · the national wwii museum">
+              <span class="source-code">W24.6</span>
+              <span class="source-copy">
+                <strong>Lend-Lease to the Eastern Front</strong>
+                <span>John Curatola · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.07_Operation_Gomorrah_First_Firestorms.html" data-source-card data-search="w24.7 operation gomorrah: the first of the firestorms john curatola · the national wwii museum">
+              <span class="source-code">W24.7</span>
+              <span class="source-copy">
+                <strong>Operation Gomorrah: The First of the Firestorms</strong>
+                <span>John Curatola · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.08_Schweinfurt_Regensburg_Raid_August_17.html" data-source-card data-search="w24.8 schweinfurt–regensburg raid: august 17, 1943 john curatola · the national wwii museum">
+              <span class="source-code">W24.8</span>
+              <span class="source-copy">
+                <strong>Schweinfurt–Regensburg Raid: August 17, 1943</strong>
+                <span>John Curatola · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.09_Pearl_Harbor_Back_Door_War.html" data-source-card data-search="w24.9 pearl harbor and the “back door to war” theory robert dallek and britannica editors · encyclopaedia britannica">
+              <span class="source-code">W24.9</span>
+              <span class="source-copy">
+                <strong>Pearl Harbor and the “Back Door to War” Theory</strong>
+                <span>Robert Dallek and Britannica Editors · Encyclopaedia Britannica</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.10_Cold_Blooded_Extermination_Allied_Governments.html" data-source-card data-search="w24.10 ‘cold-blooded extermination’: the allied governments’ december 1942 declaration on the holocaust jason dawsey · the national wwii museum">
+              <span class="source-code">W24.10</span>
+              <span class="source-copy">
+                <strong>‘Cold-Blooded Extermination’: The Allied Governments’ December 1942 Declaration on the Holocaust</strong>
+                <span>Jason Dawsey · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.11_War_Refugee_Board.html" data-source-card data-search="w24.11 the war refugee board rebecca erbelding · the national wwii museum">
+              <span class="source-code">W24.11</span>
+              <span class="source-copy">
+                <strong>The War Refugee Board</strong>
+                <span>Rebecca Erbelding · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.12_Colonel_Charity_Adams_6888th_Commanding.html" data-source-card data-search="w24.12 colonel charity adams: 6888th commanding officer kim guise · the national wwii museum">
+              <span class="source-code">W24.12</span>
+              <span class="source-copy">
+                <strong>Colonel Charity Adams: 6888th Commanding Officer</strong>
+                <span>Kim Guise · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.13_Atomic_Bombs_Soviet_Invasion_What.html" data-source-card data-search="w24.13 the atomic bombs and the soviet invasion: what drove japan’s decision to surrender? tsuyoshi hasegawa · the asia-pacific journal: japan focus">
+              <span class="source-code">W24.13</span>
+              <span class="source-copy">
+                <strong>The Atomic Bombs and the Soviet Invasion: What Drove Japan’s Decision to Surrender?</strong>
+                <span>Tsuyoshi Hasegawa · The Asia-Pacific Journal: Japan Focus</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.14_Maxwell_Opened_My_Eyes_Rosa.html" data-source-card data-search="w24.14 &#x27;maxwell opened my eyes&#x27;: rosa parks, wwii defense worker stephanie hinnershitz · the national wwii museum">
+              <span class="source-code">W24.14</span>
+              <span class="source-copy">
+                <strong>'Maxwell Opened My Eyes': Rosa Parks, WWII Defense Worker</strong>
+                <span>Stephanie Hinnershitz · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.15_Japanese_American_Incarceration_Camps_Coerced.html" data-source-card data-search="w24.15 japanese american incarceration: the camps and coerced labor stephanie hinnershitz · the national wwii museum">
+              <span class="source-code">W24.15</span>
+              <span class="source-copy">
+                <strong>Japanese American Incarceration: The Camps and Coerced Labor</strong>
+                <span>Stephanie Hinnershitz · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.16_Zoot_Suit_Riots_Wartime_Los.html" data-source-card data-search="w24.16 the zoot suit riots and wartime los angeles stephanie hinnershitz · the national wwii museum">
+              <span class="source-code">W24.16</span>
+              <span class="source-copy">
+                <strong>The Zoot Suit Riots and Wartime Los Angeles</strong>
+                <span>Stephanie Hinnershitz · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.17_Rosie_Riveter_Women_War_Workers.html" data-source-card data-search="w24.17 rosie the riveter: women war workers on the wwii home front brittany a. huner · the national wwii museum">
+              <span class="source-code">W24.17</span>
+              <span class="source-copy">
+                <strong>Rosie the Riveter: Women War Workers on the WWII Home Front</strong>
+                <span>Brittany A. Huner · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.18_Future_Womanpower_Women_s_Military.html" data-source-card data-search="w24.18 the future of womanpower: women’s military corps after the war brittany huner · the national wwii museum">
+              <span class="source-code">W24.18</span>
+              <span class="source-copy">
+                <strong>The Future of Womanpower: Women’s Military Corps After the War</strong>
+                <span>Brittany Huner · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.19_Learning_War_Mexican_Americans_Their.html" data-source-card data-search="w24.19 learning from the war: mexican americans and their fight for equality after world war ii lora key · the national wwii museum">
+              <span class="source-code">W24.19</span>
+              <span class="source-copy">
+                <strong>Learning from the War: Mexican Americans and Their Fight for Equality after World War II</strong>
+                <span>Lora Key · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.20_Gordon_Hirabayashi.html" data-source-card data-search="w24.20 gordon hirabayashi cherstin m. lyon · densho encyclopedia">
+              <span class="source-code">W24.20</span>
+              <span class="source-copy">
+                <strong>Gordon Hirabayashi</strong>
+                <span>Cherstin M. Lyon · Densho Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.21_Loyalty_questionnaire.html" data-source-card data-search="w24.21 loyalty questionnaire cherstin m. lyon · densho encyclopedia">
+              <span class="source-code">W24.21</span>
+              <span class="source-copy">
+                <strong>Loyalty questionnaire</strong>
+                <span>Cherstin M. Lyon · Densho Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.22_Stalingrad_Experimentation_Adaptation_Implementation.html" data-source-card data-search="w24.22 stalingrad: experimentation, adaptation, implementation yan mann · the national wwii museum">
+              <span class="source-code">W24.22</span>
+              <span class="source-copy">
+                <strong>Stalingrad: Experimentation, Adaptation, Implementation</strong>
+                <span>Yan Mann · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.23_Heart_Mountain_Fair_Play_Committee.html" data-source-card data-search="w24.23 heart mountain fair play committee eric l. muller · densho encyclopedia">
+              <span class="source-code">W24.23</span>
+              <span class="source-copy">
+                <strong>Heart Mountain Fair Play Committee</strong>
+                <span>Eric L. Muller · Densho Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.24_California_Joint_Immigration_Committee.html" data-source-card data-search="w24.24 california joint immigration committee brian niiya · densho encyclopedia">
+              <span class="source-code">W24.24</span>
+              <span class="source-copy">
+                <strong>California Joint Immigration Committee</strong>
+                <span>Brian Niiya · Densho Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.25_Japanese_American_Creed.html" data-source-card data-search="w24.25 japanese american creed brian niiya · densho encyclopedia">
+              <span class="source-code">W24.25</span>
+              <span class="source-copy">
+                <strong>Japanese American Creed</strong>
+                <span>Brian Niiya · Densho Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.26_Munson_Report.html" data-source-card data-search="w24.26 munson report brian niiya · densho encyclopedia">
+              <span class="source-code">W24.26</span>
+              <span class="source-copy">
+                <strong>Munson Report</strong>
+                <span>Brian Niiya · Densho Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.27_442nd_Regimental_Combat_Team.html" data-source-card data-search="w24.27 442nd regimental combat team franklin odo · densho encyclopedia">
+              <span class="source-code">W24.27</span>
+              <span class="source-copy">
+                <strong>442nd Regimental Combat Team</strong>
+                <span>Franklin Odo · Densho Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.28_Japan_China_United_States_Road.html" data-source-card data-search="w24.28 japan, china, the united states and the road to pearl harbor, 1937–41 office of the historian, u.s. department of state · milestones in the history of u.s. foreign relations">
+              <span class="source-code">W24.28</span>
+              <span class="source-copy">
+                <strong>Japan, China, the United States and the Road to Pearl Harbor, 1937–41</strong>
+                <span>Office of the Historian, U.S. Department of State · Milestones in the History of U.S. Foreign Relations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.29_Lend_Lease_Military_Aid_Allies.html" data-source-card data-search="w24.29 lend-lease and military aid to the allies in the early years of world war ii office of the historian, u.s. department of state · milestones in the history of u.s. foreign relations">
+              <span class="source-code">W24.29</span>
+              <span class="source-copy">
+                <strong>Lend-Lease and Military Aid to the Allies in the Early Years of World War II</strong>
+                <span>Office of the Historian, U.S. Department of State · Milestones in the History of U.S. Foreign Relations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.30_Neutrality_Acts_1930s.html" data-source-card data-search="w24.30 the neutrality acts, 1930s office of the historian, u.s. department of state · milestones in the history of u.s. foreign relations">
+              <span class="source-code">W24.30</span>
+              <span class="source-copy">
+                <strong>The Neutrality Acts, 1930s</strong>
+                <span>Office of the Historian, U.S. Department of State · Milestones in the History of U.S. Foreign Relations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.31_Yalta_Conference_1945.html" data-source-card data-search="w24.31 the yalta conference, 1945 office of the historian, u.s. department of state · milestones in the history of u.s. foreign relations">
+              <span class="source-code">W24.31</span>
+              <span class="source-copy">
+                <strong>The Yalta Conference, 1945</strong>
+                <span>Office of the Historian, U.S. Department of State · Milestones in the History of U.S. Foreign Relations</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.32_Should_Atomic_Bombs_Never_Be.html" data-source-card data-search="w24.32 should atomic bombs never be used as a weapon? dan olmsted · the national wwii museum">
+              <span class="source-code">W24.32</span>
+              <span class="source-copy">
+                <strong>Should Atomic Bombs Never Be Used as a Weapon?</strong>
+                <span>Dan Olmsted · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.33_What_Will_Russia_Do_After.html" data-source-card data-search="w24.33 what will russia do after the war? dan olmsted · the national wwii museum">
+              <span class="source-code">W24.33</span>
+              <span class="source-copy">
+                <strong>What Will Russia Do After the War?</strong>
+                <span>Dan Olmsted · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.34_Latinos_World_War_II_Fighting.html" data-source-card data-search="w24.34 latinos in world war ii: fighting on two fronts lorena oropeza · national park service">
+              <span class="source-code">W24.34</span>
+              <span class="source-copy">
+                <strong>Latinos in World War II: Fighting on Two Fronts</strong>
+                <span>Lorena Oropeza · National Park Service</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.35_Hellfire_Earth_Operation_MEETINGHOUSE.html" data-source-card data-search="w24.35 hellfire on earth: operation meetinghouse seth paridon · the national wwii museum">
+              <span class="source-code">W24.35</span>
+              <span class="source-copy">
+                <strong>Hellfire on Earth: Operation MEETINGHOUSE</strong>
+                <span>Seth Paridon · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.36_Federal_Reserve_s_Role_During.html" data-source-card data-search="w24.36 the federal reserve’s role during wwii gary richardson · federal reserve history">
+              <span class="source-code">W24.36</span>
+              <span class="source-copy">
+                <strong>The Federal Reserve’s Role During WWII</strong>
+                <span>Gary Richardson · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.37_Native_Sons_Golden_West_Native.html" data-source-card data-search="w24.37 native sons of the golden west/native daughters of the golden west greg robinson · densho encyclopedia">
+              <span class="source-code">W24.37</span>
+              <span class="source-copy">
+                <strong>Native Sons of the Golden West/Native Daughters of the Golden West</strong>
+                <span>Greg Robinson · Densho Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.38_Federal_Reserve_s_Interactions_Japanese.html" data-source-card data-search="w24.38 the federal reserve’s interactions with japanese americans during wwii jonathan rose · federal reserve history">
+              <span class="source-code">W24.38</span>
+              <span class="source-copy">
+                <strong>The Federal Reserve’s Interactions with Japanese Americans during WWII</strong>
+                <span>Jonathan Rose · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.39_Second_World_War_Its_Aftermath.html" data-source-card data-search="w24.39 the second world war and its aftermath daniel sanches · federal reserve history">
+              <span class="source-code">W24.39</span>
+              <span class="source-copy">
+                <strong>The Second World War and Its Aftermath</strong>
+                <span>Daniel Sanches · Federal Reserve History</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.40_Tolan_Committee.html" data-source-card data-search="w24.40 tolan committee robert shaffer · densho encyclopedia">
+              <span class="source-code">W24.40</span>
+              <span class="source-copy">
+                <strong>Tolan Committee</strong>
+                <span>Robert Shaffer · Densho Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.41_Tule_Lake.html" data-source-card data-search="w24.41 tule lake barbara takei · densho encyclopedia">
+              <span class="source-code">W24.41</span>
+              <span class="source-copy">
+                <strong>Tule Lake</strong>
+                <span>Barbara Takei · Densho Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.42_American_Economy_during_World_War.html" data-source-card data-search="w24.42 the american economy during world war ii christopher j. tassava · eh.net encyclopedia">
+              <span class="source-code">W24.42</span>
+              <span class="source-copy">
+                <strong>The American Economy during World War II</strong>
+                <span>Christopher J. Tassava · EH.Net Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.43_Atomic_Bombings.html" data-source-card data-search="w24.43 the atomic bombings ian w. toll · the national wwii museum">
+              <span class="source-code">W24.43</span>
+              <span class="source-copy">
+                <strong>The Atomic Bombings</strong>
+                <span>Ian W. Toll · The National WWII Museum</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.44_Charles_Lindbergh_War_Agitators_Speech.html" data-source-card data-search="w24.44 charles lindbergh and the “war agitators” speech united states holocaust memorial museum · holocaust encyclopedia">
+              <span class="source-code">W24.44</span>
+              <span class="source-copy">
+                <strong>Charles Lindbergh and the “War Agitators” Speech</strong>
+                <span>United States Holocaust Memorial Museum · Holocaust Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.45_Riegner_Telegram.html" data-source-card data-search="w24.45 the riegner telegram united states holocaust memorial museum · holocaust encyclopedia">
+              <span class="source-code">W24.45</span>
+              <span class="source-copy">
+                <strong>The Riegner Telegram</strong>
+                <span>United States Holocaust Memorial Museum · Holocaust Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.46_United_States_Holocaust.html" data-source-card data-search="w24.46 the united states and the holocaust united states holocaust memorial museum · holocaust encyclopedia">
+              <span class="source-code">W24.46</span>
+              <span class="source-copy">
+                <strong>The United States and the Holocaust</strong>
+                <span>United States Holocaust Memorial Museum · Holocaust Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.47_United_States_Holocaust_Why_Auschwitz.html" data-source-card data-search="w24.47 the united states and the holocaust: why auschwitz was not bombed united states holocaust memorial museum · holocaust encyclopedia">
+              <span class="source-code">W24.47</span>
+              <span class="source-copy">
+                <strong>The United States and the Holocaust: Why Auschwitz was not Bombed</strong>
+                <span>United States Holocaust Memorial Museum · Holocaust Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.48_More_Than_Meets_Eye_Why.html" data-source-card data-search="w24.48 more than meets the eye: why the allies won (dusty shelves) heather venable · war room">
+              <span class="source-code">W24.48</span>
+              <span class="source-copy">
+                <strong>More Than Meets the Eye: Why the Allies Won (Dusty Shelves)</strong>
+                <span>Heather Venable · War Room</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_6/Sources/Web_Articles/W24.49_Bomb_Didn_t_Beat_Japan.html" data-source-card data-search="w24.49 the bomb didn’t beat japan... stalin did ward wilson · history news network">
+              <span class="source-code">W24.49</span>
+              <span class="source-copy">
+                <strong>The Bomb Didn’t Beat Japan... Stalin Did</strong>
+                <span>Ward Wilson · History News Network</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+
+    <footer class="page-footer">
+      <a class="back-top" href="#top">Back to top ↑</a>
+      <div>Unit 6 · Modern America · History C1002 · Daniel Garza, M.A.</div>
+    </footer>
+  </main>
+  <script>
+    (() => {
+      const input = document.getElementById('source-search');
+      const cards = [...document.querySelectorAll('[data-source-card]')];
+      const sections = [...document.querySelectorAll('[data-chapter-section]')];
+      const resultCount = document.getElementById('result-count');
+      const noResults = document.getElementById('no-results');
+
+      function normalize(value) {
+        return value.toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      }
+
+      function updateCatalog() {
+        const query = normalize(input.value.trim());
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const matches = !query || normalize(card.dataset.search).includes(query);
+          card.hidden = !matches;
+          if (matches) visibleCount += 1;
+        });
+
+        sections.forEach(section => {
+          const visibleInSection = section.querySelectorAll('[data-source-card]:not([hidden])').length;
+          section.querySelector('.chapter-empty').hidden = visibleInSection > 0;
+        });
+
+        resultCount.textContent = `${visibleCount} ${visibleCount === 1 ? 'article' : 'articles'}`;
+        noResults.hidden = visibleCount !== 0;
+      }
+
+      input.addEventListener('input', updateCatalog);
+      input.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && input.value) {
+          input.value = '';
+          updateCatalog();
+        }
+      });
+      updateCatalog();
+    })();
+</script>
+</body>
+</html>
