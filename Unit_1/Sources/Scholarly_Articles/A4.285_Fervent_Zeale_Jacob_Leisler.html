@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The ‘Fervent Zeale’ of Jacob Leisler. Scholarly Article A4.285 for Unit 1: A Not-So-New World.">
+  <meta name="theme-color" content="#1E3A5F">
+  <title>Scholarly Article A4.285 | The ‘Fervent Zeale’ of Jacob Leisler</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Scholarly_Articles/A4.285_Fervent_Zeale_Jacob_Leisler.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #1E3A5F;
+      --forest-mid: #6C7A89;
+      --coral: #C5A009;
+      --coral-light: #F5F1E6;
+      --cream: #FFFFFF;
+      --paper: #FFFFFF;
+      --mint: #FDFCFA;
+      --sage: #DADEE2;
+      --ink: #102034;
+      --muted: #4A5A6E;
+      --shadow: 0 22px 55px rgba(18, 35, 57, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #667381;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(197, 160, 9, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(30, 58, 95, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(18, 35, 57, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(108, 122, 137, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Scholarly Article navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Scholarly_Articles/"><span aria-hidden="true">←</span> Scholarly Article Archive</a>
+      <div class="archive-meta">Unit 1 · Chapter 4 · A4.285</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="A4.285">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#FFFFFF; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Scholarly Article A4.285</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">The ‘Fervent Zeale’ of Jacob Leisler</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">David William Voorhees</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #C5A009; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F5F1E6; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARTICLE</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:13.5px; line-height:1.55;">The ‘Fervent Zeale’ of Jacob Leisler</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">JOURNAL</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:13.5px; line-height:1.55;">The William and Mary Quarterly 51, no. 3 (1994)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">EXCERPT</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:13.5px; line-height:1.55;">Original journal pages 447-448</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">JSTOR</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:13.5px; line-height:1.55;"><a href="https://www.jstor.org/stable/2947438">https://www.jstor.org/stable/2947438</a></td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Selection Overview</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Voorhees opens with Jacob Leisler's execution in 1691 and the lasting division among New Yorkers over the 1689 uprising that followed England's Glorious Revolution. Viewing Leisler through a religious-political lens, he argues that Leisler's actions reflect the struggle of ultraorthodox European Calvinists against what they saw as a threat from James II and Louis XIV to romanize the Atlantic world.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt Format</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The next two pages are exact facsimiles from the supplied article PDF. Original pagination and the author’s note system are preserved.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Facsimile Excerpt</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 24px 0;" class="source-media"><tr>
+  <td style="text-align:center; padding:14px; background-color:#FFFFFF; border:1px solid #F5F1E6;">
+    <img src="images/A4.285_Fervent_Zeale_Jacob_Leisler_page1.png" alt="Original journal page 447." style="max-width:100%; height:auto; display:inline-block;" loading="lazy" decoding="async">
+    <div style="font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12.5px; line-height:1.55; margin-top:10px; text-align:left;">Original journal page 447.</div>
+  </td>
+</tr></table>
+<details class="page-text"><summary>Text of this page (original journal page 447)</summary>
+<p>The "fervent Zeale" of Jacob Leisler
+ David William Voorhees
+ O N Saturday morning, May i6, i69i, the largest crowd ever gathered
+ in New York City stood, rain soaked and weeping, all eyes fixed as
+ a limp body was cut from the gallows and placed on the block.
+ With a clean blow, the executioner's ax cut off the head of the "halfe dead"
+ Jacob Leisler-loyal lieutenant governor or rebel tyrant, depending on one's
+ point of view. Amid the "shrieks of the people," fainting women (some
+ "taken in labour"), and tumultuous jostling for 'pieces of his garments" and
+ strands of his hair, as "for a martyr," the newly arrived and unfortunately
+ named royal governor, Henry Sloughter, worried that his decision to execute
+ Leisler might not, after all, end the "diseases and troubles of this
+ Government."1 Indeed, for years afterward New Yorkers bitterly divided over
+ Leis-ler and the i689 uprising that, in the wake of England's Glorious
+ Revolution, had led to his assumption of power in the provincial
+ government.2
+ Mr. Voorhees is editor of the Papers of Jacob Leisler at New York University. He thanks
+ Patricia U. Bonomi, Dennis J. Maika, and Eric Nooter for thoughtful criticisms. Research for
+ this article was partially funded by the American Philosophical Society, the American Council
+ of Learned Societies, the German Academic Exchange Service (DAAD), the Netherland-
+ America Foundation, and the Huguenot Society of America.
+ I Memoranda of the Rev. Samuel Miller, in William Dunlap, History of the New Netherland,
+ Province of New York, and State of New York, 2 Vols. (New York, 1839-1840), 1, 208-209, 2o0n;
+ Sloughter to Col. Codrington, May i69i, in Edmund B. O'Callaghan, ed., The Documentary
+ History of the State ofNew-York, 4 vols. (Albany, N. Y., 1848-185I), II, 38o.
+ The court sentenced Leisler, with 7 others, to be "hanged by the Neck and being Alive their
+ Bodys be Cutt Downe to the Earth that their Bowells be taken out and they being Alive burnt
+ before their faces that their heads shall be struck off and their Bodys Cutt in four parts";
+ Lawrence H. Leder, ed., "Records of the Trials of Jacob Leisler and His Associates,' New-Yark
+ Historical Society Quarterly, XXXVI (1952), 454. Only Leisler and his son-in-law Jacob Milborne
+ were executed, Sloughter having "respited all the sentence saveing the hanging &amp; Seperateing
+ their heads from their bodys"; draft of a letter to Mr. Blaithwayt, May 169I, in O'Callaghan,
+ ed., Documentary History of New York, Ti, 382. Eyewitnesses recorded that Leisler was "brought
+ to the gallows on a sledge," hanged until he was "halfe dead,' and then beheaded. See N. N. to
+ a Friend in Amsterdam, Aug. 6, i69i, Myers Collection, 26, New York Public Library, New
+ York, N. Y.; Deposition of Magdalena Claes, Aug. 3o, i69i, David Stafmaker Varlet Nots. 4752,
+ Amsterdam Notarial Archives (hereafter cited as Amst. Nots.); Deposition of Thomas Jeffers,
+ Feb. i9, i69112, New-York Historical Society, Collections, I (i868), 32I. Swiss naturalist Pierre
+ Eugene du Simiticre conducted interviews in the 176os with witnesses who suggested that
+ Leisler was unconscious when the ax fell; ibid., 406-407.
+ 2 As late as I892 the Rev. Ashbel Vermilye wrote, "nor has the story yet become a mere fossil,
+ an unknown something raked out of the rubbish of History,' in James Grant Wilson, ed.,
+ Memorial History of the City of New York, 4 vols. (New York, i892-1893), I, 456. For a discussion
+ The William and Mary Quarterly, 3d Series, Vol. LI, No. 3, July I994
+This content downloaded from 
+            132.174.249.220 on Sat, 31 Oct 2026 20:30:00 UTC             
+All use subject to https://about.jstor.org/terms</p></details>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 24px 0;" class="source-media"><tr>
+  <td style="text-align:center; padding:14px; background-color:#FFFFFF; border:1px solid #F5F1E6;">
+    <img src="images/A4.285_Fervent_Zeale_Jacob_Leisler_page2.png" alt="Original journal page 448." style="max-width:100%; height:auto; display:inline-block;" loading="lazy" decoding="async">
+    <div style="font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12.5px; line-height:1.55; margin-top:10px; text-align:left;">Original journal page 448.</div>
+  </td>
+</tr></table>
+<details class="page-text"><summary>Text of this page (original journal page 448)</summary>
+<p>448 WILLIAM AND MARY QUARTERLY
+ Jacob Leisler remains controversial. Eighteenth-century royalists early
+ transformed him into a symbol of colonial rebelliousness as an example of
+ what happened to those who flouted English authority.3 Jacksonian-era
+ democrats inverted the royalist imagery and stimulated interest in Leisler as
+ a "hero of the common man." Charles Fenno Hoffman picked up this
+ theme in a semifictional i844 account of Leisler in Jared Sparks's mass-
+ marketed American Biography series. Hoffman's book became the seminal
+ biography. Although recent accounts note that Leisler's origins were more
+ elevated than the common man portrayal suggests, the debate over his swift
+ rise to power in New York endures.4
+ Conventional interpretations present Leisler as an aberration in the
+ English colonial world. He appears a contentious man, suspected by the
+ English and bitter toward New York's anglicizing Dutch elite. Current
+ studies draw on this portrayal to stress ethnic factors behind Leisler's
+ actions. They see the German-born Leisler as an outsider unable to inte-
+ grate into the new order of postconquest New York. Resentful over his
+ political and economic exclusion and ignorant of English political culture,
+ Leisler used the confusion created by England's revolution to seize control
+ in an attempt to elevate his status.5
+ of the impact of Leisler's administration on colonial politics see Patricia U. Bonomi, A Factious
+ People: Politics and Society in Colonial New York (New York, I971).
+ 3 The royalist interpretation was most forcefully articulated by William Smith, Jr., The
+ History of the Province of New-York: From the First Discovery to the Year I732 (London, 1757), who
+ saw Leisler as "inebriated with his new-gotten power" (p. 96), and culminates with George
+ Chalmers's portrayal of Leisler in Political Annals of the Present United Colonies, from their
+ Settlement to the Peace of i763 (London, 1780; New York, i868), as "a ruined merchant of the
+ lowest education" attacking the bastion of English liberties, Parliament (p. 213). Chalmers's
+ view dominated English historiography throughout the i9th century. See, for example,
+ Jonathan A. Doyle, English Colonies in America, 5 vols. (Oxford, i889-1907), IV, i87-223.
+ 4 Popular Jacksonian literature includes the novel Leisler: or the Rebel and King's Man
+ (Boston, i848) by Joseph Holt Ingraham, the play Old New York: or, Democracy in i689 (New
+ York, i853) by Elizabeth Oakes Smith, and the print of "The Trainbands Signing Leisler's
+ Declaration" (New York, ca. i85o). Hoffman, "Jacob Leisler," in Sparks, ed., The Libra
+ American Biography, vol. 3 (Boston, i844), i81-238. Following Hoffman's portrayal, John
+ Romeyn Brodhead, in History of the State of New York, i664-I691 (New York, 1871), ignored
+ contradictory evidence, and Edwin R. Purple, in his misleadingly titled Genealogical Notes
+ Relating to Lieut. -Gov. Jacob Leisler, and His Family Connections in New York (New York, i877),
+ omitted Leisler's family background altogether. See also Stanley M. Pargellis, "Leisler, Jacob,"
+ Dictionary ofAmerican Biography, XI (New York, 1933), 156-157, and Jerome R. Reich, Leisler's
+ Rebellion: A Study of Democracy in New York, i664-i720 (Chicago, 1953), 59 Critics of the
+ stereotype include Charles W. Baird, "Birth Place and Parentage of Jacob Leisler," Magazine of
+ American History, II (I878), 493-495; Vermilye, The Period of the Leisler Troubles, I688-I692
+ (New York, I89I); Mrs. Schuyler Van Rensselaer, History of the City of New York in the
+ Seventeenth Century, 2 vols. (New York, 1909), II, 369-568; and Leder, "The Unorthodox
+ Domine: Nicholas Van Rensselaer," New York History, XXXV (I954), I68-174.
+ 5 David S. Lovejoy, The Glorious Revolution in America (New York, 1972); Thomas J.
+ Archdeacon, New York City, I664-I7I0: Conquest and Change (Ithaca, N. Y., 1976); Robert C.
+ Ritchie, The Duke's Province: A Study of New York Politics and Society, I664-I69I (Chapel Hill,
+ N. C., 1977); Charles Howard McCormick, Leisler's Rebellion (New York, I989); Donna
+ Merwick, Possessing Albany, I630-I7I0: The Dutch and English Experiences (Cambridge, I990).
+This content downloaded from 
+            132.174.249.220 on Sat, 31 Oct 2026 20:30:00 UTC             
+All use subject to https://about.jstor.org/terms</p></details>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Voorhees, David William. “The ‘Fervent Zeale’ of Jacob Leisler.” <em>The William and Mary Quarterly</em> 51, no. 3 (1994): 447–472. https://www.jstor.org/stable/2947438.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">David William Voorhees, “The ‘Fervent Zeale’ of Jacob Leisler,” <em>The William and Mary Quarterly</em> 51, no. 3 (1994): 447–448, https://www.jstor.org/stable/2947438.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Voorhees, “Fervent Zeale,” 447–448.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Source Verification</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Supplied PDF pages 2-3 correspond to original journal pages 447-448. The pages were inserted directly from the supplied PDF; no transcription or silent omission was introduced.</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #C5A009; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 1 · A NOT-SO-NEW WORLD | HISTORY B17A | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Scholarly_Articles/"><span aria-hidden="true">←</span> Return to the Scholarly Article Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

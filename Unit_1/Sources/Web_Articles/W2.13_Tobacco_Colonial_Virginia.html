@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tobacco in Colonial Virginia. Web Article W2.13 for Unit 1: A Not-So-New World.">
+  <meta name="theme-color" content="#1E3A5F">
+  <title>Web Article W2.13 | Tobacco in Colonial Virginia</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.13_Tobacco_Colonial_Virginia.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #1E3A5F;
+      --forest-mid: #6C7A89;
+      --coral: #C5A009;
+      --coral-light: #F5F1E6;
+      --cream: #FFFFFF;
+      --paper: #FFFFFF;
+      --mint: #FDFCFA;
+      --sage: #DADEE2;
+      --ink: #102034;
+      --muted: #4A5A6E;
+      --shadow: 0 22px 55px rgba(18, 35, 57, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #667381;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(197, 160, 9, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(30, 58, 95, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(18, 35, 57, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(108, 122, 137, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Web Article navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/"><span aria-hidden="true">←</span> Web Article Archive</a>
+      <div class="archive-meta">Unit 1 · Chapter 2 · W2.13</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="W2.13">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#FFFFFF; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Web Article W2.13</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">Tobacco in Colonial Virginia</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Emily Jones Salmon and John Salmon, contributors, Encyclopedia Virginia</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #C5A009; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F5F1E6; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">AUTHOR</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:13.5px; line-height:1.55;">Emily Jones Salmon and John Salmon, contributors, Encyclopedia Virginia</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">WEBSITE</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:13.5px; line-height:1.55;">Encyclopedia Virginia (Virginia Humanities)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">PUBLICATION</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:13.5px; line-height:1.55;">December 7, 2020; last updated February 13, 2025</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Selection Overview</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The Salmons trace tobacco from John Rolfe’s experiments to the spread of planting along Virginia’s rivers, and then explain how overproduction, wars, and credit shaped prices and planters’ fortunes up to the Revolution. They treat tobacco as the foundation of the colony’s economy, labor system, and settlement pattern.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt · 951 words</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:14px; font-weight:700; margin:8px 0 10px 0;" class="document-subheading" role="heading" aria-level="3">Introduction of Tobacco to Virginia</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">In 1611 Rolfe, known as “an ardent smoker,” decided to experiment with cultivating tobacco in Jamestown. The plant had first been brought to England in 1565, perhaps from Florida by Sir John Hawkins, and by the 1610s there was a ready market in Britain for tobacco—especially Spanish tobacco from the West Indies. Rolfe obtained from a shipmaster some seeds from Trinidad and Caracas, Venezuela, and by July 1612 was growing Spanish tobacco, or Nicotiana tabacum—presumably at Jamestown, although the exact site of Rolfe’s crop is unknown. The Virginia Indians also grew and smoked tobacco, so Rolfe could have bought seeds from them, but the native Nicotiana rustica, described by William Strachey as being “poore and weake, and of a byting tast,” did not appeal to English smokers. Moreover, relations between the Indians and the English were unstable at best.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Captain Robert Adams of the Elizabeth delivered samples of Rolfe’s tobacco to England on July 20, 1613. Although Rolfe’s early tobacco was considered by the English to be “excellent in quality,” it still was not comparable to the Spanish product. Nevertheless, Rolfe believed that “no doubt but after a little more tryall and expense in the curing thereof, it will compare with the best in the West Indies.” He was proved correct in 1617, when 20,000 pounds of Virginia tobacco were shipped to England, and in 1618, when that amount doubled.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Rolfe’s successful tobacco experiments inspired others to begin planting available land in Jamestown and in the settlements along the James River. General planting began first at West and Shirley Hundreds and moved east to Point Comfort along a 140-mile stretch of the river. In 1622, despite the Indian uprising that killed about 350 colonists and destroyed several plantations, the settlers’ crop yielded 60,000 pounds. Later in the 1620s, the English took over cleared Indian land and spread tobacco cultivation even farther by using the headright system, in which planters paid to transport people across the Atlantic in exchange for fifty acres of land. The Accomac peninsula was put under cultivation by 1629, when a total of 2,000 acres of tobacco was being grown there.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Around the same time, the wasteful practice of growing three or four crops of tobacco on the same field began to deplete the soil in and around Jamestown. The General Assembly passed a law in 1632 to reduce the number of tobacco plants that each settler could grow to 1,500, and thus the settlers began to seek virgin ground where they could grow even more tobacco on each field. By 1635, tobacco planting had moved away from Jamestown as settlers migrated to lands on the south side of the York River, and by 1648 the planters had received permission from Governor Sir William Berkeley to move north of the York River into the area that had become known as Northumberland.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Relatively cheap labor, a growing population of middling planters, the increasing worldwide demand for tobacco, and a system of regulation designed to maintain the quality of the product all contributed to the creation of a tobacco industry in Virginia, especially in the Piedmont area.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; text-align:center;">[. . .]</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:14px; font-weight:700; margin:8px 0 10px 0;" class="document-subheading" role="heading" aria-level="3">Production and Prices</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">As more Virginians turned to tobacco planting as their main source of income, overproduction drove down the crop’s value. Governor Sir William Berkeley, during his second term in office (1660–1677), attempted to diversify Virginia’s economy. (Earlier efforts to introduce and popularize the cultivation of other potential exports, such as silk, had failed.) Without the Crown’s full support, however, and the support of the House of Burgesses, Berkeley’s efforts failed and tobacco prices continued to fall. At the same time, the First and Second Anglo-Dutch Wars also interfered with the tobacco trade (the Crown had placed restrictions on trading with the Dutch), and prices sank even lower. In 1682, a group of frustrated planters in Gloucester, Middlesex, and New Kent counties cut down tobacco seedlings at several hundred plantations in an attempt to raise prices. The plant-cutting riots were put down and afterward prices rose briefly, but in 1688 a bumper crop of about 18 million pounds of tobacco was produced in Virginia—the highest yield ever—causing prices to fall to a penny a pound.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The end of King William’s War (1688–1697), which had temporarily disrupted British shipping, resulted in an increase in tobacco prices to twenty shillings per hundredweight. Prices remained stable until the outbreak of Queen Anne’s War (1702–1713), which, in addition to another huge tobacco crop, caused prices to drop so much that several thousand hogsheads shipped on consignment in 1704 returned no profits at all. In 1705, prices fell to one-quarter of a penny per pound. These factors, however, failed to convince planters to cut production, and in 1709 an all-time high of 29 million pounds of tobacco was produced. The plant continued to fetch a low price until the inspection act was passed in 1730. A year later the price of tobacco increased to twelve shillings and six pence per hundredweight, even though production rose to 34 million pounds.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Prices remained stable and even increased steadily during the 1740s and 1750s, but by early in the 1760s fluctuations in the British economy had caused the large planters to have trouble meeting their obligations. (The small planters continued to do fairly well.) As the decade went on, the situation changed so that most Virginians, including members of the gentry, were in dire financial straits. Because colonists traded primarily on credit, most Americans were in debt to British merchants. When English banks collapsed in 1772, those merchants pressured Virginia planters to settle their accounts. The historian T. H. Breen contends that this credit crisis of 1772 probably did as much to bring about the American Revolution as the regulation acts of Parliament.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Original Article</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Read the full article at <a href="https://encyclopediavirginia.org/entries/tobacco-in-colonial-virginia/">https://encyclopediavirginia.org/entries/tobacco-in-colonial-virginia/</a>. Text captured October 31, 2026.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Salmon, Emily Jones, and John Salmon. “Tobacco in Colonial Virginia.” <em>Encyclopedia Virginia</em>. Virginia Humanities, December 7, 2020; last updated February 13, 2025. https://encyclopediavirginia.org/entries/tobacco-in-colonial-virginia/.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Emily Jones Salmon and John Salmon, “Tobacco in Colonial Virginia,” <em>Encyclopedia Virginia</em>, Virginia Humanities, December 7, 2020, last updated February 13, 2025, https://encyclopediavirginia.org/entries/tobacco-in-colonial-virginia/.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Salmon and Salmon, “Tobacco.”</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #C5A009; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 1 · A NOT-SO-NEW WORLD | HISTORY B17A | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/"><span aria-hidden="true">←</span> Return to the Web Article Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

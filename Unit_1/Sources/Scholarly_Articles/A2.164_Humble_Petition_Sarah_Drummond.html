@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Humble Petition of Sarah Drummond. Scholarly Article A2.164 for Unit 1: A Not-So-New World.">
+  <meta name="theme-color" content="#1E3A5F">
+  <title>Scholarly Article A2.164 | The Humble Petition of Sarah Drummond</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Scholarly_Articles/A2.164_Humble_Petition_Sarah_Drummond.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #1E3A5F;
+      --forest-mid: #6C7A89;
+      --coral: #C5A009;
+      --coral-light: #F5F1E6;
+      --cream: #FFFFFF;
+      --paper: #FFFFFF;
+      --mint: #FDFCFA;
+      --sage: #DADEE2;
+      --ink: #102034;
+      --muted: #4A5A6E;
+      --shadow: 0 22px 55px rgba(18, 35, 57, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #667381;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(197, 160, 9, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(30, 58, 95, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(18, 35, 57, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(108, 122, 137, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Scholarly Article navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Scholarly_Articles/"><span aria-hidden="true">←</span> Scholarly Article Archive</a>
+      <div class="archive-meta">Unit 1 · Chapter 2 · A2.164</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="A2.164">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#FFFFFF; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Scholarly Article A2.164</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">The Humble Petition of Sarah Drummond</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Wilcomb E. Washburn</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #C5A009; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F5F1E6; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARTICLE</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:13.5px; line-height:1.55;">The Humble Petition of Sarah Drummond</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">JOURNAL</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:13.5px; line-height:1.55;">The William and Mary Quarterly 13, no. 3 (1956)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">EXCERPT</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:13.5px; line-height:1.55;">Original journal pages 354-355</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">JSTOR</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:13.5px; line-height:1.55;"><a href="https://www.jstor.org/stable/1918880">https://www.jstor.org/stable/1918880</a></td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Selection Overview</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Washburn argues that much of Sarah Drummond’s 1677 petition to the Lords of Trade, which historians have accepted almost as readily as the English government did, was false or questionable. He adds that it helped destroy Governor Berkeley’s reputation as a man and a public servant, and that the allegations of cruelty after Bacon’s Rebellion are of minor importance among the charges against Berkeley.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt Format</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The next two pages are exact facsimiles from the supplied article PDF. Original pagination and the author’s note system are preserved.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Facsimile Excerpt</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 24px 0;" class="source-media"><tr>
+  <td style="text-align:center; padding:14px; background-color:#FFFFFF; border:1px solid #F5F1E6;">
+    <img src="images/A2.164_Humble_Petition_Sarah_Drummond_page1.png" alt="Original journal page 354." style="max-width:100%; height:auto; display:inline-block;" loading="lazy" decoding="async">
+    <div style="font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12.5px; line-height:1.55; margin-top:10px; text-align:left;">Original journal page 354.</div>
+  </td>
+</tr></table>
+<details class="page-text"><summary>Text of this page (original journal page 354)</summary>
+<p>The Humble Petition of Sarah Drummond
+ Wilcomb E. Washburn*
+ OA N the twentieth day of January, i677, William Drummond was
+ hanged by the neck until he was dead. The story of his capture
+ and of his acid interview by Governor Berkeley is a well-known
+ episode of Bacon's Rebellion. Sir William Berkeley is supposed to have
+ greeted Drummond, one of Bacon's chief lieutenants, with an exaggerated
+ bow. "Mr. Drumond! You are very welcome, I am more Glad to See
+ you, than any man in Virginea, Mr. Drumond you shall be hang'd in
+ half an hour... ." 1 The deed was not done so quickly, however, or so
+ simply, as these words would suggest. There were certain details to be
+ taken care of, such as a court-martial: nevertheless the deed was done in
+ less than a week, and an important rebel began his ascent from infamy to
+ martyrdom.
+ Several months after the execution, Sarah Drummond, relict of the
+ hanged rebel, boarded ship for England to seek redress from His Majesty's
+ government. Sarah, like her husband, had been an active supporter of the
+ rebellion. "The child that is unborn," she is reported to have said, "shall
+ have cause to rejoice for the good that will come by the rising of the
+ country." When reminded of the military power that might come to
+ quash the uprising even if the rebels were victorious against Berkeley,
+ Sarah reputedly picked up a small stick from the ground and broke it in
+ two, saying, "I fear the power of England no more than a broken straw."2
+ * Mr. Washburn is research associate at the Institute of Early American History
+ and Culture. While in England in I953-54 he exploited, for the first time on the
+ subject of Bacon's Rebellion, the Henry Coventry Papers at Longleat House. He
+ wishes to express his gratitude to the Marquis of Bath for permission to quote from
+ these papers. Mr. Washburn is editing a volume of documents on Bacon's Rebellion,
+ taken principally from the Coventry Papers, for the Virginia Historical Society.
+ 1 T. M. [Thomas Mathew], "The Beginning, Progress, and Conclusion of Bacon's
+ Rebellion, i675-i676" [1705], Narratives of the Insurrections, i675-i690, ed. Charles
+ M. Andrews, Original Narratives of Early American History Series (New York,
+ I915), p. 38.
+ 2 These remarks were copied from a manuscript labeled
+ i682" in the office of the General Court at Richmond by George Bancroft and quoted
+ in his History of the United States, II (Boston, I856), 224-225. Although Bancroft
+This content downloaded from 
+            132.174.249.220 on Sun, 01 Nov 2026 06:35:15 UTC             
+All use subject to https://about.jstor.org/terms</p></details>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 24px 0;" class="source-media"><tr>
+  <td style="text-align:center; padding:14px; background-color:#FFFFFF; border:1px solid #F5F1E6;">
+    <img src="images/A2.164_Humble_Petition_Sarah_Drummond_page2.png" alt="Original journal page 355." style="max-width:100%; height:auto; display:inline-block;" loading="lazy" decoding="async">
+    <div style="font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12.5px; line-height:1.55; margin-top:10px; text-align:left;">Original journal page 355.</div>
+  </td>
+</tr></table>
+<details class="page-text"><summary>Text of this page (original journal page 355)</summary>
+<p>THE HUMBLE PETITION OF SARAH DRUMMOND 355
+ It was she, it is said, who called James City, seat of royal authority in
+ Virginia, a "little sodom."8
+ In England, Mrs. Drummond presented a petition to the Lords Com-
+ mittee for Trade and Plantations, and through them, to the King whose
+ power she so despised. Neither the Lords nor the King seriously ques-
+ tioned its truth at the time, and the King's subsequent order to the Vir-
+ ginia government justified Sarah's claims. Historians of Bacon's Rebellion
+ have accepted the truth of her petition almost as readily as did the govern-
+ ment of England, and they have used the incident to confirm their belief in
+ the alleged "cruelty" and "terror" exercised by Berkeley in putting down the
+ rebellion. John Daly Burk asserted that her case, "for injustice, has been
+ seldom exceeded."4 Sir William Berkeley could not defend himself. He
+ had died on July 9, three months before the case was heard.
+ Sarah Drummond's allegations are really of minor importance in the
+ total list of chicaneries charged to the aged and loyal governor. Yet the
+ story of her petition is of interest because it illustrates the difficulties of
+ administering a distant dependency in days when decisions were made on
+ the basis of scanty, and frequently untruthful, information. Mrs. Drum-
+ mond's petition follows:
+ To the Right Honorable the Lords Committee for Trade and Plantations.
+ The humble Petition of Sarah Drummond the Wife and Relict of
+ William Drummond late Inhabitant in his Majesties Plantation in Virginia.
+ Most humbly sheweth,
+ That Your Petitioners said husband was, after the late rebellion there,
+ taken, stript and brought before Sir W. Berkley his Majesties then Gov-
+ does not mention the context, they are evidently taken from the record of the post-
+ rebellion lawsuit between Sarah Drummond and Lady Berkeley. William Waller
+ Hening, in his The Statutes at Large ... A Collection of All the Laws of Virginia
+ (Richmond [etc.], i8I9-I823), II, 558, noted that the lawsuit "discloses many curious
+ facts in relation to those times" but regretted that "want of room prevents its inser-
+ tion entire." The remarks quoted are probably Sarah Drummond's as reported by
+ some witness. The original document seems to have been destroyed in the Richmond
+ fire of i865, and Bancroft's notes are not among his notebooks, now in the New
+ York Public Library, or in Bancroft deposits in other libraries.
+ 3 From a conversation between Mrs. Drummond and William Hunt, reported by
+ Theophilus Hone in the inventory of rebels' estates made by Hone and George Jordan
+ after the rebellion. The original report is in Colonial Office Series 5, Vol. I37I, Public
+ Record Office, London (hereafter cited as C. 0. 5/I37i, etc.). A photostatic transcript
+ of the volume is in the Manuscripts Division of the Library of Congress. The remark
+ is on p. 440.
+ 4John Daly Burk, The History of Virginia (Petersburg, Va., 1804-1805), II, 20I.
+This content downloaded from 
+            132.174.249.220 on Sun, 01 Nov 2026 06:35:15 UTC             
+All use subject to https://about.jstor.org/terms</p></details>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Washburn, Wilcomb E. “The Humble Petition of Sarah Drummond.” <em>The William and Mary Quarterly</em> 13, no. 3 (1956): 354–375. https://www.jstor.org/stable/1918880.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Wilcomb E. Washburn, “The Humble Petition of Sarah Drummond,” <em>The William and Mary Quarterly</em> 13, no. 3 (1956): 354–355, https://www.jstor.org/stable/1918880.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Washburn, “Humble Petition,” 354–355.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Source Verification</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Supplied PDF pages 2-3 correspond to original journal pages 354-355. The pages were inserted directly from the supplied PDF; no transcription or silent omission was introduced.</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #C5A009; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 1 · A NOT-SO-NEW WORLD | HISTORY B17A | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Scholarly_Articles/"><span aria-hidden="true">←</span> Return to the Scholarly Article Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

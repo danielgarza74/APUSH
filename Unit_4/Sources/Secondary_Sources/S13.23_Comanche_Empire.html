@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Comanche Empire. Secondary Source S13.23 for Unit 4: A House Divided and Rebuilt.">
+  <meta name="theme-color" content="#5A4A17">
+  <title>Secondary Source S13.23 | The Comanche Empire</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Secondary_Sources/S13.23_Comanche_Empire.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #5A4A17;
+      --forest-mid: #806A24;
+      --coral: #4E6373;
+      --coral-light: #93A7B5;
+      --cream: #F8F5E9;
+      --paper: #FDFBF5;
+      --mint: #EEF1F3;
+      --sage: #D6DCE0;
+      --ink: #3F3410;
+      --muted: #6B6448;
+      --shadow: 0 22px 55px rgba(48, 40, 12, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #6E5A1E;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(78, 99, 115, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(90, 74, 23, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(48, 40, 12, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(140, 115, 39, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+    /* Unit 4 published look: blue-gray info panel (matches the published Primary, Scholarly and Web readers) */
+    .context-grid { background: #93A7B5 !important; border-color: #93A7B5; border-left-color: var(--coral); }
+    .context-grid td:first-child, .context-grid td:last-child { color: #1F2A31 !important; }
+    .context-grid tr + tr td { border-top-color: rgba(255,255,255,.35); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Secondary Source navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Secondary_Sources/"><span aria-hidden="true">←</span> Secondary Source Archive</a>
+      <div class="archive-meta">Unit 4 · Chapter 13 · S13.23</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="S13.23">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F8F5E9; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Secondary Source S13.23</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">The Comanche Empire</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Pekka Hämäläinen</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #4E6373; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#93A7B5; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">SELECTION</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:13.5px; line-height:1.55;">Conclusion, “The Shape of Power”</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">SOURCE LOCATOR</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#5A4A17; font-size:13.5px; line-height:1.55;">pp. 358–360 · Yale University Press, 2008.</td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:17px; font-weight:700; border-bottom:2px solid #4E6373; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">This sweeping reorientation was not a new development but the intensification of a much older one. New Mexico had gravitated toward the east, toward the dynamic economic and political power of Comanchería, since the late eighteenth century when Bourbon officials opened the province for Comanches’ commerce and, as it turned out, their political and cultural influence. By the time the United States began to exert its economic influence over New Mexico in the early 1820s, its inhabitants had already began to question their loyalties to Mexico. If Mexico City was losing its hold on New Mexico by the time of Mexico’s independence, to all intents and purposes it lost Texas in 1825, when the state of Coahuila y Texas opened its borders to American immigrants. That momentous decision was influenced by several factors, but key among them was an acute need to recolonize the border regions of Texas that had become almost vacant under Comanche raiding during the early nineteenth century. It was a desperate act aimed at turning the westering Americans from imperial forerunners into Mexican subjects and shielding the decaying frontier against Comanche violence, and it failed on both accounts. Texas was flooded by Anglo-Americans who stayed clear of Comanche raiding routes but used Mexico’s failure to suppress the raids as a political pretext for declaring the department an independent republic. Mexico City’s failure to restrain Comanches also thwarted its hopes to reconquer Texas. During the years following the Texas revolt, Comanches extended their stock-and-slave raiding operations deep into northern Mexico, wreaking havoc in seven departments. Not only did the recapture of Texas become impossible, but the entire northern part of the nation began to slip out of Mexico City’s grip. Citizens across all the north were perturbed by the federal government’s inability—and apparent unwillingness—to curb Comanche raids, and they grew increasingly alienated from Mexico City and its nation-building project. The linkages between American and Comanche expansions climaxed in the Mexican-American War. When the U.S. Army marched south of the Río Grande in 1846, Comanches had already turned vast segments of Mexico’s heartland into an economically underdeveloped, politically fragmented, and psychologically shattered world that was ripe for conquest by Americans, who, in a sense, came to occupy what was a vanquished hinterland of Greater Comanchería. In northern Mexico, U.S. imperialism was the direct heir to Comanche imperialism.<sup>17</sup> The notion that Comanche imperialism paved the way for the United States’ takeover of the Southwest forces us not only to rethink the process of American expansion but also to reconsider what that expansion meant and how it should be understood. Recent debates over the roots and realities of the American empire have revealed a disconcerting tendency in the national historiography. Resuscitating once more the enduring fallacy of American exceptionalism, many prominent historians have insisted that the nineteenth-century United States was not an imperial power. The arguments for the position are many, but they all rest on the dogged belief that the United States expanded across a continent so sparsely populated that the land was essentially free for the taking. Westering Americans, the argument goes, did not face densely populated and highly organized indigenous societies, which in turn meant that their expansion was not a case of imperialism; it was an occupation of a semi-virgin land. America’s westward expansion was punctuated by instances of overt imperialism—the Mexican-American War being the most blatant one—but those instances did not involve Native Americans.<sup>18</sup> This mainstream interpretation is diametrically at odds with the vision of this book. When Americans invaded the Mexican North with such brutal efficiency in 1846, they did not just clash with the Mexican nation: they plunged into an old, complex, and still evolving history of indigenous imperialism. The legacy of the Comanche empire is imprinted on the modern-day political map of North America, but it has also left its mark on North America’s ethnic landscape. The Comanche slave complex—the capture, assimilation, commodification, and ransoming of thousands of northern Mexicans in the nineteenth century—profoundly shaped the process of mestizaje, the mixing and reconfiguration of racial identities, in what now is the U.S. Southwest. Comanche captivity, it has been argued, had a decisive impact on the articulations of race, nation, and citizenship in the Southwest by generating transnational networks of adoption and affiliation, by moving captives between supposedly fixed racial categories, and by creating fragmented and conflicting ethnic identifications. Comanches’ cross-border captive traffic, which continued into the 1870s, framed official norteamericano discourses about the place that Mexicans would occupy in the U.S. Southwest, promoting the idea of a distinctive transborder Mexican identity. In the minds of U.S. policymakers who came in direct contact with the human products of Comanche captivity—Mexicans who appeared indistinguishable from Comanches, Mexicans who were neither white nor Indian, Mexicans who refused to leave their Indian masters and seemed to conspire with Comanches against U.S. authority—Mexicanness became entwined with Indianness and thus incompatible with Anglo-Americanness and U.S. citizenship. Comanchería and its slave system, in other words, formed a crucible which forged Anglo-American understandings of Mexicans as a mixed, stigmatized, and subordinated class.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">To subvert such Anglo-American constructions of racial mixing and impurity, many Chicanas and Chicanos in the U.S. Southwest have attempted to reclaim for themselves a Spanish identity, but some, mostly working-class New Mexican mestizos, have actively embraced Comanchería-derived models of identity. They have memorialized their historical connections to Comanchería in artwork, clothing, and oral traditions, and they reenact those linkages in popular local performances of “Los Comanches.” In doing so, they disassociate themselves from the privileged coalition of Anglo- and Spanish Americans, undermine the hegemonic pretensions of that coalition, and promote a distinct brand Chicana/o consciousness that traces its roots to the ethnic melting pot that was Comanchería.<sup>19</sup> Their struggle for identity evokes the multilayered, often painful history of the North American Southwest and northern Mexico, a history that hangs suspended between the Comanche empire of the past and the Anglo-American empire of the present.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Beyond illuminating colonial dynamics and Indian-white relations in a particular place, in this book I have attempted to expand our understanding of the role of indigenous peoples in the making, and unmaking, of colonial worlds. As such it is fundamentally a study of indigenous agency—its character, contours, and capacity to influence large-scale historical processes. But human agency works in two directions, for the very achievements that make societies wealthy and powerful often lead or contribute to their downfall. Accordingly, while I set out to show in this book how the interplay between the Comanches’ actions and external conditions made them the dominant people in the colonial Southwest, in the end it had to become an examination of how that interplay contributed to the collapse of the Comanche empire. To acknowledge that Comanches were complicit in their own demise is not to downplay the destructiveness of the United States’ political, economic, and military expansion into the Southwest after 1850, but rather to recognize the full potential of indigenous agency, its positive, negative, predictable, and unpredictable dimensions. To paraphrase one prominent historian, recognizing human fallibility in the actions of Native peoples is the basis for writing compassionate Indian history.<sup>20</sup> Comanches spent their tenure on the southern plains and in the Southwest as an imperial power, and they also fell like one. Like most empires, the Comanche empire carried within itself the seeds of its destruction; its collapse, at least at the beginning, came from within. In their drive to maintain a large population base and control commerce in the midcontinent, Comanches fashioned a prodigious production system that eventually collapsed under its own bloated size. What had begun as a self-sustaining, ecologically stable economy evolved into</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:17px; font-weight:700; border-bottom:2px solid #4E6373; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Author’s Notes</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">17. Two profoundly important studies have retold the story of the U.S. expansion into the Southwest through the reactions and choices of local communities, thus challenging the conventional top-down models and showing how the identity choices, loyalty decisions, and active and passive resistance of ordinary frontier residents influenced the process of annexation. See David J. Weber, The Mexican Frontier, 1821–1846: The American Southwest under Mexico (Albuquerque: University of New Mexico Press, 1982); and Andrés Reséndez, Changing National Identities at the Frontier: Texas and New Mexico, 1800–1850 (New York: Cambridge University Press, 2005). The role of Native peoples in the Americanization of the Southwest, by contrast, has received only meager coverage.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">18. The fallacy of thinly occupied, semi-empty North America informs even Niall Ferguson’s much-debated Colossus, which is explicitly framed as an antidote to the myth of American exceptionalism. See Niall Ferguson, Colossus: The Rise and Fall of the American Empire (London: Penguin, 2004), esp. 35–41.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">19. For a brilliant analysis of these dynamics, see Curtis Marez, “Signifying Spain, Becoming Comanche, Making Mexicans: Indian Captivity and the History of Chicana/o Performance,” American Quarterly 53 (June 2001): 267–307.</p>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">20. Dan Flores, The Natural West: Environmental History of the Great Plains and Rocky Mountains (Norman: University of Oklahoma Press, 2001), 53. The still persisting academic and nonacademic tendency to gloss over the negative effects of Native Americans’ actions on their environments and economies generates similar distortions as the tendency to depict the Indians as victimized innocents of European aggression. By granting Indians only partial agency, both lines of reasoning oversimplify the historical experience of American Indians and, by extension, deny their histories and cultures. For a similar argument, see Richard White and William Cronon, “Ecological Change and Indian-White Relations,” in Handbook of North American Indians, vol. 4, History of Indian-White Relations, ed. Wilcomb E. Washburn (Washington, D.C.: Smithsonian Institution, 1989), 417.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:17px; font-weight:700; border-bottom:2px solid #4E6373; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Hämäläinen, Pekka. <em>The Comanche Empire</em>. New Haven: Yale University Press, 2008.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Pekka Hämäläinen, <em>The Comanche Empire</em> (New Haven: Yale University Press, 2008), 358–60.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#5A4A17; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Hämäläinen, <em>The Comanche Empire</em>, 358–60.</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #4E6373; font-family:Arial, Helvetica, sans-serif; color:#8C7327; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 4 · A HOUSE DIVIDED AND REBUILT | HISTORY C1001 | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_4/Sources/Secondary_Sources/"><span aria-hidden="true">←</span> Return to the Secondary Source Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

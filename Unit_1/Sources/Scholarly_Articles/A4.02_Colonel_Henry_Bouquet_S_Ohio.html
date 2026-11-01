@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Colonel Henry Bouquet’s Ohio Expedition in 1764. Scholarly Article A4.2 for Unit 1: A Not-So-New World.">
+  <meta name="theme-color" content="#1E3A5F">
+  <title>Scholarly Article A4.2 | Colonel Henry Bouquet’s Ohio Expedition in 1764</title>
+  <link rel="canonical" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Scholarly_Articles/A4.02_Colonel_Henry_Bouquet_S_Ohio.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #1E3A5F;
+      --forest-mid: #6C7A89;
+      --coral: #C5A009;
+      --coral-light: #F5F1E6;
+      --cream: #FFFFFF;
+      --paper: #FFFFFF;
+      --mint: #FDFCFA;
+      --sage: #DADEE2;
+      --ink: #102034;
+      --muted: #4A5A6E;
+      --shadow: 0 22px 55px rgba(18, 35, 57, .14);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #667381;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.65;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 94% 4%, rgba(197, 160, 9, .12), transparent 25rem),
+        linear-gradient(145deg, rgba(255,255,255,.55), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      color: var(--paper);
+      background: rgba(30, 58, 95, .98);
+      border-bottom: 4px solid var(--coral);
+      box-shadow: 0 4px 18px rgba(18, 35, 57, .18);
+    }
+    .archive-bar__inner {
+      width: min(1120px, calc(100% - 2rem));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--paper);
+      font: 700 .72rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .archive-link span { color: var(--coral-light); font-size: 1.1rem; }
+    .archive-link:hover { color: var(--coral-light); }
+    .archive-meta {
+      color: var(--sage);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .reading-progress {
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      height: 4px;
+      background: var(--coral-light);
+      transform-origin: left center;
+    }
+
+    .document-shell {
+      position: relative;
+      width: min(940px, calc(100% - 2rem));
+      margin: clamp(1.5rem, 4vw, 3.5rem) auto 4rem;
+      overflow: hidden;
+      background: var(--paper);
+      border: 1px solid var(--sage);
+      border-top: 7px solid var(--coral);
+      box-shadow: var(--shadow);
+    }
+    .document-shell::before {
+      content: attr(data-code);
+      position: absolute;
+      top: 2rem;
+      right: 1.5rem;
+      color: rgba(108, 122, 137, .055);
+      font: 700 clamp(5rem, 15vw, 10rem)/.8 var(--heading);
+      pointer-events: none;
+    }
+    .legacy-source {
+      width: 100% !important;
+      max-width: none !important;
+      margin: 0 !important;
+      background: transparent !important;
+      border-collapse: collapse;
+    }
+    .source-content {
+      position: relative;
+      padding: clamp(2.25rem, 7vw, 5rem) !important;
+    }
+    .source-kicker {
+      position: relative;
+      margin: 0 0 1rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .18em !important;
+    }
+    .source-title {
+      position: relative;
+      max-width: 760px;
+      margin: 0 0 1rem !important;
+      color: var(--forest) !important;
+      font: 600 clamp(2.35rem, 6vw, 4.45rem)/1.04 var(--heading) !important;
+      letter-spacing: -.025em;
+      text-wrap: balance;
+    }
+    .source-byline {
+      position: relative;
+      max-width: 720px;
+      margin: 0 0 2.1rem !important;
+      color: var(--forest-mid) !important;
+      font: 600 clamp(1rem, 2vw, 1.15rem)/1.55 var(--body) !important;
+      font-style: italic !important;
+    }
+    .title-rule {
+      margin: 0 0 2rem !important;
+    }
+    .title-rule td { border-top: 1px solid var(--coral) !important; }
+
+    .context-grid {
+      margin: 0 0 3rem !important;
+      overflow: hidden;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+      border-left: 5px solid var(--coral);
+    }
+    .context-grid td:first-child {
+      width: 23% !important;
+      padding: 1rem 1rem .75rem 1.2rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .65rem var(--ui) !important;
+      letter-spacing: .14em !important;
+    }
+    .context-grid td:last-child {
+      padding: 1rem 1.25rem .75rem .75rem !important;
+      color: var(--ink) !important;
+      font: 600 .86rem/1.65 var(--ui) !important;
+    }
+    .context-grid tr + tr td { border-top: 1px solid var(--sage); }
+
+    .section-heading {
+      display: block !important;
+      width: fit-content;
+      margin: 3.6rem 0 1.4rem !important;
+      padding: .45rem 0 .55rem !important;
+      color: var(--forest) !important;
+      border-top: 4px solid var(--coral);
+      border-bottom: 1px solid var(--sage) !important;
+      font: 700 clamp(1rem, 2vw, 1.25rem) var(--heading) !important;
+      letter-spacing: .04em;
+    }
+    .section-spacer { height: 0 !important; }
+    .citation-label {
+      max-width: 67ch;
+      margin: 1.3rem auto .4rem !important;
+      color: var(--coral-text) !important;
+      font: 800 .7rem var(--ui) !important;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .document-subheading {
+      max-width: 67ch;
+      margin: 1.8rem auto .65rem !important;
+      color: var(--forest-mid) !important;
+      font: 700 .84rem/1.5 var(--ui) !important;
+      letter-spacing: .035em;
+    }
+    .legacy-source p {
+      max-width: 67ch;
+      margin: 0 auto 1.05em !important;
+      color: var(--ink) !important;
+      font: 500 clamp(1.08rem, 1.8vw, 1.22rem)/1.78 var(--body) !important;
+    }
+    .legacy-source p a {
+      color: var(--forest-mid) !important;
+      text-decoration-color: var(--coral-light) !important;
+      text-underline-offset: .18em;
+      word-break: break-word !important;
+    }
+    .legacy-source p a:hover { color: var(--coral-text) !important; }
+
+    .editorial-note {
+      max-width: 67ch;
+      margin: 1.4rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .editorial-note td {
+      padding: 1rem 1.2rem !important;
+      color: var(--forest-mid) !important;
+      border-left: 4px solid var(--coral) !important;
+      font: 600 .79rem/1.65 var(--ui) !important;
+    }
+    .source-media {
+      max-width: 67ch;
+      margin: 1.25rem auto 2.5rem !important;
+      background: var(--mint) !important;
+      border: 1px solid var(--sage);
+    }
+    .source-media td { padding: 1rem !important; }
+    .source-media img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+    .source-media td[style*="font-family"] {
+      color: var(--muted) !important;
+      font: 600 .72rem/1.55 var(--ui) !important;
+    }
+    .source-footer { padding: 0 clamp(2.25rem, 7vw, 5rem) 2rem !important; }
+    .source-imprint { margin-top: 1rem !important; }
+    .source-imprint td {
+      padding-top: 1rem !important;
+      color: var(--muted) !important;
+      border-top: 1px solid var(--sage) !important;
+      font: 700 .63rem var(--ui) !important;
+      letter-spacing: .12em !important;
+    }
+    .document-actions {
+      width: min(940px, calc(100% - 2rem));
+      margin: -2rem auto 4rem;
+      display: flex;
+      justify-content: center;
+    }
+    .document-actions a {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .8rem 1.1rem;
+      color: var(--forest);
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      font: 800 .68rem var(--ui);
+      letter-spacing: .12em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .document-actions a:hover { border-color: var(--coral); color: var(--coral-text); }
+
+    @media (max-width: 680px) {
+      .archive-bar__inner { min-height: 58px; }
+      .archive-meta { display: none; }
+      .document-shell { width: calc(100% - 1rem); margin-top: .75rem; }
+      .source-content { padding: 2rem 1.25rem !important; }
+      .document-shell::before { top: 1.2rem; right: .35rem; }
+      .source-title { font-size: clamp(2rem, 10vw, 2.85rem) !important; }
+      .context-grid tr, .context-grid td { display: block; width: 100% !important; }
+      .context-grid td:first-child { padding-bottom: .25rem !important; }
+      .context-grid td:last-child { padding: 0 1.2rem 1rem !important; }
+      .context-grid tr + tr td:last-child { border-top: 0; }
+      .source-footer { padding: 0 1.25rem 1.5rem !important; }
+      .document-actions { margin-top: -2.4rem; }
+    }
+
+    @media print {
+      @page { margin: .65in; }
+      body { background: #fff; font-size: 11pt; }
+      body::before, .archive-bar, .skip-link, .document-actions, .document-shell::before { display: none !important; }
+      .document-shell { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      .source-content { padding: 0 !important; }
+      .legacy-source p { max-width: none; font-size: 11pt !important; line-height: 1.5 !important; }
+      .context-grid, .editorial-note { break-inside: avoid; }
+      .source-footer { padding: 1rem 0 0 !important; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+  
+    .source-table { max-width: 67ch; margin: 0 auto 1.05em; border-collapse: collapse; font: 500 1.1rem/1.6 var(--body); color: var(--ink); }
+    .source-table td { padding: .2rem .9rem .2rem 0; border-bottom: 1px dotted var(--sage); }
+    .source-table td:last-child { text-align: right; }
+    .legacy-source blockquote {
+      max-width: 62ch; margin: 0 auto 1.2em !important; padding: .9rem 1.2rem;
+      background: var(--mint); border-left: 4px solid var(--coral);
+    }
+    .legacy-source blockquote p { max-width: none; margin: 0 0 .6em !important; }
+    .legacy-source blockquote p:last-child { margin-bottom: 0 !important; }
+    .page-text { max-width: 67ch; margin: -1rem auto 2.2rem; border: 1px solid var(--sage); background: var(--paper); }
+    .page-text summary { cursor: pointer; padding: .7rem 1rem; color: var(--forest-mid); font: 700 .72rem var(--ui); letter-spacing: .06em; text-transform: uppercase; }
+    .page-text[open] summary { border-bottom: 1px solid var(--sage); }
+    .page-text p { margin: .9rem 1.1rem !important; font: 500 1rem/1.6 var(--body) !important; white-space: pre-line; }
+    .legacy-source sup { font: 700 .68em var(--ui); line-height: 0; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <nav class="archive-bar" aria-label="Scholarly Article navigation">
+    <div class="archive-bar__inner">
+      <a class="archive-link" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Scholarly_Articles/"><span aria-hidden="true">←</span> Scholarly Article Archive</a>
+      <div class="archive-meta">Unit 1 · Chapter 4 · A4.2</div>
+    </div>
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+  </nav>
+  <main class="document-shell" id="document" data-code="A4.2">
+    <article aria-labelledby="source-title">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#FFFFFF; max-width:820px; margin:0 auto;" class="legacy-source">
+  <tr><td style="padding:32px 36px 20px 36px;" class="source-content">
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:13px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px;" class="source-kicker">Scholarly Article A4.2</div>
+<div style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:30px; font-weight:700; line-height:1.2; margin-bottom:8px;" class="source-title" id="source-title" role="heading" aria-level="1">Colonel Henry Bouquet’s Ohio Expedition in 1764</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:14px; font-weight:700; line-height:1.5; margin-bottom:16px;" class="source-byline">Paul K. Adams</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:20px;" class="title-rule"><tr><td style="border-top:4px solid #C5A009; font-size:1px; line-height:1px;">&nbsp;</td></tr></table>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#F5F1E6; border-collapse:collapse; margin-bottom:26px;" class="context-grid">
+  <tr>
+    <td valign="top" style="width:22%; padding:12px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">ARTICLE</td>
+    <td valign="top" style="padding:12px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:13.5px; line-height:1.55;">Colonel Henry Bouquet’s Ohio Expedition in 1764</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">JOURNAL</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:13.5px; line-height:1.55;">Pennsylvania History: A Journal of Mid-Atlantic Studies 40, no. 2 (1973)</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 8px 14px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">EXCERPT</td>
+    <td valign="top" style="padding:8px 14px 8px 12px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:13.5px; line-height:1.55;">Original journal pages 139-140</td>
+  </tr>
+  <tr>
+    <td valign="top" style="width:22%; padding:8px 12px 12px 14px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase;">JSTOR</td>
+    <td valign="top" style="padding:8px 14px 12px 12px; font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:13.5px; line-height:1.55;"><a href="https://www.jstor.org/stable/27772109">https://www.jstor.org/stable/27772109</a></td>
+  </tr>
+</table>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Selection Overview</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Adams describes Colonel Henry Bouquet’s 1764 expedition into the Ohio country as one of the last steps in curbing the Indian forces once allied with the French. He treats Pontiac’s war of 1763 as a spur to frontier attacks and concludes that Bouquet left a more peaceful frontier, with Indians submissive to Sir William Johnson’s terms, and that Pontiac’s Conspiracy had been broken.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Excerpt Format</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">The next two pages are exact facsimiles from the supplied article PDF. Original pagination and the author’s note system are preserved.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Facsimile Excerpt</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 24px 0;" class="source-media"><tr>
+  <td style="text-align:center; padding:14px; background-color:#FFFFFF; border:1px solid #F5F1E6;">
+    <img src="images/A4.02_Colonel_Henry_Bouquet_S_Ohio_page1.png" alt="Original journal page 139." style="max-width:100%; height:auto; display:inline-block;" loading="lazy" decoding="async">
+    <div style="font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12.5px; line-height:1.55; margin-top:10px; text-align:left;">Original journal page 139.</div>
+  </td>
+</tr></table>
+<details class="page-text"><summary>Text of this page (original journal page 139)</summary>
+<p>COLONEL HENRY BOUQUET'S OHIO
+ EXPEDITION IN 1764
+ By Paul K. Adams*
+ THE Treaty of Paris of 1763 was a turning point in American
+ history. In its wake came the gradual demise of the Indian
+ menace on the Northwest Frontier. One of the last steps curb
+ ing these Indian forces who had previously been allied with
+ the French was taken in October, 1764. A significant figure
+ in this work was a Swiss mercenary of French extraction who
+ was employed by the British as an army officer, Colonel Henry
+ Bouquet.
+ There had been a prior attempt to deal with the Indians in
+ the Northwest area. Colonel John Bradstreet had gone as far
+ as Detroit and had been involved in unsuccessful negotiations.
+ Therefore, the settlements on the western frontier were still in
+ a precarious position. The Indians were determined to halt white
+ incursions upon their lands and drive them back to the sea.
+ Pontiacs war in 1763 gave the tribes a renewed spirit in that
+ direction. Attacks on frontier settlements continued to be fre
+ quent and devastating.
+ The opinion of informed members of the British forces and
+ their desire to push the fight to the Indians was summed up by
+ Colonel John Reid in a letter to Colonel Henry Bouquet on
+ August 25, 1764:
+ ... I have heard Mr. Potts mention the principal
+ articles of peace, which Mr. Bradstreet has made with
+ the Indians, but I don't find that the Ringleaders of all
+ these inhuman Barbaritys are to be deliver'd up to us,
+ or any Satisfaction given on that Account. I hope no
+ such Peace Will be ratified, which cannot be of long
+ Duration: but that we shall Still march into their Coun
+ try, and make such examples of these inhuman Monsters,
+ as will make their Posterity tremble to think of. . . /
+ *The author is an Assistant Professor of Historv at Gannon College.
+ 1 Colonel J. Reid to Colonel EL Bouquet, August 25, 1764, The Papers of
+ Colonel Henry Bouquet (Harrisburg, 1942), eds. S. Stevens and D. H.
+ Kent, II, 94-95.
+ 139
+This content downloaded from 
+            132.174.249.220 on Sun, 01 Nov 2026 15:34:37 UTC             
+All use subject to https://about.jstor.org/terms</p></details>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 24px 0;" class="source-media"><tr>
+  <td style="text-align:center; padding:14px; background-color:#FFFFFF; border:1px solid #F5F1E6;">
+    <img src="images/A4.02_Colonel_Henry_Bouquet_S_Ohio_page2.png" alt="Original journal page 140." style="max-width:100%; height:auto; display:inline-block;" loading="lazy" decoding="async">
+    <div style="font-family:Arial, Helvetica, sans-serif; color:#1E3A5F; font-size:12.5px; line-height:1.55; margin-top:10px; text-align:left;">Original journal page 140.</div>
+  </td>
+</tr></table>
+<details class="page-text"><summary>Text of this page (original journal page 140)</summary>
+<p>140
+ PENNSYLVANIA HISTORY
+ William Potts also expressed these sentiments in a letter to
+ Bouquet on August 28, 1764. He said: . . it will be a great pity
+ if you have not the pleasure of humbling those Barbarous
+ Wretches. . . ."2
+ Bouquet was a Swiss soldier of fortune who had come to this
+ country to serve in the British army. He achieved eminence
+ while commanding a small army enfeebled from the rigors of a
+ West Indian tour of duty. At the Battle of Bushy Run in Penn
+ sylvania Bouquet's force, surrounded and without water, seemed
+ destined to the fate of Braddock in 1755. Colonel Bouquet con
+ cocted a ruse that effected a victory for him. He had the men
+ fall back as if in retreat leaving baggage and supplies behind.
+ The Indians, with victorious howls, rushed toward the provisions.
+ Bouquet's men halted and turned a vigorous and deadly fire
+ upon the surprised Indians which routed them and saved the
+ day.3
+ The battle of Bushy Run is called by Parkman "one of the
+ best contested actions ever fought between white men and
+ Indians." The news of the victory prompted a vote of thanks
+ from the Pennsylvania Assembly. Bouquet also received formal
+ thanks from the king through General Amherst.4
+ Colonel Bouquet then traveled to Fort Pitt to prepare an
+ expeditionary force to go into the Ohio country. During 1763
+ and part of 1764 he struggled to raise funds and troops with
+ which to conduct a successful expedition against the Indians.
+ He asked Pennsylvania for assistance in the form of men and
+ supplies, pointing out that no other province had so much at
+ stake in the Indian wars. Pennsylvania, he said, was notoriously
+ weak, and the Indians would soon fall upon it if he did not
+ receive assistance in his venture.5 Bouquet in 1763 asked for
+ only 700 men but did not get them. The Pennsylvania Assembly
+ refused to act until the next summer when they voted for 1,000
+ men to join Bouquet and, interestingly, for the purchase of fifty
+ pairs of bloodhounds to hunt Indian scalping parties.6
+ 2 Lieut. Wm. Potts to Col. H. Bouquet, August 28, 1764, ibid., 103-104.
+ 3 Frederick A. Ogg, The Old Northwest: A Chronicle of the Ohio Valley
+ and Beyond (New Haven, 1921), 7-9, 15-16.
+ 4 Francis Parkman, The Conspiracy of Pontiac (Boston, 1909), II, 78,
+ 189-208.
+ 5 Col. H. Bouquet to Gov. James Hamilton, September 12, 1763,
+ Bouquet Papers, Series 21649, II, 45-46.
+ 8 Parkman, Conspiracy of Pontiac, II, 218-219.
+This content downloaded from 
+            132.174.249.220 on Sun, 01 Nov 2026 15:34:37 UTC             
+All use subject to https://about.jstor.org/terms</p></details>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Chicago Citations</div>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Bibliography entry:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; padding-left:36px; text-indent:-36px;">Adams, Paul K. “Colonel Henry Bouquet’s Ohio Expedition in 1764.” <em>Pennsylvania History: A Journal of Mid-Atlantic Studies</em> 40, no. 2 (1973): 138–147. https://www.jstor.org/stable/27772109.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Footnote citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Paul K. Adams, “Colonel Henry Bouquet’s Ohio Expedition in 1764,” <em>Pennsylvania History: A Journal of Mid-Atlantic Studies</em> 40, no. 2 (1973): 139–140, https://www.jstor.org/stable/27772109.</p>
+<div style="font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:13px; font-weight:700; margin:4px 0 6px 0;" class="citation-label">Shortened citation:</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">Adams, “Bouquet’s Ohio Expedition,” 139–140.</p>
+<div style="display:inline-block; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:17px; font-weight:700; border-bottom:2px solid #C5A009; padding-bottom:4px; margin:6px 0 14px 0;" class="section-heading" role="heading" aria-level="2">Source Verification</div>
+<p style="font-family:Georgia, 'Times New Roman', serif; color:#1E3A5F; font-size:15px; line-height:1.7; margin:0 0 14px 0; ">PDF page 2 is an illustration page (printed p. 138, 'Indian Depredations on the Frontiers') with no article text, so the excerpt uses PDF pages 3-4 (printed pp. 139-140).</p>
+  </td></tr>
+  <tr><td style="padding:0 36px 22px 36px;" class="source-footer">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:10px;" class="source-imprint"><tr>
+  <td style="padding-top:12px; border-top:1px solid #C5A009; font-family:Arial, Helvetica, sans-serif; color:#667381; font-size:11px; letter-spacing:1px; text-transform:uppercase; text-align:center;">UNIT 1 · A NOT-SO-NEW WORLD | HISTORY B17A | DANIEL GARZA, M.A.</td>
+</tr></table>
+  </td></tr>
+</table>
+
+    </article>
+  </main>
+  <div class="document-actions">
+    <a href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Scholarly_Articles/"><span aria-hidden="true">←</span> Return to the Scholarly Article Archive</a>
+  </div>
+  <script>
+    (() => {
+      const progress = document.getElementById('reading-progress');
+      const updateProgress = () => {
+        const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = scrollable > 0 ? Math.min(100, Math.max(0, window.scrollY / scrollable * 100)) : 0;
+        progress.style.width = `${percent}%`;
+      };
+      updateProgress();
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+    })();
+  </script>
+</body>
+</html>

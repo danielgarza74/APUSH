@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web article archive for Unit 1: A Not-So-New World, Chapters 2–4, 1607–1776.">
+  <meta name="theme-color" content="#1E3A5F">
+  <title>Unit 1 Web Article Archive | A Not-So-New World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;family=Inter:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #1E3A5F;
+      --forest-mid: #6C7A89;
+      --forest-light: #3D5470;
+      --coral: #C5A009;
+      --coral-light: #F5F1E6;
+      --cream: #FFFFFF;
+      --paper: #FFFFFF;
+      --mint: #FDFCFA;
+      --sage: #DADEE2;
+      --ink: #102034;
+      --muted: #4A5A6E;
+      --shadow: 0 16px 38px rgba(18, 35, 57, .13);
+      --heading: 'Cinzel', Georgia, serif;
+      --body: 'Cormorant Garamond', Georgia, serif;
+      --ui: Inter, Arial, sans-serif;
+      --coral-text: #667381;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 19px;
+      line-height: 1.6;
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 92% 5%, rgba(197, 160, 9, .11), transparent 24rem),
+        linear-gradient(145deg, rgba(255,255,255,.5), transparent 48%);
+      pointer-events: none;
+    }
+    a { color: inherit; }
+    button, input { font: inherit; }
+    :focus-visible { outline: 3px solid var(--coral-light); outline-offset: 3px; }
+    .skip-link {
+      position: fixed;
+      top: -5rem;
+      left: 1rem;
+      z-index: 1000;
+      padding: .65rem 1rem;
+      background: var(--paper);
+      color: var(--forest);
+      font: 700 .75rem var(--ui);
+    }
+    .skip-link:focus { top: 1rem; }
+
+    .archive-hero {
+      position: relative;
+      min-height: 470px;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      padding: 5rem clamp(1.5rem, 7vw, 7rem) 4.5rem;
+      border-bottom: 7px solid var(--coral);
+      background:
+        linear-gradient(115deg, rgba(0,0,0,.13), transparent 60%),
+        var(--forest);
+      color: var(--paper);
+      isolation: isolate;
+    }
+    .archive-hero::after {
+      content: '';
+      position: absolute;
+      inset: 1.2rem;
+      z-index: -1;
+      border: 1px solid rgba(245, 241, 230,.27);
+      pointer-events: none;
+    }
+    .hero-watermark {
+      position: absolute;
+      right: clamp(1rem, 7vw, 7rem);
+      top: -5rem;
+      z-index: -1;
+      color: rgba(255,255,255,.045);
+      font: 700 clamp(22rem, 40vw, 40rem)/1 var(--heading);
+      user-select: none;
+    }
+    .hero-content { max-width: 1040px; text-align: center; }
+    .hero-eyebrow {
+      margin: 0 0 1rem;
+      color: var(--coral-light);
+      font: 700 .72rem/1.4 var(--heading);
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+    .archive-hero h1 {
+      max-width: 900px;
+      margin: 0 auto;
+      color: var(--paper);
+      font: 700 clamp(2.3rem, 5.5vw, 5.2rem)/1.08 var(--heading);
+      letter-spacing: .03em;
+      text-wrap: balance;
+    }
+    .hero-subtitle {
+      max-width: 760px;
+      margin: 1.35rem auto 0;
+      color: rgba(255, 255, 255,.88);
+      font: italic 600 clamp(1.15rem, 2vw, 1.45rem)/1.5 var(--body);
+      text-wrap: balance;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .65rem 1.35rem;
+      margin-top: 2.1rem;
+      color: var(--coral-light);
+      font: 700 .65rem/1.4 var(--heading);
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .hero-meta span + span::before { content: '◆'; margin-right: 1.35rem; font-size: .45rem; vertical-align: middle; }
+
+    .chapter-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid var(--sage);
+      background: rgba(255, 255, 255,.96);
+      box-shadow: 0 8px 22px rgba(18, 35, 57,.08);
+      backdrop-filter: blur(12px);
+    }
+    .chapter-nav-inner {
+      width: min(1180px, calc(100% - 2rem));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 66px;
+    }
+    .archive-mark {
+      flex: 0 0 auto;
+      color: var(--forest);
+      font: 700 .7rem var(--heading);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .chapter-links { display: flex; align-items: stretch; align-self: stretch; }
+    .chapter-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      padding: 0 1rem;
+      border-bottom: 3px solid transparent;
+      color: var(--forest);
+      font: 700 .67rem var(--ui);
+      letter-spacing: .04em;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color .2s ease, background .2s ease, border-color .2s ease;
+    }
+    .chapter-links a span { color: var(--coral-text); font-family: var(--heading); }
+    .chapter-links a:hover { border-bottom-color: var(--coral); background: var(--mint); }
+
+    main { width: min(1180px, calc(100% - 2rem)); margin: 0 auto; padding: 3.5rem 0 5rem; }
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .intro-card,
+    .citation-card {
+      position: relative;
+      padding: 2.25rem 2.35rem;
+      border: 1px solid var(--coral);
+      background: var(--paper);
+      box-shadow: var(--shadow);
+    }
+    .intro-card::after,
+    .citation-card::after {
+      content: '';
+      position: absolute;
+      inset: 7px;
+      border: 1px solid rgba(197, 160, 9,.17);
+      pointer-events: none;
+    }
+    .eyebrow {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 .5rem;
+      color: var(--coral-text);
+      font: 800 .65rem var(--ui);
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .intro-card h2,
+    .citation-card h2 {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 1rem;
+      color: var(--forest);
+      font: 700 clamp(1.5rem, 2.6vw, 2.15rem)/1.2 var(--heading);
+    }
+    .intro-card p,
+    .citation-card p { position: relative; z-index: 1; margin: 0; }
+    .citation-card { background: var(--mint); }
+    .citation-card p + p { margin-top: .85rem; }
+
+    .catalog-tools {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: center;
+      margin: 2.5rem 0 3.2rem;
+      padding: 1.25rem 1.35rem;
+      border: 1px solid var(--sage);
+      background: rgba(255, 255, 255,.82);
+    }
+    .search-wrap { position: relative; }
+    .search-wrap svg {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      width: 19px;
+      transform: translateY(-50%);
+      color: var(--forest-mid);
+      pointer-events: none;
+    }
+    .source-search {
+      width: 100%;
+      padding: .9rem 1rem .9rem 3rem;
+      border: 1px solid var(--sage);
+      background: white;
+      color: var(--ink);
+      font: 600 .85rem var(--ui);
+    }
+    .source-search:focus { border-color: var(--coral); outline: 2px solid rgba(197, 160, 9,.15); }
+    .result-count {
+      min-width: 9rem;
+      margin: 0;
+      color: var(--muted);
+      font: 700 .68rem var(--ui);
+      letter-spacing: .07em;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .chapter-section { margin-top: 4rem; scroll-margin-top: 88px; }
+    .chapter-heading {
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 5rem 1fr auto;
+      gap: 1.2rem;
+      align-items: center;
+      min-height: 150px;
+      padding: 1.7rem 2rem;
+      border-top: 5px solid var(--coral);
+      background: var(--forest);
+      color: white;
+    }
+    .chapter-heading::after {
+      content: '';
+      position: absolute;
+      right: -4rem;
+      bottom: -8rem;
+      width: 18rem;
+      height: 18rem;
+      border: 1px solid rgba(245, 241, 230,.22);
+      border-radius: 50%;
+    }
+    .chapter-number {
+      color: rgba(255,255,255,.13);
+      font: 700 5rem/1 var(--heading);
+      text-align: center;
+    }
+    .chapter-heading p { margin: 0 0 .35rem; color: var(--coral-light); font: 700 .67rem var(--ui); letter-spacing: .14em; text-transform: uppercase; }
+    .chapter-heading h2 { margin: 0; color: white; font: 700 clamp(1.35rem, 3vw, 2.25rem)/1.18 var(--heading); text-wrap: balance; }
+    .chapter-count {
+      position: relative;
+      z-index: 1;
+      padding: .5rem .7rem;
+      border: 1px solid rgba(245, 241, 230,.48);
+      color: var(--coral-light);
+      font: 700 .65rem var(--ui);
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+    .source-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .75rem;
+      padding-top: 1rem;
+    }
+    .source-card {
+      display: grid;
+      grid-template-columns: 3.8rem 1fr 1.2rem;
+      gap: .85rem;
+      align-items: start;
+      min-height: 122px;
+      padding: 1.2rem 1.15rem;
+      border: 1px solid var(--sage);
+      background: var(--paper);
+      color: var(--ink);
+      text-decoration: none;
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+    .source-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--coral);
+      box-shadow: 0 10px 24px rgba(18, 35, 57,.11);
+    }
+    .source-card[hidden] { display: none; }
+    .source-code {
+      padding-top: .12rem;
+      color: var(--coral-text);
+      font: 700 .74rem var(--heading);
+      letter-spacing: .025em;
+    }
+    .source-copy { display: flex; min-width: 0; flex-direction: column; }
+    .source-copy strong { color: var(--forest); font: 700 .83rem/1.42 var(--ui); }
+    .source-copy > span { margin-top: .35rem; color: var(--muted); font: italic 1rem/1.4 var(--body); }
+    .source-arrow { color: var(--coral-text); font-size: 1rem; transition: transform .2s ease; }
+    .source-card:hover .source-arrow { transform: translate(2px, -2px); }
+    .chapter-empty { margin: 1rem 0 0; padding: 1.4rem; border: 1px dashed var(--sage); color: var(--muted); text-align: center; }
+    .no-results {
+      margin: 3rem 0;
+      padding: 2rem;
+      border: 1px solid var(--coral-light);
+      background: #FCFCF9;
+      color: var(--forest);
+      text-align: center;
+    }
+    .page-footer {
+      margin-top: 5rem;
+      padding: 1.4rem 0 0;
+      border-top: 1px solid var(--coral);
+      color: var(--muted);
+      font: 700 .63rem var(--ui);
+      letter-spacing: .11em;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .back-top {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: var(--forest-mid);
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .archive-hero { min-height: 410px; }
+      .archive-mark { display: none; }
+      .chapter-nav-inner { justify-content: center; }
+      .chapter-links { overflow-x: auto; }
+      .intro-grid { grid-template-columns: 1fr; }
+      .source-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      body { font-size: 18px; }
+      .archive-hero { min-height: 380px; padding: 4rem 1.2rem 3.6rem; }
+      .archive-hero::after { inset: .7rem; }
+      .hero-meta { flex-direction: column; gap: .35rem; }
+      .hero-meta span + span::before { content: ''; margin: 0; }
+      .chapter-nav-inner { width: 100%; }
+      .chapter-links { width: 100%; justify-content: space-around; }
+      .chapter-links a { flex: 1; justify-content: center; padding: 0 .5rem; white-space: nowrap; }
+      .chapter-links a .link-title { display: none; }
+      main { width: min(100% - 1.2rem, 1180px); padding-top: 2rem; }
+      .intro-card, .citation-card { padding: 1.7rem 1.35rem; }
+      .catalog-tools { grid-template-columns: 1fr; }
+      .result-count { min-width: 0; text-align: left; }
+      .chapter-section { scroll-margin-top: 74px; }
+      .chapter-heading { grid-template-columns: 3rem 1fr; min-height: 130px; padding: 1.35rem 1.1rem; }
+      .chapter-number { font-size: 3.5rem; }
+      .chapter-count { grid-column: 2; justify-self: start; }
+      .source-card { grid-template-columns: 3.2rem 1fr 1rem; min-height: 0; padding: 1rem .85rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+    @media print {
+      body { background: white; font-size: 10pt; }
+      .chapter-nav, .catalog-tools, .back-top { display: none !important; }
+      .archive-hero { min-height: 0; padding: .7in; print-color-adjust: exact; }
+      main { width: auto; padding: .35in; }
+      .intro-card, .citation-card, .source-card { box-shadow: none; }
+      .source-grid { grid-template-columns: 1fr 1fr; }
+      .source-card { min-height: 0; break-inside: avoid; }
+      .chapter-section { break-before: page; }
+    }
+    .intro-card p + p { margin-top: .85rem; }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content">Skip to source catalog</a>
+
+  <header class="archive-hero">
+    <div class="hero-watermark" aria-hidden="true">W</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Colonial America · Unit One</p>
+      <h1>Web Article Archive</h1>
+      <p class="hero-subtitle">Shorter writing by historians and scholarly institutions on credible websites about England’s colonies and the road to independence, 1607–1776.</p>
+      <div class="hero-meta">
+        <span>Unit 1 · A Not-So-New World</span>
+        <span>Chapters 2–4</span>
+        <span>1607–1776</span>
+        <span>74 articles</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="chapter-nav" aria-label="Chapter navigation">
+    <div class="chapter-nav-inner">
+      <span class="archive-mark">Web Articles</span>
+      <div class="chapter-links"><a href="#chapter-2"><span>2</span><span class="link-title">England’s Colonies</span></a><a href="#chapter-3"><span>3</span><span class="link-title">Colonial Ways of Life</span></a><a href="#chapter-4"><span>4</span><span class="link-title">From Colonies to States</span></a></div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="intro-grid" aria-label="Reader guidance">
+      <article class="intro-card">
+        <p class="eyebrow">Reading the excerpts</p>
+        <h2>Read the article in its own words.</h2>
+        <p>Each excerpt reproduces complete published paragraphs, normally 600–1,200 words; a shorter article is reproduced in full. A bracketed notice marks a move between separate parts of an article, and no bridging language has been added.</p>
+        <p>The panel at the top of each article lists every essay prompt it serves and whether it supports, qualifies, challenges, or counters that line of argument.</p>
+      </article>
+      <article class="citation-card">
+        <p class="eyebrow">Citing these readings</p>
+        <h2>Cite the web article.</h2>
+        <p>Use the full footnote citation the first time you cite an article and the shortened form afterward. Cite the web article, not a reader page number, and include only works you actually use in your bibliography.</p>
+        <p>Web pages can move or change. Keep the access date shown in the citation, and use this excerpt if a live page later becomes unavailable.</p>
+      </article>
+    </section>
+
+    <section class="catalog-tools" aria-label="Search the source catalog">
+      <div class="search-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+        <label class="skip-link" for="source-search">Search web articles</label>
+        <input id="source-search" class="source-search" type="search" autocomplete="off" placeholder="Search by article, author, website, or code…">
+      </div>
+      <p id="result-count" class="result-count" aria-live="polite">74 articles</p>
+    </section>
+
+    <p id="no-results" class="no-results" hidden>No web articles match that search. Try a shorter title, author surname, date, or source code.</p>
+
+      <section class="chapter-section" id="chapter-2" data-chapter-section aria-labelledby="chapter-2-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">2</div>
+          <div>
+            <p>Chapter 2 · 1607–1700</p>
+            <h2 id="chapter-2-title">England’s Colonies</h2>
+          </div>
+          <span class="chapter-count">19 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.01_Sir_William_Berkeley_1605_1677.html" data-source-card data-search="w2.1 sir william berkeley (1605–1677) warren m. billings, for the dictionary of virginia biography, encyclopedia virginia · warren m. billings, for the dictionary of virginia biography, encyclopedia virginia">
+              <span class="source-code">W2.1</span>
+              <span class="source-copy">
+                <strong>Sir William Berkeley (1605–1677)</strong>
+                <span>Warren M. Billings, for the Dictionary of Virginia Biography, Encyclopedia Virginia · Warren M. Billings, for the Dictionary of Virginia Biography, Encyclopedia Virginia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.02_Bad_Maps_Courtroom_Clashes_Agrarian.html" data-source-card data-search="w2.2 bad maps, courtroom clashes, and agrarian life in 17th-century new england nathan braccio, assistant professor of history, clark university · nathan braccio, assistant professor of history, clark university">
+              <span class="source-code">W2.2</span>
+              <span class="source-copy">
+                <strong>Bad Maps, Courtroom Clashes, and Agrarian Life in 17th-Century New England</strong>
+                <span>Nathan Braccio, Assistant Professor of History, Clark University · Nathan Braccio, Assistant Professor of History, Clark University</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.03_Powhatan_D_1618.html" data-source-card data-search="w2.3 powhatan (d. 1618) margaret williamson huber, contributor, encyclopedia virginia · margaret williamson huber, contributor, encyclopedia virginia">
+              <span class="source-code">W2.3</span>
+              <span class="source-copy">
+                <strong>Powhatan (d. 1618)</strong>
+                <span>Margaret Williamson Huber, contributor, Encyclopedia Virginia · Margaret Williamson Huber, contributor, Encyclopedia Virginia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.04_Barbados.html" data-source-card data-search="w2.4 barbados charles h. lesser, south carolina encyclopedia · charles h. lesser, south carolina encyclopedia">
+              <span class="source-code">W2.4</span>
+              <span class="source-copy">
+                <strong>Barbados</strong>
+                <span>Charles H. Lesser, South Carolina Encyclopedia · Charles H. Lesser, South Carolina Encyclopedia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.05_King_Philip_S_War_1675.html" data-source-card data-search="w2.5 king philip’s war (1675–1678) national park service, roger williams national memorial (unsigned page) · national park service, roger williams national memorial (unsigned page)">
+              <span class="source-code">W2.5</span>
+              <span class="source-copy">
+                <strong>King Philip’s War (1675–1678)</strong>
+                <span>National Park Service, Roger Williams National Memorial (unsigned page) · National Park Service, Roger Williams National Memorial (unsigned page)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.06_Roger_Williams_Know_People.html" data-source-card data-search="w2.6 roger williams: to know a people national park service, roger williams national memorial (unsigned page) · national park service, roger williams national memorial (unsigned page)">
+              <span class="source-code">W2.6</span>
+              <span class="source-copy">
+                <strong>Roger Williams: To Know a People</strong>
+                <span>National Park Service, Roger Williams National Memorial (unsigned page) · National Park Service, Roger Williams National Memorial (unsigned page)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.07_Refugee_S_Revenge.html" data-source-card data-search="w2.7 the refugee’s revenge mary beth norton, mary donlon alger professor of american history, cornell university · mary beth norton, mary donlon alger professor of american history, cornell university">
+              <span class="source-code">W2.7</span>
+              <span class="source-copy">
+                <strong>The Refugee’s Revenge</strong>
+                <span>Mary Beth Norton, Mary Donlon Alger Professor of American History, Cornell University · Mary Beth Norton, Mary Donlon Alger Professor of American History, Cornell University</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.08_Medical_Doctor_Who_Triggered_Salem.html" data-source-card data-search="w2.8 the medical doctor who triggered the salem witch trials of 1692 benjamin ray, daniels family, neh distinguished teaching professor, emeritus, department of religious studies, university of virginia · benjamin ray, daniels family, neh distinguished teaching professor, emeritus, department of religious studies, university of virginia">
+              <span class="source-code">W2.8</span>
+              <span class="source-copy">
+                <strong>The Medical Doctor Who Triggered the Salem Witch Trials of 1692</strong>
+                <span>Benjamin Ray, Daniels Family, NEH Distinguished Teaching Professor, Emeritus, Department of Religious Studies, University of Virginia · Benjamin Ray, Daniels Family, NEH Distinguished Teaching Professor, Emeritus, Department of Religious Studies, University of Virginia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.09_Bacon_S_Rebellion_1676_1677.html" data-source-card data-search="w2.9 bacon’s rebellion (1676–1677) james douglas rice, contributor, encyclopedia virginia · james douglas rice, contributor, encyclopedia virginia">
+              <span class="source-code">W2.9</span>
+              <span class="source-copy">
+                <strong>Bacon’s Rebellion (1676–1677)</strong>
+                <span>James Douglas Rice, contributor, Encyclopedia Virginia · James Douglas Rice, contributor, Encyclopedia Virginia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.10_Women_Colonial_Virginia.html" data-source-card data-search="w2.10 women in colonial virginia julie richter, contributor, encyclopedia virginia · julie richter, contributor, encyclopedia virginia">
+              <span class="source-code">W2.10</span>
+              <span class="source-copy">
+                <strong>Women in Colonial Virginia</strong>
+                <span>Julie Richter, contributor, Encyclopedia Virginia · Julie Richter, contributor, Encyclopedia Virginia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.11_Opechancanough_D_1646.html" data-source-card data-search="w2.11 opechancanough (d. 1646) helen c. rountree, contributor, encyclopedia virginia · helen c. rountree, contributor, encyclopedia virginia">
+              <span class="source-code">W2.11</span>
+              <span class="source-copy">
+                <strong>Opechancanough (d. 1646)</strong>
+                <span>Helen C. Rountree, contributor, Encyclopedia Virginia · Helen C. Rountree, contributor, Encyclopedia Virginia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.12_Pocahontas_D_1617.html" data-source-card data-search="w2.12 pocahontas (d. 1617) helen c. rountree, contributor, encyclopedia virginia · helen c. rountree, contributor, encyclopedia virginia">
+              <span class="source-code">W2.12</span>
+              <span class="source-copy">
+                <strong>Pocahontas (d. 1617)</strong>
+                <span>Helen C. Rountree, contributor, Encyclopedia Virginia · Helen C. Rountree, contributor, Encyclopedia Virginia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.13_Tobacco_Colonial_Virginia.html" data-source-card data-search="w2.13 tobacco in colonial virginia emily jones salmon and john salmon, contributors, encyclopedia virginia · emily jones salmon and john salmon, contributors, encyclopedia virginia">
+              <span class="source-code">W2.13</span>
+              <span class="source-copy">
+                <strong>Tobacco in Colonial Virginia</strong>
+                <span>Emily Jones Salmon and John Salmon, contributors, Encyclopedia Virginia · Emily Jones Salmon and John Salmon, contributors, Encyclopedia Virginia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.14_Other_Elizabeth_Mary_Anglo_Powhatan.html" data-source-card data-search="w2.14 the other elizabeth and mary: anglo-powhatan marriages and the virginia company of london kelly l. watson, phd, director of the center for women’s and gender studies, west virginia university · kelly l. watson, phd, director of the center for women’s and gender studies, west virginia university">
+              <span class="source-code">W2.14</span>
+              <span class="source-copy">
+                <strong>The Other Elizabeth and Mary: Anglo-Powhatan Marriages and the Virginia Company of London</strong>
+                <span>Kelly L. Watson, PhD, Director of the Center for Women’s and Gender Studies, West Virginia University · Kelly L. Watson, PhD, Director of the Center for Women’s and Gender Studies, West Virginia University</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.15_Colonial_Virginia.html" data-source-card data-search="w2.15 colonial virginia brendan wolfe, contributor, encyclopedia virginia · brendan wolfe, contributor, encyclopedia virginia">
+              <span class="source-code">W2.15</span>
+              <span class="source-copy">
+                <strong>Colonial Virginia</strong>
+                <span>Brendan Wolfe, contributor, Encyclopedia Virginia · Brendan Wolfe, contributor, Encyclopedia Virginia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.16_First_Anglo_Powhatan_War_1609.html" data-source-card data-search="w2.16 first anglo-powhatan war (1609–1614) brendan wolfe, contributor, encyclopedia virginia · brendan wolfe, contributor, encyclopedia virginia">
+              <span class="source-code">W2.16</span>
+              <span class="source-copy">
+                <strong>First Anglo-Powhatan War (1609–1614)</strong>
+                <span>Brendan Wolfe, contributor, Encyclopedia Virginia · Brendan Wolfe, contributor, Encyclopedia Virginia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.17_Indentured_Servants_Colonial_Virginia.html" data-source-card data-search="w2.17 indentured servants in colonial virginia brendan wolfe, contributor, encyclopedia virginia · brendan wolfe, contributor, encyclopedia virginia">
+              <span class="source-code">W2.17</span>
+              <span class="source-copy">
+                <strong>Indentured Servants in Colonial Virginia</strong>
+                <span>Brendan Wolfe, contributor, Encyclopedia Virginia · Brendan Wolfe, contributor, Encyclopedia Virginia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.18_Virginia_Company_London.html" data-source-card data-search="w2.18 virginia company of london brendan wolfe, contributor, encyclopedia virginia · brendan wolfe, contributor, encyclopedia virginia">
+              <span class="source-code">W2.18</span>
+              <span class="source-copy">
+                <strong>Virginia Company of London</strong>
+                <span>Brendan Wolfe, contributor, Encyclopedia Virginia · Brendan Wolfe, contributor, Encyclopedia Virginia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W2.19_Virginia_Indians.html" data-source-card data-search="w2.19 virginia indians brendan wolfe, contributor, encyclopedia virginia · brendan wolfe, contributor, encyclopedia virginia">
+              <span class="source-code">W2.19</span>
+              <span class="source-copy">
+                <strong>Virginia Indians</strong>
+                <span>Brendan Wolfe, contributor, Encyclopedia Virginia · Brendan Wolfe, contributor, Encyclopedia Virginia</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+      <section class="chapter-section" id="chapter-3" data-chapter-section aria-labelledby="chapter-3-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">3</div>
+          <div>
+            <p>Chapter 3 · 1660–1750</p>
+            <h2 id="chapter-3-title">Colonial Ways of Life</h2>
+          </div>
+          <span class="chapter-count">25 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.01_Gullah.html" data-source-card data-search="w3.1 gullah m. alpha bah · m. alpha bah">
+              <span class="source-code">W3.1</span>
+              <span class="source-copy">
+                <strong>Gullah</strong>
+                <span>M. Alpha Bah · M. Alpha Bah</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.02_Power_Dead_BaKongo_Inspiration_Chesapeake.html" data-source-card data-search="w3.2 the power of the dead: bakongo inspiration and the chesapeake rebellion ryne beddard, phd in religious studies, university of north carolina at chapel hill · ryne beddard, phd in religious studies, university of north carolina at chapel hill">
+              <span class="source-code">W3.2</span>
+              <span class="source-copy">
+                <strong>The Power of the Dead: BaKongo Inspiration and the Chesapeake Rebellion</strong>
+                <span>Ryne Beddard, PhD in Religious Studies, University of North Carolina at Chapel Hill · Ryne Beddard, PhD in Religious Studies, University of North Carolina at Chapel Hill</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.03_Rice.html" data-source-card data-search="w3.3 rice peter a. coclanis · peter a. coclanis">
+              <span class="source-code">W3.3</span>
+              <span class="source-copy">
+                <strong>Rice</strong>
+                <span>Peter A. Coclanis · Peter A. Coclanis</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.04_Survey_Material_Culture_Enslaved_Black.html" data-source-card data-search="w3.4 a survey of the material culture of enslaved black women through runaway slave advertisements colonial williamsburg foundation · colonial williamsburg foundation">
+              <span class="source-code">W3.4</span>
+              <span class="source-copy">
+                <strong>A Survey of the Material Culture of Enslaved Black Women through Runaway Slave Advertisements</strong>
+                <span>Colonial Williamsburg Foundation · Colonial Williamsburg Foundation</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.05_Slavery_Virginia_Gazette.html" data-source-card data-search="w3.5 slavery and the virginia gazette colonial williamsburg foundation · colonial williamsburg foundation">
+              <span class="source-code">W3.5</span>
+              <span class="source-copy">
+                <strong>Slavery and the Virginia Gazette</strong>
+                <span>Colonial Williamsburg Foundation · Colonial Williamsburg Foundation</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.06_When_Enslaved_People_Were_Lottery.html" data-source-card data-search="w3.6 when enslaved people were lottery prizes colonial williamsburg foundation · colonial williamsburg foundation">
+              <span class="source-code">W3.6</span>
+              <span class="source-copy">
+                <strong>When Enslaved People Were Lottery Prizes</strong>
+                <span>Colonial Williamsburg Foundation · Colonial Williamsburg Foundation</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.07_How_Sweden_Went_Global_Carolina.html" data-source-card data-search="w3.7 how sweden went global and carolina got its hoes chris evans, university of glamorgan · chris evans, university of glamorgan">
+              <span class="source-code">W3.7</span>
+              <span class="source-copy">
+                <strong>How Sweden Went Global and Carolina Got Its Hoes</strong>
+                <span>Chris Evans, University of Glamorgan · Chris Evans, University of Glamorgan</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.08_Great_Awakening_American_Revolution.html" data-source-card data-search="w3.8 the great awakening and the american revolution daniel n. gullotta · daniel n. gullotta">
+              <span class="source-code">W3.8</span>
+              <span class="source-copy">
+                <strong>The Great Awakening and the American Revolution</strong>
+                <span>Daniel N. Gullotta · Daniel N. Gullotta</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.09_Indigo.html" data-source-card data-search="w3.9 indigo virginia jelatis · virginia jelatis">
+              <span class="source-code">W3.9</span>
+              <span class="source-copy">
+                <strong>Indigo</strong>
+                <span>Virginia Jelatis · Virginia Jelatis</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.10_Slave_Codes.html" data-source-card data-search="w3.10 slave codes matthew h. jennings · matthew h. jennings">
+              <span class="source-code">W3.10</span>
+              <span class="source-copy">
+                <strong>Slave Codes</strong>
+                <span>Matthew H. Jennings · Matthew H. Jennings</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.11_Slave_Patrols.html" data-source-card data-search="w3.11 slave patrols matthew h. jennings · matthew h. jennings">
+              <span class="source-code">W3.11</span>
+              <span class="source-copy">
+                <strong>Slave Patrols</strong>
+                <span>Matthew H. Jennings · Matthew H. Jennings</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.12_Slave_Labor.html" data-source-card data-search="w3.12 slave labor daniel c. littlefield · daniel c. littlefield">
+              <span class="source-code">W3.12</span>
+              <span class="source-copy">
+                <strong>Slave Labor</strong>
+                <span>Daniel C. Littlefield · Daniel C. Littlefield</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.13_Slave_Trade.html" data-source-card data-search="w3.13 slave trade daniel c. littlefield · daniel c. littlefield">
+              <span class="source-code">W3.13</span>
+              <span class="source-copy">
+                <strong>Slave Trade</strong>
+                <span>Daniel C. Littlefield · Daniel C. Littlefield</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.14_Slavery.html" data-source-card data-search="w3.14 slavery daniel c. littlefield · daniel c. littlefield">
+              <span class="source-code">W3.14</span>
+              <span class="source-copy">
+                <strong>Slavery</strong>
+                <span>Daniel C. Littlefield · Daniel C. Littlefield</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.15_Indian_Trade.html" data-source-card data-search="w3.15 indian trade michael p. morris · michael p. morris">
+              <span class="source-code">W3.15</span>
+              <span class="source-copy">
+                <strong>Indian Trade</strong>
+                <span>Michael P. Morris · Michael P. Morris</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.16_Nairne_Thomas.html" data-source-card data-search="w3.16 nairne, thomas michael p. morris · michael p. morris">
+              <span class="source-code">W3.16</span>
+              <span class="source-copy">
+                <strong>Nairne, Thomas</strong>
+                <span>Michael P. Morris · Michael P. Morris</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.17_Yamassee_War.html" data-source-card data-search="w3.17 yamassee war michael p. morris · michael p. morris">
+              <span class="source-code">W3.17</span>
+              <span class="source-copy">
+                <strong>Yamassee War</strong>
+                <span>Michael P. Morris · Michael P. Morris</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.18_African_Americans_Jamestown.html" data-source-card data-search="w3.18 african americans at jamestown historic jamestowne, colonial national historical park, national park service · historic jamestowne, colonial national historical park, national park service">
+              <span class="source-code">W3.18</span>
+              <span class="source-copy">
+                <strong>African Americans at Jamestown</strong>
+                <span>Historic Jamestowne, Colonial National Historical Park, National Park Service · Historic Jamestowne, Colonial National Historical Park, National Park Service</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.19_Rise_Colonial_Plantation_System.html" data-source-card data-search="w3.19 rise of the colonial plantation system national park service (teaching with historic places) · national park service (teaching with historic places)">
+              <span class="source-code">W3.19</span>
+              <span class="source-copy">
+                <strong>Rise of the Colonial Plantation System</strong>
+                <span>National Park Service (Teaching with Historic Places) · National Park Service (Teaching with Historic Places)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.20_Slavery_Law_17th_Century_Massachusetts.html" data-source-card data-search="w3.20 slavery and law in 17th century massachusetts national park service (boston african american national historic site) · national park service (boston african american national historic site)">
+              <span class="source-code">W3.20</span>
+              <span class="source-copy">
+                <strong>Slavery and Law in 17th Century Massachusetts</strong>
+                <span>National Park Service (Boston African American National Historic Site) · National Park Service (Boston African American National Historic Site)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.21_Royal_African_Company_Supplying_Slaves.html" data-source-card data-search="w3.21 the royal african company: supplying slaves to jamestown historic jamestowne, colonial national historical park, national park service · historic jamestowne, colonial national historical park, national park service">
+              <span class="source-code">W3.21</span>
+              <span class="source-copy">
+                <strong>The Royal African Company: Supplying Slaves to Jamestown</strong>
+                <span>Historic Jamestowne, Colonial National Historical Park, National Park Service · Historic Jamestowne, Colonial National Historical Park, National Park Service</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.22_Pinckney_Eliza_Lucas.html" data-source-card data-search="w3.22 pinckney, eliza lucas elise pinckney · elise pinckney">
+              <span class="source-code">W3.22</span>
+              <span class="source-copy">
+                <strong>Pinckney, Eliza Lucas</strong>
+                <span>Elise Pinckney · Elise Pinckney</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.23_Indentured_Servitude_Colonial_U_S.html" data-source-card data-search="w3.23 indentured servitude in the colonial u.s. joshua rosenbloom, university of kansas · joshua rosenbloom, university of kansas">
+              <span class="source-code">W3.23</span>
+              <span class="source-copy">
+                <strong>Indentured Servitude in the Colonial U.S.</strong>
+                <span>Joshua Rosenbloom, University of Kansas · Joshua Rosenbloom, University of Kansas</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.24_Stono_Rebellion.html" data-source-card data-search="w3.24 stono rebellion mark m. smith · mark m. smith">
+              <span class="source-code">W3.24</span>
+              <span class="source-copy">
+                <strong>Stono Rebellion</strong>
+                <span>Mark M. Smith · Mark M. Smith</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W3.25_Benjamin_Franklin_Slavery_Founders_Dangers.html" data-source-card data-search="w3.25 benjamin franklin, slavery, and the founders: on the dangers of reading backwards david waldstreicher, professor of history, temple university · david waldstreicher, professor of history, temple university">
+              <span class="source-code">W3.25</span>
+              <span class="source-copy">
+                <strong>Benjamin Franklin, Slavery, and the Founders: On the Dangers of Reading Backwards</strong>
+                <span>David Waldstreicher, Professor of History, Temple University · David Waldstreicher, Professor of History, Temple University</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+      <section class="chapter-section" id="chapter-4" data-chapter-section aria-labelledby="chapter-4-title">
+        <header class="chapter-heading">
+          <div class="chapter-number" aria-hidden="true">4</div>
+          <div>
+            <p>Chapter 4 · 1750–1776</p>
+            <h2 id="chapter-4-title">From Colonies to States</h2>
+          </div>
+          <span class="chapter-count">30 articles</span>
+        </header>
+        <div class="source-grid">
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.01_Pontiac_S_Rebellion.html" data-source-card data-search="w4.1 pontiac’s rebellion american battlefield trust (unsigned) · american battlefield trust (unsigned)">
+              <span class="source-code">W4.1</span>
+              <span class="source-copy">
+                <strong>Pontiac’s Rebellion</strong>
+                <span>American Battlefield Trust (unsigned) · American Battlefield Trust (unsigned)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.02_Economics_American_Revolutionary_War.html" data-source-card data-search="w4.2 the economics of the american revolutionary war ben baack, ohio state university · ben baack, ohio state university">
+              <span class="source-code">W4.2</span>
+              <span class="source-copy">
+                <strong>The Economics of the American Revolutionary War</strong>
+                <span>Ben Baack, Ohio State University · Ben Baack, Ohio State University</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.03_Cuban_Angle_Revolution.html" data-source-card data-search="w4.3 a cuban angle on the revolution alex borucki, university of california, irvine, and josé luis belmonte postigo, universidad de sevilla · alex borucki, university of california, irvine, and josé luis belmonte postigo, universidad de sevilla">
+              <span class="source-code">W4.3</span>
+              <span class="source-copy">
+                <strong>A Cuban Angle on the Revolution</strong>
+                <span>Alex Borucki, University of California, Irvine, and José Luis Belmonte Postigo, Universidad de Sevilla · Alex Borucki, University of California, Irvine, and José Luis Belmonte Postigo, Universidad de Sevilla</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.04_7_Myths_About_Boston_Tea.html" data-source-card data-search="w4.4 7 myths about the boston tea party benjamin l. carp · benjamin l. carp">
+              <span class="source-code">W4.4</span>
+              <span class="source-copy">
+                <strong>7 Myths about the Boston Tea Party</strong>
+                <span>Benjamin L. Carp · Benjamin L. Carp</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.05_Boston_Harbor_Tea_Pot_This.html" data-source-card data-search="w4.5 “boston harbor a tea-pot this night!” benjamin l. carp, professor of history at brooklyn college · benjamin l. carp, professor of history at brooklyn college">
+              <span class="source-code">W4.5</span>
+              <span class="source-copy">
+                <strong>“Boston Harbor a Tea-pot This Night!”</strong>
+                <span>Benjamin L. Carp, professor of history at Brooklyn College · Benjamin L. Carp, professor of history at Brooklyn College</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.06_2026_Religion_Conversation_Katherine_Cart.html" data-source-card data-search="w4.6 2026 and religion: a conversation with katherine carté katherine carté, author of religion and the american revolution: an imperial history (2021), interviewed for the omohundro institute · katherine carté, author of religion and the american revolution: an imperial history (2021), interviewed for the omohundro institute">
+              <span class="source-code">W4.6</span>
+              <span class="source-copy">
+                <strong>2026 and Religion: A Conversation with Katherine Carté</strong>
+                <span>Katherine Carté, author of Religion and the American Revolution: An Imperial History (2021), interviewed for the Omohundro Institute · Katherine Carté, author of Religion and the American Revolution: An Imperial History (2021), interviewed for the Omohundro Institute</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.07_Dunmore_S_Proclamation_Fight_Freedom.html" data-source-card data-search="w4.7 dunmore’s proclamation and the fight for freedom colonial williamsburg foundation (unsigned) · colonial williamsburg foundation (unsigned)">
+              <span class="source-code">W4.7</span>
+              <span class="source-copy">
+                <strong>Dunmore’s Proclamation and the Fight for Freedom</strong>
+                <span>Colonial Williamsburg Foundation (unsigned) · Colonial Williamsburg Foundation (unsigned)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.08_Loyal_Crown_Political_Death_Rebirth.html" data-source-card data-search="w4.8 loyal to the crown: the political death and rebirth of the loyalists timothy compeau (credentials not shown on page) · timothy compeau (credentials not shown on page)">
+              <span class="source-code">W4.8</span>
+              <span class="source-copy">
+                <strong>Loyal to the Crown: The Political Death and Rebirth of the Loyalists</strong>
+                <span>Timothy Compeau (credentials not shown on page) · Timothy Compeau (credentials not shown on page)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.09_Proclamation_1763.html" data-source-card data-search="w4.9 the proclamation of 1763 max edelson · max edelson">
+              <span class="source-code">W4.9</span>
+              <span class="source-copy">
+                <strong>The Proclamation of 1763</strong>
+                <span>Max Edelson · Max Edelson</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.10_Lord_Dunmore_S_Proclamation.html" data-source-card data-search="w4.10 lord dunmore’s proclamation douglas r. egerton (credentials not shown on page) · douglas r. egerton (credentials not shown on page)">
+              <span class="source-code">W4.10</span>
+              <span class="source-copy">
+                <strong>Lord Dunmore’s Proclamation</strong>
+                <span>Douglas R. Egerton (credentials not shown on page) · Douglas R. Egerton (credentials not shown on page)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.11_Daughters_Liberty.html" data-source-card data-search="w4.11 the daughters of liberty kate egner, senior manager, digital content, american battlefield trust (m.a. in american history, college of william and mary) · kate egner, senior manager, digital content, american battlefield trust (m.a. in american history, college of william and mary)">
+              <span class="source-code">W4.11</span>
+              <span class="source-copy">
+                <strong>The Daughters of Liberty</strong>
+                <span>Kate Egner, Senior Manager, Digital Content, American Battlefield Trust (M.A. in American History, College of William and Mary) · Kate Egner, Senior Manager, Digital Content, American Battlefield Trust (M.A. in American History, College of William and Mary)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.12_Racialization_Dispossession_Memory_American_Revolution.html" data-source-card data-search="w4.12 racialization and dispossession in the memory of the american revolution blake grindon, princeton university · blake grindon, princeton university">
+              <span class="source-code">W4.12</span>
+              <span class="source-copy">
+                <strong>Racialization and Dispossession in the Memory of the American Revolution</strong>
+                <span>Blake Grindon, Princeton University · Blake Grindon, Princeton University</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.13_Thomas_Whately_National_Affection_Politics.html" data-source-card data-search="w4.13 thomas whately and national affection in politics owen holzbach, daniel rivera-mills, and nathanael snow · owen holzbach, daniel rivera-mills, and nathanael snow">
+              <span class="source-code">W4.13</span>
+              <span class="source-copy">
+                <strong>Thomas Whately and National Affection in Politics</strong>
+                <span>Owen Holzbach, Daniel Rivera-Mills, and Nathanael Snow · Owen Holzbach, Daniel Rivera-Mills, and Nathanael Snow</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.14_Coming_American_Revolution_Declarations_Independence.html" data-source-card data-search="w4.14 the coming of the american revolution: declarations of independence massachusetts historical society (unsigned) · massachusetts historical society (unsigned)">
+              <span class="source-code">W4.14</span>
+              <span class="source-copy">
+                <strong>The Coming of the American Revolution: Declarations of Independence</strong>
+                <span>Massachusetts Historical Society (unsigned) · Massachusetts Historical Society (unsigned)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.15_Coming_American_Revolution_Non_Consumption.html" data-source-card data-search="w4.15 the coming of the american revolution: non-consumption and non-importation massachusetts historical society (unsigned) · massachusetts historical society (unsigned)">
+              <span class="source-code">W4.15</span>
+              <span class="source-copy">
+                <strong>The Coming of the American Revolution: Non-consumption and Non-importation</strong>
+                <span>Massachusetts Historical Society (unsigned) · Massachusetts Historical Society (unsigned)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.16_Coming_American_Revolution_Boston_Tea.html" data-source-card data-search="w4.16 the coming of the american revolution: the boston tea party massachusetts historical society (unsigned) · massachusetts historical society (unsigned)">
+              <span class="source-code">W4.16</span>
+              <span class="source-copy">
+                <strong>The Coming of the American Revolution: The Boston Tea Party</strong>
+                <span>Massachusetts Historical Society (unsigned) · Massachusetts Historical Society (unsigned)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.17_French_Indian_War.html" data-source-card data-search="w4.17 french and indian war jennifer monroe mccutchen, texas christian university · jennifer monroe mccutchen, texas christian university">
+              <span class="source-code">W4.17</span>
+              <span class="source-copy">
+                <strong>French and Indian War</strong>
+                <span>Jennifer Monroe McCutchen, Texas Christian University · Jennifer Monroe McCutchen, Texas Christian University</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.18_Proclamation_Line_1763.html" data-source-card data-search="w4.18 proclamation line of 1763 jennifer monroe mccutchen, texas christian university · jennifer monroe mccutchen, texas christian university">
+              <span class="source-code">W4.18</span>
+              <span class="source-copy">
+                <strong>Proclamation Line of 1763</strong>
+                <span>Jennifer Monroe McCutchen, Texas Christian University · Jennifer Monroe McCutchen, Texas Christian University</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.19_American_Indian_Influence_U_S.html" data-source-card data-search="w4.19 american indian influence on the u.s. constitution robert j. miller (credentials not shown on page) · robert j. miller (credentials not shown on page)">
+              <span class="source-code">W4.19</span>
+              <span class="source-copy">
+                <strong>American Indian Influence on the U.S. Constitution</strong>
+                <span>Robert J. Miller (credentials not shown on page) · Robert J. Miller (credentials not shown on page)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.20_1768_Boundary_Line_Treaty_Fort.html" data-source-card data-search="w4.20 1768 boundary line treaty of fort stanwix national park service (unsigned) · national park service (unsigned)">
+              <span class="source-code">W4.20</span>
+              <span class="source-copy">
+                <strong>1768 Boundary Line Treaty of Fort Stanwix</strong>
+                <span>National Park Service (unsigned) · National Park Service (unsigned)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.21_Anger_Opposition_Stamp_Act.html" data-source-card data-search="w4.21 anger and opposition to the stamp act national park service, boston national historical park · national park service, boston national historical park">
+              <span class="source-code">W4.21</span>
+              <span class="source-copy">
+                <strong>Anger and Opposition to the Stamp Act</strong>
+                <span>National Park Service, Boston National Historical Park · National Park Service, Boston National Historical Park</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.22_Stiff_Opinions_Always_Wrong_Essay.html" data-source-card data-search="w4.22 stiff in opinions, always in the wrong: essay on “a letter to g.g.” colin nicolson · colin nicolson">
+              <span class="source-code">W4.22</span>
+              <span class="source-copy">
+                <strong>Stiff in Opinions, Always in the Wrong: Essay on “A Letter to G.G.”</strong>
+                <span>Colin Nicolson · Colin Nicolson</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.23_Swap_Not_Heard_Round_World.html" data-source-card data-search="w4.23 the swap not heard ’round the world: ordering the declaration’s grievances robert g. parkinson (credentials not shown on page) · robert g. parkinson (credentials not shown on page)">
+              <span class="source-code">W4.23</span>
+              <span class="source-copy">
+                <strong>The Swap Not Heard ’Round the World: Ordering the Declaration’s Grievances</strong>
+                <span>Robert G. Parkinson (credentials not shown on page) · Robert G. Parkinson (credentials not shown on page)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.24_Treaty_Fort_Stanwix_1768.html" data-source-card data-search="w4.24 the treaty of fort stanwix (1768) jon parmenter (credentials not shown on page) · jon parmenter (credentials not shown on page)">
+              <span class="source-code">W4.24</span>
+              <span class="source-copy">
+                <strong>The Treaty of Fort Stanwix (1768)</strong>
+                <span>Jon Parmenter (credentials not shown on page) · Jon Parmenter (credentials not shown on page)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.25_Did_Founding_Fathers_Really_Get.html" data-source-card data-search="w4.25 did the founding fathers really get many of their ideas of liberty from the iroquois? jack rakove, stanford historian (as identified by the site) · jack rakove, stanford historian (as identified by the site)">
+              <span class="source-code">W4.25</span>
+              <span class="source-copy">
+                <strong>Did the Founding Fathers Really Get Many of Their Ideas of Liberty from the Iroquois?</strong>
+                <span>Jack Rakove, Stanford historian (as identified by the site) · Jack Rakove, Stanford historian (as identified by the site)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.26_Declarations_Before_Declaration_Independence.html" data-source-card data-search="w4.26 declarations before the declaration of independence ray raphael · ray raphael">
+              <span class="source-code">W4.26</span>
+              <span class="source-copy">
+                <strong>Declarations Before THE Declaration of Independence</strong>
+                <span>Ray Raphael · Ray Raphael</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.27_Horrid_Scenes_Villainy_Stamp_Act.html" data-source-card data-search="w4.27 “horrid scenes of villainy”: the stamp act protest of august 1765 nina rodwin, interpreter at the paul revere house · nina rodwin, interpreter at the paul revere house">
+              <span class="source-code">W4.27</span>
+              <span class="source-copy">
+                <strong>“Horrid Scenes of Villainy”: The Stamp Act Protest of August 1765</strong>
+                <span>Nina Rodwin, interpreter at the Paul Revere House · Nina Rodwin, interpreter at the Paul Revere House</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.28_Offering_Ladies_Esther_Reed_S.html" data-source-card data-search="w4.28 offering of the ladies: esther reed’s sentiments, washington’s objections conner runyan (credentials not shown on page) · conner runyan (credentials not shown on page)">
+              <span class="source-code">W4.28</span>
+              <span class="source-copy">
+                <strong>Offering of the Ladies: Esther Reed’s Sentiments, Washington’s Objections</strong>
+                <span>Conner Runyan (credentials not shown on page) · Conner Runyan (credentials not shown on page)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.29_Still_Prologue_Stamp_Act_Protests.html" data-source-card data-search="w4.29 still a prologue? the stamp act protests at 250 danielle skeehan, oberlin college, with eliga gould, benjamin l. carp, william huntting howell and molly perry (a forum of scholars) · danielle skeehan, oberlin college, with eliga gould, benjamin l. carp, william huntting howell and molly perry (a forum of scholars)">
+              <span class="source-code">W4.29</span>
+              <span class="source-copy">
+                <strong>Still a Prologue? The Stamp Act Protests at 250</strong>
+                <span>Danielle Skeehan, Oberlin College, with Eliga Gould, Benjamin L. Carp, William Huntting Howell and Molly Perry (a forum of scholars) · Danielle Skeehan, Oberlin College, with Eliga Gould, Benjamin L. Carp, William Huntting Howell and Molly Perry (a forum of scholars)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+
+            <a class="source-card" href="https://www.thegarzaarchive.org/APUSH/Unit_1/Sources/Web_Articles/W4.30_Cruel_Bedlam_Bankruptcies_Break_Britain.html" data-source-card data-search="w4.30 cruel bedlam: bankruptcies and the break with britain robert e. wright (credentials not shown on page) · robert e. wright (credentials not shown on page)">
+              <span class="source-code">W4.30</span>
+              <span class="source-copy">
+                <strong>Cruel Bedlam: Bankruptcies and the Break with Britain</strong>
+                <span>Robert E. Wright (credentials not shown on page) · Robert E. Wright (credentials not shown on page)</span>
+              </span>
+              <span class="source-arrow" aria-hidden="true">↗</span>
+            </a>
+    </div>
+        <p class="chapter-empty" hidden>No articles in this chapter match your search.</p>
+      </section>
+
+
+    <footer class="page-footer">
+      <a class="back-top" href="#top">Back to top ↑</a>
+      <div>Unit 1 · A Not-So-New World · History B17A · Daniel Garza, M.A.</div>
+    </footer>
+  </main>
+  <script>
+    (() => {
+      const input = document.getElementById('source-search');
+      const cards = [...document.querySelectorAll('[data-source-card]')];
+      const sections = [...document.querySelectorAll('[data-chapter-section]')];
+      const resultCount = document.getElementById('result-count');
+      const noResults = document.getElementById('no-results');
+
+      function normalize(value) {
+        return value.toLocaleLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      }
+
+      function updateCatalog() {
+        const query = normalize(input.value.trim());
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const matches = !query || normalize(card.dataset.search).includes(query);
+          card.hidden = !matches;
+          if (matches) visibleCount += 1;
+        });
+
+        sections.forEach(section => {
+          const visibleInSection = section.querySelectorAll('[data-source-card]:not([hidden])').length;
+          section.querySelector('.chapter-empty').hidden = visibleInSection > 0;
+        });
+
+        resultCount.textContent = `${visibleCount} ${visibleCount === 1 ? 'article' : 'articles'}`;
+        noResults.hidden = visibleCount !== 0;
+      }
+
+      input.addEventListener('input', updateCatalog);
+      input.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && input.value) {
+          input.value = '';
+          updateCatalog();
+        }
+      });
+      updateCatalog();
+    })();
+</script>
+</body>
+</html>
